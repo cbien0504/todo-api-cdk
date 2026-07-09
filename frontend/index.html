@@ -387,6 +387,7 @@
             <div class="input-group">
                 <input type="url" id="api-url-input" placeholder="Paste your API Endpoint here (e.g. https://xxxxxx.execute-api.us-east-1.amazonaws.com/prod/)">
                 <button class="btn-primary" id="save-config-btn">Save</button>
+                <button class="btn-secondary" id="reset-config-btn">Reset</button>
             </div>
             <div style="font-size: 0.8rem; color: var(--text-secondary); display: flex; justify-content: space-between; align-items: center;">
                 <span>Active Endpoint: <strong id="active-endpoint-text" style="color: #6366f1; word-break: break-all;">None</strong></span>
@@ -423,8 +424,12 @@
     </div>
 
     <script>
+        // API Base URL - If API endpoint changes in the future, this constant must be manually edited and redeployed.
+        const API_BASE_URL = "https://d2l14mcp9j.execute-api.ap-southeast-1.amazonaws.com/prod";
+
         const apiUrlInput = document.getElementById('api-url-input');
         const saveConfigBtn = document.getElementById('save-config-btn');
+        const resetConfigBtn = document.getElementById('reset-config-btn');
         const activeEndpointText = document.getElementById('active-endpoint-text');
         const apiStatusBadge = document.getElementById('api-status-badge');
         const todoForm = document.getElementById('todo-form');
@@ -436,15 +441,17 @@
         const toastMessage = document.getElementById('toast-message');
         const toastIcon = document.getElementById('toast-icon');
 
-        let API_URL = localStorage.getItem('todo_api_url') || '';
+        let API_URL = localStorage.getItem('todo_api_url') || API_BASE_URL;
 
-        if (API_URL) {
+        function initApp() {
+            // Ensure trailing slash
+            if (API_URL && !API_URL.endsWith('/')) {
+                API_URL += '/';
+            }
             apiUrlInput.value = API_URL;
             activeEndpointText.textContent = API_URL;
             enableForm(true);
             testAndLoadTodos();
-        } else {
-            activeEndpointText.textContent = "Please configure your API Gateway URL";
         }
 
         saveConfigBtn.addEventListener('click', () => {
@@ -465,6 +472,19 @@
             activeEndpointText.textContent = API_URL;
             enableForm(true);
             showToast('Endpoint configuration saved!', '✅');
+            testAndLoadTodos();
+        });
+
+        resetConfigBtn.addEventListener('click', () => {
+            localStorage.removeItem('todo_api_url');
+            API_URL = API_BASE_URL;
+            if (!API_URL.endsWith('/')) {
+                API_URL += '/';
+            }
+            apiUrlInput.value = API_URL;
+            activeEndpointText.textContent = API_URL;
+            enableForm(true);
+            showToast('Reset to default endpoint', '🔄');
             testAndLoadTodos();
         });
 
@@ -555,7 +575,7 @@
                 li.innerHTML = `
                     <div class="todo-item-left">
                         <label class="checkbox-container">
-                            <input type="checkbox" ${todo.done ? 'checked' : ''} onchange="toggleTodo('${todo.id}', this.checked, '${todo.title.replace(/'/g, "\\'")}')">
+                            <input type="checkbox" ${todo.done ? 'checked' : ''} onchange="toggleTodo('${todo.id}', this.checked)">
                             <span class="checkmark"></span>
                         </label>
                         <span class="todo-text">${escapeHtml(todo.title)}</span>
@@ -582,6 +602,7 @@
             const originalText = addBtnText.textContent;
             addBtnText.innerHTML = '<div class="spinner"></div> Creating...';
             addBtn.disabled = true;
+            todoInput.disabled = true;
 
             try {
                 const response = await fetch(`${API_URL}todos`, {
@@ -601,28 +622,36 @@
                 await testAndLoadTodos();
             } catch (err) {
                 console.error(err);
-                showToast('Error creating task', '❌');
+                showToast(`Error creating task: ${err.message}`, '❌');
             } finally {
                 addBtnText.textContent = originalText;
                 addBtn.disabled = false;
+                todoInput.disabled = false;
+                todoInput.focus();
             }
         });
 
-        async function toggleTodo(id, checked, title) {
+        async function toggleTodo(id, checked) {
+            const todoItem = document.querySelector(`.todo-item[data-id="${id}"]`);
+            const checkbox = todoItem ? todoItem.querySelector('input[type="checkbox"]') : null;
+            const deleteBtn = todoItem ? todoItem.querySelector('.delete-btn') : null;
+
+            if (checkbox) checkbox.disabled = true;
+            if (deleteBtn) deleteBtn.disabled = true;
+
             try {
                 const response = await fetch(`${API_URL}todos/${id}`, {
                     method: 'PUT',
                     headers: {
                         'Content-Type': 'application/json'
                     },
-                    body: JSON.stringify({ title, done: checked })
+                    body: JSON.stringify({ done: checked })
                 });
 
                 if (!response.ok) {
                     throw new Error('Failed to update task');
                 }
 
-                const todoItem = document.querySelector(`.todo-item[data-id="${id}"]`);
                 if (todoItem) {
                     if (checked) {
                         todoItem.classList.add('completed');
@@ -634,13 +663,25 @@
                 showToast(checked ? 'Task completed!' : 'Task active', '✓');
             } catch (err) {
                 console.error(err);
-                showToast('Error updating task status', '❌');
-                testAndLoadTodos();
+                showToast(`Error updating task: ${err.message}`, '❌');
+                // Revert checkbox state
+                if (checkbox) checkbox.checked = !checked;
+                await testAndLoadTodos();
+            } finally {
+                if (checkbox) checkbox.disabled = false;
+                if (deleteBtn) deleteBtn.disabled = false;
             }
         }
 
         async function deleteTodo(id) {
             if (!confirm('Are you sure you want to delete this task?')) return;
+
+            const todoItem = document.querySelector(`.todo-item[data-id="${id}"]`);
+            const deleteBtn = todoItem ? todoItem.querySelector('.delete-btn') : null;
+            const checkbox = todoItem ? todoItem.querySelector('input[type="checkbox"]') : null;
+            
+            if (deleteBtn) deleteBtn.disabled = true;
+            if (checkbox) checkbox.disabled = true;
 
             try {
                 const response = await fetch(`${API_URL}todos/${id}`, {
@@ -655,7 +696,9 @@
                 await testAndLoadTodos();
             } catch (err) {
                 console.error(err);
-                showToast('Error deleting task', '❌');
+                showToast(`Error deleting task: ${err.message}`, '❌');
+                if (deleteBtn) deleteBtn.disabled = false;
+                if (checkbox) checkbox.disabled = false;
             }
         }
 
@@ -667,6 +710,9 @@
                 .replace(/"/g, "&quot;")
                 .replace(/'/g, "&#039;");
         }
+
+        // Initialize application
+        initApp();
     </script>
 </body>
 </html>
