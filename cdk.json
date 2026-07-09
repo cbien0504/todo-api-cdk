@@ -1,0 +1,20 @@
+{
+  "app": "/home/bien/.pyenv/versions/3.10.13/bin/python app.py",
+  "context": {
+    "github_connection_arn": "arn:aws:codeconnections:ap-southeast-1:772908588074:connection/efeb6c9e-9003-4de8-ad65-a417059ba00d",
+    "@aws-cdk/aws-apigateway:usagePlanKeyOrderInsensitiveId": true,
+    "@aws-cdk/core:stackRelativeExports": true,
+    "@aws-cdk/aws-rds:databaseProxyUniqueResourceName": true,
+    "@aws-cdk/aws-codepipeline:useNewBlockStructure": true,
+    "@aws-cdk/aws-s3:createDefaultLoggingPolicy": true,
+    "@aws-cdk/aws-sns-subscriptions:restrictSqsTemplate": true,
+    "@aws-cdk/aws-apigateway:requestValidatorUniqueId": true,
+    "@aws-cdk/aws-kms:aliasNameRef": true,
+    "@aws-cdk/aws-s3:specifiedBucketName": true,
+    "@aws-cdk/aws-s3:keysWithSlash": true,
+    "@aws-cdk/core:checkVersionReporting": false,
+    "@aws-cdk/core:validationReportNoWrap": true,
+    "@aws-cdk/aws-s3:keepNotificationInImportedBucket": true,
+    "@aws-cdk/aws-ec2:uniqueHostName": true
+  }
+}
