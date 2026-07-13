@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   QueryClient,
   QueryClientProvider,
@@ -6,7 +6,7 @@ import {
   useMutation,
   useQueryClient,
 } from "@tanstack/react-query";
-import { todoApi, getApiBaseUrl } from "./api/todoApi";
+import { todoApi, getApiBaseUrl, type FetchTodosResponse } from "./api/todoApi";
 import type { Todo } from "./types/todo";
 
 // Initialize Query Client
@@ -34,6 +34,29 @@ function MainApp() {
   const [editingTitle, setEditingTitle] = useState<string>("");
   const [toasts, setToasts] = useState<ToastMessage[]>([]);
 
+  // Search/Filters/Sort states
+  const [filterTab, setFilterTab] = useState<"all" | "active" | "completed">("all");
+  const [searchQuery, setSearchQuery] = useState<string>("");
+  const [sortOrder, setSortOrder] = useState<"-created_at" | "created_at">("-created_at");
+
+  // Dark/Light mode state
+  const [theme, setTheme] = useState<"dark" | "light">(() => {
+    const saved = localStorage.getItem("theme");
+    if (saved === "light" || saved === "dark") return saved;
+    return "dark";
+  });
+
+  const toggleTheme = () => {
+    const nextTheme = theme === "dark" ? "light" : "dark";
+    setTheme(nextTheme);
+    localStorage.setItem("theme", nextTheme);
+    document.documentElement.setAttribute("data-theme", nextTheme);
+  };
+
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+  }, [theme]);
+
   // Show a notifications toast helper
   const showToast = (text: string, icon = "ℹ️") => {
     const id = Math.random().toString(36).substring(2, 9);
@@ -43,52 +66,154 @@ function MainApp() {
     }, 3000);
   };
 
-  // Queries
+  // Queries (Restructured to follow pagination & filtering schemas)
   const {
-    data: todos = [],
+    data,
     isLoading,
     isError,
     error,
     refetch,
     isFetching,
-  } = useQuery<Todo[]>({
-    queryKey: ["todos", activeUrl],
-    queryFn: todoApi.getTodos,
+  } = useQuery<FetchTodosResponse>({
+    queryKey: ["todos", activeUrl, filterTab, sortOrder],
+    queryFn: () =>
+      todoApi.getTodos({
+        done: filterTab === "all" ? undefined : filterTab === "completed",
+        sort: sortOrder,
+      }),
   });
 
-  // Mutations
+  const todos = data?.data || [];
+
+  // Mutations with Optimistic UI updates
   const createMutation = useMutation({
     mutationFn: todoApi.createTodo,
-    onSuccess: () => {
-      queryClient.invalidateQueries({ queryKey: ["todos"] });
-      setNewTitle("");
-      showToast("Task added successfully", "✅");
+    onMutate: async (newTodo) => {
+      await queryClient.cancelQueries({ queryKey: ["todos"] });
+      const previousData = queryClient.getQueryData<FetchTodosResponse>([
+        "todos",
+        activeUrl,
+        filterTab,
+        sortOrder,
+      ]);
+
+      const optimisticTodo: Todo = {
+        id: `optimistic-${Date.now()}`,
+        title: newTodo.title,
+        done: newTodo.done || false,
+        created_at: new Date().toISOString(),
+        updated_at: new Date().toISOString(),
+      };
+
+      if (previousData) {
+        queryClient.setQueryData(["todos", activeUrl, filterTab, sortOrder], {
+          ...previousData,
+          data: [optimisticTodo, ...previousData.data],
+        });
+      }
+
+      return { previousData };
     },
-    onError: (err: any) => {
-      showToast(err.response?.data?.detail || "Failed to create task", "❌");
+    onError: (err: any, _, context) => {
+      if (context?.previousData) {
+        queryClient.setQueryData(
+          ["todos", activeUrl, filterTab, sortOrder],
+          context.previousData
+        );
+      }
+      const errorMsg =
+        err.response?.data?.error?.message || err.message || "Failed to create task";
+      showToast(errorMsg, "❌");
+    },
+    onSuccess: () => {
+      showToast("Task added successfully", "✅");
+      setNewTitle("");
+    },
+    onSettled: () => {
+      queryClient.invalidateQueries({ queryKey: ["todos"] });
     },
   });
 
   const updateMutation = useMutation({
     mutationFn: ({ id, title, done }: { id: string; title?: string; done?: boolean }) =>
       todoApi.updateTodo(id, { title, done }),
+    onMutate: async (variables) => {
+      await queryClient.cancelQueries({ queryKey: ["todos"] });
+      const previousData = queryClient.getQueryData<FetchTodosResponse>([
+        "todos",
+        activeUrl,
+        filterTab,
+        sortOrder,
+      ]);
+
+      if (previousData) {
+        queryClient.setQueryData(["todos", activeUrl, filterTab, sortOrder], {
+          ...previousData,
+          data: previousData.data.map((todo) =>
+            todo.id === variables.id
+              ? { ...todo, ...variables, updated_at: new Date().toISOString() }
+              : todo
+          ),
+        });
+      }
+
+      return { previousData };
+    },
+    onError: (err: any, _, context) => {
+      if (context?.previousData) {
+        queryClient.setQueryData(
+          ["todos", activeUrl, filterTab, sortOrder],
+          context.previousData
+        );
+      }
+      const errorMsg =
+        err.response?.data?.error?.message || err.message || "Failed to update task";
+      showToast(errorMsg, "❌");
+    },
     onSuccess: (data) => {
-      queryClient.invalidateQueries({ queryKey: ["todos"] });
       showToast(data.done ? "Task completed!" : "Task active", "✓");
     },
-    onError: (err: any) => {
-      showToast(err.response?.data?.detail || "Failed to update task", "❌");
+    onSettled: () => {
+      queryClient.invalidateQueries({ queryKey: ["todos"] });
     },
   });
 
   const deleteMutation = useMutation({
     mutationFn: todoApi.deleteTodo,
+    onMutate: async (id) => {
+      await queryClient.cancelQueries({ queryKey: ["todos"] });
+      const previousData = queryClient.getQueryData<FetchTodosResponse>([
+        "todos",
+        activeUrl,
+        filterTab,
+        sortOrder,
+      ]);
+
+      if (previousData) {
+        queryClient.setQueryData(["todos", activeUrl, filterTab, sortOrder], {
+          ...previousData,
+          data: previousData.data.filter((todo) => todo.id !== id),
+        });
+      }
+
+      return { previousData };
+    },
+    onError: (err: any, _, context) => {
+      if (context?.previousData) {
+        queryClient.setQueryData(
+          ["todos", activeUrl, filterTab, sortOrder],
+          context.previousData
+        );
+      }
+      const errorMsg =
+        err.response?.data?.error?.message || err.message || "Failed to delete task";
+      showToast(errorMsg, "❌");
+    },
     onSuccess: () => {
-      queryClient.invalidateQueries({ queryKey: ["todos"] });
       showToast("Task deleted", "🗑️");
     },
-    onError: (err: any) => {
-      showToast(err.response?.data?.detail || "Failed to delete task", "❌");
+    onSettled: () => {
+      queryClient.invalidateQueries({ queryKey: ["todos"] });
     },
   });
 
@@ -163,11 +288,38 @@ function MainApp() {
   const isConnected = !isError && !isLoading;
   const statusBadgeText = isLoading || isFetching ? "Syncing..." : isConnected ? "Connected" : "Error";
 
+  // Filter todos by title search query client side
+  const filteredTodos = todos.filter((todo) =>
+    todo.title.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
   return (
     <>
       <header>
-        <h1>Todo Cloud Manager</h1>
-        <p className="subtitle">React Vite + TypeScript Frontend connected to FastAPI & PostgreSQL</p>
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", width: "100%", paddingBottom: "1.5rem" }}>
+          <div style={{ textAlign: "left" }}>
+            <h1>Todo Cloud Manager</h1>
+            <p className="subtitle">React Vite + TypeScript Frontend connected to FastAPI & DynamoDB</p>
+          </div>
+          <button 
+            className="btn-secondary" 
+            onClick={toggleTheme} 
+            style={{ 
+              padding: "0.5rem", 
+              borderRadius: "50%", 
+              width: "40px", 
+              height: "40px", 
+              display: "flex", 
+              alignItems: "center", 
+              justifyContent: "center",
+              fontSize: "1.2rem",
+              background: "rgba(255, 255, 255, 0.05)"
+            }} 
+            title="Toggle Theme"
+          >
+            {theme === "dark" ? "☀️" : "🌙"}
+          </button>
+        </div>
       </header>
 
       {/* Network Configuration card */}
@@ -241,12 +393,68 @@ function MainApp() {
         </form>
       </section>
 
+      {/* Filter and Search card */}
+      <section className="card filters-section">
+        <div className="search-box" style={{ display: "flex", width: "100%" }}>
+          <input
+            type="text"
+            placeholder="Search tasks..."
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            style={{ width: "100%" }}
+          />
+        </div>
+        <div className="filter-sort-controls">
+          <div className="tabs">
+            <button
+              className={`tab-btn ${filterTab === "all" ? "active" : ""}`}
+              onClick={() => setFilterTab("all")}
+            >
+              All
+            </button>
+            <button
+              className={`tab-btn ${filterTab === "active" ? "active" : ""}`}
+              onClick={() => setFilterTab("active")}
+            >
+              Active
+            </button>
+            <button
+              className={`tab-btn ${filterTab === "completed" ? "active" : ""}`}
+              onClick={() => setFilterTab("completed")}
+            >
+              Completed
+            </button>
+          </div>
+          <div className="sort-select">
+            <label htmlFor="sort-order" style={{ fontSize: "0.85rem", color: "var(--text-secondary)" }}>Sort:</label>
+            <select
+              id="sort-order"
+              value={sortOrder}
+              onChange={(e) => setSortOrder(e.target.value as any)}
+              style={{
+                background: "var(--input-bg)",
+                border: "1px solid var(--border-color)",
+                color: "var(--text-primary)",
+                padding: "0.4rem 0.6rem",
+                borderRadius: "6px",
+                fontFamily: "inherit",
+                fontSize: "0.85rem",
+                outline: "none"
+              }}
+            >
+              <option value="-created_at">Newest first</option>
+              <option value="created_at">Oldest first</option>
+            </select>
+          </div>
+        </div>
+      </section>
+
       {/* Task List card */}
       <section className="card todo-list-container">
         <div className="todo-list-header">
           <h3>My Tasks</h3>
           <span style={{ color: "var(--text-secondary)", fontSize: "0.9rem" }}>
-            {todos.length} task{todos.length === 1 ? "" : "s"}
+            {filteredTodos.length} task{filteredTodos.length === 1 ? "" : "s"}
           </span>
         </div>
 
@@ -254,15 +462,15 @@ function MainApp() {
           {isLoading ? (
             <div className="empty-state">
               <div className="spinner"></div>
-              <p style={{ marginTop: "0.5rem" }}>Loading tasks from FastAPI...</p>
+              <p style={{ marginTop: "0.5rem" }}>Loading tasks from FastAPI & DynamoDB...</p>
             </div>
           ) : isError ? (
             <div className="empty-state">
               <p style={{ color: "var(--accent-red)", fontWeight: 500 }}>
                 Failed to connect to API Backend
               </p>
-              <p style={{ fontSize: "0.8rem", maxWidth: "80%" }}>
-                {(error as Error)?.message}
+              <p style={{ fontSize: "0.8rem", maxWidth: "80%", wordBreak: "break-all" }}>
+                {(error as Error)?.message || "Network Error"}
               </p>
               <button
                 className="btn-secondary"
@@ -272,12 +480,12 @@ function MainApp() {
                 Retry
               </button>
             </div>
-          ) : todos.length === 0 ? (
+          ) : filteredTodos.length === 0 ? (
             <div className="empty-state">
-              <p>No tasks yet. Create one above!</p>
+              <p>{searchQuery ? "No matching tasks found." : "No tasks yet. Create one above!"}</p>
             </div>
           ) : (
-            todos.map((todo) => (
+            filteredTodos.map((todo) => (
               <li
                 key={todo.id}
                 className={`todo-item ${todo.done ? "completed" : ""}`}

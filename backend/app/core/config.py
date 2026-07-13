@@ -8,15 +8,12 @@ class Settings(BaseSettings):
     PROJECT_NAME: str = "Todo API"
     API_V1_STR: str = ""
 
-    # Database settings
-    POSTGRES_HOST: str = "localhost"
-    POSTGRES_PORT: int = 5432
-    POSTGRES_USER: str = "postgres"
-    POSTGRES_PASSWORD: str = "postgres"
-    POSTGRES_DB: str = "todo_db"
-    DATABASE_URL: str | None = None
+    # DynamoDB Settings
+    TODOS_TABLE_NAME: str = "TodoTable"
+    DYNAMODB_ENDPOINT_URL: str | None = None
 
     # CORS settings
+    FRONTEND_URL: str | None = None
     BACKEND_CORS_ORIGINS: List[str] = ["*"]
 
     @field_validator("BACKEND_CORS_ORIGINS", mode="before")
@@ -27,18 +24,6 @@ class Settings(BaseSettings):
         elif isinstance(v, (list, str)):
             return v
         raise ValueError(v)
-
-    @property
-    def async_database_url(self) -> str:
-        if self.DATABASE_URL:
-            # Replace prefix if it starts with postgresql:// to postgresql+asyncpg://
-            url = self.DATABASE_URL
-            if url.startswith("postgresql://"):
-                url = url.replace("postgresql://", "postgresql+asyncpg://", 1)
-            elif url.startswith("postgres://"):
-                url = url.replace("postgres://", "postgresql+asyncpg://", 1)
-            return url
-        return f"postgresql+asyncpg://{self.POSTGRES_USER}:{self.POSTGRES_PASSWORD}@{self.POSTGRES_HOST}:{self.POSTGRES_PORT}/{self.POSTGRES_DB}"
 
     model_config = SettingsConfigDict(
         env_file=".env",

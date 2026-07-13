@@ -2,50 +2,76 @@ import asyncio
 from typing import AsyncGenerator
 import pytest
 from httpx import AsyncClient, ASGITransport
-from sqlalchemy.ext.asyncio import AsyncSession, async_sessionmaker, create_async_engine
-
-from app.db.session import Base, get_db
 from app.main import app
 
-# Async SQLite database for testing CRUD operations
-TEST_DATABASE_URL = "sqlite+aiosqlite:///:memory:"
+class MockTable:
+    def __init__(self):
+        self.items = {}
+        
+    def put_item(self, Item):
+        self.items[Item["id"]] = Item
+        return {}
+        
+    def get_item(self, Key):
+        item_id = Key.get("id")
+        item = self.items.get(item_id)
+        if item:
+            return {"Item": item}
+        return {}
+        
+    def delete_item(self, Key):
+        item_id = Key.get("id")
+        self.items.pop(item_id, None)
+        return {}
+        
+    def query(self, **kwargs):
+        res = list(self.items.values())
+        res = [i for i in res if i.get("type", "todo") == "todo"]
+        
+        # simulated filter
+        if "FilterExpression" in kwargs:
+            filter_expr = kwargs["FilterExpression"]
+            val = getattr(filter_expr, "value", None)
+            if val is not None:
+                res = [i for i in res if i.get("done") == val]
 
-engine = create_async_engine(TEST_DATABASE_URL, echo=False)
-TestingSessionLocal = async_sessionmaker(
-    bind=engine,
-    class_=AsyncSession,
-    expire_on_commit=False,
-    autocommit=False,
-    autoflush=False,
-)
-
+        # sort order
+        forward = kwargs.get("ScanIndexForward", True)
+        res.sort(key=lambda x: x.get("created_at", ""), reverse=not forward)
+        
+        limit = kwargs.get("Limit", 10)
+        items_page = res[:limit]
+        
+        last_key = None
+        if len(res) > limit:
+            last_key = {
+                "id": items_page[-1]["id"],
+                "type": "todo",
+                "created_at": items_page[-1]["created_at"]
+            }
+            
+        return {
+            "Items": items_page,
+            "LastEvaluatedKey": last_key
+        }
+        
+    def scan(self, **kwargs):
+        res = list(self.items.values())
+        if "FilterExpression" in kwargs:
+            filter_expr = kwargs["FilterExpression"]
+            val = getattr(filter_expr, "value", None)
+            if val is not None:
+                res = [i for i in res if i.get("done") == val]
+        return {"Items": res}
 
 @pytest.fixture(scope="function", autouse=True)
-async def setup_db():
-    # Create tables
-    async with engine.begin() as conn:
-        await conn.run_sync(Base.metadata.create_all)
-    yield
-    # Drop tables
-    async with engine.begin() as conn:
-        await conn.run_sync(Base.metadata.drop_all)
-
-
-async def override_get_db() -> AsyncGenerator[AsyncSession, None]:
-    async with TestingSessionLocal() as session:
-        try:
-            yield session
-            await session.commit()
-        except Exception:
-            await session.rollback()
-            raise
-        finally:
-            await session.close()
-
-
-# Override connection dependecy
-app.dependency_overrides[get_db] = override_get_db
-
+def mock_db_table(monkeypatch):
+    """
+    Mock the boto3 DynamoDB Table workspace object to isolate database state.
+    """
+    mock_table = MockTable()
+    monkeypatch.setattr("app.api.routes.todos.get_table", lambda: mock_table)
+    return mock_table
 
 @pytest.fixture(scope="function")
 async def client() -> AsyncGenerator[AsyncClient, None]:

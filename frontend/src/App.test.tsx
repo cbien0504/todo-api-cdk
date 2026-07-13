@@ -22,7 +22,7 @@ describe("Todo Cloud Manager APP", () => {
   });
 
   it("renders headers and configuration section", async () => {
-    vi.mocked(todoApi.getTodos).mockResolvedValue([]);
+    vi.mocked(todoApi.getTodos).mockResolvedValue({ data: [], meta: { next_token: null } });
     render(<App />);
 
     expect(screen.getByText("Todo Cloud Manager")).toBeInTheDocument();
@@ -48,7 +48,7 @@ describe("Todo Cloud Manager APP", () => {
       },
     ];
 
-    vi.mocked(todoApi.getTodos).mockResolvedValue(mockTodos);
+    vi.mocked(todoApi.getTodos).mockResolvedValue({ data: mockTodos, meta: { next_token: null } });
     render(<App />);
 
     // Wait for the tasks to load
@@ -61,7 +61,7 @@ describe("Todo Cloud Manager APP", () => {
   });
 
   it("submits a new Todo through the form", async () => {
-    vi.mocked(todoApi.getTodos).mockResolvedValue([]);
+    vi.mocked(todoApi.getTodos).mockResolvedValue({ data: [], meta: { next_token: null } });
     vi.mocked(todoApi.createTodo).mockResolvedValue({
       id: "a421768f-4dfa-453a-987c-4ee0cfda9bd4",
       title: "New Created Task",

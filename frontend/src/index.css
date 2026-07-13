@@ -10,6 +10,17 @@
   --accent-red: #ef4444;
   --shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
   --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  --input-bg: rgba(17, 24, 39, 0.8);
+}
+
+[data-theme="light"] {
+  --bg-color: #f9fafb;
+  --card-bg: rgba(255, 255, 255, 0.9);
+  --border-color: rgba(0, 0, 0, 0.08);
+  --text-primary: #111827;
+  --text-secondary: #6b7280;
+  --shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.1);
+  --input-bg: rgba(243, 244, 246, 0.8);
 }
 
 * {
@@ -105,7 +116,7 @@ p.subtitle {
 
 input[type="text"], input[type="url"] {
   flex: 1;
-  background: rgba(17, 24, 39, 0.8);
+  background: var(--input-bg);
   border: 1px solid var(--border-color);
   border-radius: 8px;
   color: var(--text-primary);
@@ -421,3 +432,73 @@ button:disabled {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+.filters-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.filter-sort-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tabs {
+  display: flex;
+  gap: 0.25rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-color);
+  padding: 0.25rem;
+  border-radius: 8px;
+}
+
+.tab-btn {
+  padding: 0.4rem 0.8rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--text-secondary);
+  border: none;
+}
+
+.tab-btn:hover {
+  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.tab-btn.active {
+  background: var(--primary-gradient);
+  color: #ffffff;
+}
+
+.sort-select {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Light / Dark Mode support theme overrides */
+[data-theme="light"] body {
+  background-image: 
+    radial-gradient(circle at 10% 20%, rgba(99, 102, 241, 0.05) 0%, transparent 40%),
+    radial-gradient(circle at 90% 80%, rgba(168, 85, 247, 0.05) 0%, transparent 40%);
+}
+
+[data-theme="light"] .todo-item {
+  background: rgba(0, 0, 0, 0.02);
+}
+
+[data-theme="light"] .todo-item:hover {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+[data-theme="light"] .tab-btn.active {
+  background: var(--primary-gradient);
+  color: #ffffff;
+}
+
