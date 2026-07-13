@@ -146,7 +146,7 @@ function MainApp() {
         sortOrder,
       ]);
 
-      if (previousData) {
+      if (previousData) { 
         queryClient.setQueryData(["todos", activeUrl, filterTab, sortOrder], {
           ...previousData,
           data: previousData.data.map((todo) =>
