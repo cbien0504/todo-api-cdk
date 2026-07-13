@@ -143,8 +143,6 @@ class TodoApiStack(Stack):
             }
         )
 
-        # Inject Frontend URL after Distribution is instantiated to restrict backend CORS origins
-        todo_lambda.add_environment("FRONTEND_URL", f"https://{distribution.distribution_domain_name}")
 
         # Fallback to frontend root dir for synthesis if vite build dist hasn't run yet
         frontend_asset_dir = "frontend/dist" if os.path.exists("frontend/dist") else "frontend"

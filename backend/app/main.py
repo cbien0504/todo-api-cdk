@@ -26,14 +26,14 @@ if settings.FRONTEND_URL:
 allow_origins.extend(["http://localhost:5173", "http://localhost:3000"])
 allow_origins = list(set([o for o in allow_origins if o]))
 
-if allow_origins:
-    app.add_middleware(
-        CORSMiddleware,
-        allow_origins=allow_origins,
-        allow_credentials=True,
-        allow_methods=["*"],
-        allow_headers=["*"],
-    )
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=allow_origins,
+    allow_origin_regex=r"https://.*\.cloudfront\.net",
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # Middleware: Log request performance metrics
 @app.middleware("http")
