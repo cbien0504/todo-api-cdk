@@ -1,5 +1,5 @@
 {
-  "app": ".venv/bin/python3 app.py",
+  "app": "python3 app.py",
   "context": {
     "github_connection_arn": "arn:aws:codeconnections:ap-southeast-1:772908588074:connection/efeb6c9e-9003-4de8-ad65-a417059ba00d",
     "@aws-cdk/aws-apigateway:usagePlanKeyOrderInsensitiveId": true,
