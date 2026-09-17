@@ -1,0 +1,6162 @@
+[
+  {
+    "stt": 1,
+    "kanji": "男性",
+    "han_viet": "NAM TÍNH",
+    "hiragana": "だんせい",
+    "meaning": "đàn ông, nam giới"
+  },
+  {
+    "stt": 2,
+    "kanji": "女性",
+    "han_viet": "NỮ TÍNH",
+    "hiragana": "じょせい",
+    "meaning": "phụ nữ, nữ giới"
+  },
+  {
+    "stt": 3,
+    "kanji": "高齢",
+    "han_viet": "CAO LINH",
+    "hiragana": "こうれい",
+    "meaning": "cao tuổi"
+  },
+  {
+    "stt": 4,
+    "kanji": "年上",
+    "han_viet": "NIÊN THƯỢNG",
+    "hiragana": "としうえ",
+    "meaning": "Lớn (tuổi) hơn"
+  },
+  {
+    "stt": 5,
+    "kanji": "目上",
+    "han_viet": "MỤC THƯỢNG",
+    "hiragana": "めうえ",
+    "meaning": "bề trên, người trên mình"
+  },
+  {
+    "stt": 6,
+    "kanji": "先輩",
+    "han_viet": "TIÊN BỐI",
+    "hiragana": "せんぱい",
+    "meaning": "tiền bối, đàn anh"
+  },
+  {
+    "stt": 7,
+    "kanji": "後輩",
+    "han_viet": "HẬU BỐI",
+    "hiragana": "こうはい",
+    "meaning": "hậu bối, đàn em"
+  },
+  {
+    "stt": 8,
+    "kanji": "上司",
+    "han_viet": "THƯỢNG TI",
+    "hiragana": "じょうし",
+    "meaning": "cấp trên"
+  },
+  {
+    "stt": 9,
+    "kanji": "相手",
+    "han_viet": "TƯƠNG THỦ",
+    "hiragana": "あいて",
+    "meaning": "Đối phương, đối tác, đối thủ"
+  },
+  {
+    "stt": 10,
+    "kanji": "知り合い",
+    "han_viet": "TRI HỢP",
+    "hiragana": "しりあい",
+    "meaning": "người quen"
+  },
+  {
+    "stt": 11,
+    "kanji": "友人",
+    "han_viet": "HỮU NHÂN",
+    "hiragana": "ゆうじん",
+    "meaning": "bạn bè, bạn thân"
+  },
+  {
+    "stt": 12,
+    "kanji": "仲",
+    "han_viet": "TRỌNG",
+    "hiragana": "なか",
+    "meaning": "quan hệ"
+  },
+  {
+    "stt": 13,
+    "kanji": "生年月日",
+    "han_viet": "SANH NIÊN NGUYỆT NHẬT",
+    "hiragana": "せいねんがっぴ",
+    "meaning": "ngày tháng năm sinh"
+  },
+  {
+    "stt": 14,
+    "kanji": "誕生",
+    "han_viet": "ĐẢN SANH",
+    "hiragana": "たんじょう",
+    "meaning": "ra đời, bắt nguồn"
+  },
+  {
+    "stt": 15,
+    "kanji": "年",
+    "han_viet": "NIÊN",
+    "hiragana": "とし",
+    "meaning": "Năm, tuổi"
+  },
+  {
+    "stt": 16,
+    "kanji": "出身",
+    "han_viet": "XUẤT THÂN",
+    "hiragana": "しゅっしん",
+    "meaning": "Xuất thân, quê quán"
+  },
+  {
+    "stt": 17,
+    "kanji": "故郷",
+    "han_viet": "CỐ HƯƠNG",
+    "hiragana": "こきょう",
+    "meaning": "Quê quán"
+  },
+  {
+    "stt": 18,
+    "kanji": "成長",
+    "han_viet": "THÀNH TRƯỞNG",
+    "hiragana": "せいちょう",
+    "meaning": "trưởng thành, tăng trưởng"
+  },
+  {
+    "stt": 19,
+    "kanji": "成人",
+    "han_viet": "THÀNH NHÂN",
+    "hiragana": "せいじん",
+    "meaning": "người trưởng thành"
+  },
+  {
+    "stt": 20,
+    "kanji": "合格",
+    "han_viet": "HỢP CÁCH",
+    "hiragana": "ごうかく",
+    "meaning": "Thi đỗ, đậu, đủ điều kiện"
+  },
+  {
+    "stt": 21,
+    "kanji": "進学",
+    "han_viet": "TIẾN HỌC",
+    "hiragana": "しんがく",
+    "meaning": "Học lên"
+  },
+  {
+    "stt": 22,
+    "kanji": "退学",
+    "han_viet": "THỐI HỌC",
+    "hiragana": "たいがく",
+    "meaning": "bỏ học, thôi học"
+  },
+  {
+    "stt": 23,
+    "kanji": "就職",
+    "han_viet": "TỰU CHỨC",
+    "hiragana": "しゅうしょく",
+    "meaning": "tìm việc làm"
+  },
+  {
+    "stt": 24,
+    "kanji": "退職",
+    "han_viet": "THỐI CHỨC",
+    "hiragana": "たいしょく",
+    "meaning": "nghỉ việc"
+  },
+  {
+    "stt": 25,
+    "kanji": "失業",
+    "han_viet": "THẤT NGHIỆP",
+    "hiragana": "しつぎょう",
+    "meaning": "thất nghiệp"
+  },
+  {
+    "stt": 26,
+    "kanji": "残業",
+    "han_viet": "TÀN NGHIỆP",
+    "hiragana": "ざんぎょう",
+    "meaning": "làm thêm, tăng ca"
+  },
+  {
+    "stt": 27,
+    "kanji": "生活",
+    "han_viet": "SANH HOẠT",
+    "hiragana": "せいかつ",
+    "meaning": "cuộc sống, sinh hoạt"
+  },
+  {
+    "stt": 28,
+    "kanji": "通勤",
+    "han_viet": "THÔNG CẦN",
+    "hiragana": "つうきん",
+    "meaning": "đi làm"
+  },
+  {
+    "stt": 29,
+    "kanji": "学歴",
+    "han_viet": "HỌC LỊCH",
+    "hiragana": "がくれき",
+    "meaning": "bằng cấp, trình độ học vấn"
+  },
+  {
+    "stt": 30,
+    "kanji": "給料",
+    "han_viet": "CẤP LIÊU",
+    "hiragana": "きゅうりょう",
+    "meaning": "tiền lương"
+  },
+  {
+    "stt": 31,
+    "kanji": "面接",
+    "han_viet": "DIỆN TIẾP",
+    "hiragana": "めんせつ",
+    "meaning": "phỏng vấn"
+  },
+  {
+    "stt": 32,
+    "kanji": "休憩",
+    "han_viet": "HƯU KHẾ",
+    "hiragana": "きゅうけい",
+    "meaning": "nghỉ ngơi, giải lao"
+  },
+  {
+    "stt": 33,
+    "kanji": "観光",
+    "han_viet": "QUAN QUANG",
+    "hiragana": "かんこう",
+    "meaning": "tham quan, thăm thú"
+  },
+  {
+    "stt": 34,
+    "kanji": "帰国",
+    "han_viet": "QUY QUỐC",
+    "hiragana": "きこく",
+    "meaning": "về nước"
+  },
+  {
+    "stt": 35,
+    "kanji": "帰省",
+    "han_viet": "QUY TỈNH",
+    "hiragana": "きせい",
+    "meaning": "về quê"
+  },
+  {
+    "stt": 36,
+    "kanji": "帰宅",
+    "han_viet": "QUY TRẠCH",
+    "hiragana": "きたく",
+    "meaning": "về nhà"
+  },
+  {
+    "stt": 37,
+    "kanji": "参加",
+    "han_viet": "THAM GIA",
+    "hiragana": "さんか",
+    "meaning": "tham gia"
+  },
+  {
+    "stt": 38,
+    "kanji": "出席",
+    "han_viet": "XUẤT TỊCH",
+    "hiragana": "しゅっせき",
+    "meaning": "có mặt"
+  },
+  {
+    "stt": 39,
+    "kanji": "欠席",
+    "han_viet": "KHIẾM TỊCH",
+    "hiragana": "けっせき",
+    "meaning": "vắng mặt"
+  },
+  {
+    "stt": 40,
+    "kanji": "遅刻",
+    "han_viet": "TRÌ KHẮC",
+    "hiragana": "ちこく",
+    "meaning": "đến muộn"
+  },
+  {
+    "stt": 41,
+    "kanji": "化粧",
+    "han_viet": "HÓA TRANG",
+    "hiragana": "けしょう",
+    "meaning": "trang điểm"
+  },
+  {
+    "stt": 42,
+    "kanji": "計算",
+    "han_viet": "KẾ TOÁN",
+    "hiragana": "けいさん",
+    "meaning": "tính toán"
+  },
+  {
+    "stt": 43,
+    "kanji": "計画",
+    "han_viet": "KẾ HOẠCH",
+    "hiragana": "けいかく",
+    "meaning": "kế hoạch"
+  },
+  {
+    "stt": 44,
+    "kanji": "成功",
+    "han_viet": "THÀNH CÔNG",
+    "hiragana": "せいこう",
+    "meaning": "thành công"
+  },
+  {
+    "stt": 45,
+    "kanji": "失敗",
+    "han_viet": "THẤT BẠI",
+    "hiragana": "しっぱい",
+    "meaning": "thất bại"
+  },
+  {
+    "stt": 46,
+    "kanji": "準備",
+    "han_viet": "CHUẨN BỊ",
+    "hiragana": "じゅんび",
+    "meaning": "chuẩn bị"
+  },
+  {
+    "stt": 47,
+    "kanji": "整理",
+    "han_viet": "CHỈNH LÍ",
+    "hiragana": "せいり",
+    "meaning": "chỉnh sửa"
+  },
+  {
+    "stt": 48,
+    "kanji": "注文",
+    "han_viet": "CHÚ VĂN",
+    "hiragana": "ちゅうもん",
+    "meaning": "đặt hàng"
+  },
+  {
+    "stt": 49,
+    "kanji": "貯金",
+    "han_viet": "TRỮ KIM",
+    "hiragana": "ちょきん",
+    "meaning": "tiết kiệm"
+  },
+  {
+    "stt": 50,
+    "kanji": "徹夜",
+    "han_viet": "TRIỆT DẠ",
+    "hiragana": "てつや",
+    "meaning": "thức trắng đêm, suốt đêm"
+  },
+  {
+    "stt": 51,
+    "kanji": "引っ越し",
+    "han_viet": "DẪN VIỆT",
+    "hiragana": "ひっこし",
+    "meaning": "chuyển nhà"
+  },
+  {
+    "stt": 52,
+    "kanji": "身長",
+    "han_viet": "THÂN TRƯỜNG",
+    "hiragana": "しんちょう",
+    "meaning": "chiều cao"
+  },
+  {
+    "stt": 53,
+    "kanji": "体重",
+    "han_viet": "THỂ TRỌNG",
+    "hiragana": "たいじゅう",
+    "meaning": "cân nặng"
+  },
+  {
+    "stt": 54,
+    "kanji": "怪我",
+    "han_viet": "QUÁI NGÃ",
+    "hiragana": "けが",
+    "meaning": "vết thương"
+  },
+  {
+    "stt": 55,
+    "kanji": "会",
+    "han_viet": "HỘI",
+    "hiragana": "かい",
+    "meaning": "hội, tiệc"
+  },
+  {
+    "stt": 56,
+    "kanji": "趣味",
+    "han_viet": "THÚ VỊ",
+    "hiragana": "しゅみ",
+    "meaning": "sở thích, thú vui"
+  },
+  {
+    "stt": 57,
+    "kanji": "興味",
+    "han_viet": "HƯNG VỊ",
+    "hiragana": "きょうみ",
+    "meaning": "hứng thú"
+  },
+  {
+    "stt": 58,
+    "kanji": "思い出",
+    "han_viet": "TƯ XUẤT",
+    "hiragana": "おもいで",
+    "meaning": "Trí nhớ, kí ức, kỉ niệm"
+  },
+  {
+    "stt": 59,
+    "kanji": "冗談",
+    "han_viet": "NHỮNG ĐÀM",
+    "hiragana": "じょうだん",
+    "meaning": "đùa cợt, bông đùa"
+  },
+  {
+    "stt": 60,
+    "kanji": "目的",
+    "han_viet": "MỤC ĐÍCH",
+    "hiragana": "もくてき",
+    "meaning": "mục đích"
+  },
+  {
+    "stt": 61,
+    "kanji": "約束",
+    "han_viet": "ƯỚC THÚC",
+    "hiragana": "やくそく",
+    "meaning": "lời hứa, cuộc hẹn"
+  },
+  {
+    "stt": 62,
+    "kanji": "お喋り",
+    "han_viet": "ĐIỆP",
+    "hiragana": "おしゃべり",
+    "meaning": "nói chuyện riêng"
+  },
+  {
+    "stt": 63,
+    "kanji": "遠慮",
+    "han_viet": "VIỄN LỰ",
+    "hiragana": "えんりょ",
+    "meaning": "ngại ngần, khách sáo"
+  },
+  {
+    "stt": 64,
+    "kanji": "我慢",
+    "han_viet": "NGÃ MẠN",
+    "hiragana": "がまん",
+    "meaning": "chịu đựng"
+  },
+  {
+    "stt": 65,
+    "kanji": "迷惑",
+    "han_viet": "MÊ HOẶC",
+    "hiragana": "めいわく",
+    "meaning": "làm phiền"
+  },
+  {
+    "stt": 66,
+    "kanji": "希望",
+    "han_viet": "HI VỌNG",
+    "hiragana": "きぼう",
+    "meaning": "hi vọng"
+  },
+  {
+    "stt": 67,
+    "kanji": "夢",
+    "han_viet": "MỘNG",
+    "hiragana": "ゆめ",
+    "meaning": "giấc mơ, ước mơ"
+  },
+  {
+    "stt": 68,
+    "kanji": "賛成",
+    "han_viet": "TÁN THÀNH",
+    "hiragana": "さんせい",
+    "meaning": "Tán thành, đồng ý"
+  },
+  {
+    "stt": 69,
+    "kanji": "反対",
+    "han_viet": "PHẢN ĐỐI",
+    "hiragana": "はんたい",
+    "meaning": "Phản đối, ngược lại"
+  },
+  {
+    "stt": 70,
+    "kanji": "想像",
+    "han_viet": "TƯỞNG TƯỢNG",
+    "hiragana": "そうぞう",
+    "meaning": "tưởng tượng"
+  },
+  {
+    "stt": 71,
+    "kanji": "努力",
+    "han_viet": "NỖ LỰC",
+    "hiragana": "どりょく",
+    "meaning": "nỗ lực"
+  },
+  {
+    "stt": 72,
+    "kanji": "太陽",
+    "han_viet": "THÁI DƯƠNG",
+    "hiragana": "たいよう",
+    "meaning": "mặt trời"
+  },
+  {
+    "stt": 73,
+    "kanji": "地球",
+    "han_viet": "ĐỊA CẦU",
+    "hiragana": "ちきゅう",
+    "meaning": "trái đất"
+  },
+  {
+    "stt": 74,
+    "kanji": "温度",
+    "han_viet": "ÔN ĐỘ",
+    "hiragana": "おんど",
+    "meaning": "nhiệt độ"
+  },
+  {
+    "stt": 75,
+    "kanji": "湿度",
+    "han_viet": "THẤP ĐỘ",
+    "hiragana": "しつど",
+    "meaning": "độ ẩm"
+  },
+  {
+    "stt": 76,
+    "kanji": "湿気",
+    "han_viet": "THẤP KHÍ",
+    "hiragana": "しっけ",
+    "meaning": "hơi ẩm"
+  },
+  {
+    "stt": 77,
+    "kanji": "梅雨",
+    "han_viet": "MAI VŨ",
+    "hiragana": "つゆ",
+    "meaning": "mùa mưa"
+  },
+  {
+    "stt": 78,
+    "kanji": "黴",
+    "han_viet": "MI",
+    "hiragana": "かび",
+    "meaning": "nấm mốc"
+  },
+  {
+    "stt": 79,
+    "kanji": "暖房",
+    "han_viet": "NOÃN PHÒNG",
+    "hiragana": "だんぼう",
+    "meaning": "Lò sưởi"
+  },
+  {
+    "stt": 80,
+    "kanji": "皮",
+    "han_viet": "BÌ",
+    "hiragana": "かわ",
+    "meaning": "Da, vỏ"
+  },
+  {
+    "stt": 81,
+    "kanji": "缶",
+    "han_viet": "PHỮU",
+    "hiragana": "かん",
+    "meaning": "Can, lon, hộp kim loại"
+  },
+  {
+    "stt": 82,
+    "kanji": "画面",
+    "han_viet": "HỌA DIỆN",
+    "hiragana": "がめん",
+    "meaning": "màn hình"
+  },
+  {
+    "stt": 83,
+    "kanji": "番組",
+    "han_viet": "PHIÊN TỔ",
+    "hiragana": "ばんぐみ",
+    "meaning": "chương trình"
+  },
+  {
+    "stt": 84,
+    "kanji": "記事",
+    "han_viet": "KÍ SỰ",
+    "hiragana": "きじ",
+    "meaning": "ký sự, phóng sự"
+  },
+  {
+    "stt": 85,
+    "kanji": "近所",
+    "han_viet": "CẬN SỞ",
+    "hiragana": "きんじょ",
+    "meaning": "Hàng xóm"
+  },
+  {
+    "stt": 86,
+    "kanji": "警察",
+    "han_viet": "CẢNH SÁT",
+    "hiragana": "けいさつ",
+    "meaning": "cảnh sát"
+  },
+  {
+    "stt": 87,
+    "kanji": "犯人",
+    "han_viet": "PHẠM NHÂN",
+    "hiragana": "はんにん",
+    "meaning": "tội phạm"
+  },
+  {
+    "stt": 88,
+    "kanji": "小銭",
+    "han_viet": "TIỂU TIỀN",
+    "hiragana": "こぜに",
+    "meaning": "tiền lẻ, tiền xu"
+  },
+  {
+    "stt": 89,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "ごちそう",
+    "meaning": "chiêu đãi"
+  },
+  {
+    "stt": 90,
+    "kanji": "作者",
+    "han_viet": "TÁC GIẢ",
+    "hiragana": "さくしゃ",
+    "meaning": "tác giả"
+  },
+  {
+    "stt": 91,
+    "kanji": "作品",
+    "han_viet": "TÁC PHẨM",
+    "hiragana": "さくひん",
+    "meaning": "tác phẩm"
+  },
+  {
+    "stt": 92,
+    "kanji": "制服",
+    "han_viet": "CHẾ PHỤC",
+    "hiragana": "せいふく",
+    "meaning": "đồng phục"
+  },
+  {
+    "stt": 93,
+    "kanji": "洗剤",
+    "han_viet": "TẨY TỄ",
+    "hiragana": "せんざい",
+    "meaning": "Chất tẩy rửa, bột giặt"
+  },
+  {
+    "stt": 94,
+    "kanji": "底",
+    "han_viet": "ĐỂ",
+    "hiragana": "そこ",
+    "meaning": "Đáy, đế"
+  },
+  {
+    "stt": 95,
+    "kanji": "地下",
+    "han_viet": "ĐỊA HẠ",
+    "hiragana": "ちか",
+    "meaning": "Tầng hầm"
+  },
+  {
+    "stt": 96,
+    "kanji": "寺",
+    "han_viet": "TỰ",
+    "hiragana": "てら",
+    "meaning": "chùa"
+  },
+  {
+    "stt": 97,
+    "kanji": "道路",
+    "han_viet": "ĐẠO LỘ",
+    "hiragana": "どうろ",
+    "meaning": "đường"
+  },
+  {
+    "stt": 98,
+    "kanji": "坂",
+    "han_viet": "PHẢN",
+    "hiragana": "さか",
+    "meaning": "dốc"
+  },
+  {
+    "stt": 99,
+    "kanji": "煙",
+    "han_viet": "YÊN",
+    "hiragana": "けむり",
+    "meaning": "khói"
+  },
+  {
+    "stt": 100,
+    "kanji": "灰",
+    "han_viet": "HÔI",
+    "hiragana": "はい",
+    "meaning": "Tàn, tro"
+  },
+  {
+    "stt": 101,
+    "kanji": "判",
+    "han_viet": "PHÁN",
+    "hiragana": "はん",
+    "meaning": "con dấu"
+  },
+  {
+    "stt": 102,
+    "kanji": "名刺",
+    "han_viet": "DANH THỨ",
+    "hiragana": "めいし",
+    "meaning": "danh thiếp"
+  },
+  {
+    "stt": 103,
+    "kanji": "免許",
+    "han_viet": "MIỄN HỨA",
+    "hiragana": "めんきょ",
+    "meaning": "giấy phép"
+  },
+  {
+    "stt": 104,
+    "kanji": "多く",
+    "han_viet": "ĐA",
+    "hiragana": "おおく",
+    "meaning": "nhiều"
+  },
+  {
+    "stt": 105,
+    "kanji": "前半",
+    "han_viet": "TIỀN BÁN",
+    "hiragana": "ぜんはん",
+    "meaning": "Nửa đầu"
+  },
+  {
+    "stt": 106,
+    "kanji": "後半",
+    "han_viet": "HẬU BÁN",
+    "hiragana": "こうはん",
+    "meaning": "nửa sau"
+  },
+  {
+    "stt": 107,
+    "kanji": "最高",
+    "han_viet": "TỐI CAO",
+    "hiragana": "さいこう",
+    "meaning": "cao nhất, vô đối"
+  },
+  {
+    "stt": 108,
+    "kanji": "最低",
+    "han_viet": "TỐI ĐÊ",
+    "hiragana": "さいてい",
+    "meaning": "tối thiểu, hèn hạ, bỉ ổi"
+  },
+  {
+    "stt": 109,
+    "kanji": "最初",
+    "han_viet": "TỐI SƠ",
+    "hiragana": "さいしょ",
+    "meaning": "đầu tiên, trước hết, ban đầu"
+  },
+  {
+    "stt": 110,
+    "kanji": "最後",
+    "han_viet": "TỐI HẬU",
+    "hiragana": "さいご",
+    "meaning": "cuối cùng, kết cục"
+  },
+  {
+    "stt": 111,
+    "kanji": "自動",
+    "han_viet": "TỰ ĐỘNG",
+    "hiragana": "じどう",
+    "meaning": "tự động"
+  },
+  {
+    "stt": 112,
+    "kanji": "種類",
+    "han_viet": "CHỦNG LOẠI",
+    "hiragana": "しゅるい",
+    "meaning": "loại, kiểu"
+  },
+  {
+    "stt": 113,
+    "kanji": "性格",
+    "han_viet": "TÍNH CÁCH",
+    "hiragana": "せいかく",
+    "meaning": "tính cách"
+  },
+  {
+    "stt": 114,
+    "kanji": "性質",
+    "han_viet": "TÍNH CHẤT",
+    "hiragana": "せいしつ",
+    "meaning": "tính chất, đặc trưng, đặc điểm"
+  },
+  {
+    "stt": 115,
+    "kanji": "順番",
+    "han_viet": "THUẬN PHIÊN",
+    "hiragana": "じゅんばん",
+    "meaning": "thứ tự, tuần tự"
+  },
+  {
+    "stt": 116,
+    "kanji": "番",
+    "han_viet": "PHIÊN",
+    "hiragana": "ばん",
+    "meaning": "lượt, lần, phiên"
+  },
+  {
+    "stt": 117,
+    "kanji": "方法",
+    "han_viet": "PHƯƠNG PHÁP",
+    "hiragana": "ほうほう",
+    "meaning": "phương pháp"
+  },
+  {
+    "stt": 118,
+    "kanji": "製品",
+    "han_viet": "CHẾ PHẨM",
+    "hiragana": "せいひん",
+    "meaning": "sản phẩm"
+  },
+  {
+    "stt": 119,
+    "kanji": "値上がり",
+    "han_viet": "TRỊ THƯỢNG",
+    "hiragana": "ねあがり",
+    "meaning": "tăng giá"
+  },
+  {
+    "stt": 120,
+    "kanji": "生",
+    "han_viet": "SANH",
+    "hiragana": "なま",
+    "meaning": "Tươi, sống"
+  },
+  {
+    "stt": 121,
+    "kanji": "渇く",
+    "han_viet": "KHÁT",
+    "hiragana": "かわく",
+    "meaning": "khát"
+  },
+  {
+    "stt": 122,
+    "kanji": "嗅ぐ",
+    "han_viet": "KHỨU",
+    "hiragana": "かぐ",
+    "meaning": "ngửi, hít"
+  },
+  {
+    "stt": 123,
+    "kanji": "叩く",
+    "han_viet": "KHẤU",
+    "hiragana": "たたく",
+    "meaning": "đánh, vỗ"
+  },
+  {
+    "stt": 124,
+    "kanji": "殴る",
+    "han_viet": "ÂU",
+    "hiragana": "なぐる",
+    "meaning": "đấm"
+  },
+  {
+    "stt": 125,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "ける",
+    "meaning": "Đá, bác bỏ, rời chỗ"
+  },
+  {
+    "stt": 126,
+    "kanji": "抱く",
+    "han_viet": "BÃO",
+    "hiragana": "だく",
+    "meaning": "ôm"
+  },
+  {
+    "stt": 127,
+    "kanji": "倒れる",
+    "han_viet": "ĐẢO",
+    "hiragana": "たおれる",
+    "meaning": "đổ, ngã, ngất"
+  },
+  {
+    "stt": 128,
+    "kanji": "倒す",
+    "han_viet": "ĐẢO",
+    "hiragana": "たおす",
+    "meaning": "làm đổ, hạ gục"
+  },
+  {
+    "stt": 129,
+    "kanji": "起きる",
+    "han_viet": "KHỞI",
+    "hiragana": "おきる",
+    "meaning": "thức dậy"
+  },
+  {
+    "stt": 130,
+    "kanji": "起こす",
+    "han_viet": "KHỞI",
+    "hiragana": "おこす",
+    "meaning": "đánh thức, gây ra"
+  },
+  {
+    "stt": 131,
+    "kanji": "尋ねる",
+    "han_viet": "TẦM",
+    "hiragana": "たずねる",
+    "meaning": "Thăm hỏi"
+  },
+  {
+    "stt": 132,
+    "kanji": "呼ぶ",
+    "han_viet": "HÔ",
+    "hiragana": "よぶ",
+    "meaning": "gọi, mời"
+  },
+  {
+    "stt": 133,
+    "kanji": "叫ぶ",
+    "han_viet": "KHIẾU",
+    "hiragana": "さけぶ",
+    "meaning": "gào to"
+  },
+  {
+    "stt": 134,
+    "kanji": "黙る",
+    "han_viet": "MẶC",
+    "hiragana": "だまる",
+    "meaning": "im lặng"
+  },
+  {
+    "stt": 135,
+    "kanji": "飼う",
+    "han_viet": "TỰ",
+    "hiragana": "かう",
+    "meaning": "nuôi"
+  },
+  {
+    "stt": 136,
+    "kanji": "数える",
+    "han_viet": "SỐ",
+    "hiragana": "かぞえる",
+    "meaning": "đếm, tính"
+  },
+  {
+    "stt": 137,
+    "kanji": "乾く",
+    "han_viet": "KIỀN",
+    "hiragana": "かわく",
+    "meaning": "khô"
+  },
+  {
+    "stt": 138,
+    "kanji": "乾かす",
+    "han_viet": "KIỀN",
+    "hiragana": "かわかす",
+    "meaning": "làm khô"
+  },
+  {
+    "stt": 139,
+    "kanji": "畳む",
+    "han_viet": "ĐIỆP",
+    "hiragana": "たたむ",
+    "meaning": "gấp, gập"
+  },
+  {
+    "stt": 140,
+    "kanji": "誘う",
+    "han_viet": "DỤ",
+    "hiragana": "さそう",
+    "meaning": "mời, rủ"
+  },
+  {
+    "stt": 141,
+    "kanji": "おごる",
+    "han_viet": "",
+    "hiragana": "おごる",
+    "meaning": "chiêu đãi"
+  },
+  {
+    "stt": 142,
+    "kanji": "預かる",
+    "han_viet": "DỰ",
+    "hiragana": "あずかる",
+    "meaning": "chăm sóc, nhận giữ"
+  },
+  {
+    "stt": 143,
+    "kanji": "預ける",
+    "han_viet": "DỰ",
+    "hiragana": "あずける",
+    "meaning": "gửi, giao phó (cho ai đó)"
+  },
+  {
+    "stt": 144,
+    "kanji": "決まる",
+    "han_viet": "QUYẾT",
+    "hiragana": "きまる",
+    "meaning": "được quyết định"
+  },
+  {
+    "stt": 145,
+    "kanji": "決める",
+    "han_viet": "QUYẾT",
+    "hiragana": "きめる",
+    "meaning": "quyết định"
+  },
+  {
+    "stt": 146,
+    "kanji": "写る",
+    "han_viet": "TẢ",
+    "hiragana": "うつる",
+    "meaning": "chụp, chép bài"
+  },
+  {
+    "stt": 147,
+    "kanji": "写す",
+    "han_viet": "TẢ",
+    "hiragana": "うつす",
+    "meaning": "chụp, sao chép"
+  },
+  {
+    "stt": 148,
+    "kanji": "思い出す",
+    "han_viet": "TƯ XUẤT",
+    "hiragana": "おもいだす",
+    "meaning": "nhớ lại, hồi ức, nhắc nhở"
+  },
+  {
+    "stt": 149,
+    "kanji": "教わる",
+    "han_viet": "GIÁO",
+    "hiragana": "おそわる",
+    "meaning": "được dạy"
+  },
+  {
+    "stt": 150,
+    "kanji": "申し込む",
+    "han_viet": "THÂN",
+    "hiragana": "もうしこむ",
+    "meaning": "đăng ký"
+  },
+  {
+    "stt": 151,
+    "kanji": "断る",
+    "han_viet": "ĐOẠN",
+    "hiragana": "ことわる",
+    "meaning": "từ chối"
+  },
+  {
+    "stt": 152,
+    "kanji": "見つかる",
+    "han_viet": "KIẾN",
+    "hiragana": "みつかる",
+    "meaning": "được tìm thấy, được phát hiện"
+  },
+  {
+    "stt": 153,
+    "kanji": "見つける",
+    "han_viet": "KIẾN",
+    "hiragana": "みつける",
+    "meaning": "tìm thấy, phát hiện"
+  },
+  {
+    "stt": 154,
+    "kanji": "捕まる",
+    "han_viet": "BỘ",
+    "hiragana": "つかまる",
+    "meaning": "bị bắt, bám vào, giữ lấy"
+  },
+  {
+    "stt": 155,
+    "kanji": "捕まえる",
+    "han_viet": "BỘ",
+    "hiragana": "つかまえる",
+    "meaning": "bắt giữ, bắt lấy, tóm lấy"
+  },
+  {
+    "stt": 156,
+    "kanji": "乗る",
+    "han_viet": "THỪA",
+    "hiragana": "のる",
+    "meaning": "leo lên, cưỡi"
+  },
+  {
+    "stt": 157,
+    "kanji": "乗せる",
+    "han_viet": "THỪA",
+    "hiragana": "のせる",
+    "meaning": "Chất lên, chồng lên"
+  },
+  {
+    "stt": 158,
+    "kanji": "降りる",
+    "han_viet": "HÀNG",
+    "hiragana": "おりる",
+    "meaning": "xuống, rút lui"
+  },
+  {
+    "stt": 159,
+    "kanji": "降ろす",
+    "han_viet": "HÀNG",
+    "hiragana": "おろす",
+    "meaning": "cho xuống"
+  },
+  {
+    "stt": 160,
+    "kanji": "直る",
+    "han_viet": "TRỰC",
+    "hiragana": "なおる",
+    "meaning": "được sửa, được cải thiện"
+  },
+  {
+    "stt": 161,
+    "kanji": "直す",
+    "han_viet": "TRỰC",
+    "hiragana": "なおす",
+    "meaning": "sửa"
+  },
+  {
+    "stt": 162,
+    "kanji": "治る",
+    "han_viet": "TRÌ",
+    "hiragana": "なおる",
+    "meaning": "hồi phục, khỏe, khỏi"
+  },
+  {
+    "stt": 163,
+    "kanji": "治す",
+    "han_viet": "TRÌ",
+    "hiragana": "なおす",
+    "meaning": "cứu chữa, trị"
+  },
+  {
+    "stt": 164,
+    "kanji": "亡くなる",
+    "han_viet": "VONG",
+    "hiragana": "なくなる",
+    "meaning": "chết, mất"
+  },
+  {
+    "stt": 165,
+    "kanji": "亡くす",
+    "han_viet": "VONG",
+    "hiragana": "なくす",
+    "meaning": "mất, đánh mất"
+  },
+  {
+    "stt": 166,
+    "kanji": "生まれる",
+    "han_viet": "SANH",
+    "hiragana": "うまれる",
+    "meaning": "được sinh ra, được tạo ra"
+  },
+  {
+    "stt": 167,
+    "kanji": "生む",
+    "han_viet": "SANH",
+    "hiragana": "うむ",
+    "meaning": "Sinh đẻ"
+  },
+  {
+    "stt": 168,
+    "kanji": "出会う",
+    "han_viet": "XUẤT HỘI",
+    "hiragana": "であう",
+    "meaning": "Tình cờ gặp"
+  },
+  {
+    "stt": 169,
+    "kanji": "訪ねる",
+    "han_viet": "PHỎNG",
+    "hiragana": "たずねる",
+    "meaning": "thăm"
+  },
+  {
+    "stt": 170,
+    "kanji": "付き合う",
+    "han_viet": "PHÓ HỢP",
+    "hiragana": "つきあう",
+    "meaning": "hẹn hò, đi cùng, kết bạn"
+  },
+  {
+    "stt": 171,
+    "kanji": "効く",
+    "han_viet": "HIỆU",
+    "hiragana": "きく",
+    "meaning": "có hiệu quả, có tác dụng"
+  },
+  {
+    "stt": 172,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "はやる",
+    "meaning": "phổ biến, thịnh hành"
+  },
+  {
+    "stt": 173,
+    "kanji": "経つ",
+    "han_viet": "KINH",
+    "hiragana": "たつ",
+    "meaning": "Trải qua, trôi qua"
+  },
+  {
+    "stt": 174,
+    "kanji": "間に合う",
+    "han_viet": "GIAN HỢP",
+    "hiragana": "まにあう",
+    "meaning": "kịp, vừa đủ"
+  },
+  {
+    "stt": 175,
+    "kanji": "間に合わせる",
+    "han_viet": "GIAN HỢP",
+    "hiragana": "まにあわせる",
+    "meaning": "làm cho kịp giờ"
+  },
+  {
+    "stt": 176,
+    "kanji": "通う",
+    "han_viet": "THÔNG",
+    "hiragana": "かよう",
+    "meaning": "đi đi về về, hiểu (cảm giác)"
+  },
+  {
+    "stt": 177,
+    "kanji": "込む",
+    "han_viet": "VU",
+    "hiragana": "こむ",
+    "meaning": "đông"
+  },
+  {
+    "stt": 178,
+    "kanji": "すれ違う",
+    "han_viet": "VI",
+    "hiragana": "すれちがう",
+    "meaning": "lướt qua, ngang qua"
+  },
+  {
+    "stt": 179,
+    "kanji": "掛かる",
+    "han_viet": "QUẢI",
+    "hiragana": "かかる",
+    "meaning": "Tốn, mất (thời gian...)"
+  },
+  {
+    "stt": 180,
+    "kanji": "掛ける",
+    "han_viet": "QUẢI",
+    "hiragana": "かける",
+    "meaning": "Treo, mặc, đeo, gọi điện, phủ, khóa cửa, đạp, đóng..."
+  },
+  {
+    "stt": 181,
+    "kanji": "動く",
+    "han_viet": "ĐỘNG",
+    "hiragana": "うごく",
+    "meaning": "hoạt động, di chuyển, biến đổi"
+  },
+  {
+    "stt": 182,
+    "kanji": "動かす",
+    "han_viet": "ĐỘNG",
+    "hiragana": "うごかす",
+    "meaning": "Làm di chuyển, lay động"
+  },
+  {
+    "stt": 183,
+    "kanji": "離れる",
+    "han_viet": "LI",
+    "hiragana": "はなれる",
+    "meaning": "Tách ra, tuột khỏi"
+  },
+  {
+    "stt": 184,
+    "kanji": "離す",
+    "han_viet": "LI",
+    "hiragana": "はなす",
+    "meaning": "tránh ra, buông ra, cởi bỏ..."
+  },
+  {
+    "stt": 185,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "ぶつかる",
+    "meaning": "Va chạm, chạm đến, trùng..."
+  },
+  {
+    "stt": 186,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "ぶつける",
+    "meaning": "đâm"
+  },
+  {
+    "stt": 187,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "こぼれる",
+    "meaning": "Bị đổ, bị chảy, bị rơi"
+  },
+  {
+    "stt": 188,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "こぼす",
+    "meaning": "Làm tràn, đánh đổ"
+  },
+  {
+    "stt": 189,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "ふく",
+    "meaning": "Lau chùi"
+  },
+  {
+    "stt": 190,
+    "kanji": "片付く",
+    "han_viet": "PHIẾN PHÓ",
+    "hiragana": "かたづく",
+    "meaning": "được dọn dẹp, sắp xếp"
+  },
+  {
+    "stt": 191,
+    "kanji": "片付ける",
+    "han_viet": "PHIẾN PHÓ",
+    "hiragana": "かたづける",
+    "meaning": "Làm sạch, hoàn thành"
+  },
+  {
+    "stt": 192,
+    "kanji": "包む",
+    "han_viet": "BAO",
+    "hiragana": "つつむ",
+    "meaning": "bọc, gói"
+  },
+  {
+    "stt": 193,
+    "kanji": "張る",
+    "han_viet": "TRƯƠNG",
+    "hiragana": "はる",
+    "meaning": "Dán, căng ra.."
+  },
+  {
+    "stt": 194,
+    "kanji": "無くなる",
+    "han_viet": "VÔ",
+    "hiragana": "なくなる",
+    "meaning": "mất, hết"
+  },
+  {
+    "stt": 195,
+    "kanji": "無くす",
+    "han_viet": "VÔ",
+    "hiragana": "なくす",
+    "meaning": "Làm mất, bỏ ra, loại ra"
+  },
+  {
+    "stt": 196,
+    "kanji": "足りる",
+    "han_viet": "TÚC",
+    "hiragana": "たりる",
+    "meaning": "đủ"
+  },
+  {
+    "stt": 197,
+    "kanji": "残る",
+    "han_viet": "TÀN",
+    "hiragana": "のこる",
+    "meaning": "Còn thừa, còn lại"
+  },
+  {
+    "stt": 198,
+    "kanji": "残す",
+    "han_viet": "TÀN",
+    "hiragana": "のこす",
+    "meaning": "Để lại, chừa lại, đề dành"
+  },
+  {
+    "stt": 199,
+    "kanji": "腐る",
+    "han_viet": "HỦ",
+    "hiragana": "くさる",
+    "meaning": "thối, hỏng"
+  },
+  {
+    "stt": 200,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "むける",
+    "meaning": "bị lột, bị bóc"
+  },
+  {
+    "stt": 201,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "むく",
+    "meaning": "lột vỏ, bóc ra"
+  },
+  {
+    "stt": 202,
+    "kanji": "滑る",
+    "han_viet": "HOẠT",
+    "hiragana": "すべる",
+    "meaning": "trượt, trơn, thi rớt, lỡ tay"
+  },
+  {
+    "stt": 203,
+    "kanji": "積もる",
+    "han_viet": "TÍCH",
+    "hiragana": "つもる",
+    "meaning": "tích tụ, chất đống"
+  },
+  {
+    "stt": 204,
+    "kanji": "積む",
+    "han_viet": "TÍCH",
+    "hiragana": "つむ",
+    "meaning": "chất, xếp, tích lũy"
+  },
+  {
+    "stt": 205,
+    "kanji": "空く",
+    "han_viet": "KHÔNG",
+    "hiragana": "あく",
+    "meaning": "trống, vắng"
+  },
+  {
+    "stt": 206,
+    "kanji": "空ける",
+    "han_viet": "KHÔNG",
+    "hiragana": "あける",
+    "meaning": "Làm rỗng"
+  },
+  {
+    "stt": 207,
+    "kanji": "下がる",
+    "han_viet": "HẠ",
+    "hiragana": "さがる",
+    "meaning": "Hạ xuống, lùi về, tránh xa"
+  },
+  {
+    "stt": 208,
+    "kanji": "下げる",
+    "han_viet": "HẠ",
+    "hiragana": "さげる",
+    "meaning": "giảm, treo, cúi đầu"
+  },
+  {
+    "stt": 209,
+    "kanji": "冷える",
+    "han_viet": "LÃNH",
+    "hiragana": "ひえる",
+    "meaning": "bị lạnh, cóng"
+  },
+  {
+    "stt": 210,
+    "kanji": "冷やす",
+    "han_viet": "LÃNH",
+    "hiragana": "ひやす",
+    "meaning": "làm lạnh"
+  },
+  {
+    "stt": 211,
+    "kanji": "冷める",
+    "han_viet": "LÃNH",
+    "hiragana": "さめる",
+    "meaning": "bị nguội"
+  },
+  {
+    "stt": 212,
+    "kanji": "冷ます",
+    "han_viet": "LÃNH",
+    "hiragana": "さます",
+    "meaning": "làm nguội"
+  },
+  {
+    "stt": 213,
+    "kanji": "燃える",
+    "han_viet": "NHIÊN",
+    "hiragana": "もえる",
+    "meaning": "Cháy, nóng lên, phấn khích"
+  },
+  {
+    "stt": 214,
+    "kanji": "燃やす",
+    "han_viet": "NHIÊN",
+    "hiragana": "もやす",
+    "meaning": "đốt, nhiệt huyết"
+  },
+  {
+    "stt": 215,
+    "kanji": "沸く",
+    "han_viet": "PHÍ",
+    "hiragana": "わく",
+    "meaning": "Sôi, nảy ra, vang lên"
+  },
+  {
+    "stt": 216,
+    "kanji": "沸かす",
+    "han_viet": "PHÍ",
+    "hiragana": "わかす",
+    "meaning": "đun sôi"
+  },
+  {
+    "stt": 217,
+    "kanji": "鳴る",
+    "han_viet": "MINH",
+    "hiragana": "なる",
+    "meaning": "kêu"
+  },
+  {
+    "stt": 218,
+    "kanji": "鳴らす",
+    "han_viet": "MINH",
+    "hiragana": "ならす",
+    "meaning": "bấm (chuông, còi)"
+  },
+  {
+    "stt": 219,
+    "kanji": "役立つ",
+    "han_viet": "DỊCH LẬP",
+    "hiragana": "やくだつ",
+    "meaning": "hữu ích, giúp ích"
+  },
+  {
+    "stt": 220,
+    "kanji": "役立てる",
+    "han_viet": "DỊCH LẬP",
+    "hiragana": "やくだてる",
+    "meaning": "sử dụng, thiết lập, có ích"
+  },
+  {
+    "stt": 221,
+    "kanji": "飾り",
+    "han_viet": "SỨC",
+    "hiragana": "かざり",
+    "meaning": "trang trí"
+  },
+  {
+    "stt": 222,
+    "kanji": "遊び",
+    "han_viet": "DU",
+    "hiragana": "あそび",
+    "meaning": "chơi"
+  },
+  {
+    "stt": 223,
+    "kanji": "集まり",
+    "han_viet": "TẬP",
+    "hiragana": "あつまり",
+    "meaning": "tập hợp, tụ họp, nhóm"
+  },
+  {
+    "stt": 224,
+    "kanji": "教え",
+    "han_viet": "GIÁO",
+    "hiragana": "おしえ",
+    "meaning": "dạy, chỉ bảo"
+  },
+  {
+    "stt": 225,
+    "kanji": "踊り",
+    "han_viet": "DŨNG",
+    "hiragana": "おどり",
+    "meaning": "nhảy"
+  },
+  {
+    "stt": 226,
+    "kanji": "思い",
+    "han_viet": "TƯ",
+    "hiragana": "おもい",
+    "meaning": "suy nghĩ, cảm thấy"
+  },
+  {
+    "stt": 227,
+    "kanji": "考え",
+    "han_viet": "KHẢO",
+    "hiragana": "かんがえ",
+    "meaning": "suy nghĩ, ý tưởng, ý định"
+  },
+  {
+    "stt": 228,
+    "kanji": "片づけ",
+    "han_viet": "PHIẾN",
+    "hiragana": "かたづけ",
+    "meaning": "ngăn nắp, dọn dẹp"
+  },
+  {
+    "stt": 229,
+    "kanji": "手伝い",
+    "han_viet": "THỦ TRUYỀN",
+    "hiragana": "てつだい",
+    "meaning": "giúp đỡ"
+  },
+  {
+    "stt": 230,
+    "kanji": "働き",
+    "han_viet": "ĐỘNG",
+    "hiragana": "はたらき",
+    "meaning": "hoạt động, chức năng"
+  },
+  {
+    "stt": 231,
+    "kanji": "決まり",
+    "han_viet": "QUYẾT",
+    "hiragana": "きまり",
+    "meaning": "luật lệ, quy định"
+  },
+  {
+    "stt": 232,
+    "kanji": "騒ぎ",
+    "han_viet": "TAO",
+    "hiragana": "さわぎ",
+    "meaning": "ồn ào, om xòm, náo nhiệt"
+  },
+  {
+    "stt": 233,
+    "kanji": "知らせ",
+    "han_viet": "TRI",
+    "hiragana": "しらせ",
+    "meaning": "thông báo"
+  },
+  {
+    "stt": 234,
+    "kanji": "頼み",
+    "han_viet": "LẠI",
+    "hiragana": "たのみ",
+    "meaning": "thỉnh cầu, làm ơn"
+  },
+  {
+    "stt": 235,
+    "kanji": "疲れ",
+    "han_viet": "BÌ",
+    "hiragana": "つかれ",
+    "meaning": "mệt mỏi"
+  },
+  {
+    "stt": 236,
+    "kanji": "違い",
+    "han_viet": "VI",
+    "hiragana": "ちがい",
+    "meaning": "khác nhau"
+  },
+  {
+    "stt": 237,
+    "kanji": "始め",
+    "han_viet": "THỦY",
+    "hiragana": "はじめ",
+    "meaning": "Đầu tiên"
+  },
+  {
+    "stt": 238,
+    "kanji": "続き",
+    "han_viet": "TỤC",
+    "hiragana": "つづき",
+    "meaning": "tiếp tục, tiếp theo"
+  },
+  {
+    "stt": 239,
+    "kanji": "暮れ",
+    "han_viet": "MỘ",
+    "hiragana": "くれ",
+    "meaning": "cuối (mùa, năm...), hoàng hôn, kết thúc"
+  },
+  {
+    "stt": 240,
+    "kanji": "行き",
+    "han_viet": "HÀNH",
+    "hiragana": "いき",
+    "meaning": "đi"
+  },
+  {
+    "stt": 241,
+    "kanji": "帰り",
+    "han_viet": "QUY",
+    "hiragana": "かえり",
+    "meaning": "trở về"
+  },
+  {
+    "stt": 242,
+    "kanji": "急ぎ",
+    "han_viet": "CẤP",
+    "hiragana": "いそぎ",
+    "meaning": "khẩn cấp, vội vàng"
+  },
+  {
+    "stt": 243,
+    "kanji": "遅れ",
+    "han_viet": "TRÌ",
+    "hiragana": "おくれ",
+    "meaning": "Muộn, chậm trễ"
+  },
+  {
+    "stt": 244,
+    "kanji": "貸し",
+    "han_viet": "THẢI",
+    "hiragana": "かし",
+    "meaning": "cho mượn, cho vay"
+  },
+  {
+    "stt": 245,
+    "kanji": "借り",
+    "han_viet": "TÁ",
+    "hiragana": "かり",
+    "meaning": "mượn, nợ, vay, thuê"
+  },
+  {
+    "stt": 246,
+    "kanji": "勝ち",
+    "han_viet": "THẮNG",
+    "hiragana": "かち",
+    "meaning": "Chiến thắng"
+  },
+  {
+    "stt": 247,
+    "kanji": "負け",
+    "han_viet": "PHỤ",
+    "hiragana": "まけ",
+    "meaning": "thua"
+  },
+  {
+    "stt": 248,
+    "kanji": "迎え",
+    "han_viet": "NGHÊNH",
+    "hiragana": "むかえ",
+    "meaning": "đón"
+  },
+  {
+    "stt": 249,
+    "kanji": "始まり",
+    "han_viet": "THỦY",
+    "hiragana": "はじまり",
+    "meaning": "bắt đầu"
+  },
+  {
+    "stt": 250,
+    "kanji": "終わり",
+    "han_viet": "CHUNG",
+    "hiragana": "おわり",
+    "meaning": "kết thúc"
+  },
+  {
+    "stt": 251,
+    "kanji": "戻り",
+    "han_viet": "LỆ",
+    "hiragana": "もどり",
+    "meaning": "trở về, trả lại"
+  },
+  {
+    "stt": 252,
+    "kanji": "別れ",
+    "han_viet": "BIỆT",
+    "hiragana": "わかれ",
+    "meaning": "chia ly, vĩnh biệt, chia tay"
+  },
+  {
+    "stt": 253,
+    "kanji": "喜び",
+    "han_viet": "HỈ",
+    "hiragana": "よろこび",
+    "meaning": "hớn hở, vui vẻ, hân hạnh"
+  },
+  {
+    "stt": 254,
+    "kanji": "楽しみ",
+    "han_viet": "LẠC",
+    "hiragana": "たのしみ",
+    "meaning": "niềm vui, mong đợi"
+  },
+  {
+    "stt": 255,
+    "kanji": "笑い",
+    "han_viet": "TIẾU",
+    "hiragana": "わらい",
+    "meaning": "cười"
+  },
+  {
+    "stt": 256,
+    "kanji": "驚き",
+    "han_viet": "KINH",
+    "hiragana": "おどろき",
+    "meaning": "Bất ngờ, ngạc nhiên"
+  },
+  {
+    "stt": 257,
+    "kanji": "怒り",
+    "han_viet": "NỘ",
+    "hiragana": "いかり",
+    "meaning": "giận dữ, nổi nóng"
+  },
+  {
+    "stt": 258,
+    "kanji": "悲しみ",
+    "han_viet": "BI",
+    "hiragana": "かなしみ",
+    "meaning": "buồn bã, đau thương"
+  },
+  {
+    "stt": 259,
+    "kanji": "幸せな",
+    "han_viet": "HẠNH",
+    "hiragana": "しあわせな",
+    "meaning": "hạnh phúc"
+  },
+  {
+    "stt": 260,
+    "kanji": "得意な",
+    "han_viet": "ĐẮC Ý",
+    "hiragana": "とくいな",
+    "meaning": "mạnh, giỏi, sở trường"
+  },
+  {
+    "stt": 261,
+    "kanji": "苦手な",
+    "han_viet": "KHỔ THỦ",
+    "hiragana": "にがてな",
+    "meaning": "yếu, kém, không thích, dở tệ"
+  },
+  {
+    "stt": 262,
+    "kanji": "熱心な",
+    "han_viet": "NHIỆT TÂM",
+    "hiragana": "ねっしんな",
+    "meaning": "Nhiệt tình"
+  },
+  {
+    "stt": 263,
+    "kanji": "夢中な",
+    "han_viet": "MỘNG TRUNG",
+    "hiragana": "むちゅうな",
+    "meaning": "chú tâm"
+  },
+  {
+    "stt": 264,
+    "kanji": "退屈な",
+    "han_viet": "THỐI KHUẤT",
+    "hiragana": "たいくつな",
+    "meaning": "chán"
+  },
+  {
+    "stt": 265,
+    "kanji": "健康な",
+    "han_viet": "KIỆN KHANG",
+    "hiragana": "けんこうな",
+    "meaning": "khỏe mạnh, sức khỏe"
+  },
+  {
+    "stt": 266,
+    "kanji": "苦しい",
+    "han_viet": "KHỔ",
+    "hiragana": "くるしい",
+    "meaning": "cực khổ"
+  },
+  {
+    "stt": 267,
+    "kanji": "平気な",
+    "han_viet": "BÌNH KHÍ",
+    "hiragana": "へいきな",
+    "meaning": "bình thản ung dung"
+  },
+  {
+    "stt": 268,
+    "kanji": "悔しい",
+    "han_viet": "HỐI",
+    "hiragana": "くやしい",
+    "meaning": "Bực bội, cay cú, khó chịu, tiếc nuối..."
+  },
+  {
+    "stt": 269,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "うらやましい",
+    "meaning": "ghen ty"
+  },
+  {
+    "stt": 270,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "かゆい",
+    "meaning": "ngứa"
+  },
+  {
+    "stt": 271,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "おとなしい",
+    "meaning": "trầm tính, ít nói"
+  },
+  {
+    "stt": 272,
+    "kanji": "我慢強い",
+    "han_viet": "NGÃ MẠN CƯỜNG",
+    "hiragana": "がまんづよい",
+    "meaning": "chịu đựng giỏi"
+  },
+  {
+    "stt": 273,
+    "kanji": "正直な",
+    "han_viet": "CHÁNH TRỰC",
+    "hiragana": "しょうじきな",
+    "meaning": "chính trực, thẳng thắn, thành thực"
+  },
+  {
+    "stt": 274,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "けちな",
+    "meaning": "kẹt xỉ, ki bo"
+  },
+  {
+    "stt": 275,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "わがままな",
+    "meaning": "ích kỷ, cứng đầu"
+  },
+  {
+    "stt": 276,
+    "kanji": "積極的な",
+    "han_viet": "TÍCH CỰC ĐÍCH",
+    "hiragana": "せっきょくてきな",
+    "meaning": "tích cực"
+  },
+  {
+    "stt": 277,
+    "kanji": "消極的な",
+    "han_viet": "TIÊU CỰC ĐÍCH",
+    "hiragana": "しょうきょくてきな",
+    "meaning": "tiêu cực, bi quan"
+  },
+  {
+    "stt": 278,
+    "kanji": "満足な",
+    "han_viet": "MÃN TÚC",
+    "hiragana": "まんぞくな",
+    "meaning": "thỏa mãn, hài lòng"
+  },
+  {
+    "stt": 279,
+    "kanji": "不満な",
+    "han_viet": "BẤT MÃN",
+    "hiragana": "ふまんな",
+    "meaning": "bất mãn"
+  },
+  {
+    "stt": 280,
+    "kanji": "不安な",
+    "han_viet": "BẤT AN",
+    "hiragana": "ふあんな",
+    "meaning": "bất an, lo lắng"
+  },
+  {
+    "stt": 281,
+    "kanji": "大変な",
+    "han_viet": "ĐẠI BIẾN",
+    "hiragana": "たいへんな",
+    "meaning": "Rất, khó khăn, cực"
+  },
+  {
+    "stt": 282,
+    "kanji": "無理な",
+    "han_viet": "VÔ LÍ",
+    "hiragana": "むりな",
+    "meaning": "vô lý, quá sức, không thể"
+  },
+  {
+    "stt": 283,
+    "kanji": "不注意な",
+    "han_viet": "BẤT CHÚ Ý",
+    "hiragana": "ふちゅういな",
+    "meaning": "Cẩu thả, bất cẩn"
+  },
+  {
+    "stt": 284,
+    "kanji": "楽な",
+    "han_viet": "LẠC",
+    "hiragana": "らくな",
+    "meaning": "thoải mái, nhàn hạ"
+  },
+  {
+    "stt": 285,
+    "kanji": "面倒な",
+    "han_viet": "DIỆN ĐẢO",
+    "hiragana": "めんどうな",
+    "meaning": "phiền phức, phức tạp"
+  },
+  {
+    "stt": 286,
+    "kanji": "失礼な",
+    "han_viet": "THẤT LỄ",
+    "hiragana": "しつれいな",
+    "meaning": "thất lễ, thô lỗ"
+  },
+  {
+    "stt": 287,
+    "kanji": "当然な",
+    "han_viet": "ĐƯƠNG NHIÊN",
+    "hiragana": "とうぜんな",
+    "meaning": "đương nhiên"
+  },
+  {
+    "stt": 288,
+    "kanji": "意外な",
+    "han_viet": "Ý NGOẠI",
+    "hiragana": "いがいな",
+    "meaning": "không ngờ, bất ngờ"
+  },
+  {
+    "stt": 289,
+    "kanji": "結構な",
+    "han_viet": "KẾT CẤU",
+    "hiragana": "けっこうな",
+    "meaning": "tốt, đủ, đẹp, tuyệt vời, khá là ~"
+  },
+  {
+    "stt": 290,
+    "kanji": "派手な",
+    "han_viet": "PHÁI THỦ",
+    "hiragana": "はでな",
+    "meaning": "lòe loẹt, màu mè"
+  },
+  {
+    "stt": 291,
+    "kanji": "地味な",
+    "han_viet": "ĐỊA VỊ",
+    "hiragana": "じみな",
+    "meaning": "giản dị, đơn điệu"
+  },
+  {
+    "stt": 292,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "おしゃれな",
+    "meaning": "Sành điệu, sang chảnh, mốt"
+  },
+  {
+    "stt": 293,
+    "kanji": "変な",
+    "han_viet": "BIẾN",
+    "hiragana": "へんな",
+    "meaning": "lạ, kỳ"
+  },
+  {
+    "stt": 294,
+    "kanji": "不思議な",
+    "han_viet": "BẤT TƯ NGHỊ",
+    "hiragana": "ふしぎな",
+    "meaning": "Kì lạ, ảo diệu, bí ẩn"
+  },
+  {
+    "stt": 295,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "ましな",
+    "meaning": "tốt lên"
+  },
+  {
+    "stt": 296,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "むだな",
+    "meaning": "lãng phí, vô ích"
+  },
+  {
+    "stt": 297,
+    "kanji": "自由な",
+    "han_viet": "TỰ DO",
+    "hiragana": "じゆうな",
+    "meaning": "tự do"
+  },
+  {
+    "stt": 298,
+    "kanji": "不自由な",
+    "han_viet": "BẤT TỰ DO",
+    "hiragana": "ふじゆうな",
+    "meaning": "tàn tật, thiếu thốn"
+  },
+  {
+    "stt": 299,
+    "kanji": "温まる",
+    "han_viet": "ÔN",
+    "hiragana": "あたたまる",
+    "meaning": "trở nên ấm hơn"
+  },
+  {
+    "stt": 300,
+    "kanji": "温める",
+    "han_viet": "ÔN",
+    "hiragana": "あたためる",
+    "meaning": "Làm ấm, làm nóng"
+  },
+  {
+    "stt": 301,
+    "kanji": "高まる",
+    "han_viet": "CAO",
+    "hiragana": "たかまる",
+    "meaning": "Hưng phấn, tăng lên"
+  },
+  {
+    "stt": 302,
+    "kanji": "高める",
+    "han_viet": "CAO",
+    "hiragana": "たかめる",
+    "meaning": "Nâng cao, đề cao"
+  },
+  {
+    "stt": 303,
+    "kanji": "強まる",
+    "han_viet": "CƯỜNG",
+    "hiragana": "つよまる",
+    "meaning": "mạnh lên"
+  },
+  {
+    "stt": 304,
+    "kanji": "強める",
+    "han_viet": "CƯỜNG",
+    "hiragana": "つよめる",
+    "meaning": "làm mạnh lên, tăng cường"
+  },
+  {
+    "stt": 305,
+    "kanji": "弱まる",
+    "han_viet": "NHƯỢC",
+    "hiragana": "よわまる",
+    "meaning": "yếu đi, giảm"
+  },
+  {
+    "stt": 306,
+    "kanji": "弱める",
+    "han_viet": "NHƯỢC",
+    "hiragana": "よわめる",
+    "meaning": "làm suy yếu"
+  },
+  {
+    "stt": 307,
+    "kanji": "広まる",
+    "han_viet": "QUẢNG",
+    "hiragana": "ひろまる",
+    "meaning": "Lan rộng, phổ biến"
+  },
+  {
+    "stt": 308,
+    "kanji": "広める",
+    "han_viet": "QUẢNG",
+    "hiragana": "ひろめる",
+    "meaning": "làm rộng ra, loan tin, tuyên truyền"
+  },
+  {
+    "stt": 309,
+    "kanji": "深まる",
+    "han_viet": "THÂM",
+    "hiragana": "ふかまる",
+    "meaning": "sâu sắc, uyên thâm, sâu thêm"
+  },
+  {
+    "stt": 310,
+    "kanji": "深める",
+    "han_viet": "THÂM",
+    "hiragana": "ふかめる",
+    "meaning": "làm sâu thêm, thắt chặt"
+  },
+  {
+    "stt": 311,
+    "kanji": "世話",
+    "han_viet": "THẾ THOẠI",
+    "hiragana": "せわ",
+    "meaning": "chăm sóc"
+  },
+  {
+    "stt": 312,
+    "kanji": "家庭",
+    "han_viet": "GIA ĐÌNH",
+    "hiragana": "かてい",
+    "meaning": "gia đình"
+  },
+  {
+    "stt": 313,
+    "kanji": "協力",
+    "han_viet": "HIỆP LỰC",
+    "hiragana": "きょうりょく",
+    "meaning": "Chung sức, hợp tác"
+  },
+  {
+    "stt": 314,
+    "kanji": "感謝",
+    "han_viet": "CẢM TẠ",
+    "hiragana": "かんしゃ",
+    "meaning": "cảm tạ, biết ơn"
+  },
+  {
+    "stt": 315,
+    "kanji": "お礼",
+    "han_viet": "LỄ",
+    "hiragana": "おれい",
+    "meaning": "Cảm ơn"
+  },
+  {
+    "stt": 316,
+    "kanji": "お詫び",
+    "han_viet": "SÁ",
+    "hiragana": "おわび",
+    "meaning": "xin lỗi"
+  },
+  {
+    "stt": 317,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "おじぎ",
+    "meaning": "cúi chào"
+  },
+  {
+    "stt": 318,
+    "kanji": "握手",
+    "han_viet": "ÁC THỦ",
+    "hiragana": "あくしゅ",
+    "meaning": "bắt tay"
+  },
+  {
+    "stt": 319,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "いじわる",
+    "meaning": "Trêu đùa, bắt nạt"
+  },
+  {
+    "stt": 320,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "いたずら",
+    "meaning": "nghịch ngợm, đùa cợt"
+  },
+  {
+    "stt": 321,
+    "kanji": "節約",
+    "han_viet": "TIẾT ƯỚC",
+    "hiragana": "せつやく",
+    "meaning": "tiết kiệm"
+  },
+  {
+    "stt": 322,
+    "kanji": "経営",
+    "han_viet": "KINH DOANH",
+    "hiragana": "けいえい",
+    "meaning": "quản lý, điều hành"
+  },
+  {
+    "stt": 323,
+    "kanji": "反省",
+    "han_viet": "PHẢN TỈNH",
+    "hiragana": "はんせい",
+    "meaning": "Xem lại, kiểm điểm, hối lỗi"
+  },
+  {
+    "stt": 324,
+    "kanji": "実行",
+    "han_viet": "THỰC HÀNH",
+    "hiragana": "じっこう",
+    "meaning": "thực hành, thực hiện"
+  },
+  {
+    "stt": 325,
+    "kanji": "進歩",
+    "han_viet": "TIẾN BỘ",
+    "hiragana": "しんぽ",
+    "meaning": "tiến bộ"
+  },
+  {
+    "stt": 326,
+    "kanji": "変化",
+    "han_viet": "BIẾN HÓA",
+    "hiragana": "へんか",
+    "meaning": "thay đổi, biến hóa"
+  },
+  {
+    "stt": 327,
+    "kanji": "発達",
+    "han_viet": "PHÁT ĐẠT",
+    "hiragana": "はったつ",
+    "meaning": "phát triển"
+  },
+  {
+    "stt": 328,
+    "kanji": "体力",
+    "han_viet": "THỂ LỰC",
+    "hiragana": "たいりょく",
+    "meaning": "thể lực"
+  },
+  {
+    "stt": 329,
+    "kanji": "出場",
+    "han_viet": "XUẤT TRÀNG",
+    "hiragana": "しゅつじょう",
+    "meaning": "tham dự"
+  },
+  {
+    "stt": 330,
+    "kanji": "活躍",
+    "han_viet": "HOẠT DƯỢC",
+    "hiragana": "かつやく",
+    "meaning": "hoạt động, tạo thành tựu"
+  },
+  {
+    "stt": 331,
+    "kanji": "競争",
+    "han_viet": "CẠNH TRANH",
+    "hiragana": "きょうそう",
+    "meaning": "cạnh tranh"
+  },
+  {
+    "stt": 332,
+    "kanji": "応援",
+    "han_viet": "ỨNG VIÊN",
+    "hiragana": "おうえん",
+    "meaning": "cổ vũ, giúp đỡ"
+  },
+  {
+    "stt": 333,
+    "kanji": "拍手",
+    "han_viet": "PHÁCH THỦ",
+    "hiragana": "はくしゅ",
+    "meaning": "vỗ tay"
+  },
+  {
+    "stt": 334,
+    "kanji": "人気",
+    "han_viet": "NHÂN KHÍ",
+    "hiragana": "にんき",
+    "meaning": "được yêu thích, được ưa chuộng"
+  },
+  {
+    "stt": 335,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "うわさ",
+    "meaning": "tin đồn, lời đồn"
+  },
+  {
+    "stt": 336,
+    "kanji": "情報",
+    "han_viet": "TÌNH BÁO",
+    "hiragana": "じょうほう",
+    "meaning": "thông tin"
+  },
+  {
+    "stt": 337,
+    "kanji": "交換",
+    "han_viet": "GIAO HOÁN",
+    "hiragana": "こうかん",
+    "meaning": "trao đổi"
+  },
+  {
+    "stt": 338,
+    "kanji": "流行",
+    "han_viet": "LƯU HÀNH",
+    "hiragana": "りゅうこう",
+    "meaning": "trào lưu"
+  },
+  {
+    "stt": 339,
+    "kanji": "宣伝",
+    "han_viet": "TUYÊN TRUYỀN",
+    "hiragana": "せんでん",
+    "meaning": "tuyên truyền, quảng bá"
+  },
+  {
+    "stt": 340,
+    "kanji": "広告",
+    "han_viet": "QUẢNG CÁO",
+    "hiragana": "こうこく",
+    "meaning": "quảng cáo"
+  },
+  {
+    "stt": 341,
+    "kanji": "注目",
+    "han_viet": "CHÚ MỤC",
+    "hiragana": "ちゅうもく",
+    "meaning": "chú ý, thu hút"
+  },
+  {
+    "stt": 342,
+    "kanji": "通訳",
+    "han_viet": "THÔNG DỊCH",
+    "hiragana": "つうやく",
+    "meaning": "phiên dịch"
+  },
+  {
+    "stt": 343,
+    "kanji": "翻訳",
+    "han_viet": "PHIÊN DỊCH",
+    "hiragana": "ほんやく",
+    "meaning": "biên dịch"
+  },
+  {
+    "stt": 344,
+    "kanji": "伝言",
+    "han_viet": "TRUYỀN NGÔN",
+    "hiragana": "でんごん",
+    "meaning": "Lời nhắn, tin đồn"
+  },
+  {
+    "stt": 345,
+    "kanji": "報告",
+    "han_viet": "BÁO CÁO",
+    "hiragana": "ほうこく",
+    "meaning": "báo cáo"
+  },
+  {
+    "stt": 346,
+    "kanji": "録画",
+    "han_viet": "LỤC HỌA",
+    "hiragana": "ろくが",
+    "meaning": "ghi lại, thu hình"
+  },
+  {
+    "stt": 347,
+    "kanji": "混雑",
+    "han_viet": "HỖN TẠP",
+    "hiragana": "こんざつ",
+    "meaning": "hỗn tạp, đông đúc"
+  },
+  {
+    "stt": 348,
+    "kanji": "渋滞",
+    "han_viet": "SÁP TRỆ",
+    "hiragana": "じゅうたい",
+    "meaning": "tắc đường"
+  },
+  {
+    "stt": 349,
+    "kanji": "衝突",
+    "han_viet": "XUNG ĐỘT",
+    "hiragana": "しょうとつ",
+    "meaning": "xung đột"
+  },
+  {
+    "stt": 350,
+    "kanji": "被害",
+    "han_viet": "BỊ HẠI",
+    "hiragana": "ひがい",
+    "meaning": "thiệt hại"
+  },
+  {
+    "stt": 351,
+    "kanji": "事故",
+    "han_viet": "SỰ CỐ",
+    "hiragana": "じこ",
+    "meaning": "tai nạn"
+  },
+  {
+    "stt": 352,
+    "kanji": "事件",
+    "han_viet": "SỰ KIỆN",
+    "hiragana": "じけん",
+    "meaning": "sự kiện, vụ việc, vụ án"
+  },
+  {
+    "stt": 353,
+    "kanji": "故障",
+    "han_viet": "CỐ CHƯỚNG",
+    "hiragana": "こしょう",
+    "meaning": "hỏng"
+  },
+  {
+    "stt": 354,
+    "kanji": "修理",
+    "han_viet": "TU LÍ",
+    "hiragana": "しゅうり",
+    "meaning": "sửa chữa"
+  },
+  {
+    "stt": 355,
+    "kanji": "停電",
+    "han_viet": "ĐÌNH ĐIỆN",
+    "hiragana": "ていでん",
+    "meaning": "mất điện"
+  },
+  {
+    "stt": 356,
+    "kanji": "調子",
+    "han_viet": "ĐIỀU TỬ",
+    "hiragana": "ちょうし",
+    "meaning": "trạng thái, tình trạng"
+  },
+  {
+    "stt": 357,
+    "kanji": "緊張",
+    "han_viet": "KHẨN TRƯƠNG",
+    "hiragana": "きんちょう",
+    "meaning": "Hồi hộp, căng thẳng"
+  },
+  {
+    "stt": 358,
+    "kanji": "自身",
+    "han_viet": "TỰ THÂN",
+    "hiragana": "じしん",
+    "meaning": "Bản thân, chính mình"
+  },
+  {
+    "stt": 359,
+    "kanji": "自慢",
+    "han_viet": "TỰ MẠN",
+    "hiragana": "じまん",
+    "meaning": "Tâm đắc, đắc ý, tự hào"
+  },
+  {
+    "stt": 360,
+    "kanji": "感心",
+    "han_viet": "CẢM TÂM",
+    "hiragana": "かんしん",
+    "meaning": "Khâm phục, thán phục, quan tâm"
+  },
+  {
+    "stt": 361,
+    "kanji": "感動",
+    "han_viet": "CẢM ĐỘNG",
+    "hiragana": "かんどう",
+    "meaning": "cảm động"
+  },
+  {
+    "stt": 362,
+    "kanji": "興奮",
+    "han_viet": "HƯNG PHẤN",
+    "hiragana": "こうふん",
+    "meaning": "hưng phấn, kích động"
+  },
+  {
+    "stt": 363,
+    "kanji": "感想",
+    "han_viet": "CẢM TƯỞNG",
+    "hiragana": "かんそう",
+    "meaning": "cảm tưởng"
+  },
+  {
+    "stt": 364,
+    "kanji": "予想",
+    "han_viet": "DỰ TƯỞNG",
+    "hiragana": "よそう",
+    "meaning": "dự đoán"
+  },
+  {
+    "stt": 365,
+    "kanji": "専門",
+    "han_viet": "CHUYÊN MÔN",
+    "hiragana": "せんもん",
+    "meaning": "chuyên môn"
+  },
+  {
+    "stt": 366,
+    "kanji": "研究",
+    "han_viet": "NGHIÊN CỨU",
+    "hiragana": "けんきゅう",
+    "meaning": "nghiên cứu"
+  },
+  {
+    "stt": 367,
+    "kanji": "調査",
+    "han_viet": "ĐIỀU TRA",
+    "hiragana": "ちょうさ",
+    "meaning": "điều tra, tìm hiểu, khảo sát"
+  },
+  {
+    "stt": 368,
+    "kanji": "原因",
+    "han_viet": "NGUYÊN NHÂN",
+    "hiragana": "げんいん",
+    "meaning": "nguyên nhân"
+  },
+  {
+    "stt": 369,
+    "kanji": "結果",
+    "han_viet": "KẾT QUẢ",
+    "hiragana": "けっか",
+    "meaning": "kết quả"
+  },
+  {
+    "stt": 370,
+    "kanji": "解決",
+    "han_viet": "GIẢI QUYẾT",
+    "hiragana": "かいけつ",
+    "meaning": "giải quyết"
+  },
+  {
+    "stt": 371,
+    "kanji": "確認",
+    "han_viet": "XÁC NHẬN",
+    "hiragana": "かくにん",
+    "meaning": "xác nhận, kiểm tra lại"
+  },
+  {
+    "stt": 372,
+    "kanji": "利用",
+    "han_viet": "LỢI DỤNG",
+    "hiragana": "りよう",
+    "meaning": "sử dụng, áp dụng, tận dụng"
+  },
+  {
+    "stt": 373,
+    "kanji": "理解",
+    "han_viet": "LÍ GIẢI",
+    "hiragana": "りかい",
+    "meaning": "lý giải, hiểu biết, nắm bắt"
+  },
+  {
+    "stt": 374,
+    "kanji": "発見",
+    "han_viet": "PHÁT KIẾN",
+    "hiragana": "はっけん",
+    "meaning": "phát hiện"
+  },
+  {
+    "stt": 375,
+    "kanji": "発明",
+    "han_viet": "PHÁT MINH",
+    "hiragana": "はつめい",
+    "meaning": "phát minh"
+  },
+  {
+    "stt": 376,
+    "kanji": "関係",
+    "han_viet": "QUAN HỆ",
+    "hiragana": "かんけい",
+    "meaning": "quan hệ"
+  },
+  {
+    "stt": 377,
+    "kanji": "団体",
+    "han_viet": "ĐOÀN THỂ",
+    "hiragana": "だんたい",
+    "meaning": "đoàn thể, tập thể"
+  },
+  {
+    "stt": 378,
+    "kanji": "選挙",
+    "han_viet": "TUYỂN CỬ",
+    "hiragana": "せんきょ",
+    "meaning": "bầu cử"
+  },
+  {
+    "stt": 379,
+    "kanji": "税金",
+    "han_viet": "THUẾ KIM",
+    "hiragana": "ぜいきん",
+    "meaning": "thuế"
+  },
+  {
+    "stt": 380,
+    "kanji": "責任",
+    "han_viet": "TRÁCH NHIỆM",
+    "hiragana": "せきにん",
+    "meaning": "trách nhiệm"
+  },
+  {
+    "stt": 381,
+    "kanji": "書類",
+    "han_viet": "THƯ LOẠI",
+    "hiragana": "しょるい",
+    "meaning": "Hồ sơ, tài liệu"
+  },
+  {
+    "stt": 382,
+    "kanji": "題名",
+    "han_viet": "ĐỀ DANH",
+    "hiragana": "だいめい",
+    "meaning": "tiêu đề, tựa đề"
+  },
+  {
+    "stt": 383,
+    "kanji": "条件",
+    "han_viet": "ĐIỀU KIỆN",
+    "hiragana": "じょうけん",
+    "meaning": "điều kiện"
+  },
+  {
+    "stt": 384,
+    "kanji": "締め切り",
+    "han_viet": "ĐẾ THIẾT",
+    "hiragana": "しめきり",
+    "meaning": "hạn cuối, thời hạn, kì hạn"
+  },
+  {
+    "stt": 385,
+    "kanji": "期間",
+    "han_viet": "KÌ GIAN",
+    "hiragana": "きかん",
+    "meaning": "thời kỳ, kỳ hạn, giai đoạn"
+  },
+  {
+    "stt": 386,
+    "kanji": "倍",
+    "han_viet": "BỘI",
+    "hiragana": "ばい",
+    "meaning": "Gấp đôi"
+  },
+  {
+    "stt": 387,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "くじ",
+    "meaning": "xổ số, rút thăm"
+  },
+  {
+    "stt": 388,
+    "kanji": "近道",
+    "han_viet": "CẬN ĐẠO",
+    "hiragana": "ちかみち",
+    "meaning": "đường tắt"
+  },
+  {
+    "stt": 389,
+    "kanji": "中心",
+    "han_viet": "TRUNG TÂM",
+    "hiragana": "ちゅうしん",
+    "meaning": "trung tâm, tập trung"
+  },
+  {
+    "stt": 390,
+    "kanji": "辺り",
+    "han_viet": "BIÊN",
+    "hiragana": "あたり",
+    "meaning": "Vùng gần, lân cận, khu vực"
+  },
+  {
+    "stt": 391,
+    "kanji": "周り",
+    "han_viet": "CHU",
+    "hiragana": "まわり",
+    "meaning": "xung quanh, vòng quanh"
+  },
+  {
+    "stt": 392,
+    "kanji": "穴",
+    "han_viet": "HUYỆT",
+    "hiragana": "あな",
+    "meaning": "lỗ"
+  },
+  {
+    "stt": 393,
+    "kanji": "列",
+    "han_viet": "LIỆT",
+    "hiragana": "れつ",
+    "meaning": "Hàng, cột"
+  },
+  {
+    "stt": 394,
+    "kanji": "幅",
+    "han_viet": "PHÚC",
+    "hiragana": "はば",
+    "meaning": "chiều rộng, phạm vi, khoảng"
+  },
+  {
+    "stt": 395,
+    "kanji": "範囲",
+    "han_viet": "PHẠM VI",
+    "hiragana": "はんい",
+    "meaning": "phạm vi"
+  },
+  {
+    "stt": 396,
+    "kanji": "内容",
+    "han_viet": "NỘI DUNG",
+    "hiragana": "ないよう",
+    "meaning": "nội dung"
+  },
+  {
+    "stt": 397,
+    "kanji": "中身",
+    "han_viet": "TRUNG THÂN",
+    "hiragana": "なかみ",
+    "meaning": "bên trong, nội tâm"
+  },
+  {
+    "stt": 398,
+    "kanji": "特徴",
+    "han_viet": "ĐẶC TRƯNG",
+    "hiragana": "とくちょう",
+    "meaning": "đặc trưng, đặc tính"
+  },
+  {
+    "stt": 399,
+    "kanji": "普通",
+    "han_viet": "PHỔ THÔNG",
+    "hiragana": "ふつう",
+    "meaning": "bình thường"
+  },
+  {
+    "stt": 400,
+    "kanji": "当たり前",
+    "han_viet": "ĐƯƠNG TIỀN",
+    "hiragana": "あたりまえ",
+    "meaning": "đương nhiên, hiển nhiên"
+  },
+  {
+    "stt": 401,
+    "kanji": "偽",
+    "han_viet": "NGỤY",
+    "hiragana": "にせ",
+    "meaning": "giả"
+  },
+  {
+    "stt": 402,
+    "kanji": "別",
+    "han_viet": "BIỆT",
+    "hiragana": "べつ",
+    "meaning": "Khác, riêng"
+  },
+  {
+    "stt": 403,
+    "kanji": "国籍",
+    "han_viet": "QUỐC TỊCH",
+    "hiragana": "こくせき",
+    "meaning": "quốc tịch"
+  },
+  {
+    "stt": 404,
+    "kanji": "東洋",
+    "han_viet": "ĐÔNG DƯƠNG",
+    "hiragana": "とうよう",
+    "meaning": "phương đông"
+  },
+  {
+    "stt": 405,
+    "kanji": "西洋",
+    "han_viet": "TÂY DƯƠNG",
+    "hiragana": "せいよう",
+    "meaning": "phương tây"
+  },
+  {
+    "stt": 406,
+    "kanji": "国際",
+    "han_viet": "QUỐC TẾ",
+    "hiragana": "こくさい",
+    "meaning": "quốc tế"
+  },
+  {
+    "stt": 407,
+    "kanji": "自然",
+    "han_viet": "TỰ NHIÊN",
+    "hiragana": "しぜん",
+    "meaning": "tự nhiên, thiên nhiên"
+  },
+  {
+    "stt": 408,
+    "kanji": "景色",
+    "han_viet": "CẢNH SẮC",
+    "hiragana": "けしき",
+    "meaning": "phong cảnh"
+  },
+  {
+    "stt": 409,
+    "kanji": "宗教",
+    "han_viet": "TÔNG GIÁO",
+    "hiragana": "しゅうきょう",
+    "meaning": "tôn giáo"
+  },
+  {
+    "stt": 410,
+    "kanji": "愛",
+    "han_viet": "ÁI",
+    "hiragana": "あい",
+    "meaning": "Tình yêu"
+  },
+  {
+    "stt": 411,
+    "kanji": "届く",
+    "han_viet": "GIỚI",
+    "hiragana": "とどく",
+    "meaning": "được giao đến"
+  },
+  {
+    "stt": 412,
+    "kanji": "届ける",
+    "han_viet": "GIỚI",
+    "hiragana": "とどける",
+    "meaning": "giao đến"
+  },
+  {
+    "stt": 413,
+    "kanji": "掻く",
+    "han_viet": "TAO",
+    "hiragana": "かく",
+    "meaning": "gãi"
+  },
+  {
+    "stt": 414,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "つかむ",
+    "meaning": "Nắm bắt"
+  },
+  {
+    "stt": 415,
+    "kanji": "握る",
+    "han_viet": "ÁC",
+    "hiragana": "にぎる",
+    "meaning": "nắm chặt, túm, tóm"
+  },
+  {
+    "stt": 416,
+    "kanji": "抑える",
+    "han_viet": "ỨC",
+    "hiragana": "おさえる",
+    "meaning": "giữ"
+  },
+  {
+    "stt": 417,
+    "kanji": "近づく",
+    "han_viet": "CẬN",
+    "hiragana": "ちかづく",
+    "meaning": "lại gần"
+  },
+  {
+    "stt": 418,
+    "kanji": "近づける",
+    "han_viet": "CẬN",
+    "hiragana": "ちかづける",
+    "meaning": "mang đến gần"
+  },
+  {
+    "stt": 419,
+    "kanji": "合う",
+    "han_viet": "HỢP",
+    "hiragana": "あう",
+    "meaning": "gặp"
+  },
+  {
+    "stt": 420,
+    "kanji": "合わせる",
+    "han_viet": "HỢP",
+    "hiragana": "あわせる",
+    "meaning": "Làm hợp, điều chỉnh"
+  },
+  {
+    "stt": 421,
+    "kanji": "当たる",
+    "han_viet": "ĐƯƠNG",
+    "hiragana": "あたる",
+    "meaning": "trúng"
+  },
+  {
+    "stt": 422,
+    "kanji": "当てる",
+    "han_viet": "ĐƯƠNG",
+    "hiragana": "あてる",
+    "meaning": "Đánh trúng"
+  },
+  {
+    "stt": 423,
+    "kanji": "比べる",
+    "han_viet": "BỈ",
+    "hiragana": "くらべる",
+    "meaning": "so sánh, so với"
+  },
+  {
+    "stt": 424,
+    "kanji": "似合う",
+    "han_viet": "TỰ",
+    "hiragana": "にあう",
+    "meaning": "hợp, vừa"
+  },
+  {
+    "stt": 425,
+    "kanji": "似る",
+    "han_viet": "TỰ",
+    "hiragana": "にる",
+    "meaning": "giống"
+  },
+  {
+    "stt": 426,
+    "kanji": "似せる",
+    "han_viet": "TỰ",
+    "hiragana": "にせる",
+    "meaning": "bắt chước"
+  },
+  {
+    "stt": 427,
+    "kanji": "分かれる",
+    "han_viet": "PHÂN",
+    "hiragana": "わかれる",
+    "meaning": "được chia ra"
+  },
+  {
+    "stt": 428,
+    "kanji": "分ける",
+    "han_viet": "PHÂN",
+    "hiragana": "わける",
+    "meaning": "chia"
+  },
+  {
+    "stt": 429,
+    "kanji": "足す",
+    "han_viet": "TÚC",
+    "hiragana": "たす",
+    "meaning": "cộng, thêm vào"
+  },
+  {
+    "stt": 430,
+    "kanji": "引く",
+    "han_viet": "DẪN",
+    "hiragana": "ひく",
+    "meaning": "kéo, trừ"
+  },
+  {
+    "stt": 431,
+    "kanji": "増える",
+    "han_viet": "TĂNG",
+    "hiragana": "ふえる",
+    "meaning": "tăng lên"
+  },
+  {
+    "stt": 432,
+    "kanji": "増やす",
+    "han_viet": "TĂNG",
+    "hiragana": "ふやす",
+    "meaning": "làm tăng lên"
+  },
+  {
+    "stt": 433,
+    "kanji": "減る",
+    "han_viet": "GIẢM",
+    "hiragana": "へる",
+    "meaning": "giảm xuống"
+  },
+  {
+    "stt": 434,
+    "kanji": "減らす",
+    "han_viet": "GIẢM",
+    "hiragana": "へらす",
+    "meaning": "làm giảm xuống"
+  },
+  {
+    "stt": 435,
+    "kanji": "変わる",
+    "han_viet": "BIẾN",
+    "hiragana": "かわる",
+    "meaning": "thay đổi"
+  },
+  {
+    "stt": 436,
+    "kanji": "変える",
+    "han_viet": "BIẾN",
+    "hiragana": "かえる",
+    "meaning": "làm thay đổi"
+  },
+  {
+    "stt": 437,
+    "kanji": "替わる・換わる",
+    "han_viet": "THẾ HOÁN",
+    "hiragana": "かわる",
+    "meaning": "Thay đổi, thay thế"
+  },
+  {
+    "stt": 438,
+    "kanji": "替える・換える",
+    "han_viet": "THẾ HOÁN",
+    "hiragana": "かえる",
+    "meaning": "Hoán đổi"
+  },
+  {
+    "stt": 439,
+    "kanji": "返る",
+    "han_viet": "PHẢN",
+    "hiragana": "かえる",
+    "meaning": "được trả lại"
+  },
+  {
+    "stt": 440,
+    "kanji": "返す",
+    "han_viet": "PHẢN",
+    "hiragana": "かえす",
+    "meaning": "trả lại"
+  },
+  {
+    "stt": 441,
+    "kanji": "譲る",
+    "han_viet": "NHƯỢNG",
+    "hiragana": "ゆずる",
+    "meaning": "nhường"
+  },
+  {
+    "stt": 442,
+    "kanji": "助かる",
+    "han_viet": "TRỢ",
+    "hiragana": "たすかる",
+    "meaning": "được giúp"
+  },
+  {
+    "stt": 443,
+    "kanji": "助ける",
+    "han_viet": "TRỢ",
+    "hiragana": "たすける",
+    "meaning": "giúp"
+  },
+  {
+    "stt": 444,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "いじめる",
+    "meaning": "bắt nạt"
+  },
+  {
+    "stt": 445,
+    "kanji": "騙す",
+    "han_viet": "PHIẾN",
+    "hiragana": "だます",
+    "meaning": "lừa gạt"
+  },
+  {
+    "stt": 446,
+    "kanji": "盗む",
+    "han_viet": "",
+    "hiragana": "ぬすむ",
+    "meaning": "lấy cắp"
+  },
+  {
+    "stt": 447,
+    "kanji": "刺さる",
+    "han_viet": "THỨ",
+    "hiragana": "ささる",
+    "meaning": "bị đâm, mắc, hóc"
+  },
+  {
+    "stt": 448,
+    "kanji": "刺す",
+    "han_viet": "THỨ",
+    "hiragana": "さす",
+    "meaning": "Đâm, chọc"
+  },
+  {
+    "stt": 449,
+    "kanji": "殺す",
+    "han_viet": "SÁT",
+    "hiragana": "ころす",
+    "meaning": "giết, sát hại"
+  },
+  {
+    "stt": 450,
+    "kanji": "隠れる",
+    "han_viet": "ẨN",
+    "hiragana": "かくれる",
+    "meaning": "ẩn náu, trốn"
+  },
+  {
+    "stt": 451,
+    "kanji": "隠す",
+    "han_viet": "ẨN",
+    "hiragana": "かくす",
+    "meaning": "che giấu"
+  },
+  {
+    "stt": 452,
+    "kanji": "埋まる",
+    "han_viet": "MAI",
+    "hiragana": "うまる",
+    "meaning": "bị chôn"
+  },
+  {
+    "stt": 453,
+    "kanji": "埋める",
+    "han_viet": "MAI",
+    "hiragana": "うめる",
+    "meaning": "chôn"
+  },
+  {
+    "stt": 454,
+    "kanji": "囲む",
+    "han_viet": "VI",
+    "hiragana": "かこむ",
+    "meaning": "vây quanh"
+  },
+  {
+    "stt": 455,
+    "kanji": "詰まる",
+    "han_viet": "CẬT",
+    "hiragana": "つまる",
+    "meaning": "đầy, chặt"
+  },
+  {
+    "stt": 456,
+    "kanji": "詰める",
+    "han_viet": "CẬT",
+    "hiragana": "つめる",
+    "meaning": "đóng gói"
+  },
+  {
+    "stt": 457,
+    "kanji": "開く",
+    "han_viet": "KHAI",
+    "hiragana": "ひらく",
+    "meaning": "mở"
+  },
+  {
+    "stt": 458,
+    "kanji": "閉じる",
+    "han_viet": "BẾ",
+    "hiragana": "とじる",
+    "meaning": "đóng"
+  },
+  {
+    "stt": 459,
+    "kanji": "飛ぶ",
+    "han_viet": "PHI",
+    "hiragana": "とぶ",
+    "meaning": "bay"
+  },
+  {
+    "stt": 460,
+    "kanji": "飛ばす",
+    "han_viet": "PHI",
+    "hiragana": "とばす",
+    "meaning": "Bắn, phóng"
+  },
+  {
+    "stt": 461,
+    "kanji": "振る",
+    "han_viet": "CHẤN",
+    "hiragana": "ふる",
+    "meaning": "rung, vẫy"
+  },
+  {
+    "stt": 462,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "めくる",
+    "meaning": "lật lên"
+  },
+  {
+    "stt": 463,
+    "kanji": "見かける",
+    "han_viet": "KIẾN",
+    "hiragana": "みかける",
+    "meaning": "tình cờ thấy"
+  },
+  {
+    "stt": 464,
+    "kanji": "確かめる",
+    "han_viet": "XÁC",
+    "hiragana": "たしかめる",
+    "meaning": "Xác nhận, làm cho rõ ràng"
+  },
+  {
+    "stt": 465,
+    "kanji": "試す",
+    "han_viet": "THÍ",
+    "hiragana": "ためす",
+    "meaning": "thử"
+  },
+  {
+    "stt": 466,
+    "kanji": "繰り返す",
+    "han_viet": "SÀO PHẢN",
+    "hiragana": "くりかえす",
+    "meaning": "lặp lại"
+  },
+  {
+    "stt": 467,
+    "kanji": "訳す",
+    "han_viet": "DỊCH",
+    "hiragana": "やくす",
+    "meaning": "dịch"
+  },
+  {
+    "stt": 468,
+    "kanji": "行う",
+    "han_viet": "HÀNH",
+    "hiragana": "おこなう",
+    "meaning": "tổ chức"
+  },
+  {
+    "stt": 469,
+    "kanji": "間違う",
+    "han_viet": "GIAN VI",
+    "hiragana": "まちがう",
+    "meaning": "bị sai"
+  },
+  {
+    "stt": 470,
+    "kanji": "間違える",
+    "han_viet": "GIAN VI",
+    "hiragana": "まちがえる",
+    "meaning": "Nhầm lẫn"
+  },
+  {
+    "stt": 471,
+    "kanji": "許す",
+    "han_viet": "HỨA",
+    "hiragana": "ゆるす",
+    "meaning": "tha thứ, cho phép"
+  },
+  {
+    "stt": 472,
+    "kanji": "慣れる",
+    "han_viet": "QUÁN",
+    "hiragana": "なれる",
+    "meaning": "quen"
+  },
+  {
+    "stt": 473,
+    "kanji": "慣らす",
+    "han_viet": "QUÁN",
+    "hiragana": "ならす",
+    "meaning": "khởi động"
+  },
+  {
+    "stt": 474,
+    "kanji": "立つ",
+    "han_viet": "LẬP",
+    "hiragana": "たつ",
+    "meaning": "đứng"
+  },
+  {
+    "stt": 475,
+    "kanji": "立てる",
+    "han_viet": "LẬP",
+    "hiragana": "たてる",
+    "meaning": "dựng lên"
+  },
+  {
+    "stt": 476,
+    "kanji": "建つ",
+    "han_viet": "KIẾN",
+    "hiragana": "たつ",
+    "meaning": "được xây"
+  },
+  {
+    "stt": 477,
+    "kanji": "建てる",
+    "han_viet": "KIẾN",
+    "hiragana": "たてる",
+    "meaning": "xây"
+  },
+  {
+    "stt": 478,
+    "kanji": "育つ",
+    "han_viet": "DỤC",
+    "hiragana": "そだつ",
+    "meaning": "được nuôi dạy"
+  },
+  {
+    "stt": 479,
+    "kanji": "育てる",
+    "han_viet": "DỤC",
+    "hiragana": "そだてる",
+    "meaning": "nuôi, dạy"
+  },
+  {
+    "stt": 480,
+    "kanji": "生える",
+    "han_viet": "SANH",
+    "hiragana": "はえる",
+    "meaning": "mọc"
+  },
+  {
+    "stt": 481,
+    "kanji": "生やす",
+    "han_viet": "SANH",
+    "hiragana": "はやす",
+    "meaning": "Nuôi, trồng"
+  },
+  {
+    "stt": 482,
+    "kanji": "汚れる",
+    "han_viet": "Ô",
+    "hiragana": "よごれる",
+    "meaning": "bị bẩn"
+  },
+  {
+    "stt": 483,
+    "kanji": "汚す",
+    "han_viet": "Ô",
+    "hiragana": "よごす",
+    "meaning": "làm bẩn"
+  },
+  {
+    "stt": 484,
+    "kanji": "壊れる",
+    "han_viet": "HOẠI",
+    "hiragana": "こわれる",
+    "meaning": "bị hỏng"
+  },
+  {
+    "stt": 485,
+    "kanji": "壊す",
+    "han_viet": "HOẠI",
+    "hiragana": "こわす",
+    "meaning": "làm hỏng"
+  },
+  {
+    "stt": 486,
+    "kanji": "割れる",
+    "han_viet": "CÁT",
+    "hiragana": "われる",
+    "meaning": "bị vỡ"
+  },
+  {
+    "stt": 487,
+    "kanji": "割る",
+    "han_viet": "CÁT",
+    "hiragana": "わる",
+    "meaning": "làm vỡ"
+  },
+  {
+    "stt": 488,
+    "kanji": "折れる",
+    "han_viet": "CHIẾT",
+    "hiragana": "おれる",
+    "meaning": "bị gãy"
+  },
+  {
+    "stt": 489,
+    "kanji": "折る",
+    "han_viet": "CHIẾT",
+    "hiragana": "おる",
+    "meaning": "làm gãy"
+  },
+  {
+    "stt": 490,
+    "kanji": "破れる",
+    "han_viet": "PHÁ",
+    "hiragana": "やぶれる",
+    "meaning": "bị rách"
+  },
+  {
+    "stt": 491,
+    "kanji": "破る",
+    "han_viet": "PHÁ",
+    "hiragana": "やぶる",
+    "meaning": "xé rách"
+  },
+  {
+    "stt": 492,
+    "kanji": "曲がる",
+    "han_viet": "KHÚC",
+    "hiragana": "まがる",
+    "meaning": "gập, cong"
+  },
+  {
+    "stt": 493,
+    "kanji": "曲げる",
+    "han_viet": "KHÚC",
+    "hiragana": "まげる",
+    "meaning": "bẻ, uốn"
+  },
+  {
+    "stt": 494,
+    "kanji": "外れる",
+    "han_viet": "NGOẠI",
+    "hiragana": "はずれる",
+    "meaning": "bị rời ra, bung tuột ra"
+  },
+  {
+    "stt": 495,
+    "kanji": "外す",
+    "han_viet": "NGOẠI",
+    "hiragana": "はずす",
+    "meaning": "Tháo ra"
+  },
+  {
+    "stt": 496,
+    "kanji": "揺れる",
+    "han_viet": "DAO",
+    "hiragana": "ゆれる",
+    "meaning": "Rung, lắc, lung lay"
+  },
+  {
+    "stt": 497,
+    "kanji": "揺らす",
+    "han_viet": "DAO",
+    "hiragana": "ゆらす",
+    "meaning": "đung đưa"
+  },
+  {
+    "stt": 498,
+    "kanji": "流れる",
+    "han_viet": "LƯU",
+    "hiragana": "ながれる",
+    "meaning": "chảy, trôi chảy"
+  },
+  {
+    "stt": 499,
+    "kanji": "流す",
+    "han_viet": "LƯU",
+    "hiragana": "ながす",
+    "meaning": "cho chảy"
+  },
+  {
+    "stt": 500,
+    "kanji": "濡れる",
+    "han_viet": "NHU",
+    "hiragana": "ぬれる",
+    "meaning": "bị ướt"
+  },
+  {
+    "stt": 501,
+    "kanji": "濡らす",
+    "han_viet": "NHU",
+    "hiragana": "ぬらす",
+    "meaning": "làm ướt"
+  },
+  {
+    "stt": 502,
+    "kanji": "迷う",
+    "han_viet": "MÊ",
+    "hiragana": "まよう",
+    "meaning": "lạc đường"
+  },
+  {
+    "stt": 503,
+    "kanji": "悩む",
+    "han_viet": "NÃO",
+    "hiragana": "なやむ",
+    "meaning": "băn khoăn, lo lắng"
+  },
+  {
+    "stt": 504,
+    "kanji": "慌てる",
+    "han_viet": "HOẢNG",
+    "hiragana": "あわてる",
+    "meaning": "vội vàng, hấp tấp"
+  },
+  {
+    "stt": 505,
+    "kanji": "覚める",
+    "han_viet": "GIÁC",
+    "hiragana": "さめる",
+    "meaning": "thức dậy"
+  },
+  {
+    "stt": 506,
+    "kanji": "覚ます",
+    "han_viet": "GIÁC",
+    "hiragana": "さます",
+    "meaning": "mở mắt, tỉnh"
+  },
+  {
+    "stt": 507,
+    "kanji": "眠る",
+    "han_viet": "MIÊN",
+    "hiragana": "ねむる",
+    "meaning": "ngủ"
+  },
+  {
+    "stt": 508,
+    "kanji": "祈る",
+    "han_viet": "KÌ",
+    "hiragana": "いのる",
+    "meaning": "cầu nguyện"
+  },
+  {
+    "stt": 509,
+    "kanji": "祝う",
+    "han_viet": "CHÚC",
+    "hiragana": "いわう",
+    "meaning": "Chúc mừng"
+  },
+  {
+    "stt": 510,
+    "kanji": "感じる",
+    "han_viet": "CẢM",
+    "hiragana": "かんじる",
+    "meaning": "cảm thấy"
+  },
+  {
+    "stt": 511,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "クラスメート",
+    "meaning": "bạn cùng lớp"
+  },
+  {
+    "stt": 512,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "グループ",
+    "meaning": "Đội, nhóm"
+  },
+  {
+    "stt": 513,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "チーム",
+    "meaning": "đội"
+  },
+  {
+    "stt": 514,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "プロフェッショナル",
+    "meaning": "chuyên nghiệp"
+  },
+  {
+    "stt": 515,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "アマチュア",
+    "meaning": "nghiệp dư"
+  },
+  {
+    "stt": 516,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "トレーニング",
+    "meaning": "đào tạo, huấn luyện, rèn luyện"
+  },
+  {
+    "stt": 517,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "マッサージ",
+    "meaning": "Massage"
+  },
+  {
+    "stt": 518,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "アドバイス",
+    "meaning": "Lời khuyên"
+  },
+  {
+    "stt": 519,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "アイデア",
+    "meaning": "ý tưởng"
+  },
+  {
+    "stt": 520,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "トップ",
+    "meaning": "Top, vị trí thứ hạng cao nhất"
+  },
+  {
+    "stt": 521,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "スピード",
+    "meaning": "tốc độ"
+  },
+  {
+    "stt": 522,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "ラッシュ",
+    "meaning": "Giờ cao điểm"
+  },
+  {
+    "stt": 523,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "バイク",
+    "meaning": "xe máy"
+  },
+  {
+    "stt": 524,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "ヘルメット",
+    "meaning": "mũ bảo hiểm"
+  },
+  {
+    "stt": 525,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "コンタクトレンズ",
+    "meaning": "Len, kính áp tròng"
+  },
+  {
+    "stt": 526,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "ガラス",
+    "meaning": "kính"
+  },
+  {
+    "stt": 527,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "プラスチック",
+    "meaning": "nhựa"
+  },
+  {
+    "stt": 528,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "ベランダ",
+    "meaning": "ban công"
+  },
+  {
+    "stt": 529,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "ペット",
+    "meaning": "thú cưng"
+  },
+  {
+    "stt": 530,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "ベンチ",
+    "meaning": "ghế dài"
+  },
+  {
+    "stt": 531,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "デザイン",
+    "meaning": "thiết kế"
+  },
+  {
+    "stt": 532,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "バーゲンセール",
+    "meaning": "sale"
+  },
+  {
+    "stt": 533,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "パート",
+    "meaning": "làm thêm"
+  },
+  {
+    "stt": 534,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "コンビニエンスストア",
+    "meaning": "cửa hàng tiện ích"
+  },
+  {
+    "stt": 535,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "レジ",
+    "meaning": "máy tính tiền"
+  },
+  {
+    "stt": 536,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "レシート",
+    "meaning": "hóa đơn"
+  },
+  {
+    "stt": 537,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "インスタント",
+    "meaning": "ăn liền"
+  },
+  {
+    "stt": 538,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "ファストフード",
+    "meaning": "đồ ăn nhanh"
+  },
+  {
+    "stt": 539,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "フルーツ",
+    "meaning": "trái cây"
+  },
+  {
+    "stt": 540,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "デザート",
+    "meaning": "tráng miệng"
+  },
+  {
+    "stt": 541,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "インターネット",
+    "meaning": "internet"
+  },
+  {
+    "stt": 542,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "チャイム",
+    "meaning": "chuông"
+  },
+  {
+    "stt": 543,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "アナウンス",
+    "meaning": "thông báo, MC"
+  },
+  {
+    "stt": 544,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "メッセージ",
+    "meaning": "tin nhắn, lời nhắn"
+  },
+  {
+    "stt": 545,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "パンフレット",
+    "meaning": "tờ rơi"
+  },
+  {
+    "stt": 546,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "カード",
+    "meaning": "Thẻ, card"
+  },
+  {
+    "stt": 547,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "インタビュー",
+    "meaning": "phỏng vấn"
+  },
+  {
+    "stt": 548,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "アンケート",
+    "meaning": "Phiếu điều tra, tờ câu hỏi"
+  },
+  {
+    "stt": 549,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "データ",
+    "meaning": "dữ liệu"
+  },
+  {
+    "stt": 550,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "パーセント",
+    "meaning": "phần trăm"
+  },
+  {
+    "stt": 551,
+    "kanji": "濃い",
+    "han_viet": "NÙNG",
+    "hiragana": "こい",
+    "meaning": "đậm, đặc"
+  },
+  {
+    "stt": 552,
+    "kanji": "薄い",
+    "han_viet": "BẠC",
+    "hiragana": "うすい",
+    "meaning": "mỏng, nhạt"
+  },
+  {
+    "stt": 553,
+    "kanji": "酸っぱい",
+    "han_viet": "TOAN",
+    "hiragana": "すっぱい",
+    "meaning": "chua"
+  },
+  {
+    "stt": 554,
+    "kanji": "臭い",
+    "han_viet": "XÚ",
+    "hiragana": "くさい",
+    "meaning": "Hôi, thối"
+  },
+  {
+    "stt": 555,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "おかしい",
+    "meaning": "lạ"
+  },
+  {
+    "stt": 556,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "かっこいい",
+    "meaning": "bảnh bao, ngầu"
+  },
+  {
+    "stt": 557,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "うまい",
+    "meaning": "ngon"
+  },
+  {
+    "stt": 558,
+    "kanji": "親しい",
+    "han_viet": "THÂN",
+    "hiragana": "したしい",
+    "meaning": "thân thiết"
+  },
+  {
+    "stt": 559,
+    "kanji": "詳しい",
+    "han_viet": "TƯỜNG",
+    "hiragana": "くわしい",
+    "meaning": "chi tiết"
+  },
+  {
+    "stt": 560,
+    "kanji": "細かい",
+    "han_viet": "TẾ",
+    "hiragana": "こまかい",
+    "meaning": "Chi tiết, tỉ mỉ"
+  },
+  {
+    "stt": 561,
+    "kanji": "浅い",
+    "han_viet": "THIỂN",
+    "hiragana": "あさい",
+    "meaning": "Nông cạn"
+  },
+  {
+    "stt": 562,
+    "kanji": "固い・硬い",
+    "han_viet": "CỐ NGẠNH",
+    "hiragana": "かたい",
+    "meaning": "cứng"
+  },
+  {
+    "stt": 563,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "ぬるい",
+    "meaning": "nguội"
+  },
+  {
+    "stt": 564,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "まぶしい",
+    "meaning": "chói"
+  },
+  {
+    "stt": 565,
+    "kanji": "蒸し暑い",
+    "han_viet": "CHƯNG THỬ",
+    "hiragana": "むしあつい",
+    "meaning": "Nóng nực, oi bức"
+  },
+  {
+    "stt": 566,
+    "kanji": "清潔な",
+    "han_viet": "THANH KHIẾT",
+    "hiragana": "せいけつな",
+    "meaning": "sạch sẽ, thanh khiết"
+  },
+  {
+    "stt": 567,
+    "kanji": "新鮮な",
+    "han_viet": "TÂN TIÊN",
+    "hiragana": "しんせんな",
+    "meaning": "Tươi mới"
+  },
+  {
+    "stt": 568,
+    "kanji": "豊かな",
+    "han_viet": "PHONG",
+    "hiragana": "ゆたかな",
+    "meaning": "giàu có, đầy đủ, phong phú"
+  },
+  {
+    "stt": 569,
+    "kanji": "立派な",
+    "han_viet": "LẬP PHÁI",
+    "hiragana": "りっぱな",
+    "meaning": "Đẹp tuyệt vời, tuyệt hảo"
+  },
+  {
+    "stt": 570,
+    "kanji": "正確な",
+    "han_viet": "CHÁNH XÁC",
+    "hiragana": "せいかくな",
+    "meaning": "chính xác"
+  },
+  {
+    "stt": 571,
+    "kanji": "確かな",
+    "han_viet": "XÁC",
+    "hiragana": "たしかな",
+    "meaning": "Chính xác, chắc là, nếu không nhầm"
+  },
+  {
+    "stt": 572,
+    "kanji": "重要な",
+    "han_viet": "TRỌNG YẾU",
+    "hiragana": "じゅうような",
+    "meaning": "quan trọng"
+  },
+  {
+    "stt": 573,
+    "kanji": "必要な",
+    "han_viet": "TẤT YẾU",
+    "hiragana": "ひつような",
+    "meaning": "cần thiết"
+  },
+  {
+    "stt": 574,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "もったいない",
+    "meaning": "lãng phí"
+  },
+  {
+    "stt": 575,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "すごい",
+    "meaning": "ghê, siêu"
+  },
+  {
+    "stt": 576,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "ひどい",
+    "meaning": "tồi tệ"
+  },
+  {
+    "stt": 577,
+    "kanji": "激しい",
+    "han_viet": "KÍCH",
+    "hiragana": "はげしい",
+    "meaning": "mãnh liệt, khắc nghiệt, khốc liệt"
+  },
+  {
+    "stt": 578,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "そっくりな",
+    "meaning": "giống hệt"
+  },
+  {
+    "stt": 579,
+    "kanji": "急な",
+    "han_viet": "CẤP",
+    "hiragana": "きゅうな",
+    "meaning": "Gấp, vội"
+  },
+  {
+    "stt": 580,
+    "kanji": "適当",
+    "han_viet": "THÍCH ĐƯƠNG",
+    "hiragana": "てきとう",
+    "meaning": "phù hợp"
+  },
+  {
+    "stt": 581,
+    "kanji": "特別な",
+    "han_viet": "ĐẶC BIỆT",
+    "hiragana": "とくべつな",
+    "meaning": "đặc biệt"
+  },
+  {
+    "stt": 582,
+    "kanji": "完全な",
+    "han_viet": "HOÀN TOÀN",
+    "hiragana": "かんぜんな",
+    "meaning": "toàn bộ"
+  },
+  {
+    "stt": 583,
+    "kanji": "盛んな",
+    "han_viet": "THỊNH",
+    "hiragana": "さかんな",
+    "meaning": "thịnh vượng"
+  },
+  {
+    "stt": 584,
+    "kanji": "様々な",
+    "han_viet": "DẠNG",
+    "hiragana": "さまざまな",
+    "meaning": "đa dạng"
+  },
+  {
+    "stt": 585,
+    "kanji": "可能な",
+    "han_viet": "KHẢ NĂNG",
+    "hiragana": "かのうな",
+    "meaning": "khả thi"
+  },
+  {
+    "stt": 586,
+    "kanji": "不可能な",
+    "han_viet": "BẤT KHẢ NĂNG",
+    "hiragana": "ふかのうな",
+    "meaning": "bất khả thi"
+  },
+  {
+    "stt": 587,
+    "kanji": "基本的な",
+    "han_viet": "CƠ BỔN ĐÍCH",
+    "hiragana": "きほんてきな",
+    "meaning": "cơ bản"
+  },
+  {
+    "stt": 588,
+    "kanji": "国際的な",
+    "han_viet": "QUỐC TẾ ĐÍCH",
+    "hiragana": "こくさいてきな",
+    "meaning": "tính quốc tế"
+  },
+  {
+    "stt": 589,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "ばらばらな",
+    "meaning": "Rải rác, bừa bãi"
+  },
+  {
+    "stt": 590,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "ぼろぼろな",
+    "meaning": "rách nát, te tua"
+  },
+  {
+    "stt": 591,
+    "kanji": "非常に",
+    "han_viet": "PHI THƯỜNG",
+    "hiragana": "ひじょうに",
+    "meaning": "Rất"
+  },
+  {
+    "stt": 592,
+    "kanji": "大変",
+    "han_viet": "ĐẠI BIẾN",
+    "hiragana": "たいへん",
+    "meaning": "rất nhiều"
+  },
+  {
+    "stt": 593,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "ほとんど",
+    "meaning": "Hầu như, hầu hết"
+  },
+  {
+    "stt": 594,
+    "kanji": "大体",
+    "han_viet": "ĐẠI THỂ",
+    "hiragana": "だいたい",
+    "meaning": "Đại khái"
+  },
+  {
+    "stt": 595,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "かなり",
+    "meaning": "khá"
+  },
+  {
+    "stt": 596,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "ずいぶん",
+    "meaning": "khá là, tương đối"
+  },
+  {
+    "stt": 597,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "けっこう",
+    "meaning": "Khá"
+  },
+  {
+    "stt": 598,
+    "kanji": "大分",
+    "han_viet": "ĐẠI PHÂN",
+    "hiragana": "だいぶ",
+    "meaning": "chủ yếu, khá"
+  },
+  {
+    "stt": 599,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "もっと",
+    "meaning": "Hơn nữa"
+  },
+  {
+    "stt": 600,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "すっかり",
+    "meaning": "Hoàn toàn, toàn bộ"
+  },
+  {
+    "stt": 601,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "いっぱい",
+    "meaning": "đầy"
+  },
+  {
+    "stt": 602,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "ぎりぎり",
+    "meaning": "gần, sát nút"
+  },
+  {
+    "stt": 603,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "ぴったり",
+    "meaning": "vừa vặn, đúng"
+  },
+  {
+    "stt": 604,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "たいてい",
+    "meaning": "thường thì, hầu như"
+  },
+  {
+    "stt": 605,
+    "kanji": "同時に",
+    "han_viet": "ĐỒNG THÌ",
+    "hiragana": "どうじに",
+    "meaning": "cùng lúc"
+  },
+  {
+    "stt": 606,
+    "kanji": "前もって",
+    "han_viet": "TIỀN",
+    "hiragana": "まえもって",
+    "meaning": "trước"
+  },
+  {
+    "stt": 607,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "すぐ",
+    "meaning": "ngay lập tức"
+  },
+  {
+    "stt": 608,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "もうすぐ",
+    "meaning": "sắp"
+  },
+  {
+    "stt": 609,
+    "kanji": "突然",
+    "han_viet": "ĐỘT NHIÊN",
+    "hiragana": "とつぜん",
+    "meaning": "đột nhiên"
+  },
+  {
+    "stt": 610,
+    "kanji": "あっという間に",
+    "han_viet": "GIAN",
+    "hiragana": "あっというまに",
+    "meaning": "loáng một cái"
+  },
+  {
+    "stt": 611,
+    "kanji": "いつの間にか",
+    "han_viet": "GIAN",
+    "hiragana": "いつのまにか",
+    "meaning": "lúc nào không biết"
+  },
+  {
+    "stt": 612,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "しばらく",
+    "meaning": "một chút"
+  },
+  {
+    "stt": 613,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "ずっと",
+    "meaning": "suốt, nhiều"
+  },
+  {
+    "stt": 614,
+    "kanji": "相変わらず",
+    "han_viet": "TƯƠNG BIẾN",
+    "hiragana": "あいかわらず",
+    "meaning": "như mọi khi"
+  },
+  {
+    "stt": 615,
+    "kanji": "次々に",
+    "han_viet": "THỨ",
+    "hiragana": "つぎつぎに",
+    "meaning": "lần lượt"
+  },
+  {
+    "stt": 616,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "どんどん",
+    "meaning": "dần dần"
+  },
+  {
+    "stt": 617,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "ますます",
+    "meaning": "càng ngày càng"
+  },
+  {
+    "stt": 618,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "やっと",
+    "meaning": "cuối cùng, vừa đủ"
+  },
+  {
+    "stt": 619,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "とうとう",
+    "meaning": "cuối cùng"
+  },
+  {
+    "stt": 620,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "ついに",
+    "meaning": "cuối cùng, sau cùng"
+  },
+  {
+    "stt": 621,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "もちろん",
+    "meaning": "tất nhiên"
+  },
+  {
+    "stt": 622,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "やはり",
+    "meaning": "như dự tính"
+  },
+  {
+    "stt": 623,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "きっと",
+    "meaning": "nhất định, chắc chắn"
+  },
+  {
+    "stt": 624,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "ぜひ",
+    "meaning": "bằng mọi giá, nhất định"
+  },
+  {
+    "stt": 625,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "なるべく",
+    "meaning": "Trong khả năng có thể"
+  },
+  {
+    "stt": 626,
+    "kanji": "案外",
+    "han_viet": "ÁN NGOẠI",
+    "hiragana": "あんがい",
+    "meaning": "không ngờ đến"
+  },
+  {
+    "stt": 627,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "もしかすると",
+    "meaning": "có lẽ"
+  },
+  {
+    "stt": 628,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "まさか",
+    "meaning": "không ngờ"
+  },
+  {
+    "stt": 629,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "うっかり",
+    "meaning": "Lơ đễnh, không để ý"
+  },
+  {
+    "stt": 630,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "つい",
+    "meaning": "Lỡ"
+  },
+  {
+    "stt": 631,
+    "kanji": "思わず",
+    "han_viet": "TƯ",
+    "hiragana": "おもわず",
+    "meaning": "Bất chợt, không ngờ đến"
+  },
+  {
+    "stt": 632,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "ほっと",
+    "meaning": "yên tâm"
+  },
+  {
+    "stt": 633,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "いらいら",
+    "meaning": "nóng ruột"
+  },
+  {
+    "stt": 634,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "のんびり",
+    "meaning": "Thong thả"
+  },
+  {
+    "stt": 635,
+    "kanji": "実は",
+    "han_viet": "THỰC",
+    "hiragana": "じつは",
+    "meaning": "thực tế là"
+  },
+  {
+    "stt": 636,
+    "kanji": "読書",
+    "han_viet": "ĐỘC THƯ",
+    "hiragana": "どくしょ",
+    "meaning": "đọc viết"
+  },
+  {
+    "stt": 637,
+    "kanji": "演奏",
+    "han_viet": "DIỄN TẤU",
+    "hiragana": "えんそう",
+    "meaning": "biểu diễn"
+  },
+  {
+    "stt": 638,
+    "kanji": "芸術",
+    "han_viet": "VÂN THUẬT",
+    "hiragana": "げいじゅつ",
+    "meaning": "nghệ thuật"
+  },
+  {
+    "stt": 639,
+    "kanji": "検査",
+    "han_viet": "KIỂM TRA",
+    "hiragana": "けんさ",
+    "meaning": "kiểm tra"
+  },
+  {
+    "stt": 640,
+    "kanji": "血液",
+    "han_viet": "HUYẾT DỊCH",
+    "hiragana": "けつえき",
+    "meaning": "máu"
+  },
+  {
+    "stt": 641,
+    "kanji": "治療",
+    "han_viet": "TRỊ LIỆU",
+    "hiragana": "ちりょう",
+    "meaning": "trị liệu"
+  },
+  {
+    "stt": 642,
+    "kanji": "症状",
+    "han_viet": "CHỨNG TRẠNG",
+    "hiragana": "しょうじょう",
+    "meaning": "triệu chứng"
+  },
+  {
+    "stt": 643,
+    "kanji": "予防",
+    "han_viet": "DỰ PHÒNG",
+    "hiragana": "よぼう",
+    "meaning": "dự phòng"
+  },
+  {
+    "stt": 644,
+    "kanji": "栄養",
+    "han_viet": "VINH DƯỠNG",
+    "hiragana": "えいよう",
+    "meaning": "dinh dưỡng"
+  },
+  {
+    "stt": 645,
+    "kanji": "手術",
+    "han_viet": "THỦ THUẬT",
+    "hiragana": "しゅじゅつ",
+    "meaning": "phẫu thuật"
+  },
+  {
+    "stt": 646,
+    "kanji": "死亡",
+    "han_viet": "TỬ VONG",
+    "hiragana": "しぼう",
+    "meaning": "tử vong"
+  },
+  {
+    "stt": 647,
+    "kanji": "命",
+    "han_viet": "MỆNH",
+    "hiragana": "いのち",
+    "meaning": "sinh mạng"
+  },
+  {
+    "stt": 648,
+    "kanji": "一生",
+    "han_viet": "NHẤT SANH",
+    "hiragana": "いっしょう",
+    "meaning": "suốt đời"
+  },
+  {
+    "stt": 649,
+    "kanji": "誤解",
+    "han_viet": "NGỘ GIẢI",
+    "hiragana": "ごかい",
+    "meaning": "hiểu nhầm"
+  },
+  {
+    "stt": 650,
+    "kanji": "後悔",
+    "han_viet": "HẬU HỐI",
+    "hiragana": "こうかい",
+    "meaning": "hối hận"
+  },
+  {
+    "stt": 651,
+    "kanji": "訳",
+    "han_viet": "DỊCH",
+    "hiragana": "わけ",
+    "meaning": "lý do"
+  },
+  {
+    "stt": 652,
+    "kanji": "態度",
+    "han_viet": "THÁI ĐỘ",
+    "hiragana": "たいど",
+    "meaning": "thái độ"
+  },
+  {
+    "stt": 653,
+    "kanji": "癖",
+    "han_viet": "PHÍCH",
+    "hiragana": "くせ",
+    "meaning": "thói quen"
+  },
+  {
+    "stt": 654,
+    "kanji": "礼儀",
+    "han_viet": "LỄ NGHI",
+    "hiragana": "れいぎ",
+    "meaning": "lễ nghĩa"
+  },
+  {
+    "stt": 655,
+    "kanji": "文句",
+    "han_viet": "VĂN CÚ",
+    "hiragana": "もんく",
+    "meaning": "phàn nàn"
+  },
+  {
+    "stt": 656,
+    "kanji": "表情",
+    "han_viet": "BIỂU TÌNH",
+    "hiragana": "ひょうじょう",
+    "meaning": "Vẻ mặt, thần thái"
+  },
+  {
+    "stt": 657,
+    "kanji": "表面",
+    "han_viet": "BIỂU DIỆN",
+    "hiragana": "ひょうめん",
+    "meaning": "bề mặt"
+  },
+  {
+    "stt": 658,
+    "kanji": "禁煙",
+    "han_viet": "CẤM YÊN",
+    "hiragana": "きんえん",
+    "meaning": "cấm hút thuốc"
+  },
+  {
+    "stt": 659,
+    "kanji": "禁止",
+    "han_viet": "CẤM CHỈ",
+    "hiragana": "きんし",
+    "meaning": "cấm chỉ"
+  },
+  {
+    "stt": 660,
+    "kanji": "完成",
+    "han_viet": "HOÀN THÀNH",
+    "hiragana": "かんせい",
+    "meaning": "hoàn thành"
+  },
+  {
+    "stt": 661,
+    "kanji": "課題",
+    "han_viet": "KHÓA ĐỀ",
+    "hiragana": "かだい",
+    "meaning": "chủ đề"
+  },
+  {
+    "stt": 662,
+    "kanji": "例外",
+    "han_viet": "LỆ NGOẠI",
+    "hiragana": "れいがい",
+    "meaning": "ngoại lệ"
+  },
+  {
+    "stt": 663,
+    "kanji": "基本",
+    "han_viet": "CƠ BỔN",
+    "hiragana": "きほん",
+    "meaning": "cơ bản"
+  },
+  {
+    "stt": 664,
+    "kanji": "記録",
+    "han_viet": "KÍ LỤC",
+    "hiragana": "きろく",
+    "meaning": "Kỉ lục"
+  },
+  {
+    "stt": 665,
+    "kanji": "状態",
+    "han_viet": "TRẠNG THÁI",
+    "hiragana": "じょうたい",
+    "meaning": "trạng thái"
+  },
+  {
+    "stt": 666,
+    "kanji": "出来事",
+    "han_viet": "XUẤT LAI SỰ",
+    "hiragana": "できごと",
+    "meaning": "sự kiện"
+  },
+  {
+    "stt": 667,
+    "kanji": "場面",
+    "han_viet": "TRÀNG DIỆN",
+    "hiragana": "ばめん",
+    "meaning": "hiện trường"
+  },
+  {
+    "stt": 668,
+    "kanji": "機会",
+    "han_viet": "KI HỘI",
+    "hiragana": "きかい",
+    "meaning": "cơ hội"
+  },
+  {
+    "stt": 669,
+    "kanji": "距離",
+    "han_viet": "CỰ LI",
+    "hiragana": "きょり",
+    "meaning": "khoảng cách"
+  },
+  {
+    "stt": 670,
+    "kanji": "提案",
+    "han_viet": "ĐỀ ÁN",
+    "hiragana": "ていあん",
+    "meaning": "đề xuất"
+  },
+  {
+    "stt": 671,
+    "kanji": "やり取り",
+    "han_viet": "THỦ",
+    "hiragana": "やりとり",
+    "meaning": "trao đổi, làm việc"
+  },
+  {
+    "stt": 672,
+    "kanji": "知識",
+    "han_viet": "TRI THỨC",
+    "hiragana": "ちしき",
+    "meaning": "kiến thức"
+  },
+  {
+    "stt": 673,
+    "kanji": "実力",
+    "han_viet": "THỰC LỰC",
+    "hiragana": "じつりょく",
+    "meaning": "thực lực"
+  },
+  {
+    "stt": 674,
+    "kanji": "手段",
+    "han_viet": "THỦ ĐOẠN",
+    "hiragana": "しゅだん",
+    "meaning": "cách thức, thủ đoạn"
+  },
+  {
+    "stt": 675,
+    "kanji": "代表",
+    "han_viet": "ĐẠI BIỂU",
+    "hiragana": "だいひょう",
+    "meaning": "đại biểu"
+  },
+  {
+    "stt": 676,
+    "kanji": "影響",
+    "han_viet": "ẢNH HƯỞNG",
+    "hiragana": "えいきょう",
+    "meaning": "ảnh hưởng"
+  },
+  {
+    "stt": 677,
+    "kanji": "効果",
+    "han_viet": "HIỆU QUẢ",
+    "hiragana": "こうか",
+    "meaning": "hiệu quả"
+  },
+  {
+    "stt": 678,
+    "kanji": "印象",
+    "han_viet": "ẤN TƯỢNG",
+    "hiragana": "いんしょう",
+    "meaning": "ấn tượng"
+  },
+  {
+    "stt": 679,
+    "kanji": "印",
+    "han_viet": "ẤN",
+    "hiragana": "しるし",
+    "meaning": "dấu, dấu hiệu"
+  },
+  {
+    "stt": 680,
+    "kanji": "合図",
+    "han_viet": "HỢP ĐỒ",
+    "hiragana": "あいず",
+    "meaning": "ám hiệu"
+  },
+  {
+    "stt": 681,
+    "kanji": "共通",
+    "han_viet": "CỘNG THÔNG",
+    "hiragana": "きょうつう",
+    "meaning": "chung"
+  },
+  {
+    "stt": 682,
+    "kanji": "協調",
+    "han_viet": "HIỆP ĐIỀU",
+    "hiragana": "きょうちょう",
+    "meaning": "nhấn mạnh"
+  },
+  {
+    "stt": 683,
+    "kanji": "省略",
+    "han_viet": "TỈNH LƯỢC",
+    "hiragana": "しょうりゃく",
+    "meaning": "lược bỏ, rút gọn"
+  },
+  {
+    "stt": 684,
+    "kanji": "挑戦",
+    "han_viet": "THIỂU CHIẾN",
+    "hiragana": "ちょうせん",
+    "meaning": "thử thách"
+  },
+  {
+    "stt": 685,
+    "kanji": "やる気",
+    "han_viet": "KHÍ",
+    "hiragana": "やるき",
+    "meaning": "động lực"
+  },
+  {
+    "stt": 686,
+    "kanji": "勇気",
+    "han_viet": "DŨNG KHÍ",
+    "hiragana": "ゆうき",
+    "meaning": "dũng cảm, dũng khí"
+  },
+  {
+    "stt": 687,
+    "kanji": "資格",
+    "han_viet": "TƯ CÁCH",
+    "hiragana": "しかく",
+    "meaning": "bằng cấp, tư cách"
+  },
+  {
+    "stt": 688,
+    "kanji": "申請",
+    "han_viet": "THÂN THỈNH",
+    "hiragana": "しんせい",
+    "meaning": "đăng ký, yêu cầu"
+  },
+  {
+    "stt": 689,
+    "kanji": "本人",
+    "han_viet": "BỔN NHÂN",
+    "hiragana": "ほんにん",
+    "meaning": "Người ủy thác"
+  },
+  {
+    "stt": 690,
+    "kanji": "契約",
+    "han_viet": "KHẾ ƯỚC",
+    "hiragana": "けいやく",
+    "meaning": "hợp đồng"
+  },
+  {
+    "stt": 691,
+    "kanji": "証明",
+    "han_viet": "CHỨNG MINH",
+    "hiragana": "しょうめい",
+    "meaning": "chứng minh"
+  },
+  {
+    "stt": 692,
+    "kanji": "変更",
+    "han_viet": "BIẾN CANH",
+    "hiragana": "へんこう",
+    "meaning": "thay đổi"
+  },
+  {
+    "stt": 693,
+    "kanji": "保存",
+    "han_viet": "BẢO TỒN",
+    "hiragana": "ほぞん",
+    "meaning": "bảo tồn"
+  },
+  {
+    "stt": 694,
+    "kanji": "保護",
+    "han_viet": "BẢO HỘ",
+    "hiragana": "ほご",
+    "meaning": "bảo vệ, bảo hộ"
+  },
+  {
+    "stt": 695,
+    "kanji": "環境",
+    "han_viet": "HOÀN CẢNH",
+    "hiragana": "かんきょう",
+    "meaning": "môi trường"
+  },
+  {
+    "stt": 696,
+    "kanji": "資源",
+    "han_viet": "TƯ NGUYÊN",
+    "hiragana": "しげん",
+    "meaning": "tài nguyên"
+  },
+  {
+    "stt": 697,
+    "kanji": "不足",
+    "han_viet": "BẤT TÚC",
+    "hiragana": "ふそく",
+    "meaning": "thiếu"
+  },
+  {
+    "stt": 698,
+    "kanji": "平均",
+    "han_viet": "BÌNH QUÂN",
+    "hiragana": "へいきん",
+    "meaning": "trung bình"
+  },
+  {
+    "stt": 699,
+    "kanji": "割合",
+    "han_viet": "CÁT HỢP",
+    "hiragana": "わりあい",
+    "meaning": "tỷ lệ"
+  },
+  {
+    "stt": 700,
+    "kanji": "商売",
+    "han_viet": "THƯƠNG MẠI",
+    "hiragana": "しょうばい",
+    "meaning": "kinh doanh, buôn bán"
+  },
+  {
+    "stt": 701,
+    "kanji": "商品",
+    "han_viet": "THƯƠNG PHẨM",
+    "hiragana": "しょうひん",
+    "meaning": "sản phẩm"
+  },
+  {
+    "stt": 702,
+    "kanji": "質",
+    "han_viet": "CHẤT",
+    "hiragana": "しつ",
+    "meaning": "chất"
+  },
+  {
+    "stt": 703,
+    "kanji": "型",
+    "han_viet": "HÌNH",
+    "hiragana": "かた",
+    "meaning": "Khuôn, mẫu"
+  },
+  {
+    "stt": 704,
+    "kanji": "生産",
+    "han_viet": "SANH SẢN",
+    "hiragana": "せいさん",
+    "meaning": "sản xuất"
+  },
+  {
+    "stt": 705,
+    "kanji": "消費",
+    "han_viet": "TIÊU PHÍ",
+    "hiragana": "しょうひ",
+    "meaning": "tiêu dùng, tiêu thụ"
+  },
+  {
+    "stt": 706,
+    "kanji": "物価",
+    "han_viet": "VẬT GIÁ",
+    "hiragana": "ぶっか",
+    "meaning": "giá cả, vật giá"
+  },
+  {
+    "stt": 707,
+    "kanji": "倒産",
+    "han_viet": "ĐẢO SẢN",
+    "hiragana": "とうさん",
+    "meaning": "phá sản"
+  },
+  {
+    "stt": 708,
+    "kanji": "携帯",
+    "han_viet": "HUỀ ĐỚI",
+    "hiragana": "けいたい",
+    "meaning": "Điện thoại di động; di động"
+  },
+  {
+    "stt": 709,
+    "kanji": "現代",
+    "han_viet": "HIỆN ĐẠI",
+    "hiragana": "げんだい",
+    "meaning": "hiện tại"
+  },
+  {
+    "stt": 710,
+    "kanji": "世紀",
+    "han_viet": "THẾ KỈ",
+    "hiragana": "せいき",
+    "meaning": "thế kỷ"
+  },
+  {
+    "stt": 711,
+    "kanji": "文化",
+    "han_viet": "VĂN HÓA",
+    "hiragana": "ぶんか",
+    "meaning": "văn hóa"
+  },
+  {
+    "stt": 712,
+    "kanji": "都市",
+    "han_viet": "ĐÔ THỊ",
+    "hiragana": "とし",
+    "meaning": "thành phố"
+  },
+  {
+    "stt": 713,
+    "kanji": "地方",
+    "han_viet": "ĐỊA PHƯƠNG",
+    "hiragana": "ちほう",
+    "meaning": "địa phương"
+  },
+  {
+    "stt": 714,
+    "kanji": "戦争",
+    "han_viet": "CHIẾN TRANH",
+    "hiragana": "せんそう",
+    "meaning": "chiến tranh"
+  },
+  {
+    "stt": 715,
+    "kanji": "平和",
+    "han_viet": "BÌNH HÒA",
+    "hiragana": "へいわ",
+    "meaning": "hòa bình"
+  },
+  {
+    "stt": 716,
+    "kanji": "上る",
+    "han_viet": "THƯỢNG",
+    "hiragana": "のぼる",
+    "meaning": "leo lên"
+  },
+  {
+    "stt": 717,
+    "kanji": "下る",
+    "han_viet": "HẠ",
+    "hiragana": "くだる",
+    "meaning": "đi xuống"
+  },
+  {
+    "stt": 718,
+    "kanji": "進む",
+    "han_viet": "TIẾN",
+    "hiragana": "すすむ",
+    "meaning": "Tiến lên"
+  },
+  {
+    "stt": 719,
+    "kanji": "進める",
+    "han_viet": "TIẾN",
+    "hiragana": "すすめる",
+    "meaning": "Thúc đẩy, xúc tiến"
+  },
+  {
+    "stt": 720,
+    "kanji": "通る",
+    "han_viet": "THÔNG",
+    "hiragana": "とおる",
+    "meaning": "thông qua, đi qua"
+  },
+  {
+    "stt": 721,
+    "kanji": "通す",
+    "han_viet": "THÔNG",
+    "hiragana": "とおす",
+    "meaning": "xuyên qua, thông qua"
+  },
+  {
+    "stt": 722,
+    "kanji": "超える・越える",
+    "han_viet": "SIÊU VIỆT",
+    "hiragana": "こえる",
+    "meaning": "vượt quá"
+  },
+  {
+    "stt": 723,
+    "kanji": "過ぎる",
+    "han_viet": "QUÁ",
+    "hiragana": "すぎる",
+    "meaning": "quá, đi qua"
+  },
+  {
+    "stt": 724,
+    "kanji": "過ごす",
+    "han_viet": "QUÁ",
+    "hiragana": "すごす",
+    "meaning": "Trải qua"
+  },
+  {
+    "stt": 725,
+    "kanji": "移る",
+    "han_viet": "DI",
+    "hiragana": "うつる",
+    "meaning": "di chuyển"
+  },
+  {
+    "stt": 726,
+    "kanji": "移す",
+    "han_viet": "DI",
+    "hiragana": "うつす",
+    "meaning": "chuyển"
+  },
+  {
+    "stt": 727,
+    "kanji": "連れる",
+    "han_viet": "LIÊN",
+    "hiragana": "つれる",
+    "meaning": "Dẫn, dắt"
+  },
+  {
+    "stt": 728,
+    "kanji": "寄る",
+    "han_viet": "KÍ",
+    "hiragana": "よる",
+    "meaning": "ghé sát, lại gần"
+  },
+  {
+    "stt": 729,
+    "kanji": "寄せる",
+    "han_viet": "KÍ",
+    "hiragana": "よせる",
+    "meaning": "Dựa vào, dời sang một bên"
+  },
+  {
+    "stt": 730,
+    "kanji": "与える",
+    "han_viet": "DỮ",
+    "hiragana": "あたえる",
+    "meaning": "trao, cung cấp"
+  },
+  {
+    "stt": 731,
+    "kanji": "得る",
+    "han_viet": "ĐẮC",
+    "hiragana": "える",
+    "meaning": "Thu được, lĩnh hội"
+  },
+  {
+    "stt": 732,
+    "kanji": "向く",
+    "han_viet": "HƯỚNG",
+    "hiragana": "むく",
+    "meaning": "hướng, đối diện"
+  },
+  {
+    "stt": 733,
+    "kanji": "向ける",
+    "han_viet": "HƯỚNG",
+    "hiragana": "むける",
+    "meaning": "hướng đến, quay"
+  },
+  {
+    "stt": 734,
+    "kanji": "勧める",
+    "han_viet": "KHUYẾN",
+    "hiragana": "すすめる",
+    "meaning": "rủ, mời, gợi ý"
+  },
+  {
+    "stt": 735,
+    "kanji": "薦める",
+    "han_viet": "TIẾN",
+    "hiragana": "すすめる",
+    "meaning": "giới thiệu, gợi ý"
+  },
+  {
+    "stt": 736,
+    "kanji": "任せる",
+    "han_viet": "NHÂM",
+    "hiragana": "まかせる",
+    "meaning": "tin tưởng, giao phó"
+  },
+  {
+    "stt": 737,
+    "kanji": "守る",
+    "han_viet": "THỦ",
+    "hiragana": "まもる",
+    "meaning": "giữ, tuân thủ, bảo vệ"
+  },
+  {
+    "stt": 738,
+    "kanji": "争う",
+    "han_viet": "TRANH",
+    "hiragana": "あらそう",
+    "meaning": "gây gổ, tranh giành"
+  },
+  {
+    "stt": 739,
+    "kanji": "臨む",
+    "han_viet": "LÂM",
+    "hiragana": "のぞむ",
+    "meaning": "ước"
+  },
+  {
+    "stt": 740,
+    "kanji": "信じる",
+    "han_viet": "TÍN",
+    "hiragana": "しんじる",
+    "meaning": "tin tưởng"
+  },
+  {
+    "stt": 741,
+    "kanji": "通じる",
+    "han_viet": "THÔNG",
+    "hiragana": "つうじる",
+    "meaning": "hiểu, thông qua"
+  },
+  {
+    "stt": 742,
+    "kanji": "飽きる",
+    "han_viet": "BÃO",
+    "hiragana": "あきる",
+    "meaning": "Chán ngấy"
+  },
+  {
+    "stt": 743,
+    "kanji": "思いつく",
+    "han_viet": "TƯ",
+    "hiragana": "おもいつく",
+    "meaning": "Nảy ra ý tưởng"
+  },
+  {
+    "stt": 744,
+    "kanji": "思いやる",
+    "han_viet": "TƯ",
+    "hiragana": "おもいやる",
+    "meaning": "quan tâm, thông cảm"
+  },
+  {
+    "stt": 745,
+    "kanji": "熱中する",
+    "han_viet": "NHIỆT TRUNG",
+    "hiragana": "ねっちゅうする",
+    "meaning": "nghiện, hào hứng, đam mê cái gì đó"
+  },
+  {
+    "stt": 746,
+    "kanji": "暮らす",
+    "han_viet": "MỘ",
+    "hiragana": "くらす",
+    "meaning": "Sinh sống"
+  },
+  {
+    "stt": 747,
+    "kanji": "巻く",
+    "han_viet": "QUYỀN",
+    "hiragana": "まく",
+    "meaning": "quấn"
+  },
+  {
+    "stt": 748,
+    "kanji": "結ぶ",
+    "han_viet": "KẾT",
+    "hiragana": "むすぶ",
+    "meaning": "buộc, cột, nối"
+  },
+  {
+    "stt": 749,
+    "kanji": "済む",
+    "han_viet": "TẾ",
+    "hiragana": "すむ",
+    "meaning": "kết thúc, hoàn thành"
+  },
+  {
+    "stt": 750,
+    "kanji": "済ませる",
+    "han_viet": "TẾ",
+    "hiragana": "すませる",
+    "meaning": "hoàn thành"
+  },
+  {
+    "stt": 751,
+    "kanji": "出来る",
+    "han_viet": "XUẤT LAI",
+    "hiragana": "できる",
+    "meaning": "có thể, hoàn thành"
+  },
+  {
+    "stt": 752,
+    "kanji": "切れる",
+    "han_viet": "THIẾT",
+    "hiragana": "きれる",
+    "meaning": "cắt"
+  },
+  {
+    "stt": 753,
+    "kanji": "切らす",
+    "han_viet": "THIẾT",
+    "hiragana": "きらす",
+    "meaning": "hết"
+  },
+  {
+    "stt": 754,
+    "kanji": "伝わる",
+    "han_viet": "TRUYỀN",
+    "hiragana": "つたわる",
+    "meaning": "lan truyền"
+  },
+  {
+    "stt": 755,
+    "kanji": "伝える",
+    "han_viet": "TRUYỀN",
+    "hiragana": "つたえる",
+    "meaning": "truyền đạt"
+  },
+  {
+    "stt": 756,
+    "kanji": "続く",
+    "han_viet": "TỤC",
+    "hiragana": "つづく",
+    "meaning": "tiếp tục"
+  },
+  {
+    "stt": 757,
+    "kanji": "続ける",
+    "han_viet": "TỤC",
+    "hiragana": "つづける",
+    "meaning": "tiếp tục"
+  },
+  {
+    "stt": 758,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "つながる",
+    "meaning": "Nối, buộc vào"
+  },
+  {
+    "stt": 759,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "つなぐ",
+    "meaning": "kết nối"
+  },
+  {
+    "stt": 760,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "つなげる",
+    "meaning": "kết nối, làm chặt thêm"
+  },
+  {
+    "stt": 761,
+    "kanji": "伸びる",
+    "han_viet": "THÂN",
+    "hiragana": "のびる",
+    "meaning": "Kéo dài, lan ra, lớn lên, trưởng thành"
+  },
+  {
+    "stt": 762,
+    "kanji": "伸ばす",
+    "han_viet": "THÂN",
+    "hiragana": "のばす",
+    "meaning": "Kéo dài, vươn"
+  },
+  {
+    "stt": 763,
+    "kanji": "延びる",
+    "han_viet": "DUYÊN",
+    "hiragana": "のびる",
+    "meaning": "trì hoãn, kéo dài"
+  },
+  {
+    "stt": 764,
+    "kanji": "延ばす",
+    "han_viet": "DUYÊN",
+    "hiragana": "のばす",
+    "meaning": "Mở rộng ra, kéo dài.."
+  },
+  {
+    "stt": 765,
+    "kanji": "重なる",
+    "han_viet": "TRỌNG",
+    "hiragana": "かさなる",
+    "meaning": "Trùng với.., chồng chất"
+  },
+  {
+    "stt": 766,
+    "kanji": "重ねる",
+    "han_viet": "TRỌNG",
+    "hiragana": "かさねる",
+    "meaning": "chồng lên, chất lên"
+  },
+  {
+    "stt": 767,
+    "kanji": "広がる",
+    "han_viet": "QUẢNG",
+    "hiragana": "ひろがる",
+    "meaning": "mở rộng, lan tràn"
+  },
+  {
+    "stt": 768,
+    "kanji": "広げる",
+    "han_viet": "QUẢNG",
+    "hiragana": "ひろげる",
+    "meaning": "mở rộng, nới rộng"
+  },
+  {
+    "stt": 769,
+    "kanji": "載る",
+    "han_viet": "TÁI",
+    "hiragana": "のる",
+    "meaning": "Đăng lên, đặt..."
+  },
+  {
+    "stt": 770,
+    "kanji": "載せる",
+    "han_viet": "TÁI",
+    "hiragana": "のせる",
+    "meaning": "Đăng tải, chất lên"
+  },
+  {
+    "stt": 771,
+    "kanji": "揃う",
+    "han_viet": "TIỀN",
+    "hiragana": "そろう",
+    "meaning": "thu thập"
+  },
+  {
+    "stt": 772,
+    "kanji": "揃える",
+    "han_viet": "TIỀN",
+    "hiragana": "そろえる",
+    "meaning": "Tổng hợp, gộp, sắp xếp lại"
+  },
+  {
+    "stt": 773,
+    "kanji": "纏まる",
+    "han_viet": "TRIỀN",
+    "hiragana": "まとまる",
+    "meaning": "Lắng, đọng, chìm xuống"
+  },
+  {
+    "stt": 774,
+    "kanji": "纏める",
+    "han_viet": "TRIỀN",
+    "hiragana": "まとめる",
+    "meaning": "Tóm tắt, tổng hợp"
+  },
+  {
+    "stt": 775,
+    "kanji": "付く",
+    "han_viet": "PHÓ",
+    "hiragana": "つく",
+    "meaning": "dính"
+  },
+  {
+    "stt": 776,
+    "kanji": "付ける",
+    "han_viet": "PHÓ",
+    "hiragana": "つける",
+    "meaning": "gắn, thêm vào"
+  },
+  {
+    "stt": 777,
+    "kanji": "貯まる",
+    "han_viet": "TRỮ",
+    "hiragana": "たまる",
+    "meaning": "được tiết kiệm"
+  },
+  {
+    "stt": 778,
+    "kanji": "貯める",
+    "han_viet": "TRỮ",
+    "hiragana": "ためる",
+    "meaning": "tiết kiệm"
+  },
+  {
+    "stt": 779,
+    "kanji": "交じる・混じる",
+    "han_viet": "GIAO HỖN",
+    "hiragana": "まじる",
+    "meaning": "giao vào, lẫn vào"
+  },
+  {
+    "stt": 780,
+    "kanji": "交ざる・混ざる",
+    "han_viet": "GIAO HỖN",
+    "hiragana": "まざる",
+    "meaning": "được trộn lẫn"
+  },
+  {
+    "stt": 781,
+    "kanji": "交ぜる・混ぜる",
+    "han_viet": "GIAO HỖN",
+    "hiragana": "まぜる",
+    "meaning": "trộn vào"
+  },
+  {
+    "stt": 782,
+    "kanji": "解ける・溶ける",
+    "han_viet": "GIẢI DONG",
+    "hiragana": "とける",
+    "meaning": "được giải quyết, chảy"
+  },
+  {
+    "stt": 783,
+    "kanji": "解く・溶く",
+    "han_viet": "GIẢI DONG",
+    "hiragana": "とく",
+    "meaning": "Giải quyết / Tan chảy"
+  },
+  {
+    "stt": 784,
+    "kanji": "含む",
+    "han_viet": "HÀM",
+    "hiragana": "ふくむ",
+    "meaning": "chứa, bao gồm"
+  },
+  {
+    "stt": 785,
+    "kanji": "含める",
+    "han_viet": "HÀM",
+    "hiragana": "ふくめる",
+    "meaning": "bao gồm"
+  },
+  {
+    "stt": 786,
+    "kanji": "抜ける",
+    "han_viet": "BẠT",
+    "hiragana": "ぬける",
+    "meaning": "Nhổ, rút, rời"
+  },
+  {
+    "stt": 787,
+    "kanji": "抜く",
+    "han_viet": "BẠT",
+    "hiragana": "ぬく",
+    "meaning": "lấy ra, nhổ, rút"
+  },
+  {
+    "stt": 788,
+    "kanji": "現れる",
+    "han_viet": "HIỆN",
+    "hiragana": "あらわれる",
+    "meaning": "xuất hiện"
+  },
+  {
+    "stt": 789,
+    "kanji": "現す",
+    "han_viet": "HIỆN",
+    "hiragana": "あらわす",
+    "meaning": "xuất hiện, biểu lộ ra"
+  },
+  {
+    "stt": 790,
+    "kanji": "表れる",
+    "han_viet": "BIỂU",
+    "hiragana": "あらわれる",
+    "meaning": "biểu hiện, bộc lộ ra"
+  },
+  {
+    "stt": 791,
+    "kanji": "表す",
+    "han_viet": "BIỂU",
+    "hiragana": "あらわす",
+    "meaning": "biểu thị, biểu lộ"
+  },
+  {
+    "stt": 792,
+    "kanji": "散る",
+    "han_viet": "TÁN",
+    "hiragana": "ちる",
+    "meaning": "bị tàn, rụng"
+  },
+  {
+    "stt": 793,
+    "kanji": "散らす",
+    "han_viet": "TÁN",
+    "hiragana": "ちらす",
+    "meaning": "Tàn, làm rụng"
+  },
+  {
+    "stt": 794,
+    "kanji": "明ける",
+    "han_viet": "MINH",
+    "hiragana": "あける",
+    "meaning": "Hé lộ, bắt đầu, mở ra"
+  },
+  {
+    "stt": 795,
+    "kanji": "差す",
+    "han_viet": "SOA",
+    "hiragana": "さす",
+    "meaning": "Giơ(tay), giương(ô)"
+  },
+  {
+    "stt": 796,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "パートナー",
+    "meaning": "đối tác"
+  },
+  {
+    "stt": 797,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "リーダー",
+    "meaning": "lãnh đạo"
+  },
+  {
+    "stt": 798,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "ボランティア",
+    "meaning": "tình nguyện"
+  },
+  {
+    "stt": 799,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "コミュニケーション",
+    "meaning": "giao tiếp"
+  },
+  {
+    "stt": 800,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "ユーモア",
+    "meaning": "hài hước"
+  },
+  {
+    "stt": 801,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "ショック",
+    "meaning": "shock, choáng"
+  },
+  {
+    "stt": 802,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "ストレス",
+    "meaning": "căng thẳng, stress"
+  },
+  {
+    "stt": 803,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "バランス",
+    "meaning": "cân bằng"
+  },
+  {
+    "stt": 804,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "レベル",
+    "meaning": "trình độ, level"
+  },
+  {
+    "stt": 805,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "アップ",
+    "meaning": "tăng lên"
+  },
+  {
+    "stt": 806,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "ダウン",
+    "meaning": "giảm xuống"
+  },
+  {
+    "stt": 807,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "プラス",
+    "meaning": "phép cộng, tác động tích cực"
+  },
+  {
+    "stt": 808,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "マイナス",
+    "meaning": "phép trừ, điều bất lợi"
+  },
+  {
+    "stt": 809,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "イメージ",
+    "meaning": "hình ảnh"
+  },
+  {
+    "stt": 810,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "コンテスト",
+    "meaning": "cuộc thi"
+  },
+  {
+    "stt": 811,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "マスコミ",
+    "meaning": "thông tin truyền thông"
+  },
+  {
+    "stt": 812,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "プライバシー",
+    "meaning": "cá nhân, riêng tư"
+  },
+  {
+    "stt": 813,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "オフィス",
+    "meaning": "văn phòng"
+  },
+  {
+    "stt": 814,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "ルール",
+    "meaning": "Quy tắc"
+  },
+  {
+    "stt": 815,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "マナー",
+    "meaning": "quy tắc cư xử"
+  },
+  {
+    "stt": 816,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "ミス",
+    "meaning": "lỗi"
+  },
+  {
+    "stt": 817,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "スケジュール",
+    "meaning": "lịch, kế hoạch"
+  },
+  {
+    "stt": 818,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "タイトル",
+    "meaning": "tiêu đề"
+  },
+  {
+    "stt": 819,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "テーマ",
+    "meaning": "chủ đề"
+  },
+  {
+    "stt": 820,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "ストーリー",
+    "meaning": "câu chuyện"
+  },
+  {
+    "stt": 821,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "ヒット",
+    "meaning": "nổi tiếng (hit)"
+  },
+  {
+    "stt": 822,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "ブランド",
+    "meaning": "nhãn hiệu"
+  },
+  {
+    "stt": 823,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "レンタル",
+    "meaning": "thuê"
+  },
+  {
+    "stt": 824,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "リサイクル",
+    "meaning": "tái chế"
+  },
+  {
+    "stt": 825,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "ラベル",
+    "meaning": "Nhãn mác"
+  },
+  {
+    "stt": 826,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "タイプ",
+    "meaning": "loại"
+  },
+  {
+    "stt": 827,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "スタイル",
+    "meaning": "Style, phong cách"
+  },
+  {
+    "stt": 828,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "セット",
+    "meaning": "cài đặt, set"
+  },
+  {
+    "stt": 829,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "ウイルス",
+    "meaning": "virus"
+  },
+  {
+    "stt": 830,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "ロボット",
+    "meaning": "robot"
+  },
+  {
+    "stt": 831,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "エネルギー",
+    "meaning": "năng lượng"
+  },
+  {
+    "stt": 832,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "デジタル",
+    "meaning": "kỹ thuật số"
+  },
+  {
+    "stt": 833,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "マイク",
+    "meaning": "Mic; micrô"
+  },
+  {
+    "stt": 834,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "ブレーキ",
+    "meaning": "phanh"
+  },
+  {
+    "stt": 835,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "ペンキ",
+    "meaning": "sơn"
+  },
+  {
+    "stt": 836,
+    "kanji": "炊ける",
+    "han_viet": "XUY",
+    "hiragana": "たける",
+    "meaning": "được nấu"
+  },
+  {
+    "stt": 837,
+    "kanji": "炊く",
+    "han_viet": "XUY",
+    "hiragana": "たく",
+    "meaning": "nấu cơm"
+  },
+  {
+    "stt": 838,
+    "kanji": "煮える",
+    "han_viet": "CHỬ",
+    "hiragana": "にえる",
+    "meaning": "được nấu, được ninh"
+  },
+  {
+    "stt": 839,
+    "kanji": "煮る",
+    "han_viet": "CHỬ",
+    "hiragana": "にる",
+    "meaning": "nấu, ninh"
+  },
+  {
+    "stt": 840,
+    "kanji": "炒める",
+    "han_viet": "SAO",
+    "hiragana": "いためる",
+    "meaning": "xào"
+  },
+  {
+    "stt": 841,
+    "kanji": "焼ける",
+    "han_viet": "THIÊU",
+    "hiragana": "やける",
+    "meaning": "được nướng"
+  },
+  {
+    "stt": 842,
+    "kanji": "焼く",
+    "han_viet": "THIÊU",
+    "hiragana": "やく",
+    "meaning": "nướng"
+  },
+  {
+    "stt": 843,
+    "kanji": "ゆでる",
+    "han_viet": "",
+    "hiragana": "ゆでる",
+    "meaning": "luộc"
+  },
+  {
+    "stt": 844,
+    "kanji": "揚げる",
+    "han_viet": "DƯƠNG",
+    "hiragana": "あげる",
+    "meaning": "rán, chiên"
+  },
+  {
+    "stt": 845,
+    "kanji": "蒸す",
+    "han_viet": "CHƯNG",
+    "hiragana": "むす",
+    "meaning": "hấp"
+  },
+  {
+    "stt": 846,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "ぐっすり",
+    "meaning": "Ngủ say"
+  },
+  {
+    "stt": 847,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "きちんと",
+    "meaning": "ngay ngắn, nghiêm chỉnh"
+  },
+  {
+    "stt": 848,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "しっかり",
+    "meaning": "chắc chắn"
+  },
+  {
+    "stt": 849,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "はっきり",
+    "meaning": "rõ ràng"
+  },
+  {
+    "stt": 850,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "じっと",
+    "meaning": "Nhìn chằm chằm"
+  },
+  {
+    "stt": 851,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "そっと",
+    "meaning": "nhẹ nhàng, yên lặng"
+  },
+  {
+    "stt": 852,
+    "kanji": "別々に",
+    "han_viet": "BIỆT",
+    "hiragana": "べつべつに",
+    "meaning": "riêng biệt, riêng ra"
+  },
+  {
+    "stt": 853,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "それぞれ",
+    "meaning": "lần lượt, tương ứng"
+  },
+  {
+    "stt": 854,
+    "kanji": "互いに",
+    "han_viet": "HỖ",
+    "hiragana": "たがいに",
+    "meaning": "Cùng nhau"
+  },
+  {
+    "stt": 855,
+    "kanji": "直接",
+    "han_viet": "TRỰC TIẾP",
+    "hiragana": "ちょくせつ",
+    "meaning": "trực tiếp"
+  },
+  {
+    "stt": 856,
+    "kanji": "本当に",
+    "han_viet": "BỔN ĐƯƠNG",
+    "hiragana": "ほんとうに",
+    "meaning": "thật lòng, thật sự"
+  },
+  {
+    "stt": 857,
+    "kanji": "必ず",
+    "han_viet": "TẤT",
+    "hiragana": "かならず",
+    "meaning": "chắc chắn"
+  },
+  {
+    "stt": 858,
+    "kanji": "絶対に",
+    "han_viet": "TUYỆT ĐỐI",
+    "hiragana": "ぜったいに",
+    "meaning": "Tuyệt đối"
+  },
+  {
+    "stt": 859,
+    "kanji": "特に",
+    "han_viet": "ĐẶC",
+    "hiragana": "とくに",
+    "meaning": "đặc biệt là"
+  },
+  {
+    "stt": 860,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "ただ",
+    "meaning": "chỉ"
+  },
+  {
+    "stt": 861,
+    "kanji": "少なくとも",
+    "han_viet": "THIỂU",
+    "hiragana": "すくなくとも",
+    "meaning": "ít nhất là, tối thiểu là.."
+  },
+  {
+    "stt": 862,
+    "kanji": "決して",
+    "han_viet": "QUYẾT",
+    "hiragana": "けっして",
+    "meaning": "không bao giờ"
+  },
+  {
+    "stt": 863,
+    "kanji": "少しも",
+    "han_viet": "THIỂU",
+    "hiragana": "すこしも",
+    "meaning": "1 chút cũng (không)"
+  },
+  {
+    "stt": 864,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "ちっとも",
+    "meaning": "(không) tí gì"
+  },
+  {
+    "stt": 865,
+    "kanji": "全く",
+    "han_viet": "TOÀN",
+    "hiragana": "まったく",
+    "meaning": "Toàn bộ, tất cả, thật tình"
+  },
+  {
+    "stt": 866,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "とても",
+    "meaning": "rất"
+  },
+  {
+    "stt": 867,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "どんなに",
+    "meaning": "thế nào cũng, kiểu gì cũng"
+  },
+  {
+    "stt": 868,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "どうしても",
+    "meaning": "Dù thế nào cũng"
+  },
+  {
+    "stt": 869,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "まるで",
+    "meaning": "Hoàn toàn, giống như..."
+  },
+  {
+    "stt": 870,
+    "kanji": "一体",
+    "han_viet": "NHẤT THỂ",
+    "hiragana": "いったい",
+    "meaning": "Đồng nhất, là một"
+  },
+  {
+    "stt": 871,
+    "kanji": "別に",
+    "han_viet": "BIỆT",
+    "hiragana": "べつに",
+    "meaning": "Đặc biệt, Không có gì"
+  },
+  {
+    "stt": 872,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "たった",
+    "meaning": "chỉ, mỗi"
+  },
+  {
+    "stt": 873,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "ほんの",
+    "meaning": "một chút"
+  },
+  {
+    "stt": 874,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "それで",
+    "meaning": "thế thì"
+  },
+  {
+    "stt": 875,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "そこで",
+    "meaning": "tiếp theo"
+  },
+  {
+    "stt": 876,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "そのうえ",
+    "meaning": "hơn nữa"
+  },
+  {
+    "stt": 877,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "また",
+    "meaning": "nữa"
+  },
+  {
+    "stt": 878,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "または",
+    "meaning": "hoặc"
+  },
+  {
+    "stt": 879,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "それとも",
+    "meaning": "hoặc"
+  },
+  {
+    "stt": 880,
+    "kanji": "",
+    "han_viet": "",
+    "hiragana": "つまり",
+    "meaning": "Tóm lại"
+  }
+]

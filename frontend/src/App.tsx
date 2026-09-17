@@ -1,580 +1,623 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect, useCallback, useMemo, useRef } from "react";
+import rawVocabData from "./data/mimikara_oboeru_vocab.json";
+import type { RawVocabItem, VocabItem, Question } from "./types/quiz";
 import {
-  QueryClient,
-  QueryClientProvider,
-  useQuery,
-  useMutation,
-  useQueryClient,
-} from "@tanstack/react-query";
-import { todoApi, getApiBaseUrl, type FetchTodosResponse } from "./api/todoApi";
-import type { Todo } from "./types/todo";
+  cleanVocabData,
+  QuizBuffer,
+  buildQuestion,
+} from "./utils/quizEngine";
 import { trackEvent } from "./utils/gtm";
 
-// Initialize Query Client
-const queryClient = new QueryClient({
-  defaultOptions: {
-    queries: {
-      retry: 1,
-      refetchOnWindowFocus: false,
-    },
-  },
-});
+const ALL_ITEMS: VocabItem[] = cleanVocabData(rawVocabData as RawVocabItem[]);
+const BATCH_SIZE = 50;
 
-interface ToastMessage {
-  id: string;
-  text: string;
-  icon: string;
-}
-
-function MainApp() {
-  const queryClient = useQueryClient();
-  const [activeUrl, setActiveUrl] = useState<string>(getApiBaseUrl());
-  const [inputUrl, setInputUrl] = useState<string>(getApiBaseUrl());
-  const [newTitle, setNewTitle] = useState<string>("");
-  const [editingId, setEditingId] = useState<string | null>(null);
-  const [editingTitle, setEditingTitle] = useState<string>("");
-  const [toasts, setToasts] = useState<ToastMessage[]>([]);
-
-  // Search/Filters/Sort states
-  const [filterTab, setFilterTab] = useState<"all" | "active" | "completed">("all");
-  const [searchQuery, setSearchQuery] = useState<string>("");
-  const [sortOrder, setSortOrder] = useState<"-created_at" | "created_at">("-created_at");
-
-  // Dark/Light mode state
+export default function App() {
+  // Theme State
   const [theme, setTheme] = useState<"dark" | "light">(() => {
-    const saved = localStorage.getItem("theme");
-    if (saved === "light" || saved === "dark") return saved;
-    return "dark";
+    const saved = localStorage.getItem("mimikara_theme");
+    return saved === "light" || saved === "dark" ? saved : "dark";
   });
 
   const toggleTheme = () => {
-    const nextTheme = theme === "dark" ? "light" : "dark";
-    setTheme(nextTheme);
-    localStorage.setItem("theme", nextTheme);
-    document.documentElement.setAttribute("data-theme", nextTheme);
-    trackEvent("theme_toggle", { theme: nextTheme });
+    const next = theme === "dark" ? "light" : "dark";
+    setTheme(next);
+    localStorage.setItem("mimikara_theme", next);
+    document.documentElement.setAttribute("data-theme", next);
+    trackEvent("theme_toggle", { theme: next });
   };
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
   }, [theme]);
 
-  // Show a notifications toast helper
-  const showToast = (text: string, icon = "ℹ️") => {
-    const id = Math.random().toString(36).substring(2, 9);
-    setToasts((prev) => [...prev, { id, text, icon }]);
-    setTimeout(() => {
-      setToasts((prev) => prev.filter((t) => t.id !== id));
-    }, 3000);
-  };
+  // Batch Range State (defaults to first 50 items like quiz_mimikara_n3.py)
+  const [batchKey, setBatchKey] = useState<string>("batch_0_50");
 
-  // Queries (Restructured to follow pagination & filtering schemas)
-  const {
-    data,
-    isLoading,
-    isError,
-    error,
-    refetch,
-    isFetching,
-  } = useQuery<FetchTodosResponse>({
-    queryKey: ["todos", activeUrl, filterTab, sortOrder],
-    queryFn: () =>
-      todoApi.getTodos({
-        done: filterTab === "all" ? undefined : filterTab === "completed",
-        sort: sortOrder,
-      }),
+  const batchOptions = useMemo(() => {
+    const options: { key: string; label: string; start: number; end: number }[] = [];
+    const total = ALL_ITEMS.length;
+    let batchIndex = 1;
+
+    for (let start = 0; start < total; start += BATCH_SIZE) {
+      const end = Math.min(start + BATCH_SIZE, total);
+      options.push({
+        key: `batch_${start}_${end}`,
+        label: `Bài ${batchIndex} (Từ ${start + 1} - ${end})`,
+        start,
+        end,
+      });
+      batchIndex++;
+    }
+
+    options.push({
+      key: "all",
+      label: `Tất cả (${total} từ vựng N3)`,
+      start: 0,
+      end: total,
+    });
+
+    return options;
+  }, []);
+
+  // Filtered Items based on selected batch
+  const currentBatchItems = useMemo(() => {
+    const opt = batchOptions.find((b) => b.key === batchKey);
+    if (!opt || opt.key === "all") {
+      return ALL_ITEMS;
+    }
+    return ALL_ITEMS.slice(opt.start, opt.end);
+  }, [batchKey, batchOptions]);
+
+  // Quiz State
+  const [buffer, setBuffer] = useState<QuizBuffer>(() => {
+    const initialItems = ALL_ITEMS.slice(0, Math.min(BATCH_SIZE, ALL_ITEMS.length));
+    return new QuizBuffer(initialItems.map((_, i) => i));
   });
 
-  const todos = data?.data || [];
+  const [currentQuestion, setCurrentQuestion] = useState<Question | null>(null);
+  const [selectedOption, setSelectedOption] = useState<string | null>(null);
+  const [isAnswered, setIsAnswered] = useState<boolean>(false);
+  const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
 
-  // Mutations with Optimistic UI updates
-  const createMutation = useMutation({
-    mutationFn: todoApi.createTodo,
-    onMutate: async (newTodo) => {
-      await queryClient.cancelQueries({ queryKey: ["todos"] });
-      const previousData = queryClient.getQueryData<FetchTodosResponse>([
-        "todos",
-        activeUrl,
-        filterTab,
-        sortOrder,
-      ]);
+  // Statistics
+  const [round, setRound] = useState<number>(1);
+  const [correctCount, setCorrectCount] = useState<number>(0);
+  const [wrongCount, setWrongCount] = useState<number>(0);
+  const [streak, setStreak] = useState<number>(0);
+  const [bestStreak, setBestStreak] = useState<number>(0);
+  const [isRoundComplete, setIsRoundComplete] = useState<boolean>(false);
+  const [wrongWords, setWrongWords] = useState<VocabItem[]>([]);
+  const [isPlayingAudio, setIsPlayingAudio] = useState<boolean>(false);
 
-      const optimisticTodo: Todo = {
-        id: `optimistic-${Date.now()}`,
-        title: newTodo.title,
-        done: newTodo.done || false,
-        created_at: new Date().toISOString(),
-        updated_at: new Date().toISOString(),
-      };
+  // Remaining and retry counts for reactive display
+  const [remainingCount, setRemainingCount] = useState<number>(0);
+  const [retryCount, setRetryCount] = useState<number>(0);
+  const [pendingNewCount, setPendingNewCount] = useState<number>(0);
 
-      if (previousData) {
-        queryClient.setQueryData(["todos", activeUrl, filterTab, sortOrder], {
-          ...previousData,
-          data: [optimisticTodo, ...previousData.data],
+  // Ref to track latest state in key listener
+  const stateRef = useRef({
+    isAnswered,
+    currentQuestion,
+    selectedOption,
+    isRoundComplete,
+  });
+  stateRef.current = {
+    isAnswered,
+    currentQuestion,
+    selectedOption,
+    isRoundComplete,
+  };
+
+  // Sync buffer counts to React state
+  const syncBufferCounts = useCallback((buf: QuizBuffer) => {
+    setRemainingCount(buf.remainingCount());
+    setRetryCount(buf.getPendingRetryCount());
+    setPendingNewCount(buf.getPendingNewCount());
+  }, []);
+
+  // Pronounce Japanese word via SpeechSynthesis API
+  const playPronunciation = useCallback((textToSpeak: string) => {
+    if (!("speechSynthesis" in window)) return;
+    try {
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(textToSpeak);
+      utterance.lang = "ja-JP";
+      utterance.rate = 0.9;
+      utterance.onstart = () => setIsPlayingAudio(true);
+      utterance.onend = () => setIsPlayingAudio(false);
+      utterance.onerror = () => setIsPlayingAudio(false);
+      window.speechSynthesis.speak(utterance);
+    } catch {
+      setIsPlayingAudio(false);
+    }
+  }, []);
+
+  // Pick Next Question
+  const advanceToNextQuestion = useCallback(
+    (buf: QuizBuffer) => {
+      if (buf.isRoundComplete()) {
+        setIsRoundComplete(true);
+        setCurrentQuestion(null);
+        setSelectedOption(null);
+        setIsAnswered(false);
+        setIsCorrect(null);
+        syncBufferCounts(buf);
+
+        trackEvent("quiz_completed", {
+          round,
+          correct: correctCount,
+          wrong: wrongCount,
+          batch: batchKey,
         });
+        return;
       }
 
-      return { previousData };
-    },
-    onError: (err: any, _, context) => {
-      if (context?.previousData) {
-        queryClient.setQueryData(
-          ["todos", activeUrl, filterTab, sortOrder],
-          context.previousData
-        );
+      const nextIdx = buf.nextIndex();
+      if (nextIdx !== null && currentBatchItems[nextIdx]) {
+        const q = buildQuestion(currentBatchItems, nextIdx);
+        setCurrentQuestion(q);
+        setSelectedOption(null);
+        setIsAnswered(false);
+        setIsCorrect(null);
+        syncBufferCounts(buf);
       }
-      const errorMsg =
-        err.response?.data?.error?.message || err.message || "Failed to create task";
-      showToast(errorMsg, "❌");
     },
-    onSuccess: () => {
-      showToast("Task added successfully", "✅");
-      trackEvent("todo_created", { title: newTitle.trim() });
-      setNewTitle("");
-    },
-    onSettled: () => {
-      queryClient.invalidateQueries({ queryKey: ["todos"] });
-    },
-  });
-
-  const updateMutation = useMutation({
-    mutationFn: ({ id, title, done }: { id: string; title?: string; done?: boolean }) =>
-      todoApi.updateTodo(id, { title, done }),
-    onMutate: async (variables) => {
-      await queryClient.cancelQueries({ queryKey: ["todos"] });
-      const previousData = queryClient.getQueryData<FetchTodosResponse>([
-        "todos",
-        activeUrl,
-        filterTab,
-        sortOrder,
-      ]);
-
-      if (previousData) { 
-        queryClient.setQueryData(["todos", activeUrl, filterTab, sortOrder], {
-          ...previousData,
-          data: previousData.data.map((todo) =>
-            todo.id === variables.id
-              ? { ...todo, ...variables, updated_at: new Date().toISOString() }
-              : todo
-          ),
-        });
-      }
-
-      return { previousData };
-    },
-    onError: (err: any, _, context) => {
-      if (context?.previousData) {
-        queryClient.setQueryData(
-          ["todos", activeUrl, filterTab, sortOrder],
-          context.previousData
-        );
-      }
-      const errorMsg =
-        err.response?.data?.error?.message || err.message || "Failed to update task";
-      showToast(errorMsg, "❌");
-    },
-    onSuccess: (data) => {
-      showToast(data.done ? "Task completed!" : "Task active", "✓");
-      trackEvent("todo_updated", { id: data.id, done: data.done });
-    },
-    onSettled: () => {
-      queryClient.invalidateQueries({ queryKey: ["todos"] });
-    },
-  });
-
-  const deleteMutation = useMutation({
-    mutationFn: todoApi.deleteTodo,
-    onMutate: async (id) => {
-      await queryClient.cancelQueries({ queryKey: ["todos"] });
-      const previousData = queryClient.getQueryData<FetchTodosResponse>([
-        "todos",
-        activeUrl,
-        filterTab,
-        sortOrder,
-      ]);
-
-      if (previousData) {
-        queryClient.setQueryData(["todos", activeUrl, filterTab, sortOrder], {
-          ...previousData,
-          data: previousData.data.filter((todo) => todo.id !== id),
-        });
-      }
-
-      return { previousData };
-    },
-    onError: (err: any, _, context) => {
-      if (context?.previousData) {
-        queryClient.setQueryData(
-          ["todos", activeUrl, filterTab, sortOrder],
-          context.previousData
-        );
-      }
-      const errorMsg =
-        err.response?.data?.error?.message || err.message || "Failed to delete task";
-      showToast(errorMsg, "❌");
-    },
-    onSuccess: () => {
-      showToast("Task deleted", "🗑️");
-      trackEvent("todo_deleted");
-    },
-    onSettled: () => {
-      queryClient.invalidateQueries({ queryKey: ["todos"] });
-    },
-  });
-
-  // Handlers
-  const handleSaveConfig = () => {
-    let url = inputUrl.trim();
-    if (!url) {
-      showToast("API URL cannot be empty", "⚠️");
-      return;
-    }
-    if (!url.startsWith("http://") && !url.startsWith("https://") && url !== "/") {
-      showToast("URL must start with http:// or https://", "⚠️");
-      return;
-    }
-    if (url !== "/" && !url.endsWith("/")) {
-      url += "/";
-    }
-    localStorage.setItem("todo_api_url", url);
-    setActiveUrl(url);
-    showToast("Endpoint configuration saved!", "✅");
-  };
-
-  const handleResetConfig = () => {
-    localStorage.removeItem("todo_api_url");
-    const defaultUrl = import.meta.env.VITE_API_BASE_URL || "/";
-    setActiveUrl(defaultUrl);
-    setInputUrl(defaultUrl);
-    showToast("Reset to default endpoint", "🔄");
-  };
-
-  const handleAddTodo = (e: React.FormEvent) => {
-    e.preventDefault();
-    const title = newTitle.trim();
-    if (!title) return;
-    createMutation.mutate({ title, done: false });
-  };
-
-  const handleToggleTodo = (todo: Todo) => {
-    updateMutation.mutate({ id: todo.id, done: !todo.done });
-  };
-
-  const handleStartEdit = (todo: Todo) => {
-    setEditingId(todo.id);
-    setEditingTitle(todo.title);
-  };
-
-  const handleSaveEdit = (id: string) => {
-    const title = editingTitle.trim();
-    if (!title) {
-      setEditingId(null);
-      return;
-    }
-    updateMutation.mutate({ id, title });
-    setEditingId(null);
-  };
-
-  const handleKeyDown = (e: React.KeyboardEvent, id: string) => {
-    if (e.key === "Enter") {
-      handleSaveEdit(id);
-    } else if (e.key === "Escape") {
-      setEditingId(null);
-    }
-  };
-
-  const handleDelete = (id: string) => {
-    if (confirm("Are you sure you want to delete this task?")) {
-      deleteMutation.mutate(id);
-    }
-  };
-
-  // Determine Connection Status
-  const isConnected = !isError && !isLoading;
-  const statusBadgeText = isLoading || isFetching ? "Syncing..." : isConnected ? "Connected" : "Error";
-
-  // Filter todos by title search query client side
-  const filteredTodos = todos.filter((todo) =>
-    todo.title.toLowerCase().includes(searchQuery.toLowerCase())
+    [currentBatchItems, round, correctCount, wrongCount, batchKey, syncBufferCounts]
   );
 
+  // Initialize or Reset Round
+  const startNewRound = useCallback(
+    (items = currentBatchItems) => {
+      const newBuf = new QuizBuffer(items.map((_, i) => i));
+      setBuffer(newBuf);
+      setCorrectCount(0);
+      setWrongCount(0);
+      setWrongWords([]);
+      setIsRoundComplete(false);
+      syncBufferCounts(newBuf);
+      advanceToNextQuestion(newBuf);
+      trackEvent("quiz_start_round", { round: round + 1, totalItems: items.length });
+    },
+    [currentBatchItems, round, syncBufferCounts, advanceToNextQuestion]
+  );
+
+  // Switch Batch
+  const handleBatchChange = (newKey: string) => {
+    setBatchKey(newKey);
+    const opt = batchOptions.find((b) => b.key === newKey);
+    const items = (!opt || opt.key === "all") ? ALL_ITEMS : ALL_ITEMS.slice(opt.start, opt.end);
+    setRound(1);
+    setStreak(0);
+    setBestStreak(0);
+    startNewRound(items);
+  };
+
+  // Initial mount: load first question
+  useEffect(() => {
+    const initialBuf = new QuizBuffer(currentBatchItems.map((_, i) => i));
+    setBuffer(initialBuf);
+    syncBufferCounts(initialBuf);
+    advanceToNextQuestion(initialBuf);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  // User selects an option
+  const handleSelectOption = useCallback(
+    (chosen: string) => {
+      if (isAnswered || !currentQuestion) return;
+
+      const correct = chosen === currentQuestion.answer;
+      setSelectedOption(chosen);
+      setIsAnswered(true);
+      setIsCorrect(correct);
+
+      // Auto pronounce word on answer
+      playPronunciation(currentQuestion.hiragana);
+
+      if (correct) {
+        setCorrectCount((prev) => prev + 1);
+        setStreak((prev) => {
+          const nextStreak = prev + 1;
+          setBestStreak((b) => Math.max(b, nextStreak));
+          return nextStreak;
+        });
+
+        trackEvent("quiz_answer", {
+          result: "correct",
+          word: currentQuestion.question_text,
+          stt: currentQuestion.stt,
+        });
+      } else {
+        setWrongCount((prev) => prev + 1);
+        setStreak(0);
+
+        // Put failed question in pendingRetry queue (exact Python quiz logic)
+        buffer.markWrong(currentQuestion.vocabIndex);
+
+        // Save to review list
+        const vocabItem = currentBatchItems[currentQuestion.vocabIndex];
+        if (vocabItem) {
+          setWrongWords((prev) => {
+            if (prev.some((w) => w.question_text === vocabItem.question_text)) {
+              return prev;
+            }
+            return [...prev, vocabItem];
+          });
+        }
+
+        trackEvent("quiz_answer", {
+          result: "wrong",
+          word: currentQuestion.question_text,
+          correctAnswer: currentQuestion.answer,
+          stt: currentQuestion.stt,
+        });
+      }
+
+      syncBufferCounts(buffer);
+    },
+    [isAnswered, currentQuestion, playPronunciation, buffer, currentBatchItems, syncBufferCounts]
+  );
+
+  // Next question button handler
+  const handleNext = useCallback(() => {
+    advanceToNextQuestion(buffer);
+  }, [advanceToNextQuestion, buffer]);
+
+  // Keyboard Shortcuts: 1, 2, 3, 4 to choose; Space or Enter to go to next question
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      const { isAnswered: answered, currentQuestion: q, isRoundComplete: complete } =
+        stateRef.current;
+
+      if (complete) {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          startNewRound();
+        }
+        return;
+      }
+
+      if (!answered && q) {
+        if (["1", "2", "3", "4"].includes(e.key)) {
+          const idx = parseInt(e.key, 10) - 1;
+          if (q.options[idx]) {
+            e.preventDefault();
+            handleSelectOption(q.options[idx]);
+          }
+        }
+      } else if (answered) {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          handleNext();
+        }
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [handleSelectOption, handleNext, startNewRound]);
+
+  // Mastered progress calculation
+  const totalInBatch = currentBatchItems.length;
+  const masteredCount = Math.max(0, totalInBatch - remainingCount);
+  const masteredPercent = totalInBatch > 0 ? (masteredCount / totalInBatch) * 100 : 0;
+  const retryPercent = totalInBatch > 0 ? (retryCount / totalInBatch) * 100 : 0;
+  const pendingNewPercent = totalInBatch > 0 ? (pendingNewCount / totalInBatch) * 100 : 0;
+  const accuracyPercent =
+    correctCount + wrongCount > 0
+      ? Math.round((correctCount / (correctCount + wrongCount)) * 100)
+      : 0;
+
   return (
-    <>
-      <header>
-        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", width: "100%", paddingBottom: "1.5rem" }}>
-          <div style={{ textAlign: "left" }}>
-            <h1>Todo Cloud Manager</h1>
-            <p className="subtitle">React Vite + TypeScript Frontend connected to FastAPI & DynamoDB</p>
+    <div className="app-container">
+      {/* Header */}
+      <header className="app-header">
+        <div className="brand-section">
+          <span className="brand-badge">N3 VOCAB</span>
+          <div>
+            <h1 className="brand-title">Mimikara Oboeru</h1>
+            <p className="brand-sub">Quiz trắc nghiệm từ vựng tiếng Nhật N3 thông minh</p>
           </div>
-          <button 
-            className="btn-secondary" 
-            onClick={toggleTheme} 
-            style={{ 
-              padding: "0.5rem", 
-              borderRadius: "50%", 
-              width: "40px", 
-              height: "40px", 
-              display: "flex", 
-              alignItems: "center", 
-              justifyContent: "center",
-              fontSize: "1.2rem",
-              background: "rgba(255, 255, 255, 0.05)"
-            }} 
-            title="Toggle Theme"
+        </div>
+
+        <div className="header-actions">
+          <button
+            className="btn-icon"
+            onClick={toggleTheme}
+            title={theme === "dark" ? "Chuyển sang giao diện sáng" : "Chuyển sang giao diện tối"}
+            aria-label="Toggle Theme"
           >
             {theme === "dark" ? "☀️" : "🌙"}
+          </button>
+          <button
+            className="btn-icon"
+            onClick={() => {
+              setRound((r) => r + 1);
+              startNewRound();
+            }}
+            title="Reset lượt chơi hiện tại"
+            aria-label="Reset Quiz"
+          >
+            🔄
           </button>
         </div>
       </header>
 
-      {/* Network Configuration card */}
-      <section className="card config-section">
-        <div className="config-title">API Endpoint Connection</div>
-        <div className="input-group">
-          <input
-            type="text"
-            value={inputUrl}
-            onChange={(e) => setInputUrl(e.target.value)}
-            placeholder="Connection URL, e.g. http://localhost:8000"
-          />
-          <button className="btn-primary" onClick={handleSaveConfig}>
-            Connect
-          </button>
-          <button className="btn-secondary" onClick={handleResetConfig}>
-            Reset
-          </button>
+      {/* Batch Selector Bar */}
+      <div className="batch-selector-bar">
+        <div className="batch-info">
+          <span>Đang ôn:</span>
+          <strong>{batchOptions.find((b) => b.key === batchKey)?.label}</strong>
+          <span>({totalInBatch} từ)</span>
         </div>
-        <div style={{ fontSize: "0.8rem", color: "var(--text-secondary)", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-          <span>
-            Active Endpoint:{" "}
-            <strong style={{ color: "#6366f1", wordBreak: "break-all" }}>
-              {activeUrl}
-            </strong>
-          </span>
-          <span
-            className="badge"
-            style={{
-              background: isLoading || isFetching
-                ? "rgba(255, 255, 255, 0.05)"
-                : isConnected
-                ? "rgba(16, 185, 129, 0.15)"
-                : "rgba(239, 68, 68, 0.15)",
-              color: isLoading || isFetching
-                ? "var(--text-secondary)"
-                : isConnected
-                ? "var(--accent-green)"
-                : "var(--accent-red)",
-            }}
+        <div className="batch-controls">
+          <label htmlFor="batch-select" style={{ fontSize: "0.82rem", color: "var(--text-muted)" }}>
+            Chọn bài:
+          </label>
+          <select
+            id="batch-select"
+            className="batch-select"
+            value={batchKey}
+            onChange={(e) => handleBatchChange(e.target.value)}
           >
-            {statusBadgeText}
-          </span>
+            {batchOptions.map((opt) => (
+              <option key={opt.key} value={opt.key}>
+                {opt.label}
+              </option>
+            ))}
+          </select>
         </div>
-      </section>
+      </div>
 
-      {/* Add Task card */}
-      <section className="card">
-        <form className="todo-form" onSubmit={handleAddTodo}>
-          <input
-            type="text"
-            value={newTitle}
-            onChange={(e) => setNewTitle(e.target.value)}
-            placeholder="Type a task and press enter..."
-            disabled={!isConnected || createMutation.isPending}
-            required
-          />
-          <button
-            type="submit"
-            className="btn-primary"
-            disabled={!isConnected || !newTitle.trim() || createMutation.isPending}
-          >
-            {createMutation.isPending ? (
-              <>
-                <div className="spinner"></div> Creating...
-              </>
-            ) : (
-              "Add Task"
-            )}
-          </button>
-        </form>
-      </section>
-
-      {/* Filter and Search card */}
-      <section className="card filters-section">
-        <div className="search-box" style={{ display: "flex", width: "100%" }}>
-          <input
-            type="text"
-            placeholder="Search tasks..."
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            style={{ width: "100%" }}
-          />
-        </div>
-        <div className="filter-sort-controls">
-          <div className="tabs">
-            <button
-              className={`tab-btn ${filterTab === "all" ? "active" : ""}`}
-              onClick={() => setFilterTab("all")}
-            >
-              All
-            </button>
-            <button
-              className={`tab-btn ${filterTab === "active" ? "active" : ""}`}
-              onClick={() => setFilterTab("active")}
-            >
-              Active
-            </button>
-            <button
-              className={`tab-btn ${filterTab === "completed" ? "active" : ""}`}
-              onClick={() => setFilterTab("completed")}
-            >
-              Completed
-            </button>
+      {/* Realtime Stats Grid */}
+      <div className="stats-grid">
+        <div className="stat-pill">
+          <div className="stat-icon-box stat-icon-mastered">✓</div>
+          <div className="stat-meta">
+            <span className="stat-val">{masteredCount}</span>
+            <span className="stat-lbl">Đã nhớ ({Math.round(masteredPercent)}%)</span>
           </div>
-          <div className="sort-select">
-            <label htmlFor="sort-order" style={{ fontSize: "0.85rem", color: "var(--text-secondary)" }}>Sort:</label>
-            <select
-              id="sort-order"
-              value={sortOrder}
-              onChange={(e) => setSortOrder(e.target.value as any)}
-              style={{
-                background: "var(--input-bg)",
-                border: "1px solid var(--border-color)",
-                color: "var(--text-primary)",
-                padding: "0.4rem 0.6rem",
-                borderRadius: "6px",
-                fontFamily: "inherit",
-                fontSize: "0.85rem",
-                outline: "none"
+        </div>
+
+        <div className="stat-pill">
+          <div className="stat-icon-box stat-icon-pending">⏳</div>
+          <div className="stat-meta">
+            <span className="stat-val">{pendingNewCount}</span>
+            <span className="stat-lbl">Chưa làm</span>
+          </div>
+        </div>
+
+        <div className="stat-pill">
+          <div className="stat-icon-box stat-icon-retry">↩</div>
+          <div className="stat-meta">
+            <span className="stat-val">{retryCount}</span>
+            <span className="stat-lbl">Cần làm lại</span>
+          </div>
+        </div>
+
+        <div className="stat-pill">
+          <div className="stat-icon-box stat-icon-streak">🔥</div>
+          <div className="stat-meta">
+            <span className="stat-val">{streak}</span>
+            <span className="stat-lbl">Chuỗi đúng (Kỉ lục: {bestStreak})</span>
+          </div>
+        </div>
+      </div>
+
+      {/* Multi-Segmented Progress Bar */}
+      <div className="progress-card">
+        <div className="progress-header">
+          <span>Tiến độ lượt {round}</span>
+          <span>
+            {masteredCount} / {totalInBatch} từ hoàn thành ({Math.round(masteredPercent)}%)
+          </span>
+        </div>
+        <div className="progress-bar-container">
+          <div
+            className="prog-seg prog-seg-mastered"
+            style={{ width: `${masteredPercent}%` }}
+            title={`Đã thuộc: ${masteredCount} từ`}
+          />
+          <div
+            className="prog-seg prog-seg-retry"
+            style={{ width: `${retryPercent}%` }}
+            title={`Làm sai cần hỏi lại: ${retryCount} từ`}
+          />
+          <div
+            className="prog-seg prog-seg-new"
+            style={{ width: `${pendingNewPercent}%` }}
+            title={`Chưa hỏi: ${pendingNewCount} từ`}
+          />
+        </div>
+        <div className="progress-legend">
+          <div className="legend-item">
+            <div className="legend-dot" style={{ background: "var(--success)" }}></div>
+            <span>Đã làm đúng ({masteredCount})</span>
+          </div>
+          <div className="legend-item">
+            <div className="legend-dot" style={{ background: "var(--warning)" }}></div>
+            <span>Hỏi lại sau ({retryCount})</span>
+          </div>
+          <div className="legend-item">
+            <div className="legend-dot" style={{ background: "var(--primary)" }}></div>
+            <span>Chưa làm ({pendingNewCount})</span>
+          </div>
+        </div>
+      </div>
+
+      {/* Main Content: Quiz Card OR Round Complete View */}
+      {isRoundComplete ? (
+        <div className="round-complete-card">
+          <div className="celebrate-icon">🎉</div>
+          <h2 className="round-complete-title">Xuất sắc! Bạn đã nhớ hết tất cả từ vựng!</h2>
+          <p style={{ color: "var(--text-secondary)", maxWidth: "520px" }}>
+            Tất cả các câu hỏi trong lượt này (bao gồm cả các từ từng làm sai) đều đã được bạn trả
+            lời chính xác.
+          </p>
+
+          <div className="round-stats-summary">
+            <div className="summary-metric">
+              <span className="val" style={{ color: "var(--success)" }}>
+                {correctCount}
+              </span>
+              <span className="lbl">Lượt trả lời đúng</span>
+            </div>
+            <div className="summary-metric">
+              <span className="val" style={{ color: "var(--danger)" }}>
+                {wrongCount}
+              </span>
+              <span className="lbl">Lượt trả lời sai</span>
+            </div>
+            <div className="summary-metric">
+              <span className="val" style={{ color: "var(--primary)" }}>
+                {accuracyPercent}%
+              </span>
+              <span className="lbl">Tỉ lệ chính xác</span>
+            </div>
+          </div>
+
+          {wrongWords.length > 0 && (
+            <div className="review-section">
+              <div className="review-heading">
+                <span>📝 Các từ bạn đã từng làm sai trong lượt này ({wrongWords.length} từ):</span>
+              </div>
+              <div className="review-list">
+                {wrongWords.map((item, idx) => (
+                  <div key={idx} className="review-item">
+                    <div className="review-item-jp">
+                      <span>{item.question_text}</span>
+                      {item.han_viet && (
+                        <span className="han-viet-badge" style={{ fontSize: "0.75rem", padding: "2px 6px" }}>
+                          {item.han_viet}
+                        </span>
+                      )}
+                    </div>
+                    <div className="review-item-vn">{item.meaning}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          <div className="round-actions">
+            <button
+              className="btn-primary"
+              onClick={() => {
+                setRound((r) => r + 1);
+                startNewRound();
               }}
             >
-              <option value="-created_at">Newest first</option>
-              <option value="created_at">Oldest first</option>
-            </select>
+              🔄 Bắt đầu lượt mới (Shuffle lại)
+            </button>
           </div>
         </div>
-      </section>
-
-      {/* Task List card */}
-      <section className="card todo-list-container">
-        <div className="todo-list-header">
-          <h3>My Tasks</h3>
-          <span style={{ color: "var(--text-secondary)", fontSize: "0.9rem" }}>
-            {filteredTodos.length} task{filteredTodos.length === 1 ? "" : "s"}
-          </span>
-        </div>
-
-        <ul className="todo-list">
-          {isLoading ? (
-            <div className="empty-state">
-              <div className="spinner"></div>
-              <p style={{ marginTop: "0.5rem" }}>Loading tasks from FastAPI & DynamoDB...</p>
+      ) : currentQuestion ? (
+        <main className="quiz-card">
+          {/* Top meta tags */}
+          <div className="question-top-bar">
+            <div className="question-tags">
+              {currentQuestion.stt && (
+                <span className="tag-stt">#{currentQuestion.stt}</span>
+              )}
+              {retryCount > 0 && pendingNewCount === 0 && (
+                <span className="tag-retry">↩ Câu hỏi ôn tập lại</span>
+              )}
             </div>
-          ) : isError ? (
-            <div className="empty-state">
-              <p style={{ color: "var(--accent-red)", fontWeight: 500 }}>
-                Failed to connect to API Backend
-              </p>
-              <p style={{ fontSize: "0.8rem", maxWidth: "80%", wordBreak: "break-all" }}>
-                {(error as Error)?.message || "Network Error"}
-              </p>
-              <button
-                className="btn-secondary"
-                onClick={() => refetch()}
-                style={{ marginTop: "0.5rem", padding: "0.4rem 1rem" }}
-              >
-                Retry
+            <span className="question-prompt-text">Chọn nghĩa tiếng Việt đúng</span>
+          </div>
+
+          {/* Word Display Hero */}
+          <div className="word-hero-display">
+            <button
+              className={`audio-btn ${isPlayingAudio ? "playing" : ""}`}
+              onClick={() => playPronunciation(currentQuestion.hiragana)}
+              title="Nghe phát âm tiếng Nhật"
+              aria-label="Phát âm tiếng Nhật"
+            >
+              🔊
+            </button>
+
+            {currentQuestion.kanji ? (
+              <>
+                <div className="kanji-text">{currentQuestion.kanji}</div>
+                <div className="hiragana-subtext">{currentQuestion.hiragana}</div>
+              </>
+            ) : (
+              <div className="kanji-text">{currentQuestion.hiragana}</div>
+            )}
+
+            {currentQuestion.han_viet && (
+              <div className="han-viet-badge">
+                <span>Hán Việt:</span> {currentQuestion.han_viet}
+              </div>
+            )}
+          </div>
+
+          {/* 4 Options Grid */}
+          <div className="options-grid">
+            {currentQuestion.options.map((option, idx) => {
+              const isSelected = selectedOption === option;
+              const isCorrectAnswer = option === currentQuestion.answer;
+
+              let btnClass = "option-button";
+              if (isAnswered) {
+                if (isCorrectAnswer) {
+                  btnClass += " correct";
+                } else if (isSelected && !isCorrect) {
+                  btnClass += " wrong";
+                } else {
+                  btnClass += " dimmed";
+                }
+              }
+
+              return (
+                <button
+                  key={idx}
+                  className={btnClass}
+                  onClick={() => handleSelectOption(option)}
+                  disabled={isAnswered}
+                >
+                  <span className="option-key-badge">{idx + 1}</span>
+                  <span className="option-text">{option}</span>
+                  {isAnswered && isCorrectAnswer && <span>✅</span>}
+                  {isAnswered && isSelected && !isCorrect && <span>❌</span>}
+                </button>
+              );
+            })}
+          </div>
+
+          {/* Feedback & Next Button */}
+          {isAnswered && (
+            <div className={`feedback-box ${isCorrect ? "correct" : "wrong"}`}>
+              <div className="feedback-details">
+                <div className="feedback-title">
+                  {isCorrect ? "✅ Chính xác!" : "❌ Chưa chính xác!"}
+                </div>
+                <div className="feedback-explanation">
+                  <strong>{currentQuestion.question_text}</strong>
+                  {currentQuestion.han_viet ? ` [Hán Việt: ${currentQuestion.han_viet}]` : ""} ={" "}
+                  <strong>{currentQuestion.answer}</strong>
+                  {!isCorrect && " (từ này sẽ được hỏi lại sau)"}
+                </div>
+              </div>
+
+              <button className="btn-next" onClick={handleNext}>
+                <span>Câu tiếp theo</span>
+                <span className="keyboard-hint">Space / Enter ↵</span>
               </button>
             </div>
-          ) : filteredTodos.length === 0 ? (
-            <div className="empty-state">
-              <p>{searchQuery ? "No matching tasks found." : "No tasks yet. Create one above!"}</p>
-            </div>
-          ) : (
-            filteredTodos.map((todo) => (
-              <li
-                key={todo.id}
-                className={`todo-item ${todo.done ? "completed" : ""}`}
-              >
-                <div className="todo-item-left">
-                  <label className="checkbox-container">
-                    <input
-                      type="checkbox"
-                      checked={todo.done}
-                      onChange={() => handleToggleTodo(todo)}
-                      disabled={updateMutation.isPending}
-                    />
-                    <span className="checkmark"></span>
-                  </label>
-                  <div className="todo-text-wrapper">
-                    {editingId === todo.id ? (
-                      <input
-                        type="text"
-                        className="todo-edit-input"
-                        value={editingTitle}
-                        onChange={(e) => setEditingTitle(e.target.value)}
-                        onBlur={() => handleSaveEdit(todo.id)}
-                        onKeyDown={(e) => handleKeyDown(e, todo.id)}
-                        autoFocus
-                      />
-                    ) : (
-                      <span
-                        className="todo-text"
-                        onClick={() => handleStartEdit(todo)}
-                        title="Click to edit task title"
-                      >
-                        {todo.title}
-                      </span>
-                    )}
-                  </div>
-                </div>
-
-                <div className="todo-actions">
-                  <button
-                    className="action-btn delete-btn"
-                    onClick={() => handleDelete(todo.id)}
-                    disabled={deleteMutation.isPending}
-                    title="Delete Task"
-                  >
-                    <svg
-                      width="18"
-                      height="18"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <polyline points="3 6 5 6 21 6"></polyline>
-                      <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
-                      <line x1="10" y1="11" x2="10" y2="17"></line>
-                      <line x1="14" y1="11" x2="14" y2="17"></line>
-                    </svg>
-                  </button>
-                </div>
-              </li>
-            ))
           )}
-        </ul>
-      </section>
+        </main>
+      ) : (
+        <div style={{ textAlign: "center", padding: "40px", color: "var(--text-muted)" }}>
+          Đang chuẩn bị câu hỏi...
+        </div>
+      )}
 
-      {/* Floating Notifications Toasts */}
-      <div className="toast-container">
-        {toasts.map((t) => (
-          <div key={t.id} className="toast">
-            <span>{t.icon}</span>
-            <span>{t.text}</span>
-          </div>
-        ))}
-      </div>
-    </>
-  );
-}
-
-export default function App() {
-  return (
-    <QueryClientProvider client={queryClient}>
-      <MainApp />
-    </QueryClientProvider>
+      {/* Footer */}
+      <footer className="app-footer">
+        <p>Phím tắt: Bấm <strong>1, 2, 3, 4</strong> để chọn đáp án &bull; Bấm <strong>Space / Enter</strong> để qua câu tiếp theo</p>
+      </footer>
+    </div>
   );
 }

@@ -1,93 +1,59 @@
-import { render, screen, fireEvent, waitFor } from "@testing-library/react";
-import { vi, describe, it, expect, beforeEach } from "vitest";
+import { render, screen, fireEvent } from "@testing-library/react";
+import { describe, it, expect, beforeEach, vi } from "vitest";
 import App from "./App";
-import { todoApi } from "./api/todoApi";
 
-// Mock the API module
-vi.mock("./api/todoApi", () => {
-  return {
-    getApiBaseUrl: () => "http://testserver/",
-    todoApi: {
-      getTodos: vi.fn(),
-      createTodo: vi.fn(),
-      updateTodo: vi.fn(),
-      deleteTodo: vi.fn(),
-    },
-  };
-});
-
-describe("Todo Cloud Manager APP", () => {
+describe("Mimikara Oboeru N3 Quiz App", () => {
   beforeEach(() => {
     vi.clearAllMocks();
+    localStorage.clear();
   });
 
-  it("renders headers and configuration section", async () => {
-    vi.mocked(todoApi.getTodos).mockResolvedValue({ data: [], meta: { next_token: null } });
+  it("renders the header and quiz statistics", () => {
     render(<App />);
 
-    expect(screen.getByText("Todo Cloud Manager")).toBeInTheDocument();
-    expect(screen.getByText("API Endpoint Connection")).toBeInTheDocument();
-    expect(screen.getByPlaceholderText("Type a task and press enter...")).toBeInTheDocument();
+    expect(screen.getByText("Mimikara Oboeru")).toBeInTheDocument();
+    expect(screen.getByText("N3 VOCAB")).toBeInTheDocument();
+    expect(screen.getByText(/Chọn nghĩa tiếng Việt đúng/i)).toBeInTheDocument();
+    expect(screen.getAllByText(/Chưa làm/i).length).toBeGreaterThanOrEqual(1);
+    expect(screen.getAllByText(/Cần làm lại/i).length).toBeGreaterThanOrEqual(1);
   });
 
-  it("renders a list of todos fetched from the API", async () => {
-    const mockTodos = [
-      {
-        id: "c460a8e6-c846-4951-ab6a-116460595687",
-        title: "Mock Task 1",
-        done: false,
-        created_at: "2026-07-10T00:00:00Z",
-        updated_at: "2026-07-10T00:00:00Z",
-      },
-      {
-        id: "bd666b30-21c5-46f4-9348-b7afac588406",
-        title: "Mock Task 2",
-        done: true,
-        created_at: "2026-07-10T01:00:00Z",
-        updated_at: "2026-07-10T01:00:00Z",
-      },
-    ];
-
-    vi.mocked(todoApi.getTodos).mockResolvedValue({ data: mockTodos, meta: { next_token: null } });
+  it("renders 4 multiple choice options", () => {
     render(<App />);
 
-    // Wait for the tasks to load
-    await waitFor(() => {
-      expect(screen.getByText("Mock Task 1")).toBeInTheDocument();
-      expect(screen.getByText("Mock Task 2")).toBeInTheDocument();
-    });
+    const optionButtons = screen
+      .getAllByRole("button")
+      .filter((btn) => btn.className.includes("option-button"));
 
-    expect(screen.getByText("2 tasks")).toBeInTheDocument();
+    expect(optionButtons).toHaveLength(4);
   });
 
-  it("submits a new Todo through the form", async () => {
-    vi.mocked(todoApi.getTodos).mockResolvedValue({ data: [], meta: { next_token: null } });
-    vi.mocked(todoApi.createTodo).mockResolvedValue({
-      id: "a421768f-4dfa-453a-987c-4ee0cfda9bd4",
-      title: "New Created Task",
-      done: false,
-      created_at: "2026-07-10T02:00:00Z",
-      updated_at: "2026-07-10T02:00:00Z",
-    });
-
+  it("selects an option and displays feedback with next question button", () => {
     render(<App />);
 
-    // Wait for initial load
-    await screen.findByText("0 tasks");
+    const optionButtons = screen
+      .getAllByRole("button")
+      .filter((btn) => btn.className.includes("option-button"));
 
-    const input = screen.getByPlaceholderText("Type a task and press enter...");
-    const submitBtn = screen.getByRole("button", { name: /Add Task/i });
+    expect(optionButtons.length).toBeGreaterThan(0);
 
-    fireEvent.change(input, { target: { value: "New Created Task" } });
-    fireEvent.click(submitBtn);
+    // Click first option
+    fireEvent.click(optionButtons[0]);
 
-    await waitFor(() => {
-      expect(todoApi.createTodo).toHaveBeenCalled();
-    });
+    // Next button should now be visible
+    expect(screen.getByRole("button", { name: /Câu tiếp theo/i })).toBeInTheDocument();
+  });
 
-    expect(vi.mocked(todoApi.createTodo).mock.calls[0][0]).toEqual({
-      title: "New Created Task",
-      done: false,
-    });
+  it("toggles dark and light mode", () => {
+    render(<App />);
+
+    const themeBtn = screen.getByRole("button", { name: /Toggle Theme/i });
+    expect(themeBtn).toBeInTheDocument();
+
+    fireEvent.click(themeBtn);
+    expect(localStorage.getItem("mimikara_theme")).toBe("light");
+
+    fireEvent.click(themeBtn);
+    expect(localStorage.getItem("mimikara_theme")).toBe("dark");
   });
 });
