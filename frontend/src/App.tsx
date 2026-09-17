@@ -8,6 +8,7 @@ import {
 } from "@tanstack/react-query";
 import { todoApi, getApiBaseUrl, type FetchTodosResponse } from "./api/todoApi";
 import type { Todo } from "./types/todo";
+import { trackEvent } from "./utils/gtm";
 
 // Initialize Query Client
 const queryClient = new QueryClient({
@@ -51,6 +52,7 @@ function MainApp() {
     setTheme(nextTheme);
     localStorage.setItem("theme", nextTheme);
     document.documentElement.setAttribute("data-theme", nextTheme);
+    trackEvent("theme_toggle", { theme: nextTheme });
   };
 
   useEffect(() => {
@@ -127,6 +129,7 @@ function MainApp() {
     },
     onSuccess: () => {
       showToast("Task added successfully", "✅");
+      trackEvent("todo_created", { title: newTitle.trim() });
       setNewTitle("");
     },
     onSettled: () => {
@@ -172,6 +175,7 @@ function MainApp() {
     },
     onSuccess: (data) => {
       showToast(data.done ? "Task completed!" : "Task active", "✓");
+      trackEvent("todo_updated", { id: data.id, done: data.done });
     },
     onSettled: () => {
       queryClient.invalidateQueries({ queryKey: ["todos"] });
@@ -211,6 +215,7 @@ function MainApp() {
     },
     onSuccess: () => {
       showToast("Task deleted", "🗑️");
+      trackEvent("todo_deleted");
     },
     onSettled: () => {
       queryClient.invalidateQueries({ queryKey: ["todos"] });

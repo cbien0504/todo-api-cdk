@@ -50,6 +50,7 @@ services:
       - "5173:5173"
     environment:
       - VITE_API_BASE_URL=http://localhost:8000
+      - VITE_GTM_ID=${VITE_GTM_ID:-}
     command: sh -c "npm install && npm run dev -- --host"
     depends_on:
       - backend
