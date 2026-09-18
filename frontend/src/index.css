@@ -224,6 +224,49 @@ body {
   border-color: var(--primary);
 }
 
+.btn-reset-batch {
+  width: 34px;
+  height: 34px;
+  font-size: 0.95rem;
+  flex-shrink: 0;
+}
+
+.visibility-toggles {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 4px;
+}
+
+.btn-toggle {
+  background: var(--option-bg);
+  border: 1px solid var(--card-border);
+  color: var(--text-secondary);
+  padding: 6px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: var(--transition);
+  user-select: none;
+  white-space: nowrap;
+}
+
+.btn-toggle:hover {
+  border-color: var(--primary);
+  color: var(--text-primary);
+  transform: translateY(-1px);
+}
+
+.btn-toggle.active {
+  background: rgba(244, 63, 94, 0.12);
+  border-color: rgba(244, 63, 94, 0.4);
+  color: #fb7185;
+}
+
 /* Stats Row */
 .stats-grid {
   display: grid;
@@ -465,6 +508,19 @@ body {
   font-size: 1.4rem;
   color: var(--accent-cyan);
   font-weight: 600;
+  transition: all 0.25s ease;
+}
+
+.hiragana-subtext.hiragana-hidden {
+  color: var(--text-muted);
+  letter-spacing: 4px;
+  font-size: 1rem;
+  opacity: 0.6;
+}
+
+.hiragana-subtext.revealed {
+  animation: fadeIn 0.3s ease;
+  color: #38bdf8;
 }
 
 .han-viet-badge {

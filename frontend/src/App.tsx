@@ -132,9 +132,36 @@ export default function App() {
     }
   }, []);
 
+  // Visibility Toggles (Hán Việt, Hiragana)
+  const [hideHanViet, setHideHanViet] = useState<boolean>(() => {
+    return localStorage.getItem("mimikara_hide_han_viet") === "true";
+  });
+
+  const [hideHiragana, setHideHiragana] = useState<boolean>(() => {
+    return localStorage.getItem("mimikara_hide_hiragana") === "true";
+  });
+
+  const toggleHideHanViet = () => {
+    setHideHanViet((prev) => {
+      const next = !prev;
+      localStorage.setItem("mimikara_hide_han_viet", String(next));
+      trackEvent("toggle_hide_han_viet", { hide: next });
+      return next;
+    });
+  };
+
+  const toggleHideHiragana = () => {
+    setHideHiragana((prev) => {
+      const next = !prev;
+      localStorage.setItem("mimikara_hide_hiragana", String(next));
+      trackEvent("toggle_hide_hiragana", { hide: next });
+      return next;
+    });
+  };
+
   // Pick Next Question
   const advanceToNextQuestion = useCallback(
-    (buf: QuizBuffer) => {
+    (buf: QuizBuffer, items = currentBatchItems) => {
       if (buf.isRoundComplete()) {
         setIsRoundComplete(true);
         setCurrentQuestion(null);
@@ -153,8 +180,8 @@ export default function App() {
       }
 
       const nextIdx = buf.nextIndex();
-      if (nextIdx !== null && currentBatchItems[nextIdx]) {
-        const q = buildQuestion(currentBatchItems, nextIdx);
+      if (nextIdx !== null && items[nextIdx]) {
+        const q = buildQuestion(items, nextIdx);
         setCurrentQuestion(q);
         setSelectedOption(null);
         setIsAnswered(false);
@@ -165,7 +192,29 @@ export default function App() {
     [currentBatchItems, round, correctCount, wrongCount, batchKey, syncBufferCounts]
   );
 
-  // Initialize or Reset Round
+  // Reset or Switch Batch immediately
+  const resetBatch = useCallback(
+    (key: string = batchKey) => {
+      setBatchKey(key);
+      const opt = batchOptions.find((b) => b.key === key);
+      const items = !opt || opt.key === "all" ? ALL_ITEMS : ALL_ITEMS.slice(opt.start, opt.end);
+      setRound(1);
+      setStreak(0);
+      setBestStreak(0);
+      const newBuf = new QuizBuffer(items.map((_, i) => i));
+      setBuffer(newBuf);
+      setCorrectCount(0);
+      setWrongCount(0);
+      setWrongWords([]);
+      setIsRoundComplete(false);
+      syncBufferCounts(newBuf);
+      advanceToNextQuestion(newBuf, items);
+      trackEvent("batch_reset", { batchKey: key, totalItems: items.length });
+    },
+    [batchKey, batchOptions, syncBufferCounts, advanceToNextQuestion]
+  );
+
+  // Initialize or Reset Round (keep current batch)
   const startNewRound = useCallback(
     (items = currentBatchItems) => {
       const newBuf = new QuizBuffer(items.map((_, i) => i));
@@ -175,29 +224,18 @@ export default function App() {
       setWrongWords([]);
       setIsRoundComplete(false);
       syncBufferCounts(newBuf);
-      advanceToNextQuestion(newBuf);
+      advanceToNextQuestion(newBuf, items);
       trackEvent("quiz_start_round", { round: round + 1, totalItems: items.length });
     },
     [currentBatchItems, round, syncBufferCounts, advanceToNextQuestion]
   );
-
-  // Switch Batch
-  const handleBatchChange = (newKey: string) => {
-    setBatchKey(newKey);
-    const opt = batchOptions.find((b) => b.key === newKey);
-    const items = (!opt || opt.key === "all") ? ALL_ITEMS : ALL_ITEMS.slice(opt.start, opt.end);
-    setRound(1);
-    setStreak(0);
-    setBestStreak(0);
-    startNewRound(items);
-  };
 
   // Initial mount: load first question
   useEffect(() => {
     const initialBuf = new QuizBuffer(currentBatchItems.map((_, i) => i));
     setBuffer(initialBuf);
     syncBufferCounts(initialBuf);
-    advanceToNextQuestion(initialBuf);
+    advanceToNextQuestion(initialBuf, currentBatchItems);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -358,7 +396,7 @@ export default function App() {
             id="batch-select"
             className="batch-select"
             value={batchKey}
-            onChange={(e) => handleBatchChange(e.target.value)}
+            onChange={(e) => resetBatch(e.target.value)}
           >
             {batchOptions.map((opt) => (
               <option key={opt.key} value={opt.key}>
@@ -366,6 +404,36 @@ export default function App() {
               </option>
             ))}
           </select>
+          <button
+            type="button"
+            className="btn-icon btn-reset-batch"
+            onClick={() => resetBatch(batchKey)}
+            title="Reset bài này ngay lập tức"
+            aria-label="Reset bài này ngay lập tức"
+          >
+            🔄
+          </button>
+
+          <div className="visibility-toggles">
+            <button
+              type="button"
+              className={`btn-toggle ${hideHanViet ? "active" : ""}`}
+              onClick={toggleHideHanViet}
+              title={hideHanViet ? "Nhấn để hiện Hán Việt" : "Nhấn để ẩn Hán Việt"}
+              aria-label="Toggle Ẩn Hán Việt"
+            >
+              {hideHanViet ? "🙈 Ẩn Hán Việt" : "👁️ Hán Việt"}
+            </button>
+            <button
+              type="button"
+              className={`btn-toggle ${hideHiragana ? "active" : ""}`}
+              onClick={toggleHideHiragana}
+              title={hideHiragana ? "Nhấn để hiện Hiragana" : "Nhấn để ẩn Hiragana trong câu hỏi"}
+              aria-label="Toggle Ẩn Hiragana"
+            >
+              {hideHiragana ? "🙈 Ẩn Hiragana" : "👁️ Hiragana"}
+            </button>
+          </div>
         </div>
       </div>
 
@@ -486,7 +554,7 @@ export default function App() {
                   <div key={idx} className="review-item">
                     <div className="review-item-jp">
                       <span>{item.question_text}</span>
-                      {item.han_viet && (
+                      {!hideHanViet && item.han_viet && (
                         <span className="han-viet-badge" style={{ fontSize: "0.75rem", padding: "2px 6px" }}>
                           {item.han_viet}
                         </span>
@@ -540,13 +608,21 @@ export default function App() {
             {currentQuestion.kanji ? (
               <>
                 <div className="kanji-text">{currentQuestion.kanji}</div>
-                <div className="hiragana-subtext">{currentQuestion.hiragana}</div>
+                {!hideHiragana || isAnswered ? (
+                  <div className={`hiragana-subtext ${hideHiragana && isAnswered ? "revealed" : ""}`}>
+                    {currentQuestion.hiragana}
+                  </div>
+                ) : (
+                  <div className="hiragana-subtext hiragana-hidden" title="Hiragana đang ẩn (sẽ hiện khi trả lời)">
+                    ••••
+                  </div>
+                )}
               </>
             ) : (
               <div className="kanji-text">{currentQuestion.hiragana}</div>
             )}
 
-            {currentQuestion.han_viet && (
+            {!hideHanViet && currentQuestion.han_viet && (
               <div className="han-viet-badge">
                 <span>Hán Việt:</span> {currentQuestion.han_viet}
               </div>

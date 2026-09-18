@@ -56,4 +56,52 @@ describe("Mimikara Oboeru N3 Quiz App", () => {
     fireEvent.click(themeBtn);
     expect(localStorage.getItem("mimikara_theme")).toBe("dark");
   });
+
+  it("toggles hide Han Viet and saves to localStorage", () => {
+    render(<App />);
+
+    const hvBtn = screen.getByRole("button", { name: /Toggle Ẩn Hán Việt/i });
+    expect(hvBtn).toBeInTheDocument();
+    expect(hvBtn).toHaveTextContent(/Hán Việt/i);
+
+    fireEvent.click(hvBtn);
+    expect(localStorage.getItem("mimikara_hide_han_viet")).toBe("true");
+    expect(hvBtn).toHaveTextContent(/Ẩn Hán Việt/i);
+
+    fireEvent.click(hvBtn);
+    expect(localStorage.getItem("mimikara_hide_han_viet")).toBe("false");
+  });
+
+  it("toggles hide Hiragana and saves to localStorage", () => {
+    render(<App />);
+
+    const hiraBtn = screen.getByRole("button", { name: /Toggle Ẩn Hiragana/i });
+    expect(hiraBtn).toBeInTheDocument();
+
+    fireEvent.click(hiraBtn);
+    expect(localStorage.getItem("mimikara_hide_hiragana")).toBe("true");
+    expect(hiraBtn).toHaveTextContent(/Ẩn Hiragana/i);
+
+    fireEvent.click(hiraBtn);
+    expect(localStorage.getItem("mimikara_hide_hiragana")).toBe("false");
+  });
+
+  it("resets the batch immediately when batch is reselected or reset button clicked", () => {
+    render(<App />);
+
+    // Answer first question
+    const optionButtons = screen
+      .getAllByRole("button")
+      .filter((btn) => btn.className.includes("option-button"));
+    fireEvent.click(optionButtons[0]);
+    expect(screen.getByRole("button", { name: /Câu tiếp theo/i })).toBeInTheDocument();
+
+    // Click reset batch button
+    const resetBtn = screen.getByRole("button", { name: /Reset bài này ngay lập tức/i });
+    fireEvent.click(resetBtn);
+
+    // After reset, the answer state should be cleared immediately
+    expect(screen.queryByRole("button", { name: /Câu tiếp theo/i })).not.toBeInTheDocument();
+  });
 });
+
