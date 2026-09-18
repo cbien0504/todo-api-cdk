@@ -115,9 +115,37 @@ export default function App() {
     setPendingNewCount(buf.getPendingNewCount());
   }, []);
 
+  // Visibility Toggles (Hán Việt, Hiragana)
+  const [hideHanViet, setHideHanViet] = useState<boolean>(() => {
+    return localStorage.getItem("mimikara_hide_han_viet") === "true";
+  });
+
+  const [hideHiragana, setHideHiragana] = useState<boolean>(() => {
+    return localStorage.getItem("mimikara_hide_hiragana") === "true";
+  });
+
+  // Mute / Speaker State
+  const [isMuted, setIsMuted] = useState<boolean>(() => {
+    return localStorage.getItem("mimikara_is_muted") === "true";
+  });
+
+  const toggleMute = useCallback(() => {
+    setIsMuted((prev) => {
+      const next = !prev;
+      localStorage.setItem("mimikara_is_muted", String(next));
+      if (next && "speechSynthesis" in window) {
+        window.speechSynthesis.cancel();
+        setIsPlayingAudio(false);
+      }
+      trackEvent("toggle_mute", { muted: next });
+      return next;
+    });
+  }, []);
+
   // Pronounce Japanese word via SpeechSynthesis API
-  const playPronunciation = useCallback((textToSpeak: string) => {
+  const playPronunciation = useCallback((textToSpeak: string, force = false) => {
     if (!("speechSynthesis" in window)) return;
+    if (isMuted && !force) return;
     try {
       window.speechSynthesis.cancel();
       const utterance = new SpeechSynthesisUtterance(textToSpeak);
@@ -130,16 +158,7 @@ export default function App() {
     } catch {
       setIsPlayingAudio(false);
     }
-  }, []);
-
-  // Visibility Toggles (Hán Việt, Hiragana)
-  const [hideHanViet, setHideHanViet] = useState<boolean>(() => {
-    return localStorage.getItem("mimikara_hide_han_viet") === "true";
-  });
-
-  const [hideHiragana, setHideHiragana] = useState<boolean>(() => {
-    return localStorage.getItem("mimikara_hide_hiragana") === "true";
-  });
+  }, [isMuted]);
 
   const toggleHideHanViet = () => {
     setHideHanViet((prev) => {
@@ -315,6 +334,12 @@ export default function App() {
         return;
       }
 
+      if (e.key === "m" || e.key === "M") {
+        e.preventDefault();
+        toggleMute();
+        return;
+      }
+
       if (!answered && q) {
         if (["1", "2", "3", "4"].includes(e.key)) {
           const idx = parseInt(e.key, 10) - 1;
@@ -333,7 +358,7 @@ export default function App() {
 
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [handleSelectOption, handleNext, startNewRound]);
+  }, [handleSelectOption, handleNext, startNewRound, toggleMute]);
 
   // Mastered progress calculation
   const totalInBatch = currentBatchItems.length;
@@ -359,6 +384,14 @@ export default function App() {
         </div>
 
         <div className="header-actions">
+          <button
+            className={`btn-icon ${isMuted ? "muted" : ""}`}
+            onClick={toggleMute}
+            title={isMuted ? "Bật loa phát âm (Phím M)" : "Tắt loa phát âm (Phím M)"}
+            aria-label="Toggle Loa"
+          >
+            {isMuted ? "🔇" : "🔊"}
+          </button>
           <button
             className="btn-icon"
             onClick={toggleTheme}
@@ -415,6 +448,15 @@ export default function App() {
           </button>
 
           <div className="visibility-toggles">
+            <button
+              type="button"
+              className={`btn-toggle ${isMuted ? "active" : ""}`}
+              onClick={toggleMute}
+              title={isMuted ? "Nhấn để bật loa phát âm (Phím M)" : "Nhấn để tắt loa phát âm (Phím M)"}
+              aria-label="Toggle Loa"
+            >
+              {isMuted ? "🔇 Loa: Tắt" : "🔊 Loa: Bật"}
+            </button>
             <button
               type="button"
               className={`btn-toggle ${hideHanViet ? "active" : ""}`}
@@ -597,12 +639,12 @@ export default function App() {
           {/* Word Display Hero */}
           <div className="word-hero-display">
             <button
-              className={`audio-btn ${isPlayingAudio ? "playing" : ""}`}
-              onClick={() => playPronunciation(currentQuestion.hiragana)}
-              title="Nghe phát âm tiếng Nhật"
+              className={`audio-btn ${isPlayingAudio ? "playing" : ""} ${isMuted ? "muted" : ""}`}
+              onClick={() => playPronunciation(currentQuestion.hiragana, true)}
+              title={isMuted ? "Loa đang tắt (Nhấn để nghe từ này)" : "Nghe phát âm tiếng Nhật"}
               aria-label="Phát âm tiếng Nhật"
             >
-              🔊
+              {isMuted ? "🔇" : "🔊"}
             </button>
 
             {currentQuestion.kanji ? (
@@ -692,7 +734,7 @@ export default function App() {
 
       {/* Footer */}
       <footer className="app-footer">
-        <p>Phím tắt: Bấm <strong>1, 2, 3, 4</strong> để chọn đáp án &bull; Bấm <strong>Space / Enter</strong> để qua câu tiếp theo</p>
+        <p>Phím tắt: Bấm <strong>1, 2, 3, 4</strong> để chọn đáp án &bull; Bấm <strong>Space / Enter</strong> để qua câu tiếp theo &bull; Bấm <strong>M</strong> để bật/tắt loa</p>
       </footer>
     </div>
   );

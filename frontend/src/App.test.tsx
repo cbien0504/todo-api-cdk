@@ -103,5 +103,40 @@ describe("Mimikara Oboeru N3 Quiz App", () => {
     // After reset, the answer state should be cleared immediately
     expect(screen.queryByRole("button", { name: /Câu tiếp theo/i })).not.toBeInTheDocument();
   });
+
+  it("toggles mute speaker via button and persists in localStorage", () => {
+    render(<App />);
+
+    const muteToggleBtn = screen.getAllByRole("button", { name: /Toggle Loa/i })[0];
+    expect(muteToggleBtn).toBeInTheDocument();
+    expect(muteToggleBtn).toHaveTextContent("🔊");
+
+    // Click to mute
+    fireEvent.click(muteToggleBtn);
+    expect(localStorage.getItem("mimikara_is_muted")).toBe("true");
+    expect(muteToggleBtn).toHaveTextContent("🔇");
+
+    // Click to unmute
+    fireEvent.click(muteToggleBtn);
+    expect(localStorage.getItem("mimikara_is_muted")).toBe("false");
+    expect(muteToggleBtn).toHaveTextContent("🔊");
+  });
+
+  it("toggles mute speaker via 'm' keyboard shortcut", () => {
+    render(<App />);
+
+    const muteToggleBtn = screen.getAllByRole("button", { name: /Toggle Loa/i })[0];
+    expect(muteToggleBtn).toHaveTextContent("🔊");
+
+    // Press 'm'
+    fireEvent.keyDown(window, { key: "m" });
+    expect(localStorage.getItem("mimikara_is_muted")).toBe("true");
+    expect(muteToggleBtn).toHaveTextContent("🔇");
+
+    // Press 'M'
+    fireEvent.keyDown(window, { key: "M" });
+    expect(localStorage.getItem("mimikara_is_muted")).toBe("false");
+    expect(muteToggleBtn).toHaveTextContent("🔊");
+  });
 });
 
