@@ -52,26 +52,6 @@ export default function App() {
     return [];
   });
 
-  // Try to load initial unremembered words from /data/unremembered_vocab.json if localStorage is empty
-  useEffect(() => {
-    if (localStorage.getItem(STORAGE_UNREMEMBERED_KEY)) return;
-
-    fetch("/data/unremembered_vocab.json")
-      .then((res) => {
-        if (res.ok) return res.json();
-        return null;
-      })
-      .then((data) => {
-        if (Array.isArray(data) && data.length > 0) {
-          setUnrememberedWords(data);
-          localStorage.setItem(STORAGE_UNREMEMBERED_KEY, JSON.stringify(data));
-        }
-      })
-      .catch(() => {
-        // Ignore if file doesn't exist
-      });
-  }, []);
-
   const saveUnrememberedWords = useCallback((words: VocabItem[]) => {
     setUnrememberedWords(words);
     try {
@@ -114,56 +94,6 @@ export default function App() {
     [unrememberedWords, saveUnrememberedWords]
   );
 
-  // Export / Download JSON
-  const exportUnrememberedJSON = () => {
-    if (unrememberedWords.length === 0) {
-      alert("Danh sách từ chưa nhớ đang trống!");
-      return;
-    }
-    const dataStr =
-      "data:text/json;charset=utf-8," +
-      encodeURIComponent(JSON.stringify(unrememberedWords, null, 2));
-    const downloadAnchor = document.createElement("a");
-    downloadAnchor.setAttribute("href", dataStr);
-    downloadAnchor.setAttribute("download", `unremembered_vocab_${new Date().toISOString().slice(0, 10)}.json`);
-    document.body.appendChild(downloadAnchor);
-    downloadAnchor.click();
-    downloadAnchor.remove();
-    trackEvent("export_unremembered_json", { count: unrememberedWords.length });
-  };
-
-  // Export / Download TXT List
-  const exportUnrememberedText = () => {
-    if (unrememberedWords.length === 0) {
-      alert("Danh sách từ chưa nhớ đang trống!");
-      return;
-    }
-    const lines = [
-      "DANH SÁCH TỪ VỰNG CHƯA NHỚ - MIMIKARA OBOERU N3",
-      `Tổng số từ: ${unrememberedWords.length} từ`,
-      `Thời gian xuất: ${new Date().toLocaleString("vi-VN")}`,
-      "--------------------------------------------------\n",
-    ];
-
-    unrememberedWords.forEach((item, index) => {
-      const sttStr = item.stt ? `[#${item.stt}] ` : "";
-      const hvStr = item.han_viet ? ` [Hán Việt: ${item.han_viet}]` : "";
-      lines.push(`${index + 1}. ${sttStr}${item.question_text}${hvStr} : ${item.meaning}`);
-    });
-
-    const content = lines.join("\n");
-    const blob = new Blob([content], { type: "text/plain;charset=utf-8" });
-    const url = URL.createObjectURL(blob);
-    const link = document.createElement("a");
-    link.href = url;
-    link.download = `danh_sach_tu_chua_nho_n3_${new Date().toISOString().slice(0, 10)}.txt`;
-    document.body.appendChild(link);
-    link.click();
-    link.remove();
-    URL.revokeObjectURL(url);
-    trackEvent("export_unremembered_txt", { count: unrememberedWords.length });
-  };
-
   // Copy text to clipboard
   const [copySuccess, setCopySuccess] = useState(false);
   const copyUnrememberedText = () => {
@@ -200,39 +130,6 @@ export default function App() {
         String(item.stt).includes(q)
     );
   }, [unrememberedWords, listSearchQuery]);
-
-  // Import JSON from file input
-  const handleImportJSON = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0];
-    if (!file) return;
-    const reader = new FileReader();
-    reader.onload = (event) => {
-      try {
-        const parsed = JSON.parse(event.target?.result as string);
-        if (Array.isArray(parsed)) {
-          const map = new Map<string, VocabItem>();
-          for (const item of unrememberedWords) {
-            map.set(getItemKey(item), item);
-          }
-          for (const item of parsed) {
-            if (item.meaning && (item.hiragana || item.question_text)) {
-              map.set(getItemKey(item), item);
-            }
-          }
-          const merged = Array.from(map.values());
-          saveUnrememberedWords(merged);
-          alert(`Đã nạp thành công! Tổng danh sách hiện có: ${merged.length} từ chưa nhớ.`);
-          trackEvent("import_unremembered_json", { count: parsed.length });
-        } else {
-          alert("File JSON không hợp lệ (cần là danh sách mảng từ vựng).");
-        }
-      } catch {
-        alert("Lỗi khi đọc file JSON. Vui lòng kiểm tra định dạng file!");
-      }
-    };
-    reader.readAsText(file);
-    e.target.value = "";
-  };
 
   // Batch Range State (defaults to first 50 items like quiz_mimikara_n3.py)
   const [batchKey, setBatchKey] = useState<string>("batch_0_50");
@@ -643,44 +540,15 @@ export default function App() {
         </div>
 
         <div className="header-actions">
-          {/* List View & Export Actions */}
+          {/* List View Action */}
           <button
             className="btn-icon"
             onClick={() => setIsListModalOpen(true)}
-            title={`Xem & Xuất danh sách từ chưa nhớ (${unrememberedWords.length} từ)`}
+            title={`Xem bảng từ chưa nhớ (${unrememberedWords.length} từ)`}
             aria-label="Xem danh sách từ chưa nhớ"
           >
             📋
           </button>
-          <button
-            className="btn-icon"
-            onClick={exportUnrememberedText}
-            title={`Xuất file TXT danh sách từ chưa nhớ (${unrememberedWords.length} từ)`}
-            aria-label="Xuất file TXT từ chưa nhớ"
-          >
-            📄
-          </button>
-          <button
-            className="btn-icon"
-            onClick={exportUnrememberedJSON}
-            title={`Tải file unremembered_vocab.json (${unrememberedWords.length} từ)`}
-            aria-label="Tải file JSON từ chưa nhớ"
-          >
-            📥
-          </button>
-          <label
-            className="btn-icon btn-upload-label"
-            title="Nhập file unremembered_vocab.json từ máy tính"
-            aria-label="Nhập file JSON từ chưa nhớ"
-          >
-            📤
-            <input
-              type="file"
-              accept=".json"
-              onChange={handleImportJSON}
-              style={{ display: "none" }}
-            />
-          </label>
           <button
             className={`btn-icon ${isMuted ? "muted" : ""}`}
             onClick={toggleMute}
@@ -734,9 +602,9 @@ export default function App() {
             type="button"
             className="btn-list-badge"
             onClick={() => setIsListModalOpen(true)}
-            title="Xem và xuất danh sách các từ chưa nhớ"
+            title="Xem bảng danh sách các từ chưa nhớ"
           >
-            📋 Xem & Xuất ({unrememberedWords.length})
+            📋 Bảng từ chưa nhớ ({unrememberedWords.length})
           </button>
 
           <label htmlFor="batch-select" style={{ fontSize: "0.82rem", color: "var(--text-muted)" }}>
@@ -1136,8 +1004,8 @@ export default function App() {
           <div className="modal-card" onClick={(e) => e.stopPropagation()}>
             <div className="modal-header">
               <div>
-                <h3 className="modal-title">📋 Danh sách từ chưa nhớ ({unrememberedWords.length} từ)</h3>
-                <p className="modal-sub">Xem, tìm kiếm, sao chép hoặc xuất ra file để ôn tập</p>
+                <h3 className="modal-title">📋 Bảng từ chưa nhớ ({unrememberedWords.length} từ)</h3>
+                <p className="modal-sub">Xem bảng từ vựng, tìm kiếm và sao chép để ôn tập</p>
               </div>
               <button
                 className="btn-close-modal"
@@ -1157,32 +1025,14 @@ export default function App() {
                 value={listSearchQuery}
                 onChange={(e) => setListSearchQuery(e.target.value)}
               />
-              <div className="modal-actions-group">
-                <button
-                  type="button"
-                  className="btn-action-outline"
-                  onClick={copyUnrememberedText}
-                  title="Sao chép danh sách dạng text vào bộ nhớ tạm"
-                >
-                  {copySuccess ? "✅ Đã chép!" : "📋 Chép Text"}
-                </button>
-                <button
-                  type="button"
-                  className="btn-action-outline"
-                  onClick={exportUnrememberedText}
-                  title="Tải file .TXT về máy"
-                >
-                  📄 Xuất TXT
-                </button>
-                <button
-                  type="button"
-                  className="btn-action-outline"
-                  onClick={exportUnrememberedJSON}
-                  title="Tải file .JSON về máy"
-                >
-                  📥 Xuất JSON
-                </button>
-              </div>
+              <button
+                type="button"
+                className="btn-action-copy"
+                onClick={copyUnrememberedText}
+                title="Sao chép toàn bộ danh sách vào bộ nhớ tạm"
+              >
+                {copySuccess ? "✅ Đã sao chép!" : "📋 Sao chép danh sách"}
+              </button>
             </div>
 
             <div className="modal-list-body">

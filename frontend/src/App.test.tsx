@@ -231,16 +231,20 @@ describe("Mimikara Oboeru N3 Quiz App", () => {
     // Open modal
     fireEvent.click(openListBtn);
 
-    expect(screen.getByText(/Danh sách từ chưa nhớ \(1 từ\)/i)).toBeInTheDocument();
+    expect(screen.getByText(/Bảng từ chưa nhớ \(1 từ\)/i)).toBeInTheDocument();
     expect(screen.getByText("家庭 (かてい)")).toBeInTheDocument();
     expect(screen.getByText("gia đình")).toBeInTheDocument();
     expect(screen.getByText("GIA ĐÌNH")).toBeInTheDocument();
+
+    // Verify copy button exists
+    const copyBtn = screen.getByRole("button", { name: /Sao chép danh sách/i });
+    expect(copyBtn).toBeInTheDocument();
 
     // Close modal
     const closeBtn = screen.getByRole("button", { name: "Đóng" });
     fireEvent.click(closeBtn);
 
-    expect(screen.queryByText(/Danh sách từ chưa nhớ \(1 từ\)/i)).not.toBeInTheDocument();
+    expect(screen.queryByText(/Bảng từ chưa nhớ \(1 từ\)/i)).not.toBeInTheDocument();
   });
 });
 
