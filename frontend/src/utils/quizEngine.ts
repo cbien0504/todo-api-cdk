@@ -130,15 +130,23 @@ export class QuizBuffer {
 /**
  * Generate a 4-option multiple choice question for a target vocabulary item.
  * Picks 3 random distractor meanings from pool that differ from correct meaning.
+ * Supports an optional distractorPool (e.g. ALL_ITEMS) when review items are < 4.
  */
-export const buildQuestion = (items: VocabItem[], correctIdx: number): Question => {
+export const buildQuestion = (
+  items: VocabItem[],
+  correctIdx: number,
+  distractorPool?: VocabItem[]
+): Question => {
   const correctItem = items[correctIdx];
   const correctMeaning = correctItem.meaning;
+  const pool = distractorPool ?? items;
 
-  // Filter candidates with different meanings
+  // Filter candidates with different meanings from the pool
   const candidateIndices: number[] = [];
-  for (let i = 0; i < items.length; i++) {
-    if (i !== correctIdx && items[i].meaning !== correctMeaning) {
+  for (let i = 0; i < pool.length; i++) {
+    // If pool is items, exclude correctIdx; otherwise check meaning difference
+    const isSameItem = pool === items ? i === correctIdx : pool[i].meaning === correctMeaning;
+    if (!isSameItem && pool[i].meaning !== correctMeaning) {
       candidateIndices.push(i);
     }
   }
@@ -148,7 +156,7 @@ export const buildQuestion = (items: VocabItem[], correctIdx: number): Question 
   const wrongIndices = shuffledCandidates.slice(0, sampleCount);
 
   const rawOptions = [
-    ...wrongIndices.map((i) => items[i].meaning),
+    ...wrongIndices.map((i) => pool[i].meaning),
     correctMeaning,
   ];
 

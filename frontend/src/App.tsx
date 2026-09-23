@@ -10,6 +10,14 @@ import { trackEvent } from "./utils/gtm";
 
 const ALL_ITEMS: VocabItem[] = cleanVocabData(rawVocabData as RawVocabItem[]);
 const BATCH_SIZE = 50;
+const STORAGE_UNREMEMBERED_KEY = "mimikara_unremembered_words";
+
+export const getItemKey = (item: { stt?: string | number; question_text?: string; meaning?: string }) => {
+  if (item.stt !== undefined && item.stt !== null && String(item.stt).trim() !== "") {
+    return `stt_${item.stt}`;
+  }
+  return `${item.question_text || ""}:::${item.meaning || ""}`;
+};
 
 export default function App() {
   // Theme State
@@ -30,8 +38,133 @@ export default function App() {
     document.documentElement.setAttribute("data-theme", theme);
   }, [theme]);
 
+  // Unremembered words state (persisted to localStorage)
+  const [unrememberedWords, setUnrememberedWords] = useState<VocabItem[]>(() => {
+    try {
+      const saved = localStorage.getItem(STORAGE_UNREMEMBERED_KEY);
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        if (Array.isArray(parsed)) return parsed;
+      }
+    } catch (e) {
+      console.error("Failed to load unremembered words from localStorage", e);
+    }
+    return [];
+  });
+
+  // Try to load initial unremembered words from /data/unremembered_vocab.json if localStorage is empty
+  useEffect(() => {
+    if (localStorage.getItem(STORAGE_UNREMEMBERED_KEY)) return;
+
+    fetch("/data/unremembered_vocab.json")
+      .then((res) => {
+        if (res.ok) return res.json();
+        return null;
+      })
+      .then((data) => {
+        if (Array.isArray(data) && data.length > 0) {
+          setUnrememberedWords(data);
+          localStorage.setItem(STORAGE_UNREMEMBERED_KEY, JSON.stringify(data));
+        }
+      })
+      .catch(() => {
+        // Ignore if file doesn't exist
+      });
+  }, []);
+
+  const saveUnrememberedWords = useCallback((words: VocabItem[]) => {
+    setUnrememberedWords(words);
+    try {
+      localStorage.setItem(STORAGE_UNREMEMBERED_KEY, JSON.stringify(words));
+    } catch (e) {
+      console.error("Failed to save unremembered words", e);
+    }
+  }, []);
+
+  const isWordUnremembered = useCallback(
+    (item: VocabItem | null | undefined): boolean => {
+      if (!item) return false;
+      const targetKey = getItemKey(item);
+      return unrememberedWords.some((w) => getItemKey(w) === targetKey);
+    },
+    [unrememberedWords]
+  );
+
+  const markAsUnremembered = useCallback(
+    (item: VocabItem | null | undefined) => {
+      if (!item) return;
+      const targetKey = getItemKey(item);
+      if (!unrememberedWords.some((w) => getItemKey(w) === targetKey)) {
+        const updated = [...unrememberedWords, item];
+        saveUnrememberedWords(updated);
+        trackEvent("vocab_mark_unremembered", { word: item.question_text });
+      }
+    },
+    [unrememberedWords, saveUnrememberedWords]
+  );
+
+  const markAsRemembered = useCallback(
+    (item: VocabItem | null | undefined) => {
+      if (!item) return;
+      const targetKey = getItemKey(item);
+      const updated = unrememberedWords.filter((w) => getItemKey(w) !== targetKey);
+      saveUnrememberedWords(updated);
+      trackEvent("vocab_mark_remembered", { word: item.question_text });
+    },
+    [unrememberedWords, saveUnrememberedWords]
+  );
+
+  // Export / Download JSON
+  const exportUnrememberedJSON = () => {
+    const dataStr =
+      "data:text/json;charset=utf-8," +
+      encodeURIComponent(JSON.stringify(unrememberedWords, null, 2));
+    const downloadAnchor = document.createElement("a");
+    downloadAnchor.setAttribute("href", dataStr);
+    downloadAnchor.setAttribute("download", "unremembered_vocab.json");
+    document.body.appendChild(downloadAnchor);
+    downloadAnchor.click();
+    downloadAnchor.remove();
+    trackEvent("export_unremembered_json", { count: unrememberedWords.length });
+  };
+
+  // Import JSON from file input
+  const handleImportJSON = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = (event) => {
+      try {
+        const parsed = JSON.parse(event.target?.result as string);
+        if (Array.isArray(parsed)) {
+          const map = new Map<string, VocabItem>();
+          for (const item of unrememberedWords) {
+            map.set(getItemKey(item), item);
+          }
+          for (const item of parsed) {
+            if (item.meaning && (item.hiragana || item.question_text)) {
+              map.set(getItemKey(item), item);
+            }
+          }
+          const merged = Array.from(map.values());
+          saveUnrememberedWords(merged);
+          alert(`Đã nạp thành công! Tổng danh sách hiện có: ${merged.length} từ chưa nhớ.`);
+          trackEvent("import_unremembered_json", { count: parsed.length });
+        } else {
+          alert("File JSON không hợp lệ (cần là danh sách mảng từ vựng).");
+        }
+      } catch {
+        alert("Lỗi khi đọc file JSON. Vui lòng kiểm tra định dạng file!");
+      }
+    };
+    reader.readAsText(file);
+    e.target.value = "";
+  };
+
   // Batch Range State (defaults to first 50 items like quiz_mimikara_n3.py)
   const [batchKey, setBatchKey] = useState<string>("batch_0_50");
+  // Stable snapshot for review mode to avoid mid-round buffer index shifts
+  const [unrememberedSnapshot, setUnrememberedSnapshot] = useState<VocabItem[]>([]);
 
   const batchOptions = useMemo(() => {
     const options: { key: string; label: string; start: number; end: number }[] = [];
@@ -56,17 +189,27 @@ export default function App() {
       end: total,
     });
 
+    options.unshift({
+      key: "unremembered",
+      label: `📌 Ôn tập từ CHƯA NHỚ (${unrememberedWords.length} từ)`,
+      start: 0,
+      end: 0,
+    });
+
     return options;
-  }, []);
+  }, [unrememberedWords.length]);
 
   // Filtered Items based on selected batch
   const currentBatchItems = useMemo(() => {
+    if (batchKey === "unremembered") {
+      return unrememberedSnapshot;
+    }
     const opt = batchOptions.find((b) => b.key === batchKey);
     if (!opt || opt.key === "all") {
       return ALL_ITEMS;
     }
     return ALL_ITEMS.slice(opt.start, opt.end);
-  }, [batchKey, batchOptions]);
+  }, [batchKey, batchOptions, unrememberedSnapshot]);
 
   // Quiz State
   const [buffer, setBuffer] = useState<QuizBuffer>(() => {
@@ -94,18 +237,30 @@ export default function App() {
   const [retryCount, setRetryCount] = useState<number>(0);
   const [pendingNewCount, setPendingNewCount] = useState<number>(0);
 
+  // Current vocab item being questioned
+  const currentVocabItem = useMemo(() => {
+    if (!currentQuestion) return null;
+    return currentBatchItems[currentQuestion.vocabIndex] ?? null;
+  }, [currentQuestion, currentBatchItems]);
+
   // Ref to track latest state in key listener
   const stateRef = useRef({
     isAnswered,
     currentQuestion,
+    currentVocabItem,
     selectedOption,
     isRoundComplete,
+    markAsUnremembered,
+    markAsRemembered,
   });
   stateRef.current = {
     isAnswered,
     currentQuestion,
+    currentVocabItem,
     selectedOption,
     isRoundComplete,
+    markAsUnremembered,
+    markAsRemembered,
   };
 
   // Sync buffer counts to React state
@@ -181,7 +336,7 @@ export default function App() {
   // Pick Next Question
   const advanceToNextQuestion = useCallback(
     (buf: QuizBuffer, items = currentBatchItems) => {
-      if (buf.isRoundComplete()) {
+      if (buf.isRoundComplete() || items.length === 0) {
         setIsRoundComplete(true);
         setCurrentQuestion(null);
         setSelectedOption(null);
@@ -200,7 +355,9 @@ export default function App() {
 
       const nextIdx = buf.nextIndex();
       if (nextIdx !== null && items[nextIdx]) {
-        const q = buildQuestion(items, nextIdx);
+        // If reviewing unremembered items and count is small, use ALL_ITEMS for distractors
+        const distractorPool = batchKey === "unremembered" ? ALL_ITEMS : undefined;
+        const q = buildQuestion(items, nextIdx, distractorPool);
         setCurrentQuestion(q);
         setSelectedOption(null);
         setIsAnswered(false);
@@ -215,8 +372,16 @@ export default function App() {
   const resetBatch = useCallback(
     (key: string = batchKey) => {
       setBatchKey(key);
-      const opt = batchOptions.find((b) => b.key === key);
-      const items = !opt || opt.key === "all" ? ALL_ITEMS : ALL_ITEMS.slice(opt.start, opt.end);
+      let items: VocabItem[] = [];
+
+      if (key === "unremembered") {
+        items = [...unrememberedWords];
+        setUnrememberedSnapshot(items);
+      } else {
+        const opt = batchOptions.find((b) => b.key === key);
+        items = !opt || opt.key === "all" ? ALL_ITEMS : ALL_ITEMS.slice(opt.start, opt.end);
+      }
+
       setRound(1);
       setStreak(0);
       setBestStreak(0);
@@ -230,23 +395,29 @@ export default function App() {
       advanceToNextQuestion(newBuf, items);
       trackEvent("batch_reset", { batchKey: key, totalItems: items.length });
     },
-    [batchKey, batchOptions, syncBufferCounts, advanceToNextQuestion]
+    [batchKey, batchOptions, unrememberedWords, syncBufferCounts, advanceToNextQuestion]
   );
 
   // Initialize or Reset Round (keep current batch)
   const startNewRound = useCallback(
     (items = currentBatchItems) => {
-      const newBuf = new QuizBuffer(items.map((_, i) => i));
+      let roundItems = items;
+      if (batchKey === "unremembered") {
+        roundItems = [...unrememberedWords];
+        setUnrememberedSnapshot(roundItems);
+      }
+
+      const newBuf = new QuizBuffer(roundItems.map((_, i) => i));
       setBuffer(newBuf);
       setCorrectCount(0);
       setWrongCount(0);
       setWrongWords([]);
       setIsRoundComplete(false);
       syncBufferCounts(newBuf);
-      advanceToNextQuestion(newBuf, items);
-      trackEvent("quiz_start_round", { round: round + 1, totalItems: items.length });
+      advanceToNextQuestion(newBuf, roundItems);
+      trackEvent("quiz_start_round", { round: round + 1, totalItems: roundItems.length });
     },
-    [currentBatchItems, round, syncBufferCounts, advanceToNextQuestion]
+    [currentBatchItems, batchKey, unrememberedWords, round, syncBufferCounts, advanceToNextQuestion]
   );
 
   // Initial mount: load first question
@@ -271,6 +442,8 @@ export default function App() {
       // Auto pronounce word on answer
       playPronunciation(currentQuestion.hiragana);
 
+      const vocabItem = currentBatchItems[currentQuestion.vocabIndex];
+
       if (correct) {
         setCorrectCount((prev) => prev + 1);
         setStreak((prev) => {
@@ -291,9 +464,10 @@ export default function App() {
         // Put failed question in pendingRetry queue (exact Python quiz logic)
         buffer.markWrong(currentQuestion.vocabIndex);
 
-        // Save to review list
-        const vocabItem = currentBatchItems[currentQuestion.vocabIndex];
+        // Automatically mark as unremembered when wrong
         if (vocabItem) {
+          markAsUnremembered(vocabItem);
+
           setWrongWords((prev) => {
             if (prev.some((w) => w.question_text === vocabItem.question_text)) {
               return prev;
@@ -312,7 +486,7 @@ export default function App() {
 
       syncBufferCounts(buffer);
     },
-    [isAnswered, currentQuestion, playPronunciation, buffer, currentBatchItems, syncBufferCounts]
+    [isAnswered, currentQuestion, playPronunciation, currentBatchItems, buffer, markAsUnremembered, syncBufferCounts]
   );
 
   // Next question button handler
@@ -320,11 +494,17 @@ export default function App() {
     advanceToNextQuestion(buffer);
   }, [advanceToNextQuestion, buffer]);
 
-  // Keyboard Shortcuts: 1, 2, 3, 4 to choose; Space or Enter to go to next question
+  // Keyboard Shortcuts: 1, 2, 3, 4 to choose; Space or Enter to next; C mark unremembered; D mark remembered
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      const { isAnswered: answered, currentQuestion: q, isRoundComplete: complete } =
-        stateRef.current;
+      const {
+        isAnswered: answered,
+        currentQuestion: q,
+        currentVocabItem: item,
+        isRoundComplete: complete,
+        markAsUnremembered: markUnrem,
+        markAsRemembered: markRem,
+      } = stateRef.current;
 
       if (complete) {
         if (e.key === "Enter" || e.key === " ") {
@@ -352,6 +532,12 @@ export default function App() {
         if (e.key === "Enter" || e.key === " ") {
           e.preventDefault();
           handleNext();
+        } else if (e.key === "c" || e.key === "C") {
+          e.preventDefault();
+          if (item) markUnrem(item);
+        } else if (e.key === "d" || e.key === "D") {
+          e.preventDefault();
+          if (item) markRem(item);
         }
       }
     };
@@ -384,6 +570,28 @@ export default function App() {
         </div>
 
         <div className="header-actions">
+          {/* Export & Import JSON Actions */}
+          <button
+            className="btn-icon"
+            onClick={exportUnrememberedJSON}
+            title={`Tải file unremembered_vocab.json (${unrememberedWords.length} từ)`}
+            aria-label="Tải file JSON từ chưa nhớ"
+          >
+            📥
+          </button>
+          <label
+            className="btn-icon btn-upload-label"
+            title="Nhập file unremembered_vocab.json từ máy tính"
+            aria-label="Nhập file JSON từ chưa nhớ"
+          >
+            📤
+            <input
+              type="file"
+              accept=".json"
+              onChange={handleImportJSON}
+              style={{ display: "none" }}
+            />
+          </label>
           <button
             className={`btn-icon ${isMuted ? "muted" : ""}`}
             onClick={toggleMute}
@@ -422,6 +630,16 @@ export default function App() {
           <span>({totalInBatch} từ)</span>
         </div>
         <div className="batch-controls">
+          {/* Quick Review Button */}
+          <button
+            type="button"
+            className={`btn-review-badge ${batchKey === "unremembered" ? "active" : ""}`}
+            onClick={() => resetBatch("unremembered")}
+            title="Ôn tập lại các từ chưa nhớ"
+          >
+            📌 Ôn từ chưa nhớ ({unrememberedWords.length})
+          </button>
+
           <label htmlFor="batch-select" style={{ fontSize: "0.82rem", color: "var(--text-muted)" }}>
             Chọn bài:
           </label>
@@ -555,14 +773,34 @@ export default function App() {
         </div>
       </div>
 
-      {/* Main Content: Quiz Card OR Round Complete View */}
-      {isRoundComplete ? (
+      {/* Main Content: Quiz Card OR Round Complete View OR Empty Unremembered State */}
+      {batchKey === "unremembered" && currentBatchItems.length === 0 ? (
         <div className="round-complete-card">
           <div className="celebrate-icon">🎉</div>
-          <h2 className="round-complete-title">Xuất sắc! Bạn đã nhớ hết tất cả từ vựng!</h2>
+          <h2 className="round-complete-title">Danh sách Chưa nhớ hiện đang trống!</h2>
           <p style={{ color: "var(--text-secondary)", maxWidth: "520px" }}>
-            Tất cả các câu hỏi trong lượt này (bao gồm cả các từ từng làm sai) đều đã được bạn trả
-            lời chính xác.
+            Tuyệt vời! Bạn không có từ vựng nào trong danh sách chưa nhớ. Hãy chọn bài học để luyện tập tiếp nhé!
+          </p>
+          <div className="round-actions">
+            <button className="btn-primary" onClick={() => resetBatch("batch_0_50")}>
+              📖 Luyện tập Bài 1 (Từ 1 - 50)
+            </button>
+          </div>
+        </div>
+      ) : isRoundComplete ? (
+        <div className="round-complete-card">
+          <div className="celebrate-icon">🎉</div>
+          <h2 className="round-complete-title">
+            {batchKey === "unremembered"
+              ? unrememberedWords.length === 0
+                ? "Xuất sắc! Bạn đã thuộc hết tất cả các từ trong danh sách Chưa nhớ!"
+                : `Hoàn thành 1 lượt ôn tập! Hiện còn ${unrememberedWords.length} từ chưa nhớ.`
+              : "Xuất sắc! Bạn đã nhớ hết tất cả từ vựng!"}
+          </h2>
+          <p style={{ color: "var(--text-secondary)", maxWidth: "520px" }}>
+            {batchKey === "unremembered"
+              ? "Tất cả các từ trong lượt ôn tập này đã được bạn kiểm tra lại."
+              : "Tất cả các câu hỏi trong lượt này (bao gồm cả các từ từng làm sai) đều đã được bạn trả lời chính xác."}
           </p>
 
           <div className="round-stats-summary">
@@ -610,15 +848,33 @@ export default function App() {
           )}
 
           <div className="round-actions">
-            <button
-              className="btn-primary"
-              onClick={() => {
-                setRound((r) => r + 1);
-                startNewRound();
-              }}
-            >
-              🔄 Bắt đầu lượt mới (Shuffle lại)
-            </button>
+            {batchKey === "unremembered" && unrememberedWords.length > 0 ? (
+              <button
+                className="btn-primary"
+                onClick={() => {
+                  setRound((r) => r + 1);
+                  startNewRound();
+                }}
+              >
+                🔄 Tiếp tục ôn tập ({unrememberedWords.length} từ còn lại)
+              </button>
+            ) : (
+              <button
+                className="btn-primary"
+                onClick={() => {
+                  if (batchKey === "unremembered") {
+                    resetBatch("batch_0_50");
+                  } else {
+                    setRound((r) => r + 1);
+                    startNewRound();
+                  }
+                }}
+              >
+                {batchKey === "unremembered"
+                  ? "📖 Quay lại Luyện tập Bài 1"
+                  : "🔄 Bắt đầu lượt mới (Shuffle lại)"}
+              </button>
+            )}
           </div>
         </div>
       ) : currentQuestion ? (
@@ -628,6 +884,9 @@ export default function App() {
             <div className="question-tags">
               {currentQuestion.stt && (
                 <span className="tag-stt">#{currentQuestion.stt}</span>
+              )}
+              {batchKey === "unremembered" && (
+                <span className="tag-review-mode">📌 Đang ôn từ chưa nhớ</span>
               )}
               {retryCount > 0 && pendingNewCount === 0 && (
                 <span className="tag-retry">↩ Câu hỏi ôn tập lại</span>
@@ -704,19 +963,59 @@ export default function App() {
             })}
           </div>
 
-          {/* Feedback & Next Button */}
+          {/* Feedback & Mark Row & Next Button */}
           {isAnswered && (
             <div className={`feedback-box ${isCorrect ? "correct" : "wrong"}`}>
               <div className="feedback-details">
                 <div className="feedback-title">
-                  {isCorrect ? "✅ Chính xác!" : "❌ Chưa chính xác!"}
+                  <span>{isCorrect ? "✅ Chính xác!" : "❌ Chưa chính xác!"}</span>
+                  {currentVocabItem && (
+                    <span
+                      className={`status-badge ${
+                        isWordUnremembered(currentVocabItem)
+                          ? "status-unrem"
+                          : "status-rem"
+                      }`}
+                    >
+                      {isWordUnremembered(currentVocabItem)
+                        ? "📌 Chưa nhớ"
+                        : "✨ Đã nhớ"}
+                    </span>
+                  )}
                 </div>
                 <div className="feedback-explanation">
                   <strong>{currentQuestion.question_text}</strong>
                   {currentQuestion.han_viet ? ` [Hán Việt: ${currentQuestion.han_viet}]` : ""} ={" "}
                   <strong>{currentQuestion.answer}</strong>
-                  {!isCorrect && " (từ này sẽ được hỏi lại sau)"}
+                  {!isCorrect && " (tự động thêm vào danh sách Chưa nhớ)"}
                 </div>
+
+                {/* Quick Marking Buttons */}
+                {currentVocabItem && (
+                  <div className="feedback-mark-row">
+                    <span className="mark-label">Đánh dấu:</span>
+                    <button
+                      type="button"
+                      className={`btn-mark ${
+                        isWordUnremembered(currentVocabItem) ? "active-unrem" : ""
+                      }`}
+                      onClick={() => markAsUnremembered(currentVocabItem)}
+                      title="Đánh dấu từ là chưa nhớ (Phím C)"
+                    >
+                      📌 Chưa nhớ (C)
+                    </button>
+                    <button
+                      type="button"
+                      className={`btn-mark ${
+                        !isWordUnremembered(currentVocabItem) ? "active-rem" : ""
+                      }`}
+                      onClick={() => markAsRemembered(currentVocabItem)}
+                      title="Đánh dấu từ là đã nhớ (Phím D)"
+                    >
+                      ✨ Đã nhớ (D)
+                    </button>
+                  </div>
+                )}
               </div>
 
               <button className="btn-next" onClick={handleNext}>
@@ -734,7 +1033,9 @@ export default function App() {
 
       {/* Footer */}
       <footer className="app-footer">
-        <p>Phím tắt: Bấm <strong>1, 2, 3, 4</strong> để chọn đáp án &bull; Bấm <strong>Space / Enter</strong> để qua câu tiếp theo &bull; Bấm <strong>M</strong> để bật/tắt loa</p>
+        <p>
+          Phím tắt: Bấm <strong>1, 2, 3, 4</strong> chọn đáp án &bull; Bấm <strong>C</strong> (Chưa nhớ) / <strong>D</strong> (Đã nhớ) &bull; Bấm <strong>Space / Enter</strong> câu tiếp theo &bull; Bấm <strong>M</strong> bật/tắt loa
+        </p>
       </footer>
     </div>
   );
