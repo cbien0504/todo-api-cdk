@@ -116,17 +116,90 @@ export default function App() {
 
   // Export / Download JSON
   const exportUnrememberedJSON = () => {
+    if (unrememberedWords.length === 0) {
+      alert("Danh sách từ chưa nhớ đang trống!");
+      return;
+    }
     const dataStr =
       "data:text/json;charset=utf-8," +
       encodeURIComponent(JSON.stringify(unrememberedWords, null, 2));
     const downloadAnchor = document.createElement("a");
     downloadAnchor.setAttribute("href", dataStr);
-    downloadAnchor.setAttribute("download", "unremembered_vocab.json");
+    downloadAnchor.setAttribute("download", `unremembered_vocab_${new Date().toISOString().slice(0, 10)}.json`);
     document.body.appendChild(downloadAnchor);
     downloadAnchor.click();
     downloadAnchor.remove();
     trackEvent("export_unremembered_json", { count: unrememberedWords.length });
   };
+
+  // Export / Download TXT List
+  const exportUnrememberedText = () => {
+    if (unrememberedWords.length === 0) {
+      alert("Danh sách từ chưa nhớ đang trống!");
+      return;
+    }
+    const lines = [
+      "DANH SÁCH TỪ VỰNG CHƯA NHỚ - MIMIKARA OBOERU N3",
+      `Tổng số từ: ${unrememberedWords.length} từ`,
+      `Thời gian xuất: ${new Date().toLocaleString("vi-VN")}`,
+      "--------------------------------------------------\n",
+    ];
+
+    unrememberedWords.forEach((item, index) => {
+      const sttStr = item.stt ? `[#${item.stt}] ` : "";
+      const hvStr = item.han_viet ? ` [Hán Việt: ${item.han_viet}]` : "";
+      lines.push(`${index + 1}. ${sttStr}${item.question_text}${hvStr} : ${item.meaning}`);
+    });
+
+    const content = lines.join("\n");
+    const blob = new Blob([content], { type: "text/plain;charset=utf-8" });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = `danh_sach_tu_chua_nho_n3_${new Date().toISOString().slice(0, 10)}.txt`;
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+    URL.revokeObjectURL(url);
+    trackEvent("export_unremembered_txt", { count: unrememberedWords.length });
+  };
+
+  // Copy text to clipboard
+  const [copySuccess, setCopySuccess] = useState(false);
+  const copyUnrememberedText = () => {
+    if (unrememberedWords.length === 0) {
+      alert("Danh sách từ chưa nhớ đang trống!");
+      return;
+    }
+    const lines = unrememberedWords.map((item, index) => {
+      const sttStr = item.stt ? `[#${item.stt}] ` : "";
+      const hvStr = item.han_viet ? ` [Hán Việt: ${item.han_viet}]` : "";
+      return `${index + 1}. ${sttStr}${item.question_text}${hvStr} : ${item.meaning}`;
+    });
+    navigator.clipboard.writeText(lines.join("\n")).then(() => {
+      setCopySuccess(true);
+      setTimeout(() => setCopySuccess(false), 2000);
+    });
+    trackEvent("copy_unremembered_text", { count: unrememberedWords.length });
+  };
+
+  // Modal View State
+  const [isListModalOpen, setIsListModalOpen] = useState(false);
+  const [listSearchQuery, setListSearchQuery] = useState("");
+
+  const filteredModalWords = useMemo(() => {
+    if (!listSearchQuery.trim()) return unrememberedWords;
+    const q = listSearchQuery.toLowerCase().trim();
+    return unrememberedWords.filter(
+      (item) =>
+        item.question_text.toLowerCase().includes(q) ||
+        (item.kanji && item.kanji.toLowerCase().includes(q)) ||
+        (item.hiragana && item.hiragana.toLowerCase().includes(q)) ||
+        (item.han_viet && item.han_viet.toLowerCase().includes(q)) ||
+        item.meaning.toLowerCase().includes(q) ||
+        String(item.stt).includes(q)
+    );
+  }, [unrememberedWords, listSearchQuery]);
 
   // Import JSON from file input
   const handleImportJSON = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -570,7 +643,23 @@ export default function App() {
         </div>
 
         <div className="header-actions">
-          {/* Export & Import JSON Actions */}
+          {/* List View & Export Actions */}
+          <button
+            className="btn-icon"
+            onClick={() => setIsListModalOpen(true)}
+            title={`Xem & Xuất danh sách từ chưa nhớ (${unrememberedWords.length} từ)`}
+            aria-label="Xem danh sách từ chưa nhớ"
+          >
+            📋
+          </button>
+          <button
+            className="btn-icon"
+            onClick={exportUnrememberedText}
+            title={`Xuất file TXT danh sách từ chưa nhớ (${unrememberedWords.length} từ)`}
+            aria-label="Xuất file TXT từ chưa nhớ"
+          >
+            📄
+          </button>
           <button
             className="btn-icon"
             onClick={exportUnrememberedJSON}
@@ -638,6 +727,16 @@ export default function App() {
             title="Ôn tập lại các từ chưa nhớ"
           >
             📌 Ôn từ chưa nhớ ({unrememberedWords.length})
+          </button>
+
+          {/* Quick List View Button */}
+          <button
+            type="button"
+            className="btn-list-badge"
+            onClick={() => setIsListModalOpen(true)}
+            title="Xem và xuất danh sách các từ chưa nhớ"
+          >
+            📋 Xem & Xuất ({unrememberedWords.length})
           </button>
 
           <label htmlFor="batch-select" style={{ fontSize: "0.82rem", color: "var(--text-muted)" }}>
@@ -1028,6 +1127,134 @@ export default function App() {
       ) : (
         <div style={{ textAlign: "center", padding: "40px", color: "var(--text-muted)" }}>
           Đang chuẩn bị câu hỏi...
+        </div>
+      )}
+
+      {/* Modal: View & Export Unremembered Words */}
+      {isListModalOpen && (
+        <div className="modal-overlay" onClick={() => setIsListModalOpen(false)}>
+          <div className="modal-card" onClick={(e) => e.stopPropagation()}>
+            <div className="modal-header">
+              <div>
+                <h3 className="modal-title">📋 Danh sách từ chưa nhớ ({unrememberedWords.length} từ)</h3>
+                <p className="modal-sub">Xem, tìm kiếm, sao chép hoặc xuất ra file để ôn tập</p>
+              </div>
+              <button
+                className="btn-close-modal"
+                onClick={() => setIsListModalOpen(false)}
+                title="Đóng cửa sổ"
+                aria-label="Đóng cửa sổ"
+              >
+                ✕
+              </button>
+            </div>
+
+            <div className="modal-toolbar">
+              <input
+                type="text"
+                className="modal-search-input"
+                placeholder="🔍 Tìm theo Kanji, Hiragana, Hán Việt hoặc nghĩa..."
+                value={listSearchQuery}
+                onChange={(e) => setListSearchQuery(e.target.value)}
+              />
+              <div className="modal-actions-group">
+                <button
+                  type="button"
+                  className="btn-action-outline"
+                  onClick={copyUnrememberedText}
+                  title="Sao chép danh sách dạng text vào bộ nhớ tạm"
+                >
+                  {copySuccess ? "✅ Đã chép!" : "📋 Chép Text"}
+                </button>
+                <button
+                  type="button"
+                  className="btn-action-outline"
+                  onClick={exportUnrememberedText}
+                  title="Tải file .TXT về máy"
+                >
+                  📄 Xuất TXT
+                </button>
+                <button
+                  type="button"
+                  className="btn-action-outline"
+                  onClick={exportUnrememberedJSON}
+                  title="Tải file .JSON về máy"
+                >
+                  📥 Xuất JSON
+                </button>
+              </div>
+            </div>
+
+            <div className="modal-list-body">
+              {unrememberedWords.length === 0 ? (
+                <div className="modal-empty-state">
+                  <span style={{ fontSize: "2.5rem" }}>🎉</span>
+                  <p>Danh sách Chưa nhớ hiện đang trống!</p>
+                </div>
+              ) : filteredModalWords.length === 0 ? (
+                <div className="modal-empty-state">
+                  <p>Không tìm thấy từ vựng nào khớp với từ khóa "{listSearchQuery}".</p>
+                </div>
+              ) : (
+                <div className="unrem-table-container">
+                  <table className="unrem-table">
+                    <thead>
+                      <tr>
+                        <th style={{ width: "50px" }}>STT</th>
+                        <th>Từ vựng (Kanji / Kana)</th>
+                        <th>Hán Việt</th>
+                        <th>Nghĩa tiếng Việt</th>
+                        <th style={{ width: "100px", textAlign: "center" }}>Hành động</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {filteredModalWords.map((item, idx) => (
+                        <tr key={idx}>
+                          <td className="col-stt">{item.stt ? `#${item.stt}` : idx + 1}</td>
+                          <td className="col-vocab">
+                            <span className="vocab-jp">{item.question_text}</span>
+                            <button
+                              type="button"
+                              className="btn-mini-audio"
+                              onClick={() => playPronunciation(item.hiragana, true)}
+                              title="Nghe phát âm"
+                            >
+                              🔊
+                            </button>
+                          </td>
+                          <td className="col-hv">
+                            {item.han_viet ? (
+                              <span className="badge-hv">{item.han_viet}</span>
+                            ) : (
+                              <span style={{ color: "var(--text-muted)" }}>-</span>
+                            )}
+                          </td>
+                          <td className="col-meaning">{item.meaning}</td>
+                          <td className="col-action">
+                            <button
+                              type="button"
+                              className="btn-mark-learned-table"
+                              onClick={() => markAsRemembered(item)}
+                              title="Đánh dấu đã nhớ (gỡ khỏi danh sách chưa nhớ)"
+                            >
+                              ✨ Đã nhớ
+                            </button>
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              )}
+            </div>
+
+            <div className="modal-footer">
+              <span>Hiển thị: <strong>{filteredModalWords.length}</strong> / {unrememberedWords.length} từ</span>
+              <button className="btn-primary" onClick={() => setIsListModalOpen(false)}>
+                Đóng
+              </button>
+            </div>
+          </div>
         </div>
       )}
 

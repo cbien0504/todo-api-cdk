@@ -209,5 +209,38 @@ describe("Mimikara Oboeru N3 Quiz App", () => {
 
     expect(screen.getByText(/Đang ôn từ chưa nhớ/i)).toBeInTheDocument();
   });
+
+  it("opens unremembered words modal, displays words list and closes modal", () => {
+    const testVocab = [
+      {
+        stt: 312,
+        kanji: "家庭",
+        han_viet: "GIA ĐÌNH",
+        hiragana: "かてい",
+        meaning: "gia đình",
+        question_text: "家庭 (かてい)",
+      },
+    ];
+    localStorage.setItem("mimikara_unremembered_words", JSON.stringify(testVocab));
+
+    render(<App />);
+
+    const openListBtn = screen.getByRole("button", { name: /Xem danh sách từ chưa nhớ/i });
+    expect(openListBtn).toBeInTheDocument();
+
+    // Open modal
+    fireEvent.click(openListBtn);
+
+    expect(screen.getByText(/Danh sách từ chưa nhớ \(1 từ\)/i)).toBeInTheDocument();
+    expect(screen.getByText("家庭 (かてい)")).toBeInTheDocument();
+    expect(screen.getByText("gia đình")).toBeInTheDocument();
+    expect(screen.getByText("GIA ĐÌNH")).toBeInTheDocument();
+
+    // Close modal
+    const closeBtn = screen.getByRole("button", { name: "Đóng" });
+    fireEvent.click(closeBtn);
+
+    expect(screen.queryByText(/Danh sách từ chưa nhớ \(1 từ\)/i)).not.toBeInTheDocument();
+  });
 });
 
