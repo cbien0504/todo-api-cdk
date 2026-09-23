@@ -932,3 +932,121 @@ body {
   padding-top: 16px;
   border-top: 1px solid var(--card-border);
 }
+
+/* Unremembered Vocab Management & Review Styles */
+.btn-upload-label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.btn-review-badge {
+  background: rgba(245, 158, 11, 0.12);
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  color: #fbbf24;
+  padding: 6px 14px;
+  border-radius: var(--radius-sm);
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+.btn-review-badge:hover {
+  background: rgba(245, 158, 11, 0.25);
+  border-color: #f59e0b;
+  transform: translateY(-1px);
+}
+
+.btn-review-badge.active {
+  background: #f59e0b;
+  color: #0b0f19;
+  border-color: #f59e0b;
+  box-shadow: 0 0 14px rgba(245, 158, 11, 0.45);
+}
+
+.tag-review-mode {
+  background: rgba(245, 158, 11, 0.18);
+  border: 1px solid rgba(245, 158, 11, 0.45);
+  color: #fbbf24;
+  padding: 3px 8px;
+  border-radius: var(--radius-sm);
+  font-size: 0.76rem;
+  font-weight: 700;
+}
+
+.status-badge {
+  font-size: 0.76rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: var(--radius-sm);
+  margin-left: 8px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.status-badge.status-unrem {
+  background: rgba(239, 68, 68, 0.16);
+  border: 1px solid rgba(239, 68, 68, 0.4);
+  color: #f87171;
+}
+
+.status-badge.status-rem {
+  background: rgba(16, 185, 129, 0.16);
+  border: 1px solid rgba(16, 185, 129, 0.4);
+  color: #34d399;
+}
+
+.feedback-mark-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+  flex-wrap: wrap;
+}
+
+.mark-label {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.btn-mark {
+  background: var(--option-bg);
+  border: 1px solid var(--card-border);
+  color: var(--text-secondary);
+  padding: 5px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.btn-mark:hover {
+  transform: translateY(-1px);
+  color: var(--text-primary);
+  border-color: var(--primary);
+}
+
+.btn-mark.active-unrem {
+  background: rgba(239, 68, 68, 0.22);
+  border-color: var(--danger);
+  color: #fca5a5;
+  box-shadow: 0 0 10px rgba(239, 68, 68, 0.25);
+}
+
+.btn-mark.active-rem {
+  background: rgba(16, 185, 129, 0.22);
+  border-color: var(--success);
+  color: #6ee7b7;
+  box-shadow: 0 0 10px rgba(16, 185, 129, 0.25);
+}

@@ -138,5 +138,76 @@ describe("Mimikara Oboeru N3 Quiz App", () => {
     expect(localStorage.getItem("mimikara_is_muted")).toBe("false");
     expect(muteToggleBtn).toHaveTextContent("🔊");
   });
+
+  it("marks word as unremembered and remembered after answering, with localStorage persistence", () => {
+    render(<App />);
+
+    const optionButtons = screen
+      .getAllByRole("button")
+      .filter((btn) => btn.className.includes("option-button"));
+
+    // Answer question
+    fireEvent.click(optionButtons[0]);
+
+    const markUnremBtn = screen.getByRole("button", { name: /Chưa nhớ \(C\)/i });
+    const markRemBtn = screen.getByRole("button", { name: /Đã nhớ \(D\)/i });
+
+    expect(markUnremBtn).toBeInTheDocument();
+    expect(markRemBtn).toBeInTheDocument();
+
+    // Click mark unremembered
+    fireEvent.click(markUnremBtn);
+    const savedAfterUnrem = JSON.parse(localStorage.getItem("mimikara_unremembered_words") || "[]");
+    expect(savedAfterUnrem.length).toBeGreaterThanOrEqual(1);
+
+    // Click mark remembered
+    fireEvent.click(markRemBtn);
+    const savedAfterRem = JSON.parse(localStorage.getItem("mimikara_unremembered_words") || "[]");
+    expect(savedAfterRem.length).toBe(0);
+  });
+
+  it("marks word as unremembered via 'c' and remembered via 'd' keyboard shortcuts", () => {
+    render(<App />);
+
+    const optionButtons = screen
+      .getAllByRole("button")
+      .filter((btn) => btn.className.includes("option-button"));
+
+    // Answer question
+    fireEvent.click(optionButtons[0]);
+
+    // Press 'c' to mark unremembered
+    fireEvent.keyDown(window, { key: "c" });
+    const savedAfterC = JSON.parse(localStorage.getItem("mimikara_unremembered_words") || "[]");
+    expect(savedAfterC.length).toBeGreaterThanOrEqual(1);
+
+    // Press 'd' to mark remembered
+    fireEvent.keyDown(window, { key: "d" });
+    const savedAfterD = JSON.parse(localStorage.getItem("mimikara_unremembered_words") || "[]");
+    expect(savedAfterD.length).toBe(0);
+  });
+
+  it("switches to unremembered batch and displays review mode tag", () => {
+    const testVocab = [
+      {
+        stt: 999,
+        kanji: "試験",
+        han_viet: "THÍ NGHIỆM",
+        hiragana: "しけん",
+        meaning: "kỳ thi",
+        question_text: "試験 (しけん)",
+      },
+    ];
+    localStorage.setItem("mimikara_unremembered_words", JSON.stringify(testVocab));
+
+    render(<App />);
+
+    const reviewBtn = screen.getByRole("button", { name: /Ôn từ chưa nhớ \(1\)/i });
+    expect(reviewBtn).toBeInTheDocument();
+
+    fireEvent.click(reviewBtn);
+
+    expect(screen.getByText(/Đang ôn từ chưa nhớ/i)).toBeInTheDocument();
+  });
 });
 

@@ -125,6 +125,19 @@ describe("quizEngine (Mimikara Oboeru N3)", () => {
       const uniqueOptions = new Set(q.options);
       expect(uniqueOptions.size).toBe(4);
     });
+
+    it("builds a question with 4 options using distractorPool when items has fewer than 4 elements", () => {
+      const smallItems: VocabItem[] = [mockItems[0]]; // Only 1 item
+      const q = buildQuestion(smallItems, 0, mockItems);
+
+      expect(q.stt).toBe(1);
+      expect(q.answer).toBe("đàn ông");
+      expect(q.options).toHaveLength(4);
+      expect(q.options).toContain("đàn ông");
+
+      const uniqueOptions = new Set(q.options);
+      expect(uniqueOptions.size).toBe(4);
+    });
   });
 
   describe("shuffleArray", () => {
