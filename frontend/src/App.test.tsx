@@ -271,5 +271,24 @@ describe("Mimikara Oboeru N3 Quiz App", () => {
     expect(select.value).toBe("lesson_2");
     expect(screen.getAllByText(/Unit 1 - Lesson 2: Sinh ra, học hành, công việc/i).length).toBeGreaterThanOrEqual(1);
   });
+
+  it("allows practicing an entire unit, updating batch count to total words in that unit", () => {
+    render(<App />);
+
+    const select = screen.getByRole("combobox") as HTMLSelectElement;
+
+    // Switch to Unit 1 (120 words)
+    fireEvent.change(select, { target: { value: "unit_1" } });
+    expect(select.value).toBe("unit_1");
+
+    // Check batch info updates with unit title and 120 words
+    expect(screen.getAllByText(/Cả Unit 1 – Con người & cuộc sống/i).length).toBeGreaterThanOrEqual(1);
+    expect(screen.getAllByText(/\(120 từ\)/i).length).toBeGreaterThanOrEqual(1);
+
+    // The question card displays tag-unit-mode
+    const unitTag = document.querySelector(".tag-unit-mode");
+    expect(unitTag).toBeInTheDocument();
+    expect(unitTag?.textContent).toContain("Luyện cả Unit");
+  });
 });
 

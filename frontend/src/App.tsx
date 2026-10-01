@@ -19,9 +19,19 @@ export interface LessonBatch {
   items: VocabItem[];
 }
 
+export interface UnitBatch {
+  key: string;
+  unit: string;
+  name: string;
+  label: string;
+  items: VocabItem[];
+}
+
 export interface UnitGroup {
   unit: string;
   title: string;
+  unitKey: string;
+  items: VocabItem[];
   lessons: LessonBatch[];
 }
 
@@ -71,10 +81,24 @@ export const UNIT_GROUPS: UnitGroup[] = Array.from(
     map.get(batch.unit)!.push(batch);
     return map;
   }, new Map<string, LessonBatch[]>()).entries()
-).map(([unit, lessons]) => ({
-  unit,
-  title: UNIT_TITLES[unit] || unit,
-  lessons,
+).map(([unit, lessons], index) => {
+  const items = lessons.flatMap((l) => l.items);
+  const title = UNIT_TITLES[unit] || unit;
+  return {
+    unit,
+    title,
+    unitKey: `unit_${index + 1}`,
+    items,
+    lessons,
+  };
+});
+
+export const UNIT_BATCHES: UnitBatch[] = UNIT_GROUPS.map((g) => ({
+  key: g.unitKey,
+  unit: g.unit,
+  name: g.title,
+  label: `🎯 ${g.title} (${g.items.length} từ)`,
+  items: g.items,
 }));
 
 export const FIRST_LESSON = LESSON_BATCHES[0];
@@ -222,6 +246,10 @@ export default function App() {
       items: ALL_ITEMS,
     });
 
+    for (const u of UNIT_BATCHES) {
+      options.push(u);
+    }
+
     for (const b of LESSON_BATCHES) {
       options.push(b);
     }
@@ -237,6 +265,10 @@ export default function App() {
     if (batchKey === "all") {
       return ALL_ITEMS;
     }
+    const unitBatch = UNIT_BATCHES.find((u) => u.key === batchKey);
+    if (unitBatch) {
+      return unitBatch.items;
+    }
     const found = LESSON_BATCHES.find((b) => b.key === batchKey);
     return found ? found.items : (FIRST_LESSON ? FIRST_LESSON.items : ALL_ITEMS);
   }, [batchKey, unrememberedSnapshot]);
@@ -248,6 +280,10 @@ export default function App() {
     }
     if (batchKey === "all") {
       return `Tất cả (${ALL_ITEMS.length} từ vựng N3)`;
+    }
+    const unitBatch = UNIT_BATCHES.find((u) => u.key === batchKey);
+    if (unitBatch) {
+      return `Cả ${unitBatch.name}`;
     }
     const found = LESSON_BATCHES.find((b) => b.key === batchKey);
     return found ? found.name : "Bài học";
@@ -422,8 +458,13 @@ export default function App() {
       } else if (key === "all") {
         items = ALL_ITEMS;
       } else {
-        const found = LESSON_BATCHES.find((b) => b.key === key);
-        items = found ? found.items : ALL_ITEMS;
+        const unitBatch = UNIT_BATCHES.find((u) => u.key === key);
+        if (unitBatch) {
+          items = unitBatch.items;
+        } else {
+          const found = LESSON_BATCHES.find((b) => b.key === key);
+          items = found ? found.items : ALL_ITEMS;
+        }
       }
 
       setRound(1);
@@ -696,8 +737,18 @@ export default function App() {
             <option value="all">
               📚 Tất cả ({ALL_ITEMS.length} từ vựng N3)
             </option>
+            <optgroup label="── 🎯 LUYỆN TOÀN BỘ THEO UNIT (11 UNIT) ──">
+              {UNIT_BATCHES.map((ub) => (
+                <option key={ub.key} value={ub.key}>
+                  {ub.label}
+                </option>
+              ))}
+            </optgroup>
             {UNIT_GROUPS.map((group) => (
               <optgroup key={group.unit} label={group.title}>
+                <option value={group.unitKey} style={{ fontWeight: 700 }}>
+                  👉 Luyện CẢ {group.title} ({group.items.length} từ)
+                </option>
                 {group.lessons.map((lesson) => (
                   <option key={lesson.key} value={lesson.key}>
                     {lesson.label}
@@ -935,6 +986,9 @@ export default function App() {
             <div className="question-tags">
               {currentQuestion.stt && (
                 <span className="tag-stt">#{currentQuestion.stt}</span>
+              )}
+              {batchKey.startsWith("unit_") && (
+                <span className="tag-unit-mode">🎯 Luyện cả Unit</span>
               )}
               {currentQuestion.lesson && (
                 <span className="tag-lesson">{currentQuestion.lesson}</span>
