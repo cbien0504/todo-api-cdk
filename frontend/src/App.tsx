@@ -9,8 +9,76 @@ import {
 import { trackEvent } from "./utils/gtm";
 
 const ALL_ITEMS: VocabItem[] = cleanVocabData(rawVocabData as RawVocabItem[]);
-const BATCH_SIZE = 50;
 const STORAGE_UNREMEMBERED_KEY = "mimikara_unremembered_words";
+
+export interface LessonBatch {
+  key: string;
+  unit: string;
+  name: string;
+  label: string;
+  items: VocabItem[];
+}
+
+export interface UnitGroup {
+  unit: string;
+  title: string;
+  lessons: LessonBatch[];
+}
+
+export const UNIT_TITLES: Record<string, string> = {
+  "Unit 1": "Unit 1 – Con người & cuộc sống",
+  "Unit 2": "Unit 2 – Động từ (1)",
+  "Unit 3": "Unit 3 – Danh từ hóa & tính từ",
+  "Unit 4": "Unit 4 – Danh từ (2)",
+  "Unit 5": "Unit 5 – Động từ (2)",
+  "Unit 6": "Unit 6 – Katakana & tính từ",
+  "Unit 7": "Unit 7 – Phó từ",
+  "Unit 8": "Unit 8 – Danh từ (3)",
+  "Unit 9": "Unit 9 – Động từ (3)",
+  "Unit 10": "Unit 10 – Katakana (2)",
+  "Unit 11": "Unit 11 – Nấu ăn, phó từ, liên từ",
+};
+
+// Group ALL_ITEMS by their lesson attribute
+const LESSON_MAP = new Map<string, VocabItem[]>();
+for (const item of ALL_ITEMS) {
+  const lessonName = item.lesson || "Chưa phân loại";
+  if (!LESSON_MAP.has(lessonName)) {
+    LESSON_MAP.set(lessonName, []);
+  }
+  LESSON_MAP.get(lessonName)!.push(item);
+}
+
+export const LESSON_BATCHES: LessonBatch[] = Array.from(LESSON_MAP.entries()).map(
+  ([lessonName, items], index) => {
+    const unitMatch = lessonName.match(/^(Unit\s+\d+)/i);
+    const unit = unitMatch ? unitMatch[1] : "Khác";
+    return {
+      key: `lesson_${index + 1}`,
+      unit,
+      name: lessonName,
+      label: `${lessonName} (${items.length} từ)`,
+      items,
+    };
+  }
+);
+
+export const UNIT_GROUPS: UnitGroup[] = Array.from(
+  LESSON_BATCHES.reduce((map, batch) => {
+    if (!map.has(batch.unit)) {
+      map.set(batch.unit, []);
+    }
+    map.get(batch.unit)!.push(batch);
+    return map;
+  }, new Map<string, LessonBatch[]>()).entries()
+).map(([unit, lessons]) => ({
+  unit,
+  title: UNIT_TITLES[unit] || unit,
+  lessons,
+}));
+
+export const FIRST_LESSON = LESSON_BATCHES[0];
+export const FIRST_LESSON_KEY = FIRST_LESSON ? FIRST_LESSON.key : "all";
 
 export const getItemKey = (item: { stt?: string | number; question_text?: string; meaning?: string }) => {
   if (item.stt !== undefined && item.stt !== null && String(item.stt).trim() !== "") {
@@ -127,63 +195,67 @@ export default function App() {
         (item.hiragana && item.hiragana.toLowerCase().includes(q)) ||
         (item.han_viet && item.han_viet.toLowerCase().includes(q)) ||
         item.meaning.toLowerCase().includes(q) ||
+        (item.lesson && item.lesson.toLowerCase().includes(q)) ||
         String(item.stt).includes(q)
     );
   }, [unrememberedWords, listSearchQuery]);
 
-  // Batch Range State (defaults to first 50 items like quiz_mimikara_n3.py)
-  const [batchKey, setBatchKey] = useState<string>("batch_0_50");
+  // Batch Range State (defaults to first lesson)
+  const [batchKey, setBatchKey] = useState<string>(FIRST_LESSON_KEY);
   // Stable snapshot for review mode to avoid mid-round buffer index shifts
   const [unrememberedSnapshot, setUnrememberedSnapshot] = useState<VocabItem[]>([]);
 
   const batchOptions = useMemo(() => {
-    const options: { key: string; label: string; start: number; end: number }[] = [];
-    const total = ALL_ITEMS.length;
-    let batchIndex = 1;
+    const options: { key: string; label: string; name: string; items: VocabItem[] }[] = [];
 
-    for (let start = 0; start < total; start += BATCH_SIZE) {
-      const end = Math.min(start + BATCH_SIZE, total);
-      options.push({
-        key: `batch_${start}_${end}`,
-        label: `Bài ${batchIndex} (Từ ${start + 1} - ${end})`,
-        start,
-        end,
-      });
-      batchIndex++;
-    }
+    options.push({
+      key: "unremembered",
+      label: `📌 Ôn tập từ CHƯA NHỚ (${unrememberedWords.length} từ)`,
+      name: "Từ chưa nhớ",
+      items: unrememberedSnapshot,
+    });
 
     options.push({
       key: "all",
-      label: `Tất cả (${total} từ vựng N3)`,
-      start: 0,
-      end: total,
+      label: `📚 Tất cả (${ALL_ITEMS.length} từ vựng N3)`,
+      name: `Tất cả (${ALL_ITEMS.length} từ vựng N3)`,
+      items: ALL_ITEMS,
     });
 
-    options.unshift({
-      key: "unremembered",
-      label: `📌 Ôn tập từ CHƯA NHỚ (${unrememberedWords.length} từ)`,
-      start: 0,
-      end: 0,
-    });
+    for (const b of LESSON_BATCHES) {
+      options.push(b);
+    }
 
     return options;
-  }, [unrememberedWords.length]);
+  }, [unrememberedWords.length, unrememberedSnapshot]);
 
   // Filtered Items based on selected batch
   const currentBatchItems = useMemo(() => {
     if (batchKey === "unremembered") {
       return unrememberedSnapshot;
     }
-    const opt = batchOptions.find((b) => b.key === batchKey);
-    if (!opt || opt.key === "all") {
+    if (batchKey === "all") {
       return ALL_ITEMS;
     }
-    return ALL_ITEMS.slice(opt.start, opt.end);
-  }, [batchKey, batchOptions, unrememberedSnapshot]);
+    const found = LESSON_BATCHES.find((b) => b.key === batchKey);
+    return found ? found.items : (FIRST_LESSON ? FIRST_LESSON.items : ALL_ITEMS);
+  }, [batchKey, unrememberedSnapshot]);
+
+  // Current batch title for display
+  const currentBatchTitle = useMemo(() => {
+    if (batchKey === "unremembered") {
+      return "Từ chưa nhớ";
+    }
+    if (batchKey === "all") {
+      return `Tất cả (${ALL_ITEMS.length} từ vựng N3)`;
+    }
+    const found = LESSON_BATCHES.find((b) => b.key === batchKey);
+    return found ? found.name : "Bài học";
+  }, [batchKey]);
 
   // Quiz State
   const [buffer, setBuffer] = useState<QuizBuffer>(() => {
-    const initialItems = ALL_ITEMS.slice(0, Math.min(BATCH_SIZE, ALL_ITEMS.length));
+    const initialItems = FIRST_LESSON ? FIRST_LESSON.items : ALL_ITEMS;
     return new QuizBuffer(initialItems.map((_, i) => i));
   });
 
@@ -325,8 +397,8 @@ export default function App() {
 
       const nextIdx = buf.nextIndex();
       if (nextIdx !== null && items[nextIdx]) {
-        // If reviewing unremembered items and count is small, use ALL_ITEMS for distractors
-        const distractorPool = batchKey === "unremembered" ? ALL_ITEMS : undefined;
+        // If reviewing unremembered items or batch size is small, use ALL_ITEMS for distractors
+        const distractorPool = (batchKey === "unremembered" || items.length < 4) ? ALL_ITEMS : undefined;
         const q = buildQuestion(items, nextIdx, distractorPool);
         setCurrentQuestion(q);
         setSelectedOption(null);
@@ -347,9 +419,11 @@ export default function App() {
       if (key === "unremembered") {
         items = [...unrememberedWords];
         setUnrememberedSnapshot(items);
+      } else if (key === "all") {
+        items = ALL_ITEMS;
       } else {
-        const opt = batchOptions.find((b) => b.key === key);
-        items = !opt || opt.key === "all" ? ALL_ITEMS : ALL_ITEMS.slice(opt.start, opt.end);
+        const found = LESSON_BATCHES.find((b) => b.key === key);
+        items = found ? found.items : ALL_ITEMS;
       }
 
       setRound(1);
@@ -583,7 +657,7 @@ export default function App() {
       <div className="batch-selector-bar">
         <div className="batch-info">
           <span>Đang ôn:</span>
-          <strong>{batchOptions.find((b) => b.key === batchKey)?.label}</strong>
+          <strong>{currentBatchTitle}</strong>
           <span>({totalInBatch} từ)</span>
         </div>
         <div className="batch-controls">
@@ -616,10 +690,20 @@ export default function App() {
             value={batchKey}
             onChange={(e) => resetBatch(e.target.value)}
           >
-            {batchOptions.map((opt) => (
-              <option key={opt.key} value={opt.key}>
-                {opt.label}
-              </option>
+            <option value="unremembered">
+              📌 Ôn tập từ CHƯA NHỚ ({unrememberedWords.length} từ)
+            </option>
+            <option value="all">
+              📚 Tất cả ({ALL_ITEMS.length} từ vựng N3)
+            </option>
+            {UNIT_GROUPS.map((group) => (
+              <optgroup key={group.unit} label={group.title}>
+                {group.lessons.map((lesson) => (
+                  <option key={lesson.key} value={lesson.key}>
+                    {lesson.label}
+                  </option>
+                ))}
+              </optgroup>
             ))}
           </select>
           <button
@@ -749,8 +833,8 @@ export default function App() {
             Tuyệt vời! Bạn không có từ vựng nào trong danh sách chưa nhớ. Hãy chọn bài học để luyện tập tiếp nhé!
           </p>
           <div className="round-actions">
-            <button className="btn-primary" onClick={() => resetBatch("batch_0_50")}>
-              📖 Luyện tập Bài 1 (Từ 1 - 50)
+            <button className="btn-primary" onClick={() => resetBatch(FIRST_LESSON_KEY)}>
+              📖 Luyện tập Bài 1 ({FIRST_LESSON ? FIRST_LESSON.name : "Bài đầu tiên"})
             </button>
           </div>
         </div>
@@ -830,7 +914,7 @@ export default function App() {
                 className="btn-primary"
                 onClick={() => {
                   if (batchKey === "unremembered") {
-                    resetBatch("batch_0_50");
+                    resetBatch(FIRST_LESSON_KEY);
                   } else {
                     setRound((r) => r + 1);
                     startNewRound();
@@ -838,7 +922,7 @@ export default function App() {
                 }}
               >
                 {batchKey === "unremembered"
-                  ? "📖 Quay lại Luyện tập Bài 1"
+                  ? `📖 Quay lại Luyện tập Bài 1 (${FIRST_LESSON ? FIRST_LESSON.name : ""})`
                   : "🔄 Bắt đầu lượt mới (Shuffle lại)"}
               </button>
             )}
@@ -851,6 +935,9 @@ export default function App() {
             <div className="question-tags">
               {currentQuestion.stt && (
                 <span className="tag-stt">#{currentQuestion.stt}</span>
+              )}
+              {currentQuestion.lesson && (
+                <span className="tag-lesson">{currentQuestion.lesson}</span>
               )}
               {batchKey === "unremembered" && (
                 <span className="tag-review-mode">📌 Đang ôn từ chưa nhớ</span>
@@ -1063,6 +1150,11 @@ export default function App() {
                           <td className="col-stt">{item.stt ? `#${item.stt}` : idx + 1}</td>
                           <td className="col-vocab">
                             <span className="vocab-jp">{item.question_text}</span>
+                            {item.lesson && (
+                              <div style={{ fontSize: "0.72rem", color: "var(--text-muted)", marginTop: "2px" }}>
+                                📖 {item.lesson}
+                              </div>
+                            )}
                             <button
                               type="button"
                               className="btn-mini-audio"

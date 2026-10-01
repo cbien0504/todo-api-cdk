@@ -228,6 +228,19 @@ body {
   cursor: pointer;
   outline: none;
   transition: var(--transition);
+  max-width: 320px;
+}
+
+.batch-select optgroup {
+  background: var(--card-bg);
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.batch-select option {
+  background: var(--card-bg);
+  color: var(--text-primary);
+  font-weight: 500;
 }
 
 .batch-select:focus {
@@ -466,6 +479,20 @@ body {
   border-radius: 999px;
   font-size: 0.78rem;
   font-weight: 700;
+}
+
+.tag-lesson {
+  background: rgba(16, 185, 129, 0.12);
+  color: #10b981;
+  border: 1px solid rgba(16, 185, 129, 0.25);
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  max-width: 240px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .tag-retry {

@@ -4,6159 +4,7039 @@
     "kanji": "男性",
     "han_viet": "NAM TÍNH",
     "hiragana": "だんせい",
-    "meaning": "đàn ông, nam giới"
+    "meaning": "đàn ông, nam giới",
+    "lesson": "Unit 1 - Lesson 1: Con người & quan hệ"
   },
   {
     "stt": 2,
     "kanji": "女性",
     "han_viet": "NỮ TÍNH",
     "hiragana": "じょせい",
-    "meaning": "phụ nữ, nữ giới"
+    "meaning": "phụ nữ, nữ giới",
+    "lesson": "Unit 1 - Lesson 1: Con người & quan hệ"
   },
   {
     "stt": 3,
     "kanji": "高齢",
     "han_viet": "CAO LINH",
     "hiragana": "こうれい",
-    "meaning": "cao tuổi"
+    "meaning": "cao tuổi",
+    "lesson": "Unit 1 - Lesson 1: Con người & quan hệ"
   },
   {
     "stt": 4,
     "kanji": "年上",
     "han_viet": "NIÊN THƯỢNG",
     "hiragana": "としうえ",
-    "meaning": "Lớn (tuổi) hơn"
+    "meaning": "Lớn (tuổi) hơn",
+    "lesson": "Unit 1 - Lesson 1: Con người & quan hệ"
   },
   {
     "stt": 5,
     "kanji": "目上",
     "han_viet": "MỤC THƯỢNG",
     "hiragana": "めうえ",
-    "meaning": "bề trên, người trên mình"
+    "meaning": "bề trên, người trên mình",
+    "lesson": "Unit 1 - Lesson 1: Con người & quan hệ"
   },
   {
     "stt": 6,
     "kanji": "先輩",
     "han_viet": "TIÊN BỐI",
     "hiragana": "せんぱい",
-    "meaning": "tiền bối, đàn anh"
+    "meaning": "tiền bối, đàn anh",
+    "lesson": "Unit 1 - Lesson 1: Con người & quan hệ"
   },
   {
     "stt": 7,
     "kanji": "後輩",
     "han_viet": "HẬU BỐI",
     "hiragana": "こうはい",
-    "meaning": "hậu bối, đàn em"
+    "meaning": "hậu bối, đàn em",
+    "lesson": "Unit 1 - Lesson 1: Con người & quan hệ"
   },
   {
     "stt": 8,
     "kanji": "上司",
     "han_viet": "THƯỢNG TI",
     "hiragana": "じょうし",
-    "meaning": "cấp trên"
+    "meaning": "cấp trên",
+    "lesson": "Unit 1 - Lesson 1: Con người & quan hệ"
   },
   {
     "stt": 9,
     "kanji": "相手",
     "han_viet": "TƯƠNG THỦ",
     "hiragana": "あいて",
-    "meaning": "Đối phương, đối tác, đối thủ"
+    "meaning": "Đối phương, đối tác, đối thủ",
+    "lesson": "Unit 1 - Lesson 1: Con người & quan hệ"
   },
   {
     "stt": 10,
     "kanji": "知り合い",
     "han_viet": "TRI HỢP",
     "hiragana": "しりあい",
-    "meaning": "người quen"
+    "meaning": "người quen",
+    "lesson": "Unit 1 - Lesson 1: Con người & quan hệ"
   },
   {
     "stt": 11,
     "kanji": "友人",
     "han_viet": "HỮU NHÂN",
     "hiragana": "ゆうじん",
-    "meaning": "bạn bè, bạn thân"
+    "meaning": "bạn bè, bạn thân",
+    "lesson": "Unit 1 - Lesson 1: Con người & quan hệ"
   },
   {
     "stt": 12,
     "kanji": "仲",
     "han_viet": "TRỌNG",
     "hiragana": "なか",
-    "meaning": "quan hệ"
+    "meaning": "quan hệ",
+    "lesson": "Unit 1 - Lesson 1: Con người & quan hệ"
   },
   {
     "stt": 13,
     "kanji": "生年月日",
     "han_viet": "SANH NIÊN NGUYỆT NHẬT",
     "hiragana": "せいねんがっぴ",
-    "meaning": "ngày tháng năm sinh"
+    "meaning": "ngày tháng năm sinh",
+    "lesson": "Unit 1 - Lesson 2: Sinh ra, học hành, công việc"
   },
   {
     "stt": 14,
     "kanji": "誕生",
     "han_viet": "ĐẢN SANH",
     "hiragana": "たんじょう",
-    "meaning": "ra đời, bắt nguồn"
+    "meaning": "ra đời, bắt nguồn",
+    "lesson": "Unit 1 - Lesson 2: Sinh ra, học hành, công việc"
   },
   {
     "stt": 15,
     "kanji": "年",
     "han_viet": "NIÊN",
     "hiragana": "とし",
-    "meaning": "Năm, tuổi"
+    "meaning": "Năm, tuổi",
+    "lesson": "Unit 1 - Lesson 2: Sinh ra, học hành, công việc"
   },
   {
     "stt": 16,
     "kanji": "出身",
     "han_viet": "XUẤT THÂN",
     "hiragana": "しゅっしん",
-    "meaning": "Xuất thân, quê quán"
+    "meaning": "Xuất thân, quê quán",
+    "lesson": "Unit 1 - Lesson 2: Sinh ra, học hành, công việc"
   },
   {
     "stt": 17,
     "kanji": "故郷",
     "han_viet": "CỐ HƯƠNG",
     "hiragana": "こきょう",
-    "meaning": "Quê quán"
+    "meaning": "Quê quán",
+    "lesson": "Unit 1 - Lesson 2: Sinh ra, học hành, công việc"
   },
   {
     "stt": 18,
     "kanji": "成長",
     "han_viet": "THÀNH TRƯỞNG",
     "hiragana": "せいちょう",
-    "meaning": "trưởng thành, tăng trưởng"
+    "meaning": "trưởng thành, tăng trưởng",
+    "lesson": "Unit 1 - Lesson 2: Sinh ra, học hành, công việc"
   },
   {
     "stt": 19,
     "kanji": "成人",
     "han_viet": "THÀNH NHÂN",
     "hiragana": "せいじん",
-    "meaning": "người trưởng thành"
+    "meaning": "người trưởng thành",
+    "lesson": "Unit 1 - Lesson 2: Sinh ra, học hành, công việc"
   },
   {
     "stt": 20,
     "kanji": "合格",
     "han_viet": "HỢP CÁCH",
     "hiragana": "ごうかく",
-    "meaning": "Thi đỗ, đậu, đủ điều kiện"
+    "meaning": "Thi đỗ, đậu, đủ điều kiện",
+    "lesson": "Unit 1 - Lesson 2: Sinh ra, học hành, công việc"
   },
   {
     "stt": 21,
     "kanji": "進学",
     "han_viet": "TIẾN HỌC",
     "hiragana": "しんがく",
-    "meaning": "Học lên"
+    "meaning": "Học lên",
+    "lesson": "Unit 1 - Lesson 2: Sinh ra, học hành, công việc"
   },
   {
     "stt": 22,
     "kanji": "退学",
     "han_viet": "THỐI HỌC",
     "hiragana": "たいがく",
-    "meaning": "bỏ học, thôi học"
+    "meaning": "bỏ học, thôi học",
+    "lesson": "Unit 1 - Lesson 2: Sinh ra, học hành, công việc"
   },
   {
     "stt": 23,
     "kanji": "就職",
     "han_viet": "TỰU CHỨC",
     "hiragana": "しゅうしょく",
-    "meaning": "tìm việc làm"
+    "meaning": "tìm việc làm",
+    "lesson": "Unit 1 - Lesson 2: Sinh ra, học hành, công việc"
   },
   {
     "stt": 24,
     "kanji": "退職",
     "han_viet": "THỐI CHỨC",
     "hiragana": "たいしょく",
-    "meaning": "nghỉ việc"
+    "meaning": "nghỉ việc",
+    "lesson": "Unit 1 - Lesson 2: Sinh ra, học hành, công việc"
   },
   {
     "stt": 25,
     "kanji": "失業",
     "han_viet": "THẤT NGHIỆP",
     "hiragana": "しつぎょう",
-    "meaning": "thất nghiệp"
+    "meaning": "thất nghiệp",
+    "lesson": "Unit 1 - Lesson 2: Sinh ra, học hành, công việc"
   },
   {
     "stt": 26,
     "kanji": "残業",
     "han_viet": "TÀN NGHIỆP",
     "hiragana": "ざんぎょう",
-    "meaning": "làm thêm, tăng ca"
+    "meaning": "làm thêm, tăng ca",
+    "lesson": "Unit 1 - Lesson 2: Sinh ra, học hành, công việc"
   },
   {
     "stt": 27,
     "kanji": "生活",
     "han_viet": "SANH HOẠT",
     "hiragana": "せいかつ",
-    "meaning": "cuộc sống, sinh hoạt"
+    "meaning": "cuộc sống, sinh hoạt",
+    "lesson": "Unit 1 - Lesson 3: Sinh hoạt hằng ngày"
   },
   {
     "stt": 28,
     "kanji": "通勤",
     "han_viet": "THÔNG CẦN",
     "hiragana": "つうきん",
-    "meaning": "đi làm"
+    "meaning": "đi làm",
+    "lesson": "Unit 1 - Lesson 3: Sinh hoạt hằng ngày"
   },
   {
     "stt": 29,
     "kanji": "学歴",
     "han_viet": "HỌC LỊCH",
     "hiragana": "がくれき",
-    "meaning": "bằng cấp, trình độ học vấn"
+    "meaning": "bằng cấp, trình độ học vấn",
+    "lesson": "Unit 1 - Lesson 3: Sinh hoạt hằng ngày"
   },
   {
     "stt": 30,
     "kanji": "給料",
     "han_viet": "CẤP LIÊU",
     "hiragana": "きゅうりょう",
-    "meaning": "tiền lương"
+    "meaning": "tiền lương",
+    "lesson": "Unit 1 - Lesson 3: Sinh hoạt hằng ngày"
   },
   {
     "stt": 31,
     "kanji": "面接",
     "han_viet": "DIỆN TIẾP",
     "hiragana": "めんせつ",
-    "meaning": "phỏng vấn"
+    "meaning": "phỏng vấn",
+    "lesson": "Unit 1 - Lesson 3: Sinh hoạt hằng ngày"
   },
   {
     "stt": 32,
     "kanji": "休憩",
     "han_viet": "HƯU KHẾ",
     "hiragana": "きゅうけい",
-    "meaning": "nghỉ ngơi, giải lao"
+    "meaning": "nghỉ ngơi, giải lao",
+    "lesson": "Unit 1 - Lesson 3: Sinh hoạt hằng ngày"
   },
   {
     "stt": 33,
     "kanji": "観光",
     "han_viet": "QUAN QUANG",
     "hiragana": "かんこう",
-    "meaning": "tham quan, thăm thú"
+    "meaning": "tham quan, thăm thú",
+    "lesson": "Unit 1 - Lesson 3: Sinh hoạt hằng ngày"
   },
   {
     "stt": 34,
     "kanji": "帰国",
     "han_viet": "QUY QUỐC",
     "hiragana": "きこく",
-    "meaning": "về nước"
+    "meaning": "về nước",
+    "lesson": "Unit 1 - Lesson 3: Sinh hoạt hằng ngày"
   },
   {
     "stt": 35,
     "kanji": "帰省",
     "han_viet": "QUY TỈNH",
     "hiragana": "きせい",
-    "meaning": "về quê"
+    "meaning": "về quê",
+    "lesson": "Unit 1 - Lesson 3: Sinh hoạt hằng ngày"
   },
   {
     "stt": 36,
     "kanji": "帰宅",
     "han_viet": "QUY TRẠCH",
     "hiragana": "きたく",
-    "meaning": "về nhà"
+    "meaning": "về nhà",
+    "lesson": "Unit 1 - Lesson 3: Sinh hoạt hằng ngày"
   },
   {
     "stt": 37,
     "kanji": "参加",
     "han_viet": "THAM GIA",
     "hiragana": "さんか",
-    "meaning": "tham gia"
+    "meaning": "tham gia",
+    "lesson": "Unit 1 - Lesson 3: Sinh hoạt hằng ngày"
   },
   {
     "stt": 38,
     "kanji": "出席",
     "han_viet": "XUẤT TỊCH",
     "hiragana": "しゅっせき",
-    "meaning": "có mặt"
+    "meaning": "có mặt",
+    "lesson": "Unit 1 - Lesson 3: Sinh hoạt hằng ngày"
   },
   {
     "stt": 39,
     "kanji": "欠席",
     "han_viet": "KHIẾM TỊCH",
     "hiragana": "けっせき",
-    "meaning": "vắng mặt"
+    "meaning": "vắng mặt",
+    "lesson": "Unit 1 - Lesson 3: Sinh hoạt hằng ngày"
   },
   {
     "stt": 40,
     "kanji": "遅刻",
     "han_viet": "TRÌ KHẮC",
     "hiragana": "ちこく",
-    "meaning": "đến muộn"
+    "meaning": "đến muộn",
+    "lesson": "Unit 1 - Lesson 3: Sinh hoạt hằng ngày"
   },
   {
     "stt": 41,
     "kanji": "化粧",
     "han_viet": "HÓA TRANG",
     "hiragana": "けしょう",
-    "meaning": "trang điểm"
+    "meaning": "trang điểm",
+    "lesson": "Unit 1 - Lesson 4: Chuẩn bị, kế hoạch, cơ thể"
   },
   {
     "stt": 42,
     "kanji": "計算",
     "han_viet": "KẾ TOÁN",
     "hiragana": "けいさん",
-    "meaning": "tính toán"
+    "meaning": "tính toán",
+    "lesson": "Unit 1 - Lesson 4: Chuẩn bị, kế hoạch, cơ thể"
   },
   {
     "stt": 43,
     "kanji": "計画",
     "han_viet": "KẾ HOẠCH",
     "hiragana": "けいかく",
-    "meaning": "kế hoạch"
+    "meaning": "kế hoạch",
+    "lesson": "Unit 1 - Lesson 4: Chuẩn bị, kế hoạch, cơ thể"
   },
   {
     "stt": 44,
     "kanji": "成功",
     "han_viet": "THÀNH CÔNG",
     "hiragana": "せいこう",
-    "meaning": "thành công"
+    "meaning": "thành công",
+    "lesson": "Unit 1 - Lesson 4: Chuẩn bị, kế hoạch, cơ thể"
   },
   {
     "stt": 45,
     "kanji": "失敗",
     "han_viet": "THẤT BẠI",
     "hiragana": "しっぱい",
-    "meaning": "thất bại"
+    "meaning": "thất bại",
+    "lesson": "Unit 1 - Lesson 4: Chuẩn bị, kế hoạch, cơ thể"
   },
   {
     "stt": 46,
     "kanji": "準備",
     "han_viet": "CHUẨN BỊ",
     "hiragana": "じゅんび",
-    "meaning": "chuẩn bị"
+    "meaning": "chuẩn bị",
+    "lesson": "Unit 1 - Lesson 4: Chuẩn bị, kế hoạch, cơ thể"
   },
   {
     "stt": 47,
     "kanji": "整理",
     "han_viet": "CHỈNH LÍ",
     "hiragana": "せいり",
-    "meaning": "chỉnh sửa"
+    "meaning": "chỉnh sửa",
+    "lesson": "Unit 1 - Lesson 4: Chuẩn bị, kế hoạch, cơ thể"
   },
   {
     "stt": 48,
     "kanji": "注文",
     "han_viet": "CHÚ VĂN",
     "hiragana": "ちゅうもん",
-    "meaning": "đặt hàng"
+    "meaning": "đặt hàng",
+    "lesson": "Unit 1 - Lesson 4: Chuẩn bị, kế hoạch, cơ thể"
   },
   {
     "stt": 49,
     "kanji": "貯金",
     "han_viet": "TRỮ KIM",
     "hiragana": "ちょきん",
-    "meaning": "tiết kiệm"
+    "meaning": "tiết kiệm",
+    "lesson": "Unit 1 - Lesson 4: Chuẩn bị, kế hoạch, cơ thể"
   },
   {
     "stt": 50,
     "kanji": "徹夜",
     "han_viet": "TRIỆT DẠ",
     "hiragana": "てつや",
-    "meaning": "thức trắng đêm, suốt đêm"
+    "meaning": "thức trắng đêm, suốt đêm",
+    "lesson": "Unit 1 - Lesson 4: Chuẩn bị, kế hoạch, cơ thể"
   },
   {
     "stt": 51,
     "kanji": "引っ越し",
     "han_viet": "DẪN VIỆT",
     "hiragana": "ひっこし",
-    "meaning": "chuyển nhà"
+    "meaning": "chuyển nhà",
+    "lesson": "Unit 1 - Lesson 4: Chuẩn bị, kế hoạch, cơ thể"
   },
   {
     "stt": 52,
     "kanji": "身長",
     "han_viet": "THÂN TRƯỜNG",
     "hiragana": "しんちょう",
-    "meaning": "chiều cao"
+    "meaning": "chiều cao",
+    "lesson": "Unit 1 - Lesson 4: Chuẩn bị, kế hoạch, cơ thể"
   },
   {
     "stt": 53,
     "kanji": "体重",
     "han_viet": "THỂ TRỌNG",
     "hiragana": "たいじゅう",
-    "meaning": "cân nặng"
+    "meaning": "cân nặng",
+    "lesson": "Unit 1 - Lesson 4: Chuẩn bị, kế hoạch, cơ thể"
   },
   {
     "stt": 54,
     "kanji": "怪我",
     "han_viet": "QUÁI NGÃ",
     "hiragana": "けが",
-    "meaning": "vết thương"
+    "meaning": "vết thương",
+    "lesson": "Unit 1 - Lesson 4: Chuẩn bị, kế hoạch, cơ thể"
   },
   {
     "stt": 55,
     "kanji": "会",
     "han_viet": "HỘI",
     "hiragana": "かい",
-    "meaning": "hội, tiệc"
+    "meaning": "hội, tiệc",
+    "lesson": "Unit 1 - Lesson 5: Sở thích & cảm xúc"
   },
   {
     "stt": 56,
     "kanji": "趣味",
     "han_viet": "THÚ VỊ",
     "hiragana": "しゅみ",
-    "meaning": "sở thích, thú vui"
+    "meaning": "sở thích, thú vui",
+    "lesson": "Unit 1 - Lesson 5: Sở thích & cảm xúc"
   },
   {
     "stt": 57,
     "kanji": "興味",
     "han_viet": "HƯNG VỊ",
     "hiragana": "きょうみ",
-    "meaning": "hứng thú"
+    "meaning": "hứng thú",
+    "lesson": "Unit 1 - Lesson 5: Sở thích & cảm xúc"
   },
   {
     "stt": 58,
     "kanji": "思い出",
     "han_viet": "TƯ XUẤT",
     "hiragana": "おもいで",
-    "meaning": "Trí nhớ, kí ức, kỉ niệm"
+    "meaning": "Trí nhớ, kí ức, kỉ niệm",
+    "lesson": "Unit 1 - Lesson 5: Sở thích & cảm xúc"
   },
   {
     "stt": 59,
     "kanji": "冗談",
     "han_viet": "NHỮNG ĐÀM",
     "hiragana": "じょうだん",
-    "meaning": "đùa cợt, bông đùa"
+    "meaning": "đùa cợt, bông đùa",
+    "lesson": "Unit 1 - Lesson 5: Sở thích & cảm xúc"
   },
   {
     "stt": 60,
     "kanji": "目的",
     "han_viet": "MỤC ĐÍCH",
     "hiragana": "もくてき",
-    "meaning": "mục đích"
+    "meaning": "mục đích",
+    "lesson": "Unit 1 - Lesson 5: Sở thích & cảm xúc"
   },
   {
     "stt": 61,
     "kanji": "約束",
     "han_viet": "ƯỚC THÚC",
     "hiragana": "やくそく",
-    "meaning": "lời hứa, cuộc hẹn"
+    "meaning": "lời hứa, cuộc hẹn",
+    "lesson": "Unit 1 - Lesson 5: Sở thích & cảm xúc"
   },
   {
     "stt": 62,
     "kanji": "お喋り",
     "han_viet": "ĐIỆP",
     "hiragana": "おしゃべり",
-    "meaning": "nói chuyện riêng"
+    "meaning": "nói chuyện riêng",
+    "lesson": "Unit 1 - Lesson 5: Sở thích & cảm xúc"
   },
   {
     "stt": 63,
     "kanji": "遠慮",
     "han_viet": "VIỄN LỰ",
     "hiragana": "えんりょ",
-    "meaning": "ngại ngần, khách sáo"
+    "meaning": "ngại ngần, khách sáo",
+    "lesson": "Unit 1 - Lesson 5: Sở thích & cảm xúc"
   },
   {
     "stt": 64,
     "kanji": "我慢",
     "han_viet": "NGÃ MẠN",
     "hiragana": "がまん",
-    "meaning": "chịu đựng"
+    "meaning": "chịu đựng",
+    "lesson": "Unit 1 - Lesson 5: Sở thích & cảm xúc"
   },
   {
     "stt": 65,
     "kanji": "迷惑",
     "han_viet": "MÊ HOẶC",
     "hiragana": "めいわく",
-    "meaning": "làm phiền"
+    "meaning": "làm phiền",
+    "lesson": "Unit 1 - Lesson 5: Sở thích & cảm xúc"
   },
   {
     "stt": 66,
     "kanji": "希望",
     "han_viet": "HI VỌNG",
     "hiragana": "きぼう",
-    "meaning": "hi vọng"
+    "meaning": "hi vọng",
+    "lesson": "Unit 1 - Lesson 5: Sở thích & cảm xúc"
   },
   {
     "stt": 67,
     "kanji": "夢",
     "han_viet": "MỘNG",
     "hiragana": "ゆめ",
-    "meaning": "giấc mơ, ước mơ"
+    "meaning": "giấc mơ, ước mơ",
+    "lesson": "Unit 1 - Lesson 5: Sở thích & cảm xúc"
   },
   {
     "stt": 68,
     "kanji": "賛成",
     "han_viet": "TÁN THÀNH",
     "hiragana": "さんせい",
-    "meaning": "Tán thành, đồng ý"
+    "meaning": "Tán thành, đồng ý",
+    "lesson": "Unit 1 - Lesson 5: Sở thích & cảm xúc"
   },
   {
     "stt": 69,
     "kanji": "反対",
     "han_viet": "PHẢN ĐỐI",
     "hiragana": "はんたい",
-    "meaning": "Phản đối, ngược lại"
+    "meaning": "Phản đối, ngược lại",
+    "lesson": "Unit 1 - Lesson 5: Sở thích & cảm xúc"
   },
   {
     "stt": 70,
     "kanji": "想像",
     "han_viet": "TƯỞNG TƯỢNG",
     "hiragana": "そうぞう",
-    "meaning": "tưởng tượng"
+    "meaning": "tưởng tượng",
+    "lesson": "Unit 1 - Lesson 5: Sở thích & cảm xúc"
   },
   {
     "stt": 71,
     "kanji": "努力",
     "han_viet": "NỖ LỰC",
     "hiragana": "どりょく",
-    "meaning": "nỗ lực"
+    "meaning": "nỗ lực",
+    "lesson": "Unit 1 - Lesson 5: Sở thích & cảm xúc"
   },
   {
     "stt": 72,
     "kanji": "太陽",
     "han_viet": "THÁI DƯƠNG",
     "hiragana": "たいよう",
-    "meaning": "mặt trời"
+    "meaning": "mặt trời",
+    "lesson": "Unit 1 - Lesson 6: Tự nhiên & xung quanh"
   },
   {
     "stt": 73,
     "kanji": "地球",
     "han_viet": "ĐỊA CẦU",
     "hiragana": "ちきゅう",
-    "meaning": "trái đất"
+    "meaning": "trái đất",
+    "lesson": "Unit 1 - Lesson 6: Tự nhiên & xung quanh"
   },
   {
     "stt": 74,
     "kanji": "温度",
     "han_viet": "ÔN ĐỘ",
     "hiragana": "おんど",
-    "meaning": "nhiệt độ"
+    "meaning": "nhiệt độ",
+    "lesson": "Unit 1 - Lesson 6: Tự nhiên & xung quanh"
   },
   {
     "stt": 75,
     "kanji": "湿度",
     "han_viet": "THẤP ĐỘ",
     "hiragana": "しつど",
-    "meaning": "độ ẩm"
+    "meaning": "độ ẩm",
+    "lesson": "Unit 1 - Lesson 6: Tự nhiên & xung quanh"
   },
   {
     "stt": 76,
     "kanji": "湿気",
     "han_viet": "THẤP KHÍ",
     "hiragana": "しっけ",
-    "meaning": "hơi ẩm"
+    "meaning": "hơi ẩm",
+    "lesson": "Unit 1 - Lesson 6: Tự nhiên & xung quanh"
   },
   {
     "stt": 77,
     "kanji": "梅雨",
     "han_viet": "MAI VŨ",
     "hiragana": "つゆ",
-    "meaning": "mùa mưa"
+    "meaning": "mùa mưa",
+    "lesson": "Unit 1 - Lesson 6: Tự nhiên & xung quanh"
   },
   {
     "stt": 78,
     "kanji": "黴",
     "han_viet": "MI",
     "hiragana": "かび",
-    "meaning": "nấm mốc"
+    "meaning": "nấm mốc",
+    "lesson": "Unit 1 - Lesson 6: Tự nhiên & xung quanh"
   },
   {
     "stt": 79,
     "kanji": "暖房",
     "han_viet": "NOÃN PHÒNG",
     "hiragana": "だんぼう",
-    "meaning": "Lò sưởi"
+    "meaning": "Lò sưởi",
+    "lesson": "Unit 1 - Lesson 6: Tự nhiên & xung quanh"
   },
   {
     "stt": 80,
     "kanji": "皮",
     "han_viet": "BÌ",
     "hiragana": "かわ",
-    "meaning": "Da, vỏ"
+    "meaning": "Da, vỏ",
+    "lesson": "Unit 1 - Lesson 6: Tự nhiên & xung quanh"
   },
   {
     "stt": 81,
     "kanji": "缶",
     "han_viet": "PHỮU",
     "hiragana": "かん",
-    "meaning": "Can, lon, hộp kim loại"
+    "meaning": "Can, lon, hộp kim loại",
+    "lesson": "Unit 1 - Lesson 6: Tự nhiên & xung quanh"
   },
   {
     "stt": 82,
     "kanji": "画面",
     "han_viet": "HỌA DIỆN",
     "hiragana": "がめん",
-    "meaning": "màn hình"
+    "meaning": "màn hình",
+    "lesson": "Unit 1 - Lesson 6: Tự nhiên & xung quanh"
   },
   {
     "stt": 83,
     "kanji": "番組",
     "han_viet": "PHIÊN TỔ",
     "hiragana": "ばんぐみ",
-    "meaning": "chương trình"
+    "meaning": "chương trình",
+    "lesson": "Unit 1 - Lesson 6: Tự nhiên & xung quanh"
   },
   {
     "stt": 84,
     "kanji": "記事",
     "han_viet": "KÍ SỰ",
     "hiragana": "きじ",
-    "meaning": "ký sự, phóng sự"
+    "meaning": "ký sự, phóng sự",
+    "lesson": "Unit 1 - Lesson 6: Tự nhiên & xung quanh"
   },
   {
     "stt": 85,
     "kanji": "近所",
     "han_viet": "CẬN SỞ",
     "hiragana": "きんじょ",
-    "meaning": "Hàng xóm"
+    "meaning": "Hàng xóm",
+    "lesson": "Unit 1 - Lesson 6: Tự nhiên & xung quanh"
   },
   {
     "stt": 86,
     "kanji": "警察",
     "han_viet": "CẢNH SÁT",
     "hiragana": "けいさつ",
-    "meaning": "cảnh sát"
+    "meaning": "cảnh sát",
+    "lesson": "Unit 1 - Lesson 6: Tự nhiên & xung quanh"
   },
   {
     "stt": 87,
     "kanji": "犯人",
     "han_viet": "PHẠM NHÂN",
     "hiragana": "はんにん",
-    "meaning": "tội phạm"
+    "meaning": "tội phạm",
+    "lesson": "Unit 1 - Lesson 6: Tự nhiên & xung quanh"
   },
   {
     "stt": 88,
     "kanji": "小銭",
     "han_viet": "TIỂU TIỀN",
     "hiragana": "こぜに",
-    "meaning": "tiền lẻ, tiền xu"
+    "meaning": "tiền lẻ, tiền xu",
+    "lesson": "Unit 1 - Lesson 6: Tự nhiên & xung quanh"
   },
   {
     "stt": 89,
     "kanji": "",
     "han_viet": "",
     "hiragana": "ごちそう",
-    "meaning": "chiêu đãi"
+    "meaning": "chiêu đãi",
+    "lesson": "Unit 1 - Lesson 7: Đồ vật, nơi chốn, giấy tờ"
   },
   {
     "stt": 90,
     "kanji": "作者",
     "han_viet": "TÁC GIẢ",
     "hiragana": "さくしゃ",
-    "meaning": "tác giả"
+    "meaning": "tác giả",
+    "lesson": "Unit 1 - Lesson 7: Đồ vật, nơi chốn, giấy tờ"
   },
   {
     "stt": 91,
     "kanji": "作品",
     "han_viet": "TÁC PHẨM",
     "hiragana": "さくひん",
-    "meaning": "tác phẩm"
+    "meaning": "tác phẩm",
+    "lesson": "Unit 1 - Lesson 7: Đồ vật, nơi chốn, giấy tờ"
   },
   {
     "stt": 92,
     "kanji": "制服",
     "han_viet": "CHẾ PHỤC",
     "hiragana": "せいふく",
-    "meaning": "đồng phục"
+    "meaning": "đồng phục",
+    "lesson": "Unit 1 - Lesson 7: Đồ vật, nơi chốn, giấy tờ"
   },
   {
     "stt": 93,
     "kanji": "洗剤",
     "han_viet": "TẨY TỄ",
     "hiragana": "せんざい",
-    "meaning": "Chất tẩy rửa, bột giặt"
+    "meaning": "Chất tẩy rửa, bột giặt",
+    "lesson": "Unit 1 - Lesson 7: Đồ vật, nơi chốn, giấy tờ"
   },
   {
     "stt": 94,
     "kanji": "底",
     "han_viet": "ĐỂ",
     "hiragana": "そこ",
-    "meaning": "Đáy, đế"
+    "meaning": "Đáy, đế",
+    "lesson": "Unit 1 - Lesson 7: Đồ vật, nơi chốn, giấy tờ"
   },
   {
     "stt": 95,
     "kanji": "地下",
     "han_viet": "ĐỊA HẠ",
     "hiragana": "ちか",
-    "meaning": "Tầng hầm"
+    "meaning": "Tầng hầm",
+    "lesson": "Unit 1 - Lesson 7: Đồ vật, nơi chốn, giấy tờ"
   },
   {
     "stt": 96,
     "kanji": "寺",
     "han_viet": "TỰ",
     "hiragana": "てら",
-    "meaning": "chùa"
+    "meaning": "chùa",
+    "lesson": "Unit 1 - Lesson 7: Đồ vật, nơi chốn, giấy tờ"
   },
   {
     "stt": 97,
     "kanji": "道路",
     "han_viet": "ĐẠO LỘ",
     "hiragana": "どうろ",
-    "meaning": "đường"
+    "meaning": "đường",
+    "lesson": "Unit 1 - Lesson 7: Đồ vật, nơi chốn, giấy tờ"
   },
   {
     "stt": 98,
     "kanji": "坂",
     "han_viet": "PHẢN",
     "hiragana": "さか",
-    "meaning": "dốc"
+    "meaning": "dốc",
+    "lesson": "Unit 1 - Lesson 7: Đồ vật, nơi chốn, giấy tờ"
   },
   {
     "stt": 99,
     "kanji": "煙",
     "han_viet": "YÊN",
     "hiragana": "けむり",
-    "meaning": "khói"
+    "meaning": "khói",
+    "lesson": "Unit 1 - Lesson 7: Đồ vật, nơi chốn, giấy tờ"
   },
   {
     "stt": 100,
     "kanji": "灰",
     "han_viet": "HÔI",
     "hiragana": "はい",
-    "meaning": "Tàn, tro"
+    "meaning": "Tàn, tro",
+    "lesson": "Unit 1 - Lesson 7: Đồ vật, nơi chốn, giấy tờ"
   },
   {
     "stt": 101,
     "kanji": "判",
     "han_viet": "PHÁN",
     "hiragana": "はん",
-    "meaning": "con dấu"
+    "meaning": "con dấu",
+    "lesson": "Unit 1 - Lesson 7: Đồ vật, nơi chốn, giấy tờ"
   },
   {
     "stt": 102,
     "kanji": "名刺",
     "han_viet": "DANH THỨ",
     "hiragana": "めいし",
-    "meaning": "danh thiếp"
+    "meaning": "danh thiếp",
+    "lesson": "Unit 1 - Lesson 7: Đồ vật, nơi chốn, giấy tờ"
   },
   {
     "stt": 103,
     "kanji": "免許",
     "han_viet": "MIỄN HỨA",
     "hiragana": "めんきょ",
-    "meaning": "giấy phép"
+    "meaning": "giấy phép",
+    "lesson": "Unit 1 - Lesson 7: Đồ vật, nơi chốn, giấy tờ"
   },
   {
     "stt": 104,
     "kanji": "多く",
     "han_viet": "ĐA",
     "hiragana": "おおく",
-    "meaning": "nhiều"
+    "meaning": "nhiều",
+    "lesson": "Unit 1 - Lesson 8: Thứ tự, số lượng, tính chất"
   },
   {
     "stt": 105,
     "kanji": "前半",
     "han_viet": "TIỀN BÁN",
     "hiragana": "ぜんはん",
-    "meaning": "Nửa đầu"
+    "meaning": "Nửa đầu",
+    "lesson": "Unit 1 - Lesson 8: Thứ tự, số lượng, tính chất"
   },
   {
     "stt": 106,
     "kanji": "後半",
     "han_viet": "HẬU BÁN",
     "hiragana": "こうはん",
-    "meaning": "nửa sau"
+    "meaning": "nửa sau",
+    "lesson": "Unit 1 - Lesson 8: Thứ tự, số lượng, tính chất"
   },
   {
     "stt": 107,
     "kanji": "最高",
     "han_viet": "TỐI CAO",
     "hiragana": "さいこう",
-    "meaning": "cao nhất, vô đối"
+    "meaning": "cao nhất, vô đối",
+    "lesson": "Unit 1 - Lesson 8: Thứ tự, số lượng, tính chất"
   },
   {
     "stt": 108,
     "kanji": "最低",
     "han_viet": "TỐI ĐÊ",
     "hiragana": "さいてい",
-    "meaning": "tối thiểu, hèn hạ, bỉ ổi"
+    "meaning": "tối thiểu, hèn hạ, bỉ ổi",
+    "lesson": "Unit 1 - Lesson 8: Thứ tự, số lượng, tính chất"
   },
   {
     "stt": 109,
     "kanji": "最初",
     "han_viet": "TỐI SƠ",
     "hiragana": "さいしょ",
-    "meaning": "đầu tiên, trước hết, ban đầu"
+    "meaning": "đầu tiên, trước hết, ban đầu",
+    "lesson": "Unit 1 - Lesson 8: Thứ tự, số lượng, tính chất"
   },
   {
     "stt": 110,
     "kanji": "最後",
     "han_viet": "TỐI HẬU",
     "hiragana": "さいご",
-    "meaning": "cuối cùng, kết cục"
+    "meaning": "cuối cùng, kết cục",
+    "lesson": "Unit 1 - Lesson 8: Thứ tự, số lượng, tính chất"
   },
   {
     "stt": 111,
     "kanji": "自動",
     "han_viet": "TỰ ĐỘNG",
     "hiragana": "じどう",
-    "meaning": "tự động"
+    "meaning": "tự động",
+    "lesson": "Unit 1 - Lesson 8: Thứ tự, số lượng, tính chất"
   },
   {
     "stt": 112,
     "kanji": "種類",
     "han_viet": "CHỦNG LOẠI",
     "hiragana": "しゅるい",
-    "meaning": "loại, kiểu"
+    "meaning": "loại, kiểu",
+    "lesson": "Unit 1 - Lesson 8: Thứ tự, số lượng, tính chất"
   },
   {
     "stt": 113,
     "kanji": "性格",
     "han_viet": "TÍNH CÁCH",
     "hiragana": "せいかく",
-    "meaning": "tính cách"
+    "meaning": "tính cách",
+    "lesson": "Unit 1 - Lesson 8: Thứ tự, số lượng, tính chất"
   },
   {
     "stt": 114,
     "kanji": "性質",
     "han_viet": "TÍNH CHẤT",
     "hiragana": "せいしつ",
-    "meaning": "tính chất, đặc trưng, đặc điểm"
+    "meaning": "tính chất, đặc trưng, đặc điểm",
+    "lesson": "Unit 1 - Lesson 8: Thứ tự, số lượng, tính chất"
   },
   {
     "stt": 115,
     "kanji": "順番",
     "han_viet": "THUẬN PHIÊN",
     "hiragana": "じゅんばん",
-    "meaning": "thứ tự, tuần tự"
+    "meaning": "thứ tự, tuần tự",
+    "lesson": "Unit 1 - Lesson 8: Thứ tự, số lượng, tính chất"
   },
   {
     "stt": 116,
     "kanji": "番",
     "han_viet": "PHIÊN",
     "hiragana": "ばん",
-    "meaning": "lượt, lần, phiên"
+    "meaning": "lượt, lần, phiên",
+    "lesson": "Unit 1 - Lesson 8: Thứ tự, số lượng, tính chất"
   },
   {
     "stt": 117,
     "kanji": "方法",
     "han_viet": "PHƯƠNG PHÁP",
     "hiragana": "ほうほう",
-    "meaning": "phương pháp"
+    "meaning": "phương pháp",
+    "lesson": "Unit 1 - Lesson 8: Thứ tự, số lượng, tính chất"
   },
   {
     "stt": 118,
     "kanji": "製品",
     "han_viet": "CHẾ PHẨM",
     "hiragana": "せいひん",
-    "meaning": "sản phẩm"
+    "meaning": "sản phẩm",
+    "lesson": "Unit 1 - Lesson 8: Thứ tự, số lượng, tính chất"
   },
   {
     "stt": 119,
     "kanji": "値上がり",
     "han_viet": "TRỊ THƯỢNG",
     "hiragana": "ねあがり",
-    "meaning": "tăng giá"
+    "meaning": "tăng giá",
+    "lesson": "Unit 1 - Lesson 8: Thứ tự, số lượng, tính chất"
   },
   {
     "stt": 120,
     "kanji": "生",
     "han_viet": "SANH",
     "hiragana": "なま",
-    "meaning": "Tươi, sống"
+    "meaning": "Tươi, sống",
+    "lesson": "Unit 1 - Lesson 8: Thứ tự, số lượng, tính chất"
   },
   {
     "stt": 121,
     "kanji": "渇く",
     "han_viet": "KHÁT",
     "hiragana": "かわく",
-    "meaning": "khát"
+    "meaning": "khát",
+    "lesson": "Unit 2 - Lesson 1: Động từ hành động & giác quan"
   },
   {
     "stt": 122,
     "kanji": "嗅ぐ",
     "han_viet": "KHỨU",
     "hiragana": "かぐ",
-    "meaning": "ngửi, hít"
+    "meaning": "ngửi, hít",
+    "lesson": "Unit 2 - Lesson 1: Động từ hành động & giác quan"
   },
   {
     "stt": 123,
     "kanji": "叩く",
     "han_viet": "KHẤU",
     "hiragana": "たたく",
-    "meaning": "đánh, vỗ"
+    "meaning": "đánh, vỗ",
+    "lesson": "Unit 2 - Lesson 1: Động từ hành động & giác quan"
   },
   {
     "stt": 124,
     "kanji": "殴る",
     "han_viet": "ÂU",
     "hiragana": "なぐる",
-    "meaning": "đấm"
+    "meaning": "đấm",
+    "lesson": "Unit 2 - Lesson 1: Động từ hành động & giác quan"
   },
   {
     "stt": 125,
     "kanji": "",
     "han_viet": "",
     "hiragana": "ける",
-    "meaning": "Đá, bác bỏ, rời chỗ"
+    "meaning": "Đá, bác bỏ, rời chỗ",
+    "lesson": "Unit 2 - Lesson 1: Động từ hành động & giác quan"
   },
   {
     "stt": 126,
     "kanji": "抱く",
     "han_viet": "BÃO",
     "hiragana": "だく",
-    "meaning": "ôm"
+    "meaning": "ôm",
+    "lesson": "Unit 2 - Lesson 1: Động từ hành động & giác quan"
   },
   {
     "stt": 127,
     "kanji": "倒れる",
     "han_viet": "ĐẢO",
     "hiragana": "たおれる",
-    "meaning": "đổ, ngã, ngất"
+    "meaning": "đổ, ngã, ngất",
+    "lesson": "Unit 2 - Lesson 1: Động từ hành động & giác quan"
   },
   {
     "stt": 128,
     "kanji": "倒す",
     "han_viet": "ĐẢO",
     "hiragana": "たおす",
-    "meaning": "làm đổ, hạ gục"
+    "meaning": "làm đổ, hạ gục",
+    "lesson": "Unit 2 - Lesson 1: Động từ hành động & giác quan"
   },
   {
     "stt": 129,
     "kanji": "起きる",
     "han_viet": "KHỞI",
     "hiragana": "おきる",
-    "meaning": "thức dậy"
+    "meaning": "thức dậy",
+    "lesson": "Unit 2 - Lesson 1: Động từ hành động & giác quan"
   },
   {
     "stt": 130,
     "kanji": "起こす",
     "han_viet": "KHỞI",
     "hiragana": "おこす",
-    "meaning": "đánh thức, gây ra"
+    "meaning": "đánh thức, gây ra",
+    "lesson": "Unit 2 - Lesson 1: Động từ hành động & giác quan"
   },
   {
     "stt": 131,
     "kanji": "尋ねる",
     "han_viet": "TẦM",
     "hiragana": "たずねる",
-    "meaning": "Thăm hỏi"
+    "meaning": "Thăm hỏi",
+    "lesson": "Unit 2 - Lesson 1: Động từ hành động & giác quan"
   },
   {
     "stt": 132,
     "kanji": "呼ぶ",
     "han_viet": "HÔ",
     "hiragana": "よぶ",
-    "meaning": "gọi, mời"
+    "meaning": "gọi, mời",
+    "lesson": "Unit 2 - Lesson 1: Động từ hành động & giác quan"
   },
   {
     "stt": 133,
     "kanji": "叫ぶ",
     "han_viet": "KHIẾU",
     "hiragana": "さけぶ",
-    "meaning": "gào to"
+    "meaning": "gào to",
+    "lesson": "Unit 2 - Lesson 1: Động từ hành động & giác quan"
   },
   {
     "stt": 134,
     "kanji": "黙る",
     "han_viet": "MẶC",
     "hiragana": "だまる",
-    "meaning": "im lặng"
+    "meaning": "im lặng",
+    "lesson": "Unit 2 - Lesson 1: Động từ hành động & giác quan"
   },
   {
     "stt": 135,
     "kanji": "飼う",
     "han_viet": "TỰ",
     "hiragana": "かう",
-    "meaning": "nuôi"
+    "meaning": "nuôi",
+    "lesson": "Unit 2 - Lesson 1: Động từ hành động & giác quan"
   },
   {
     "stt": 136,
     "kanji": "数える",
     "han_viet": "SỐ",
     "hiragana": "かぞえる",
-    "meaning": "đếm, tính"
+    "meaning": "đếm, tính",
+    "lesson": "Unit 2 - Lesson 1: Động từ hành động & giác quan"
   },
   {
     "stt": 137,
     "kanji": "乾く",
     "han_viet": "KIỀN",
     "hiragana": "かわく",
-    "meaning": "khô"
+    "meaning": "khô",
+    "lesson": "Unit 2 - Lesson 1: Động từ hành động & giác quan"
   },
   {
     "stt": 138,
     "kanji": "乾かす",
     "han_viet": "KIỀN",
     "hiragana": "かわかす",
-    "meaning": "làm khô"
+    "meaning": "làm khô",
+    "lesson": "Unit 2 - Lesson 1: Động từ hành động & giác quan"
   },
   {
     "stt": 139,
     "kanji": "畳む",
     "han_viet": "ĐIỆP",
     "hiragana": "たたむ",
-    "meaning": "gấp, gập"
+    "meaning": "gấp, gập",
+    "lesson": "Unit 2 - Lesson 1: Động từ hành động & giác quan"
   },
   {
     "stt": 140,
     "kanji": "誘う",
     "han_viet": "DỤ",
     "hiragana": "さそう",
-    "meaning": "mời, rủ"
+    "meaning": "mời, rủ",
+    "lesson": "Unit 2 - Lesson 1: Động từ hành động & giác quan"
   },
   {
     "stt": 141,
     "kanji": "おごる",
     "han_viet": "",
     "hiragana": "おごる",
-    "meaning": "chiêu đãi"
+    "meaning": "chiêu đãi",
+    "lesson": "Unit 2 - Lesson 2: Động từ tự/tha (1)"
   },
   {
     "stt": 142,
     "kanji": "預かる",
     "han_viet": "DỰ",
     "hiragana": "あずかる",
-    "meaning": "chăm sóc, nhận giữ"
+    "meaning": "chăm sóc, nhận giữ",
+    "lesson": "Unit 2 - Lesson 2: Động từ tự/tha (1)"
   },
   {
     "stt": 143,
     "kanji": "預ける",
     "han_viet": "DỰ",
     "hiragana": "あずける",
-    "meaning": "gửi, giao phó (cho ai đó)"
+    "meaning": "gửi, giao phó (cho ai đó)",
+    "lesson": "Unit 2 - Lesson 2: Động từ tự/tha (1)"
   },
   {
     "stt": 144,
     "kanji": "決まる",
     "han_viet": "QUYẾT",
     "hiragana": "きまる",
-    "meaning": "được quyết định"
+    "meaning": "được quyết định",
+    "lesson": "Unit 2 - Lesson 2: Động từ tự/tha (1)"
   },
   {
     "stt": 145,
     "kanji": "決める",
     "han_viet": "QUYẾT",
     "hiragana": "きめる",
-    "meaning": "quyết định"
+    "meaning": "quyết định",
+    "lesson": "Unit 2 - Lesson 2: Động từ tự/tha (1)"
   },
   {
     "stt": 146,
     "kanji": "写る",
     "han_viet": "TẢ",
     "hiragana": "うつる",
-    "meaning": "chụp, chép bài"
+    "meaning": "chụp, chép bài",
+    "lesson": "Unit 2 - Lesson 2: Động từ tự/tha (1)"
   },
   {
     "stt": 147,
     "kanji": "写す",
     "han_viet": "TẢ",
     "hiragana": "うつす",
-    "meaning": "chụp, sao chép"
+    "meaning": "chụp, sao chép",
+    "lesson": "Unit 2 - Lesson 2: Động từ tự/tha (1)"
   },
   {
     "stt": 148,
     "kanji": "思い出す",
     "han_viet": "TƯ XUẤT",
     "hiragana": "おもいだす",
-    "meaning": "nhớ lại, hồi ức, nhắc nhở"
+    "meaning": "nhớ lại, hồi ức, nhắc nhở",
+    "lesson": "Unit 2 - Lesson 2: Động từ tự/tha (1)"
   },
   {
     "stt": 149,
     "kanji": "教わる",
     "han_viet": "GIÁO",
     "hiragana": "おそわる",
-    "meaning": "được dạy"
+    "meaning": "được dạy",
+    "lesson": "Unit 2 - Lesson 2: Động từ tự/tha (1)"
   },
   {
     "stt": 150,
     "kanji": "申し込む",
     "han_viet": "THÂN",
     "hiragana": "もうしこむ",
-    "meaning": "đăng ký"
+    "meaning": "đăng ký",
+    "lesson": "Unit 2 - Lesson 2: Động từ tự/tha (1)"
   },
   {
     "stt": 151,
     "kanji": "断る",
     "han_viet": "ĐOẠN",
     "hiragana": "ことわる",
-    "meaning": "từ chối"
+    "meaning": "từ chối",
+    "lesson": "Unit 2 - Lesson 2: Động từ tự/tha (1)"
   },
   {
     "stt": 152,
     "kanji": "見つかる",
     "han_viet": "KIẾN",
     "hiragana": "みつかる",
-    "meaning": "được tìm thấy, được phát hiện"
+    "meaning": "được tìm thấy, được phát hiện",
+    "lesson": "Unit 2 - Lesson 2: Động từ tự/tha (1)"
   },
   {
     "stt": 153,
     "kanji": "見つける",
     "han_viet": "KIẾN",
     "hiragana": "みつける",
-    "meaning": "tìm thấy, phát hiện"
+    "meaning": "tìm thấy, phát hiện",
+    "lesson": "Unit 2 - Lesson 2: Động từ tự/tha (1)"
   },
   {
     "stt": 154,
     "kanji": "捕まる",
     "han_viet": "BỘ",
     "hiragana": "つかまる",
-    "meaning": "bị bắt, bám vào, giữ lấy"
+    "meaning": "bị bắt, bám vào, giữ lấy",
+    "lesson": "Unit 2 - Lesson 2: Động từ tự/tha (1)"
   },
   {
     "stt": 155,
     "kanji": "捕まえる",
     "han_viet": "BỘ",
     "hiragana": "つかまえる",
-    "meaning": "bắt giữ, bắt lấy, tóm lấy"
+    "meaning": "bắt giữ, bắt lấy, tóm lấy",
+    "lesson": "Unit 2 - Lesson 2: Động từ tự/tha (1)"
   },
   {
     "stt": 156,
     "kanji": "乗る",
     "han_viet": "THỪA",
     "hiragana": "のる",
-    "meaning": "leo lên, cưỡi"
+    "meaning": "leo lên, cưỡi",
+    "lesson": "Unit 2 - Lesson 2: Động từ tự/tha (1)"
   },
   {
     "stt": 157,
     "kanji": "乗せる",
     "han_viet": "THỪA",
     "hiragana": "のせる",
-    "meaning": "Chất lên, chồng lên"
+    "meaning": "Chất lên, chồng lên",
+    "lesson": "Unit 2 - Lesson 2: Động từ tự/tha (1)"
   },
   {
     "stt": 158,
     "kanji": "降りる",
     "han_viet": "HÀNG",
     "hiragana": "おりる",
-    "meaning": "xuống, rút lui"
+    "meaning": "xuống, rút lui",
+    "lesson": "Unit 2 - Lesson 2: Động từ tự/tha (1)"
   },
   {
     "stt": 159,
     "kanji": "降ろす",
     "han_viet": "HÀNG",
     "hiragana": "おろす",
-    "meaning": "cho xuống"
+    "meaning": "cho xuống",
+    "lesson": "Unit 2 - Lesson 2: Động từ tự/tha (1)"
   },
   {
     "stt": 160,
     "kanji": "直る",
     "han_viet": "TRỰC",
     "hiragana": "なおる",
-    "meaning": "được sửa, được cải thiện"
+    "meaning": "được sửa, được cải thiện",
+    "lesson": "Unit 2 - Lesson 2: Động từ tự/tha (1)"
   },
   {
     "stt": 161,
     "kanji": "直す",
     "han_viet": "TRỰC",
     "hiragana": "なおす",
-    "meaning": "sửa"
+    "meaning": "sửa",
+    "lesson": "Unit 2 - Lesson 3: Động từ tự/tha (2)"
   },
   {
     "stt": 162,
     "kanji": "治る",
     "han_viet": "TRÌ",
     "hiragana": "なおる",
-    "meaning": "hồi phục, khỏe, khỏi"
+    "meaning": "hồi phục, khỏe, khỏi",
+    "lesson": "Unit 2 - Lesson 3: Động từ tự/tha (2)"
   },
   {
     "stt": 163,
     "kanji": "治す",
     "han_viet": "TRÌ",
     "hiragana": "なおす",
-    "meaning": "cứu chữa, trị"
+    "meaning": "cứu chữa, trị",
+    "lesson": "Unit 2 - Lesson 3: Động từ tự/tha (2)"
   },
   {
     "stt": 164,
     "kanji": "亡くなる",
     "han_viet": "VONG",
     "hiragana": "なくなる",
-    "meaning": "chết, mất"
+    "meaning": "chết, mất",
+    "lesson": "Unit 2 - Lesson 3: Động từ tự/tha (2)"
   },
   {
     "stt": 165,
     "kanji": "亡くす",
     "han_viet": "VONG",
     "hiragana": "なくす",
-    "meaning": "mất, đánh mất"
+    "meaning": "mất, đánh mất",
+    "lesson": "Unit 2 - Lesson 3: Động từ tự/tha (2)"
   },
   {
     "stt": 166,
     "kanji": "生まれる",
     "han_viet": "SANH",
     "hiragana": "うまれる",
-    "meaning": "được sinh ra, được tạo ra"
+    "meaning": "được sinh ra, được tạo ra",
+    "lesson": "Unit 2 - Lesson 3: Động từ tự/tha (2)"
   },
   {
     "stt": 167,
     "kanji": "生む",
     "han_viet": "SANH",
     "hiragana": "うむ",
-    "meaning": "Sinh đẻ"
+    "meaning": "Sinh đẻ",
+    "lesson": "Unit 2 - Lesson 3: Động từ tự/tha (2)"
   },
   {
     "stt": 168,
     "kanji": "出会う",
     "han_viet": "XUẤT HỘI",
     "hiragana": "であう",
-    "meaning": "Tình cờ gặp"
+    "meaning": "Tình cờ gặp",
+    "lesson": "Unit 2 - Lesson 3: Động từ tự/tha (2)"
   },
   {
     "stt": 169,
     "kanji": "訪ねる",
     "han_viet": "PHỎNG",
     "hiragana": "たずねる",
-    "meaning": "thăm"
+    "meaning": "thăm",
+    "lesson": "Unit 2 - Lesson 3: Động từ tự/tha (2)"
   },
   {
     "stt": 170,
     "kanji": "付き合う",
     "han_viet": "PHÓ HỢP",
     "hiragana": "つきあう",
-    "meaning": "hẹn hò, đi cùng, kết bạn"
+    "meaning": "hẹn hò, đi cùng, kết bạn",
+    "lesson": "Unit 2 - Lesson 3: Động từ tự/tha (2)"
   },
   {
     "stt": 171,
     "kanji": "効く",
     "han_viet": "HIỆU",
     "hiragana": "きく",
-    "meaning": "có hiệu quả, có tác dụng"
+    "meaning": "có hiệu quả, có tác dụng",
+    "lesson": "Unit 2 - Lesson 3: Động từ tự/tha (2)"
   },
   {
     "stt": 172,
     "kanji": "",
     "han_viet": "",
     "hiragana": "はやる",
-    "meaning": "phổ biến, thịnh hành"
+    "meaning": "phổ biến, thịnh hành",
+    "lesson": "Unit 2 - Lesson 3: Động từ tự/tha (2)"
   },
   {
     "stt": 173,
     "kanji": "経つ",
     "han_viet": "KINH",
     "hiragana": "たつ",
-    "meaning": "Trải qua, trôi qua"
+    "meaning": "Trải qua, trôi qua",
+    "lesson": "Unit 2 - Lesson 3: Động từ tự/tha (2)"
   },
   {
     "stt": 174,
     "kanji": "間に合う",
     "han_viet": "GIAN HỢP",
     "hiragana": "まにあう",
-    "meaning": "kịp, vừa đủ"
+    "meaning": "kịp, vừa đủ",
+    "lesson": "Unit 2 - Lesson 3: Động từ tự/tha (2)"
   },
   {
     "stt": 175,
     "kanji": "間に合わせる",
     "han_viet": "GIAN HỢP",
     "hiragana": "まにあわせる",
-    "meaning": "làm cho kịp giờ"
+    "meaning": "làm cho kịp giờ",
+    "lesson": "Unit 2 - Lesson 3: Động từ tự/tha (2)"
   },
   {
     "stt": 176,
     "kanji": "通う",
     "han_viet": "THÔNG",
     "hiragana": "かよう",
-    "meaning": "đi đi về về, hiểu (cảm giác)"
+    "meaning": "đi đi về về, hiểu (cảm giác)",
+    "lesson": "Unit 2 - Lesson 3: Động từ tự/tha (2)"
   },
   {
     "stt": 177,
     "kanji": "込む",
     "han_viet": "VU",
     "hiragana": "こむ",
-    "meaning": "đông"
+    "meaning": "đông",
+    "lesson": "Unit 2 - Lesson 3: Động từ tự/tha (2)"
   },
   {
     "stt": 178,
     "kanji": "すれ違う",
     "han_viet": "VI",
     "hiragana": "すれちがう",
-    "meaning": "lướt qua, ngang qua"
+    "meaning": "lướt qua, ngang qua",
+    "lesson": "Unit 2 - Lesson 3: Động từ tự/tha (2)"
   },
   {
     "stt": 179,
     "kanji": "掛かる",
     "han_viet": "QUẢI",
     "hiragana": "かかる",
-    "meaning": "Tốn, mất (thời gian...)"
+    "meaning": "Tốn, mất (thời gian...)",
+    "lesson": "Unit 2 - Lesson 3: Động từ tự/tha (2)"
   },
   {
     "stt": 180,
     "kanji": "掛ける",
     "han_viet": "QUẢI",
     "hiragana": "かける",
-    "meaning": "Treo, mặc, đeo, gọi điện, phủ, khóa cửa, đạp, đóng..."
+    "meaning": "Treo, mặc, đeo, gọi điện, phủ, khóa cửa, đạp, đóng...",
+    "lesson": "Unit 2 - Lesson 3: Động từ tự/tha (2)"
   },
   {
     "stt": 181,
     "kanji": "動く",
     "han_viet": "ĐỘNG",
     "hiragana": "うごく",
-    "meaning": "hoạt động, di chuyển, biến đổi"
+    "meaning": "hoạt động, di chuyển, biến đổi",
+    "lesson": "Unit 2 - Lesson 4: Động từ tự/tha (3)"
   },
   {
     "stt": 182,
     "kanji": "動かす",
     "han_viet": "ĐỘNG",
     "hiragana": "うごかす",
-    "meaning": "Làm di chuyển, lay động"
+    "meaning": "Làm di chuyển, lay động",
+    "lesson": "Unit 2 - Lesson 4: Động từ tự/tha (3)"
   },
   {
     "stt": 183,
     "kanji": "離れる",
     "han_viet": "LI",
     "hiragana": "はなれる",
-    "meaning": "Tách ra, tuột khỏi"
+    "meaning": "Tách ra, tuột khỏi",
+    "lesson": "Unit 2 - Lesson 4: Động từ tự/tha (3)"
   },
   {
     "stt": 184,
     "kanji": "離す",
     "han_viet": "LI",
     "hiragana": "はなす",
-    "meaning": "tránh ra, buông ra, cởi bỏ..."
+    "meaning": "tránh ra, buông ra, cởi bỏ...",
+    "lesson": "Unit 2 - Lesson 4: Động từ tự/tha (3)"
   },
   {
     "stt": 185,
     "kanji": "",
     "han_viet": "",
     "hiragana": "ぶつかる",
-    "meaning": "Va chạm, chạm đến, trùng..."
+    "meaning": "Va chạm, chạm đến, trùng...",
+    "lesson": "Unit 2 - Lesson 4: Động từ tự/tha (3)"
   },
   {
     "stt": 186,
     "kanji": "",
     "han_viet": "",
     "hiragana": "ぶつける",
-    "meaning": "đâm"
+    "meaning": "đâm",
+    "lesson": "Unit 2 - Lesson 4: Động từ tự/tha (3)"
   },
   {
     "stt": 187,
     "kanji": "",
     "han_viet": "",
     "hiragana": "こぼれる",
-    "meaning": "Bị đổ, bị chảy, bị rơi"
+    "meaning": "Bị đổ, bị chảy, bị rơi",
+    "lesson": "Unit 2 - Lesson 4: Động từ tự/tha (3)"
   },
   {
     "stt": 188,
     "kanji": "",
     "han_viet": "",
     "hiragana": "こぼす",
-    "meaning": "Làm tràn, đánh đổ"
+    "meaning": "Làm tràn, đánh đổ",
+    "lesson": "Unit 2 - Lesson 4: Động từ tự/tha (3)"
   },
   {
     "stt": 189,
     "kanji": "",
     "han_viet": "",
     "hiragana": "ふく",
-    "meaning": "Lau chùi"
+    "meaning": "Lau chùi",
+    "lesson": "Unit 2 - Lesson 4: Động từ tự/tha (3)"
   },
   {
     "stt": 190,
     "kanji": "片付く",
     "han_viet": "PHIẾN PHÓ",
     "hiragana": "かたづく",
-    "meaning": "được dọn dẹp, sắp xếp"
+    "meaning": "được dọn dẹp, sắp xếp",
+    "lesson": "Unit 2 - Lesson 4: Động từ tự/tha (3)"
   },
   {
     "stt": 191,
     "kanji": "片付ける",
     "han_viet": "PHIẾN PHÓ",
     "hiragana": "かたづける",
-    "meaning": "Làm sạch, hoàn thành"
+    "meaning": "Làm sạch, hoàn thành",
+    "lesson": "Unit 2 - Lesson 4: Động từ tự/tha (3)"
   },
   {
     "stt": 192,
     "kanji": "包む",
     "han_viet": "BAO",
     "hiragana": "つつむ",
-    "meaning": "bọc, gói"
+    "meaning": "bọc, gói",
+    "lesson": "Unit 2 - Lesson 4: Động từ tự/tha (3)"
   },
   {
     "stt": 193,
     "kanji": "張る",
     "han_viet": "TRƯƠNG",
     "hiragana": "はる",
-    "meaning": "Dán, căng ra.."
+    "meaning": "Dán, căng ra..",
+    "lesson": "Unit 2 - Lesson 4: Động từ tự/tha (3)"
   },
   {
     "stt": 194,
     "kanji": "無くなる",
     "han_viet": "VÔ",
     "hiragana": "なくなる",
-    "meaning": "mất, hết"
+    "meaning": "mất, hết",
+    "lesson": "Unit 2 - Lesson 4: Động từ tự/tha (3)"
   },
   {
     "stt": 195,
     "kanji": "無くす",
     "han_viet": "VÔ",
     "hiragana": "なくす",
-    "meaning": "Làm mất, bỏ ra, loại ra"
+    "meaning": "Làm mất, bỏ ra, loại ra",
+    "lesson": "Unit 2 - Lesson 4: Động từ tự/tha (3)"
   },
   {
     "stt": 196,
     "kanji": "足りる",
     "han_viet": "TÚC",
     "hiragana": "たりる",
-    "meaning": "đủ"
+    "meaning": "đủ",
+    "lesson": "Unit 2 - Lesson 4: Động từ tự/tha (3)"
   },
   {
     "stt": 197,
     "kanji": "残る",
     "han_viet": "TÀN",
     "hiragana": "のこる",
-    "meaning": "Còn thừa, còn lại"
+    "meaning": "Còn thừa, còn lại",
+    "lesson": "Unit 2 - Lesson 4: Động từ tự/tha (3)"
   },
   {
     "stt": 198,
     "kanji": "残す",
     "han_viet": "TÀN",
     "hiragana": "のこす",
-    "meaning": "Để lại, chừa lại, đề dành"
+    "meaning": "Để lại, chừa lại, đề dành",
+    "lesson": "Unit 2 - Lesson 4: Động từ tự/tha (3)"
   },
   {
     "stt": 199,
     "kanji": "腐る",
     "han_viet": "HỦ",
     "hiragana": "くさる",
-    "meaning": "thối, hỏng"
+    "meaning": "thối, hỏng",
+    "lesson": "Unit 2 - Lesson 4: Động từ tự/tha (3)"
   },
   {
     "stt": 200,
     "kanji": "",
     "han_viet": "",
     "hiragana": "むける",
-    "meaning": "bị lột, bị bóc"
+    "meaning": "bị lột, bị bóc",
+    "lesson": "Unit 2 - Lesson 5: Động từ tự/tha (4)"
   },
   {
     "stt": 201,
     "kanji": "",
     "han_viet": "",
     "hiragana": "むく",
-    "meaning": "lột vỏ, bóc ra"
+    "meaning": "lột vỏ, bóc ra",
+    "lesson": "Unit 2 - Lesson 5: Động từ tự/tha (4)"
   },
   {
     "stt": 202,
     "kanji": "滑る",
     "han_viet": "HOẠT",
     "hiragana": "すべる",
-    "meaning": "trượt, trơn, thi rớt, lỡ tay"
+    "meaning": "trượt, trơn, thi rớt, lỡ tay",
+    "lesson": "Unit 2 - Lesson 5: Động từ tự/tha (4)"
   },
   {
     "stt": 203,
     "kanji": "積もる",
     "han_viet": "TÍCH",
     "hiragana": "つもる",
-    "meaning": "tích tụ, chất đống"
+    "meaning": "tích tụ, chất đống",
+    "lesson": "Unit 2 - Lesson 5: Động từ tự/tha (4)"
   },
   {
     "stt": 204,
     "kanji": "積む",
     "han_viet": "TÍCH",
     "hiragana": "つむ",
-    "meaning": "chất, xếp, tích lũy"
+    "meaning": "chất, xếp, tích lũy",
+    "lesson": "Unit 2 - Lesson 5: Động từ tự/tha (4)"
   },
   {
     "stt": 205,
     "kanji": "空く",
     "han_viet": "KHÔNG",
     "hiragana": "あく",
-    "meaning": "trống, vắng"
+    "meaning": "trống, vắng",
+    "lesson": "Unit 2 - Lesson 5: Động từ tự/tha (4)"
   },
   {
     "stt": 206,
     "kanji": "空ける",
     "han_viet": "KHÔNG",
     "hiragana": "あける",
-    "meaning": "Làm rỗng"
+    "meaning": "Làm rỗng",
+    "lesson": "Unit 2 - Lesson 5: Động từ tự/tha (4)"
   },
   {
     "stt": 207,
     "kanji": "下がる",
     "han_viet": "HẠ",
     "hiragana": "さがる",
-    "meaning": "Hạ xuống, lùi về, tránh xa"
+    "meaning": "Hạ xuống, lùi về, tránh xa",
+    "lesson": "Unit 2 - Lesson 5: Động từ tự/tha (4)"
   },
   {
     "stt": 208,
     "kanji": "下げる",
     "han_viet": "HẠ",
     "hiragana": "さげる",
-    "meaning": "giảm, treo, cúi đầu"
+    "meaning": "giảm, treo, cúi đầu",
+    "lesson": "Unit 2 - Lesson 5: Động từ tự/tha (4)"
   },
   {
     "stt": 209,
     "kanji": "冷える",
     "han_viet": "LÃNH",
     "hiragana": "ひえる",
-    "meaning": "bị lạnh, cóng"
+    "meaning": "bị lạnh, cóng",
+    "lesson": "Unit 2 - Lesson 5: Động từ tự/tha (4)"
   },
   {
     "stt": 210,
     "kanji": "冷やす",
     "han_viet": "LÃNH",
     "hiragana": "ひやす",
-    "meaning": "làm lạnh"
+    "meaning": "làm lạnh",
+    "lesson": "Unit 2 - Lesson 5: Động từ tự/tha (4)"
   },
   {
     "stt": 211,
     "kanji": "冷める",
     "han_viet": "LÃNH",
     "hiragana": "さめる",
-    "meaning": "bị nguội"
+    "meaning": "bị nguội",
+    "lesson": "Unit 2 - Lesson 5: Động từ tự/tha (4)"
   },
   {
     "stt": 212,
     "kanji": "冷ます",
     "han_viet": "LÃNH",
     "hiragana": "さます",
-    "meaning": "làm nguội"
+    "meaning": "làm nguội",
+    "lesson": "Unit 2 - Lesson 5: Động từ tự/tha (4)"
   },
   {
     "stt": 213,
     "kanji": "燃える",
     "han_viet": "NHIÊN",
     "hiragana": "もえる",
-    "meaning": "Cháy, nóng lên, phấn khích"
+    "meaning": "Cháy, nóng lên, phấn khích",
+    "lesson": "Unit 2 - Lesson 5: Động từ tự/tha (4)"
   },
   {
     "stt": 214,
     "kanji": "燃やす",
     "han_viet": "NHIÊN",
     "hiragana": "もやす",
-    "meaning": "đốt, nhiệt huyết"
+    "meaning": "đốt, nhiệt huyết",
+    "lesson": "Unit 2 - Lesson 5: Động từ tự/tha (4)"
   },
   {
     "stt": 215,
     "kanji": "沸く",
     "han_viet": "PHÍ",
     "hiragana": "わく",
-    "meaning": "Sôi, nảy ra, vang lên"
+    "meaning": "Sôi, nảy ra, vang lên",
+    "lesson": "Unit 2 - Lesson 5: Động từ tự/tha (4)"
   },
   {
     "stt": 216,
     "kanji": "沸かす",
     "han_viet": "PHÍ",
     "hiragana": "わかす",
-    "meaning": "đun sôi"
+    "meaning": "đun sôi",
+    "lesson": "Unit 2 - Lesson 5: Động từ tự/tha (4)"
   },
   {
     "stt": 217,
     "kanji": "鳴る",
     "han_viet": "MINH",
     "hiragana": "なる",
-    "meaning": "kêu"
+    "meaning": "kêu",
+    "lesson": "Unit 2 - Lesson 5: Động từ tự/tha (4)"
   },
   {
     "stt": 218,
     "kanji": "鳴らす",
     "han_viet": "MINH",
     "hiragana": "ならす",
-    "meaning": "bấm (chuông, còi)"
+    "meaning": "bấm (chuông, còi)",
+    "lesson": "Unit 2 - Lesson 5: Động từ tự/tha (4)"
   },
   {
     "stt": 219,
     "kanji": "役立つ",
     "han_viet": "DỊCH LẬP",
     "hiragana": "やくだつ",
-    "meaning": "hữu ích, giúp ích"
+    "meaning": "hữu ích, giúp ích",
+    "lesson": "Unit 2 - Lesson 5: Động từ tự/tha (4)"
   },
   {
     "stt": 220,
     "kanji": "役立てる",
     "han_viet": "DỊCH LẬP",
     "hiragana": "やくだてる",
-    "meaning": "sử dụng, thiết lập, có ích"
+    "meaning": "sử dụng, thiết lập, có ích",
+    "lesson": "Unit 2 - Lesson 5: Động từ tự/tha (4)"
   },
   {
     "stt": 221,
     "kanji": "飾り",
     "han_viet": "SỨC",
     "hiragana": "かざり",
-    "meaning": "trang trí"
+    "meaning": "trang trí",
+    "lesson": "Unit 3 - Lesson 1: Danh từ gốc động từ (1)"
   },
   {
     "stt": 222,
     "kanji": "遊び",
     "han_viet": "DU",
     "hiragana": "あそび",
-    "meaning": "chơi"
+    "meaning": "chơi",
+    "lesson": "Unit 3 - Lesson 1: Danh từ gốc động từ (1)"
   },
   {
     "stt": 223,
     "kanji": "集まり",
     "han_viet": "TẬP",
     "hiragana": "あつまり",
-    "meaning": "tập hợp, tụ họp, nhóm"
+    "meaning": "tập hợp, tụ họp, nhóm",
+    "lesson": "Unit 3 - Lesson 1: Danh từ gốc động từ (1)"
   },
   {
     "stt": 224,
     "kanji": "教え",
     "han_viet": "GIÁO",
     "hiragana": "おしえ",
-    "meaning": "dạy, chỉ bảo"
+    "meaning": "dạy, chỉ bảo",
+    "lesson": "Unit 3 - Lesson 1: Danh từ gốc động từ (1)"
   },
   {
     "stt": 225,
     "kanji": "踊り",
     "han_viet": "DŨNG",
     "hiragana": "おどり",
-    "meaning": "nhảy"
+    "meaning": "nhảy",
+    "lesson": "Unit 3 - Lesson 1: Danh từ gốc động từ (1)"
   },
   {
     "stt": 226,
     "kanji": "思い",
     "han_viet": "TƯ",
     "hiragana": "おもい",
-    "meaning": "suy nghĩ, cảm thấy"
+    "meaning": "suy nghĩ, cảm thấy",
+    "lesson": "Unit 3 - Lesson 1: Danh từ gốc động từ (1)"
   },
   {
     "stt": 227,
     "kanji": "考え",
     "han_viet": "KHẢO",
     "hiragana": "かんがえ",
-    "meaning": "suy nghĩ, ý tưởng, ý định"
+    "meaning": "suy nghĩ, ý tưởng, ý định",
+    "lesson": "Unit 3 - Lesson 1: Danh từ gốc động từ (1)"
   },
   {
     "stt": 228,
     "kanji": "片づけ",
     "han_viet": "PHIẾN",
     "hiragana": "かたづけ",
-    "meaning": "ngăn nắp, dọn dẹp"
+    "meaning": "ngăn nắp, dọn dẹp",
+    "lesson": "Unit 3 - Lesson 1: Danh từ gốc động từ (1)"
   },
   {
     "stt": 229,
     "kanji": "手伝い",
     "han_viet": "THỦ TRUYỀN",
     "hiragana": "てつだい",
-    "meaning": "giúp đỡ"
+    "meaning": "giúp đỡ",
+    "lesson": "Unit 3 - Lesson 1: Danh từ gốc động từ (1)"
   },
   {
     "stt": 230,
     "kanji": "働き",
     "han_viet": "ĐỘNG",
     "hiragana": "はたらき",
-    "meaning": "hoạt động, chức năng"
+    "meaning": "hoạt động, chức năng",
+    "lesson": "Unit 3 - Lesson 1: Danh từ gốc động từ (1)"
   },
   {
     "stt": 231,
     "kanji": "決まり",
     "han_viet": "QUYẾT",
     "hiragana": "きまり",
-    "meaning": "luật lệ, quy định"
+    "meaning": "luật lệ, quy định",
+    "lesson": "Unit 3 - Lesson 1: Danh từ gốc động từ (1)"
   },
   {
     "stt": 232,
     "kanji": "騒ぎ",
     "han_viet": "TAO",
     "hiragana": "さわぎ",
-    "meaning": "ồn ào, om xòm, náo nhiệt"
+    "meaning": "ồn ào, om xòm, náo nhiệt",
+    "lesson": "Unit 3 - Lesson 1: Danh từ gốc động từ (1)"
   },
   {
     "stt": 233,
     "kanji": "知らせ",
     "han_viet": "TRI",
     "hiragana": "しらせ",
-    "meaning": "thông báo"
+    "meaning": "thông báo",
+    "lesson": "Unit 3 - Lesson 1: Danh từ gốc động từ (1)"
   },
   {
     "stt": 234,
     "kanji": "頼み",
     "han_viet": "LẠI",
     "hiragana": "たのみ",
-    "meaning": "thỉnh cầu, làm ơn"
+    "meaning": "thỉnh cầu, làm ơn",
+    "lesson": "Unit 3 - Lesson 1: Danh từ gốc động từ (1)"
   },
   {
     "stt": 235,
     "kanji": "疲れ",
     "han_viet": "BÌ",
     "hiragana": "つかれ",
-    "meaning": "mệt mỏi"
+    "meaning": "mệt mỏi",
+    "lesson": "Unit 3 - Lesson 1: Danh từ gốc động từ (1)"
   },
   {
     "stt": 236,
     "kanji": "違い",
     "han_viet": "VI",
     "hiragana": "ちがい",
-    "meaning": "khác nhau"
+    "meaning": "khác nhau",
+    "lesson": "Unit 3 - Lesson 1: Danh từ gốc động từ (1)"
   },
   {
     "stt": 237,
     "kanji": "始め",
     "han_viet": "THỦY",
     "hiragana": "はじめ",
-    "meaning": "Đầu tiên"
+    "meaning": "Đầu tiên",
+    "lesson": "Unit 3 - Lesson 1: Danh từ gốc động từ (1)"
   },
   {
     "stt": 238,
     "kanji": "続き",
     "han_viet": "TỤC",
     "hiragana": "つづき",
-    "meaning": "tiếp tục, tiếp theo"
+    "meaning": "tiếp tục, tiếp theo",
+    "lesson": "Unit 3 - Lesson 1: Danh từ gốc động từ (1)"
   },
   {
     "stt": 239,
     "kanji": "暮れ",
     "han_viet": "MỘ",
     "hiragana": "くれ",
-    "meaning": "cuối (mùa, năm...), hoàng hôn, kết thúc"
+    "meaning": "cuối (mùa, năm...), hoàng hôn, kết thúc",
+    "lesson": "Unit 3 - Lesson 1: Danh từ gốc động từ (1)"
   },
   {
     "stt": 240,
     "kanji": "行き",
     "han_viet": "HÀNH",
     "hiragana": "いき",
-    "meaning": "đi"
+    "meaning": "đi",
+    "lesson": "Unit 3 - Lesson 1: Danh từ gốc động từ (1)"
   },
   {
     "stt": 241,
     "kanji": "帰り",
     "han_viet": "QUY",
     "hiragana": "かえり",
-    "meaning": "trở về"
+    "meaning": "trở về",
+    "lesson": "Unit 3 - Lesson 2: Danh từ gốc động từ (2)"
   },
   {
     "stt": 242,
     "kanji": "急ぎ",
     "han_viet": "CẤP",
     "hiragana": "いそぎ",
-    "meaning": "khẩn cấp, vội vàng"
+    "meaning": "khẩn cấp, vội vàng",
+    "lesson": "Unit 3 - Lesson 2: Danh từ gốc động từ (2)"
   },
   {
     "stt": 243,
     "kanji": "遅れ",
     "han_viet": "TRÌ",
     "hiragana": "おくれ",
-    "meaning": "Muộn, chậm trễ"
+    "meaning": "Muộn, chậm trễ",
+    "lesson": "Unit 3 - Lesson 2: Danh từ gốc động từ (2)"
   },
   {
     "stt": 244,
     "kanji": "貸し",
     "han_viet": "THẢI",
     "hiragana": "かし",
-    "meaning": "cho mượn, cho vay"
+    "meaning": "cho mượn, cho vay",
+    "lesson": "Unit 3 - Lesson 2: Danh từ gốc động từ (2)"
   },
   {
     "stt": 245,
     "kanji": "借り",
     "han_viet": "TÁ",
     "hiragana": "かり",
-    "meaning": "mượn, nợ, vay, thuê"
+    "meaning": "mượn, nợ, vay, thuê",
+    "lesson": "Unit 3 - Lesson 2: Danh từ gốc động từ (2)"
   },
   {
     "stt": 246,
     "kanji": "勝ち",
     "han_viet": "THẮNG",
     "hiragana": "かち",
-    "meaning": "Chiến thắng"
+    "meaning": "Chiến thắng",
+    "lesson": "Unit 3 - Lesson 2: Danh từ gốc động từ (2)"
   },
   {
     "stt": 247,
     "kanji": "負け",
     "han_viet": "PHỤ",
     "hiragana": "まけ",
-    "meaning": "thua"
+    "meaning": "thua",
+    "lesson": "Unit 3 - Lesson 2: Danh từ gốc động từ (2)"
   },
   {
     "stt": 248,
     "kanji": "迎え",
     "han_viet": "NGHÊNH",
     "hiragana": "むかえ",
-    "meaning": "đón"
+    "meaning": "đón",
+    "lesson": "Unit 3 - Lesson 2: Danh từ gốc động từ (2)"
   },
   {
     "stt": 249,
     "kanji": "始まり",
     "han_viet": "THỦY",
     "hiragana": "はじまり",
-    "meaning": "bắt đầu"
+    "meaning": "bắt đầu",
+    "lesson": "Unit 3 - Lesson 2: Danh từ gốc động từ (2)"
   },
   {
     "stt": 250,
     "kanji": "終わり",
     "han_viet": "CHUNG",
     "hiragana": "おわり",
-    "meaning": "kết thúc"
+    "meaning": "kết thúc",
+    "lesson": "Unit 3 - Lesson 2: Danh từ gốc động từ (2)"
   },
   {
     "stt": 251,
     "kanji": "戻り",
     "han_viet": "LỆ",
     "hiragana": "もどり",
-    "meaning": "trở về, trả lại"
+    "meaning": "trở về, trả lại",
+    "lesson": "Unit 3 - Lesson 2: Danh từ gốc động từ (2)"
   },
   {
     "stt": 252,
     "kanji": "別れ",
     "han_viet": "BIỆT",
     "hiragana": "わかれ",
-    "meaning": "chia ly, vĩnh biệt, chia tay"
+    "meaning": "chia ly, vĩnh biệt, chia tay",
+    "lesson": "Unit 3 - Lesson 2: Danh từ gốc động từ (2)"
   },
   {
     "stt": 253,
     "kanji": "喜び",
     "han_viet": "HỈ",
     "hiragana": "よろこび",
-    "meaning": "hớn hở, vui vẻ, hân hạnh"
+    "meaning": "hớn hở, vui vẻ, hân hạnh",
+    "lesson": "Unit 3 - Lesson 2: Danh từ gốc động từ (2)"
   },
   {
     "stt": 254,
     "kanji": "楽しみ",
     "han_viet": "LẠC",
     "hiragana": "たのしみ",
-    "meaning": "niềm vui, mong đợi"
+    "meaning": "niềm vui, mong đợi",
+    "lesson": "Unit 3 - Lesson 2: Danh từ gốc động từ (2)"
   },
   {
     "stt": 255,
     "kanji": "笑い",
     "han_viet": "TIẾU",
     "hiragana": "わらい",
-    "meaning": "cười"
+    "meaning": "cười",
+    "lesson": "Unit 3 - Lesson 2: Danh từ gốc động từ (2)"
   },
   {
     "stt": 256,
     "kanji": "驚き",
     "han_viet": "KINH",
     "hiragana": "おどろき",
-    "meaning": "Bất ngờ, ngạc nhiên"
+    "meaning": "Bất ngờ, ngạc nhiên",
+    "lesson": "Unit 3 - Lesson 2: Danh từ gốc động từ (2)"
   },
   {
     "stt": 257,
     "kanji": "怒り",
     "han_viet": "NỘ",
     "hiragana": "いかり",
-    "meaning": "giận dữ, nổi nóng"
+    "meaning": "giận dữ, nổi nóng",
+    "lesson": "Unit 3 - Lesson 2: Danh từ gốc động từ (2)"
   },
   {
     "stt": 258,
     "kanji": "悲しみ",
     "han_viet": "BI",
     "hiragana": "かなしみ",
-    "meaning": "buồn bã, đau thương"
+    "meaning": "buồn bã, đau thương",
+    "lesson": "Unit 3 - Lesson 2: Danh từ gốc động từ (2)"
   },
   {
     "stt": 259,
     "kanji": "幸せな",
     "han_viet": "HẠNH",
     "hiragana": "しあわせな",
-    "meaning": "hạnh phúc"
+    "meaning": "hạnh phúc",
+    "lesson": "Unit 3 - Lesson 3: Tính cách & cảm xúc"
   },
   {
     "stt": 260,
     "kanji": "得意な",
     "han_viet": "ĐẮC Ý",
     "hiragana": "とくいな",
-    "meaning": "mạnh, giỏi, sở trường"
+    "meaning": "mạnh, giỏi, sở trường",
+    "lesson": "Unit 3 - Lesson 3: Tính cách & cảm xúc"
   },
   {
     "stt": 261,
     "kanji": "苦手な",
     "han_viet": "KHỔ THỦ",
     "hiragana": "にがてな",
-    "meaning": "yếu, kém, không thích, dở tệ"
+    "meaning": "yếu, kém, không thích, dở tệ",
+    "lesson": "Unit 3 - Lesson 3: Tính cách & cảm xúc"
   },
   {
     "stt": 262,
     "kanji": "熱心な",
     "han_viet": "NHIỆT TÂM",
     "hiragana": "ねっしんな",
-    "meaning": "Nhiệt tình"
+    "meaning": "Nhiệt tình",
+    "lesson": "Unit 3 - Lesson 3: Tính cách & cảm xúc"
   },
   {
     "stt": 263,
     "kanji": "夢中な",
     "han_viet": "MỘNG TRUNG",
     "hiragana": "むちゅうな",
-    "meaning": "chú tâm"
+    "meaning": "chú tâm",
+    "lesson": "Unit 3 - Lesson 3: Tính cách & cảm xúc"
   },
   {
     "stt": 264,
     "kanji": "退屈な",
     "han_viet": "THỐI KHUẤT",
     "hiragana": "たいくつな",
-    "meaning": "chán"
+    "meaning": "chán",
+    "lesson": "Unit 3 - Lesson 3: Tính cách & cảm xúc"
   },
   {
     "stt": 265,
     "kanji": "健康な",
     "han_viet": "KIỆN KHANG",
     "hiragana": "けんこうな",
-    "meaning": "khỏe mạnh, sức khỏe"
+    "meaning": "khỏe mạnh, sức khỏe",
+    "lesson": "Unit 3 - Lesson 3: Tính cách & cảm xúc"
   },
   {
     "stt": 266,
     "kanji": "苦しい",
     "han_viet": "KHỔ",
     "hiragana": "くるしい",
-    "meaning": "cực khổ"
+    "meaning": "cực khổ",
+    "lesson": "Unit 3 - Lesson 3: Tính cách & cảm xúc"
   },
   {
     "stt": 267,
     "kanji": "平気な",
     "han_viet": "BÌNH KHÍ",
     "hiragana": "へいきな",
-    "meaning": "bình thản ung dung"
+    "meaning": "bình thản ung dung",
+    "lesson": "Unit 3 - Lesson 3: Tính cách & cảm xúc"
   },
   {
     "stt": 268,
     "kanji": "悔しい",
     "han_viet": "HỐI",
     "hiragana": "くやしい",
-    "meaning": "Bực bội, cay cú, khó chịu, tiếc nuối..."
+    "meaning": "Bực bội, cay cú, khó chịu, tiếc nuối...",
+    "lesson": "Unit 3 - Lesson 3: Tính cách & cảm xúc"
   },
   {
     "stt": 269,
     "kanji": "",
     "han_viet": "",
     "hiragana": "うらやましい",
-    "meaning": "ghen ty"
+    "meaning": "ghen ty",
+    "lesson": "Unit 3 - Lesson 3: Tính cách & cảm xúc"
   },
   {
     "stt": 270,
     "kanji": "",
     "han_viet": "",
     "hiragana": "かゆい",
-    "meaning": "ngứa"
+    "meaning": "ngứa",
+    "lesson": "Unit 3 - Lesson 3: Tính cách & cảm xúc"
   },
   {
     "stt": 271,
     "kanji": "",
     "han_viet": "",
     "hiragana": "おとなしい",
-    "meaning": "trầm tính, ít nói"
+    "meaning": "trầm tính, ít nói",
+    "lesson": "Unit 3 - Lesson 3: Tính cách & cảm xúc"
   },
   {
     "stt": 272,
     "kanji": "我慢強い",
     "han_viet": "NGÃ MẠN CƯỜNG",
     "hiragana": "がまんづよい",
-    "meaning": "chịu đựng giỏi"
+    "meaning": "chịu đựng giỏi",
+    "lesson": "Unit 3 - Lesson 3: Tính cách & cảm xúc"
   },
   {
     "stt": 273,
     "kanji": "正直な",
     "han_viet": "CHÁNH TRỰC",
     "hiragana": "しょうじきな",
-    "meaning": "chính trực, thẳng thắn, thành thực"
+    "meaning": "chính trực, thẳng thắn, thành thực",
+    "lesson": "Unit 3 - Lesson 3: Tính cách & cảm xúc"
   },
   {
     "stt": 274,
     "kanji": "",
     "han_viet": "",
     "hiragana": "けちな",
-    "meaning": "kẹt xỉ, ki bo"
+    "meaning": "kẹt xỉ, ki bo",
+    "lesson": "Unit 3 - Lesson 3: Tính cách & cảm xúc"
   },
   {
     "stt": 275,
     "kanji": "",
     "han_viet": "",
     "hiragana": "わがままな",
-    "meaning": "ích kỷ, cứng đầu"
+    "meaning": "ích kỷ, cứng đầu",
+    "lesson": "Unit 3 - Lesson 3: Tính cách & cảm xúc"
   },
   {
     "stt": 276,
     "kanji": "積極的な",
     "han_viet": "TÍCH CỰC ĐÍCH",
     "hiragana": "せっきょくてきな",
-    "meaning": "tích cực"
+    "meaning": "tích cực",
+    "lesson": "Unit 3 - Lesson 3: Tính cách & cảm xúc"
   },
   {
     "stt": 277,
     "kanji": "消極的な",
     "han_viet": "TIÊU CỰC ĐÍCH",
     "hiragana": "しょうきょくてきな",
-    "meaning": "tiêu cực, bi quan"
+    "meaning": "tiêu cực, bi quan",
+    "lesson": "Unit 3 - Lesson 3: Tính cách & cảm xúc"
   },
   {
     "stt": 278,
     "kanji": "満足な",
     "han_viet": "MÃN TÚC",
     "hiragana": "まんぞくな",
-    "meaning": "thỏa mãn, hài lòng"
+    "meaning": "thỏa mãn, hài lòng",
+    "lesson": "Unit 3 - Lesson 3: Tính cách & cảm xúc"
   },
   {
     "stt": 279,
     "kanji": "不満な",
     "han_viet": "BẤT MÃN",
     "hiragana": "ふまんな",
-    "meaning": "bất mãn"
+    "meaning": "bất mãn",
+    "lesson": "Unit 3 - Lesson 4: Trạng thái & đánh giá"
   },
   {
     "stt": 280,
     "kanji": "不安な",
     "han_viet": "BẤT AN",
     "hiragana": "ふあんな",
-    "meaning": "bất an, lo lắng"
+    "meaning": "bất an, lo lắng",
+    "lesson": "Unit 3 - Lesson 4: Trạng thái & đánh giá"
   },
   {
     "stt": 281,
     "kanji": "大変な",
     "han_viet": "ĐẠI BIẾN",
     "hiragana": "たいへんな",
-    "meaning": "Rất, khó khăn, cực"
+    "meaning": "Rất, khó khăn, cực",
+    "lesson": "Unit 3 - Lesson 4: Trạng thái & đánh giá"
   },
   {
     "stt": 282,
     "kanji": "無理な",
     "han_viet": "VÔ LÍ",
     "hiragana": "むりな",
-    "meaning": "vô lý, quá sức, không thể"
+    "meaning": "vô lý, quá sức, không thể",
+    "lesson": "Unit 3 - Lesson 4: Trạng thái & đánh giá"
   },
   {
     "stt": 283,
     "kanji": "不注意な",
     "han_viet": "BẤT CHÚ Ý",
     "hiragana": "ふちゅういな",
-    "meaning": "Cẩu thả, bất cẩn"
+    "meaning": "Cẩu thả, bất cẩn",
+    "lesson": "Unit 3 - Lesson 4: Trạng thái & đánh giá"
   },
   {
     "stt": 284,
     "kanji": "楽な",
     "han_viet": "LẠC",
     "hiragana": "らくな",
-    "meaning": "thoải mái, nhàn hạ"
+    "meaning": "thoải mái, nhàn hạ",
+    "lesson": "Unit 3 - Lesson 4: Trạng thái & đánh giá"
   },
   {
     "stt": 285,
     "kanji": "面倒な",
     "han_viet": "DIỆN ĐẢO",
     "hiragana": "めんどうな",
-    "meaning": "phiền phức, phức tạp"
+    "meaning": "phiền phức, phức tạp",
+    "lesson": "Unit 3 - Lesson 4: Trạng thái & đánh giá"
   },
   {
     "stt": 286,
     "kanji": "失礼な",
     "han_viet": "THẤT LỄ",
     "hiragana": "しつれいな",
-    "meaning": "thất lễ, thô lỗ"
+    "meaning": "thất lễ, thô lỗ",
+    "lesson": "Unit 3 - Lesson 4: Trạng thái & đánh giá"
   },
   {
     "stt": 287,
     "kanji": "当然な",
     "han_viet": "ĐƯƠNG NHIÊN",
     "hiragana": "とうぜんな",
-    "meaning": "đương nhiên"
+    "meaning": "đương nhiên",
+    "lesson": "Unit 3 - Lesson 4: Trạng thái & đánh giá"
   },
   {
     "stt": 288,
     "kanji": "意外な",
     "han_viet": "Ý NGOẠI",
     "hiragana": "いがいな",
-    "meaning": "không ngờ, bất ngờ"
+    "meaning": "không ngờ, bất ngờ",
+    "lesson": "Unit 3 - Lesson 4: Trạng thái & đánh giá"
   },
   {
     "stt": 289,
     "kanji": "結構な",
     "han_viet": "KẾT CẤU",
     "hiragana": "けっこうな",
-    "meaning": "tốt, đủ, đẹp, tuyệt vời, khá là ~"
+    "meaning": "tốt, đủ, đẹp, tuyệt vời, khá là ~",
+    "lesson": "Unit 3 - Lesson 4: Trạng thái & đánh giá"
   },
   {
     "stt": 290,
     "kanji": "派手な",
     "han_viet": "PHÁI THỦ",
     "hiragana": "はでな",
-    "meaning": "lòe loẹt, màu mè"
+    "meaning": "lòe loẹt, màu mè",
+    "lesson": "Unit 3 - Lesson 4: Trạng thái & đánh giá"
   },
   {
     "stt": 291,
     "kanji": "地味な",
     "han_viet": "ĐỊA VỊ",
     "hiragana": "じみな",
-    "meaning": "giản dị, đơn điệu"
+    "meaning": "giản dị, đơn điệu",
+    "lesson": "Unit 3 - Lesson 4: Trạng thái & đánh giá"
   },
   {
     "stt": 292,
     "kanji": "",
     "han_viet": "",
     "hiragana": "おしゃれな",
-    "meaning": "Sành điệu, sang chảnh, mốt"
+    "meaning": "Sành điệu, sang chảnh, mốt",
+    "lesson": "Unit 3 - Lesson 4: Trạng thái & đánh giá"
   },
   {
     "stt": 293,
     "kanji": "変な",
     "han_viet": "BIẾN",
     "hiragana": "へんな",
-    "meaning": "lạ, kỳ"
+    "meaning": "lạ, kỳ",
+    "lesson": "Unit 3 - Lesson 4: Trạng thái & đánh giá"
   },
   {
     "stt": 294,
     "kanji": "不思議な",
     "han_viet": "BẤT TƯ NGHỊ",
     "hiragana": "ふしぎな",
-    "meaning": "Kì lạ, ảo diệu, bí ẩn"
+    "meaning": "Kì lạ, ảo diệu, bí ẩn",
+    "lesson": "Unit 3 - Lesson 4: Trạng thái & đánh giá"
   },
   {
     "stt": 295,
     "kanji": "",
     "han_viet": "",
     "hiragana": "ましな",
-    "meaning": "tốt lên"
+    "meaning": "tốt lên",
+    "lesson": "Unit 3 - Lesson 4: Trạng thái & đánh giá"
   },
   {
     "stt": 296,
     "kanji": "",
     "han_viet": "",
     "hiragana": "むだな",
-    "meaning": "lãng phí, vô ích"
+    "meaning": "lãng phí, vô ích",
+    "lesson": "Unit 3 - Lesson 4: Trạng thái & đánh giá"
   },
   {
     "stt": 297,
     "kanji": "自由な",
     "han_viet": "TỰ DO",
     "hiragana": "じゆうな",
-    "meaning": "tự do"
+    "meaning": "tự do",
+    "lesson": "Unit 3 - Lesson 4: Trạng thái & đánh giá"
   },
   {
     "stt": 298,
     "kanji": "不自由な",
     "han_viet": "BẤT TỰ DO",
     "hiragana": "ふじゆうな",
-    "meaning": "tàn tật, thiếu thốn"
+    "meaning": "tàn tật, thiếu thốn",
+    "lesson": "Unit 3 - Lesson 4: Trạng thái & đánh giá"
   },
   {
     "stt": 299,
     "kanji": "温まる",
     "han_viet": "ÔN",
     "hiragana": "あたたまる",
-    "meaning": "trở nên ấm hơn"
+    "meaning": "trở nên ấm hơn",
+    "lesson": "Unit 3 - Lesson 5: Động từ tự/tha ~まる/~める"
   },
   {
     "stt": 300,
     "kanji": "温める",
     "han_viet": "ÔN",
     "hiragana": "あたためる",
-    "meaning": "Làm ấm, làm nóng"
+    "meaning": "Làm ấm, làm nóng",
+    "lesson": "Unit 3 - Lesson 5: Động từ tự/tha ~まる/~める"
   },
   {
     "stt": 301,
     "kanji": "高まる",
     "han_viet": "CAO",
     "hiragana": "たかまる",
-    "meaning": "Hưng phấn, tăng lên"
+    "meaning": "Hưng phấn, tăng lên",
+    "lesson": "Unit 3 - Lesson 5: Động từ tự/tha ~まる/~める"
   },
   {
     "stt": 302,
     "kanji": "高める",
     "han_viet": "CAO",
     "hiragana": "たかめる",
-    "meaning": "Nâng cao, đề cao"
+    "meaning": "Nâng cao, đề cao",
+    "lesson": "Unit 3 - Lesson 5: Động từ tự/tha ~まる/~める"
   },
   {
     "stt": 303,
     "kanji": "強まる",
     "han_viet": "CƯỜNG",
     "hiragana": "つよまる",
-    "meaning": "mạnh lên"
+    "meaning": "mạnh lên",
+    "lesson": "Unit 3 - Lesson 5: Động từ tự/tha ~まる/~める"
   },
   {
     "stt": 304,
     "kanji": "強める",
     "han_viet": "CƯỜNG",
     "hiragana": "つよめる",
-    "meaning": "làm mạnh lên, tăng cường"
+    "meaning": "làm mạnh lên, tăng cường",
+    "lesson": "Unit 3 - Lesson 5: Động từ tự/tha ~まる/~める"
   },
   {
     "stt": 305,
     "kanji": "弱まる",
     "han_viet": "NHƯỢC",
     "hiragana": "よわまる",
-    "meaning": "yếu đi, giảm"
+    "meaning": "yếu đi, giảm",
+    "lesson": "Unit 3 - Lesson 5: Động từ tự/tha ~まる/~める"
   },
   {
     "stt": 306,
     "kanji": "弱める",
     "han_viet": "NHƯỢC",
     "hiragana": "よわめる",
-    "meaning": "làm suy yếu"
+    "meaning": "làm suy yếu",
+    "lesson": "Unit 3 - Lesson 5: Động từ tự/tha ~まる/~める"
   },
   {
     "stt": 307,
     "kanji": "広まる",
     "han_viet": "QUẢNG",
     "hiragana": "ひろまる",
-    "meaning": "Lan rộng, phổ biến"
+    "meaning": "Lan rộng, phổ biến",
+    "lesson": "Unit 3 - Lesson 5: Động từ tự/tha ~まる/~める"
   },
   {
     "stt": 308,
     "kanji": "広める",
     "han_viet": "QUẢNG",
     "hiragana": "ひろめる",
-    "meaning": "làm rộng ra, loan tin, tuyên truyền"
+    "meaning": "làm rộng ra, loan tin, tuyên truyền",
+    "lesson": "Unit 3 - Lesson 5: Động từ tự/tha ~まる/~める"
   },
   {
     "stt": 309,
     "kanji": "深まる",
     "han_viet": "THÂM",
     "hiragana": "ふかまる",
-    "meaning": "sâu sắc, uyên thâm, sâu thêm"
+    "meaning": "sâu sắc, uyên thâm, sâu thêm",
+    "lesson": "Unit 3 - Lesson 5: Động từ tự/tha ~まる/~める"
   },
   {
     "stt": 310,
     "kanji": "深める",
     "han_viet": "THÂM",
     "hiragana": "ふかめる",
-    "meaning": "làm sâu thêm, thắt chặt"
+    "meaning": "làm sâu thêm, thắt chặt",
+    "lesson": "Unit 3 - Lesson 5: Động từ tự/tha ~まる/~める"
   },
   {
     "stt": 311,
     "kanji": "世話",
     "han_viet": "THẾ THOẠI",
     "hiragana": "せわ",
-    "meaning": "chăm sóc"
+    "meaning": "chăm sóc",
+    "lesson": "Unit 4 - Lesson 1: Quan hệ & phép lịch sự"
   },
   {
     "stt": 312,
     "kanji": "家庭",
     "han_viet": "GIA ĐÌNH",
     "hiragana": "かてい",
-    "meaning": "gia đình"
+    "meaning": "gia đình",
+    "lesson": "Unit 4 - Lesson 1: Quan hệ & phép lịch sự"
   },
   {
     "stt": 313,
     "kanji": "協力",
     "han_viet": "HIỆP LỰC",
     "hiragana": "きょうりょく",
-    "meaning": "Chung sức, hợp tác"
+    "meaning": "Chung sức, hợp tác",
+    "lesson": "Unit 4 - Lesson 1: Quan hệ & phép lịch sự"
   },
   {
     "stt": 314,
     "kanji": "感謝",
     "han_viet": "CẢM TẠ",
     "hiragana": "かんしゃ",
-    "meaning": "cảm tạ, biết ơn"
+    "meaning": "cảm tạ, biết ơn",
+    "lesson": "Unit 4 - Lesson 1: Quan hệ & phép lịch sự"
   },
   {
     "stt": 315,
     "kanji": "お礼",
     "han_viet": "LỄ",
     "hiragana": "おれい",
-    "meaning": "Cảm ơn"
+    "meaning": "Cảm ơn",
+    "lesson": "Unit 4 - Lesson 1: Quan hệ & phép lịch sự"
   },
   {
     "stt": 316,
     "kanji": "お詫び",
     "han_viet": "SÁ",
     "hiragana": "おわび",
-    "meaning": "xin lỗi"
+    "meaning": "xin lỗi",
+    "lesson": "Unit 4 - Lesson 1: Quan hệ & phép lịch sự"
   },
   {
     "stt": 317,
     "kanji": "",
     "han_viet": "",
     "hiragana": "おじぎ",
-    "meaning": "cúi chào"
+    "meaning": "cúi chào",
+    "lesson": "Unit 4 - Lesson 1: Quan hệ & phép lịch sự"
   },
   {
     "stt": 318,
     "kanji": "握手",
     "han_viet": "ÁC THỦ",
     "hiragana": "あくしゅ",
-    "meaning": "bắt tay"
+    "meaning": "bắt tay",
+    "lesson": "Unit 4 - Lesson 1: Quan hệ & phép lịch sự"
   },
   {
     "stt": 319,
     "kanji": "",
     "han_viet": "",
     "hiragana": "いじわる",
-    "meaning": "Trêu đùa, bắt nạt"
+    "meaning": "Trêu đùa, bắt nạt",
+    "lesson": "Unit 4 - Lesson 1: Quan hệ & phép lịch sự"
   },
   {
     "stt": 320,
     "kanji": "",
     "han_viet": "",
     "hiragana": "いたずら",
-    "meaning": "nghịch ngợm, đùa cợt"
+    "meaning": "nghịch ngợm, đùa cợt",
+    "lesson": "Unit 4 - Lesson 1: Quan hệ & phép lịch sự"
   },
   {
     "stt": 321,
     "kanji": "節約",
     "han_viet": "TIẾT ƯỚC",
     "hiragana": "せつやく",
-    "meaning": "tiết kiệm"
+    "meaning": "tiết kiệm",
+    "lesson": "Unit 4 - Lesson 2: Hành động, tiến bộ, thi đấu"
   },
   {
     "stt": 322,
     "kanji": "経営",
     "han_viet": "KINH DOANH",
     "hiragana": "けいえい",
-    "meaning": "quản lý, điều hành"
+    "meaning": "quản lý, điều hành",
+    "lesson": "Unit 4 - Lesson 2: Hành động, tiến bộ, thi đấu"
   },
   {
     "stt": 323,
     "kanji": "反省",
     "han_viet": "PHẢN TỈNH",
     "hiragana": "はんせい",
-    "meaning": "Xem lại, kiểm điểm, hối lỗi"
+    "meaning": "Xem lại, kiểm điểm, hối lỗi",
+    "lesson": "Unit 4 - Lesson 2: Hành động, tiến bộ, thi đấu"
   },
   {
     "stt": 324,
     "kanji": "実行",
     "han_viet": "THỰC HÀNH",
     "hiragana": "じっこう",
-    "meaning": "thực hành, thực hiện"
+    "meaning": "thực hành, thực hiện",
+    "lesson": "Unit 4 - Lesson 2: Hành động, tiến bộ, thi đấu"
   },
   {
     "stt": 325,
     "kanji": "進歩",
     "han_viet": "TIẾN BỘ",
     "hiragana": "しんぽ",
-    "meaning": "tiến bộ"
+    "meaning": "tiến bộ",
+    "lesson": "Unit 4 - Lesson 2: Hành động, tiến bộ, thi đấu"
   },
   {
     "stt": 326,
     "kanji": "変化",
     "han_viet": "BIẾN HÓA",
     "hiragana": "へんか",
-    "meaning": "thay đổi, biến hóa"
+    "meaning": "thay đổi, biến hóa",
+    "lesson": "Unit 4 - Lesson 2: Hành động, tiến bộ, thi đấu"
   },
   {
     "stt": 327,
     "kanji": "発達",
     "han_viet": "PHÁT ĐẠT",
     "hiragana": "はったつ",
-    "meaning": "phát triển"
+    "meaning": "phát triển",
+    "lesson": "Unit 4 - Lesson 2: Hành động, tiến bộ, thi đấu"
   },
   {
     "stt": 328,
     "kanji": "体力",
     "han_viet": "THỂ LỰC",
     "hiragana": "たいりょく",
-    "meaning": "thể lực"
+    "meaning": "thể lực",
+    "lesson": "Unit 4 - Lesson 2: Hành động, tiến bộ, thi đấu"
   },
   {
     "stt": 329,
     "kanji": "出場",
     "han_viet": "XUẤT TRÀNG",
     "hiragana": "しゅつじょう",
-    "meaning": "tham dự"
+    "meaning": "tham dự",
+    "lesson": "Unit 4 - Lesson 2: Hành động, tiến bộ, thi đấu"
   },
   {
     "stt": 330,
     "kanji": "活躍",
     "han_viet": "HOẠT DƯỢC",
     "hiragana": "かつやく",
-    "meaning": "hoạt động, tạo thành tựu"
+    "meaning": "hoạt động, tạo thành tựu",
+    "lesson": "Unit 4 - Lesson 2: Hành động, tiến bộ, thi đấu"
   },
   {
     "stt": 331,
     "kanji": "競争",
     "han_viet": "CẠNH TRANH",
     "hiragana": "きょうそう",
-    "meaning": "cạnh tranh"
+    "meaning": "cạnh tranh",
+    "lesson": "Unit 4 - Lesson 2: Hành động, tiến bộ, thi đấu"
   },
   {
     "stt": 332,
     "kanji": "応援",
     "han_viet": "ỨNG VIÊN",
     "hiragana": "おうえん",
-    "meaning": "cổ vũ, giúp đỡ"
+    "meaning": "cổ vũ, giúp đỡ",
+    "lesson": "Unit 4 - Lesson 2: Hành động, tiến bộ, thi đấu"
   },
   {
     "stt": 333,
     "kanji": "拍手",
     "han_viet": "PHÁCH THỦ",
     "hiragana": "はくしゅ",
-    "meaning": "vỗ tay"
+    "meaning": "vỗ tay",
+    "lesson": "Unit 4 - Lesson 2: Hành động, tiến bộ, thi đấu"
   },
   {
     "stt": 334,
     "kanji": "人気",
     "han_viet": "NHÂN KHÍ",
     "hiragana": "にんき",
-    "meaning": "được yêu thích, được ưa chuộng"
+    "meaning": "được yêu thích, được ưa chuộng",
+    "lesson": "Unit 4 - Lesson 2: Hành động, tiến bộ, thi đấu"
   },
   {
     "stt": 335,
     "kanji": "",
     "han_viet": "",
     "hiragana": "うわさ",
-    "meaning": "tin đồn, lời đồn"
+    "meaning": "tin đồn, lời đồn",
+    "lesson": "Unit 4 - Lesson 2: Hành động, tiến bộ, thi đấu"
   },
   {
     "stt": 336,
     "kanji": "情報",
     "han_viet": "TÌNH BÁO",
     "hiragana": "じょうほう",
-    "meaning": "thông tin"
+    "meaning": "thông tin",
+    "lesson": "Unit 4 - Lesson 3: Thông tin, giao thông, sự cố"
   },
   {
     "stt": 337,
     "kanji": "交換",
     "han_viet": "GIAO HOÁN",
     "hiragana": "こうかん",
-    "meaning": "trao đổi"
+    "meaning": "trao đổi",
+    "lesson": "Unit 4 - Lesson 3: Thông tin, giao thông, sự cố"
   },
   {
     "stt": 338,
     "kanji": "流行",
     "han_viet": "LƯU HÀNH",
     "hiragana": "りゅうこう",
-    "meaning": "trào lưu"
+    "meaning": "trào lưu",
+    "lesson": "Unit 4 - Lesson 3: Thông tin, giao thông, sự cố"
   },
   {
     "stt": 339,
     "kanji": "宣伝",
     "han_viet": "TUYÊN TRUYỀN",
     "hiragana": "せんでん",
-    "meaning": "tuyên truyền, quảng bá"
+    "meaning": "tuyên truyền, quảng bá",
+    "lesson": "Unit 4 - Lesson 3: Thông tin, giao thông, sự cố"
   },
   {
     "stt": 340,
     "kanji": "広告",
     "han_viet": "QUẢNG CÁO",
     "hiragana": "こうこく",
-    "meaning": "quảng cáo"
+    "meaning": "quảng cáo",
+    "lesson": "Unit 4 - Lesson 3: Thông tin, giao thông, sự cố"
   },
   {
     "stt": 341,
     "kanji": "注目",
     "han_viet": "CHÚ MỤC",
     "hiragana": "ちゅうもく",
-    "meaning": "chú ý, thu hút"
+    "meaning": "chú ý, thu hút",
+    "lesson": "Unit 4 - Lesson 3: Thông tin, giao thông, sự cố"
   },
   {
     "stt": 342,
     "kanji": "通訳",
     "han_viet": "THÔNG DỊCH",
     "hiragana": "つうやく",
-    "meaning": "phiên dịch"
+    "meaning": "phiên dịch",
+    "lesson": "Unit 4 - Lesson 3: Thông tin, giao thông, sự cố"
   },
   {
     "stt": 343,
     "kanji": "翻訳",
     "han_viet": "PHIÊN DỊCH",
     "hiragana": "ほんやく",
-    "meaning": "biên dịch"
+    "meaning": "biên dịch",
+    "lesson": "Unit 4 - Lesson 3: Thông tin, giao thông, sự cố"
   },
   {
     "stt": 344,
     "kanji": "伝言",
     "han_viet": "TRUYỀN NGÔN",
     "hiragana": "でんごん",
-    "meaning": "Lời nhắn, tin đồn"
+    "meaning": "Lời nhắn, tin đồn",
+    "lesson": "Unit 4 - Lesson 3: Thông tin, giao thông, sự cố"
   },
   {
     "stt": 345,
     "kanji": "報告",
     "han_viet": "BÁO CÁO",
     "hiragana": "ほうこく",
-    "meaning": "báo cáo"
+    "meaning": "báo cáo",
+    "lesson": "Unit 4 - Lesson 3: Thông tin, giao thông, sự cố"
   },
   {
     "stt": 346,
     "kanji": "録画",
     "han_viet": "LỤC HỌA",
     "hiragana": "ろくが",
-    "meaning": "ghi lại, thu hình"
+    "meaning": "ghi lại, thu hình",
+    "lesson": "Unit 4 - Lesson 3: Thông tin, giao thông, sự cố"
   },
   {
     "stt": 347,
     "kanji": "混雑",
     "han_viet": "HỖN TẠP",
     "hiragana": "こんざつ",
-    "meaning": "hỗn tạp, đông đúc"
+    "meaning": "hỗn tạp, đông đúc",
+    "lesson": "Unit 4 - Lesson 3: Thông tin, giao thông, sự cố"
   },
   {
     "stt": 348,
     "kanji": "渋滞",
     "han_viet": "SÁP TRỆ",
     "hiragana": "じゅうたい",
-    "meaning": "tắc đường"
+    "meaning": "tắc đường",
+    "lesson": "Unit 4 - Lesson 3: Thông tin, giao thông, sự cố"
   },
   {
     "stt": 349,
     "kanji": "衝突",
     "han_viet": "XUNG ĐỘT",
     "hiragana": "しょうとつ",
-    "meaning": "xung đột"
+    "meaning": "xung đột",
+    "lesson": "Unit 4 - Lesson 3: Thông tin, giao thông, sự cố"
   },
   {
     "stt": 350,
     "kanji": "被害",
     "han_viet": "BỊ HẠI",
     "hiragana": "ひがい",
-    "meaning": "thiệt hại"
+    "meaning": "thiệt hại",
+    "lesson": "Unit 4 - Lesson 3: Thông tin, giao thông, sự cố"
   },
   {
     "stt": 351,
     "kanji": "事故",
     "han_viet": "SỰ CỐ",
     "hiragana": "じこ",
-    "meaning": "tai nạn"
+    "meaning": "tai nạn",
+    "lesson": "Unit 4 - Lesson 3: Thông tin, giao thông, sự cố"
   },
   {
     "stt": 352,
     "kanji": "事件",
     "han_viet": "SỰ KIỆN",
     "hiragana": "じけん",
-    "meaning": "sự kiện, vụ việc, vụ án"
+    "meaning": "sự kiện, vụ việc, vụ án",
+    "lesson": "Unit 4 - Lesson 3: Thông tin, giao thông, sự cố"
   },
   {
     "stt": 353,
     "kanji": "故障",
     "han_viet": "CỐ CHƯỚNG",
     "hiragana": "こしょう",
-    "meaning": "hỏng"
+    "meaning": "hỏng",
+    "lesson": "Unit 4 - Lesson 3: Thông tin, giao thông, sự cố"
   },
   {
     "stt": 354,
     "kanji": "修理",
     "han_viet": "TU LÍ",
     "hiragana": "しゅうり",
-    "meaning": "sửa chữa"
+    "meaning": "sửa chữa",
+    "lesson": "Unit 4 - Lesson 3: Thông tin, giao thông, sự cố"
   },
   {
     "stt": 355,
     "kanji": "停電",
     "han_viet": "ĐÌNH ĐIỆN",
     "hiragana": "ていでん",
-    "meaning": "mất điện"
+    "meaning": "mất điện",
+    "lesson": "Unit 4 - Lesson 3: Thông tin, giao thông, sự cố"
   },
   {
     "stt": 356,
     "kanji": "調子",
     "han_viet": "ĐIỀU TỬ",
     "hiragana": "ちょうし",
-    "meaning": "trạng thái, tình trạng"
+    "meaning": "trạng thái, tình trạng",
+    "lesson": "Unit 4 - Lesson 4: Cảm xúc & nghiên cứu"
   },
   {
     "stt": 357,
     "kanji": "緊張",
     "han_viet": "KHẨN TRƯƠNG",
     "hiragana": "きんちょう",
-    "meaning": "Hồi hộp, căng thẳng"
+    "meaning": "Hồi hộp, căng thẳng",
+    "lesson": "Unit 4 - Lesson 4: Cảm xúc & nghiên cứu"
   },
   {
     "stt": 358,
     "kanji": "自身",
     "han_viet": "TỰ THÂN",
     "hiragana": "じしん",
-    "meaning": "Bản thân, chính mình"
+    "meaning": "Bản thân, chính mình",
+    "lesson": "Unit 4 - Lesson 4: Cảm xúc & nghiên cứu"
   },
   {
     "stt": 359,
     "kanji": "自慢",
     "han_viet": "TỰ MẠN",
     "hiragana": "じまん",
-    "meaning": "Tâm đắc, đắc ý, tự hào"
+    "meaning": "Tâm đắc, đắc ý, tự hào",
+    "lesson": "Unit 4 - Lesson 4: Cảm xúc & nghiên cứu"
   },
   {
     "stt": 360,
     "kanji": "感心",
     "han_viet": "CẢM TÂM",
     "hiragana": "かんしん",
-    "meaning": "Khâm phục, thán phục, quan tâm"
+    "meaning": "Khâm phục, thán phục, quan tâm",
+    "lesson": "Unit 4 - Lesson 4: Cảm xúc & nghiên cứu"
   },
   {
     "stt": 361,
     "kanji": "感動",
     "han_viet": "CẢM ĐỘNG",
     "hiragana": "かんどう",
-    "meaning": "cảm động"
+    "meaning": "cảm động",
+    "lesson": "Unit 4 - Lesson 4: Cảm xúc & nghiên cứu"
   },
   {
     "stt": 362,
     "kanji": "興奮",
     "han_viet": "HƯNG PHẤN",
     "hiragana": "こうふん",
-    "meaning": "hưng phấn, kích động"
+    "meaning": "hưng phấn, kích động",
+    "lesson": "Unit 4 - Lesson 4: Cảm xúc & nghiên cứu"
   },
   {
     "stt": 363,
     "kanji": "感想",
     "han_viet": "CẢM TƯỞNG",
     "hiragana": "かんそう",
-    "meaning": "cảm tưởng"
+    "meaning": "cảm tưởng",
+    "lesson": "Unit 4 - Lesson 4: Cảm xúc & nghiên cứu"
   },
   {
     "stt": 364,
     "kanji": "予想",
     "han_viet": "DỰ TƯỞNG",
     "hiragana": "よそう",
-    "meaning": "dự đoán"
+    "meaning": "dự đoán",
+    "lesson": "Unit 4 - Lesson 4: Cảm xúc & nghiên cứu"
   },
   {
     "stt": 365,
     "kanji": "専門",
     "han_viet": "CHUYÊN MÔN",
     "hiragana": "せんもん",
-    "meaning": "chuyên môn"
+    "meaning": "chuyên môn",
+    "lesson": "Unit 4 - Lesson 4: Cảm xúc & nghiên cứu"
   },
   {
     "stt": 366,
     "kanji": "研究",
     "han_viet": "NGHIÊN CỨU",
     "hiragana": "けんきゅう",
-    "meaning": "nghiên cứu"
+    "meaning": "nghiên cứu",
+    "lesson": "Unit 4 - Lesson 4: Cảm xúc & nghiên cứu"
   },
   {
     "stt": 367,
     "kanji": "調査",
     "han_viet": "ĐIỀU TRA",
     "hiragana": "ちょうさ",
-    "meaning": "điều tra, tìm hiểu, khảo sát"
+    "meaning": "điều tra, tìm hiểu, khảo sát",
+    "lesson": "Unit 4 - Lesson 4: Cảm xúc & nghiên cứu"
   },
   {
     "stt": 368,
     "kanji": "原因",
     "han_viet": "NGUYÊN NHÂN",
     "hiragana": "げんいん",
-    "meaning": "nguyên nhân"
+    "meaning": "nguyên nhân",
+    "lesson": "Unit 4 - Lesson 4: Cảm xúc & nghiên cứu"
   },
   {
     "stt": 369,
     "kanji": "結果",
     "han_viet": "KẾT QUẢ",
     "hiragana": "けっか",
-    "meaning": "kết quả"
+    "meaning": "kết quả",
+    "lesson": "Unit 4 - Lesson 4: Cảm xúc & nghiên cứu"
   },
   {
     "stt": 370,
     "kanji": "解決",
     "han_viet": "GIẢI QUYẾT",
     "hiragana": "かいけつ",
-    "meaning": "giải quyết"
+    "meaning": "giải quyết",
+    "lesson": "Unit 4 - Lesson 4: Cảm xúc & nghiên cứu"
   },
   {
     "stt": 371,
     "kanji": "確認",
     "han_viet": "XÁC NHẬN",
     "hiragana": "かくにん",
-    "meaning": "xác nhận, kiểm tra lại"
+    "meaning": "xác nhận, kiểm tra lại",
+    "lesson": "Unit 4 - Lesson 4: Cảm xúc & nghiên cứu"
   },
   {
     "stt": 372,
     "kanji": "利用",
     "han_viet": "LỢI DỤNG",
     "hiragana": "りよう",
-    "meaning": "sử dụng, áp dụng, tận dụng"
+    "meaning": "sử dụng, áp dụng, tận dụng",
+    "lesson": "Unit 4 - Lesson 4: Cảm xúc & nghiên cứu"
   },
   {
     "stt": 373,
     "kanji": "理解",
     "han_viet": "LÍ GIẢI",
     "hiragana": "りかい",
-    "meaning": "lý giải, hiểu biết, nắm bắt"
+    "meaning": "lý giải, hiểu biết, nắm bắt",
+    "lesson": "Unit 4 - Lesson 4: Cảm xúc & nghiên cứu"
   },
   {
     "stt": 374,
     "kanji": "発見",
     "han_viet": "PHÁT KIẾN",
     "hiragana": "はっけん",
-    "meaning": "phát hiện"
+    "meaning": "phát hiện",
+    "lesson": "Unit 4 - Lesson 4: Cảm xúc & nghiên cứu"
   },
   {
     "stt": 375,
     "kanji": "発明",
     "han_viet": "PHÁT MINH",
     "hiragana": "はつめい",
-    "meaning": "phát minh"
+    "meaning": "phát minh",
+    "lesson": "Unit 4 - Lesson 4: Cảm xúc & nghiên cứu"
   },
   {
     "stt": 376,
     "kanji": "関係",
     "han_viet": "QUAN HỆ",
     "hiragana": "かんけい",
-    "meaning": "quan hệ"
+    "meaning": "quan hệ",
+    "lesson": "Unit 4 - Lesson 5: Xã hội & quy định"
   },
   {
     "stt": 377,
     "kanji": "団体",
     "han_viet": "ĐOÀN THỂ",
     "hiragana": "だんたい",
-    "meaning": "đoàn thể, tập thể"
+    "meaning": "đoàn thể, tập thể",
+    "lesson": "Unit 4 - Lesson 5: Xã hội & quy định"
   },
   {
     "stt": 378,
     "kanji": "選挙",
     "han_viet": "TUYỂN CỬ",
     "hiragana": "せんきょ",
-    "meaning": "bầu cử"
+    "meaning": "bầu cử",
+    "lesson": "Unit 4 - Lesson 5: Xã hội & quy định"
   },
   {
     "stt": 379,
     "kanji": "税金",
     "han_viet": "THUẾ KIM",
     "hiragana": "ぜいきん",
-    "meaning": "thuế"
+    "meaning": "thuế",
+    "lesson": "Unit 4 - Lesson 5: Xã hội & quy định"
   },
   {
     "stt": 380,
     "kanji": "責任",
     "han_viet": "TRÁCH NHIỆM",
     "hiragana": "せきにん",
-    "meaning": "trách nhiệm"
+    "meaning": "trách nhiệm",
+    "lesson": "Unit 4 - Lesson 5: Xã hội & quy định"
   },
   {
     "stt": 381,
     "kanji": "書類",
     "han_viet": "THƯ LOẠI",
     "hiragana": "しょるい",
-    "meaning": "Hồ sơ, tài liệu"
+    "meaning": "Hồ sơ, tài liệu",
+    "lesson": "Unit 4 - Lesson 5: Xã hội & quy định"
   },
   {
     "stt": 382,
     "kanji": "題名",
     "han_viet": "ĐỀ DANH",
     "hiragana": "だいめい",
-    "meaning": "tiêu đề, tựa đề"
+    "meaning": "tiêu đề, tựa đề",
+    "lesson": "Unit 4 - Lesson 5: Xã hội & quy định"
   },
   {
     "stt": 383,
     "kanji": "条件",
     "han_viet": "ĐIỀU KIỆN",
     "hiragana": "じょうけん",
-    "meaning": "điều kiện"
+    "meaning": "điều kiện",
+    "lesson": "Unit 4 - Lesson 5: Xã hội & quy định"
   },
   {
     "stt": 384,
     "kanji": "締め切り",
     "han_viet": "ĐẾ THIẾT",
     "hiragana": "しめきり",
-    "meaning": "hạn cuối, thời hạn, kì hạn"
+    "meaning": "hạn cuối, thời hạn, kì hạn",
+    "lesson": "Unit 4 - Lesson 5: Xã hội & quy định"
   },
   {
     "stt": 385,
     "kanji": "期間",
     "han_viet": "KÌ GIAN",
     "hiragana": "きかん",
-    "meaning": "thời kỳ, kỳ hạn, giai đoạn"
+    "meaning": "thời kỳ, kỳ hạn, giai đoạn",
+    "lesson": "Unit 4 - Lesson 5: Xã hội & quy định"
   },
   {
     "stt": 386,
     "kanji": "倍",
     "han_viet": "BỘI",
     "hiragana": "ばい",
-    "meaning": "Gấp đôi"
+    "meaning": "Gấp đôi",
+    "lesson": "Unit 4 - Lesson 5: Xã hội & quy định"
   },
   {
     "stt": 387,
     "kanji": "",
     "han_viet": "",
     "hiragana": "くじ",
-    "meaning": "xổ số, rút thăm"
+    "meaning": "xổ số, rút thăm",
+    "lesson": "Unit 4 - Lesson 5: Xã hội & quy định"
   },
   {
     "stt": 388,
     "kanji": "近道",
     "han_viet": "CẬN ĐẠO",
     "hiragana": "ちかみち",
-    "meaning": "đường tắt"
+    "meaning": "đường tắt",
+    "lesson": "Unit 4 - Lesson 5: Xã hội & quy định"
   },
   {
     "stt": 389,
     "kanji": "中心",
     "han_viet": "TRUNG TÂM",
     "hiragana": "ちゅうしん",
-    "meaning": "trung tâm, tập trung"
+    "meaning": "trung tâm, tập trung",
+    "lesson": "Unit 4 - Lesson 5: Xã hội & quy định"
   },
   {
     "stt": 390,
     "kanji": "辺り",
     "han_viet": "BIÊN",
     "hiragana": "あたり",
-    "meaning": "Vùng gần, lân cận, khu vực"
+    "meaning": "Vùng gần, lân cận, khu vực",
+    "lesson": "Unit 4 - Lesson 5: Xã hội & quy định"
   },
   {
     "stt": 391,
     "kanji": "周り",
     "han_viet": "CHU",
     "hiragana": "まわり",
-    "meaning": "xung quanh, vòng quanh"
+    "meaning": "xung quanh, vòng quanh",
+    "lesson": "Unit 4 - Lesson 5: Xã hội & quy định"
   },
   {
     "stt": 392,
     "kanji": "穴",
     "han_viet": "HUYỆT",
     "hiragana": "あな",
-    "meaning": "lỗ"
+    "meaning": "lỗ",
+    "lesson": "Unit 4 - Lesson 5: Xã hội & quy định"
   },
   {
     "stt": 393,
     "kanji": "列",
     "han_viet": "LIỆT",
     "hiragana": "れつ",
-    "meaning": "Hàng, cột"
+    "meaning": "Hàng, cột",
+    "lesson": "Unit 4 - Lesson 5: Xã hội & quy định"
   },
   {
     "stt": 394,
     "kanji": "幅",
     "han_viet": "PHÚC",
     "hiragana": "はば",
-    "meaning": "chiều rộng, phạm vi, khoảng"
+    "meaning": "chiều rộng, phạm vi, khoảng",
+    "lesson": "Unit 4 - Lesson 5: Xã hội & quy định"
   },
   {
     "stt": 395,
     "kanji": "範囲",
     "han_viet": "PHẠM VI",
     "hiragana": "はんい",
-    "meaning": "phạm vi"
+    "meaning": "phạm vi",
+    "lesson": "Unit 4 - Lesson 5: Xã hội & quy định"
   },
   {
     "stt": 396,
     "kanji": "内容",
     "han_viet": "NỘI DUNG",
     "hiragana": "ないよう",
-    "meaning": "nội dung"
+    "meaning": "nội dung",
+    "lesson": "Unit 4 - Lesson 5: Xã hội & quy định"
   },
   {
     "stt": 397,
     "kanji": "中身",
     "han_viet": "TRUNG THÂN",
     "hiragana": "なかみ",
-    "meaning": "bên trong, nội tâm"
+    "meaning": "bên trong, nội tâm",
+    "lesson": "Unit 4 - Lesson 6: Đặc điểm & thế giới"
   },
   {
     "stt": 398,
     "kanji": "特徴",
     "han_viet": "ĐẶC TRƯNG",
     "hiragana": "とくちょう",
-    "meaning": "đặc trưng, đặc tính"
+    "meaning": "đặc trưng, đặc tính",
+    "lesson": "Unit 4 - Lesson 6: Đặc điểm & thế giới"
   },
   {
     "stt": 399,
     "kanji": "普通",
     "han_viet": "PHỔ THÔNG",
     "hiragana": "ふつう",
-    "meaning": "bình thường"
+    "meaning": "bình thường",
+    "lesson": "Unit 4 - Lesson 6: Đặc điểm & thế giới"
   },
   {
     "stt": 400,
     "kanji": "当たり前",
     "han_viet": "ĐƯƠNG TIỀN",
     "hiragana": "あたりまえ",
-    "meaning": "đương nhiên, hiển nhiên"
+    "meaning": "đương nhiên, hiển nhiên",
+    "lesson": "Unit 4 - Lesson 6: Đặc điểm & thế giới"
   },
   {
     "stt": 401,
     "kanji": "偽",
     "han_viet": "NGỤY",
     "hiragana": "にせ",
-    "meaning": "giả"
+    "meaning": "giả",
+    "lesson": "Unit 4 - Lesson 6: Đặc điểm & thế giới"
   },
   {
     "stt": 402,
     "kanji": "別",
     "han_viet": "BIỆT",
     "hiragana": "べつ",
-    "meaning": "Khác, riêng"
+    "meaning": "Khác, riêng",
+    "lesson": "Unit 4 - Lesson 6: Đặc điểm & thế giới"
   },
   {
     "stt": 403,
     "kanji": "国籍",
     "han_viet": "QUỐC TỊCH",
     "hiragana": "こくせき",
-    "meaning": "quốc tịch"
+    "meaning": "quốc tịch",
+    "lesson": "Unit 4 - Lesson 6: Đặc điểm & thế giới"
   },
   {
     "stt": 404,
     "kanji": "東洋",
     "han_viet": "ĐÔNG DƯƠNG",
     "hiragana": "とうよう",
-    "meaning": "phương đông"
+    "meaning": "phương đông",
+    "lesson": "Unit 4 - Lesson 6: Đặc điểm & thế giới"
   },
   {
     "stt": 405,
     "kanji": "西洋",
     "han_viet": "TÂY DƯƠNG",
     "hiragana": "せいよう",
-    "meaning": "phương tây"
+    "meaning": "phương tây",
+    "lesson": "Unit 4 - Lesson 6: Đặc điểm & thế giới"
   },
   {
     "stt": 406,
     "kanji": "国際",
     "han_viet": "QUỐC TẾ",
     "hiragana": "こくさい",
-    "meaning": "quốc tế"
+    "meaning": "quốc tế",
+    "lesson": "Unit 4 - Lesson 6: Đặc điểm & thế giới"
   },
   {
     "stt": 407,
     "kanji": "自然",
     "han_viet": "TỰ NHIÊN",
     "hiragana": "しぜん",
-    "meaning": "tự nhiên, thiên nhiên"
+    "meaning": "tự nhiên, thiên nhiên",
+    "lesson": "Unit 4 - Lesson 6: Đặc điểm & thế giới"
   },
   {
     "stt": 408,
     "kanji": "景色",
     "han_viet": "CẢNH SẮC",
     "hiragana": "けしき",
-    "meaning": "phong cảnh"
+    "meaning": "phong cảnh",
+    "lesson": "Unit 4 - Lesson 6: Đặc điểm & thế giới"
   },
   {
     "stt": 409,
     "kanji": "宗教",
     "han_viet": "TÔNG GIÁO",
     "hiragana": "しゅうきょう",
-    "meaning": "tôn giáo"
+    "meaning": "tôn giáo",
+    "lesson": "Unit 4 - Lesson 6: Đặc điểm & thế giới"
   },
   {
     "stt": 410,
     "kanji": "愛",
     "han_viet": "ÁI",
     "hiragana": "あい",
-    "meaning": "Tình yêu"
+    "meaning": "Tình yêu",
+    "lesson": "Unit 4 - Lesson 6: Đặc điểm & thế giới"
   },
   {
     "stt": 411,
     "kanji": "届く",
     "han_viet": "GIỚI",
     "hiragana": "とどく",
-    "meaning": "được giao đến"
+    "meaning": "được giao đến",
+    "lesson": "Unit 5 - Lesson 1: Động từ tự/tha (5)"
   },
   {
     "stt": 412,
     "kanji": "届ける",
     "han_viet": "GIỚI",
     "hiragana": "とどける",
-    "meaning": "giao đến"
+    "meaning": "giao đến",
+    "lesson": "Unit 5 - Lesson 1: Động từ tự/tha (5)"
   },
   {
     "stt": 413,
     "kanji": "掻く",
     "han_viet": "TAO",
     "hiragana": "かく",
-    "meaning": "gãi"
+    "meaning": "gãi",
+    "lesson": "Unit 5 - Lesson 1: Động từ tự/tha (5)"
   },
   {
     "stt": 414,
     "kanji": "",
     "han_viet": "",
     "hiragana": "つかむ",
-    "meaning": "Nắm bắt"
+    "meaning": "Nắm bắt",
+    "lesson": "Unit 5 - Lesson 1: Động từ tự/tha (5)"
   },
   {
     "stt": 415,
     "kanji": "握る",
     "han_viet": "ÁC",
     "hiragana": "にぎる",
-    "meaning": "nắm chặt, túm, tóm"
+    "meaning": "nắm chặt, túm, tóm",
+    "lesson": "Unit 5 - Lesson 1: Động từ tự/tha (5)"
   },
   {
     "stt": 416,
     "kanji": "抑える",
     "han_viet": "ỨC",
     "hiragana": "おさえる",
-    "meaning": "giữ"
+    "meaning": "giữ",
+    "lesson": "Unit 5 - Lesson 1: Động từ tự/tha (5)"
   },
   {
     "stt": 417,
     "kanji": "近づく",
     "han_viet": "CẬN",
     "hiragana": "ちかづく",
-    "meaning": "lại gần"
+    "meaning": "lại gần",
+    "lesson": "Unit 5 - Lesson 1: Động từ tự/tha (5)"
   },
   {
     "stt": 418,
     "kanji": "近づける",
     "han_viet": "CẬN",
     "hiragana": "ちかづける",
-    "meaning": "mang đến gần"
+    "meaning": "mang đến gần",
+    "lesson": "Unit 5 - Lesson 1: Động từ tự/tha (5)"
   },
   {
     "stt": 419,
     "kanji": "合う",
     "han_viet": "HỢP",
     "hiragana": "あう",
-    "meaning": "gặp"
+    "meaning": "gặp",
+    "lesson": "Unit 5 - Lesson 1: Động từ tự/tha (5)"
   },
   {
     "stt": 420,
     "kanji": "合わせる",
     "han_viet": "HỢP",
     "hiragana": "あわせる",
-    "meaning": "Làm hợp, điều chỉnh"
+    "meaning": "Làm hợp, điều chỉnh",
+    "lesson": "Unit 5 - Lesson 1: Động từ tự/tha (5)"
   },
   {
     "stt": 421,
     "kanji": "当たる",
     "han_viet": "ĐƯƠNG",
     "hiragana": "あたる",
-    "meaning": "trúng"
+    "meaning": "trúng",
+    "lesson": "Unit 5 - Lesson 1: Động từ tự/tha (5)"
   },
   {
     "stt": 422,
     "kanji": "当てる",
     "han_viet": "ĐƯƠNG",
     "hiragana": "あてる",
-    "meaning": "Đánh trúng"
+    "meaning": "Đánh trúng",
+    "lesson": "Unit 5 - Lesson 1: Động từ tự/tha (5)"
   },
   {
     "stt": 423,
     "kanji": "比べる",
     "han_viet": "BỈ",
     "hiragana": "くらべる",
-    "meaning": "so sánh, so với"
+    "meaning": "so sánh, so với",
+    "lesson": "Unit 5 - Lesson 1: Động từ tự/tha (5)"
   },
   {
     "stt": 424,
     "kanji": "似合う",
     "han_viet": "TỰ",
     "hiragana": "にあう",
-    "meaning": "hợp, vừa"
+    "meaning": "hợp, vừa",
+    "lesson": "Unit 5 - Lesson 1: Động từ tự/tha (5)"
   },
   {
     "stt": 425,
     "kanji": "似る",
     "han_viet": "TỰ",
     "hiragana": "にる",
-    "meaning": "giống"
+    "meaning": "giống",
+    "lesson": "Unit 5 - Lesson 1: Động từ tự/tha (5)"
   },
   {
     "stt": 426,
     "kanji": "似せる",
     "han_viet": "TỰ",
     "hiragana": "にせる",
-    "meaning": "bắt chước"
+    "meaning": "bắt chước",
+    "lesson": "Unit 5 - Lesson 1: Động từ tự/tha (5)"
   },
   {
     "stt": 427,
     "kanji": "分かれる",
     "han_viet": "PHÂN",
     "hiragana": "わかれる",
-    "meaning": "được chia ra"
+    "meaning": "được chia ra",
+    "lesson": "Unit 5 - Lesson 1: Động từ tự/tha (5)"
   },
   {
     "stt": 428,
     "kanji": "分ける",
     "han_viet": "PHÂN",
     "hiragana": "わける",
-    "meaning": "chia"
+    "meaning": "chia",
+    "lesson": "Unit 5 - Lesson 1: Động từ tự/tha (5)"
   },
   {
     "stt": 429,
     "kanji": "足す",
     "han_viet": "TÚC",
     "hiragana": "たす",
-    "meaning": "cộng, thêm vào"
+    "meaning": "cộng, thêm vào",
+    "lesson": "Unit 5 - Lesson 1: Động từ tự/tha (5)"
   },
   {
     "stt": 430,
     "kanji": "引く",
     "han_viet": "DẪN",
     "hiragana": "ひく",
-    "meaning": "kéo, trừ"
+    "meaning": "kéo, trừ",
+    "lesson": "Unit 5 - Lesson 1: Động từ tự/tha (5)"
   },
   {
     "stt": 431,
     "kanji": "増える",
     "han_viet": "TĂNG",
     "hiragana": "ふえる",
-    "meaning": "tăng lên"
+    "meaning": "tăng lên",
+    "lesson": "Unit 5 - Lesson 2: Động từ tự/tha (6)"
   },
   {
     "stt": 432,
     "kanji": "増やす",
     "han_viet": "TĂNG",
     "hiragana": "ふやす",
-    "meaning": "làm tăng lên"
+    "meaning": "làm tăng lên",
+    "lesson": "Unit 5 - Lesson 2: Động từ tự/tha (6)"
   },
   {
     "stt": 433,
     "kanji": "減る",
     "han_viet": "GIẢM",
     "hiragana": "へる",
-    "meaning": "giảm xuống"
+    "meaning": "giảm xuống",
+    "lesson": "Unit 5 - Lesson 2: Động từ tự/tha (6)"
   },
   {
     "stt": 434,
     "kanji": "減らす",
     "han_viet": "GIẢM",
     "hiragana": "へらす",
-    "meaning": "làm giảm xuống"
+    "meaning": "làm giảm xuống",
+    "lesson": "Unit 5 - Lesson 2: Động từ tự/tha (6)"
   },
   {
     "stt": 435,
     "kanji": "変わる",
     "han_viet": "BIẾN",
     "hiragana": "かわる",
-    "meaning": "thay đổi"
+    "meaning": "thay đổi",
+    "lesson": "Unit 5 - Lesson 2: Động từ tự/tha (6)"
   },
   {
     "stt": 436,
     "kanji": "変える",
     "han_viet": "BIẾN",
     "hiragana": "かえる",
-    "meaning": "làm thay đổi"
+    "meaning": "làm thay đổi",
+    "lesson": "Unit 5 - Lesson 2: Động từ tự/tha (6)"
   },
   {
     "stt": 437,
     "kanji": "替わる・換わる",
     "han_viet": "THẾ HOÁN",
     "hiragana": "かわる",
-    "meaning": "Thay đổi, thay thế"
+    "meaning": "Thay đổi, thay thế",
+    "lesson": "Unit 5 - Lesson 2: Động từ tự/tha (6)"
   },
   {
     "stt": 438,
     "kanji": "替える・換える",
     "han_viet": "THẾ HOÁN",
     "hiragana": "かえる",
-    "meaning": "Hoán đổi"
+    "meaning": "Hoán đổi",
+    "lesson": "Unit 5 - Lesson 2: Động từ tự/tha (6)"
   },
   {
     "stt": 439,
     "kanji": "返る",
     "han_viet": "PHẢN",
     "hiragana": "かえる",
-    "meaning": "được trả lại"
+    "meaning": "được trả lại",
+    "lesson": "Unit 5 - Lesson 2: Động từ tự/tha (6)"
   },
   {
     "stt": 440,
     "kanji": "返す",
     "han_viet": "PHẢN",
     "hiragana": "かえす",
-    "meaning": "trả lại"
+    "meaning": "trả lại",
+    "lesson": "Unit 5 - Lesson 2: Động từ tự/tha (6)"
   },
   {
     "stt": 441,
     "kanji": "譲る",
     "han_viet": "NHƯỢNG",
     "hiragana": "ゆずる",
-    "meaning": "nhường"
+    "meaning": "nhường",
+    "lesson": "Unit 5 - Lesson 2: Động từ tự/tha (6)"
   },
   {
     "stt": 442,
     "kanji": "助かる",
     "han_viet": "TRỢ",
     "hiragana": "たすかる",
-    "meaning": "được giúp"
+    "meaning": "được giúp",
+    "lesson": "Unit 5 - Lesson 2: Động từ tự/tha (6)"
   },
   {
     "stt": 443,
     "kanji": "助ける",
     "han_viet": "TRỢ",
     "hiragana": "たすける",
-    "meaning": "giúp"
+    "meaning": "giúp",
+    "lesson": "Unit 5 - Lesson 2: Động từ tự/tha (6)"
   },
   {
     "stt": 444,
     "kanji": "",
     "han_viet": "",
     "hiragana": "いじめる",
-    "meaning": "bắt nạt"
+    "meaning": "bắt nạt",
+    "lesson": "Unit 5 - Lesson 2: Động từ tự/tha (6)"
   },
   {
     "stt": 445,
     "kanji": "騙す",
     "han_viet": "PHIẾN",
     "hiragana": "だます",
-    "meaning": "lừa gạt"
+    "meaning": "lừa gạt",
+    "lesson": "Unit 5 - Lesson 2: Động từ tự/tha (6)"
   },
   {
     "stt": 446,
     "kanji": "盗む",
     "han_viet": "",
     "hiragana": "ぬすむ",
-    "meaning": "lấy cắp"
+    "meaning": "lấy cắp",
+    "lesson": "Unit 5 - Lesson 2: Động từ tự/tha (6)"
   },
   {
     "stt": 447,
     "kanji": "刺さる",
     "han_viet": "THỨ",
     "hiragana": "ささる",
-    "meaning": "bị đâm, mắc, hóc"
+    "meaning": "bị đâm, mắc, hóc",
+    "lesson": "Unit 5 - Lesson 2: Động từ tự/tha (6)"
   },
   {
     "stt": 448,
     "kanji": "刺す",
     "han_viet": "THỨ",
     "hiragana": "さす",
-    "meaning": "Đâm, chọc"
+    "meaning": "Đâm, chọc",
+    "lesson": "Unit 5 - Lesson 2: Động từ tự/tha (6)"
   },
   {
     "stt": 449,
     "kanji": "殺す",
     "han_viet": "SÁT",
     "hiragana": "ころす",
-    "meaning": "giết, sát hại"
+    "meaning": "giết, sát hại",
+    "lesson": "Unit 5 - Lesson 2: Động từ tự/tha (6)"
   },
   {
     "stt": 450,
     "kanji": "隠れる",
     "han_viet": "ẨN",
     "hiragana": "かくれる",
-    "meaning": "ẩn náu, trốn"
+    "meaning": "ẩn náu, trốn",
+    "lesson": "Unit 5 - Lesson 2: Động từ tự/tha (6)"
   },
   {
     "stt": 451,
     "kanji": "隠す",
     "han_viet": "ẨN",
     "hiragana": "かくす",
-    "meaning": "che giấu"
+    "meaning": "che giấu",
+    "lesson": "Unit 5 - Lesson 3: Động từ tự/tha (7)"
   },
   {
     "stt": 452,
     "kanji": "埋まる",
     "han_viet": "MAI",
     "hiragana": "うまる",
-    "meaning": "bị chôn"
+    "meaning": "bị chôn",
+    "lesson": "Unit 5 - Lesson 3: Động từ tự/tha (7)"
   },
   {
     "stt": 453,
     "kanji": "埋める",
     "han_viet": "MAI",
     "hiragana": "うめる",
-    "meaning": "chôn"
+    "meaning": "chôn",
+    "lesson": "Unit 5 - Lesson 3: Động từ tự/tha (7)"
   },
   {
     "stt": 454,
     "kanji": "囲む",
     "han_viet": "VI",
     "hiragana": "かこむ",
-    "meaning": "vây quanh"
+    "meaning": "vây quanh",
+    "lesson": "Unit 5 - Lesson 3: Động từ tự/tha (7)"
   },
   {
     "stt": 455,
     "kanji": "詰まる",
     "han_viet": "CẬT",
     "hiragana": "つまる",
-    "meaning": "đầy, chặt"
+    "meaning": "đầy, chặt",
+    "lesson": "Unit 5 - Lesson 3: Động từ tự/tha (7)"
   },
   {
     "stt": 456,
     "kanji": "詰める",
     "han_viet": "CẬT",
     "hiragana": "つめる",
-    "meaning": "đóng gói"
+    "meaning": "đóng gói",
+    "lesson": "Unit 5 - Lesson 3: Động từ tự/tha (7)"
   },
   {
     "stt": 457,
     "kanji": "開く",
     "han_viet": "KHAI",
     "hiragana": "ひらく",
-    "meaning": "mở"
+    "meaning": "mở",
+    "lesson": "Unit 5 - Lesson 3: Động từ tự/tha (7)"
   },
   {
     "stt": 458,
     "kanji": "閉じる",
     "han_viet": "BẾ",
     "hiragana": "とじる",
-    "meaning": "đóng"
+    "meaning": "đóng",
+    "lesson": "Unit 5 - Lesson 3: Động từ tự/tha (7)"
   },
   {
     "stt": 459,
     "kanji": "飛ぶ",
     "han_viet": "PHI",
     "hiragana": "とぶ",
-    "meaning": "bay"
+    "meaning": "bay",
+    "lesson": "Unit 5 - Lesson 3: Động từ tự/tha (7)"
   },
   {
     "stt": 460,
     "kanji": "飛ばす",
     "han_viet": "PHI",
     "hiragana": "とばす",
-    "meaning": "Bắn, phóng"
+    "meaning": "Bắn, phóng",
+    "lesson": "Unit 5 - Lesson 3: Động từ tự/tha (7)"
   },
   {
     "stt": 461,
     "kanji": "振る",
     "han_viet": "CHẤN",
     "hiragana": "ふる",
-    "meaning": "rung, vẫy"
+    "meaning": "rung, vẫy",
+    "lesson": "Unit 5 - Lesson 3: Động từ tự/tha (7)"
   },
   {
     "stt": 462,
     "kanji": "",
     "han_viet": "",
     "hiragana": "めくる",
-    "meaning": "lật lên"
+    "meaning": "lật lên",
+    "lesson": "Unit 5 - Lesson 3: Động từ tự/tha (7)"
   },
   {
     "stt": 463,
     "kanji": "見かける",
     "han_viet": "KIẾN",
     "hiragana": "みかける",
-    "meaning": "tình cờ thấy"
+    "meaning": "tình cờ thấy",
+    "lesson": "Unit 5 - Lesson 3: Động từ tự/tha (7)"
   },
   {
     "stt": 464,
     "kanji": "確かめる",
     "han_viet": "XÁC",
     "hiragana": "たしかめる",
-    "meaning": "Xác nhận, làm cho rõ ràng"
+    "meaning": "Xác nhận, làm cho rõ ràng",
+    "lesson": "Unit 5 - Lesson 3: Động từ tự/tha (7)"
   },
   {
     "stt": 465,
     "kanji": "試す",
     "han_viet": "THÍ",
     "hiragana": "ためす",
-    "meaning": "thử"
+    "meaning": "thử",
+    "lesson": "Unit 5 - Lesson 3: Động từ tự/tha (7)"
   },
   {
     "stt": 466,
     "kanji": "繰り返す",
     "han_viet": "SÀO PHẢN",
     "hiragana": "くりかえす",
-    "meaning": "lặp lại"
+    "meaning": "lặp lại",
+    "lesson": "Unit 5 - Lesson 3: Động từ tự/tha (7)"
   },
   {
     "stt": 467,
     "kanji": "訳す",
     "han_viet": "DỊCH",
     "hiragana": "やくす",
-    "meaning": "dịch"
+    "meaning": "dịch",
+    "lesson": "Unit 5 - Lesson 3: Động từ tự/tha (7)"
   },
   {
     "stt": 468,
     "kanji": "行う",
     "han_viet": "HÀNH",
     "hiragana": "おこなう",
-    "meaning": "tổ chức"
+    "meaning": "tổ chức",
+    "lesson": "Unit 5 - Lesson 3: Động từ tự/tha (7)"
   },
   {
     "stt": 469,
     "kanji": "間違う",
     "han_viet": "GIAN VI",
     "hiragana": "まちがう",
-    "meaning": "bị sai"
+    "meaning": "bị sai",
+    "lesson": "Unit 5 - Lesson 3: Động từ tự/tha (7)"
   },
   {
     "stt": 470,
     "kanji": "間違える",
     "han_viet": "GIAN VI",
     "hiragana": "まちがえる",
-    "meaning": "Nhầm lẫn"
+    "meaning": "Nhầm lẫn",
+    "lesson": "Unit 5 - Lesson 3: Động từ tự/tha (7)"
   },
   {
     "stt": 471,
     "kanji": "許す",
     "han_viet": "HỨA",
     "hiragana": "ゆるす",
-    "meaning": "tha thứ, cho phép"
+    "meaning": "tha thứ, cho phép",
+    "lesson": "Unit 5 - Lesson 4: Động từ tự/tha (8)"
   },
   {
     "stt": 472,
     "kanji": "慣れる",
     "han_viet": "QUÁN",
     "hiragana": "なれる",
-    "meaning": "quen"
+    "meaning": "quen",
+    "lesson": "Unit 5 - Lesson 4: Động từ tự/tha (8)"
   },
   {
     "stt": 473,
     "kanji": "慣らす",
     "han_viet": "QUÁN",
     "hiragana": "ならす",
-    "meaning": "khởi động"
+    "meaning": "khởi động",
+    "lesson": "Unit 5 - Lesson 4: Động từ tự/tha (8)"
   },
   {
     "stt": 474,
     "kanji": "立つ",
     "han_viet": "LẬP",
     "hiragana": "たつ",
-    "meaning": "đứng"
+    "meaning": "đứng",
+    "lesson": "Unit 5 - Lesson 4: Động từ tự/tha (8)"
   },
   {
     "stt": 475,
     "kanji": "立てる",
     "han_viet": "LẬP",
     "hiragana": "たてる",
-    "meaning": "dựng lên"
+    "meaning": "dựng lên",
+    "lesson": "Unit 5 - Lesson 4: Động từ tự/tha (8)"
   },
   {
     "stt": 476,
     "kanji": "建つ",
     "han_viet": "KIẾN",
     "hiragana": "たつ",
-    "meaning": "được xây"
+    "meaning": "được xây",
+    "lesson": "Unit 5 - Lesson 4: Động từ tự/tha (8)"
   },
   {
     "stt": 477,
     "kanji": "建てる",
     "han_viet": "KIẾN",
     "hiragana": "たてる",
-    "meaning": "xây"
+    "meaning": "xây",
+    "lesson": "Unit 5 - Lesson 4: Động từ tự/tha (8)"
   },
   {
     "stt": 478,
     "kanji": "育つ",
     "han_viet": "DỤC",
     "hiragana": "そだつ",
-    "meaning": "được nuôi dạy"
+    "meaning": "được nuôi dạy",
+    "lesson": "Unit 5 - Lesson 4: Động từ tự/tha (8)"
   },
   {
     "stt": 479,
     "kanji": "育てる",
     "han_viet": "DỤC",
     "hiragana": "そだてる",
-    "meaning": "nuôi, dạy"
+    "meaning": "nuôi, dạy",
+    "lesson": "Unit 5 - Lesson 4: Động từ tự/tha (8)"
   },
   {
     "stt": 480,
     "kanji": "生える",
     "han_viet": "SANH",
     "hiragana": "はえる",
-    "meaning": "mọc"
+    "meaning": "mọc",
+    "lesson": "Unit 5 - Lesson 4: Động từ tự/tha (8)"
   },
   {
     "stt": 481,
     "kanji": "生やす",
     "han_viet": "SANH",
     "hiragana": "はやす",
-    "meaning": "Nuôi, trồng"
+    "meaning": "Nuôi, trồng",
+    "lesson": "Unit 5 - Lesson 4: Động từ tự/tha (8)"
   },
   {
     "stt": 482,
     "kanji": "汚れる",
     "han_viet": "Ô",
     "hiragana": "よごれる",
-    "meaning": "bị bẩn"
+    "meaning": "bị bẩn",
+    "lesson": "Unit 5 - Lesson 4: Động từ tự/tha (8)"
   },
   {
     "stt": 483,
     "kanji": "汚す",
     "han_viet": "Ô",
     "hiragana": "よごす",
-    "meaning": "làm bẩn"
+    "meaning": "làm bẩn",
+    "lesson": "Unit 5 - Lesson 4: Động từ tự/tha (8)"
   },
   {
     "stt": 484,
     "kanji": "壊れる",
     "han_viet": "HOẠI",
     "hiragana": "こわれる",
-    "meaning": "bị hỏng"
+    "meaning": "bị hỏng",
+    "lesson": "Unit 5 - Lesson 4: Động từ tự/tha (8)"
   },
   {
     "stt": 485,
     "kanji": "壊す",
     "han_viet": "HOẠI",
     "hiragana": "こわす",
-    "meaning": "làm hỏng"
+    "meaning": "làm hỏng",
+    "lesson": "Unit 5 - Lesson 4: Động từ tự/tha (8)"
   },
   {
     "stt": 486,
     "kanji": "割れる",
     "han_viet": "CÁT",
     "hiragana": "われる",
-    "meaning": "bị vỡ"
+    "meaning": "bị vỡ",
+    "lesson": "Unit 5 - Lesson 4: Động từ tự/tha (8)"
   },
   {
     "stt": 487,
     "kanji": "割る",
     "han_viet": "CÁT",
     "hiragana": "わる",
-    "meaning": "làm vỡ"
+    "meaning": "làm vỡ",
+    "lesson": "Unit 5 - Lesson 4: Động từ tự/tha (8)"
   },
   {
     "stt": 488,
     "kanji": "折れる",
     "han_viet": "CHIẾT",
     "hiragana": "おれる",
-    "meaning": "bị gãy"
+    "meaning": "bị gãy",
+    "lesson": "Unit 5 - Lesson 4: Động từ tự/tha (8)"
   },
   {
     "stt": 489,
     "kanji": "折る",
     "han_viet": "CHIẾT",
     "hiragana": "おる",
-    "meaning": "làm gãy"
+    "meaning": "làm gãy",
+    "lesson": "Unit 5 - Lesson 4: Động từ tự/tha (8)"
   },
   {
     "stt": 490,
     "kanji": "破れる",
     "han_viet": "PHÁ",
     "hiragana": "やぶれる",
-    "meaning": "bị rách"
+    "meaning": "bị rách",
+    "lesson": "Unit 5 - Lesson 4: Động từ tự/tha (8)"
   },
   {
     "stt": 491,
     "kanji": "破る",
     "han_viet": "PHÁ",
     "hiragana": "やぶる",
-    "meaning": "xé rách"
+    "meaning": "xé rách",
+    "lesson": "Unit 5 - Lesson 5: Động từ tự/tha (9)"
   },
   {
     "stt": 492,
     "kanji": "曲がる",
     "han_viet": "KHÚC",
     "hiragana": "まがる",
-    "meaning": "gập, cong"
+    "meaning": "gập, cong",
+    "lesson": "Unit 5 - Lesson 5: Động từ tự/tha (9)"
   },
   {
     "stt": 493,
     "kanji": "曲げる",
     "han_viet": "KHÚC",
     "hiragana": "まげる",
-    "meaning": "bẻ, uốn"
+    "meaning": "bẻ, uốn",
+    "lesson": "Unit 5 - Lesson 5: Động từ tự/tha (9)"
   },
   {
     "stt": 494,
     "kanji": "外れる",
     "han_viet": "NGOẠI",
     "hiragana": "はずれる",
-    "meaning": "bị rời ra, bung tuột ra"
+    "meaning": "bị rời ra, bung tuột ra",
+    "lesson": "Unit 5 - Lesson 5: Động từ tự/tha (9)"
   },
   {
     "stt": 495,
     "kanji": "外す",
     "han_viet": "NGOẠI",
     "hiragana": "はずす",
-    "meaning": "Tháo ra"
+    "meaning": "Tháo ra",
+    "lesson": "Unit 5 - Lesson 5: Động từ tự/tha (9)"
   },
   {
     "stt": 496,
     "kanji": "揺れる",
     "han_viet": "DAO",
     "hiragana": "ゆれる",
-    "meaning": "Rung, lắc, lung lay"
+    "meaning": "Rung, lắc, lung lay",
+    "lesson": "Unit 5 - Lesson 5: Động từ tự/tha (9)"
   },
   {
     "stt": 497,
     "kanji": "揺らす",
     "han_viet": "DAO",
     "hiragana": "ゆらす",
-    "meaning": "đung đưa"
+    "meaning": "đung đưa",
+    "lesson": "Unit 5 - Lesson 5: Động từ tự/tha (9)"
   },
   {
     "stt": 498,
     "kanji": "流れる",
     "han_viet": "LƯU",
     "hiragana": "ながれる",
-    "meaning": "chảy, trôi chảy"
+    "meaning": "chảy, trôi chảy",
+    "lesson": "Unit 5 - Lesson 5: Động từ tự/tha (9)"
   },
   {
     "stt": 499,
     "kanji": "流す",
     "han_viet": "LƯU",
     "hiragana": "ながす",
-    "meaning": "cho chảy"
+    "meaning": "cho chảy",
+    "lesson": "Unit 5 - Lesson 5: Động từ tự/tha (9)"
   },
   {
     "stt": 500,
     "kanji": "濡れる",
     "han_viet": "NHU",
     "hiragana": "ぬれる",
-    "meaning": "bị ướt"
+    "meaning": "bị ướt",
+    "lesson": "Unit 5 - Lesson 5: Động từ tự/tha (9)"
   },
   {
     "stt": 501,
     "kanji": "濡らす",
     "han_viet": "NHU",
     "hiragana": "ぬらす",
-    "meaning": "làm ướt"
+    "meaning": "làm ướt",
+    "lesson": "Unit 5 - Lesson 5: Động từ tự/tha (9)"
   },
   {
     "stt": 502,
     "kanji": "迷う",
     "han_viet": "MÊ",
     "hiragana": "まよう",
-    "meaning": "lạc đường"
+    "meaning": "lạc đường",
+    "lesson": "Unit 5 - Lesson 5: Động từ tự/tha (9)"
   },
   {
     "stt": 503,
     "kanji": "悩む",
     "han_viet": "NÃO",
     "hiragana": "なやむ",
-    "meaning": "băn khoăn, lo lắng"
+    "meaning": "băn khoăn, lo lắng",
+    "lesson": "Unit 5 - Lesson 5: Động từ tự/tha (9)"
   },
   {
     "stt": 504,
     "kanji": "慌てる",
     "han_viet": "HOẢNG",
     "hiragana": "あわてる",
-    "meaning": "vội vàng, hấp tấp"
+    "meaning": "vội vàng, hấp tấp",
+    "lesson": "Unit 5 - Lesson 5: Động từ tự/tha (9)"
   },
   {
     "stt": 505,
     "kanji": "覚める",
     "han_viet": "GIÁC",
     "hiragana": "さめる",
-    "meaning": "thức dậy"
+    "meaning": "thức dậy",
+    "lesson": "Unit 5 - Lesson 5: Động từ tự/tha (9)"
   },
   {
     "stt": 506,
     "kanji": "覚ます",
     "han_viet": "GIÁC",
     "hiragana": "さます",
-    "meaning": "mở mắt, tỉnh"
+    "meaning": "mở mắt, tỉnh",
+    "lesson": "Unit 5 - Lesson 5: Động từ tự/tha (9)"
   },
   {
     "stt": 507,
     "kanji": "眠る",
     "han_viet": "MIÊN",
     "hiragana": "ねむる",
-    "meaning": "ngủ"
+    "meaning": "ngủ",
+    "lesson": "Unit 5 - Lesson 5: Động từ tự/tha (9)"
   },
   {
     "stt": 508,
     "kanji": "祈る",
     "han_viet": "KÌ",
     "hiragana": "いのる",
-    "meaning": "cầu nguyện"
+    "meaning": "cầu nguyện",
+    "lesson": "Unit 5 - Lesson 5: Động từ tự/tha (9)"
   },
   {
     "stt": 509,
     "kanji": "祝う",
     "han_viet": "CHÚC",
     "hiragana": "いわう",
-    "meaning": "Chúc mừng"
+    "meaning": "Chúc mừng",
+    "lesson": "Unit 5 - Lesson 5: Động từ tự/tha (9)"
   },
   {
     "stt": 510,
     "kanji": "感じる",
     "han_viet": "CẢM",
     "hiragana": "かんじる",
-    "meaning": "cảm thấy"
+    "meaning": "cảm thấy",
+    "lesson": "Unit 5 - Lesson 5: Động từ tự/tha (9)"
   },
   {
     "stt": 511,
     "kanji": "",
     "han_viet": "",
     "hiragana": "クラスメート",
-    "meaning": "bạn cùng lớp"
+    "meaning": "bạn cùng lớp",
+    "lesson": "Unit 6 - Lesson 1: Katakana (1)"
   },
   {
     "stt": 512,
     "kanji": "",
     "han_viet": "",
     "hiragana": "グループ",
-    "meaning": "Đội, nhóm"
+    "meaning": "Đội, nhóm",
+    "lesson": "Unit 6 - Lesson 1: Katakana (1)"
   },
   {
     "stt": 513,
     "kanji": "",
     "han_viet": "",
     "hiragana": "チーム",
-    "meaning": "đội"
+    "meaning": "đội",
+    "lesson": "Unit 6 - Lesson 1: Katakana (1)"
   },
   {
     "stt": 514,
     "kanji": "",
     "han_viet": "",
     "hiragana": "プロフェッショナル",
-    "meaning": "chuyên nghiệp"
+    "meaning": "chuyên nghiệp",
+    "lesson": "Unit 6 - Lesson 1: Katakana (1)"
   },
   {
     "stt": 515,
     "kanji": "",
     "han_viet": "",
     "hiragana": "アマチュア",
-    "meaning": "nghiệp dư"
+    "meaning": "nghiệp dư",
+    "lesson": "Unit 6 - Lesson 1: Katakana (1)"
   },
   {
     "stt": 516,
     "kanji": "",
     "han_viet": "",
     "hiragana": "トレーニング",
-    "meaning": "đào tạo, huấn luyện, rèn luyện"
+    "meaning": "đào tạo, huấn luyện, rèn luyện",
+    "lesson": "Unit 6 - Lesson 1: Katakana (1)"
   },
   {
     "stt": 517,
     "kanji": "",
     "han_viet": "",
     "hiragana": "マッサージ",
-    "meaning": "Massage"
+    "meaning": "Massage",
+    "lesson": "Unit 6 - Lesson 1: Katakana (1)"
   },
   {
     "stt": 518,
     "kanji": "",
     "han_viet": "",
     "hiragana": "アドバイス",
-    "meaning": "Lời khuyên"
+    "meaning": "Lời khuyên",
+    "lesson": "Unit 6 - Lesson 1: Katakana (1)"
   },
   {
     "stt": 519,
     "kanji": "",
     "han_viet": "",
     "hiragana": "アイデア",
-    "meaning": "ý tưởng"
+    "meaning": "ý tưởng",
+    "lesson": "Unit 6 - Lesson 1: Katakana (1)"
   },
   {
     "stt": 520,
     "kanji": "",
     "han_viet": "",
     "hiragana": "トップ",
-    "meaning": "Top, vị trí thứ hạng cao nhất"
+    "meaning": "Top, vị trí thứ hạng cao nhất",
+    "lesson": "Unit 6 - Lesson 1: Katakana (1)"
   },
   {
     "stt": 521,
     "kanji": "",
     "han_viet": "",
     "hiragana": "スピード",
-    "meaning": "tốc độ"
+    "meaning": "tốc độ",
+    "lesson": "Unit 6 - Lesson 1: Katakana (1)"
   },
   {
     "stt": 522,
     "kanji": "",
     "han_viet": "",
     "hiragana": "ラッシュ",
-    "meaning": "Giờ cao điểm"
+    "meaning": "Giờ cao điểm",
+    "lesson": "Unit 6 - Lesson 1: Katakana (1)"
   },
   {
     "stt": 523,
     "kanji": "",
     "han_viet": "",
     "hiragana": "バイク",
-    "meaning": "xe máy"
+    "meaning": "xe máy",
+    "lesson": "Unit 6 - Lesson 1: Katakana (1)"
   },
   {
     "stt": 524,
     "kanji": "",
     "han_viet": "",
     "hiragana": "ヘルメット",
-    "meaning": "mũ bảo hiểm"
+    "meaning": "mũ bảo hiểm",
+    "lesson": "Unit 6 - Lesson 1: Katakana (1)"
   },
   {
     "stt": 525,
     "kanji": "",
     "han_viet": "",
     "hiragana": "コンタクトレンズ",
-    "meaning": "Len, kính áp tròng"
+    "meaning": "Len, kính áp tròng",
+    "lesson": "Unit 6 - Lesson 1: Katakana (1)"
   },
   {
     "stt": 526,
     "kanji": "",
     "han_viet": "",
     "hiragana": "ガラス",
-    "meaning": "kính"
+    "meaning": "kính",
+    "lesson": "Unit 6 - Lesson 1: Katakana (1)"
   },
   {
     "stt": 527,
     "kanji": "",
     "han_viet": "",
     "hiragana": "プラスチック",
-    "meaning": "nhựa"
+    "meaning": "nhựa",
+    "lesson": "Unit 6 - Lesson 1: Katakana (1)"
   },
   {
     "stt": 528,
     "kanji": "",
     "han_viet": "",
     "hiragana": "ベランダ",
-    "meaning": "ban công"
+    "meaning": "ban công",
+    "lesson": "Unit 6 - Lesson 1: Katakana (1)"
   },
   {
     "stt": 529,
     "kanji": "",
     "han_viet": "",
     "hiragana": "ペット",
-    "meaning": "thú cưng"
+    "meaning": "thú cưng",
+    "lesson": "Unit 6 - Lesson 1: Katakana (1)"
   },
   {
     "stt": 530,
     "kanji": "",
     "han_viet": "",
     "hiragana": "ベンチ",
-    "meaning": "ghế dài"
+    "meaning": "ghế dài",
+    "lesson": "Unit 6 - Lesson 1: Katakana (1)"
   },
   {
     "stt": 531,
     "kanji": "",
     "han_viet": "",
     "hiragana": "デザイン",
-    "meaning": "thiết kế"
+    "meaning": "thiết kế",
+    "lesson": "Unit 6 - Lesson 2: Katakana (2)"
   },
   {
     "stt": 532,
     "kanji": "",
     "han_viet": "",
     "hiragana": "バーゲンセール",
-    "meaning": "sale"
+    "meaning": "sale",
+    "lesson": "Unit 6 - Lesson 2: Katakana (2)"
   },
   {
     "stt": 533,
     "kanji": "",
     "han_viet": "",
     "hiragana": "パート",
-    "meaning": "làm thêm"
+    "meaning": "làm thêm",
+    "lesson": "Unit 6 - Lesson 2: Katakana (2)"
   },
   {
     "stt": 534,
     "kanji": "",
     "han_viet": "",
     "hiragana": "コンビニエンスストア",
-    "meaning": "cửa hàng tiện ích"
+    "meaning": "cửa hàng tiện ích",
+    "lesson": "Unit 6 - Lesson 2: Katakana (2)"
   },
   {
     "stt": 535,
     "kanji": "",
     "han_viet": "",
     "hiragana": "レジ",
-    "meaning": "máy tính tiền"
+    "meaning": "máy tính tiền",
+    "lesson": "Unit 6 - Lesson 2: Katakana (2)"
   },
   {
     "stt": 536,
     "kanji": "",
     "han_viet": "",
     "hiragana": "レシート",
-    "meaning": "hóa đơn"
+    "meaning": "hóa đơn",
+    "lesson": "Unit 6 - Lesson 2: Katakana (2)"
   },
   {
     "stt": 537,
     "kanji": "",
     "han_viet": "",
     "hiragana": "インスタント",
-    "meaning": "ăn liền"
+    "meaning": "ăn liền",
+    "lesson": "Unit 6 - Lesson 2: Katakana (2)"
   },
   {
     "stt": 538,
     "kanji": "",
     "han_viet": "",
     "hiragana": "ファストフード",
-    "meaning": "đồ ăn nhanh"
+    "meaning": "đồ ăn nhanh",
+    "lesson": "Unit 6 - Lesson 2: Katakana (2)"
   },
   {
     "stt": 539,
     "kanji": "",
     "han_viet": "",
     "hiragana": "フルーツ",
-    "meaning": "trái cây"
+    "meaning": "trái cây",
+    "lesson": "Unit 6 - Lesson 2: Katakana (2)"
   },
   {
     "stt": 540,
     "kanji": "",
     "han_viet": "",
     "hiragana": "デザート",
-    "meaning": "tráng miệng"
+    "meaning": "tráng miệng",
+    "lesson": "Unit 6 - Lesson 2: Katakana (2)"
   },
   {
     "stt": 541,
     "kanji": "",
     "han_viet": "",
     "hiragana": "インターネット",
-    "meaning": "internet"
+    "meaning": "internet",
+    "lesson": "Unit 6 - Lesson 2: Katakana (2)"
   },
   {
     "stt": 542,
     "kanji": "",
     "han_viet": "",
     "hiragana": "チャイム",
-    "meaning": "chuông"
+    "meaning": "chuông",
+    "lesson": "Unit 6 - Lesson 2: Katakana (2)"
   },
   {
     "stt": 543,
     "kanji": "",
     "han_viet": "",
     "hiragana": "アナウンス",
-    "meaning": "thông báo, MC"
+    "meaning": "thông báo, MC",
+    "lesson": "Unit 6 - Lesson 2: Katakana (2)"
   },
   {
     "stt": 544,
     "kanji": "",
     "han_viet": "",
     "hiragana": "メッセージ",
-    "meaning": "tin nhắn, lời nhắn"
+    "meaning": "tin nhắn, lời nhắn",
+    "lesson": "Unit 6 - Lesson 2: Katakana (2)"
   },
   {
     "stt": 545,
     "kanji": "",
     "han_viet": "",
     "hiragana": "パンフレット",
-    "meaning": "tờ rơi"
+    "meaning": "tờ rơi",
+    "lesson": "Unit 6 - Lesson 2: Katakana (2)"
   },
   {
     "stt": 546,
     "kanji": "",
     "han_viet": "",
     "hiragana": "カード",
-    "meaning": "Thẻ, card"
+    "meaning": "Thẻ, card",
+    "lesson": "Unit 6 - Lesson 2: Katakana (2)"
   },
   {
     "stt": 547,
     "kanji": "",
     "han_viet": "",
     "hiragana": "インタビュー",
-    "meaning": "phỏng vấn"
+    "meaning": "phỏng vấn",
+    "lesson": "Unit 6 - Lesson 2: Katakana (2)"
   },
   {
     "stt": 548,
     "kanji": "",
     "han_viet": "",
     "hiragana": "アンケート",
-    "meaning": "Phiếu điều tra, tờ câu hỏi"
+    "meaning": "Phiếu điều tra, tờ câu hỏi",
+    "lesson": "Unit 6 - Lesson 2: Katakana (2)"
   },
   {
     "stt": 549,
     "kanji": "",
     "han_viet": "",
     "hiragana": "データ",
-    "meaning": "dữ liệu"
+    "meaning": "dữ liệu",
+    "lesson": "Unit 6 - Lesson 2: Katakana (2)"
   },
   {
     "stt": 550,
     "kanji": "",
     "han_viet": "",
     "hiragana": "パーセント",
-    "meaning": "phần trăm"
+    "meaning": "phần trăm",
+    "lesson": "Unit 6 - Lesson 2: Katakana (2)"
   },
   {
     "stt": 551,
     "kanji": "濃い",
     "han_viet": "NÙNG",
     "hiragana": "こい",
-    "meaning": "đậm, đặc"
+    "meaning": "đậm, đặc",
+    "lesson": "Unit 6 - Lesson 3: Tính từ (1)"
   },
   {
     "stt": 552,
     "kanji": "薄い",
     "han_viet": "BẠC",
     "hiragana": "うすい",
-    "meaning": "mỏng, nhạt"
+    "meaning": "mỏng, nhạt",
+    "lesson": "Unit 6 - Lesson 3: Tính từ (1)"
   },
   {
     "stt": 553,
     "kanji": "酸っぱい",
     "han_viet": "TOAN",
     "hiragana": "すっぱい",
-    "meaning": "chua"
+    "meaning": "chua",
+    "lesson": "Unit 6 - Lesson 3: Tính từ (1)"
   },
   {
     "stt": 554,
     "kanji": "臭い",
     "han_viet": "XÚ",
     "hiragana": "くさい",
-    "meaning": "Hôi, thối"
+    "meaning": "Hôi, thối",
+    "lesson": "Unit 6 - Lesson 3: Tính từ (1)"
   },
   {
     "stt": 555,
     "kanji": "",
     "han_viet": "",
     "hiragana": "おかしい",
-    "meaning": "lạ"
+    "meaning": "lạ",
+    "lesson": "Unit 6 - Lesson 3: Tính từ (1)"
   },
   {
     "stt": 556,
     "kanji": "",
     "han_viet": "",
     "hiragana": "かっこいい",
-    "meaning": "bảnh bao, ngầu"
+    "meaning": "bảnh bao, ngầu",
+    "lesson": "Unit 6 - Lesson 3: Tính từ (1)"
   },
   {
     "stt": 557,
     "kanji": "",
     "han_viet": "",
     "hiragana": "うまい",
-    "meaning": "ngon"
+    "meaning": "ngon",
+    "lesson": "Unit 6 - Lesson 3: Tính từ (1)"
   },
   {
     "stt": 558,
     "kanji": "親しい",
     "han_viet": "THÂN",
     "hiragana": "したしい",
-    "meaning": "thân thiết"
+    "meaning": "thân thiết",
+    "lesson": "Unit 6 - Lesson 3: Tính từ (1)"
   },
   {
     "stt": 559,
     "kanji": "詳しい",
     "han_viet": "TƯỜNG",
     "hiragana": "くわしい",
-    "meaning": "chi tiết"
+    "meaning": "chi tiết",
+    "lesson": "Unit 6 - Lesson 3: Tính từ (1)"
   },
   {
     "stt": 560,
     "kanji": "細かい",
     "han_viet": "TẾ",
     "hiragana": "こまかい",
-    "meaning": "Chi tiết, tỉ mỉ"
+    "meaning": "Chi tiết, tỉ mỉ",
+    "lesson": "Unit 6 - Lesson 3: Tính từ (1)"
   },
   {
     "stt": 561,
     "kanji": "浅い",
     "han_viet": "THIỂN",
     "hiragana": "あさい",
-    "meaning": "Nông cạn"
+    "meaning": "Nông cạn",
+    "lesson": "Unit 6 - Lesson 3: Tính từ (1)"
   },
   {
     "stt": 562,
     "kanji": "固い・硬い",
     "han_viet": "CỐ NGẠNH",
     "hiragana": "かたい",
-    "meaning": "cứng"
+    "meaning": "cứng",
+    "lesson": "Unit 6 - Lesson 3: Tính từ (1)"
   },
   {
     "stt": 563,
     "kanji": "",
     "han_viet": "",
     "hiragana": "ぬるい",
-    "meaning": "nguội"
+    "meaning": "nguội",
+    "lesson": "Unit 6 - Lesson 3: Tính từ (1)"
   },
   {
     "stt": 564,
     "kanji": "",
     "han_viet": "",
     "hiragana": "まぶしい",
-    "meaning": "chói"
+    "meaning": "chói",
+    "lesson": "Unit 6 - Lesson 3: Tính từ (1)"
   },
   {
     "stt": 565,
     "kanji": "蒸し暑い",
     "han_viet": "CHƯNG THỬ",
     "hiragana": "むしあつい",
-    "meaning": "Nóng nực, oi bức"
+    "meaning": "Nóng nực, oi bức",
+    "lesson": "Unit 6 - Lesson 3: Tính từ (1)"
   },
   {
     "stt": 566,
     "kanji": "清潔な",
     "han_viet": "THANH KHIẾT",
     "hiragana": "せいけつな",
-    "meaning": "sạch sẽ, thanh khiết"
+    "meaning": "sạch sẽ, thanh khiết",
+    "lesson": "Unit 6 - Lesson 3: Tính từ (1)"
   },
   {
     "stt": 567,
     "kanji": "新鮮な",
     "han_viet": "TÂN TIÊN",
     "hiragana": "しんせんな",
-    "meaning": "Tươi mới"
+    "meaning": "Tươi mới",
+    "lesson": "Unit 6 - Lesson 3: Tính từ (1)"
   },
   {
     "stt": 568,
     "kanji": "豊かな",
     "han_viet": "PHONG",
     "hiragana": "ゆたかな",
-    "meaning": "giàu có, đầy đủ, phong phú"
+    "meaning": "giàu có, đầy đủ, phong phú",
+    "lesson": "Unit 6 - Lesson 3: Tính từ (1)"
   },
   {
     "stt": 569,
     "kanji": "立派な",
     "han_viet": "LẬP PHÁI",
     "hiragana": "りっぱな",
-    "meaning": "Đẹp tuyệt vời, tuyệt hảo"
+    "meaning": "Đẹp tuyệt vời, tuyệt hảo",
+    "lesson": "Unit 6 - Lesson 3: Tính từ (1)"
   },
   {
     "stt": 570,
     "kanji": "正確な",
     "han_viet": "CHÁNH XÁC",
     "hiragana": "せいかくな",
-    "meaning": "chính xác"
+    "meaning": "chính xác",
+    "lesson": "Unit 6 - Lesson 3: Tính từ (1)"
   },
   {
     "stt": 571,
     "kanji": "確かな",
     "han_viet": "XÁC",
     "hiragana": "たしかな",
-    "meaning": "Chính xác, chắc là, nếu không nhầm"
+    "meaning": "Chính xác, chắc là, nếu không nhầm",
+    "lesson": "Unit 6 - Lesson 4: Tính từ (2)"
   },
   {
     "stt": 572,
     "kanji": "重要な",
     "han_viet": "TRỌNG YẾU",
     "hiragana": "じゅうような",
-    "meaning": "quan trọng"
+    "meaning": "quan trọng",
+    "lesson": "Unit 6 - Lesson 4: Tính từ (2)"
   },
   {
     "stt": 573,
     "kanji": "必要な",
     "han_viet": "TẤT YẾU",
     "hiragana": "ひつような",
-    "meaning": "cần thiết"
+    "meaning": "cần thiết",
+    "lesson": "Unit 6 - Lesson 4: Tính từ (2)"
   },
   {
     "stt": 574,
     "kanji": "",
     "han_viet": "",
     "hiragana": "もったいない",
-    "meaning": "lãng phí"
+    "meaning": "lãng phí",
+    "lesson": "Unit 6 - Lesson 4: Tính từ (2)"
   },
   {
     "stt": 575,
     "kanji": "",
     "han_viet": "",
     "hiragana": "すごい",
-    "meaning": "ghê, siêu"
+    "meaning": "ghê, siêu",
+    "lesson": "Unit 6 - Lesson 4: Tính từ (2)"
   },
   {
     "stt": 576,
     "kanji": "",
     "han_viet": "",
     "hiragana": "ひどい",
-    "meaning": "tồi tệ"
+    "meaning": "tồi tệ",
+    "lesson": "Unit 6 - Lesson 4: Tính từ (2)"
   },
   {
     "stt": 577,
     "kanji": "激しい",
     "han_viet": "KÍCH",
     "hiragana": "はげしい",
-    "meaning": "mãnh liệt, khắc nghiệt, khốc liệt"
+    "meaning": "mãnh liệt, khắc nghiệt, khốc liệt",
+    "lesson": "Unit 6 - Lesson 4: Tính từ (2)"
   },
   {
     "stt": 578,
     "kanji": "",
     "han_viet": "",
     "hiragana": "そっくりな",
-    "meaning": "giống hệt"
+    "meaning": "giống hệt",
+    "lesson": "Unit 6 - Lesson 4: Tính từ (2)"
   },
   {
     "stt": 579,
     "kanji": "急な",
     "han_viet": "CẤP",
     "hiragana": "きゅうな",
-    "meaning": "Gấp, vội"
+    "meaning": "Gấp, vội",
+    "lesson": "Unit 6 - Lesson 4: Tính từ (2)"
   },
   {
     "stt": 580,
     "kanji": "適当",
     "han_viet": "THÍCH ĐƯƠNG",
     "hiragana": "てきとう",
-    "meaning": "phù hợp"
+    "meaning": "phù hợp",
+    "lesson": "Unit 6 - Lesson 4: Tính từ (2)"
   },
   {
     "stt": 581,
     "kanji": "特別な",
     "han_viet": "ĐẶC BIỆT",
     "hiragana": "とくべつな",
-    "meaning": "đặc biệt"
+    "meaning": "đặc biệt",
+    "lesson": "Unit 6 - Lesson 4: Tính từ (2)"
   },
   {
     "stt": 582,
     "kanji": "完全な",
     "han_viet": "HOÀN TOÀN",
     "hiragana": "かんぜんな",
-    "meaning": "toàn bộ"
+    "meaning": "toàn bộ",
+    "lesson": "Unit 6 - Lesson 4: Tính từ (2)"
   },
   {
     "stt": 583,
     "kanji": "盛んな",
     "han_viet": "THỊNH",
     "hiragana": "さかんな",
-    "meaning": "thịnh vượng"
+    "meaning": "thịnh vượng",
+    "lesson": "Unit 6 - Lesson 4: Tính từ (2)"
   },
   {
     "stt": 584,
     "kanji": "様々な",
     "han_viet": "DẠNG",
     "hiragana": "さまざまな",
-    "meaning": "đa dạng"
+    "meaning": "đa dạng",
+    "lesson": "Unit 6 - Lesson 4: Tính từ (2)"
   },
   {
     "stt": 585,
     "kanji": "可能な",
     "han_viet": "KHẢ NĂNG",
     "hiragana": "かのうな",
-    "meaning": "khả thi"
+    "meaning": "khả thi",
+    "lesson": "Unit 6 - Lesson 4: Tính từ (2)"
   },
   {
     "stt": 586,
     "kanji": "不可能な",
     "han_viet": "BẤT KHẢ NĂNG",
     "hiragana": "ふかのうな",
-    "meaning": "bất khả thi"
+    "meaning": "bất khả thi",
+    "lesson": "Unit 6 - Lesson 4: Tính từ (2)"
   },
   {
     "stt": 587,
     "kanji": "基本的な",
     "han_viet": "CƠ BỔN ĐÍCH",
     "hiragana": "きほんてきな",
-    "meaning": "cơ bản"
+    "meaning": "cơ bản",
+    "lesson": "Unit 6 - Lesson 4: Tính từ (2)"
   },
   {
     "stt": 588,
     "kanji": "国際的な",
     "han_viet": "QUỐC TẾ ĐÍCH",
     "hiragana": "こくさいてきな",
-    "meaning": "tính quốc tế"
+    "meaning": "tính quốc tế",
+    "lesson": "Unit 6 - Lesson 4: Tính từ (2)"
   },
   {
     "stt": 589,
     "kanji": "",
     "han_viet": "",
     "hiragana": "ばらばらな",
-    "meaning": "Rải rác, bừa bãi"
+    "meaning": "Rải rác, bừa bãi",
+    "lesson": "Unit 6 - Lesson 4: Tính từ (2)"
   },
   {
     "stt": 590,
     "kanji": "",
     "han_viet": "",
     "hiragana": "ぼろぼろな",
-    "meaning": "rách nát, te tua"
+    "meaning": "rách nát, te tua",
+    "lesson": "Unit 6 - Lesson 4: Tính từ (2)"
   },
   {
     "stt": 591,
     "kanji": "非常に",
     "han_viet": "PHI THƯỜNG",
     "hiragana": "ひじょうに",
-    "meaning": "Rất"
+    "meaning": "Rất",
+    "lesson": "Unit 7 - Lesson 1: Phó từ mức độ & thời gian"
   },
   {
     "stt": 592,
     "kanji": "大変",
     "han_viet": "ĐẠI BIẾN",
     "hiragana": "たいへん",
-    "meaning": "rất nhiều"
+    "meaning": "rất nhiều",
+    "lesson": "Unit 7 - Lesson 1: Phó từ mức độ & thời gian"
   },
   {
     "stt": 593,
     "kanji": "",
     "han_viet": "",
     "hiragana": "ほとんど",
-    "meaning": "Hầu như, hầu hết"
+    "meaning": "Hầu như, hầu hết",
+    "lesson": "Unit 7 - Lesson 1: Phó từ mức độ & thời gian"
   },
   {
     "stt": 594,
     "kanji": "大体",
     "han_viet": "ĐẠI THỂ",
     "hiragana": "だいたい",
-    "meaning": "Đại khái"
+    "meaning": "Đại khái",
+    "lesson": "Unit 7 - Lesson 1: Phó từ mức độ & thời gian"
   },
   {
     "stt": 595,
     "kanji": "",
     "han_viet": "",
     "hiragana": "かなり",
-    "meaning": "khá"
+    "meaning": "khá",
+    "lesson": "Unit 7 - Lesson 1: Phó từ mức độ & thời gian"
   },
   {
     "stt": 596,
     "kanji": "",
     "han_viet": "",
     "hiragana": "ずいぶん",
-    "meaning": "khá là, tương đối"
+    "meaning": "khá là, tương đối",
+    "lesson": "Unit 7 - Lesson 1: Phó từ mức độ & thời gian"
   },
   {
     "stt": 597,
     "kanji": "",
     "han_viet": "",
     "hiragana": "けっこう",
-    "meaning": "Khá"
+    "meaning": "Khá",
+    "lesson": "Unit 7 - Lesson 1: Phó từ mức độ & thời gian"
   },
   {
     "stt": 598,
     "kanji": "大分",
     "han_viet": "ĐẠI PHÂN",
     "hiragana": "だいぶ",
-    "meaning": "chủ yếu, khá"
+    "meaning": "chủ yếu, khá",
+    "lesson": "Unit 7 - Lesson 1: Phó từ mức độ & thời gian"
   },
   {
     "stt": 599,
     "kanji": "",
     "han_viet": "",
     "hiragana": "もっと",
-    "meaning": "Hơn nữa"
+    "meaning": "Hơn nữa",
+    "lesson": "Unit 7 - Lesson 1: Phó từ mức độ & thời gian"
   },
   {
     "stt": 600,
     "kanji": "",
     "han_viet": "",
     "hiragana": "すっかり",
-    "meaning": "Hoàn toàn, toàn bộ"
+    "meaning": "Hoàn toàn, toàn bộ",
+    "lesson": "Unit 7 - Lesson 1: Phó từ mức độ & thời gian"
   },
   {
     "stt": 601,
     "kanji": "",
     "han_viet": "",
     "hiragana": "いっぱい",
-    "meaning": "đầy"
+    "meaning": "đầy",
+    "lesson": "Unit 7 - Lesson 1: Phó từ mức độ & thời gian"
   },
   {
     "stt": 602,
     "kanji": "",
     "han_viet": "",
     "hiragana": "ぎりぎり",
-    "meaning": "gần, sát nút"
+    "meaning": "gần, sát nút",
+    "lesson": "Unit 7 - Lesson 1: Phó từ mức độ & thời gian"
   },
   {
     "stt": 603,
     "kanji": "",
     "han_viet": "",
     "hiragana": "ぴったり",
-    "meaning": "vừa vặn, đúng"
+    "meaning": "vừa vặn, đúng",
+    "lesson": "Unit 7 - Lesson 1: Phó từ mức độ & thời gian"
   },
   {
     "stt": 604,
     "kanji": "",
     "han_viet": "",
     "hiragana": "たいてい",
-    "meaning": "thường thì, hầu như"
+    "meaning": "thường thì, hầu như",
+    "lesson": "Unit 7 - Lesson 1: Phó từ mức độ & thời gian"
   },
   {
     "stt": 605,
     "kanji": "同時に",
     "han_viet": "ĐỒNG THÌ",
     "hiragana": "どうじに",
-    "meaning": "cùng lúc"
+    "meaning": "cùng lúc",
+    "lesson": "Unit 7 - Lesson 1: Phó từ mức độ & thời gian"
   },
   {
     "stt": 606,
     "kanji": "前もって",
     "han_viet": "TIỀN",
     "hiragana": "まえもって",
-    "meaning": "trước"
+    "meaning": "trước",
+    "lesson": "Unit 7 - Lesson 1: Phó từ mức độ & thời gian"
   },
   {
     "stt": 607,
     "kanji": "",
     "han_viet": "",
     "hiragana": "すぐ",
-    "meaning": "ngay lập tức"
+    "meaning": "ngay lập tức",
+    "lesson": "Unit 7 - Lesson 1: Phó từ mức độ & thời gian"
   },
   {
     "stt": 608,
     "kanji": "",
     "han_viet": "",
     "hiragana": "もうすぐ",
-    "meaning": "sắp"
+    "meaning": "sắp",
+    "lesson": "Unit 7 - Lesson 1: Phó từ mức độ & thời gian"
   },
   {
     "stt": 609,
     "kanji": "突然",
     "han_viet": "ĐỘT NHIÊN",
     "hiragana": "とつぜん",
-    "meaning": "đột nhiên"
+    "meaning": "đột nhiên",
+    "lesson": "Unit 7 - Lesson 1: Phó từ mức độ & thời gian"
   },
   {
     "stt": 610,
     "kanji": "あっという間に",
     "han_viet": "GIAN",
     "hiragana": "あっというまに",
-    "meaning": "loáng một cái"
+    "meaning": "loáng một cái",
+    "lesson": "Unit 7 - Lesson 1: Phó từ mức độ & thời gian"
   },
   {
     "stt": 611,
     "kanji": "いつの間にか",
     "han_viet": "GIAN",
     "hiragana": "いつのまにか",
-    "meaning": "lúc nào không biết"
+    "meaning": "lúc nào không biết",
+    "lesson": "Unit 7 - Lesson 2: Phó từ diễn biến"
   },
   {
     "stt": 612,
     "kanji": "",
     "han_viet": "",
     "hiragana": "しばらく",
-    "meaning": "một chút"
+    "meaning": "một chút",
+    "lesson": "Unit 7 - Lesson 2: Phó từ diễn biến"
   },
   {
     "stt": 613,
     "kanji": "",
     "han_viet": "",
     "hiragana": "ずっと",
-    "meaning": "suốt, nhiều"
+    "meaning": "suốt, nhiều",
+    "lesson": "Unit 7 - Lesson 2: Phó từ diễn biến"
   },
   {
     "stt": 614,
     "kanji": "相変わらず",
     "han_viet": "TƯƠNG BIẾN",
     "hiragana": "あいかわらず",
-    "meaning": "như mọi khi"
+    "meaning": "như mọi khi",
+    "lesson": "Unit 7 - Lesson 2: Phó từ diễn biến"
   },
   {
     "stt": 615,
     "kanji": "次々に",
     "han_viet": "THỨ",
     "hiragana": "つぎつぎに",
-    "meaning": "lần lượt"
+    "meaning": "lần lượt",
+    "lesson": "Unit 7 - Lesson 2: Phó từ diễn biến"
   },
   {
     "stt": 616,
     "kanji": "",
     "han_viet": "",
     "hiragana": "どんどん",
-    "meaning": "dần dần"
+    "meaning": "dần dần",
+    "lesson": "Unit 7 - Lesson 2: Phó từ diễn biến"
   },
   {
     "stt": 617,
     "kanji": "",
     "han_viet": "",
     "hiragana": "ますます",
-    "meaning": "càng ngày càng"
+    "meaning": "càng ngày càng",
+    "lesson": "Unit 7 - Lesson 2: Phó từ diễn biến"
   },
   {
     "stt": 618,
     "kanji": "",
     "han_viet": "",
     "hiragana": "やっと",
-    "meaning": "cuối cùng, vừa đủ"
+    "meaning": "cuối cùng, vừa đủ",
+    "lesson": "Unit 7 - Lesson 2: Phó từ diễn biến"
   },
   {
     "stt": 619,
     "kanji": "",
     "han_viet": "",
     "hiragana": "とうとう",
-    "meaning": "cuối cùng"
+    "meaning": "cuối cùng",
+    "lesson": "Unit 7 - Lesson 2: Phó từ diễn biến"
   },
   {
     "stt": 620,
     "kanji": "",
     "han_viet": "",
     "hiragana": "ついに",
-    "meaning": "cuối cùng, sau cùng"
+    "meaning": "cuối cùng, sau cùng",
+    "lesson": "Unit 7 - Lesson 2: Phó từ diễn biến"
   },
   {
     "stt": 621,
     "kanji": "",
     "han_viet": "",
     "hiragana": "もちろん",
-    "meaning": "tất nhiên"
+    "meaning": "tất nhiên",
+    "lesson": "Unit 7 - Lesson 2: Phó từ diễn biến"
   },
   {
     "stt": 622,
     "kanji": "",
     "han_viet": "",
     "hiragana": "やはり",
-    "meaning": "như dự tính"
+    "meaning": "như dự tính",
+    "lesson": "Unit 7 - Lesson 2: Phó từ diễn biến"
   },
   {
     "stt": 623,
     "kanji": "",
     "han_viet": "",
     "hiragana": "きっと",
-    "meaning": "nhất định, chắc chắn"
+    "meaning": "nhất định, chắc chắn",
+    "lesson": "Unit 7 - Lesson 2: Phó từ diễn biến"
   },
   {
     "stt": 624,
     "kanji": "",
     "han_viet": "",
     "hiragana": "ぜひ",
-    "meaning": "bằng mọi giá, nhất định"
+    "meaning": "bằng mọi giá, nhất định",
+    "lesson": "Unit 7 - Lesson 2: Phó từ diễn biến"
   },
   {
     "stt": 625,
     "kanji": "",
     "han_viet": "",
     "hiragana": "なるべく",
-    "meaning": "Trong khả năng có thể"
+    "meaning": "Trong khả năng có thể",
+    "lesson": "Unit 7 - Lesson 3: Phó từ thái độ & cảm giác"
   },
   {
     "stt": 626,
     "kanji": "案外",
     "han_viet": "ÁN NGOẠI",
     "hiragana": "あんがい",
-    "meaning": "không ngờ đến"
+    "meaning": "không ngờ đến",
+    "lesson": "Unit 7 - Lesson 3: Phó từ thái độ & cảm giác"
   },
   {
     "stt": 627,
     "kanji": "",
     "han_viet": "",
     "hiragana": "もしかすると",
-    "meaning": "có lẽ"
+    "meaning": "có lẽ",
+    "lesson": "Unit 7 - Lesson 3: Phó từ thái độ & cảm giác"
   },
   {
     "stt": 628,
     "kanji": "",
     "han_viet": "",
     "hiragana": "まさか",
-    "meaning": "không ngờ"
+    "meaning": "không ngờ",
+    "lesson": "Unit 7 - Lesson 3: Phó từ thái độ & cảm giác"
   },
   {
     "stt": 629,
     "kanji": "",
     "han_viet": "",
     "hiragana": "うっかり",
-    "meaning": "Lơ đễnh, không để ý"
+    "meaning": "Lơ đễnh, không để ý",
+    "lesson": "Unit 7 - Lesson 3: Phó từ thái độ & cảm giác"
   },
   {
     "stt": 630,
     "kanji": "",
     "han_viet": "",
     "hiragana": "つい",
-    "meaning": "Lỡ"
+    "meaning": "Lỡ",
+    "lesson": "Unit 7 - Lesson 3: Phó từ thái độ & cảm giác"
   },
   {
     "stt": 631,
     "kanji": "思わず",
     "han_viet": "TƯ",
     "hiragana": "おもわず",
-    "meaning": "Bất chợt, không ngờ đến"
+    "meaning": "Bất chợt, không ngờ đến",
+    "lesson": "Unit 7 - Lesson 3: Phó từ thái độ & cảm giác"
   },
   {
     "stt": 632,
     "kanji": "",
     "han_viet": "",
     "hiragana": "ほっと",
-    "meaning": "yên tâm"
+    "meaning": "yên tâm",
+    "lesson": "Unit 7 - Lesson 3: Phó từ thái độ & cảm giác"
   },
   {
     "stt": 633,
     "kanji": "",
     "han_viet": "",
     "hiragana": "いらいら",
-    "meaning": "nóng ruột"
+    "meaning": "nóng ruột",
+    "lesson": "Unit 7 - Lesson 3: Phó từ thái độ & cảm giác"
   },
   {
     "stt": 634,
     "kanji": "",
     "han_viet": "",
     "hiragana": "のんびり",
-    "meaning": "Thong thả"
+    "meaning": "Thong thả",
+    "lesson": "Unit 7 - Lesson 3: Phó từ thái độ & cảm giác"
   },
   {
     "stt": 635,
     "kanji": "実は",
     "han_viet": "THỰC",
     "hiragana": "じつは",
-    "meaning": "thực tế là"
+    "meaning": "thực tế là",
+    "lesson": "Unit 7 - Lesson 3: Phó từ thái độ & cảm giác"
   },
   {
     "stt": 636,
     "kanji": "読書",
     "han_viet": "ĐỘC THƯ",
     "hiragana": "どくしょ",
-    "meaning": "đọc viết"
+    "meaning": "đọc viết",
+    "lesson": "Unit 8 - Lesson 1: Nghệ thuật, y tế, cuộc đời"
   },
   {
     "stt": 637,
     "kanji": "演奏",
     "han_viet": "DIỄN TẤU",
     "hiragana": "えんそう",
-    "meaning": "biểu diễn"
+    "meaning": "biểu diễn",
+    "lesson": "Unit 8 - Lesson 1: Nghệ thuật, y tế, cuộc đời"
   },
   {
     "stt": 638,
     "kanji": "芸術",
     "han_viet": "VÂN THUẬT",
     "hiragana": "げいじゅつ",
-    "meaning": "nghệ thuật"
+    "meaning": "nghệ thuật",
+    "lesson": "Unit 8 - Lesson 1: Nghệ thuật, y tế, cuộc đời"
   },
   {
     "stt": 639,
     "kanji": "検査",
     "han_viet": "KIỂM TRA",
     "hiragana": "けんさ",
-    "meaning": "kiểm tra"
+    "meaning": "kiểm tra",
+    "lesson": "Unit 8 - Lesson 1: Nghệ thuật, y tế, cuộc đời"
   },
   {
     "stt": 640,
     "kanji": "血液",
     "han_viet": "HUYẾT DỊCH",
     "hiragana": "けつえき",
-    "meaning": "máu"
+    "meaning": "máu",
+    "lesson": "Unit 8 - Lesson 1: Nghệ thuật, y tế, cuộc đời"
   },
   {
     "stt": 641,
     "kanji": "治療",
     "han_viet": "TRỊ LIỆU",
     "hiragana": "ちりょう",
-    "meaning": "trị liệu"
+    "meaning": "trị liệu",
+    "lesson": "Unit 8 - Lesson 1: Nghệ thuật, y tế, cuộc đời"
   },
   {
     "stt": 642,
     "kanji": "症状",
     "han_viet": "CHỨNG TRẠNG",
     "hiragana": "しょうじょう",
-    "meaning": "triệu chứng"
+    "meaning": "triệu chứng",
+    "lesson": "Unit 8 - Lesson 1: Nghệ thuật, y tế, cuộc đời"
   },
   {
     "stt": 643,
     "kanji": "予防",
     "han_viet": "DỰ PHÒNG",
     "hiragana": "よぼう",
-    "meaning": "dự phòng"
+    "meaning": "dự phòng",
+    "lesson": "Unit 8 - Lesson 1: Nghệ thuật, y tế, cuộc đời"
   },
   {
     "stt": 644,
     "kanji": "栄養",
     "han_viet": "VINH DƯỠNG",
     "hiragana": "えいよう",
-    "meaning": "dinh dưỡng"
+    "meaning": "dinh dưỡng",
+    "lesson": "Unit 8 - Lesson 1: Nghệ thuật, y tế, cuộc đời"
   },
   {
     "stt": 645,
     "kanji": "手術",
     "han_viet": "THỦ THUẬT",
     "hiragana": "しゅじゅつ",
-    "meaning": "phẫu thuật"
+    "meaning": "phẫu thuật",
+    "lesson": "Unit 8 - Lesson 1: Nghệ thuật, y tế, cuộc đời"
   },
   {
     "stt": 646,
     "kanji": "死亡",
     "han_viet": "TỬ VONG",
     "hiragana": "しぼう",
-    "meaning": "tử vong"
+    "meaning": "tử vong",
+    "lesson": "Unit 8 - Lesson 1: Nghệ thuật, y tế, cuộc đời"
   },
   {
     "stt": 647,
     "kanji": "命",
     "han_viet": "MỆNH",
     "hiragana": "いのち",
-    "meaning": "sinh mạng"
+    "meaning": "sinh mạng",
+    "lesson": "Unit 8 - Lesson 1: Nghệ thuật, y tế, cuộc đời"
   },
   {
     "stt": 648,
     "kanji": "一生",
     "han_viet": "NHẤT SANH",
     "hiragana": "いっしょう",
-    "meaning": "suốt đời"
+    "meaning": "suốt đời",
+    "lesson": "Unit 8 - Lesson 1: Nghệ thuật, y tế, cuộc đời"
   },
   {
     "stt": 649,
     "kanji": "誤解",
     "han_viet": "NGỘ GIẢI",
     "hiragana": "ごかい",
-    "meaning": "hiểu nhầm"
+    "meaning": "hiểu nhầm",
+    "lesson": "Unit 8 - Lesson 1: Nghệ thuật, y tế, cuộc đời"
   },
   {
     "stt": 650,
     "kanji": "後悔",
     "han_viet": "HẬU HỐI",
     "hiragana": "こうかい",
-    "meaning": "hối hận"
+    "meaning": "hối hận",
+    "lesson": "Unit 8 - Lesson 1: Nghệ thuật, y tế, cuộc đời"
   },
   {
     "stt": 651,
     "kanji": "訳",
     "han_viet": "DỊCH",
     "hiragana": "わけ",
-    "meaning": "lý do"
+    "meaning": "lý do",
+    "lesson": "Unit 8 - Lesson 2: Thái độ, tình huống"
   },
   {
     "stt": 652,
     "kanji": "態度",
     "han_viet": "THÁI ĐỘ",
     "hiragana": "たいど",
-    "meaning": "thái độ"
+    "meaning": "thái độ",
+    "lesson": "Unit 8 - Lesson 2: Thái độ, tình huống"
   },
   {
     "stt": 653,
     "kanji": "癖",
     "han_viet": "PHÍCH",
     "hiragana": "くせ",
-    "meaning": "thói quen"
+    "meaning": "thói quen",
+    "lesson": "Unit 8 - Lesson 2: Thái độ, tình huống"
   },
   {
     "stt": 654,
     "kanji": "礼儀",
     "han_viet": "LỄ NGHI",
     "hiragana": "れいぎ",
-    "meaning": "lễ nghĩa"
+    "meaning": "lễ nghĩa",
+    "lesson": "Unit 8 - Lesson 2: Thái độ, tình huống"
   },
   {
     "stt": 655,
     "kanji": "文句",
     "han_viet": "VĂN CÚ",
     "hiragana": "もんく",
-    "meaning": "phàn nàn"
+    "meaning": "phàn nàn",
+    "lesson": "Unit 8 - Lesson 2: Thái độ, tình huống"
   },
   {
     "stt": 656,
     "kanji": "表情",
     "han_viet": "BIỂU TÌNH",
     "hiragana": "ひょうじょう",
-    "meaning": "Vẻ mặt, thần thái"
+    "meaning": "Vẻ mặt, thần thái",
+    "lesson": "Unit 8 - Lesson 2: Thái độ, tình huống"
   },
   {
     "stt": 657,
     "kanji": "表面",
     "han_viet": "BIỂU DIỆN",
     "hiragana": "ひょうめん",
-    "meaning": "bề mặt"
+    "meaning": "bề mặt",
+    "lesson": "Unit 8 - Lesson 2: Thái độ, tình huống"
   },
   {
     "stt": 658,
     "kanji": "禁煙",
     "han_viet": "CẤM YÊN",
     "hiragana": "きんえん",
-    "meaning": "cấm hút thuốc"
+    "meaning": "cấm hút thuốc",
+    "lesson": "Unit 8 - Lesson 2: Thái độ, tình huống"
   },
   {
     "stt": 659,
     "kanji": "禁止",
     "han_viet": "CẤM CHỈ",
     "hiragana": "きんし",
-    "meaning": "cấm chỉ"
+    "meaning": "cấm chỉ",
+    "lesson": "Unit 8 - Lesson 2: Thái độ, tình huống"
   },
   {
     "stt": 660,
     "kanji": "完成",
     "han_viet": "HOÀN THÀNH",
     "hiragana": "かんせい",
-    "meaning": "hoàn thành"
+    "meaning": "hoàn thành",
+    "lesson": "Unit 8 - Lesson 2: Thái độ, tình huống"
   },
   {
     "stt": 661,
     "kanji": "課題",
     "han_viet": "KHÓA ĐỀ",
     "hiragana": "かだい",
-    "meaning": "chủ đề"
+    "meaning": "chủ đề",
+    "lesson": "Unit 8 - Lesson 2: Thái độ, tình huống"
   },
   {
     "stt": 662,
     "kanji": "例外",
     "han_viet": "LỆ NGOẠI",
     "hiragana": "れいがい",
-    "meaning": "ngoại lệ"
+    "meaning": "ngoại lệ",
+    "lesson": "Unit 8 - Lesson 2: Thái độ, tình huống"
   },
   {
     "stt": 663,
     "kanji": "基本",
     "han_viet": "CƠ BỔN",
     "hiragana": "きほん",
-    "meaning": "cơ bản"
+    "meaning": "cơ bản",
+    "lesson": "Unit 8 - Lesson 2: Thái độ, tình huống"
   },
   {
     "stt": 664,
     "kanji": "記録",
     "han_viet": "KÍ LỤC",
     "hiragana": "きろく",
-    "meaning": "Kỉ lục"
+    "meaning": "Kỉ lục",
+    "lesson": "Unit 8 - Lesson 2: Thái độ, tình huống"
   },
   {
     "stt": 665,
     "kanji": "状態",
     "han_viet": "TRẠNG THÁI",
     "hiragana": "じょうたい",
-    "meaning": "trạng thái"
+    "meaning": "trạng thái",
+    "lesson": "Unit 8 - Lesson 2: Thái độ, tình huống"
   },
   {
     "stt": 666,
     "kanji": "出来事",
     "han_viet": "XUẤT LAI SỰ",
     "hiragana": "できごと",
-    "meaning": "sự kiện"
+    "meaning": "sự kiện",
+    "lesson": "Unit 8 - Lesson 2: Thái độ, tình huống"
   },
   {
     "stt": 667,
     "kanji": "場面",
     "han_viet": "TRÀNG DIỆN",
     "hiragana": "ばめん",
-    "meaning": "hiện trường"
+    "meaning": "hiện trường",
+    "lesson": "Unit 8 - Lesson 2: Thái độ, tình huống"
   },
   {
     "stt": 668,
     "kanji": "機会",
     "han_viet": "KI HỘI",
     "hiragana": "きかい",
-    "meaning": "cơ hội"
+    "meaning": "cơ hội",
+    "lesson": "Unit 8 - Lesson 2: Thái độ, tình huống"
   },
   {
     "stt": 669,
     "kanji": "距離",
     "han_viet": "CỰ LI",
     "hiragana": "きょり",
-    "meaning": "khoảng cách"
+    "meaning": "khoảng cách",
+    "lesson": "Unit 8 - Lesson 2: Thái độ, tình huống"
   },
   {
     "stt": 670,
     "kanji": "提案",
     "han_viet": "ĐỀ ÁN",
     "hiragana": "ていあん",
-    "meaning": "đề xuất"
+    "meaning": "đề xuất",
+    "lesson": "Unit 8 - Lesson 2: Thái độ, tình huống"
   },
   {
     "stt": 671,
     "kanji": "やり取り",
     "han_viet": "THỦ",
     "hiragana": "やりとり",
-    "meaning": "trao đổi, làm việc"
+    "meaning": "trao đổi, làm việc",
+    "lesson": "Unit 8 - Lesson 3: Năng lực & thủ tục"
   },
   {
     "stt": 672,
     "kanji": "知識",
     "han_viet": "TRI THỨC",
     "hiragana": "ちしき",
-    "meaning": "kiến thức"
+    "meaning": "kiến thức",
+    "lesson": "Unit 8 - Lesson 3: Năng lực & thủ tục"
   },
   {
     "stt": 673,
     "kanji": "実力",
     "han_viet": "THỰC LỰC",
     "hiragana": "じつりょく",
-    "meaning": "thực lực"
+    "meaning": "thực lực",
+    "lesson": "Unit 8 - Lesson 3: Năng lực & thủ tục"
   },
   {
     "stt": 674,
     "kanji": "手段",
     "han_viet": "THỦ ĐOẠN",
     "hiragana": "しゅだん",
-    "meaning": "cách thức, thủ đoạn"
+    "meaning": "cách thức, thủ đoạn",
+    "lesson": "Unit 8 - Lesson 3: Năng lực & thủ tục"
   },
   {
     "stt": 675,
     "kanji": "代表",
     "han_viet": "ĐẠI BIỂU",
     "hiragana": "だいひょう",
-    "meaning": "đại biểu"
+    "meaning": "đại biểu",
+    "lesson": "Unit 8 - Lesson 3: Năng lực & thủ tục"
   },
   {
     "stt": 676,
     "kanji": "影響",
     "han_viet": "ẢNH HƯỞNG",
     "hiragana": "えいきょう",
-    "meaning": "ảnh hưởng"
+    "meaning": "ảnh hưởng",
+    "lesson": "Unit 8 - Lesson 3: Năng lực & thủ tục"
   },
   {
     "stt": 677,
     "kanji": "効果",
     "han_viet": "HIỆU QUẢ",
     "hiragana": "こうか",
-    "meaning": "hiệu quả"
+    "meaning": "hiệu quả",
+    "lesson": "Unit 8 - Lesson 3: Năng lực & thủ tục"
   },
   {
     "stt": 678,
     "kanji": "印象",
     "han_viet": "ẤN TƯỢNG",
     "hiragana": "いんしょう",
-    "meaning": "ấn tượng"
+    "meaning": "ấn tượng",
+    "lesson": "Unit 8 - Lesson 3: Năng lực & thủ tục"
   },
   {
     "stt": 679,
     "kanji": "印",
     "han_viet": "ẤN",
     "hiragana": "しるし",
-    "meaning": "dấu, dấu hiệu"
+    "meaning": "dấu, dấu hiệu",
+    "lesson": "Unit 8 - Lesson 3: Năng lực & thủ tục"
   },
   {
     "stt": 680,
     "kanji": "合図",
     "han_viet": "HỢP ĐỒ",
     "hiragana": "あいず",
-    "meaning": "ám hiệu"
+    "meaning": "ám hiệu",
+    "lesson": "Unit 8 - Lesson 3: Năng lực & thủ tục"
   },
   {
     "stt": 681,
     "kanji": "共通",
     "han_viet": "CỘNG THÔNG",
     "hiragana": "きょうつう",
-    "meaning": "chung"
+    "meaning": "chung",
+    "lesson": "Unit 8 - Lesson 3: Năng lực & thủ tục"
   },
   {
     "stt": 682,
     "kanji": "協調",
     "han_viet": "HIỆP ĐIỀU",
     "hiragana": "きょうちょう",
-    "meaning": "nhấn mạnh"
+    "meaning": "nhấn mạnh",
+    "lesson": "Unit 8 - Lesson 3: Năng lực & thủ tục"
   },
   {
     "stt": 683,
     "kanji": "省略",
     "han_viet": "TỈNH LƯỢC",
     "hiragana": "しょうりゃく",
-    "meaning": "lược bỏ, rút gọn"
+    "meaning": "lược bỏ, rút gọn",
+    "lesson": "Unit 8 - Lesson 3: Năng lực & thủ tục"
   },
   {
     "stt": 684,
     "kanji": "挑戦",
     "han_viet": "THIỂU CHIẾN",
     "hiragana": "ちょうせん",
-    "meaning": "thử thách"
+    "meaning": "thử thách",
+    "lesson": "Unit 8 - Lesson 3: Năng lực & thủ tục"
   },
   {
     "stt": 685,
     "kanji": "やる気",
     "han_viet": "KHÍ",
     "hiragana": "やるき",
-    "meaning": "động lực"
+    "meaning": "động lực",
+    "lesson": "Unit 8 - Lesson 3: Năng lực & thủ tục"
   },
   {
     "stt": 686,
     "kanji": "勇気",
     "han_viet": "DŨNG KHÍ",
     "hiragana": "ゆうき",
-    "meaning": "dũng cảm, dũng khí"
+    "meaning": "dũng cảm, dũng khí",
+    "lesson": "Unit 8 - Lesson 3: Năng lực & thủ tục"
   },
   {
     "stt": 687,
     "kanji": "資格",
     "han_viet": "TƯ CÁCH",
     "hiragana": "しかく",
-    "meaning": "bằng cấp, tư cách"
+    "meaning": "bằng cấp, tư cách",
+    "lesson": "Unit 8 - Lesson 3: Năng lực & thủ tục"
   },
   {
     "stt": 688,
     "kanji": "申請",
     "han_viet": "THÂN THỈNH",
     "hiragana": "しんせい",
-    "meaning": "đăng ký, yêu cầu"
+    "meaning": "đăng ký, yêu cầu",
+    "lesson": "Unit 8 - Lesson 3: Năng lực & thủ tục"
   },
   {
     "stt": 689,
     "kanji": "本人",
     "han_viet": "BỔN NHÂN",
     "hiragana": "ほんにん",
-    "meaning": "Người ủy thác"
+    "meaning": "Người ủy thác",
+    "lesson": "Unit 8 - Lesson 3: Năng lực & thủ tục"
   },
   {
     "stt": 690,
     "kanji": "契約",
     "han_viet": "KHẾ ƯỚC",
     "hiragana": "けいやく",
-    "meaning": "hợp đồng"
+    "meaning": "hợp đồng",
+    "lesson": "Unit 8 - Lesson 3: Năng lực & thủ tục"
   },
   {
     "stt": 691,
     "kanji": "証明",
     "han_viet": "CHỨNG MINH",
     "hiragana": "しょうめい",
-    "meaning": "chứng minh"
+    "meaning": "chứng minh",
+    "lesson": "Unit 8 - Lesson 4: Giấy tờ, môi trường, kinh doanh"
   },
   {
     "stt": 692,
     "kanji": "変更",
     "han_viet": "BIẾN CANH",
     "hiragana": "へんこう",
-    "meaning": "thay đổi"
+    "meaning": "thay đổi",
+    "lesson": "Unit 8 - Lesson 4: Giấy tờ, môi trường, kinh doanh"
   },
   {
     "stt": 693,
     "kanji": "保存",
     "han_viet": "BẢO TỒN",
     "hiragana": "ほぞん",
-    "meaning": "bảo tồn"
+    "meaning": "bảo tồn",
+    "lesson": "Unit 8 - Lesson 4: Giấy tờ, môi trường, kinh doanh"
   },
   {
     "stt": 694,
     "kanji": "保護",
     "han_viet": "BẢO HỘ",
     "hiragana": "ほご",
-    "meaning": "bảo vệ, bảo hộ"
+    "meaning": "bảo vệ, bảo hộ",
+    "lesson": "Unit 8 - Lesson 4: Giấy tờ, môi trường, kinh doanh"
   },
   {
     "stt": 695,
     "kanji": "環境",
     "han_viet": "HOÀN CẢNH",
     "hiragana": "かんきょう",
-    "meaning": "môi trường"
+    "meaning": "môi trường",
+    "lesson": "Unit 8 - Lesson 4: Giấy tờ, môi trường, kinh doanh"
   },
   {
     "stt": 696,
     "kanji": "資源",
     "han_viet": "TƯ NGUYÊN",
     "hiragana": "しげん",
-    "meaning": "tài nguyên"
+    "meaning": "tài nguyên",
+    "lesson": "Unit 8 - Lesson 4: Giấy tờ, môi trường, kinh doanh"
   },
   {
     "stt": 697,
     "kanji": "不足",
     "han_viet": "BẤT TÚC",
     "hiragana": "ふそく",
-    "meaning": "thiếu"
+    "meaning": "thiếu",
+    "lesson": "Unit 8 - Lesson 4: Giấy tờ, môi trường, kinh doanh"
   },
   {
     "stt": 698,
     "kanji": "平均",
     "han_viet": "BÌNH QUÂN",
     "hiragana": "へいきん",
-    "meaning": "trung bình"
+    "meaning": "trung bình",
+    "lesson": "Unit 8 - Lesson 4: Giấy tờ, môi trường, kinh doanh"
   },
   {
     "stt": 699,
     "kanji": "割合",
     "han_viet": "CÁT HỢP",
     "hiragana": "わりあい",
-    "meaning": "tỷ lệ"
+    "meaning": "tỷ lệ",
+    "lesson": "Unit 8 - Lesson 4: Giấy tờ, môi trường, kinh doanh"
   },
   {
     "stt": 700,
     "kanji": "商売",
     "han_viet": "THƯƠNG MẠI",
     "hiragana": "しょうばい",
-    "meaning": "kinh doanh, buôn bán"
+    "meaning": "kinh doanh, buôn bán",
+    "lesson": "Unit 8 - Lesson 4: Giấy tờ, môi trường, kinh doanh"
   },
   {
     "stt": 701,
     "kanji": "商品",
     "han_viet": "THƯƠNG PHẨM",
     "hiragana": "しょうひん",
-    "meaning": "sản phẩm"
+    "meaning": "sản phẩm",
+    "lesson": "Unit 8 - Lesson 4: Giấy tờ, môi trường, kinh doanh"
   },
   {
     "stt": 702,
     "kanji": "質",
     "han_viet": "CHẤT",
     "hiragana": "しつ",
-    "meaning": "chất"
+    "meaning": "chất",
+    "lesson": "Unit 8 - Lesson 4: Giấy tờ, môi trường, kinh doanh"
   },
   {
     "stt": 703,
     "kanji": "型",
     "han_viet": "HÌNH",
     "hiragana": "かた",
-    "meaning": "Khuôn, mẫu"
+    "meaning": "Khuôn, mẫu",
+    "lesson": "Unit 8 - Lesson 4: Giấy tờ, môi trường, kinh doanh"
   },
   {
     "stt": 704,
     "kanji": "生産",
     "han_viet": "SANH SẢN",
     "hiragana": "せいさん",
-    "meaning": "sản xuất"
+    "meaning": "sản xuất",
+    "lesson": "Unit 8 - Lesson 5: Kinh tế & xã hội"
   },
   {
     "stt": 705,
     "kanji": "消費",
     "han_viet": "TIÊU PHÍ",
     "hiragana": "しょうひ",
-    "meaning": "tiêu dùng, tiêu thụ"
+    "meaning": "tiêu dùng, tiêu thụ",
+    "lesson": "Unit 8 - Lesson 5: Kinh tế & xã hội"
   },
   {
     "stt": 706,
     "kanji": "物価",
     "han_viet": "VẬT GIÁ",
     "hiragana": "ぶっか",
-    "meaning": "giá cả, vật giá"
+    "meaning": "giá cả, vật giá",
+    "lesson": "Unit 8 - Lesson 5: Kinh tế & xã hội"
   },
   {
     "stt": 707,
     "kanji": "倒産",
     "han_viet": "ĐẢO SẢN",
     "hiragana": "とうさん",
-    "meaning": "phá sản"
+    "meaning": "phá sản",
+    "lesson": "Unit 8 - Lesson 5: Kinh tế & xã hội"
   },
   {
     "stt": 708,
     "kanji": "携帯",
     "han_viet": "HUỀ ĐỚI",
     "hiragana": "けいたい",
-    "meaning": "Điện thoại di động; di động"
+    "meaning": "Điện thoại di động; di động",
+    "lesson": "Unit 8 - Lesson 5: Kinh tế & xã hội"
   },
   {
     "stt": 709,
     "kanji": "現代",
     "han_viet": "HIỆN ĐẠI",
     "hiragana": "げんだい",
-    "meaning": "hiện tại"
+    "meaning": "hiện tại",
+    "lesson": "Unit 8 - Lesson 5: Kinh tế & xã hội"
   },
   {
     "stt": 710,
     "kanji": "世紀",
     "han_viet": "THẾ KỈ",
     "hiragana": "せいき",
-    "meaning": "thế kỷ"
+    "meaning": "thế kỷ",
+    "lesson": "Unit 8 - Lesson 5: Kinh tế & xã hội"
   },
   {
     "stt": 711,
     "kanji": "文化",
     "han_viet": "VĂN HÓA",
     "hiragana": "ぶんか",
-    "meaning": "văn hóa"
+    "meaning": "văn hóa",
+    "lesson": "Unit 8 - Lesson 5: Kinh tế & xã hội"
   },
   {
     "stt": 712,
     "kanji": "都市",
     "han_viet": "ĐÔ THỊ",
     "hiragana": "とし",
-    "meaning": "thành phố"
+    "meaning": "thành phố",
+    "lesson": "Unit 8 - Lesson 5: Kinh tế & xã hội"
   },
   {
     "stt": 713,
     "kanji": "地方",
     "han_viet": "ĐỊA PHƯƠNG",
     "hiragana": "ちほう",
-    "meaning": "địa phương"
+    "meaning": "địa phương",
+    "lesson": "Unit 8 - Lesson 5: Kinh tế & xã hội"
   },
   {
     "stt": 714,
     "kanji": "戦争",
     "han_viet": "CHIẾN TRANH",
     "hiragana": "せんそう",
-    "meaning": "chiến tranh"
+    "meaning": "chiến tranh",
+    "lesson": "Unit 8 - Lesson 5: Kinh tế & xã hội"
   },
   {
     "stt": 715,
     "kanji": "平和",
     "han_viet": "BÌNH HÒA",
     "hiragana": "へいわ",
-    "meaning": "hòa bình"
+    "meaning": "hòa bình",
+    "lesson": "Unit 8 - Lesson 5: Kinh tế & xã hội"
   },
   {
     "stt": 716,
     "kanji": "上る",
     "han_viet": "THƯỢNG",
     "hiragana": "のぼる",
-    "meaning": "leo lên"
+    "meaning": "leo lên",
+    "lesson": "Unit 9 - Lesson 1: Động từ di chuyển & cho nhận"
   },
   {
     "stt": 717,
     "kanji": "下る",
     "han_viet": "HẠ",
     "hiragana": "くだる",
-    "meaning": "đi xuống"
+    "meaning": "đi xuống",
+    "lesson": "Unit 9 - Lesson 1: Động từ di chuyển & cho nhận"
   },
   {
     "stt": 718,
     "kanji": "進む",
     "han_viet": "TIẾN",
     "hiragana": "すすむ",
-    "meaning": "Tiến lên"
+    "meaning": "Tiến lên",
+    "lesson": "Unit 9 - Lesson 1: Động từ di chuyển & cho nhận"
   },
   {
     "stt": 719,
     "kanji": "進める",
     "han_viet": "TIẾN",
     "hiragana": "すすめる",
-    "meaning": "Thúc đẩy, xúc tiến"
+    "meaning": "Thúc đẩy, xúc tiến",
+    "lesson": "Unit 9 - Lesson 1: Động từ di chuyển & cho nhận"
   },
   {
     "stt": 720,
     "kanji": "通る",
     "han_viet": "THÔNG",
     "hiragana": "とおる",
-    "meaning": "thông qua, đi qua"
+    "meaning": "thông qua, đi qua",
+    "lesson": "Unit 9 - Lesson 1: Động từ di chuyển & cho nhận"
   },
   {
     "stt": 721,
     "kanji": "通す",
     "han_viet": "THÔNG",
     "hiragana": "とおす",
-    "meaning": "xuyên qua, thông qua"
+    "meaning": "xuyên qua, thông qua",
+    "lesson": "Unit 9 - Lesson 1: Động từ di chuyển & cho nhận"
   },
   {
     "stt": 722,
     "kanji": "超える・越える",
     "han_viet": "SIÊU VIỆT",
     "hiragana": "こえる",
-    "meaning": "vượt quá"
+    "meaning": "vượt quá",
+    "lesson": "Unit 9 - Lesson 1: Động từ di chuyển & cho nhận"
   },
   {
     "stt": 723,
     "kanji": "過ぎる",
     "han_viet": "QUÁ",
     "hiragana": "すぎる",
-    "meaning": "quá, đi qua"
+    "meaning": "quá, đi qua",
+    "lesson": "Unit 9 - Lesson 1: Động từ di chuyển & cho nhận"
   },
   {
     "stt": 724,
     "kanji": "過ごす",
     "han_viet": "QUÁ",
     "hiragana": "すごす",
-    "meaning": "Trải qua"
+    "meaning": "Trải qua",
+    "lesson": "Unit 9 - Lesson 1: Động từ di chuyển & cho nhận"
   },
   {
     "stt": 725,
     "kanji": "移る",
     "han_viet": "DI",
     "hiragana": "うつる",
-    "meaning": "di chuyển"
+    "meaning": "di chuyển",
+    "lesson": "Unit 9 - Lesson 1: Động từ di chuyển & cho nhận"
   },
   {
     "stt": 726,
     "kanji": "移す",
     "han_viet": "DI",
     "hiragana": "うつす",
-    "meaning": "chuyển"
+    "meaning": "chuyển",
+    "lesson": "Unit 9 - Lesson 1: Động từ di chuyển & cho nhận"
   },
   {
     "stt": 727,
     "kanji": "連れる",
     "han_viet": "LIÊN",
     "hiragana": "つれる",
-    "meaning": "Dẫn, dắt"
+    "meaning": "Dẫn, dắt",
+    "lesson": "Unit 9 - Lesson 1: Động từ di chuyển & cho nhận"
   },
   {
     "stt": 728,
     "kanji": "寄る",
     "han_viet": "KÍ",
     "hiragana": "よる",
-    "meaning": "ghé sát, lại gần"
+    "meaning": "ghé sát, lại gần",
+    "lesson": "Unit 9 - Lesson 1: Động từ di chuyển & cho nhận"
   },
   {
     "stt": 729,
     "kanji": "寄せる",
     "han_viet": "KÍ",
     "hiragana": "よせる",
-    "meaning": "Dựa vào, dời sang một bên"
+    "meaning": "Dựa vào, dời sang một bên",
+    "lesson": "Unit 9 - Lesson 1: Động từ di chuyển & cho nhận"
   },
   {
     "stt": 730,
     "kanji": "与える",
     "han_viet": "DỮ",
     "hiragana": "あたえる",
-    "meaning": "trao, cung cấp"
+    "meaning": "trao, cung cấp",
+    "lesson": "Unit 9 - Lesson 1: Động từ di chuyển & cho nhận"
   },
   {
     "stt": 731,
     "kanji": "得る",
     "han_viet": "ĐẮC",
     "hiragana": "える",
-    "meaning": "Thu được, lĩnh hội"
+    "meaning": "Thu được, lĩnh hội",
+    "lesson": "Unit 9 - Lesson 1: Động từ di chuyển & cho nhận"
   },
   {
     "stt": 732,
     "kanji": "向く",
     "han_viet": "HƯỚNG",
     "hiragana": "むく",
-    "meaning": "hướng, đối diện"
+    "meaning": "hướng, đối diện",
+    "lesson": "Unit 9 - Lesson 1: Động từ di chuyển & cho nhận"
   },
   {
     "stt": 733,
     "kanji": "向ける",
     "han_viet": "HƯỚNG",
     "hiragana": "むける",
-    "meaning": "hướng đến, quay"
+    "meaning": "hướng đến, quay",
+    "lesson": "Unit 9 - Lesson 1: Động từ di chuyển & cho nhận"
   },
   {
     "stt": 734,
     "kanji": "勧める",
     "han_viet": "KHUYẾN",
     "hiragana": "すすめる",
-    "meaning": "rủ, mời, gợi ý"
+    "meaning": "rủ, mời, gợi ý",
+    "lesson": "Unit 9 - Lesson 1: Động từ di chuyển & cho nhận"
   },
   {
     "stt": 735,
     "kanji": "薦める",
     "han_viet": "TIẾN",
     "hiragana": "すすめる",
-    "meaning": "giới thiệu, gợi ý"
+    "meaning": "giới thiệu, gợi ý",
+    "lesson": "Unit 9 - Lesson 1: Động từ di chuyển & cho nhận"
   },
   {
     "stt": 736,
     "kanji": "任せる",
     "han_viet": "NHÂM",
     "hiragana": "まかせる",
-    "meaning": "tin tưởng, giao phó"
+    "meaning": "tin tưởng, giao phó",
+    "lesson": "Unit 9 - Lesson 2: Động từ tinh thần & truyền đạt"
   },
   {
     "stt": 737,
     "kanji": "守る",
     "han_viet": "THỦ",
     "hiragana": "まもる",
-    "meaning": "giữ, tuân thủ, bảo vệ"
+    "meaning": "giữ, tuân thủ, bảo vệ",
+    "lesson": "Unit 9 - Lesson 2: Động từ tinh thần & truyền đạt"
   },
   {
     "stt": 738,
     "kanji": "争う",
     "han_viet": "TRANH",
     "hiragana": "あらそう",
-    "meaning": "gây gổ, tranh giành"
+    "meaning": "gây gổ, tranh giành",
+    "lesson": "Unit 9 - Lesson 2: Động từ tinh thần & truyền đạt"
   },
   {
     "stt": 739,
     "kanji": "臨む",
     "han_viet": "LÂM",
     "hiragana": "のぞむ",
-    "meaning": "ước"
+    "meaning": "ước",
+    "lesson": "Unit 9 - Lesson 2: Động từ tinh thần & truyền đạt"
   },
   {
     "stt": 740,
     "kanji": "信じる",
     "han_viet": "TÍN",
     "hiragana": "しんじる",
-    "meaning": "tin tưởng"
+    "meaning": "tin tưởng",
+    "lesson": "Unit 9 - Lesson 2: Động từ tinh thần & truyền đạt"
   },
   {
     "stt": 741,
     "kanji": "通じる",
     "han_viet": "THÔNG",
     "hiragana": "つうじる",
-    "meaning": "hiểu, thông qua"
+    "meaning": "hiểu, thông qua",
+    "lesson": "Unit 9 - Lesson 2: Động từ tinh thần & truyền đạt"
   },
   {
     "stt": 742,
     "kanji": "飽きる",
     "han_viet": "BÃO",
     "hiragana": "あきる",
-    "meaning": "Chán ngấy"
+    "meaning": "Chán ngấy",
+    "lesson": "Unit 9 - Lesson 2: Động từ tinh thần & truyền đạt"
   },
   {
     "stt": 743,
     "kanji": "思いつく",
     "han_viet": "TƯ",
     "hiragana": "おもいつく",
-    "meaning": "Nảy ra ý tưởng"
+    "meaning": "Nảy ra ý tưởng",
+    "lesson": "Unit 9 - Lesson 2: Động từ tinh thần & truyền đạt"
   },
   {
     "stt": 744,
     "kanji": "思いやる",
     "han_viet": "TƯ",
     "hiragana": "おもいやる",
-    "meaning": "quan tâm, thông cảm"
+    "meaning": "quan tâm, thông cảm",
+    "lesson": "Unit 9 - Lesson 2: Động từ tinh thần & truyền đạt"
   },
   {
     "stt": 745,
     "kanji": "熱中する",
     "han_viet": "NHIỆT TRUNG",
     "hiragana": "ねっちゅうする",
-    "meaning": "nghiện, hào hứng, đam mê cái gì đó"
+    "meaning": "nghiện, hào hứng, đam mê cái gì đó",
+    "lesson": "Unit 9 - Lesson 2: Động từ tinh thần & truyền đạt"
   },
   {
     "stt": 746,
     "kanji": "暮らす",
     "han_viet": "MỘ",
     "hiragana": "くらす",
-    "meaning": "Sinh sống"
+    "meaning": "Sinh sống",
+    "lesson": "Unit 9 - Lesson 2: Động từ tinh thần & truyền đạt"
   },
   {
     "stt": 747,
     "kanji": "巻く",
     "han_viet": "QUYỀN",
     "hiragana": "まく",
-    "meaning": "quấn"
+    "meaning": "quấn",
+    "lesson": "Unit 9 - Lesson 2: Động từ tinh thần & truyền đạt"
   },
   {
     "stt": 748,
     "kanji": "結ぶ",
     "han_viet": "KẾT",
     "hiragana": "むすぶ",
-    "meaning": "buộc, cột, nối"
+    "meaning": "buộc, cột, nối",
+    "lesson": "Unit 9 - Lesson 2: Động từ tinh thần & truyền đạt"
   },
   {
     "stt": 749,
     "kanji": "済む",
     "han_viet": "TẾ",
     "hiragana": "すむ",
-    "meaning": "kết thúc, hoàn thành"
+    "meaning": "kết thúc, hoàn thành",
+    "lesson": "Unit 9 - Lesson 2: Động từ tinh thần & truyền đạt"
   },
   {
     "stt": 750,
     "kanji": "済ませる",
     "han_viet": "TẾ",
     "hiragana": "すませる",
-    "meaning": "hoàn thành"
+    "meaning": "hoàn thành",
+    "lesson": "Unit 9 - Lesson 2: Động từ tinh thần & truyền đạt"
   },
   {
     "stt": 751,
     "kanji": "出来る",
     "han_viet": "XUẤT LAI",
     "hiragana": "できる",
-    "meaning": "có thể, hoàn thành"
+    "meaning": "có thể, hoàn thành",
+    "lesson": "Unit 9 - Lesson 2: Động từ tinh thần & truyền đạt"
   },
   {
     "stt": 752,
     "kanji": "切れる",
     "han_viet": "THIẾT",
     "hiragana": "きれる",
-    "meaning": "cắt"
+    "meaning": "cắt",
+    "lesson": "Unit 9 - Lesson 2: Động từ tinh thần & truyền đạt"
   },
   {
     "stt": 753,
     "kanji": "切らす",
     "han_viet": "THIẾT",
     "hiragana": "きらす",
-    "meaning": "hết"
+    "meaning": "hết",
+    "lesson": "Unit 9 - Lesson 2: Động từ tinh thần & truyền đạt"
   },
   {
     "stt": 754,
     "kanji": "伝わる",
     "han_viet": "TRUYỀN",
     "hiragana": "つたわる",
-    "meaning": "lan truyền"
+    "meaning": "lan truyền",
+    "lesson": "Unit 9 - Lesson 2: Động từ tinh thần & truyền đạt"
   },
   {
     "stt": 755,
     "kanji": "伝える",
     "han_viet": "TRUYỀN",
     "hiragana": "つたえる",
-    "meaning": "truyền đạt"
+    "meaning": "truyền đạt",
+    "lesson": "Unit 9 - Lesson 2: Động từ tinh thần & truyền đạt"
   },
   {
     "stt": 756,
     "kanji": "続く",
     "han_viet": "TỤC",
     "hiragana": "つづく",
-    "meaning": "tiếp tục"
+    "meaning": "tiếp tục",
+    "lesson": "Unit 9 - Lesson 3: Động từ tự/tha (10)"
   },
   {
     "stt": 757,
     "kanji": "続ける",
     "han_viet": "TỤC",
     "hiragana": "つづける",
-    "meaning": "tiếp tục"
+    "meaning": "tiếp tục",
+    "lesson": "Unit 9 - Lesson 3: Động từ tự/tha (10)"
   },
   {
     "stt": 758,
     "kanji": "",
     "han_viet": "",
     "hiragana": "つながる",
-    "meaning": "Nối, buộc vào"
+    "meaning": "Nối, buộc vào",
+    "lesson": "Unit 9 - Lesson 3: Động từ tự/tha (10)"
   },
   {
     "stt": 759,
     "kanji": "",
     "han_viet": "",
     "hiragana": "つなぐ",
-    "meaning": "kết nối"
+    "meaning": "kết nối",
+    "lesson": "Unit 9 - Lesson 3: Động từ tự/tha (10)"
   },
   {
     "stt": 760,
     "kanji": "",
     "han_viet": "",
     "hiragana": "つなげる",
-    "meaning": "kết nối, làm chặt thêm"
+    "meaning": "kết nối, làm chặt thêm",
+    "lesson": "Unit 9 - Lesson 3: Động từ tự/tha (10)"
   },
   {
     "stt": 761,
     "kanji": "伸びる",
     "han_viet": "THÂN",
     "hiragana": "のびる",
-    "meaning": "Kéo dài, lan ra, lớn lên, trưởng thành"
+    "meaning": "Kéo dài, lan ra, lớn lên, trưởng thành",
+    "lesson": "Unit 9 - Lesson 3: Động từ tự/tha (10)"
   },
   {
     "stt": 762,
     "kanji": "伸ばす",
     "han_viet": "THÂN",
     "hiragana": "のばす",
-    "meaning": "Kéo dài, vươn"
+    "meaning": "Kéo dài, vươn",
+    "lesson": "Unit 9 - Lesson 3: Động từ tự/tha (10)"
   },
   {
     "stt": 763,
     "kanji": "延びる",
     "han_viet": "DUYÊN",
     "hiragana": "のびる",
-    "meaning": "trì hoãn, kéo dài"
+    "meaning": "trì hoãn, kéo dài",
+    "lesson": "Unit 9 - Lesson 3: Động từ tự/tha (10)"
   },
   {
     "stt": 764,
     "kanji": "延ばす",
     "han_viet": "DUYÊN",
     "hiragana": "のばす",
-    "meaning": "Mở rộng ra, kéo dài.."
+    "meaning": "Mở rộng ra, kéo dài..",
+    "lesson": "Unit 9 - Lesson 3: Động từ tự/tha (10)"
   },
   {
     "stt": 765,
     "kanji": "重なる",
     "han_viet": "TRỌNG",
     "hiragana": "かさなる",
-    "meaning": "Trùng với.., chồng chất"
+    "meaning": "Trùng với.., chồng chất",
+    "lesson": "Unit 9 - Lesson 3: Động từ tự/tha (10)"
   },
   {
     "stt": 766,
     "kanji": "重ねる",
     "han_viet": "TRỌNG",
     "hiragana": "かさねる",
-    "meaning": "chồng lên, chất lên"
+    "meaning": "chồng lên, chất lên",
+    "lesson": "Unit 9 - Lesson 3: Động từ tự/tha (10)"
   },
   {
     "stt": 767,
     "kanji": "広がる",
     "han_viet": "QUẢNG",
     "hiragana": "ひろがる",
-    "meaning": "mở rộng, lan tràn"
+    "meaning": "mở rộng, lan tràn",
+    "lesson": "Unit 9 - Lesson 3: Động từ tự/tha (10)"
   },
   {
     "stt": 768,
     "kanji": "広げる",
     "han_viet": "QUẢNG",
     "hiragana": "ひろげる",
-    "meaning": "mở rộng, nới rộng"
+    "meaning": "mở rộng, nới rộng",
+    "lesson": "Unit 9 - Lesson 3: Động từ tự/tha (10)"
   },
   {
     "stt": 769,
     "kanji": "載る",
     "han_viet": "TÁI",
     "hiragana": "のる",
-    "meaning": "Đăng lên, đặt..."
+    "meaning": "Đăng lên, đặt...",
+    "lesson": "Unit 9 - Lesson 3: Động từ tự/tha (10)"
   },
   {
     "stt": 770,
     "kanji": "載せる",
     "han_viet": "TÁI",
     "hiragana": "のせる",
-    "meaning": "Đăng tải, chất lên"
+    "meaning": "Đăng tải, chất lên",
+    "lesson": "Unit 9 - Lesson 3: Động từ tự/tha (10)"
   },
   {
     "stt": 771,
     "kanji": "揃う",
     "han_viet": "TIỀN",
     "hiragana": "そろう",
-    "meaning": "thu thập"
+    "meaning": "thu thập",
+    "lesson": "Unit 9 - Lesson 3: Động từ tự/tha (10)"
   },
   {
     "stt": 772,
     "kanji": "揃える",
     "han_viet": "TIỀN",
     "hiragana": "そろえる",
-    "meaning": "Tổng hợp, gộp, sắp xếp lại"
+    "meaning": "Tổng hợp, gộp, sắp xếp lại",
+    "lesson": "Unit 9 - Lesson 3: Động từ tự/tha (10)"
   },
   {
     "stt": 773,
     "kanji": "纏まる",
     "han_viet": "TRIỀN",
     "hiragana": "まとまる",
-    "meaning": "Lắng, đọng, chìm xuống"
+    "meaning": "Lắng, đọng, chìm xuống",
+    "lesson": "Unit 9 - Lesson 3: Động từ tự/tha (10)"
   },
   {
     "stt": 774,
     "kanji": "纏める",
     "han_viet": "TRIỀN",
     "hiragana": "まとめる",
-    "meaning": "Tóm tắt, tổng hợp"
+    "meaning": "Tóm tắt, tổng hợp",
+    "lesson": "Unit 9 - Lesson 3: Động từ tự/tha (10)"
   },
   {
     "stt": 775,
     "kanji": "付く",
     "han_viet": "PHÓ",
     "hiragana": "つく",
-    "meaning": "dính"
+    "meaning": "dính",
+    "lesson": "Unit 9 - Lesson 3: Động từ tự/tha (10)"
   },
   {
     "stt": 776,
     "kanji": "付ける",
     "han_viet": "PHÓ",
     "hiragana": "つける",
-    "meaning": "gắn, thêm vào"
+    "meaning": "gắn, thêm vào",
+    "lesson": "Unit 9 - Lesson 4: Động từ tự/tha (11)"
   },
   {
     "stt": 777,
     "kanji": "貯まる",
     "han_viet": "TRỮ",
     "hiragana": "たまる",
-    "meaning": "được tiết kiệm"
+    "meaning": "được tiết kiệm",
+    "lesson": "Unit 9 - Lesson 4: Động từ tự/tha (11)"
   },
   {
     "stt": 778,
     "kanji": "貯める",
     "han_viet": "TRỮ",
     "hiragana": "ためる",
-    "meaning": "tiết kiệm"
+    "meaning": "tiết kiệm",
+    "lesson": "Unit 9 - Lesson 4: Động từ tự/tha (11)"
   },
   {
     "stt": 779,
     "kanji": "交じる・混じる",
     "han_viet": "GIAO HỖN",
     "hiragana": "まじる",
-    "meaning": "giao vào, lẫn vào"
+    "meaning": "giao vào, lẫn vào",
+    "lesson": "Unit 9 - Lesson 4: Động từ tự/tha (11)"
   },
   {
     "stt": 780,
     "kanji": "交ざる・混ざる",
     "han_viet": "GIAO HỖN",
     "hiragana": "まざる",
-    "meaning": "được trộn lẫn"
+    "meaning": "được trộn lẫn",
+    "lesson": "Unit 9 - Lesson 4: Động từ tự/tha (11)"
   },
   {
     "stt": 781,
     "kanji": "交ぜる・混ぜる",
     "han_viet": "GIAO HỖN",
     "hiragana": "まぜる",
-    "meaning": "trộn vào"
+    "meaning": "trộn vào",
+    "lesson": "Unit 9 - Lesson 4: Động từ tự/tha (11)"
   },
   {
     "stt": 782,
     "kanji": "解ける・溶ける",
     "han_viet": "GIẢI DONG",
     "hiragana": "とける",
-    "meaning": "được giải quyết, chảy"
+    "meaning": "được giải quyết, chảy",
+    "lesson": "Unit 9 - Lesson 4: Động từ tự/tha (11)"
   },
   {
     "stt": 783,
     "kanji": "解く・溶く",
     "han_viet": "GIẢI DONG",
     "hiragana": "とく",
-    "meaning": "Giải quyết / Tan chảy"
+    "meaning": "Giải quyết / Tan chảy",
+    "lesson": "Unit 9 - Lesson 4: Động từ tự/tha (11)"
   },
   {
     "stt": 784,
     "kanji": "含む",
     "han_viet": "HÀM",
     "hiragana": "ふくむ",
-    "meaning": "chứa, bao gồm"
+    "meaning": "chứa, bao gồm",
+    "lesson": "Unit 9 - Lesson 4: Động từ tự/tha (11)"
   },
   {
     "stt": 785,
     "kanji": "含める",
     "han_viet": "HÀM",
     "hiragana": "ふくめる",
-    "meaning": "bao gồm"
+    "meaning": "bao gồm",
+    "lesson": "Unit 9 - Lesson 4: Động từ tự/tha (11)"
   },
   {
     "stt": 786,
     "kanji": "抜ける",
     "han_viet": "BẠT",
     "hiragana": "ぬける",
-    "meaning": "Nhổ, rút, rời"
+    "meaning": "Nhổ, rút, rời",
+    "lesson": "Unit 9 - Lesson 4: Động từ tự/tha (11)"
   },
   {
     "stt": 787,
     "kanji": "抜く",
     "han_viet": "BẠT",
     "hiragana": "ぬく",
-    "meaning": "lấy ra, nhổ, rút"
+    "meaning": "lấy ra, nhổ, rút",
+    "lesson": "Unit 9 - Lesson 4: Động từ tự/tha (11)"
   },
   {
     "stt": 788,
     "kanji": "現れる",
     "han_viet": "HIỆN",
     "hiragana": "あらわれる",
-    "meaning": "xuất hiện"
+    "meaning": "xuất hiện",
+    "lesson": "Unit 9 - Lesson 4: Động từ tự/tha (11)"
   },
   {
     "stt": 789,
     "kanji": "現す",
     "han_viet": "HIỆN",
     "hiragana": "あらわす",
-    "meaning": "xuất hiện, biểu lộ ra"
+    "meaning": "xuất hiện, biểu lộ ra",
+    "lesson": "Unit 9 - Lesson 4: Động từ tự/tha (11)"
   },
   {
     "stt": 790,
     "kanji": "表れる",
     "han_viet": "BIỂU",
     "hiragana": "あらわれる",
-    "meaning": "biểu hiện, bộc lộ ra"
+    "meaning": "biểu hiện, bộc lộ ra",
+    "lesson": "Unit 9 - Lesson 4: Động từ tự/tha (11)"
   },
   {
     "stt": 791,
     "kanji": "表す",
     "han_viet": "BIỂU",
     "hiragana": "あらわす",
-    "meaning": "biểu thị, biểu lộ"
+    "meaning": "biểu thị, biểu lộ",
+    "lesson": "Unit 9 - Lesson 4: Động từ tự/tha (11)"
   },
   {
     "stt": 792,
     "kanji": "散る",
     "han_viet": "TÁN",
     "hiragana": "ちる",
-    "meaning": "bị tàn, rụng"
+    "meaning": "bị tàn, rụng",
+    "lesson": "Unit 9 - Lesson 4: Động từ tự/tha (11)"
   },
   {
     "stt": 793,
     "kanji": "散らす",
     "han_viet": "TÁN",
     "hiragana": "ちらす",
-    "meaning": "Tàn, làm rụng"
+    "meaning": "Tàn, làm rụng",
+    "lesson": "Unit 9 - Lesson 4: Động từ tự/tha (11)"
   },
   {
     "stt": 794,
     "kanji": "明ける",
     "han_viet": "MINH",
     "hiragana": "あける",
-    "meaning": "Hé lộ, bắt đầu, mở ra"
+    "meaning": "Hé lộ, bắt đầu, mở ra",
+    "lesson": "Unit 9 - Lesson 4: Động từ tự/tha (11)"
   },
   {
     "stt": 795,
     "kanji": "差す",
     "han_viet": "SOA",
     "hiragana": "さす",
-    "meaning": "Giơ(tay), giương(ô)"
+    "meaning": "Giơ(tay), giương(ô)",
+    "lesson": "Unit 9 - Lesson 4: Động từ tự/tha (11)"
   },
   {
     "stt": 796,
     "kanji": "",
     "han_viet": "",
     "hiragana": "パートナー",
-    "meaning": "đối tác"
+    "meaning": "đối tác",
+    "lesson": "Unit 10 - Lesson 1: Katakana (3)"
   },
   {
     "stt": 797,
     "kanji": "",
     "han_viet": "",
     "hiragana": "リーダー",
-    "meaning": "lãnh đạo"
+    "meaning": "lãnh đạo",
+    "lesson": "Unit 10 - Lesson 1: Katakana (3)"
   },
   {
     "stt": 798,
     "kanji": "",
     "han_viet": "",
     "hiragana": "ボランティア",
-    "meaning": "tình nguyện"
+    "meaning": "tình nguyện",
+    "lesson": "Unit 10 - Lesson 1: Katakana (3)"
   },
   {
     "stt": 799,
     "kanji": "",
     "han_viet": "",
     "hiragana": "コミュニケーション",
-    "meaning": "giao tiếp"
+    "meaning": "giao tiếp",
+    "lesson": "Unit 10 - Lesson 1: Katakana (3)"
   },
   {
     "stt": 800,
     "kanji": "",
     "han_viet": "",
     "hiragana": "ユーモア",
-    "meaning": "hài hước"
+    "meaning": "hài hước",
+    "lesson": "Unit 10 - Lesson 1: Katakana (3)"
   },
   {
     "stt": 801,
     "kanji": "",
     "han_viet": "",
     "hiragana": "ショック",
-    "meaning": "shock, choáng"
+    "meaning": "shock, choáng",
+    "lesson": "Unit 10 - Lesson 1: Katakana (3)"
   },
   {
     "stt": 802,
     "kanji": "",
     "han_viet": "",
     "hiragana": "ストレス",
-    "meaning": "căng thẳng, stress"
+    "meaning": "căng thẳng, stress",
+    "lesson": "Unit 10 - Lesson 1: Katakana (3)"
   },
   {
     "stt": 803,
     "kanji": "",
     "han_viet": "",
     "hiragana": "バランス",
-    "meaning": "cân bằng"
+    "meaning": "cân bằng",
+    "lesson": "Unit 10 - Lesson 1: Katakana (3)"
   },
   {
     "stt": 804,
     "kanji": "",
     "han_viet": "",
     "hiragana": "レベル",
-    "meaning": "trình độ, level"
+    "meaning": "trình độ, level",
+    "lesson": "Unit 10 - Lesson 1: Katakana (3)"
   },
   {
     "stt": 805,
     "kanji": "",
     "han_viet": "",
     "hiragana": "アップ",
-    "meaning": "tăng lên"
+    "meaning": "tăng lên",
+    "lesson": "Unit 10 - Lesson 1: Katakana (3)"
   },
   {
     "stt": 806,
     "kanji": "",
     "han_viet": "",
     "hiragana": "ダウン",
-    "meaning": "giảm xuống"
+    "meaning": "giảm xuống",
+    "lesson": "Unit 10 - Lesson 1: Katakana (3)"
   },
   {
     "stt": 807,
     "kanji": "",
     "han_viet": "",
     "hiragana": "プラス",
-    "meaning": "phép cộng, tác động tích cực"
+    "meaning": "phép cộng, tác động tích cực",
+    "lesson": "Unit 10 - Lesson 1: Katakana (3)"
   },
   {
     "stt": 808,
     "kanji": "",
     "han_viet": "",
     "hiragana": "マイナス",
-    "meaning": "phép trừ, điều bất lợi"
+    "meaning": "phép trừ, điều bất lợi",
+    "lesson": "Unit 10 - Lesson 1: Katakana (3)"
   },
   {
     "stt": 809,
     "kanji": "",
     "han_viet": "",
     "hiragana": "イメージ",
-    "meaning": "hình ảnh"
+    "meaning": "hình ảnh",
+    "lesson": "Unit 10 - Lesson 1: Katakana (3)"
   },
   {
     "stt": 810,
     "kanji": "",
     "han_viet": "",
     "hiragana": "コンテスト",
-    "meaning": "cuộc thi"
+    "meaning": "cuộc thi",
+    "lesson": "Unit 10 - Lesson 1: Katakana (3)"
   },
   {
     "stt": 811,
     "kanji": "",
     "han_viet": "",
     "hiragana": "マスコミ",
-    "meaning": "thông tin truyền thông"
+    "meaning": "thông tin truyền thông",
+    "lesson": "Unit 10 - Lesson 1: Katakana (3)"
   },
   {
     "stt": 812,
     "kanji": "",
     "han_viet": "",
     "hiragana": "プライバシー",
-    "meaning": "cá nhân, riêng tư"
+    "meaning": "cá nhân, riêng tư",
+    "lesson": "Unit 10 - Lesson 1: Katakana (3)"
   },
   {
     "stt": 813,
     "kanji": "",
     "han_viet": "",
     "hiragana": "オフィス",
-    "meaning": "văn phòng"
+    "meaning": "văn phòng",
+    "lesson": "Unit 10 - Lesson 1: Katakana (3)"
   },
   {
     "stt": 814,
     "kanji": "",
     "han_viet": "",
     "hiragana": "ルール",
-    "meaning": "Quy tắc"
+    "meaning": "Quy tắc",
+    "lesson": "Unit 10 - Lesson 1: Katakana (3)"
   },
   {
     "stt": 815,
     "kanji": "",
     "han_viet": "",
     "hiragana": "マナー",
-    "meaning": "quy tắc cư xử"
+    "meaning": "quy tắc cư xử",
+    "lesson": "Unit 10 - Lesson 1: Katakana (3)"
   },
   {
     "stt": 816,
     "kanji": "",
     "han_viet": "",
     "hiragana": "ミス",
-    "meaning": "lỗi"
+    "meaning": "lỗi",
+    "lesson": "Unit 10 - Lesson 2: Katakana (4)"
   },
   {
     "stt": 817,
     "kanji": "",
     "han_viet": "",
     "hiragana": "スケジュール",
-    "meaning": "lịch, kế hoạch"
+    "meaning": "lịch, kế hoạch",
+    "lesson": "Unit 10 - Lesson 2: Katakana (4)"
   },
   {
     "stt": 818,
     "kanji": "",
     "han_viet": "",
     "hiragana": "タイトル",
-    "meaning": "tiêu đề"
+    "meaning": "tiêu đề",
+    "lesson": "Unit 10 - Lesson 2: Katakana (4)"
   },
   {
     "stt": 819,
     "kanji": "",
     "han_viet": "",
     "hiragana": "テーマ",
-    "meaning": "chủ đề"
+    "meaning": "chủ đề",
+    "lesson": "Unit 10 - Lesson 2: Katakana (4)"
   },
   {
     "stt": 820,
     "kanji": "",
     "han_viet": "",
     "hiragana": "ストーリー",
-    "meaning": "câu chuyện"
+    "meaning": "câu chuyện",
+    "lesson": "Unit 10 - Lesson 2: Katakana (4)"
   },
   {
     "stt": 821,
     "kanji": "",
     "han_viet": "",
     "hiragana": "ヒット",
-    "meaning": "nổi tiếng (hit)"
+    "meaning": "nổi tiếng (hit)",
+    "lesson": "Unit 10 - Lesson 2: Katakana (4)"
   },
   {
     "stt": 822,
     "kanji": "",
     "han_viet": "",
     "hiragana": "ブランド",
-    "meaning": "nhãn hiệu"
+    "meaning": "nhãn hiệu",
+    "lesson": "Unit 10 - Lesson 2: Katakana (4)"
   },
   {
     "stt": 823,
     "kanji": "",
     "han_viet": "",
     "hiragana": "レンタル",
-    "meaning": "thuê"
+    "meaning": "thuê",
+    "lesson": "Unit 10 - Lesson 2: Katakana (4)"
   },
   {
     "stt": 824,
     "kanji": "",
     "han_viet": "",
     "hiragana": "リサイクル",
-    "meaning": "tái chế"
+    "meaning": "tái chế",
+    "lesson": "Unit 10 - Lesson 2: Katakana (4)"
   },
   {
     "stt": 825,
     "kanji": "",
     "han_viet": "",
     "hiragana": "ラベル",
-    "meaning": "Nhãn mác"
+    "meaning": "Nhãn mác",
+    "lesson": "Unit 10 - Lesson 2: Katakana (4)"
   },
   {
     "stt": 826,
     "kanji": "",
     "han_viet": "",
     "hiragana": "タイプ",
-    "meaning": "loại"
+    "meaning": "loại",
+    "lesson": "Unit 10 - Lesson 2: Katakana (4)"
   },
   {
     "stt": 827,
     "kanji": "",
     "han_viet": "",
     "hiragana": "スタイル",
-    "meaning": "Style, phong cách"
+    "meaning": "Style, phong cách",
+    "lesson": "Unit 10 - Lesson 2: Katakana (4)"
   },
   {
     "stt": 828,
     "kanji": "",
     "han_viet": "",
     "hiragana": "セット",
-    "meaning": "cài đặt, set"
+    "meaning": "cài đặt, set",
+    "lesson": "Unit 10 - Lesson 2: Katakana (4)"
   },
   {
     "stt": 829,
     "kanji": "",
     "han_viet": "",
     "hiragana": "ウイルス",
-    "meaning": "virus"
+    "meaning": "virus",
+    "lesson": "Unit 10 - Lesson 2: Katakana (4)"
   },
   {
     "stt": 830,
     "kanji": "",
     "han_viet": "",
     "hiragana": "ロボット",
-    "meaning": "robot"
+    "meaning": "robot",
+    "lesson": "Unit 10 - Lesson 2: Katakana (4)"
   },
   {
     "stt": 831,
     "kanji": "",
     "han_viet": "",
     "hiragana": "エネルギー",
-    "meaning": "năng lượng"
+    "meaning": "năng lượng",
+    "lesson": "Unit 10 - Lesson 2: Katakana (4)"
   },
   {
     "stt": 832,
     "kanji": "",
     "han_viet": "",
     "hiragana": "デジタル",
-    "meaning": "kỹ thuật số"
+    "meaning": "kỹ thuật số",
+    "lesson": "Unit 10 - Lesson 2: Katakana (4)"
   },
   {
     "stt": 833,
     "kanji": "",
     "han_viet": "",
     "hiragana": "マイク",
-    "meaning": "Mic; micrô"
+    "meaning": "Mic; micrô",
+    "lesson": "Unit 10 - Lesson 2: Katakana (4)"
   },
   {
     "stt": 834,
     "kanji": "",
     "han_viet": "",
     "hiragana": "ブレーキ",
-    "meaning": "phanh"
+    "meaning": "phanh",
+    "lesson": "Unit 10 - Lesson 2: Katakana (4)"
   },
   {
     "stt": 835,
     "kanji": "",
     "han_viet": "",
     "hiragana": "ペンキ",
-    "meaning": "sơn"
+    "meaning": "sơn",
+    "lesson": "Unit 10 - Lesson 2: Katakana (4)"
   },
   {
     "stt": 836,
     "kanji": "炊ける",
     "han_viet": "XUY",
     "hiragana": "たける",
-    "meaning": "được nấu"
+    "meaning": "được nấu",
+    "lesson": "Unit 11 - Lesson 1: Động từ nấu ăn"
   },
   {
     "stt": 837,
     "kanji": "炊く",
     "han_viet": "XUY",
     "hiragana": "たく",
-    "meaning": "nấu cơm"
+    "meaning": "nấu cơm",
+    "lesson": "Unit 11 - Lesson 1: Động từ nấu ăn"
   },
   {
     "stt": 838,
     "kanji": "煮える",
     "han_viet": "CHỬ",
     "hiragana": "にえる",
-    "meaning": "được nấu, được ninh"
+    "meaning": "được nấu, được ninh",
+    "lesson": "Unit 11 - Lesson 1: Động từ nấu ăn"
   },
   {
     "stt": 839,
     "kanji": "煮る",
     "han_viet": "CHỬ",
     "hiragana": "にる",
-    "meaning": "nấu, ninh"
+    "meaning": "nấu, ninh",
+    "lesson": "Unit 11 - Lesson 1: Động từ nấu ăn"
   },
   {
     "stt": 840,
     "kanji": "炒める",
     "han_viet": "SAO",
     "hiragana": "いためる",
-    "meaning": "xào"
+    "meaning": "xào",
+    "lesson": "Unit 11 - Lesson 1: Động từ nấu ăn"
   },
   {
     "stt": 841,
     "kanji": "焼ける",
     "han_viet": "THIÊU",
     "hiragana": "やける",
-    "meaning": "được nướng"
+    "meaning": "được nướng",
+    "lesson": "Unit 11 - Lesson 1: Động từ nấu ăn"
   },
   {
     "stt": 842,
     "kanji": "焼く",
     "han_viet": "THIÊU",
     "hiragana": "やく",
-    "meaning": "nướng"
+    "meaning": "nướng",
+    "lesson": "Unit 11 - Lesson 1: Động từ nấu ăn"
   },
   {
     "stt": 843,
     "kanji": "ゆでる",
     "han_viet": "",
     "hiragana": "ゆでる",
-    "meaning": "luộc"
+    "meaning": "luộc",
+    "lesson": "Unit 11 - Lesson 1: Động từ nấu ăn"
   },
   {
     "stt": 844,
     "kanji": "揚げる",
     "han_viet": "DƯƠNG",
     "hiragana": "あげる",
-    "meaning": "rán, chiên"
+    "meaning": "rán, chiên",
+    "lesson": "Unit 11 - Lesson 1: Động từ nấu ăn"
   },
   {
     "stt": 845,
     "kanji": "蒸す",
     "han_viet": "CHƯNG",
     "hiragana": "むす",
-    "meaning": "hấp"
+    "meaning": "hấp",
+    "lesson": "Unit 11 - Lesson 1: Động từ nấu ăn"
   },
   {
     "stt": 846,
     "kanji": "",
     "han_viet": "",
     "hiragana": "ぐっすり",
-    "meaning": "Ngủ say"
+    "meaning": "Ngủ say",
+    "lesson": "Unit 11 - Lesson 2: Phó từ (1)"
   },
   {
     "stt": 847,
     "kanji": "",
     "han_viet": "",
     "hiragana": "きちんと",
-    "meaning": "ngay ngắn, nghiêm chỉnh"
+    "meaning": "ngay ngắn, nghiêm chỉnh",
+    "lesson": "Unit 11 - Lesson 2: Phó từ (1)"
   },
   {
     "stt": 848,
     "kanji": "",
     "han_viet": "",
     "hiragana": "しっかり",
-    "meaning": "chắc chắn"
+    "meaning": "chắc chắn",
+    "lesson": "Unit 11 - Lesson 2: Phó từ (1)"
   },
   {
     "stt": 849,
     "kanji": "",
     "han_viet": "",
     "hiragana": "はっきり",
-    "meaning": "rõ ràng"
+    "meaning": "rõ ràng",
+    "lesson": "Unit 11 - Lesson 2: Phó từ (1)"
   },
   {
     "stt": 850,
     "kanji": "",
     "han_viet": "",
     "hiragana": "じっと",
-    "meaning": "Nhìn chằm chằm"
+    "meaning": "Nhìn chằm chằm",
+    "lesson": "Unit 11 - Lesson 2: Phó từ (1)"
   },
   {
     "stt": 851,
     "kanji": "",
     "han_viet": "",
     "hiragana": "そっと",
-    "meaning": "nhẹ nhàng, yên lặng"
+    "meaning": "nhẹ nhàng, yên lặng",
+    "lesson": "Unit 11 - Lesson 2: Phó từ (1)"
   },
   {
     "stt": 852,
     "kanji": "別々に",
     "han_viet": "BIỆT",
     "hiragana": "べつべつに",
-    "meaning": "riêng biệt, riêng ra"
+    "meaning": "riêng biệt, riêng ra",
+    "lesson": "Unit 11 - Lesson 2: Phó từ (1)"
   },
   {
     "stt": 853,
     "kanji": "",
     "han_viet": "",
     "hiragana": "それぞれ",
-    "meaning": "lần lượt, tương ứng"
+    "meaning": "lần lượt, tương ứng",
+    "lesson": "Unit 11 - Lesson 2: Phó từ (1)"
   },
   {
     "stt": 854,
     "kanji": "互いに",
     "han_viet": "HỖ",
     "hiragana": "たがいに",
-    "meaning": "Cùng nhau"
+    "meaning": "Cùng nhau",
+    "lesson": "Unit 11 - Lesson 2: Phó từ (1)"
   },
   {
     "stt": 855,
     "kanji": "直接",
     "han_viet": "TRỰC TIẾP",
     "hiragana": "ちょくせつ",
-    "meaning": "trực tiếp"
+    "meaning": "trực tiếp",
+    "lesson": "Unit 11 - Lesson 2: Phó từ (1)"
   },
   {
     "stt": 856,
     "kanji": "本当に",
     "han_viet": "BỔN ĐƯƠNG",
     "hiragana": "ほんとうに",
-    "meaning": "thật lòng, thật sự"
+    "meaning": "thật lòng, thật sự",
+    "lesson": "Unit 11 - Lesson 2: Phó từ (1)"
   },
   {
     "stt": 857,
     "kanji": "必ず",
     "han_viet": "TẤT",
     "hiragana": "かならず",
-    "meaning": "chắc chắn"
+    "meaning": "chắc chắn",
+    "lesson": "Unit 11 - Lesson 2: Phó từ (1)"
   },
   {
     "stt": 858,
     "kanji": "絶対に",
     "han_viet": "TUYỆT ĐỐI",
     "hiragana": "ぜったいに",
-    "meaning": "Tuyệt đối"
+    "meaning": "Tuyệt đối",
+    "lesson": "Unit 11 - Lesson 2: Phó từ (1)"
   },
   {
     "stt": 859,
     "kanji": "特に",
     "han_viet": "ĐẶC",
     "hiragana": "とくに",
-    "meaning": "đặc biệt là"
+    "meaning": "đặc biệt là",
+    "lesson": "Unit 11 - Lesson 2: Phó từ (1)"
   },
   {
     "stt": 860,
     "kanji": "",
     "han_viet": "",
     "hiragana": "ただ",
-    "meaning": "chỉ"
+    "meaning": "chỉ",
+    "lesson": "Unit 11 - Lesson 2: Phó từ (1)"
   },
   {
     "stt": 861,
     "kanji": "少なくとも",
     "han_viet": "THIỂU",
     "hiragana": "すくなくとも",
-    "meaning": "ít nhất là, tối thiểu là.."
+    "meaning": "ít nhất là, tối thiểu là..",
+    "lesson": "Unit 11 - Lesson 2: Phó từ (1)"
   },
   {
     "stt": 862,
     "kanji": "決して",
     "han_viet": "QUYẾT",
     "hiragana": "けっして",
-    "meaning": "không bao giờ"
+    "meaning": "không bao giờ",
+    "lesson": "Unit 11 - Lesson 2: Phó từ (1)"
   },
   {
     "stt": 863,
     "kanji": "少しも",
     "han_viet": "THIỂU",
     "hiragana": "すこしも",
-    "meaning": "1 chút cũng (không)"
+    "meaning": "1 chút cũng (không)",
+    "lesson": "Unit 11 - Lesson 2: Phó từ (1)"
   },
   {
     "stt": 864,
     "kanji": "",
     "han_viet": "",
     "hiragana": "ちっとも",
-    "meaning": "(không) tí gì"
+    "meaning": "(không) tí gì",
+    "lesson": "Unit 11 - Lesson 2: Phó từ (1)"
   },
   {
     "stt": 865,
     "kanji": "全く",
     "han_viet": "TOÀN",
     "hiragana": "まったく",
-    "meaning": "Toàn bộ, tất cả, thật tình"
+    "meaning": "Toàn bộ, tất cả, thật tình",
+    "lesson": "Unit 11 - Lesson 2: Phó từ (1)"
   },
   {
     "stt": 866,
     "kanji": "",
     "han_viet": "",
     "hiragana": "とても",
-    "meaning": "rất"
+    "meaning": "rất",
+    "lesson": "Unit 11 - Lesson 3: Phó từ & liên từ"
   },
   {
     "stt": 867,
     "kanji": "",
     "han_viet": "",
     "hiragana": "どんなに",
-    "meaning": "thế nào cũng, kiểu gì cũng"
+    "meaning": "thế nào cũng, kiểu gì cũng",
+    "lesson": "Unit 11 - Lesson 3: Phó từ & liên từ"
   },
   {
     "stt": 868,
     "kanji": "",
     "han_viet": "",
     "hiragana": "どうしても",
-    "meaning": "Dù thế nào cũng"
+    "meaning": "Dù thế nào cũng",
+    "lesson": "Unit 11 - Lesson 3: Phó từ & liên từ"
   },
   {
     "stt": 869,
     "kanji": "",
     "han_viet": "",
     "hiragana": "まるで",
-    "meaning": "Hoàn toàn, giống như..."
+    "meaning": "Hoàn toàn, giống như...",
+    "lesson": "Unit 11 - Lesson 3: Phó từ & liên từ"
   },
   {
     "stt": 870,
     "kanji": "一体",
     "han_viet": "NHẤT THỂ",
     "hiragana": "いったい",
-    "meaning": "Đồng nhất, là một"
+    "meaning": "Đồng nhất, là một",
+    "lesson": "Unit 11 - Lesson 3: Phó từ & liên từ"
   },
   {
     "stt": 871,
     "kanji": "別に",
     "han_viet": "BIỆT",
     "hiragana": "べつに",
-    "meaning": "Đặc biệt, Không có gì"
+    "meaning": "Đặc biệt, Không có gì",
+    "lesson": "Unit 11 - Lesson 3: Phó từ & liên từ"
   },
   {
     "stt": 872,
     "kanji": "",
     "han_viet": "",
     "hiragana": "たった",
-    "meaning": "chỉ, mỗi"
+    "meaning": "chỉ, mỗi",
+    "lesson": "Unit 11 - Lesson 3: Phó từ & liên từ"
   },
   {
     "stt": 873,
     "kanji": "",
     "han_viet": "",
     "hiragana": "ほんの",
-    "meaning": "một chút"
+    "meaning": "một chút",
+    "lesson": "Unit 11 - Lesson 3: Phó từ & liên từ"
   },
   {
     "stt": 874,
     "kanji": "",
     "han_viet": "",
     "hiragana": "それで",
-    "meaning": "thế thì"
+    "meaning": "thế thì",
+    "lesson": "Unit 11 - Lesson 3: Phó từ & liên từ"
   },
   {
     "stt": 875,
     "kanji": "",
     "han_viet": "",
     "hiragana": "そこで",
-    "meaning": "tiếp theo"
+    "meaning": "tiếp theo",
+    "lesson": "Unit 11 - Lesson 3: Phó từ & liên từ"
   },
   {
     "stt": 876,
     "kanji": "",
     "han_viet": "",
     "hiragana": "そのうえ",
-    "meaning": "hơn nữa"
+    "meaning": "hơn nữa",
+    "lesson": "Unit 11 - Lesson 3: Phó từ & liên từ"
   },
   {
     "stt": 877,
     "kanji": "",
     "han_viet": "",
     "hiragana": "また",
-    "meaning": "nữa"
+    "meaning": "nữa",
+    "lesson": "Unit 11 - Lesson 3: Phó từ & liên từ"
   },
   {
     "stt": 878,
     "kanji": "",
     "han_viet": "",
     "hiragana": "または",
-    "meaning": "hoặc"
+    "meaning": "hoặc",
+    "lesson": "Unit 11 - Lesson 3: Phó từ & liên từ"
   },
   {
     "stt": 879,
     "kanji": "",
     "han_viet": "",
     "hiragana": "それとも",
-    "meaning": "hoặc"
+    "meaning": "hoặc",
+    "lesson": "Unit 11 - Lesson 3: Phó từ & liên từ"
   },
   {
     "stt": 880,
     "kanji": "",
     "han_viet": "",
     "hiragana": "つまり",
-    "meaning": "Tóm lại"
+    "meaning": "Tóm lại",
+    "lesson": "Unit 11 - Lesson 3: Phó từ & liên từ"
   }
 ]

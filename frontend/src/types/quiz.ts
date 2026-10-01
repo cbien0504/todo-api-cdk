@@ -4,6 +4,7 @@ export interface RawVocabItem {
   han_viet?: string;
   hiragana?: string;
   meaning?: string;
+  lesson?: string;
 }
 
 export interface VocabItem {
@@ -13,6 +14,7 @@ export interface VocabItem {
   hiragana: string;
   meaning: string;
   question_text: string;
+  lesson?: string;
 }
 
 export interface Question {
@@ -25,6 +27,7 @@ export interface Question {
   options: string[];
   answer: string;
   vocabIndex: number;
+  lesson?: string;
 }
 
 export interface QuizStats {

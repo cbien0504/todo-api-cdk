@@ -246,5 +246,30 @@ describe("Mimikara Oboeru N3 Quiz App", () => {
 
     expect(screen.queryByText(/Bảng từ chưa nhớ \(1 từ\)/i)).not.toBeInTheDocument();
   });
+
+  it("divides batches by lesson, renders Unit optgroups and displays lesson tag on question card", () => {
+    render(<App />);
+
+    // Batch selector contains optgroups for units
+    const select = screen.getByRole("combobox") as HTMLSelectElement;
+    expect(select).toBeInTheDocument();
+
+    const optgroups = select.querySelectorAll("optgroup");
+    expect(optgroups.length).toBeGreaterThanOrEqual(11);
+
+    // Initial batch is Lesson 1 (appears in batch-info, option, and question tag)
+    const matches = screen.getAllByText(/Unit 1 - Lesson 1: Con người & quan hệ/i);
+    expect(matches.length).toBeGreaterThanOrEqual(2);
+
+    // The question card displays the lesson tag
+    const lessonTag = document.querySelector(".tag-lesson");
+    expect(lessonTag).toBeInTheDocument();
+    expect(lessonTag?.textContent).toContain("Unit 1 - Lesson 1");
+
+    // Switching lesson changes batch immediately
+    fireEvent.change(select, { target: { value: "lesson_2" } });
+    expect(select.value).toBe("lesson_2");
+    expect(screen.getAllByText(/Unit 1 - Lesson 2: Sinh ra, học hành, công việc/i).length).toBeGreaterThanOrEqual(1);
+  });
 });
 

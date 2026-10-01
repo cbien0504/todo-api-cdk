@@ -40,6 +40,20 @@ describe("quizEngine (Mimikara Oboeru N3)", () => {
       const result = cleanVocabData(raw);
       expect(result).toHaveLength(1);
     });
+
+    it("preserves the lesson field when provided", () => {
+      const raw: RawVocabItem[] = [
+        {
+          stt: 1,
+          kanji: "男性",
+          hiragana: "だんせい",
+          meaning: "đàn ông",
+          lesson: "Unit 1 - Lesson 1: Con người & quan hệ",
+        },
+      ];
+      const result = cleanVocabData(raw);
+      expect(result[0].lesson).toBe("Unit 1 - Lesson 1: Con người & quan hệ");
+    });
   });
 
   describe("QuizBuffer", () => {
@@ -120,6 +134,7 @@ describe("quizEngine (Mimikara Oboeru N3)", () => {
       expect(q.answer).toBe("đàn ông");
       expect(q.options).toHaveLength(4);
       expect(q.options).toContain("đàn ông");
+      expect(q.lesson).toBe(mockItems[0].lesson);
 
       // Verify no duplicates in options
       const uniqueOptions = new Set(q.options);

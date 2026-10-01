@@ -45,6 +45,7 @@ export const cleanVocabData = (rawList: RawVocabItem[]): VocabItem[] => {
       hiragana,
       meaning,
       question_text: qText,
+      lesson: entry.lesson ? entry.lesson.trim() : "",
     });
   }
 
@@ -172,5 +173,6 @@ export const buildQuestion = (
     options,
     answer: correctMeaning,
     vocabIndex: correctIdx,
+    lesson: correctItem.lesson,
   };
 };
