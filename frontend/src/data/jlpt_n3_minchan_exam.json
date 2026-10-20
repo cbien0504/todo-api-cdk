@@ -1,0 +1,7487 @@
+{
+ "title": "JLPT N3 – 文字・語彙 練習問題",
+ "source": "Từ vựng N3 – Học cùng Minchan",
+ "questions": [
+  {
+   "id": "b1-1",
+   "lesson": 1,
+   "number": 1,
+   "part": "kanji-reading",
+   "before": "プレゼントは きれいな 紙で ",
+   "target": "包ん",
+   "after": "であった。",
+   "options": [
+    "つつんで",
+    "つづんで",
+    "つうつんで",
+    "つうづんで"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b1-2",
+   "lesson": 1,
+   "number": 2,
+   "part": "kanji-reading",
+   "before": "彼は ダンスが ",
+   "target": "得意",
+   "after": "だ。",
+   "options": [
+    "どおくい",
+    "とおくい",
+    "どくい",
+    "とくい"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b1-3",
+   "lesson": 1,
+   "number": 3,
+   "part": "kanji-reading",
+   "before": "新しい 星が ",
+   "target": "発見",
+   "after": "された。",
+   "options": [
+    "はけん",
+    "はっけん",
+    "はつけん",
+    "ばつけん"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b1-4",
+   "lesson": 1,
+   "number": 4,
+   "part": "kanji-reading",
+   "before": "この グラフは 人口の 変化を ",
+   "target": "表して",
+   "after": "います。",
+   "options": [
+    "しめして",
+    "ふやして",
+    "あらわして",
+    "うごかして"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b1-5",
+   "lesson": 1,
+   "number": 5,
+   "part": "kanji-reading",
+   "before": "山田さんから、来週の 会議の ",
+   "target": "件",
+   "after": "で 電話が ありました。",
+   "options": [
+    "けん",
+    "げん",
+    "ほう",
+    "よう"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b1-6",
+   "lesson": 1,
+   "number": 6,
+   "part": "kanji-reading",
+   "before": "",
+   "target": "通勤",
+   "after": "に とても 時間が かかります。",
+   "options": [
+    "つうがく",
+    "つうやく",
+    "つうきん",
+    "つうしん"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b1-7",
+   "lesson": 1,
+   "number": 7,
+   "part": "kanji-reading",
+   "before": "この 海岸は ",
+   "target": "岩",
+   "after": "が 多い。",
+   "options": [
+    "かい",
+    "いわ",
+    "すな",
+    "なみ"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b1-8",
+   "lesson": 1,
+   "number": 8,
+   "part": "kanji-reading",
+   "before": "",
+   "target": "努力",
+   "after": "することは 大切だ と思います。",
+   "options": [
+    "どりょく",
+    "とうりょく",
+    "どうりよく",
+    "とりよく"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b1-9",
+   "lesson": 1,
+   "number": 9,
+   "part": "kanji-reading",
+   "before": "日本の ",
+   "target": "首都",
+   "after": "は どこですか。",
+   "options": [
+    "しゅとう",
+    "しゅうと",
+    "しゅと",
+    "しゅうとう"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b1-10",
+   "lesson": 1,
+   "number": 10,
+   "part": "kanji-reading",
+   "before": "",
+   "target": "地球",
+   "after": "は 太陽の まわりを 回っている。",
+   "options": [
+    "じきゅう",
+    "ちきゅう",
+    "じきゅ",
+    "ちきゅ"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b1-11",
+   "lesson": 1,
+   "number": 11,
+   "part": "kanji-reading",
+   "before": "あの 時計は ",
+   "target": "遅れて",
+   "after": "いる。",
+   "options": [
+    "こわれて",
+    "おくれて",
+    "たおれて",
+    "よごれて"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b1-12",
+   "lesson": 1,
+   "number": 12,
+   "part": "kanji-reading",
+   "before": "二人で ",
+   "target": "協力",
+   "after": "すれば、仕事も 早く 終わるだろう。",
+   "options": [
+    "きょりょく",
+    "どりょく",
+    "きょうりょく",
+    "どうりょく"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b1-13",
+   "lesson": 1,
+   "number": 13,
+   "part": "kanji-reading",
+   "before": "大学の 奨学金に ",
+   "target": "応募",
+   "after": "した。",
+   "options": [
+    "おうぼ",
+    "おうも",
+    "おうぼう",
+    "おうもう"
+   ],
+   "note": "Gợi ý: 奨学金（しょうがくきん）: Tiền học bổng",
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b1-14",
+   "lesson": 1,
+   "number": 14,
+   "part": "kanji-reading",
+   "before": "子どもの ",
+   "target": "疑問",
+   "after": "に 答えた。",
+   "options": [
+    "くもん",
+    "きもん",
+    "ぐもん",
+    "ぎもん"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b1-15",
+   "lesson": 1,
+   "number": 15,
+   "part": "kanji-reading",
+   "before": "試験の 成績が ",
+   "target": "発表",
+   "after": "された。",
+   "options": [
+    "はつひょう",
+    "はっぴょう",
+    "はつひょ",
+    "はっぴょ"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b1-16",
+   "lesson": 1,
+   "number": 16,
+   "part": "kanji-reading",
+   "before": "",
+   "target": "単語",
+   "after": "のリストは となりの ページに あります。",
+   "options": [
+    "げいご",
+    "けいご",
+    "だんご",
+    "たんご"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b1-17",
+   "lesson": 1,
+   "number": 17,
+   "part": "kanji-reading",
+   "before": "今年の 夏は、",
+   "target": "過去",
+   "after": " 十年間で 一番の 暑さだったそうだ。",
+   "options": [
+    "かきょ",
+    "かこう",
+    "かこ",
+    "かきょう"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b1-18",
+   "lesson": 1,
+   "number": 18,
+   "part": "kanji-reading",
+   "before": "あと 5分で 東京駅に ",
+   "target": "到着",
+   "after": "します。",
+   "options": [
+    "とうつく",
+    "とうちゃく",
+    "どうつく",
+    "どうちゃく"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b1-19",
+   "lesson": 1,
+   "number": 19,
+   "part": "kanji-reading",
+   "before": "公園の 木の 枝を ",
+   "target": "折って",
+   "after": "は いけません。",
+   "options": [
+    "うって",
+    "おって",
+    "わって",
+    "きって"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b1-20",
+   "lesson": 1,
+   "number": 20,
+   "part": "kanji-reading",
+   "before": "インターネットで 最新の ",
+   "target": "情報",
+   "after": "を チェックした。",
+   "options": [
+    "じゅうほう",
+    "じょうほ",
+    "じょうほう",
+    "じゅうほ"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b1-21",
+   "lesson": 1,
+   "number": 21,
+   "part": "kanji-reading",
+   "before": "最近、野菜の ",
+   "target": "値段",
+   "after": "が 高くなっています。",
+   "options": [
+    "かかく",
+    "かがく",
+    "ねたん",
+    "ねだん"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b1-22",
+   "lesson": 1,
+   "number": 22,
+   "part": "kanji-reading",
+   "before": "彼は あの国の 文化に ",
+   "target": "深い",
+   "after": "関心を 持っている。",
+   "options": [
+    "ふかい",
+    "つよい",
+    "ひろい",
+    "おもい"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b1-23",
+   "lesson": 1,
+   "number": 23,
+   "part": "kanji-reading",
+   "before": "昨日、友達に 本を ",
+   "target": "返しました",
+   "after": "。",
+   "options": [
+    "かしました",
+    "かえしました",
+    "もどしました",
+    "わたしました"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b1-24",
+   "lesson": 1,
+   "number": 24,
+   "part": "kanji-reading",
+   "before": "月の ",
+   "target": "表面",
+   "after": "は でこぼこ している。",
+   "options": [
+    "しょめん",
+    "ひょめん",
+    "しょうめん",
+    "ひょうめん"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b1-25",
+   "lesson": 1,
+   "number": 25,
+   "part": "kanji-reading",
+   "before": "スポーツで ",
+   "target": "汗",
+   "after": "を かいたので、シャワーを あびた。",
+   "options": [
+    "あせ",
+    "ごみ",
+    "よごれ",
+    "なみだ"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b1-26",
+   "lesson": 1,
+   "number": 26,
+   "part": "kanji-reading",
+   "before": "この お知らせを みんなに ",
+   "target": "配って",
+   "after": "ください。",
+   "options": [
+    "だまって",
+    "もらって",
+    "はらって",
+    "くばって"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b1-27",
+   "lesson": 1,
+   "number": 27,
+   "part": "kanji-reading",
+   "before": "新しい 道路が もうすぐ ",
+   "target": "完成",
+   "after": "するそうだ。",
+   "options": [
+    "かんせい",
+    "けんせつ",
+    "かんぜん",
+    "けんちく"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b1-28",
+   "lesson": 1,
+   "number": 28,
+   "part": "kanji-reading",
+   "before": "ここから ",
+   "target": "島",
+   "after": "が たくさん見えますよ。",
+   "options": [
+    "ほし",
+    "とり",
+    "しま",
+    "うま"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b1-29",
+   "lesson": 1,
+   "number": 29,
+   "part": "kanji-reading",
+   "before": "田中さんは ちょっと ",
+   "target": "困って",
+   "after": "いるみたいです。",
+   "options": [
+    "まよって",
+    "こまって",
+    "おこって",
+    "うたがって"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b1-30",
+   "lesson": 1,
+   "number": 30,
+   "part": "kanji-reading",
+   "before": "",
+   "target": "平日",
+   "after": "は 午後 8時まで 開いています。",
+   "options": [
+    "へいじつ",
+    "ほんにち",
+    "へいにち",
+    "ほんじつ"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b1-31",
+   "lesson": 1,
+   "number": 31,
+   "part": "orthography",
+   "before": "機械が ",
+   "target": "せいじょう",
+   "after": "かどうか チェックした。",
+   "options": [
+    "盛情",
+    "威常",
+    "威常",
+    "正常"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b1-32",
+   "lesson": 1,
+   "number": 32,
+   "part": "orthography",
+   "before": "健康診断で ",
+   "target": "けつえき",
+   "after": "検査を 受けた。",
+   "options": [
+    "意識",
+    "園圧",
+    "血液",
+    "血圧"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b1-33",
+   "lesson": 1,
+   "number": 33,
+   "part": "orthography",
+   "before": "母親が 子どもの 後ろを ",
+   "target": "おって",
+   "after": "走っている。",
+   "options": [
+    "送って",
+    "追って",
+    "押って",
+    "折って"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b1-34",
+   "lesson": 1,
+   "number": 34,
+   "part": "orthography",
+   "before": "電車を ",
+   "target": "おりる",
+   "after": "ときに、かさを 忘れてしまった。",
+   "options": [
+    "移りる",
+    "移る",
+    "降る",
+    "降りる"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b1-35",
+   "lesson": 1,
+   "number": 35,
+   "part": "orthography",
+   "before": "大学に 入ってから、",
+   "target": "しんちょう",
+   "after": "が 変わっていない。",
+   "options": [
+    "背中",
+    "背後",
+    "身長",
+    "身張"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b1-36",
+   "lesson": 1,
+   "number": 36,
+   "part": "orthography",
+   "before": "",
+   "target": "ものがたり",
+   "after": "は だれでも 知っている。",
+   "options": [
+    "物語",
+    "物化",
+    "物記",
+    "物源"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b1-37",
+   "lesson": 1,
+   "number": 37,
+   "part": "orthography",
+   "before": "みんなで 話し合って、問題を ",
+   "target": "かいけつ",
+   "after": "した。",
+   "options": [
+    "改決",
+    "改結",
+    "解決",
+    "解結"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b1-38",
+   "lesson": 1,
+   "number": 38,
+   "part": "orthography",
+   "before": "山口さんに 東京を ",
+   "target": "あんない",
+   "after": "してもらった。",
+   "options": [
+    "安内",
+    "家内",
+    "室内",
+    "案内"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b1-39",
+   "lesson": 1,
+   "number": 39,
+   "part": "orthography",
+   "before": "わたしは ",
+   "target": "けんこう",
+   "after": "のために 毎日 走っています。",
+   "options": [
+    "健康",
+    "建康",
+    "健庫",
+    "建庫"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b1-40",
+   "lesson": 1,
+   "number": 40,
+   "part": "orthography",
+   "before": "今年の 夏は ",
+   "target": "きおん",
+   "after": "が 高かった。",
+   "options": [
+    "気湿",
+    "気温",
+    "気湯",
+    "気混"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b1-41",
+   "lesson": 1,
+   "number": 41,
+   "part": "orthography",
+   "before": "頭が ",
+   "target": "いたい",
+   "after": "ので、薬を 飲んだ。",
+   "options": [
+    "病い",
+    "痛い",
+    "疲い",
+    "症い"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b1-42",
+   "lesson": 1,
+   "number": 42,
+   "part": "orthography",
+   "before": "この シャツは 工場で ",
+   "target": "たいりょう",
+   "after": "に 作られている。",
+   "options": [
+    "多量",
+    "多料",
+    "大量",
+    "大料"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b1-43",
+   "lesson": 1,
+   "number": 43,
+   "part": "orthography",
+   "before": "東京は ",
+   "target": "げんざい",
+   "after": " 午後3時です。",
+   "options": [
+    "視在",
+    "現存",
+    "現在",
+    "視存"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b1-44",
+   "lesson": 1,
+   "number": 44,
+   "part": "orthography",
+   "before": "こちらの サンプルは ",
+   "target": "ごじゆう",
+   "after": "に お取りください。",
+   "options": [
+    "ご事有",
+    "ご事由",
+    "ご自有",
+    "ご自由"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b1-45",
+   "lesson": 1,
+   "number": 45,
+   "part": "orthography",
+   "before": "大学では ",
+   "target": "ほうりつ",
+   "after": "を 勉強ました。",
+   "options": [
+    "方立",
+    "法立",
+    "方律",
+    "法律"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b1-46",
+   "lesson": 1,
+   "number": 46,
+   "part": "orthography",
+   "before": "いつか 京都を ゆっくり",
+   "target": "かんこう",
+   "after": "したい。",
+   "options": [
+    "観光",
+    "観察",
+    "歓光",
+    "歓察"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b1-47",
+   "lesson": 1,
+   "number": 47,
+   "part": "orthography",
+   "before": "当日、この",
+   "target": "けん",
+   "after": "を 忘れないようにしてください。",
+   "options": [
+    "巻",
+    "券",
+    "募",
+    "巷"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b1-48",
+   "lesson": 1,
+   "number": 48,
+   "part": "orthography",
+   "before": "なかなか ",
+   "target": "なみだ",
+   "after": "が 止まらなくて 困りました。",
+   "options": [
+    "流",
+    "汗",
+    "涙",
+    "泣"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b1-49",
+   "lesson": 1,
+   "number": 49,
+   "part": "orthography",
+   "before": "やくそくを ",
+   "target": "まもる",
+   "after": "ことは 大切だ。",
+   "options": [
+    "保る",
+    "要",
+    "守る",
+    "取る"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b1-50",
+   "lesson": 1,
+   "number": 50,
+   "part": "orthography",
+   "before": "今、この",
+   "target": "しゅうかんし",
+   "after": "が 一番 売れている。",
+   "options": [
+    "週間議",
+    "週間誌",
+    "週刊議",
+    "週刊誌"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b1-51",
+   "lesson": 1,
+   "number": 51,
+   "part": "orthography",
+   "before": "今日は これから 友達と 旅行の ",
+   "target": "そうだん",
+   "after": "を します。",
+   "options": [
+    "想談",
+    "想淡",
+    "相談",
+    "相淡"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b1-52",
+   "lesson": 1,
+   "number": 52,
+   "part": "orthography",
+   "before": "わたしは 体力には ",
+   "target": "じしん",
+   "after": "が あります。",
+   "options": [
+    "持信",
+    "自信",
+    "持心",
+    "自心"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b1-53",
+   "lesson": 1,
+   "number": 53,
+   "part": "orthography",
+   "before": "電子レンジで ミルクを ",
+   "target": "あたためました",
+   "after": "。",
+   "options": [
+    "温めました",
+    "湯めました",
+    "熱めました",
+    "熱めました"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b1-54",
+   "lesson": 1,
+   "number": 54,
+   "part": "orthography",
+   "before": "この 製品の ",
+   "target": "げんりょう",
+   "after": "は すべて 輸入しています。",
+   "options": [
+    "材料",
+    "材量",
+    "原料",
+    "原量"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b1-55",
+   "lesson": 1,
+   "number": 55,
+   "part": "orthography",
+   "before": "昨日は 残業で ",
+   "target": "きたく",
+   "after": "が 遅くなった。",
+   "options": [
+    "着家",
+    "帰家",
+    "着宅",
+    "帰宅"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b1-56",
+   "lesson": 1,
+   "number": 56,
+   "part": "orthography",
+   "before": "この 辺りは、子供を ",
+   "target": "そだてる",
+   "after": "のに いい 環境だ。",
+   "options": [
+    "産てる",
+    "育てる",
+    "守てる",
+    "助てる"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b1-57",
+   "lesson": 1,
+   "number": 57,
+   "part": "orthography",
+   "before": "会議で 決まったことを きちんと ",
+   "target": "きろく",
+   "after": "して おいてください。",
+   "options": [
+    "記録",
+    "紀録",
+    "記緑",
+    "紀緑"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b1-58",
+   "lesson": 1,
+   "number": 58,
+   "part": "orthography",
+   "before": "今朝から ",
+   "target": "は",
+   "after": "が 痛いんです。",
+   "options": [
+    "腹",
+    "胃",
+    "歯",
+    "腰"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b1-59",
+   "lesson": 1,
+   "number": 59,
+   "part": "orthography",
+   "before": "リボンを きれいに ",
+   "target": "むすぶ",
+   "after": "のは 難しい。",
+   "options": [
+    "組ぶ",
+    "絡ぶ",
+    "給ぶ",
+    "結ぶ"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b1-60",
+   "lesson": 1,
+   "number": 60,
+   "part": "orthography",
+   "before": "学校で 勉強したことを 毎日 ",
+   "target": "ふくしゅう",
+   "after": "しています。",
+   "options": [
+    "復習",
+    "複習",
+    "練習",
+    "錬習"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b2-1",
+   "lesson": 2,
+   "number": 1,
+   "part": "kanji-reading",
+   "before": "わたしは 3年前に 大学を ",
+   "target": "卒業",
+   "after": "しました。",
+   "options": [
+    "さつぎょう",
+    "そつぎょう",
+    "さつぎょ",
+    "そつぎょ"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b2-2",
+   "lesson": 2,
+   "number": 2,
+   "part": "kanji-reading",
+   "before": "びんの ふたは ",
+   "target": "固く",
+   "after": "しめて おいてください。",
+   "options": [
+    "かるく",
+    "ゆるく",
+    "きつく",
+    "かたく"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b2-3",
+   "lesson": 2,
+   "number": 3,
+   "part": "kanji-reading",
+   "before": "この ひもは ",
+   "target": "短すぎて",
+   "after": " 使いにくい。",
+   "options": [
+    "よわすぎて",
+    "みじかすぎて",
+    "ほそすぎて",
+    "かたすぎて"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b2-4",
+   "lesson": 2,
+   "number": 4,
+   "part": "kanji-reading",
+   "before": "あの人は ",
+   "target": "他人",
+   "after": "の 意見を 全然 聞かない。",
+   "options": [
+    "ちにん",
+    "たじん",
+    "たにん",
+    "ちじん"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b2-5",
+   "lesson": 2,
+   "number": 5,
+   "part": "kanji-reading",
+   "before": "人口の 変化を グラフで ",
+   "target": "示した",
+   "after": "。",
+   "options": [
+    "うつした",
+    "さした",
+    "あらわした",
+    "しめした"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b2-6",
+   "lesson": 2,
+   "number": 6,
+   "part": "kanji-reading",
+   "before": "田中さんは ",
+   "target": "外科",
+   "after": "の お医者さんです。",
+   "options": [
+    "がいか",
+    "げか",
+    "げいか",
+    "がか"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b2-7",
+   "lesson": 2,
+   "number": 7,
+   "part": "kanji-reading",
+   "before": "佐藤さんは ",
+   "target": "笑顔",
+   "after": "が とても すてきです。",
+   "options": [
+    "えがお",
+    "えかお",
+    "わらがお",
+    "わらかお"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b2-8",
+   "lesson": 2,
+   "number": 8,
+   "part": "kanji-reading",
+   "before": "5時",
+   "target": "以降",
+   "after": "に もう 一度 お電話ください。",
+   "options": [
+    "いこ",
+    "いごう",
+    "いこう",
+    "いご"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b2-9",
+   "lesson": 2,
+   "number": 9,
+   "part": "kanji-reading",
+   "before": "道路を ",
+   "target": "横断",
+   "after": "するときは、車に 十分 注意してください。",
+   "options": [
+    "おうだん",
+    "よこだん",
+    "おうたん",
+    "よこたん"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b2-10",
+   "lesson": 2,
+   "number": 10,
+   "part": "kanji-reading",
+   "before": "わたしが ",
+   "target": "合図",
+   "after": "を したら、始めてください。",
+   "options": [
+    "ごうと",
+    "あいと",
+    "ごうず",
+    "あいず"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b2-11",
+   "lesson": 2,
+   "number": 11,
+   "part": "kanji-reading",
+   "before": "",
+   "target": "苦しい",
+   "after": "ときは、この 歌を 聞きます。",
+   "options": [
+    "かなしい",
+    "くやしい",
+    "くるしい",
+    "さびしい"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b2-12",
+   "lesson": 2,
+   "number": 12,
+   "part": "kanji-reading",
+   "before": "来月、日本に ",
+   "target": "出張",
+   "after": "する 予定です。",
+   "options": [
+    "しゅちゅう",
+    "しゅちょう",
+    "しゅっちゅう",
+    "しゅっちょう"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b2-13",
+   "lesson": 2,
+   "number": 13,
+   "part": "kanji-reading",
+   "before": "一つ だけ ",
+   "target": "席",
+   "after": "が あいていました。",
+   "options": [
+    "せき",
+    "かぎ",
+    "あな",
+    "ふた"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b2-14",
+   "lesson": 2,
+   "number": 14,
+   "part": "kanji-reading",
+   "before": "その 木の ",
+   "target": "根",
+   "after": "は 薬にも なるそうです。",
+   "options": [
+    "は",
+    "ね",
+    "かわ",
+    "め"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b2-15",
+   "lesson": 2,
+   "number": 15,
+   "part": "kanji-reading",
+   "before": "すみませんが、",
+   "target": "事情",
+   "after": "が あって、今日は 行けません。",
+   "options": [
+    "じこ",
+    "じじょう",
+    "じこう",
+    "じじょ"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b2-16",
+   "lesson": 2,
+   "number": 16,
+   "part": "kanji-reading",
+   "before": "面接の 結果は、1週間 以内に ",
+   "target": "通知",
+   "after": "します。",
+   "options": [
+    "つうち",
+    "とおち",
+    "つうし",
+    "とおし"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b2-17",
+   "lesson": 2,
+   "number": 17,
+   "part": "kanji-reading",
+   "before": "あの 人は プロの サッカー ",
+   "target": "選手",
+   "after": "です。",
+   "options": [
+    "ぜんしゅ",
+    "せんしゅう",
+    "せんしゅ",
+    "ぜんしゅう"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b2-18",
+   "lesson": 2,
+   "number": 18,
+   "part": "kanji-reading",
+   "before": "試合に 出られなかったのは、",
+   "target": "実力",
+   "after": "が 足りなかったからだ。",
+   "options": [
+    "しつりょく",
+    "じつりょく",
+    "どりょくり",
+    "とりょく"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b2-19",
+   "lesson": 2,
+   "number": 19,
+   "part": "kanji-reading",
+   "before": "庭に ",
+   "target": "生えた",
+   "after": " 草に きれいな 花が 咲いていた。",
+   "options": [
+    "はえた",
+    "せいえた",
+    "しょうえた",
+    "うえた"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b2-20",
+   "lesson": 2,
+   "number": 20,
+   "part": "kanji-reading",
+   "before": "今週は ",
+   "target": "各地",
+   "after": "で いろいろな お祭りが あります。",
+   "options": [
+    "かっじ",
+    "かっち",
+    "かくじ",
+    "かくち"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b2-21",
+   "lesson": 2,
+   "number": 21,
+   "part": "kanji-reading",
+   "before": "",
+   "target": "貯金",
+   "after": "が どのくらいか わかりません。",
+   "options": [
+    "だいきん",
+    "ちょきん",
+    "げんきん",
+    "ぜいきん"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b2-22",
+   "lesson": 2,
+   "number": 22,
+   "part": "kanji-reading",
+   "before": "隣の お宅は ",
+   "target": "留守",
+   "after": "のようです。",
+   "options": [
+    "るす",
+    "りゅうす",
+    "るしゅ",
+    "りゅうしゅ"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b2-23",
+   "lesson": 2,
+   "number": 23,
+   "part": "kanji-reading",
+   "before": "もう 少し ",
+   "target": "浅い",
+   "after": "皿は ありませんか。",
+   "options": [
+    "ふかい",
+    "あつい",
+    "あさい",
+    "うすい"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b2-24",
+   "lesson": 2,
+   "number": 24,
+   "part": "kanji-reading",
+   "before": "この ",
+   "target": "文章",
+   "after": "は 長くて わかりにくい。",
+   "options": [
+    "ぶんそ",
+    "ぶんしょ",
+    "ぶんそう",
+    "ぶんしょう"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b2-25",
+   "lesson": 2,
+   "number": 25,
+   "part": "kanji-reading",
+   "before": "",
+   "target": "改札",
+   "after": "の 前で 待っています。",
+   "options": [
+    "かいさつ",
+    "かいじょう",
+    "けいさつ",
+    "けいじょう"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b2-26",
+   "lesson": 2,
+   "number": 26,
+   "part": "kanji-reading",
+   "before": "その 話を したら、彼女は ",
+   "target": "笑って",
+   "after": "いました。",
+   "options": [
+    "こまって",
+    "おこって",
+    "わらって",
+    "うたがって"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b2-27",
+   "lesson": 2,
+   "number": 27,
+   "part": "kanji-reading",
+   "before": "この 町は、昔から ",
+   "target": "商業",
+   "after": "が 盛んだった。",
+   "options": [
+    "さんぎょう",
+    "しょうぎょう",
+    "じょうぎょう",
+    "ざんぎょう"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b2-28",
+   "lesson": 2,
+   "number": 28,
+   "part": "kanji-reading",
+   "before": "メールアドレスは ",
+   "target": "覚えて",
+   "after": "いません。",
+   "options": [
+    "おしえて",
+    "おぼえて",
+    "かえて",
+    "かんがえて"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b2-29",
+   "lesson": 2,
+   "number": 29,
+   "part": "kanji-reading",
+   "before": "新しい サービスの ",
+   "target": "広告",
+   "after": "は まだ できていません。",
+   "options": [
+    "こうこく",
+    "ほうこく",
+    "こうごく",
+    "ほうごく"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b2-30",
+   "lesson": 2,
+   "number": 30,
+   "part": "kanji-reading",
+   "before": "今日の 試合の ",
+   "target": "相手",
+   "after": "は 強かった。",
+   "options": [
+    "そうて",
+    "あいしゅ",
+    "あいて",
+    "そうしゅ"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b2-31",
+   "lesson": 2,
+   "number": 31,
+   "part": "orthography",
+   "before": "わたしは、彼なら できると ",
+   "target": "しんじて",
+   "after": "います。",
+   "options": [
+    "真じて",
+    "信じて",
+    "心じて",
+    "親じて"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b2-32",
+   "lesson": 2,
+   "number": 32,
+   "part": "orthography",
+   "before": "この 店は 夜 ",
+   "target": "おそく",
+   "after": "まで 開いているので、とても 便利だ。",
+   "options": [
+    "達く",
+    "後く",
+    "遅く",
+    "復く"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b2-33",
+   "lesson": 2,
+   "number": 33,
+   "part": "orthography",
+   "before": "この 工場では プラスチックの ",
+   "target": "ようき",
+   "after": "を 生産しています。",
+   "options": [
+    "溶器",
+    "容器",
+    "容機",
+    "溶機"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b2-34",
+   "lesson": 2,
+   "number": 34,
+   "part": "orthography",
+   "before": "今日は 一日中 歩いていたので、足が ",
+   "target": "つかれました",
+   "after": "。",
+   "options": [
+    "疲れました",
+    "痛れました",
+    "病れました",
+    "症れました"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b2-35",
+   "lesson": 2,
+   "number": 35,
+   "part": "orthography",
+   "before": "お皿は ",
+   "target": "かさねて",
+   "after": " その 棚に しまってください。",
+   "options": [
+    "整ねて",
+    "列ねて",
+    "階ねて",
+    "重ねて"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b2-36",
+   "lesson": 2,
+   "number": 36,
+   "part": "orthography",
+   "before": "今週は ",
+   "target": "ざんぎょう",
+   "after": "が 多かった。",
+   "options": [
+    "増勤",
+    "増業",
+    "残勤",
+    "残業"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b2-37",
+   "lesson": 2,
+   "number": 37,
+   "part": "orthography",
+   "before": "米の 輸出量が 去年の 2",
+   "target": "ばい",
+   "after": "になった。",
+   "options": [
+    "培",
+    "倍",
+    "部",
+    "増"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b2-38",
+   "lesson": 2,
+   "number": 38,
+   "part": "orthography",
+   "before": "昨日の 夕方、この 辺りで ",
+   "target": "ていでん",
+   "after": "が あった。",
+   "options": [
+    "止電",
+    "落電",
+    "停電",
+    "閉電"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b2-39",
+   "lesson": 2,
+   "number": 39,
+   "part": "orthography",
+   "before": "すぐに ",
+   "target": "つつんで",
+   "after": "ください。",
+   "options": [
+    "呼んで",
+    "結んで",
+    "運んで",
+    "包んで"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b2-40",
+   "lesson": 2,
+   "number": 40,
+   "part": "orthography",
+   "before": "田中さんは ",
+   "target": "どくしん",
+   "after": "です。",
+   "options": [
+    "独身",
+    "単身",
+    "独者",
+    "単者"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b2-41",
+   "lesson": 2,
+   "number": 41,
+   "part": "orthography",
+   "before": "この 本を ",
+   "target": "かして",
+   "after": "ください。",
+   "options": [
+    "措して",
+    "借して",
+    "貨して",
+    "貸して"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b2-42",
+   "lesson": 2,
+   "number": 42,
+   "part": "orthography",
+   "before": "この 猫は、わたしが 触ろうとすると、すぐ",
+   "target": "にげる",
+   "after": "。",
+   "options": [
+    "逃げる",
+    "遠げる",
+    "逆げる",
+    "返げる"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b2-43",
+   "lesson": 2,
+   "number": 43,
+   "part": "orthography",
+   "before": "子どもが 壁に 絵を 書いてしまったので、",
+   "target": "けして",
+   "after": "きれいにした。",
+   "options": [
+    "流して",
+    "洗して",
+    "消して",
+    "清して"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b2-44",
+   "lesson": 2,
+   "number": 44,
+   "part": "orthography",
+   "before": "風邪で 学校を ",
+   "target": "けっせき",
+   "after": "した。",
+   "options": [
+    "休座",
+    "休席",
+    "欠座",
+    "欠席"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b2-45",
+   "lesson": 2,
+   "number": 45,
+   "part": "orthography",
+   "before": "野菜を ",
+   "target": "こまかく",
+   "after": " 切ってください。",
+   "options": [
+    "細かく",
+    "短かく",
+    "丸かく",
+    "角かく"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b2-46",
+   "lesson": 2,
+   "number": 46,
+   "part": "orthography",
+   "before": "この アパートには ",
+   "target": "わかい",
+   "after": "人が たくさん 住んでいる。",
+   "options": [
+    "孝い",
+    "苦い",
+    "老い",
+    "若い"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b2-47",
+   "lesson": 2,
+   "number": 47,
+   "part": "orthography",
+   "before": "",
+   "target": "ふくすう",
+   "after": "の 写真から いい ものを選んだ。",
+   "options": [
+    "複数",
+    "復数",
+    "複枚",
+    "復枚"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b2-48",
+   "lesson": 2,
+   "number": 48,
+   "part": "orthography",
+   "before": "米の 輸入量が ",
+   "target": "げんしょう",
+   "after": "している。",
+   "options": [
+    "減小",
+    "減少",
+    "現少",
+    "現小"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b2-49",
+   "lesson": 2,
+   "number": 49,
+   "part": "orthography",
+   "before": "この 店は、いろいろな ",
+   "target": "がっき",
+   "after": "を 売っている。",
+   "options": [
+    "薬具",
+    "楽器",
+    "楽具",
+    "薬器"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b2-50",
+   "lesson": 2,
+   "number": 50,
+   "part": "orthography",
+   "before": "携帯電話を ",
+   "target": "かりました",
+   "after": "。",
+   "options": [
+    "代りました",
+    "換りました",
+    "貸りました",
+    "借りました"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b2-51",
+   "lesson": 2,
+   "number": 51,
+   "part": "orthography",
+   "before": "",
+   "target": "けってん",
+   "after": "の ない人は いないだろう。",
+   "options": [
+    "欠点",
+    "決天",
+    "決点",
+    "欠天"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b2-52",
+   "lesson": 2,
+   "number": 52,
+   "part": "orthography",
+   "before": "この 古い 橋は、",
+   "target": "げんざい",
+   "after": "は 使われていない。",
+   "options": [
+    "原存",
+    "原在",
+    "現在",
+    "現存"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b2-53",
+   "lesson": 2,
+   "number": 53,
+   "part": "orthography",
+   "before": "",
+   "target": "みどり",
+   "after": "の ペンで、線を 引きました。",
+   "options": [
+    "黄",
+    "緑",
+    "青",
+    "赤"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b2-54",
+   "lesson": 2,
+   "number": 54,
+   "part": "orthography",
+   "before": "家族の 幸せを ",
+   "target": "ねがって",
+   "after": "いる。",
+   "options": [
+    "顧って",
+    "願って",
+    "頼って",
+    "頻って"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b2-55",
+   "lesson": 2,
+   "number": 55,
+   "part": "orthography",
+   "before": "泥だらけの 靴で 家に 入って ",
+   "target": "怒られた",
+   "after": "。",
+   "options": [
+    "おこられた",
+    "しかられた",
+    "どなられた",
+    "なぐられた"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b2-56",
+   "lesson": 2,
+   "number": 56,
+   "part": "orthography",
+   "before": "数学の ",
+   "target": "せいせき",
+   "after": "が 前より よくなった。",
+   "options": [
+    "成積",
+    "成績",
+    "整績",
+    "整積"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b2-57",
+   "lesson": 2,
+   "number": 57,
+   "part": "orthography",
+   "before": "魚を ",
+   "target": "やいて",
+   "after": "食べた。",
+   "options": [
+    "爆いて",
+    "燃いて",
+    "煙いて",
+    "焼いて"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b2-58",
+   "lesson": 2,
+   "number": 58,
+   "part": "orthography",
+   "before": "その 赤い ところを ",
+   "target": "まわして",
+   "after": "ください。",
+   "options": [
+    "回して",
+    "曲して",
+    "押して",
+    "引して"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b2-59",
+   "lesson": 2,
+   "number": 59,
+   "part": "orthography",
+   "before": "会議の 内容を",
+   "target": "きろく",
+   "after": "しておく。",
+   "options": [
+    "議録",
+    "記禄",
+    "記録",
+    "議禄"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b2-60",
+   "lesson": 2,
+   "number": 60,
+   "part": "orthography",
+   "before": "順番に ",
+   "target": "じょうしゃ",
+   "after": "してください。",
+   "options": [
+    "下車",
+    "乗車",
+    "降車",
+    "上車"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b3-1",
+   "lesson": 3,
+   "number": 1,
+   "part": "kanji-reading",
+   "before": "この 国の 人は ",
+   "target": "自然",
+   "after": "を 大切に している。",
+   "options": [
+    "しぜん",
+    "じぜん",
+    "しせん",
+    "じせん"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b3-2",
+   "lesson": 3,
+   "number": 2,
+   "part": "kanji-reading",
+   "before": "あと 30",
+   "target": "秒",
+   "after": "で 完成します。",
+   "options": [
+    "じょう",
+    "しょう",
+    "びょう",
+    "ひょう"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b3-3",
+   "lesson": 3,
+   "number": 3,
+   "part": "kanji-reading",
+   "before": "夏休みも ",
+   "target": "残り",
+   "after": "三日に なってしまった。",
+   "options": [
+    "もとり",
+    "おわり",
+    "のこり",
+    "あまり"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b3-4",
+   "lesson": 3,
+   "number": 4,
+   "part": "kanji-reading",
+   "before": "この グラフは 人口の ",
+   "target": "増減",
+   "after": "を 表している。",
+   "options": [
+    "ぞうけん",
+    "ぞうげん",
+    "じょうけん",
+    "じょうげん"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b3-5",
+   "lesson": 3,
+   "number": 5,
+   "part": "kanji-reading",
+   "before": "面接の 結果は 1週間 以内に ",
+   "target": "通知",
+   "after": "します。",
+   "options": [
+    "つうち",
+    "とおち",
+    "つうし",
+    "とおし"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b3-6",
+   "lesson": 3,
+   "number": 6,
+   "part": "kanji-reading",
+   "before": "庭に ",
+   "target": "生えた",
+   "after": "草に きれいな 花が 咲いていた。",
+   "options": [
+    "はえた",
+    "せいえた",
+    "しようえた",
+    "うえた"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b3-7",
+   "lesson": 3,
+   "number": 7,
+   "part": "kanji-reading",
+   "before": "外国で 一人 暮らしを しているので、国の 料理が ",
+   "target": "恋しく",
+   "after": "なる。",
+   "options": [
+    "なつかしく",
+    "うれしく",
+    "ほしく",
+    "こいしく"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b3-8",
+   "lesson": 3,
+   "number": 8,
+   "part": "kanji-reading",
+   "before": "これを ",
+   "target": "郵送",
+   "after": "してください。",
+   "options": [
+    "はそう",
+    "ほうそう",
+    "ゆそう",
+    "ゆうそう"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b3-9",
+   "lesson": 3,
+   "number": 9,
+   "part": "kanji-reading",
+   "before": "10時に ",
+   "target": "予約",
+   "after": "を お願いします。",
+   "options": [
+    "ようよく",
+    "よやく",
+    "よよく",
+    "ようやく"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b3-10",
+   "lesson": 3,
+   "number": 10,
+   "part": "kanji-reading",
+   "before": "そのときは、私も ",
+   "target": "若かった",
+   "after": "んです。",
+   "options": [
+    "わるかった",
+    "さむかった",
+    "こわかった",
+    "わかかった"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b3-11",
+   "lesson": 3,
+   "number": 11,
+   "part": "kanji-reading",
+   "before": "",
+   "target": "上品",
+   "after": "な 人ですね。",
+   "options": [
+    "じょうひん",
+    "じょうびん",
+    "じょひん",
+    "じょびん"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b3-12",
+   "lesson": 3,
+   "number": 12,
+   "part": "kanji-reading",
+   "before": "山田さんに ",
+   "target": "助けて",
+   "after": "もらった。",
+   "options": [
+    "とどけて",
+    "たすけて",
+    "うけて",
+    "かたづけて"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b3-13",
+   "lesson": 3,
+   "number": 13,
+   "part": "kanji-reading",
+   "before": "私たちの ",
+   "target": "未来",
+   "after": "について 考えてみた。",
+   "options": [
+    "しょらい",
+    "しょうらい",
+    "みらい",
+    "みいらい"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b3-14",
+   "lesson": 3,
+   "number": 14,
+   "part": "kanji-reading",
+   "before": "この 電車は ",
+   "target": "各駅",
+   "after": "に とまります。",
+   "options": [
+    "かくえき",
+    "がくえき",
+    "きゃくえき",
+    "ぎゃくえき"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b3-15",
+   "lesson": 3,
+   "number": 15,
+   "part": "kanji-reading",
+   "before": "誰が ",
+   "target": "勝った",
+   "after": "んですか。",
+   "options": [
+    "かざった",
+    "おった",
+    "のこった",
+    "かった"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b3-16",
+   "lesson": 3,
+   "number": 16,
+   "part": "kanji-reading",
+   "before": "彼に 初めて 会ったときの ",
+   "target": "印象",
+   "after": "は どうでしたか。",
+   "options": [
+    "いんしょう",
+    "いんそう",
+    "にんしょう",
+    "にんそう"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b3-17",
+   "lesson": 3,
+   "number": 17,
+   "part": "kanji-reading",
+   "before": "ここは ",
+   "target": "汚い",
+   "after": "から、ほかの 所へ 行きましょう。",
+   "options": [
+    "せまい",
+    "くさい",
+    "きたない",
+    "うるさい"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b3-18",
+   "lesson": 3,
+   "number": 18,
+   "part": "kanji-reading",
+   "before": "",
+   "target": "商品",
+   "after": "に 傷が ないか、確認します。",
+   "options": [
+    "しょひん",
+    "しょうひん",
+    "せいひん",
+    "せひん"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b3-19",
+   "lesson": 3,
+   "number": 19,
+   "part": "kanji-reading",
+   "before": "まだ ",
+   "target": "冷えて",
+   "after": "いないので、もう 少し 待ってください。",
+   "options": [
+    "もえて",
+    "ひえて",
+    "にえて",
+    "うえて"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b3-20",
+   "lesson": 3,
+   "number": 20,
+   "part": "kanji-reading",
+   "before": "体の 調子が 良くないので、",
+   "target": "早退",
+   "after": "した。",
+   "options": [
+    "そうてい",
+    "ぞうたい",
+    "そうたい",
+    "ぞうてい"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b3-21",
+   "lesson": 3,
+   "number": 21,
+   "part": "kanji-reading",
+   "before": "大事な ことばに ",
+   "target": "下線",
+   "after": "を 引いてください。",
+   "options": [
+    "げぜん",
+    "かぜん",
+    "げせん",
+    "かせん"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b3-22",
+   "lesson": 3,
+   "number": 22,
+   "part": "kanji-reading",
+   "before": "",
+   "target": "転んだ",
+   "after": "ときに、割って しまったみたいです。",
+   "options": [
+    "はこんだ",
+    "ふんだ",
+    "ころんだ",
+    "つつんだ"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b3-23",
+   "lesson": 3,
+   "number": 23,
+   "part": "kanji-reading",
+   "before": "今日の 講義の ",
+   "target": "主要",
+   "after": "な テーマは 二つです。",
+   "options": [
+    "しゅよう",
+    "じゅよう",
+    "しゅよ",
+    "じゅよ"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b3-24",
+   "lesson": 3,
+   "number": 24,
+   "part": "kanji-reading",
+   "before": "今でも ときどき ",
+   "target": "過去",
+   "after": "の ことを 思い出す。",
+   "options": [
+    "かこ",
+    "かきょ",
+    "かこう",
+    "かきょう"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b3-25",
+   "lesson": 3,
+   "number": 25,
+   "part": "kanji-reading",
+   "before": "中村部長と ",
+   "target": "直接",
+   "after": "話した。",
+   "options": [
+    "ちょくぜつ",
+    "ちょうせつ",
+    "ちょくせつ",
+    "ちょうぜつ"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b3-26",
+   "lesson": 3,
+   "number": 26,
+   "part": "kanji-reading",
+   "before": "これは すぐには ",
+   "target": "燃えません",
+   "after": "。",
+   "options": [
+    "にえません",
+    "ひえません",
+    "きえません",
+    "もえません"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b3-27",
+   "lesson": 3,
+   "number": 27,
+   "part": "kanji-reading",
+   "before": "この",
+   "target": "位置",
+   "after": "に 車を 止めてください。",
+   "options": [
+    "とじ",
+    "いじ",
+    "とち",
+    "いち"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b3-28",
+   "lesson": 3,
+   "number": 28,
+   "part": "kanji-reading",
+   "before": "",
+   "target": "計算",
+   "after": "が できたので、見てください。",
+   "options": [
+    "けいかく",
+    "けいざん",
+    "けいさん",
+    "けいがく"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b3-29",
+   "lesson": 3,
+   "number": 29,
+   "part": "kanji-reading",
+   "before": "ずっと パソコンを 使っていて 疲れたので、腕を ",
+   "target": "回して",
+   "after": "みた。",
+   "options": [
+    "まわして",
+    "おして",
+    "おろして",
+    "のばして"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b3-30",
+   "lesson": 3,
+   "number": 30,
+   "part": "kanji-reading",
+   "before": "ここは ",
+   "target": "禁煙",
+   "after": "です。",
+   "options": [
+    "きえん",
+    "きえん",
+    "きんねん",
+    "きんえん"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b3-31",
+   "lesson": 3,
+   "number": 31,
+   "part": "orthography",
+   "before": "",
+   "target": "りゆう",
+   "after": "は よく わかりません。",
+   "options": [
+    "利有",
+    "理有",
+    "利由",
+    "理由"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b3-32",
+   "lesson": 3,
+   "number": 32,
+   "part": "orthography",
+   "before": "この ",
+   "target": "しま",
+   "after": "には 初めて 来ました。",
+   "options": [
+    "寺",
+    "村",
+    "島",
+    "庭"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b3-33",
+   "lesson": 3,
+   "number": 33,
+   "part": "orthography",
+   "before": "卒業の ",
+   "target": "きねん",
+   "after": "に 写真を 撮りました。",
+   "options": [
+    "気年",
+    "記年",
+    "気念",
+    "記念"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b3-34",
+   "lesson": 3,
+   "number": 34,
+   "part": "orthography",
+   "before": "これが ",
+   "target": "いっぱんてき",
+   "after": "な 方法です。",
+   "options": [
+    "一設的",
+    "一殿的",
+    "一般的",
+    "一股的"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b3-35",
+   "lesson": 3,
+   "number": 35,
+   "part": "orthography",
+   "before": "今日も ",
+   "target": "かならず",
+   "after": " 行きます。",
+   "options": [
+    "必ず",
+    "確ず",
+    "要ず",
+    "常ず"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b3-36",
+   "lesson": 3,
+   "number": 36,
+   "part": "orthography",
+   "before": "効果が ",
+   "target": "あらわれた",
+   "after": "ようですよ。",
+   "options": [
+    "規れた",
+    "現れた",
+    "視れた",
+    "俔れた"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b3-37",
+   "lesson": 3,
+   "number": 37,
+   "part": "orthography",
+   "before": "バスが なかなか 来なくて ",
+   "target": "こまりました",
+   "after": "。",
+   "options": [
+    "因りました",
+    "困りました",
+    "固りました",
+    "因りました"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b3-38",
+   "lesson": 3,
+   "number": 38,
+   "part": "orthography",
+   "before": "給料が 上がるのを ",
+   "target": "きたい",
+   "after": "している。",
+   "options": [
+    "規待",
+    "期願",
+    "期待",
+    "規願"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b3-39",
+   "lesson": 3,
+   "number": 39,
+   "part": "orthography",
+   "before": "昨日は",
+   "target": "ずつう",
+   "after": "がひどかったので、家で寝ていた。",
+   "options": [
+    "腹病",
+    "頭病",
+    "腹痛",
+    "頭痛"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b3-40",
+   "lesson": 3,
+   "number": 40,
+   "part": "orthography",
+   "before": "子どもが 公園で いろいろな 形の ",
+   "target": "は",
+   "after": "を 集めてきた。",
+   "options": [
+    "草",
+    "葉",
+    "菜",
+    "芽"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b3-41",
+   "lesson": 3,
+   "number": 41,
+   "part": "orthography",
+   "before": "銀行へ お金を ",
+   "target": "あずけ",
+   "after": "に 行ってきます。",
+   "options": [
+    "預け",
+    "借け",
+    "替け",
+    "貯け"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b3-42",
+   "lesson": 3,
+   "number": 42,
+   "part": "orthography",
+   "before": "この 荷物は 東京を ",
+   "target": "けいゆ",
+   "after": "して 送られるそうだ。",
+   "options": [
+    "係郵",
+    "経郵",
+    "係由",
+    "経由"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b3-43",
+   "lesson": 3,
+   "number": 43,
+   "part": "orthography",
+   "before": "次の 目標は 10",
+   "target": "びょう",
+   "after": "です。",
+   "options": [
+    "培",
+    "抄",
+    "倍",
+    "秒"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b3-44",
+   "lesson": 3,
+   "number": 44,
+   "part": "orthography",
+   "before": "ボールが 遠くまで ",
+   "target": "とんだ",
+   "after": "。",
+   "options": [
+    "投んだ",
+    "打んだ",
+    "飛んだ",
+    "転んだ"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b3-45",
+   "lesson": 3,
+   "number": 45,
+   "part": "orthography",
+   "before": "ここは ",
+   "target": "さかみち",
+   "after": "が 多いですね。",
+   "options": [
+    "岩道",
+    "板道",
+    "石道",
+    "坂道"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b3-46",
+   "lesson": 3,
+   "number": 46,
+   "part": "orthography",
+   "before": "この 皿だけ 色が ",
+   "target": "ちがいます",
+   "after": "。",
+   "options": [
+    "遣います",
+    "達います",
+    "遅います",
+    "違います"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b3-47",
+   "lesson": 3,
+   "number": 47,
+   "part": "orthography",
+   "before": "あの 会社とは、いい",
+   "target": "かんけい",
+   "after": "を つくりたい。",
+   "options": [
+    "関糸",
+    "関係",
+    "間係",
+    "間糸"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b3-48",
+   "lesson": 3,
+   "number": 48,
+   "part": "orthography",
+   "before": "父は ",
+   "target": "きょうし",
+   "after": "を しています。",
+   "options": [
+    "教仕",
+    "教帥",
+    "教師",
+    "教任"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b3-49",
+   "lesson": 3,
+   "number": 49,
+   "part": "orthography",
+   "before": "捕まえた 魚が ",
+   "target": "にげて",
+   "after": "しまった。",
+   "options": [
+    "遠げて",
+    "返げて",
+    "逃げて",
+    "逆げて"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b3-50",
+   "lesson": 3,
+   "number": 50,
+   "part": "orthography",
+   "before": "数学の ",
+   "target": "せいせき",
+   "after": "が 前よりよくなった。",
+   "options": [
+    "成積",
+    "成績",
+    "整績",
+    "整積"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b3-51",
+   "lesson": 3,
+   "number": 51,
+   "part": "orthography",
+   "before": "魚を ",
+   "target": "やいて",
+   "after": "食べた。",
+   "options": [
+    "爆いて",
+    "燃いて",
+    "煙いて",
+    "焼いて"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b3-52",
+   "lesson": 3,
+   "number": 52,
+   "part": "orthography",
+   "before": "その 赤い ところを ",
+   "target": "まわして",
+   "after": "ください。",
+   "options": [
+    "回して",
+    "曲して",
+    "押して",
+    "引して"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b3-53",
+   "lesson": 3,
+   "number": 53,
+   "part": "orthography",
+   "before": "合った 内容を ",
+   "target": "きろく",
+   "after": "しておく。",
+   "options": [
+    "議録",
+    "記禄",
+    "記録",
+    "議禄"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b3-54",
+   "lesson": 3,
+   "number": 54,
+   "part": "orthography",
+   "before": "順番に ",
+   "target": "じょうしゃ",
+   "after": "してください。",
+   "options": [
+    "下車",
+    "乗車",
+    "降車",
+    "上車"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b3-55",
+   "lesson": 3,
+   "number": 55,
+   "part": "orthography",
+   "before": "しばらく、きれいな ",
+   "target": "なみ",
+   "after": "を 見ていた。",
+   "options": [
+    "池",
+    "湖",
+    "港",
+    "波"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b3-56",
+   "lesson": 3,
+   "number": 56,
+   "part": "orthography",
+   "before": "もう 少し ",
+   "target": "はやく",
+   "after": " 歩きましょう。",
+   "options": [
+    "軽く",
+    "急ぐ",
+    "速く",
+    "進く"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b3-57",
+   "lesson": 3,
+   "number": 57,
+   "part": "orthography",
+   "before": "私は 今の 生活に ",
+   "target": "まんぞく",
+   "after": "している。",
+   "options": [
+    "満続",
+    "万続",
+    "満足",
+    "万足"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b3-58",
+   "lesson": 3,
+   "number": 58,
+   "part": "orthography",
+   "before": "父は 腕を ",
+   "target": "くんで",
+   "after": " 何か 考えていた。",
+   "options": [
+    "接んで",
+    "組んで",
+    "折んで",
+    "結んで"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b3-59",
+   "lesson": 3,
+   "number": 59,
+   "part": "orthography",
+   "before": "この 国は 主に 米を ",
+   "target": "ゆしゅつ",
+   "after": "している。",
+   "options": [
+    "輸出",
+    "論出",
+    "輪出",
+    "諭出"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b3-60",
+   "lesson": 3,
+   "number": 60,
+   "part": "orthography",
+   "before": "赤ちゃんが 母親に 抱かれて ",
+   "target": "ねむって",
+   "after": "います。",
+   "options": [
+    "寝って",
+    "宿って",
+    "眼って",
+    "眠って"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b4-1",
+   "lesson": 4,
+   "number": 1,
+   "part": "kanji-reading",
+   "before": "毎日 ",
+   "target": "復習",
+   "after": "したので、よく できるようになった。",
+   "options": [
+    "ふうしゅう",
+    "れんしゅう",
+    "ふくしゅう",
+    "れいしゅう"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b4-2",
+   "lesson": 4,
+   "number": 2,
+   "part": "kanji-reading",
+   "before": "",
+   "target": "小型",
+   "after": "の ラジオが 欲しいです。",
+   "options": [
+    "こかた",
+    "しょうがた",
+    "こがた",
+    "しょうかた"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b4-3",
+   "lesson": 4,
+   "number": 3,
+   "part": "kanji-reading",
+   "before": "理由も ないのに、人を ",
+   "target": "疑って",
+   "after": "は いけない。",
+   "options": [
+    "きらって",
+    "こわがって",
+    "しかって",
+    "うたがって"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b4-4",
+   "lesson": 4,
+   "number": 4,
+   "part": "kanji-reading",
+   "before": "ここから先は 道が ",
+   "target": "細く",
+   "after": "なっている。",
+   "options": [
+    "ひろく",
+    "ふとく",
+    "せまく",
+    "ほそく"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b4-5",
+   "lesson": 4,
+   "number": 5,
+   "part": "kanji-reading",
+   "before": "川井さんは 明日 ",
+   "target": "退院",
+   "after": "する そうです。",
+   "options": [
+    "たいいん",
+    "たんいん",
+    "だいいん",
+    "だんいん"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b4-6",
+   "lesson": 4,
+   "number": 6,
+   "part": "kanji-reading",
+   "before": "パーティーには ",
+   "target": "夫婦",
+   "after": "で 参加します。",
+   "options": [
+    "ふうふう",
+    "ふうふ",
+    "ふふう",
+    "ふふ"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b4-7",
+   "lesson": 4,
+   "number": 7,
+   "part": "kanji-reading",
+   "before": "",
+   "target": "留守",
+   "after": "の 間に 誰か 来たようだ。",
+   "options": [
+    "るしゅ",
+    "るす",
+    "りゅうす",
+    "りゅうしゅ"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b4-8",
+   "lesson": 4,
+   "number": 8,
+   "part": "kanji-reading",
+   "before": "これは とても ",
+   "target": "高価",
+   "after": "な 花瓶だそうです。",
+   "options": [
+    "こうか",
+    "ごうか",
+    "こうが",
+    "ごうが"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b4-9",
+   "lesson": 4,
+   "number": 9,
+   "part": "kanji-reading",
+   "before": "すみませんが、",
+   "target": "汚して",
+   "after": "しまいました。",
+   "options": [
+    "こわして",
+    "おこして",
+    "よごして",
+    "のこして"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b4-10",
+   "lesson": 4,
+   "number": 10,
+   "part": "kanji-reading",
+   "before": "体育館に ",
+   "target": "選手",
+   "after": "が 入ってきました。",
+   "options": [
+    "ぜんしゅ",
+    "せんしゅう",
+    "せんしゅ",
+    "ぜんしゅう"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b4-11",
+   "lesson": 4,
+   "number": 11,
+   "part": "kanji-reading",
+   "before": "次は ",
+   "target": "月末",
+   "after": "に 来てください。",
+   "options": [
+    "げつもつ",
+    "げつまつ",
+    "がつまつ",
+    "がつもつ"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b4-12",
+   "lesson": 4,
+   "number": 12,
+   "part": "kanji-reading",
+   "before": "箱の ",
+   "target": "裏",
+   "after": "を よく 見てください。",
+   "options": [
+    "うら",
+    "おく",
+    "ふた",
+    "よこ"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b4-13",
+   "lesson": 4,
+   "number": 13,
+   "part": "kanji-reading",
+   "before": "この 町の ",
+   "target": "産業",
+   "after": "について 話を 聞いた。",
+   "options": [
+    "じょうぎょう",
+    "ざんぎょう",
+    "しょうぎょう",
+    "さんぎょう"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b4-14",
+   "lesson": 4,
+   "number": 14,
+   "part": "kanji-reading",
+   "before": "明日の ",
+   "target": "朝刊",
+   "after": "は 休みです。",
+   "options": [
+    "ちょうがん",
+    "ちょうかん",
+    "ちゅうかん",
+    "ちゅうがん"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b4-15",
+   "lesson": 4,
+   "number": 15,
+   "part": "kanji-reading",
+   "before": "その 話を 聞いて、中村さんは ",
+   "target": "断った",
+   "after": "そうです。",
+   "options": [
+    "こわがった",
+    "あやまった",
+    "うたがった",
+    "ことわった"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b4-16",
+   "lesson": 4,
+   "number": 16,
+   "part": "kanji-reading",
+   "before": "その 会社の ",
+   "target": "情報",
+   "after": "は インターネットで 見ました。",
+   "options": [
+    "じょうほう",
+    "ちょうほう",
+    "じょうぼう",
+    "ちょうぼう"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b4-17",
+   "lesson": 4,
+   "number": 17,
+   "part": "kanji-reading",
+   "before": "明日は 2時に ",
+   "target": "広場",
+   "after": "に 集まってください。",
+   "options": [
+    "ひろば",
+    "ひろじょう",
+    "こうば",
+    "こうじょう"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b4-18",
+   "lesson": 4,
+   "number": 18,
+   "part": "kanji-reading",
+   "before": "兄は、",
+   "target": "現在",
+   "after": "は 海外で 働いています。",
+   "options": [
+    "けんさい",
+    "げんさい",
+    "けんざい",
+    "げんざい"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b4-19",
+   "lesson": 4,
+   "number": 19,
+   "part": "kanji-reading",
+   "before": "小さくて ",
+   "target": "丸い",
+   "after": " いすが ほしい。",
+   "options": [
+    "くろい",
+    "まるい",
+    "あおい",
+    "かるい"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b4-20",
+   "lesson": 4,
+   "number": 20,
+   "part": "kanji-reading",
+   "before": "その 歌は 日本でも ",
+   "target": "有名",
+   "after": "です。",
+   "options": [
+    "ゆめ",
+    "ゆめい",
+    "ゆうめ",
+    "ゆうめい"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b4-21",
+   "lesson": 4,
+   "number": 21,
+   "part": "kanji-reading",
+   "before": "そこの ",
+   "target": "角",
+   "after": "に 曲がると、コンビニが あります。",
+   "options": [
+    "かど",
+    "そば",
+    "はし",
+    "よこ"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b4-22",
+   "lesson": 4,
+   "number": 22,
+   "part": "kanji-reading",
+   "before": "大切な 物な ので、丁寧に ",
+   "target": "包んで",
+   "after": "ください。",
+   "options": [
+    "たたんで",
+    "はこんで",
+    "すすんで",
+    "つつんで"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b4-23",
+   "lesson": 4,
+   "number": 23,
+   "part": "kanji-reading",
+   "before": "それは もう ",
+   "target": "計算",
+   "after": "しました。",
+   "options": [
+    "けいけん",
+    "けけん",
+    "けいさん",
+    "けさん"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b4-24",
+   "lesson": 4,
+   "number": 24,
+   "part": "kanji-reading",
+   "before": "この 店では いろいろな ",
+   "target": "容器",
+   "after": "を 売っています。",
+   "options": [
+    "ようぎ",
+    "ようき",
+    "どうぐ",
+    "どうく"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b4-25",
+   "lesson": 4,
+   "number": 25,
+   "part": "kanji-reading",
+   "before": "山本さんは 何と 何を ",
+   "target": "比べた",
+   "after": "んですか。",
+   "options": [
+    "くらべた",
+    "ならべた",
+    "しらべた",
+    "えらべた"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b4-26",
+   "lesson": 4,
+   "number": 26,
+   "part": "kanji-reading",
+   "before": "書類が ",
+   "target": "複数",
+   "after": "あるので、間違えないでください。",
+   "options": [
+    "ふくす",
+    "ふうすう",
+    "ふくすう",
+    "ふうす"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b4-27",
+   "lesson": 4,
+   "number": 27,
+   "part": "kanji-reading",
+   "before": "昨日 病院で ",
+   "target": "血圧",
+   "after": "を 計りました。",
+   "options": [
+    "けつあつ",
+    "けつやつ",
+    "ちあつ",
+    "ちやつ"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b4-28",
+   "lesson": 4,
+   "number": 28,
+   "part": "kanji-reading",
+   "before": "ここ から見る ",
+   "target": "夕日",
+   "after": "は きれいだ。",
+   "options": [
+    "ゆび",
+    "ゆひ",
+    "ゆうび",
+    "ゆうひ"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b4-29",
+   "lesson": 4,
+   "number": 29,
+   "part": "kanji-reading",
+   "before": "そこに 一人で 行くのは ",
+   "target": "難しい",
+   "after": "と 思います。",
+   "options": [
+    "きびしい",
+    "めずらしい",
+    "さびしい",
+    "むずかしい"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b4-30",
+   "lesson": 4,
+   "number": 30,
+   "part": "kanji-reading",
+   "before": "ここを ",
+   "target": "横断",
+   "after": "するときは 気を つけてください。",
+   "options": [
+    "おうざん",
+    "おうだん",
+    "きだん",
+    "きざん"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b4-31",
+   "lesson": 4,
+   "number": 31,
+   "part": "orthography",
+   "before": "彼は ",
+   "target": "たんき",
+   "after": "だ。",
+   "options": [
+    "男気",
+    "単気",
+    "短気",
+    "断気"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b4-32",
+   "lesson": 4,
+   "number": 32,
+   "part": "orthography",
+   "before": "上田さんは 少し ",
+   "target": "しんぱい",
+   "after": "しているようだ。",
+   "options": [
+    "心酔",
+    "心配",
+    "信配",
+    "信酔"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b4-33",
+   "lesson": 4,
+   "number": 33,
+   "part": "orthography",
+   "before": "次は これを ",
+   "target": "やいて",
+   "after": "ください。",
+   "options": [
+    "焼いて",
+    "燃いて",
+    "煙いて",
+    "炊いて"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b4-34",
+   "lesson": 4,
+   "number": 34,
+   "part": "orthography",
+   "before": "明日、",
+   "target": "かならず",
+   "after": " 来て ください。",
+   "options": [
+    "確ず",
+    "要ず",
+    "必ず",
+    "直ず"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b4-35",
+   "lesson": 4,
+   "number": 35,
+   "part": "orthography",
+   "before": "私の 学校は ",
+   "target": "せいふく",
+   "after": "が ありません。",
+   "options": [
+    "清衣",
+    "制衣",
+    "清服",
+    "制服"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b4-36",
+   "lesson": 4,
+   "number": 36,
+   "part": "orthography",
+   "before": "探していた ",
+   "target": "やっきょく",
+   "after": "が、やっと 見つかりました。",
+   "options": [
+    "薬局",
+    "薬曲",
+    "楽局",
+    "楽曲"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b4-37",
+   "lesson": 4,
+   "number": 37,
+   "part": "orthography",
+   "before": "次の 駅で ",
+   "target": "おりましょう",
+   "after": "。",
+   "options": [
+    "停りましょう",
+    "乗りましょう",
+    "降りましょう",
+    "移りましょう"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b4-38",
+   "lesson": 4,
+   "number": 38,
+   "part": "orthography",
+   "before": "いつも 7時には ",
+   "target": "きたく",
+   "after": "している。",
+   "options": [
+    "着宅",
+    "帰室",
+    "帰宅",
+    "着室"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b4-39",
+   "lesson": 4,
+   "number": 39,
+   "part": "orthography",
+   "before": "野菜を ",
+   "target": "こまかく",
+   "after": "切ってください。",
+   "options": [
+    "角かく",
+    "平かく",
+    "丸かく",
+    "細かく"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b4-40",
+   "lesson": 4,
+   "number": 40,
+   "part": "orthography",
+   "before": "",
+   "target": "ほうりつ",
+   "after": "を 守ってください。",
+   "options": [
+    "法律",
+    "法則",
+    "規則",
+    "規律"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b4-41",
+   "lesson": 4,
+   "number": 41,
+   "part": "orthography",
+   "before": "袋の 中は ",
+   "target": "から",
+   "after": "でした。",
+   "options": [
+    "無",
+    "空",
+    "次",
+    "穴"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b4-42",
+   "lesson": 4,
+   "number": 42,
+   "part": "orthography",
+   "before": "今日の",
+   "target": "かいひ",
+   "after": "は 3,000円です。",
+   "options": [
+    "会貸",
+    "会費",
+    "回費",
+    "回貸"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b4-43",
+   "lesson": 4,
+   "number": 43,
+   "part": "orthography",
+   "before": "私は 毎日、どのくらい 歩いたか ",
+   "target": "きろく",
+   "after": "している。",
+   "options": [
+    "基緑",
+    "記緑",
+    "基録",
+    "記録"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b4-44",
+   "lesson": 4,
+   "number": 44,
+   "part": "orthography",
+   "before": "駅で 新しい",
+   "target": "こうこく",
+   "after": "を見ました。",
+   "options": [
+    "交管",
+    "校告",
+    "広営",
+    "広告"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b4-45",
+   "lesson": 4,
+   "number": 45,
+   "part": "orthography",
+   "before": "体が すっかり ",
+   "target": "ひえて",
+   "after": "しまいました。",
+   "options": [
+    "冷えて",
+    "寒えて",
+    "氷えて",
+    "低えて"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b4-46",
+   "lesson": 4,
+   "number": 46,
+   "part": "orthography",
+   "before": "",
+   "target": "けんさ",
+   "after": "はしたが、何も 問題は なかった。",
+   "options": [
+    "健査",
+    "検査",
+    "検察",
+    "健察"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b4-47",
+   "lesson": 4,
+   "number": 47,
+   "part": "orthography",
+   "before": "その 話は ",
+   "target": "たしか",
+   "after": "ですか。",
+   "options": [
+    "定か",
+    "確か",
+    "必か",
+    "常か"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b4-48",
+   "lesson": 4,
+   "number": 48,
+   "part": "orthography",
+   "before": "私の 祖父は 日本の ",
+   "target": "かいが",
+   "after": "を たくさん 持っている。",
+   "options": [
+    "絵面",
+    "図面",
+    "絵画",
+    "書絵"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b4-49",
+   "lesson": 4,
+   "number": 49,
+   "part": "orthography",
+   "before": "車から 出て、外の 空気を ",
+   "target": "すった",
+   "after": "。",
+   "options": [
+    "吹った",
+    "呼った",
+    "吸った",
+    "叫った"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b4-50",
+   "lesson": 4,
+   "number": 50,
+   "part": "orthography",
+   "before": "明日の アルバイトは いつもより 時間が ",
+   "target": "みじかい",
+   "after": "。",
+   "options": [
+    "早い",
+    "長い",
+    "短い",
+    "遅い"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b4-51",
+   "lesson": 4,
+   "number": 51,
+   "part": "orthography",
+   "before": "今日は 少し ",
+   "target": "い",
+   "after": "の 調子が よくない。",
+   "options": [
+    "肩",
+    "胃",
+    "腰",
+    "肌"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b4-52",
+   "lesson": 4,
+   "number": 52,
+   "part": "orthography",
+   "before": "その 話を 聞いて、みんなが ",
+   "target": "えがお",
+   "after": "になった。",
+   "options": [
+    "楽顔",
+    "悲顔",
+    "泣顔",
+    "笑顔"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b4-53",
+   "lesson": 4,
+   "number": 53,
+   "part": "orthography",
+   "before": "",
+   "target": "こくばん",
+   "after": "を 見てください。",
+   "options": [
+    "黒板",
+    "黒坂",
+    "告板",
+    "告坂"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b4-54",
+   "lesson": 4,
+   "number": 54,
+   "part": "orthography",
+   "before": "それは ",
+   "target": "いっぱんてき",
+   "after": "な ことだと思う。",
+   "options": [
+    "一段的",
+    "一般的",
+    "一役的",
+    "一設的"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b4-55",
+   "lesson": 4,
+   "number": 55,
+   "part": "orthography",
+   "before": "あそこに いるのが 私の ",
+   "target": "むすめ",
+   "after": "です。",
+   "options": [
+    "妹",
+    "嫁",
+    "婦",
+    "娘"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b4-56",
+   "lesson": 4,
+   "number": 56,
+   "part": "orthography",
+   "before": "彼女は 頭も いいし、",
+   "target": "せいかく",
+   "after": "もいい。",
+   "options": [
+    "性格",
+    "正格",
+    "性確",
+    "正確"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b4-57",
+   "lesson": 4,
+   "number": 57,
+   "part": "orthography",
+   "before": "それは 誰かの ",
+   "target": "めいれい",
+   "after": "ですか。",
+   "options": [
+    "命例",
+    "命令",
+    "企例",
+    "企令"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b4-58",
+   "lesson": 4,
+   "number": 58,
+   "part": "orthography",
+   "before": "銀行へ お金を ",
+   "target": "あずけ",
+   "after": "に 行ってきます。",
+   "options": [
+    "預け",
+    "借け",
+    "替け",
+    "貯け"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b4-59",
+   "lesson": 4,
+   "number": 59,
+   "part": "orthography",
+   "before": "テストの 点数が ",
+   "target": "よそう",
+   "after": " いじょうに よかった。",
+   "options": [
+    "予習",
+    "予測",
+    "予想",
+    "予定"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b4-60",
+   "lesson": 4,
+   "number": 60,
+   "part": "orthography",
+   "before": "これは とても ",
+   "target": "こうか",
+   "after": "な ものだ。",
+   "options": [
+    "高値",
+    "高費",
+    "高給",
+    "高価"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b5-1",
+   "lesson": 5,
+   "number": 1,
+   "part": "context",
+   "before": "新しい 車を 買うために、店で",
+   "target": "",
+   "after": "をもらってきた。",
+   "options": [
+    "カタログ",
+    "オーダー",
+    "レシート",
+    "セール"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b5-2",
+   "lesson": 5,
+   "number": 2,
+   "part": "context",
+   "before": "田中さんの 服装は とても 上品な",
+   "target": "",
+   "after": "がする。",
+   "options": [
+    "関心",
+    "気分",
+    "考え",
+    "感じ"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b5-3",
+   "lesson": 5,
+   "number": 3,
+   "part": "context",
+   "before": "この あたりで アパートを 借りるには、毎月の",
+   "target": "",
+   "after": "として 五万円 必要だ。",
+   "options": [
+    "価格",
+    "代金",
+    "会費",
+    "家賃"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b5-4",
+   "lesson": 5,
+   "number": 4,
+   "part": "context",
+   "before": "テストを 始めますから、辞書を かばんの 中に",
+   "target": "",
+   "after": "ください。",
+   "options": [
+    "ためって",
+    "とじて",
+    "しまって",
+    "たたんで"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b5-5",
+   "lesson": 5,
+   "number": 5,
+   "part": "context",
+   "before": "日本の 若者の",
+   "target": "",
+   "after": "の ファッションを 知りたい。",
+   "options": [
+    "最大",
+    "最新",
+    "最中",
+    "最多"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b5-6",
+   "lesson": 5,
+   "number": 6,
+   "part": "context",
+   "before": "いらない 新聞や 雑誌を 重ねて、ひもで",
+   "target": "",
+   "after": "捨てた。",
+   "options": [
+    "しばって",
+    "かこんで",
+    "しめて",
+    "あんで"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b5-7",
+   "lesson": 5,
+   "number": 7,
+   "part": "context",
+   "before": "急に 用事が できたので、レストランの 予約を",
+   "target": "",
+   "after": "した。",
+   "options": [
+    "チェックアウト",
+    "カット",
+    "キャンセル",
+    "オーバー"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b5-8",
+   "lesson": 5,
+   "number": 8,
+   "part": "context",
+   "before": "私の 部屋は 東",
+   "target": "",
+   "after": "だ。",
+   "options": [
+    "沿い",
+    "向き",
+    "込み",
+    "建て"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b5-9",
+   "lesson": 5,
+   "number": 9,
+   "part": "context",
+   "before": "昨日 映画を 見たとき、",
+   "target": "",
+   "after": "して 泣いてしまった。",
+   "options": [
+    "歓迎",
+    "応援",
+    "期待",
+    "感動"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b5-10",
+   "lesson": 5,
+   "number": 10,
+   "part": "context",
+   "before": "急いでいたので、",
+   "target": "",
+   "after": "違う バスに 乗ってしまった。",
+   "options": [
+    "ぴったり",
+    "ぐっすり",
+    "うっかり",
+    "がっかり"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b5-11",
+   "lesson": 5,
+   "number": 11,
+   "part": "context",
+   "before": "森さんは 一生懸命 勉強して、",
+   "target": "",
+   "after": "医者になった。",
+   "options": [
+    "りっぱな",
+    "さかんな",
+    "まんぞくな",
+    "しんせんな"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b5-12",
+   "lesson": 5,
+   "number": 12,
+   "part": "context",
+   "before": "この 携帯電話は ボタンが 押しにくいという",
+   "target": "",
+   "after": "を 持つ 利用者もいる。",
+   "options": [
+    "関心",
+    "不満",
+    "目標",
+    "我慢"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b5-13",
+   "lesson": 5,
+   "number": 13,
+   "part": "context",
+   "before": "街を",
+   "target": "",
+   "after": "していたら、山本さんに 会った。",
+   "options": [
+    "ぐらぐら",
+    "がらがら",
+    "ばらばら",
+    "ぶらぶら"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b5-14",
+   "lesson": 5,
+   "number": 14,
+   "part": "context",
+   "before": "セミナーに 参加したい人は、",
+   "target": "",
+   "after": "に 住所、氏名、希望日を 書いてください。",
+   "options": [
+    "証明書",
+    "領収書",
+    "申込書",
+    "参考書"
+   ],
+   "answer": 2,
+   "inferred": true
+  },
+  {
+   "id": "b5-15",
+   "lesson": 5,
+   "number": 15,
+   "part": "context",
+   "before": "この 計算は",
+   "target": "",
+   "after": "なので、コンピューターを 使っても 時間が かかる。",
+   "options": [
+    "意外",
+    "重大",
+    "複雑",
+    "正常"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b5-16",
+   "lesson": 5,
+   "number": 16,
+   "part": "context",
+   "before": "この 町には 大きな 川が",
+   "target": "",
+   "after": "います。",
+   "options": [
+    "流れて",
+    "しずんで",
+    "浮いて",
+    "こぼれて"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b5-17",
+   "lesson": 5,
+   "number": 17,
+   "part": "context",
+   "before": "この オレンジは アメリカ",
+   "target": "",
+   "after": "です。",
+   "options": [
+    "産",
+    "製",
+    "作",
+    "品"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b5-18",
+   "lesson": 5,
+   "number": 18,
+   "part": "context",
+   "before": "優勝した 選手に",
+   "target": "",
+   "after": "をして 記事を 書いた。",
+   "options": [
+    "スピーチ",
+    "コミュニケーション",
+    "メッセージ",
+    "インタビュー"
+   ],
+   "answer": 3,
+   "inferred": true
+  },
+  {
+   "id": "b5-19",
+   "lesson": 5,
+   "number": 19,
+   "part": "context",
+   "before": "全員が 自分の 意見を",
+   "target": "",
+   "after": "したので、会議が なかなか終わらなかった。",
+   "options": [
+    "命令",
+    "返信",
+    "主張",
+    "注文"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b5-20",
+   "lesson": 5,
+   "number": 20,
+   "part": "context",
+   "before": "書類や 本が きちんと",
+   "target": "",
+   "after": "されていて、きれいな 部屋ですね。",
+   "options": [
+    "準備",
+    "世話",
+    "選択",
+    "整理"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b5-21",
+   "lesson": 5,
+   "number": 21,
+   "part": "context",
+   "before": "朝から 何も 飲んでいないので、のどが",
+   "target": "",
+   "after": "です。",
+   "options": [
+    "ぺらぺら",
+    "からから",
+    "ふらふら",
+    "ぺこぺこ"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b5-22",
+   "lesson": 5,
+   "number": 22,
+   "part": "context",
+   "before": "将来のために、お金を",
+   "target": "",
+   "after": "います。",
+   "options": [
+    "ためて",
+    "のせて",
+    "かさねて",
+    "くわえて"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b5-23",
+   "lesson": 5,
+   "number": 23,
+   "part": "context",
+   "before": "この 病気に",
+   "target": "",
+   "after": "と、最初に 高い 熱が 出る。",
+   "options": [
+    "うかる",
+    "かかる",
+    "あたる",
+    "はいる"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b5-24",
+   "lesson": 5,
+   "number": 24,
+   "part": "context",
+   "before": "この ホテルの 部屋は、いつも きちんと 掃除されていて",
+   "target": "",
+   "after": "だ。",
+   "options": [
+    "上品",
+    "派手",
+    "安全",
+    "清潔"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b5-25",
+   "lesson": 5,
+   "number": 25,
+   "part": "context",
+   "before": "今度の 試合は みんなで 力を",
+   "target": "",
+   "after": "頑張ろう。",
+   "options": [
+    "かさねて",
+    "あわせて",
+    "くわえて",
+    "ふやして"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b5-26",
+   "lesson": 5,
+   "number": 26,
+   "part": "context",
+   "before": "会議のため あしたから 一週間、部長と アメリカへ",
+   "target": "",
+   "after": "する。",
+   "options": [
+    "出席",
+    "出勤",
+    "出張",
+    "出国"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b5-27",
+   "lesson": 5,
+   "number": 27,
+   "part": "context",
+   "before": "山田さんは、よく",
+   "target": "",
+   "after": "を言う 面白い人です。",
+   "options": [
+    "冗談",
+    "文句",
+    "感想",
+    "希望"
+   ],
+   "answer": 0,
+   "inferred": true
+  },
+  {
+   "id": "b5-28",
+   "lesson": 5,
+   "number": 28,
+   "part": "context",
+   "before": "ピザの おいしい 店を 友達が 教えてくれたので、",
+   "target": "",
+   "after": "食べに 行ってみた。",
+   "options": [
+    "せっかく",
+    "さっそく",
+    "もうすぐ",
+    "なるべく"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b5-29",
+   "lesson": 5,
+   "number": 29,
+   "part": "context",
+   "before": "この 道は",
+   "target": "",
+   "after": "が 多いので、運転に 気を つけてください。",
+   "options": [
+    "コース",
+    "カーブ",
+    "スピード",
+    "ブレーキ"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b5-30",
+   "lesson": 5,
+   "number": 30,
+   "part": "context",
+   "before": "銀行で ドルを 円に",
+   "target": "",
+   "after": "した。",
+   "options": [
+    "貯金",
+    "会計",
+    "借金",
+    "両替"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b5-31",
+   "lesson": 5,
+   "number": 31,
+   "part": "context",
+   "before": "この 商品は 毎日 1000個",
+   "target": "",
+   "after": "売れるらしい。",
+   "options": [
+    "前後",
+    "上下",
+    "大小",
+    "多少"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b5-32",
+   "lesson": 5,
+   "number": 32,
+   "part": "context",
+   "before": "台風の",
+   "target": "",
+   "after": "で 飛行機の 出発が 遅れた。",
+   "options": [
+    "効果",
+    "影響",
+    "制限",
+    "結果"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b5-33",
+   "lesson": 5,
+   "number": 33,
+   "part": "context",
+   "before": "中身が こぼれないよう、ふたを",
+   "target": "",
+   "after": "しめてください。",
+   "options": [
+    "しっかり",
+    "はっきり",
+    "うっかり",
+    "ぐっすり"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b5-34",
+   "lesson": 5,
+   "number": 34,
+   "part": "context",
+   "before": "今日は 川の",
+   "target": "",
+   "after": "が 速いから、泳いでは いけません。",
+   "options": [
+    "ながれ",
+    "かんじ",
+    "いそぎ",
+    "うごき"
+   ],
+   "answer": 0,
+   "inferred": true
+  },
+  {
+   "id": "b5-35",
+   "lesson": 5,
+   "number": 35,
+   "part": "context",
+   "before": "",
+   "target": "",
+   "after": "は お金が かかるので、いつも 家で ご飯を 食べています。",
+   "options": [
+    "食器",
+    "試食",
+    "食欲",
+    "外食"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b5-36",
+   "lesson": 5,
+   "number": 36,
+   "part": "context",
+   "before": "きのうの 試合は 一点",
+   "target": "",
+   "after": "で 勝つことが できた。",
+   "options": [
+    "引",
+    "比",
+    "差",
+    "別"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b5-37",
+   "lesson": 5,
+   "number": 37,
+   "part": "context",
+   "before": "寝坊しないように、きのうは 目覚まし 時計を 二つ",
+   "target": "",
+   "after": "して 寝ました。",
+   "options": [
+    "ストップ",
+    "セット",
+    "キャンセル",
+    "スタート"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b5-38",
+   "lesson": 5,
+   "number": 38,
+   "part": "context",
+   "before": "佐藤さんは",
+   "target": "",
+   "after": "の 強い人で、何度 失敗しても あきらめなかった。",
+   "options": [
+    "意志",
+    "期待",
+    "努力",
+    "希望"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b5-39",
+   "lesson": 5,
+   "number": 39,
+   "part": "context",
+   "before": "空港で ホストファミリーと",
+   "target": "",
+   "after": "一人に なったときは、とても 寂しかった。",
+   "options": [
+    "つきあって",
+    "かかわって",
+    "まちあわせて",
+    "わかれて"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b5-40",
+   "lesson": 5,
+   "number": 40,
+   "part": "context",
+   "before": "仕事の やり方を 変えたら、大きな 問題は",
+   "target": "",
+   "after": "。",
+   "options": [
+    "立たなくなった",
+    "起きなくなった",
+    "始まらなくなった",
+    "開かなくなった"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b6-1",
+   "lesson": 6,
+   "number": 1,
+   "part": "context",
+   "before": "1530年後の 自分が 何を やっているか、",
+   "target": "",
+   "after": "してみてください。",
+   "options": [
+    "想像",
+    "確認",
+    "観察",
+    "工夫"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b6-2",
+   "lesson": 6,
+   "number": 2,
+   "part": "context",
+   "before": "皮を",
+   "target": "",
+   "after": "りんごを 食べました。",
+   "options": [
+    "おって",
+    "はなれして",
+    "むいて",
+    "やぶって"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b6-3",
+   "lesson": 6,
+   "number": 3,
+   "part": "context",
+   "before": "水を やるのを 忘れていたので、花が",
+   "target": "",
+   "after": "しまった。",
+   "options": [
+    "こわれて",
+    "こげて",
+    "かれて",
+    "とけて"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b6-4",
+   "lesson": 6,
+   "number": 4,
+   "part": "context",
+   "before": "この 映画は",
+   "target": "",
+   "after": "した 以上に おもしろかった。",
+   "options": [
+    "約束",
+    "予定",
+    "希望",
+    "期待"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b6-5",
+   "lesson": 6,
+   "number": 5,
+   "part": "context",
+   "before": "楽しみに していた コンサートが 中止に なって",
+   "target": "",
+   "after": "した。",
+   "options": [
+    "はらはら",
+    "うっかり",
+    "どきどき",
+    "がっかり"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b6-6",
+   "lesson": 6,
+   "number": 6,
+   "part": "context",
+   "before": "クイズの 答えが 分からないので、何か",
+   "target": "",
+   "after": "をください。",
+   "options": [
+    "サイン",
+    "ヒント",
+    "ルール",
+    "サンプル"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b6-7",
+   "lesson": 6,
+   "number": 7,
+   "part": "context",
+   "before": "昔の 写真を 見て、「子どものころ、この 公園で よく 遊んだなあ」と",
+   "target": "",
+   "after": "なった。",
+   "options": [
+    "なつかしく",
+    "うらやましく",
+    "くやしく",
+    "はずかしく"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b6-8",
+   "lesson": 6,
+   "number": 8,
+   "part": "context",
+   "before": "商品の",
+   "target": "",
+   "after": "は、一週間 以内に 銀行で お支払いください。",
+   "options": [
+    "現金",
+    "値段",
+    "代金",
+    "価値"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b6-9",
+   "lesson": 6,
+   "number": 9,
+   "part": "context",
+   "before": "何度も ことわっているのに、彼に",
+   "target": "",
+   "after": "頼まれて 困っています。",
+   "options": [
+    "しつこく",
+    "きびしく",
+    "こまかく",
+    "くわしく"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b6-10",
+   "lesson": 6,
+   "number": 10,
+   "part": "context",
+   "before": "廊下の 電気は、スイッチを 押さなくても、人が 通ると",
+   "target": "",
+   "after": "につきます。",
+   "options": [
+    "機械的",
+    "自動的",
+    "積極的",
+    "間接的"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b6-11",
+   "lesson": 6,
+   "number": 11,
+   "part": "context",
+   "before": "のどが",
+   "target": "",
+   "after": "、何か飲みたい。",
+   "options": [
+    "ふらふらなので",
+    "ぺこぺこなので",
+    "すいたので",
+    "かわいたので"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b6-12",
+   "lesson": 6,
+   "number": 12,
+   "part": "context",
+   "before": "工事の せいで 道が",
+   "target": "",
+   "after": "していて、車が 全然 前に 進まない。",
+   "options": [
+    "運休",
+    "故障",
+    "渋滞",
+    "集中"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b6-13",
+   "lesson": 6,
+   "number": 13,
+   "part": "context",
+   "before": "車の エンジンの 音が",
+   "target": "",
+   "after": "ので、修理を お願いした。",
+   "options": [
+    "まずしい",
+    "おかしい",
+    "きびしい",
+    "しつこい"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b6-14",
+   "lesson": 6,
+   "number": 14,
+   "part": "context",
+   "before": "時計が 止まって しまったので、新しい 電池に",
+   "target": "",
+   "after": "した。",
+   "options": [
+    "移動",
+    "変化",
+    "交換",
+    "入力"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b6-15",
+   "lesson": 6,
+   "number": 15,
+   "part": "context",
+   "before": "缶や ペットボトルも 捨てないで",
+   "target": "",
+   "after": "すれば、ごみは 少なくなる。",
+   "options": [
+    "リサイクル",
+    "キャンセル",
+    "カット",
+    "チェンジ"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b6-16",
+   "lesson": 6,
+   "number": 16,
+   "part": "context",
+   "before": "林さんが 結婚するという",
+   "target": "",
+   "after": "を 聞いたが、本当か どうかはわからない。",
+   "options": [
+    "文句",
+    "宣伝",
+    "うその",
+    "うわさ"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b6-17",
+   "lesson": 6,
+   "number": 17,
+   "part": "context",
+   "before": "この 講演会の 参加者は",
+   "target": "",
+   "after": "学生だったが、ほかに 主婦や 会社員も 少しいた。",
+   "options": [
+    "かならず",
+    "すべて",
+    "じゅうぶんの",
+    "おもに"
+   ],
+   "answer": 3,
+   "inferred": true
+  },
+  {
+   "id": "b6-18",
+   "lesson": 6,
+   "number": 18,
+   "part": "context",
+   "before": "こんな 重要な 仕事が わたしに できるかどうか、初めは",
+   "target": "",
+   "after": "だった。",
+   "options": [
+    "不安",
+    "無理",
+    "退屈",
+    "苦手"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b6-19",
+   "lesson": 6,
+   "number": 19,
+   "part": "context",
+   "before": "都合が 悪くなったときは、",
+   "target": "",
+   "after": "早く 連絡してください。",
+   "options": [
+    "ずいぶん",
+    "なるべく",
+    "きっとり",
+    "さっそく"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b6-20",
+   "lesson": 6,
+   "number": 20,
+   "part": "context",
+   "before": "会議の 間、山田さんは 目を",
+   "target": "",
+   "after": "いたので、寝ているのかと思った。",
+   "options": [
+    "とめての",
+    "やめて",
+    "さげて",
+    "とじて"
+   ],
+   "answer": 3,
+   "inferred": true
+  },
+  {
+   "id": "b6-21",
+   "lesson": 6,
+   "number": 21,
+   "part": "context",
+   "before": "風邪を ひいて、のどの",
+   "target": "",
+   "after": "が 悪いです。",
+   "options": [
+    "気分",
+    "調子",
+    "事情",
+    "都合"
+   ],
+   "answer": 1,
+   "inferred": true
+  },
+  {
+   "id": "b6-22",
+   "lesson": 6,
+   "number": 22,
+   "part": "context",
+   "before": "この ズボンは",
+   "target": "",
+   "after": "ので、もう 少し 小さい サイズのを ください。",
+   "options": [
+    "きつい",
+    "だるい",
+    "緩い",
+    "苦しい"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b6-23",
+   "lesson": 6,
+   "number": 23,
+   "part": "context",
+   "before": "日本に 来てから、もう 3年",
+   "target": "",
+   "after": "。",
+   "options": [
+    "移りました",
+    "かかりました",
+    "通りました",
+    "たちました"
+   ],
+   "answer": 3,
+   "inferred": true
+  },
+  {
+   "id": "b6-24",
+   "lesson": 6,
+   "number": 24,
+   "part": "context",
+   "before": "つい さっきまで いい天気だったのに、",
+   "target": "",
+   "after": "雨が 降ってきて ぬれてしまいました。",
+   "options": [
+    "突然",
+    "早めに",
+    "さっそく",
+    "急ぐ"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b6-25",
+   "lesson": 6,
+   "number": 25,
+   "part": "context",
+   "before": "この 国は",
+   "target": "",
+   "after": "が 高いので、生活が 大変です。",
+   "options": [
+    "経済",
+    "物価",
+    "消費",
+    "支出"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b6-26",
+   "lesson": 6,
+   "number": 26,
+   "part": "context",
+   "before": "先に 家を 出た 兄に、駅の 近くでやっと",
+   "target": "",
+   "after": "。",
+   "options": [
+    "間に合いました",
+    "ぶつかりました",
+    "届きました",
+    "追いつきました"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b6-27",
+   "lesson": 6,
+   "number": 27,
+   "part": "context",
+   "before": "わたしは 泳ぐのが 下手な ので、この前、海で",
+   "target": "",
+   "after": "になりました。",
+   "options": [
+    "こおりそう",
+    "たまりそう",
+    "おぼれそう",
+    "すべりそう"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b6-28",
+   "lesson": 6,
+   "number": 28,
+   "part": "context",
+   "before": "友人の 家で 食べた ケーキが おいしかったので、",
+   "target": "",
+   "after": "と 作り方を 教えてもらった。",
+   "options": [
+    "資源",
+    "材料",
+    "部品",
+    "原因"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b6-29",
+   "lesson": 6,
+   "number": 29,
+   "part": "context",
+   "before": "あの 兄弟は いつも 一緒に 学校に 来るのに、今日は",
+   "target": "",
+   "after": "来た。",
+   "options": [
+    "別々に",
+    "半々に",
+    "分けて",
+    "区切って"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b6-30",
+   "lesson": 6,
+   "number": 30,
+   "part": "context",
+   "before": "佐藤さんに 仕事を お願いしたら、",
+   "target": "",
+   "after": "くれました。",
+   "options": [
+    "引き受けて",
+    "引き出して",
+    "引っ張って",
+    "引っかけて"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b6-31",
+   "lesson": 6,
+   "number": 31,
+   "part": "context",
+   "before": "お菓子は 6個あるから、3人で",
+   "target": "",
+   "after": "と 一人 2個になる。",
+   "options": [
+    "わける",
+    "離す",
+    "引く",
+    "破く"
+   ],
+   "answer": 0,
+   "inferred": true
+  },
+  {
+   "id": "b6-32",
+   "lesson": 6,
+   "number": 32,
+   "part": "context",
+   "before": "友人に 子どもが 生まれたので、",
+   "target": "",
+   "after": "に 何か 贈りたいと 思っています。",
+   "options": [
+    "お願い",
+    "お祝い",
+    "お代わり",
+    "お見舞い"
+   ],
+   "answer": 1,
+   "inferred": true
+  },
+  {
+   "id": "b6-33",
+   "lesson": 6,
+   "number": 33,
+   "part": "context",
+   "before": "パソコンの 調子が 悪いんですが、自分で 原因を 調べる",
+   "target": "",
+   "after": "はありませんか。",
+   "options": [
+    "方法",
+    "都合",
+    "規則",
+    "計画"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b6-34",
+   "lesson": 6,
+   "number": 34,
+   "part": "context",
+   "before": "田中さんは、何でも 自分から やってみようとする",
+   "target": "",
+   "after": "な人だ。",
+   "options": [
+    "感情的",
+    "効果的",
+    "積極的",
+    "具体的"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b6-35",
+   "lesson": 6,
+   "number": 35,
+   "part": "context",
+   "before": "日本には 石油や 金などの",
+   "target": "",
+   "after": "はあまりない。",
+   "options": [
+    "環境",
+    "資源",
+    "基礎",
+    "栄養"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b6-36",
+   "lesson": 6,
+   "number": 36,
+   "part": "context",
+   "before": "初めて 森さんに 会ったときには、おとなしい人 だという",
+   "target": "",
+   "after": "を 受けた。",
+   "options": [
+    "感覚",
+    "意識",
+    "印象",
+    "気分"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b6-37",
+   "lesson": 6,
+   "number": 37,
+   "part": "context",
+   "before": "昨日の 夜から 歯が痛くて",
+   "target": "",
+   "after": "できなくなったので、今朝 歯医者に行った。",
+   "options": [
+    "遠慮",
+    "努力",
+    "我慢",
+    "心配"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b6-38",
+   "lesson": 6,
+   "number": 38,
+   "part": "context",
+   "before": "旅行の",
+   "target": "",
+   "after": "に 絵はがきを買った。",
+   "options": [
+    "満足",
+    "感激",
+    "経験",
+    "記念"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b6-39",
+   "lesson": 6,
+   "number": 39,
+   "part": "context",
+   "before": "今月から 駐車場の 使用",
+   "target": "",
+   "after": "が 高くなった。",
+   "options": [
+    "金",
+    "値",
+    "料",
+    "賃"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b6-40",
+   "lesson": 6,
+   "number": 40,
+   "part": "context",
+   "before": "この ゲーム、初めは おもしろいと 思ったけど、何度も やったので、もう",
+   "target": "",
+   "after": "しまった。",
+   "options": [
+    "きらって",
+    "あきらめて",
+    "こわがって",
+    "あきて"
+   ],
+   "answer": 3,
+   "inferred": true
+  },
+  {
+   "id": "b7-1",
+   "lesson": 7,
+   "number": 1,
+   "part": "context",
+   "before": "雨が 降ってきましたが、私の 家は 近いので、傘が なくても",
+   "target": "",
+   "after": "です。",
+   "options": [
+    "平気",
+    "安全",
+    "正常",
+    "十分"
+   ],
+   "answer": 0,
+   "inferred": true
+  },
+  {
+   "id": "b7-2",
+   "lesson": 7,
+   "number": 2,
+   "part": "context",
+   "before": "仕事で 疲れているときは、夕飯を 作るのが",
+   "target": "",
+   "after": "ので、外食することが 多い。",
+   "options": [
+    "だらしない",
+    "めんどうくさい",
+    "くわしい",
+    "にくらしい"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b7-3",
+   "lesson": 7,
+   "number": 3,
+   "part": "context",
+   "before": "ゆうべはほとんど寝ていないので、今日は眠くて何度も",
+   "target": "",
+   "after": "出てしまう。",
+   "options": [
+    "しゃっくり",
+    "くしゃみ",
+    "せき",
+    "あくび"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b7-4",
+   "lesson": 7,
+   "number": 4,
+   "part": "context",
+   "before": "「私の国の社会問題」という",
+   "target": "",
+   "after": "で、レポートを書くことになった。",
+   "options": [
+    "デザイン",
+    "テーマ",
+    "サイン",
+    "ルール"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b7-5",
+   "lesson": 7,
+   "number": 5,
+   "part": "context",
+   "before": "この季節は、昼と 夜の 気温の",
+   "target": "",
+   "after": "が大きい。",
+   "options": [
+    "台",
+    "段",
+    "差",
+    "列"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b7-6",
+   "lesson": 7,
+   "number": 6,
+   "part": "context",
+   "before": "",
+   "target": "",
+   "after": "して、鍵を かけないで 家を 出てしまった。",
+   "options": [
+    "はっきり",
+    "しっかり",
+    "ぴったり",
+    "うっかり"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b7-7",
+   "lesson": 7,
+   "number": 7,
+   "part": "context",
+   "before": "まだ 空席が 少し あるので、今なら 予約は",
+   "target": "",
+   "after": "です。",
+   "options": [
+    "完全",
+    "無駄",
+    "可能",
+    "平等"
+   ],
+   "answer": 2,
+   "inferred": true
+  },
+  {
+   "id": "b7-8",
+   "lesson": 7,
+   "number": 8,
+   "part": "context",
+   "before": "私の パソコンは 古いので、",
+   "target": "",
+   "after": "が遅いです。",
+   "options": [
+    "行動",
+    "活動",
+    "動作",
+    "運動"
+   ],
+   "answer": 2,
+   "inferred": true
+  },
+  {
+   "id": "b7-9",
+   "lesson": 7,
+   "number": 9,
+   "part": "context",
+   "before": "来週の説明会は今日の 12時が申し込みの",
+   "target": "",
+   "after": "だ。",
+   "options": [
+    "期限",
+    "期間",
+    "日程",
+    "日常"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b7-10",
+   "lesson": 7,
+   "number": 10,
+   "part": "context",
+   "before": "外国で生活するのは楽しいが、ときどき国の料理が",
+   "target": "",
+   "after": "なる。",
+   "options": [
+    "恋しく",
+    "親しく",
+    "苦しく",
+    "貧しく"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b7-11",
+   "lesson": 7,
+   "number": 11,
+   "part": "context",
+   "before": "クイズの答えが分からないので、何か",
+   "target": "",
+   "after": "が欲しい。",
+   "options": [
+    "ヒント",
+    "マナー",
+    "アドレス",
+    "チェック"
+   ],
+   "answer": 0,
+   "inferred": true
+  },
+  {
+   "id": "b7-12",
+   "lesson": 7,
+   "number": 12,
+   "part": "context",
+   "before": "100年後の世界がどうなっているか、",
+   "target": "",
+   "after": "してみてください。",
+   "options": [
+    "承知",
+    "納得",
+    "希望",
+    "想像"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b7-13",
+   "lesson": 7,
+   "number": 13,
+   "part": "context",
+   "before": "今朝 学校に行くとき、母がベランダから手を",
+   "target": "",
+   "after": "見送ってくれた。",
+   "options": [
+    "指して",
+    "扱って",
+    "振って",
+    "押して"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b7-14",
+   "lesson": 7,
+   "number": 14,
+   "part": "context",
+   "before": "田中さんの部屋は本や服が",
+   "target": "",
+   "after": "整理されていて。きれいですね。",
+   "options": [
+    "はっきり",
+    "なるべく",
+    "そっと",
+    "きちんと"
+   ],
+   "answer": 3,
+   "inferred": true
+  },
+  {
+   "id": "b7-15",
+   "lesson": 7,
+   "number": 15,
+   "part": "context",
+   "before": "寒さで、手の指の",
+   "target": "",
+   "after": "がなくなってしまった。",
+   "options": [
+    "感動",
+    "感覚",
+    "感激",
+    "感心"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b7-16",
+   "lesson": 7,
+   "number": 16,
+   "part": "context",
+   "before": "虫歯を防ぐためには、食後に歯を磨くことが最も",
+   "target": "",
+   "after": "だと思う。",
+   "options": [
+    "自動的",
+    "効果的",
+    "人口的",
+    "消極的"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b7-17",
+   "lesson": 7,
+   "number": 17,
+   "part": "context",
+   "before": "林さんと森さんは",
+   "target": "",
+   "after": "顔は知っているが、話したことはないそうだ。",
+   "options": [
+    "たまに",
+    "ついでに",
+    "おたがいに",
+    "おもに"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b7-18",
+   "lesson": 7,
+   "number": 18,
+   "part": "context",
+   "before": "前の人の発表が終わったので、次は私が発表する",
+   "target": "",
+   "after": "だ。",
+   "options": [
+    "線",
+    "運",
+    "段",
+    "番"
+   ],
+   "answer": 3,
+   "inferred": true
+  },
+  {
+   "id": "b7-19",
+   "lesson": 7,
+   "number": 19,
+   "part": "context",
+   "before": "この飛行機に載せることができる荷物は一人20キロ以内に",
+   "target": "",
+   "after": "されている。",
+   "options": [
+    "制限",
+    "禁止",
+    "検査",
+    "解決"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b7-20",
+   "lesson": 7,
+   "number": 20,
+   "part": "context",
+   "before": "佐藤が塩か分からなかったので、舌で",
+   "target": "",
+   "after": "みた。",
+   "options": [
+    "かじって",
+    "なめて",
+    "かんで",
+    "まぜて"
+   ],
+   "answer": 1,
+   "inferred": true
+  },
+  {
+   "id": "b7-21",
+   "lesson": 7,
+   "number": 21,
+   "part": "context",
+   "before": "たまねぎと にんじんは 皮を",
+   "target": "",
+   "after": "から、料理に 使ってください。",
+   "options": [
+    "むいて",
+    "ほって",
+    "やぶって",
+    "はなして"
+   ],
+   "answer": 0,
+   "inferred": true
+  },
+  {
+   "id": "b7-22",
+   "lesson": 7,
+   "number": 22,
+   "part": "context",
+   "before": "この 国には 石油や ガスなどの",
+   "target": "",
+   "after": "が あまりありません。",
+   "options": [
+    "栄養",
+    "資源",
+    "内容",
+    "部品"
+   ],
+   "answer": 1,
+   "inferred": true
+  },
+  {
+   "id": "b7-23",
+   "lesson": 7,
+   "number": 23,
+   "part": "context",
+   "before": "一生懸命 頑張ったのに、試合に 負けてしまって、とても",
+   "target": "",
+   "after": "です。",
+   "options": [
+    "まずしかった",
+    "あやしかった",
+    "くやしかった",
+    "ずるかった"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b7-24",
+   "lesson": 7,
+   "number": 24,
+   "part": "context",
+   "before": "旅行に 行けなく なったので、ホテルの 予約を",
+   "target": "",
+   "after": "した。",
+   "options": [
+    "ピックアップ",
+    "キャンセル",
+    "ディスカウント",
+    "チェックアウト"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b7-25",
+   "lesson": 7,
+   "number": 25,
+   "part": "context",
+   "before": "コーヒーを こぼして、白い ズボンに",
+   "target": "",
+   "after": "ができてしまった。",
+   "options": [
+    "穴",
+    "影",
+    "こぶ",
+    "しみ"
+   ],
+   "answer": 3,
+   "inferred": true
+  },
+  {
+   "id": "b7-26",
+   "lesson": 7,
+   "number": 26,
+   "part": "context",
+   "before": "兄を 起こすために、部屋の 外から ドアを 強く",
+   "target": "",
+   "after": "。",
+   "options": [
+    "たたいた",
+    "さわった",
+    "つかまえた",
+    "なでた"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b7-27",
+   "lesson": 7,
+   "number": 27,
+   "part": "context",
+   "before": "交通事故を",
+   "target": "",
+   "after": "ために、ここに 横断歩道を 作るそうです。",
+   "options": [
+    "直す",
+    "逃す",
+    "防ぐ",
+    "守る"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b7-28",
+   "lesson": 7,
+   "number": 28,
+   "part": "context",
+   "before": "のどが",
+   "target": "",
+   "after": "ので、何か 飲みたいです。",
+   "options": [
+    "へった",
+    "すいた",
+    "かわいた",
+    "やせた"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b7-29",
+   "lesson": 7,
+   "number": 29,
+   "part": "context",
+   "before": "行きは 佐藤さんと 2人で 来たが、帰りは",
+   "target": "",
+   "after": "だった。",
+   "options": [
+    "様々",
+    "半々",
+    "別々",
+    "色々"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b7-30",
+   "lesson": 7,
+   "number": 30,
+   "part": "context",
+   "before": "留学に ついては 両親と よく",
+   "target": "",
+   "after": "決めるつもりだ。",
+   "options": [
+    "取り込んで",
+    "言い返して",
+    "受け取って",
+    "話し合って"
+   ],
+   "answer": 3,
+   "inferred": true
+  },
+  {
+   "id": "b7-31",
+   "lesson": 7,
+   "number": 31,
+   "part": "context",
+   "before": "田中さんは 私と 結婚したので、私たちは",
+   "target": "",
+   "after": "になりました。",
+   "options": [
+    "夫婦",
+    "家内",
+    "親戚",
+    "兄弟"
+   ],
+   "answer": 0,
+   "inferred": true
+  },
+  {
+   "id": "b7-32",
+   "lesson": 7,
+   "number": 32,
+   "part": "context",
+   "before": "昨日は 駅で 学生時代の 友達に",
+   "target": "",
+   "after": "会って、びっくりした。",
+   "options": [
+    "ついでに",
+    "当然",
+    "たまに",
+    "偶然"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b7-33",
+   "lesson": 7,
+   "number": 33,
+   "part": "context",
+   "before": "洗剤は 種類が 多いので、どれを 買おうか、",
+   "target": "",
+   "after": "しまう。",
+   "options": [
+    "迷って",
+    "騒いで",
+    "疑って",
+    "飽きて"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b7-34",
+   "lesson": 7,
+   "number": 34,
+   "part": "context",
+   "before": "足に",
+   "target": "",
+   "after": "合う 靴が なかなか 見つからない。",
+   "options": [
+    "はっきり",
+    "ぴったり",
+    "うっかり",
+    "がっかり"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b7-35",
+   "lesson": 7,
+   "number": 35,
+   "part": "context",
+   "before": "天気が いいので、庭に 洗濯物を",
+   "target": "",
+   "after": "。",
+   "options": [
+    "混ぜた",
+    "揚げた",
+    "干した",
+    "こぼした"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b7-36",
+   "lesson": 7,
+   "number": 36,
+   "part": "context",
+   "before": "今日の 晩ご飯は 森さんが教えてくれた 日本料理の",
+   "target": "",
+   "after": "を見て作りました。",
+   "options": [
+    "メッセージ",
+    "レシピ",
+    "サイン",
+    "アナウンス"
+   ],
+   "answer": 1,
+   "inferred": true
+  },
+  {
+   "id": "b7-37",
+   "lesson": 7,
+   "number": 37,
+   "part": "context",
+   "before": "映画の 中に",
+   "target": "",
+   "after": "する 男性が、父に そっくりだった。",
+   "options": [
+    "発生",
+    "支出",
+    "掲示",
+    "登場"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b7-38",
+   "lesson": 7,
+   "number": 38,
+   "part": "context",
+   "before": "大勢の 前で 歌うのは 初めてだったので、",
+   "target": "",
+   "after": "した。",
+   "options": [
+    "どきどき",
+    "だぶだぶ",
+    "ぐうぐう",
+    "ざあざあ"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b7-39",
+   "lesson": 7,
+   "number": 39,
+   "part": "context",
+   "before": "ホテルで 海側の 部屋を",
+   "target": "",
+   "after": "したが、空いていなかった。",
+   "options": [
+    "納得",
+    "承知",
+    "希望",
+    "準備"
+   ],
+   "answer": 2,
+   "inferred": true
+  },
+  {
+   "id": "b7-40",
+   "lesson": 7,
+   "number": 40,
+   "part": "context",
+   "before": "夜に なると、隣の 家の 犬が",
+   "target": "",
+   "after": "ので、うるさくて なかなか 眠れない。",
+   "options": [
+    "ほえる",
+    "ひびく",
+    "しゃべる",
+    "どなる"
+   ],
+   "answer": 0,
+   "inferred": true
+  },
+  {
+   "id": "b8-1",
+   "lesson": 8,
+   "number": 1,
+   "part": "paraphrase",
+   "before": "今回の 仕事は とても ",
+   "target": "きつい",
+   "after": "。",
+   "options": [
+    "大変だ",
+    "簡単だ",
+    "つまらない",
+    "おもしろい"
+   ],
+   "answer": 0,
+   "inferred": true
+  },
+  {
+   "id": "b8-2",
+   "lesson": 8,
+   "number": 2,
+   "part": "paraphrase",
+   "before": "今日は とても ",
+   "target": "くたびれた",
+   "after": "。",
+   "options": [
+    "いそがしかった",
+    "つかれた",
+    "はずかしかった",
+    "こまった"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b8-3",
+   "lesson": 8,
+   "number": 3,
+   "part": "paraphrase",
+   "before": "休みが ",
+   "target": "明けたら",
+   "after": "、また 連絡します。",
+   "options": [
+    "とれたら",
+    "きまったら",
+    "おわったら",
+    "はじまったら"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b8-4",
+   "lesson": 8,
+   "number": 4,
+   "part": "paraphrase",
+   "before": "この 店は いつも ",
+   "target": "混雑している",
+   "after": "。",
+   "options": [
+    "客があまりいない",
+    "品物があまりない",
+    "客がたくさんいる",
+    "品物がたくさんある"
+   ],
+   "answer": 2,
+   "inferred": true
+  },
+  {
+   "id": "b8-5",
+   "lesson": 8,
+   "number": 5,
+   "part": "paraphrase",
+   "before": "この スポーツの ルールは ",
+   "target": "単純",
+   "after": "だ。",
+   "options": [
+    "よく知られている",
+    "わかりやすい",
+    "あまり知られていない",
+    "わかりにくい"
+   ],
+   "answer": 1,
+   "inferred": true
+  },
+  {
+   "id": "b8-6",
+   "lesson": 8,
+   "number": 6,
+   "part": "paraphrase",
+   "before": "わたしは 妻と 一緒に ",
+   "target": "通勤して",
+   "after": "います。",
+   "options": [
+    "仕事に行って",
+    "勉強に行って",
+    "買い物に行って",
+    "散歩に行って"
+   ],
+   "answer": 0,
+   "inferred": true
+  },
+  {
+   "id": "b8-7",
+   "lesson": 8,
+   "number": 7,
+   "part": "paraphrase",
+   "before": "とても ",
+   "target": "おそろしい",
+   "after": " 経験を した。",
+   "options": [
+    "たのしい",
+    "うれしい",
+    "はずかしい",
+    "こわい"
+   ],
+   "answer": 3,
+   "inferred": true
+  },
+  {
+   "id": "b8-8",
+   "lesson": 8,
+   "number": 8,
+   "part": "paraphrase",
+   "before": "先生に ",
+   "target": "わけ",
+   "after": "を 話した。",
+   "options": [
+    "アイディア",
+    "ルール",
+    "理由",
+    "秘密"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b8-9",
+   "lesson": 8,
+   "number": 9,
+   "part": "paraphrase",
+   "before": "最近、この 川は 水が ",
+   "target": "へった",
+   "after": " 気がする。",
+   "options": [
+    "多くなった",
+    "少なくなった",
+    "きれいになった",
+    "きたなくなった"
+   ],
+   "answer": 1,
+   "inferred": true
+  },
+  {
+   "id": "b8-10",
+   "lesson": 8,
+   "number": 10,
+   "part": "paraphrase",
+   "before": "実験が うまく いかなかったので、",
+   "target": "やりなおした",
+   "after": "。",
+   "options": [
+    "やり方を調べた",
+    "やり方を教わった",
+    "もう一度やった",
+    "やるのを途中でやめた"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b8-11",
+   "lesson": 8,
+   "number": 11,
+   "part": "paraphrase",
+   "before": "それが この辞書の ",
+   "target": "欠点",
+   "after": "なんです。",
+   "options": [
+    "すきなところ",
+    "いいところ",
+    "きらいなところ",
+    "よくないところ"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b8-12",
+   "lesson": 8,
+   "number": 12,
+   "part": "paraphrase",
+   "before": "彼が 留学したのは、大学卒業の ",
+   "target": "翌年",
+   "after": "です。",
+   "options": [
+    "前の前の年",
+    "次の次の年",
+    "前の年",
+    "次の年"
+   ],
+   "answer": 3,
+   "inferred": true
+  },
+  {
+   "id": "b8-13",
+   "lesson": 8,
+   "number": 13,
+   "part": "paraphrase",
+   "before": "来週の 会議の ",
+   "target": "スケジュール",
+   "after": "に ついて 連絡が あった。",
+   "options": [
+    "準備",
+    "予定",
+    "場所",
+    "資料"
+   ],
+   "answer": 1,
+   "inferred": true
+  },
+  {
+   "id": "b8-14",
+   "lesson": 8,
+   "number": 14,
+   "part": "paraphrase",
+   "before": "彼には ",
+   "target": "らくな",
+   "after": " 仕事を 頼んだ。",
+   "options": [
+    "だいじな",
+    "こまかい",
+    "かんたんな",
+    "あたらしい"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b8-15",
+   "lesson": 8,
+   "number": 15,
+   "part": "paraphrase",
+   "before": "田中さんから ",
+   "target": "さっき",
+   "after": " 電話が ありましたよ。",
+   "options": [
+    "ずっと前に",
+    "少し前に",
+    "何回か",
+    "何回も"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b8-16",
+   "lesson": 8,
+   "number": 16,
+   "part": "paraphrase",
+   "before": "これらの やり方には、",
+   "target": "共通点",
+   "after": "が あります。",
+   "options": [
+    "悪いところ",
+    "いいところ",
+    "違うところ",
+    "同じところ"
+   ],
+   "answer": 3,
+   "inferred": true
+  },
+  {
+   "id": "b8-17",
+   "lesson": 8,
+   "number": 17,
+   "part": "paraphrase",
+   "before": "書類を みんなで ",
+   "target": "整理した",
+   "after": "。",
+   "options": [
+    "数えた",
+    "片付けた",
+    "運んだ",
+    "探した"
+   ],
+   "answer": 1,
+   "inferred": true
+  },
+  {
+   "id": "b8-18",
+   "lesson": 8,
+   "number": 18,
+   "part": "paraphrase",
+   "before": "田中さんは ",
+   "target": "ぜったいに",
+   "after": " 来ると思います。",
+   "options": [
+    "すぐに",
+    "たぶん",
+    "かならず",
+    "あとから"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b8-19",
+   "lesson": 8,
+   "number": 19,
+   "part": "paraphrase",
+   "before": "この ことは、",
+   "target": "ないしょにして",
+   "after": "ください。",
+   "options": [
+    "だれにも 話さないで",
+    "いろいろな 人に 話して",
+    "早く忘れて",
+    "忘れないで"
+   ],
+   "answer": 0,
+   "inferred": true
+  },
+  {
+   "id": "b8-20",
+   "lesson": 8,
+   "number": 20,
+   "part": "paraphrase",
+   "before": "この CDの 中で 一番 ",
+   "target": "気に入っている",
+   "after": " 曲は これです。",
+   "options": [
+    "人気がある",
+    "よく覚えている",
+    "好きな",
+    "楽しい"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b8-21",
+   "lesson": 8,
+   "number": 21,
+   "part": "paraphrase",
+   "before": "何度 失敗しても、彼女は ",
+   "target": "あきらめなかった",
+   "after": "。",
+   "options": [
+    "気にしなかった",
+    "やめようとしなかった",
+    "怒らなかった",
+    "謝ろうとしなかった"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b8-22",
+   "lesson": 8,
+   "number": 22,
+   "part": "paraphrase",
+   "before": "あの スーパーは、",
+   "target": "年中",
+   "after": "、セールを している。",
+   "options": [
+    "最近",
+    "ときどき",
+    "いつも",
+    "前から"
+   ],
+   "answer": 2,
+   "inferred": true
+  },
+  {
+   "id": "b8-23",
+   "lesson": 8,
+   "number": 23,
+   "part": "paraphrase",
+   "before": "相手の 選手に ボールを ",
+   "target": "うばわれて",
+   "after": "しまった。",
+   "options": [
+    "入れられて",
+    "止められて",
+    "打たれて",
+    "取られて"
+   ],
+   "answer": 3,
+   "inferred": true
+  },
+  {
+   "id": "b8-24",
+   "lesson": 8,
+   "number": 24,
+   "part": "paraphrase",
+   "before": "もう 会議が 始まっていますから、",
+   "target": "そっと",
+   "after": "中に 入ってください。",
+   "options": [
+    "後ろから",
+    "急いで",
+    "静かに",
+    "一人ずつ"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b8-25",
+   "lesson": 8,
+   "number": 25,
+   "part": "paraphrase",
+   "before": "",
+   "target": "まぶしくて",
+   "after": " ポスターの 字が よく 見えない。",
+   "options": [
+    "明るすぎて",
+    "遠すぎて",
+    "薄すぎて",
+    "小さすぎて"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b8-26",
+   "lesson": 8,
+   "number": 26,
+   "part": "paraphrase",
+   "before": "これと 同じ ",
+   "target": "サイズ",
+   "after": "の 皿は ありますか。",
+   "options": [
+    "大きさ",
+    "値段",
+    "色",
+    "形"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b8-27",
+   "lesson": 8,
+   "number": 27,
+   "part": "paraphrase",
+   "before": "サラダは もう ",
+   "target": "注文しました",
+   "after": "か。",
+   "options": [
+    "作りましたか",
+    "たのみましたか",
+    "食べましたか",
+    "はこびましたか"
+   ],
+   "answer": 1,
+   "inferred": true
+  },
+  {
+   "id": "b8-28",
+   "lesson": 8,
+   "number": 28,
+   "part": "paraphrase",
+   "before": "すみませんが、もう 一回 ",
+   "target": "たしかめて",
+   "after": "くれませんか。",
+   "options": [
+    "コピーして",
+    "メモして",
+    "メールして",
+    "チェックして"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b8-29",
+   "lesson": 8,
+   "number": 29,
+   "part": "paraphrase",
+   "before": "山田さんは ",
+   "target": "このごろ",
+   "after": " 忙しそうですね。",
+   "options": [
+    "ずっと",
+    "いつも",
+    "まだ",
+    "さいきん"
+   ],
+   "answer": 3,
+   "inferred": true
+  },
+  {
+   "id": "b8-30",
+   "lesson": 8,
+   "number": 30,
+   "part": "paraphrase",
+   "before": "さっきから あの 子ばかり ",
+   "target": "しゃべっている",
+   "after": "。",
+   "options": [
+    "騒いで",
+    "話して",
+    "答えて",
+    "遊んで"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b8-31",
+   "lesson": 8,
+   "number": 31,
+   "part": "paraphrase",
+   "before": "高橋さんの 家は ",
+   "target": "キッチン",
+   "after": "が 広くていいですね。",
+   "options": [
+    "玄関",
+    "台所",
+    "部屋",
+    "廊下"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b8-32",
+   "lesson": 8,
+   "number": 32,
+   "part": "paraphrase",
+   "before": "机の ",
+   "target": "位置",
+   "after": "を 確認しておいてください。",
+   "options": [
+    "値段",
+    "場所",
+    "数",
+    "色"
+   ],
+   "answer": 1,
+   "inferred": true
+  },
+  {
+   "id": "b8-33",
+   "lesson": 8,
+   "number": 33,
+   "part": "paraphrase",
+   "before": "その 商品は ",
+   "target": "売り切れた",
+   "after": "。",
+   "options": [
+    "全部 売れた",
+    "全部 売れなかった",
+    "だんだん 売れなくなってきた",
+    "よく 売れるようになってきた"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b8-34",
+   "lesson": 8,
+   "number": 34,
+   "part": "paraphrase",
+   "before": "今度、",
+   "target": "わけ",
+   "after": "を 教えてください。",
+   "options": [
+    "計画",
+    "意見",
+    "規則",
+    "理由"
+   ],
+   "answer": 3,
+   "inferred": true
+  },
+  {
+   "id": "b8-35",
+   "lesson": 8,
+   "number": 35,
+   "part": "paraphrase",
+   "before": "今から アンケートを ",
+   "target": "回収",
+   "after": "します。",
+   "options": [
+    "渡す",
+    "贈る",
+    "集める",
+    "始める"
+   ],
+   "answer": 2,
+   "inferred": true
+  },
+  {
+   "id": "b8-36",
+   "lesson": 8,
+   "number": 36,
+   "part": "paraphrase",
+   "before": "山口さんなら ",
+   "target": "さっき",
+   "after": " 帰りましたよ。",
+   "options": [
+    "すぐに",
+    "ずっと前に",
+    "やっと",
+    "少し前に"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b8-37",
+   "lesson": 8,
+   "number": 37,
+   "part": "paraphrase",
+   "before": "隣の 部屋から ",
+   "target": "おかしな",
+   "after": " 音が 聞こえる。",
+   "options": [
+    "いろいろな",
+    "にぎやかな",
+    "へんな",
+    "大きな"
+   ],
+   "answer": 2,
+   "inferred": true
+  },
+  {
+   "id": "b8-38",
+   "lesson": 8,
+   "number": 38,
+   "part": "paraphrase",
+   "before": "あれから 約1週間",
+   "target": "たちました",
+   "after": "。",
+   "options": [
+    "過ぎました",
+    "かかりました",
+    "待ちました",
+    "続けました"
+   ],
+   "answer": 0,
+   "inferred": true
+  },
+  {
+   "id": "b8-39",
+   "lesson": 8,
+   "number": 39,
+   "part": "paraphrase",
+   "before": "山本さんは ",
+   "target": "あわてて",
+   "after": "出ていきましたよ。",
+   "options": [
+    "困ったようすで",
+    "急いだようすで",
+    "疲れたようすで",
+    "怒ったようすで"
+   ],
+   "answer": 1,
+   "inferred": true
+  },
+  {
+   "id": "b8-40",
+   "lesson": 8,
+   "number": 40,
+   "part": "paraphrase",
+   "before": "道が ",
+   "target": "カーブしている",
+   "after": "ので、気を つけてください。",
+   "options": [
+    "曲がっている",
+    "坂になっている",
+    "暗くなっている",
+    "狭くなっている"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b8-41",
+   "lesson": 8,
+   "number": 41,
+   "part": "paraphrase",
+   "before": "その 部屋に ある 家具の ",
+   "target": "サイズ",
+   "after": "を 聞いてください。",
+   "options": [
+    "重さ",
+    "数",
+    "形",
+    "大きさ"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b8-42",
+   "lesson": 8,
+   "number": 42,
+   "part": "paraphrase",
+   "before": "この 部分を ",
+   "target": "暗記",
+   "after": "してください。",
+   "options": [
+    "読んで",
+    "書いて",
+    "覚えて",
+    "教えて"
+   ],
+   "answer": 2,
+   "inferred": true
+  },
+  {
+   "id": "b8-43",
+   "lesson": 8,
+   "number": 43,
+   "part": "paraphrase",
+   "before": "佐藤さんは 魚を 料理するのが ",
+   "target": "得意",
+   "after": "なようです。",
+   "options": [
+    "あまり好きじゃない",
+    "あまり上手じゃない",
+    "とても好きな",
+    "とても上手な"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b8-44",
+   "lesson": 8,
+   "number": 44,
+   "part": "paraphrase",
+   "before": "誰にでも ",
+   "target": "欠点",
+   "after": "が あると思う。",
+   "options": [
+    "つまらないところ",
+    "よくないところ",
+    "間違えるところ",
+    "忘れるところ"
+   ],
+   "answer": 1,
+   "inferred": true
+  },
+  {
+   "id": "b8-45",
+   "lesson": 8,
+   "number": 45,
+   "part": "paraphrase",
+   "before": "そんなに ",
+   "target": "どならないで",
+   "after": "ください。",
+   "options": [
+    "大声で怒らないで",
+    "強く押さないで",
+    "たくさん食べないで",
+    "早く歩かないで"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b8-46",
+   "lesson": 8,
+   "number": 46,
+   "part": "paraphrase",
+   "before": "みなさん、",
+   "target": "避難して",
+   "after": "ください。",
+   "options": [
+    "ならんで",
+    "入って",
+    "にげて",
+    "急いで"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b8-47",
+   "lesson": 8,
+   "number": 47,
+   "part": "paraphrase",
+   "before": "何か いい ",
+   "target": "案",
+   "after": "はありませんか。",
+   "options": [
+    "ルール",
+    "アイディア",
+    "メニュー",
+    "サービス"
+   ],
+   "answer": 1,
+   "inferred": true
+  },
+  {
+   "id": "b8-48",
+   "lesson": 8,
+   "number": 48,
+   "part": "paraphrase",
+   "before": "私が 何を 言っても、彼は ずっと ",
+   "target": "だまっていた",
+   "after": "。",
+   "options": [
+    "話さなかった",
+    "笑わなかった",
+    "動かなかった",
+    "怒らなかった"
+   ],
+   "answer": 0,
+   "inferred": true
+  },
+  {
+   "id": "b8-49",
+   "lesson": 8,
+   "number": 49,
+   "part": "paraphrase",
+   "before": "この やり方が ",
+   "target": "ベスト",
+   "after": "だ。",
+   "options": [
+    "最も良い",
+    "最も良くない",
+    "最も難しい",
+    "最も難しくない"
+   ],
+   "answer": 0,
+   "inferred": true
+  },
+  {
+   "id": "b8-50",
+   "lesson": 8,
+   "number": 50,
+   "part": "paraphrase",
+   "before": "お店の 人が ",
+   "target": "配達して",
+   "after": "くれた。",
+   "options": [
+    "組み立てて",
+    "手伝って",
+    "貸して",
+    "届けて"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b8-51",
+   "lesson": 8,
+   "number": 51,
+   "part": "paraphrase",
+   "before": "",
+   "target": "ふだん",
+   "after": "と 同じようにやってください。",
+   "options": [
+    "みんな",
+    "昔",
+    "いつも",
+    "例"
+   ],
+   "answer": 2,
+   "inferred": true
+  },
+  {
+   "id": "b8-52",
+   "lesson": 8,
+   "number": 52,
+   "part": "paraphrase",
+   "before": "あの 人は ",
+   "target": "短気",
+   "after": "だ。",
+   "options": [
+    "すぐ怒る",
+    "すぐ謝る",
+    "すぐ驚く",
+    "すぐ喜ぶ"
+   ],
+   "answer": 0,
+   "inferred": true
+  },
+  {
+   "id": "b8-53",
+   "lesson": 8,
+   "number": 53,
+   "part": "paraphrase",
+   "before": "12時に ",
+   "target": "グラウンド",
+   "after": "に 来てください。",
+   "options": [
+    "屋上",
+    "体育館",
+    "公園",
+    "運動場"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b8-54",
+   "lesson": 8,
+   "number": 54,
+   "part": "paraphrase",
+   "before": "私の ",
+   "target": "おい",
+   "after": "は 東京に 住んでいます。",
+   "options": [
+    "姉の息子",
+    "姉の娘",
+    "父の弟",
+    "父の妹"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b8-55",
+   "lesson": 8,
+   "number": 55,
+   "part": "paraphrase",
+   "before": "もっと ",
+   "target": "くわしく",
+   "after": " 説明してください。",
+   "options": [
+    "早く",
+    "細かく",
+    "簡単に",
+    "熱心に"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b8-56",
+   "lesson": 8,
+   "number": 56,
+   "part": "paraphrase",
+   "before": "もう 少し 時間を ",
+   "target": "あたえ",
+   "after": "ようと思う。",
+   "options": [
+    "あげよう",
+    "もらおう",
+    "作ろう",
+    "使おう"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b8-57",
+   "lesson": 8,
+   "number": 57,
+   "part": "paraphrase",
+   "before": "ここは 車が ",
+   "target": "ずいぶん",
+   "after": " 多いですね。",
+   "options": [
+    "最も",
+    "非常に",
+    "まあまあ",
+    "やっぱり"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b8-58",
+   "lesson": 8,
+   "number": 58,
+   "part": "paraphrase",
+   "before": "荷物は ",
+   "target": "指定",
+   "after": "の 場所に 置いてください。",
+   "options": [
+    "決められた",
+    "空いている",
+    "近くの",
+    "ほかの"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b8-59",
+   "lesson": 8,
+   "number": 59,
+   "part": "paraphrase",
+   "before": "山田さんの 話を 聞くまでは ",
+   "target": "不安",
+   "after": "だった。",
+   "options": [
+    "賛成",
+    "大変",
+    "心配",
+    "反対"
+   ],
+   "answer": 2,
+   "inferred": true
+  },
+  {
+   "id": "b8-60",
+   "lesson": 8,
+   "number": 60,
+   "part": "paraphrase",
+   "before": "",
+   "target": "スケジュール",
+   "after": "は 川井さんに 聞いてください。",
+   "options": [
+    "行き方",
+    "理由",
+    "やり方",
+    "予定"
+   ],
+   "answer": 3,
+   "inferred": true
+  },
+  {
+   "id": "b8-61",
+   "lesson": 8,
+   "number": 61,
+   "part": "paraphrase",
+   "before": "昨日 見た 映画は ",
+   "target": "退屈だった",
+   "after": "。",
+   "options": [
+    "めずらしかった",
+    "つまらなかった",
+    "おかしかった",
+    "おもしろかった"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b8-62",
+   "lesson": 8,
+   "number": 62,
+   "part": "paraphrase",
+   "before": "危険なので、絶対に ",
+   "target": "ふれないで",
+   "after": "ください。",
+   "options": [
+    "座らないで",
+    "走らないで",
+    "触らないで",
+    "休まないで"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b8-63",
+   "lesson": 8,
+   "number": 63,
+   "part": "paraphrase",
+   "before": "それは とても いい ",
+   "target": "機会",
+   "after": "だと思います。",
+   "options": [
+    "プレゼント",
+    "アイディア",
+    "パーティー",
+    "チャンス"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b8-64",
+   "lesson": 8,
+   "number": 64,
+   "part": "paraphrase",
+   "before": "今回の 仕事は いつも より ",
+   "target": "きつかった",
+   "after": "。",
+   "options": [
+    "大変だった",
+    "簡単だった",
+    "楽しかった",
+    "長かった"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b8-65",
+   "lesson": 8,
+   "number": 65,
+   "part": "paraphrase",
+   "before": "なぜ 私の 答えが 違うのか、友達の 説明を 聞いて ",
+   "target": "納得した",
+   "after": "。",
+   "options": [
+    "少し分かった",
+    "とてもよく分かった",
+    "もう一度考えた",
+    "何度も考えた"
+   ],
+   "answer": 1,
+   "inferred": true
+  },
+  {
+   "id": "b8-66",
+   "lesson": 8,
+   "number": 66,
+   "part": "paraphrase",
+   "before": "鈴木さんへ ",
+   "target": "感謝",
+   "after": "の 手紙を 送った。",
+   "options": [
+    "お願い",
+    "お礼",
+    "お見舞い",
+    "お知らせ"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b8-67",
+   "lesson": 8,
+   "number": 67,
+   "part": "paraphrase",
+   "before": "子どもたちは ",
+   "target": "キッチン",
+   "after": "に います。",
+   "options": [
+    "廊下",
+    "居間",
+    "玄関",
+    "台所"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b8-68",
+   "lesson": 8,
+   "number": 68,
+   "part": "paraphrase",
+   "before": "",
+   "target": "不安な",
+   "after": "ので、私は 行かない ことにした。",
+   "options": [
+    "時間がない",
+    "お金がない",
+    "危険な",
+    "心配な"
+   ],
+   "answer": 3,
+   "inferred": true
+  },
+  {
+   "id": "b8-69",
+   "lesson": 8,
+   "number": 69,
+   "part": "paraphrase",
+   "before": "あなかが ",
+   "target": "ぺこぺこ",
+   "after": "だ。",
+   "options": [
+    "痛い",
+    "すいている",
+    "かゆい",
+    "いっぱいだ"
+   ],
+   "answer": 1,
+   "inferred": false
+  },
+  {
+   "id": "b8-70",
+   "lesson": 8,
+   "number": 70,
+   "part": "paraphrase",
+   "before": "兄は ",
+   "target": "黙って",
+   "after": " ずっと 漫画を 読んでいる。",
+   "options": [
+    "何も話さないで",
+    "何も食べないで",
+    "勉強しないで",
+    "寝ないで"
+   ],
+   "answer": 0,
+   "inferred": true
+  },
+  {
+   "id": "b8-71",
+   "lesson": 8,
+   "number": 71,
+   "part": "paraphrase",
+   "before": "",
+   "target": "絶対",
+   "after": " 会いに 来て くださいね。",
+   "options": [
+    "いつでも",
+    "すぐに",
+    "また",
+    "必ず"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b8-72",
+   "lesson": 8,
+   "number": 72,
+   "part": "paraphrase",
+   "before": "山口さんは ",
+   "target": "逆",
+   "after": "の ほうに 行きましたよ。",
+   "options": [
+    "反対",
+    "外",
+    "遠",
+    "奥"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b8-73",
+   "lesson": 8,
+   "number": 73,
+   "part": "paraphrase",
+   "before": "みんな 木村さんの 話を ",
+   "target": "信じている",
+   "after": "。",
+   "options": [
+    "面白いと思っている",
+    "面白くないと思っている",
+    "本当だと思っている",
+    "本当じゃないと思っている"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b8-74",
+   "lesson": 8,
+   "number": 74,
+   "part": "paraphrase",
+   "before": "今日の 実験は ",
+   "target": "おしまい",
+   "after": "です。",
+   "options": [
+    "終わり",
+    "初めて",
+    "簡単",
+    "成功"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b8-75",
+   "lesson": 8,
+   "number": 75,
+   "part": "paraphrase",
+   "before": "",
+   "target": "まぶしくて",
+   "after": " 看板の 字が よく 見えません。",
+   "options": [
+    "小さすぎて",
+    "暗すぎて",
+    "薄すぎて",
+    "明るすぎて"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b8-76",
+   "lesson": 8,
+   "number": 76,
+   "part": "paraphrase",
+   "before": "前田さんも ",
+   "target": "協力して",
+   "after": "ください。",
+   "options": [
+    "急いで",
+    "決めて",
+    "手伝って",
+    "がんばって"
+   ],
+   "answer": 2,
+   "inferred": false
+  },
+  {
+   "id": "b8-77",
+   "lesson": 8,
+   "number": 77,
+   "part": "paraphrase",
+   "before": "この 仕事の ",
+   "target": "スケジュール",
+   "after": "を 教えてください。",
+   "options": [
+    "規則",
+    "やり方",
+    "結果",
+    "予定"
+   ],
+   "answer": 3,
+   "inferred": false
+  },
+  {
+   "id": "b8-78",
+   "lesson": 8,
+   "number": 78,
+   "part": "paraphrase",
+   "before": "食事代は ",
+   "target": "約1万円",
+   "after": "でした。",
+   "options": [
+    "だいたい 1万円",
+    "ちょうど 1万円",
+    "1万円以上",
+    "1万円以下"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b8-79",
+   "lesson": 8,
+   "number": 79,
+   "part": "paraphrase",
+   "before": "高橋さんに ",
+   "target": "どなられた",
+   "after": "。",
+   "options": [
+    "大声で怒られた",
+    "小声で怒られた",
+    "大声で笑われた",
+    "小声で笑われた"
+   ],
+   "answer": 0,
+   "inferred": false
+  },
+  {
+   "id": "b8-80",
+   "lesson": 8,
+   "number": 80,
+   "part": "paraphrase",
+   "before": "中島さんは ",
+   "target": "あらゆる",
+   "after": " 質問に 丁寧に 答えた。",
+   "options": [
+    "一つの",
+    "全部の",
+    "難しい",
+    "簡単な"
+   ],
+   "answer": 1,
+   "inferred": false
+  }
+ ]
+}

@@ -16,6 +16,10 @@ By using a serverless model, the application achieves:
 * **Cost Efficiency**: Pay-as-you-go billing model with no idle runtime costs.
 * **High Availability**: Multi-Availability Zone deployment out of the box through AWS serverless primitives.
 
+### Frontend app
+
+The CloudFront-hosted frontend is a **Mimikara Oboeru N3** study app: a vocabulary quiz plus JLPT N3 文字・語彙 exam practice generated from `JLPT_N3_tu_vung_Minchan.docx`. See [frontend/README.md](frontend/README.md) for features, structure and how to regenerate the exam data.
+
 ---
 
 ## 📐 Architecture
@@ -52,7 +56,7 @@ By using a serverless model, the application achieves:
 ### Infrastructure Components & Design Decisions
 
 * **Amazon CloudFront**: Serves the static single-page client application globally with local caching at edge locations to minimize latency. Enabled with **Origin Access Control (OAC)** to block direct public requests to the S3 bucket, enforcing traffic through the CDN.
-* **Amazon S3**: Hosts frontend static files (`index.html`). Configured with `auto_delete_objects=True` and `RemovalPolicy.DESTROY` to enable clean resources teardown upon CDK stack deletion.
+* **Amazon S3**: Hosts the built frontend (`frontend/dist`). Configured with `auto_delete_objects=True` and `RemovalPolicy.DESTROY` to enable clean resources teardown upon CDK stack deletion.
 * **Amazon API Gateway**: Serverless REST API endpoint configured with CORS enabled. Serves as the Entrypoint routing HTTP methods to the backend Lambda function.
 * **AWS Lambda**: Leverages `Python 3.12` runtime to process requests, formulate JSON response payloads, and manage database operations.
 * **Amazon DynamoDB**: Key-value NoSQL database storing todos. Provisioned with **Pay-Per-Request (On-Demand)** billing mode, which scales down to zero dollars when the API experiences zero traffic.

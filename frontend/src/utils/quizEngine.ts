@@ -65,6 +65,12 @@ export const shuffleArray = <T>(array: T[]): T[] => {
 };
 
 /**
+ * Rounded percentage of `value` over `total` (0 when total is 0).
+ */
+export const toPercent = (value: number, total: number): number =>
+  total > 0 ? Math.round((value / total) * 100) : 0;
+
+/**
  * QuizBuffer class replicates the Python QuizBuffer logic:
  * - Maintains pending_new (questions never asked in current round)
  * - Maintains pending_retry (questions answered incorrectly in current round)
