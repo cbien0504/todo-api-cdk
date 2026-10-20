@@ -9,6 +9,11 @@ from app.schemas.todo import Todo, TodoCreate, TodoUpdate, SingleResponse, ListR
 
 router = APIRouter()
 
+
+def utc_now_iso() -> str:
+    return datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
+
+
 def encode_token(key_dict: dict | None) -> str | None:
     if not key_dict:
         return None
@@ -18,6 +23,7 @@ def encode_token(key_dict: dict | None) -> str | None:
     except Exception:
         return None
 
+
 def decode_token(token: str | None) -> dict | None:
     if not token:
         return None
@@ -26,6 +32,17 @@ def decode_token(token: str | None) -> dict | None:
         return json.loads(decoded_bytes.decode("utf-8"))
     except Exception:
         return None
+
+
+def get_todo_or_404(table, id: str) -> dict:
+    item = table.get_item(Key={"id": id}).get("Item")
+    if not item:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=f"Todo with id {id} not found",
+        )
+    return item
+
 
 @router.get("", response_model=ListResponse[Todo])
 async def read_todos(
@@ -39,94 +56,60 @@ async def read_todos(
     to support pagination and sorting.
     """
     table = get_table()
-    
-    query_kwargs = {
-        "IndexName": "CreatedAtIndex",
-        "KeyConditionExpression": Key("type").eq("todo"),
-        "Limit": limit,
-    }
-    
-    if sort == "created_at":
-        query_kwargs["ScanIndexForward"] = True
-    else:
-        query_kwargs["ScanIndexForward"] = False
+    ascending = sort == "created_at"
 
+    page_kwargs = {"Limit": limit}
     if done is not None:
-        query_kwargs["FilterExpression"] = Attr("done").eq(done)
-
-    if next_token:
-        start_key = decode_token(next_token)
-        if start_key:
-            query_kwargs["ExclusiveStartKey"] = start_key
+        page_kwargs["FilterExpression"] = Attr("done").eq(done)
+    start_key = decode_token(next_token)
+    if start_key:
+        page_kwargs["ExclusiveStartKey"] = start_key
 
     try:
-        response = table.query(**query_kwargs)
+        response = table.query(
+            IndexName="CreatedAtIndex",
+            KeyConditionExpression=Key("type").eq("todo"),
+            ScanIndexForward=ascending,
+            **page_kwargs,
+        )
+        items = response.get("Items", [])
     except Exception:
         # Fallback to scan if GSI has not finished creating or fails in local environments
-        scan_kwargs = {"Limit": limit}
-        if done is not None:
-            scan_kwargs["FilterExpression"] = Attr("done").eq(done)
-        if next_token:
-            start_key = decode_token(next_token)
-            if start_key:
-                scan_kwargs["ExclusiveStartKey"] = start_key
-                
-        response = table.scan(**scan_kwargs)
-        items = response.get("Items", [])
-        if sort == "created_at":
-            items.sort(key=lambda x: x.get("created_at", ""))
-        else:
-            items.sort(key=lambda x: x.get("created_at", ""), reverse=True)
-            
-        last_key = response.get("LastEvaluatedKey", None)
-        return ListResponse(
-            data=items,
-            meta=MetaInfo(next_token=encode_token(last_key))
-        )
-        
-    items = response.get("Items", [])
-    last_key = response.get("LastEvaluatedKey", None)
+        response = table.scan(**page_kwargs)
+        items = sorted(response.get("Items", []), key=lambda x: x.get("created_at", ""), reverse=not ascending)
 
     return ListResponse(
         data=items,
-        meta=MetaInfo(next_token=encode_token(last_key))
+        meta=MetaInfo(next_token=encode_token(response.get("LastEvaluatedKey"))),
     )
+
 
 @router.post("", response_model=SingleResponse[Todo], status_code=status.HTTP_201_CREATED)
 async def create_todo(todo_in: TodoCreate):
     """
     Create a new todo in DynamoDB.
     """
-    todo_id = str(uuid.uuid4())
-    now_iso = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
-    
+    now_iso = utc_now_iso()
     item = {
-        "id": todo_id,
+        "id": str(uuid.uuid4()),
         "type": "todo",
         "title": todo_in.title,
         "done": todo_in.done,
         "created_at": now_iso,
         "updated_at": now_iso,
     }
-    
-    table = get_table()
-    table.put_item(Item=item)
+
+    get_table().put_item(Item=item)
     return SingleResponse(data=item)
+
 
 @router.get("/{id}", response_model=SingleResponse[Todo])
 async def read_todo(id: str):
     """
     Get a single todo.
     """
-    table = get_table()
-    response = table.get_item(Key={"id": id})
-    item = response.get("Item")
-    if not item:
-        raise HTTPException(
-            status_code=status.HTTP_404_NOT_FOUND,
-            detail=f"Todo with id {id} not found",
-        )
-    return SingleResponse(data=item)
+    return SingleResponse(data=get_todo_or_404(get_table(), id))
+
 
 @router.put("/{id}", response_model=SingleResponse[Todo])
 async def update_todo(id: str, todo_in: TodoUpdate):
@@ -134,24 +117,17 @@ async def update_todo(id: str, todo_in: TodoUpdate):
     Update an existing todo.
     """
     table = get_table()
-    response = table.get_item(Key={"id": id})
-    item = response.get("Item")
-    if not item:
-        raise HTTPException(
-            status_code=status.HTTP_404_NOT_FOUND,
-            detail=f"Todo with id {id} not found",
-        )
-        
+    item = get_todo_or_404(table, id)
+
     update_data = todo_in.model_dump(exclude_unset=True)
     if not update_data:
         return SingleResponse(data=item)
-        
-    for k, v in update_data.items():
-        item[k] = v
-        
-    item["updated_at"] = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
+
+    item.update(update_data)
+    item["updated_at"] = utc_now_iso()
     table.put_item(Item=item)
     return SingleResponse(data=item)
+
 
 @router.delete("/{id}")
 async def delete_todo(id: str):
@@ -159,12 +135,6 @@ async def delete_todo(id: str):
     Delete a todo.
     """
     table = get_table()
-    response = table.get_item(Key={"id": id})
-    item = response.get("Item")
-    if not item:
-        raise HTTPException(
-            status_code=status.HTTP_404_NOT_FOUND,
-            detail=f"Todo with id {id} not found",
-        )
+    get_todo_or_404(table, id)
     table.delete_item(Key={"id": id})
     return {"data": {"message": f"Todo {id} deleted successfully"}}

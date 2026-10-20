@@ -73,24 +73,21 @@ async def validation_exception_handler(request: Request, exc: RequestValidationE
     )
 
 # Exception Handler: Standard HTTP exceptions
+HTTP_ERROR_CODES = {
+    401: "UNAUTHORIZED",
+    403: "FORBIDDEN",
+    404: "NOT_FOUND",
+    405: "METHOD_NOT_ALLOWED",
+}
+
+
 @app.exception_handler(StarletteHTTPException)
 async def http_exception_handler(request: Request, exc: StarletteHTTPException):
-    if exc.status_code == 404:
-        code = "NOT_FOUND"
-    elif exc.status_code == 401:
-        code = "UNAUTHORIZED"
-    elif exc.status_code == 403:
-        code = "FORBIDDEN"
-    elif exc.status_code == 405:
-        code = "METHOD_NOT_ALLOWED"
-    else:
-        code = "BAD_REQUEST"
-
     return JSONResponse(
         status_code=exc.status_code,
         content={
             "error": {
-                "code": code,
+                "code": HTTP_ERROR_CODES.get(exc.status_code, "BAD_REQUEST"),
                 "message": exc.detail
             }
         }

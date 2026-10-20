@@ -100,18 +100,24 @@ class TodoApiStack(Stack):
         # 6. CloudFront: Default serves S3 frontend, other routes proxy REST API Gateway
         error_responses = [
             cloudfront.ErrorResponse(
-                http_status=403,
-                response_http_status=200,
-                response_page_path="/index.html",
-                ttl=Duration.seconds(0)
-            ),
-            cloudfront.ErrorResponse(
-                http_status=404,
+                http_status=http_status,
                 response_http_status=200,
                 response_page_path="/index.html",
                 ttl=Duration.seconds(0)
             )
+            for http_status in (403, 404)
         ]
+
+        # One origin per path keeps the synthesized distribution unchanged.
+        api_behaviors = {
+            path: cloudfront.BehaviorOptions(
+                origin=origins.RestApiOrigin(todo_api),
+                viewer_protocol_policy=cloudfront.ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
+                allowed_methods=cloudfront.AllowedMethods.ALLOW_ALL,
+                cache_policy=cloudfront.CachePolicy.CACHING_DISABLED
+            )
+            for path in ("todos", "todos/*", "health")
+        }
 
         distribution = cloudfront.Distribution(
             self, "FrontendDistribution",
@@ -121,28 +127,8 @@ class TodoApiStack(Stack):
                 origin=origins.S3BucketOrigin.with_origin_access_control(frontend_bucket),
                 viewer_protocol_policy=cloudfront.ViewerProtocolPolicy.REDIRECT_TO_HTTPS
             ),
-            additional_behaviors={
-                "todos": cloudfront.BehaviorOptions(
-                    origin=origins.RestApiOrigin(todo_api),
-                    viewer_protocol_policy=cloudfront.ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
-                    allowed_methods=cloudfront.AllowedMethods.ALLOW_ALL,
-                    cache_policy=cloudfront.CachePolicy.CACHING_DISABLED
-                ),
-                "todos/*": cloudfront.BehaviorOptions(
-                    origin=origins.RestApiOrigin(todo_api),
-                    viewer_protocol_policy=cloudfront.ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
-                    allowed_methods=cloudfront.AllowedMethods.ALLOW_ALL,
-                    cache_policy=cloudfront.CachePolicy.CACHING_DISABLED
-                ),
-                "health": cloudfront.BehaviorOptions(
-                    origin=origins.RestApiOrigin(todo_api),
-                    viewer_protocol_policy=cloudfront.ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
-                    allowed_methods=cloudfront.AllowedMethods.ALLOW_ALL,
-                    cache_policy=cloudfront.CachePolicy.CACHING_DISABLED
-                )
-            }
+            additional_behaviors=api_behaviors
         )
-
 
         # Fallback to frontend root dir for synthesis if vite build dist hasn't run yet
         frontend_asset_dir = "frontend/dist" if os.path.exists("frontend/dist") else "frontend"
