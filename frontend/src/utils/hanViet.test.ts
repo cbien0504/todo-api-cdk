@@ -14,6 +14,13 @@ describe("getHanViet", () => {
     expect(getHanViet("様々")).toBe("DẠNG DẠNG");
   });
 
+  it("leaves out the context and spellings written in brackets", () => {
+    expect(getHanViet("（お金を）下ろす")).toBe("HẠ");
+    expect(getHanViet("足元（足下）")).toBe("TÚC NGUYÊN");
+    expect(getHanViet("(勉強が）できる")).toBe("");
+    expect(getHanViet("自立（する）")).toBe("TỰ LẬP");
+  });
+
   it("prefers the reading of the vocabulary word", () => {
     // 長 is read TRƯỜNG on its own but TRƯỞNG in 成長.
     expect(getHanViet("成長")).toBe("THÀNH TRƯỞNG");

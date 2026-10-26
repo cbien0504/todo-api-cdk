@@ -1,14 +1,16 @@
 import { render, screen, fireEvent, within } from "@testing-library/react";
 import { describe, it, expect, beforeEach, vi } from "vitest";
 import App from "./App";
-import { N2_DECK, N3_DECK } from "./data/vocabDecks";
+import { N2_DECK, N3_DECK, N4_DECK, N5_DECK } from "./data/vocabDecks";
 
-const vocabPanel = () => document.getElementById("panel-vocab")!;
+const vocabPanel = () => document.getElementById("panel-n3-vocab")!;
 const optionButtons = () => Array.from(vocabPanel().querySelectorAll<HTMLElement>(".option"));
 const questionCard = () => vocabPanel().querySelector<HTMLElement>(".question-card")!;
 const progressCount = () => vocabPanel().querySelector(".progress-count")!.textContent;
-// Both vocabulary panels stay mounted, so queries that also see hidden elements are scoped to the N3 panel.
+// Every vocabulary panel stays mounted, so queries that also see hidden elements are scoped to the N3 panel.
 const batchSelect = () => within(vocabPanel()).getByLabelText<HTMLSelectElement>("Chọn bài");
+const levelTab = (level: string) => screen.getByRole("tab", { name: new RegExp(`^${level} `) });
+const shownPanels = () => screen.getAllByRole("tabpanel").map((panel) => panel.id);
 
 /** Meaning of the word currently asked, looked up from the vocabulary data. */
 const currentMeaning = () => {
@@ -34,7 +36,7 @@ describe("Mimikara Oboeru N3 – vocabulary practice", () => {
     render(<App />);
 
     expect(screen.getByText("Mimikara Oboeru")).toBeInTheDocument();
-    expect(screen.getByText("N3 · N2")).toBeInTheDocument();
+    expect(screen.getByText("N5 – N2")).toBeInTheDocument();
     expect(within(vocabPanel()).getByText(/Chọn nghĩa tiếng Việt đúng/i)).toBeInTheDocument();
     expect(within(vocabPanel()).getAllByText(/Chưa làm/i).length).toBeGreaterThanOrEqual(1);
     expect(within(vocabPanel()).getAllByText(/Cần làm lại/i).length).toBeGreaterThanOrEqual(1);
@@ -316,48 +318,125 @@ describe("Mimikara Oboeru N3 – vocabulary practice", () => {
   });
 });
 
-describe("App tabs", () => {
+describe("JLPT levels and their sections", () => {
   beforeEach(() => {
     localStorage.clear();
   });
 
-  it("switches to the exam tab, keeps it in localStorage and disables vocab shortcuts", () => {
+  it("lists the levels from N5 to N2 and opens the N3 vocabulary first", () => {
     render(<App />);
 
-    fireEvent.click(screen.getByRole("tab", { name: /Luyện đề N3/i }));
+    const levels = within(screen.getByRole("tablist", { name: "Cấp độ JLPT" })).getAllByRole("tab");
+    expect(levels.map((tab) => tab.querySelector(".level-name")!.textContent)).toEqual(["N5", "N4", "N3", "N2"]);
+    expect(levelTab("N5")).toHaveTextContent(`${N5_DECK.items.length} từ`);
+    expect(levelTab("N3")).toHaveAttribute("aria-selected", "true");
+    expect(shownPanels()).toEqual(["level-n3", "panel-n3-vocab"]);
+  });
 
-    expect(localStorage.getItem("mimikara_active_tab")).toBe("exam");
-    expect(document.getElementById("panel-vocab")).not.toBeVisible();
-    expect(screen.getByRole("tabpanel")).toHaveAttribute("id", "panel-exam");
+  it("switches to the N3 exam papers, keeps them in localStorage and disables vocab shortcuts", () => {
+    render(<App />);
+
+    fireEvent.click(screen.getByRole("tab", { name: /Luyện đề/i }));
+
+    expect(localStorage.getItem("mimikara_section")).toBe("exam");
+    expect(vocabPanel()).not.toBeVisible();
+    expect(shownPanels()).toEqual(["level-n3", "panel-n3-exam"]);
     expect(screen.getByText("漢字読み", { selector: "h2 span" })).toBeInTheDocument();
 
     fireEvent.keyDown(window, { key: "m" });
     expect(localStorage.getItem("mimikara_is_muted")).toBe("false");
   });
 
-  it("keeps the vocab session when switching tabs back and forth", () => {
+  it("keeps the vocab session when switching sections and levels back and forth", () => {
     render(<App />);
     fireEvent.click(optionButtons()[0]);
 
-    fireEvent.click(screen.getByRole("tab", { name: /Luyện đề N3/i }));
-    fireEvent.click(screen.getByRole("tab", { name: /Từ vựng N3/i }));
+    fireEvent.click(screen.getByRole("tab", { name: /Luyện đề/i }));
+    fireEvent.click(screen.getByRole("tab", { name: /Từ vựng/i }));
+    fireEvent.click(levelTab("N2"));
+    fireEvent.click(levelTab("N3"));
 
     expect(screen.getByRole("button", { name: /Câu tiếp theo/i })).toBeInTheDocument();
   });
+
+  it("shows the vocabulary of a level without exam papers, then the N3 papers again", () => {
+    render(<App />);
+    fireEvent.click(screen.getByRole("tab", { name: /Luyện đề/i }));
+
+    fireEvent.click(levelTab("N5"));
+    expect(localStorage.getItem("mimikara_level")).toBe("n5");
+    expect(shownPanels()).toEqual(["level-n5", "panel-n5-vocab"]);
+    const sections = within(screen.getByRole("tablist", { name: "Mục học N5" })).getAllByRole("tab");
+    expect(sections.map((tab) => tab.textContent)).toEqual(["📖 Từ vựng"]);
+
+    fireEvent.click(levelTab("N3"));
+    expect(shownPanels()).toEqual(["level-n3", "panel-n3-exam"]);
+  });
+
+  it("opens the level saved in localStorage", () => {
+    localStorage.setItem("mimikara_level", "n4");
+    render(<App />);
+
+    expect(levelTab("N4")).toHaveAttribute("aria-selected", "true");
+    expect(shownPanels()).toEqual(["level-n4", "panel-n4-vocab"]);
+  });
 });
 
-describe("N2 vocabulary tab", () => {
-  const n2Panel = () => document.getElementById("panel-vocab-n2")!;
+describe("N5 and N4 vocabulary", () => {
+  beforeEach(() => {
+    localStorage.clear();
+    render(<App />);
+  });
+
+  it.each([
+    { level: "N5", deck: N5_DECK, chapters: 10, firstLesson: "Chapter 1 - Bài 1: Là" },
+    { level: "N4", deck: N4_DECK, chapters: 7, firstLesson: "Chapter 1 - Bài 1: Thời gian" },
+  ])("practices the $level list of jtest.net by chapter and lesson", ({ level, deck, chapters, firstLesson }) => {
+    fireEvent.click(levelTab(level));
+
+    const panel = document.getElementById(`panel-${deck.id}-vocab`)!;
+    const select = within(panel).getByLabelText<HTMLSelectElement>("Chọn bài");
+    expect(select.querySelectorAll("optgroup")).toHaveLength(chapters);
+    expect(within(select).getByText(`📚 Tất cả (${deck.items.length} từ vựng ${level})`)).toBeInTheDocument();
+    expect(within(panel.querySelector<HTMLElement>(".question-card")!).getByText(firstLesson)).toBeInTheDocument();
+    expect(panel.querySelectorAll(".option")).toHaveLength(4);
+    expect(panel.querySelector(".hint")).toHaveTextContent(`Nguồn từ vựng: ${deck.source}`);
+  });
+
+  it("keeps its own unremembered list and flashcard progress", () => {
+    fireEvent.click(levelTab("N5"));
+    const panel = document.getElementById("panel-n5-vocab")!;
+
+    fireEvent.click(panel.querySelector<HTMLElement>(".option")!);
+    fireEvent.keyDown(window, { key: "c" });
+    expect(JSON.parse(localStorage.getItem("mimikara_n5_unremembered_words") || "[]")).toHaveLength(1);
+    expect(JSON.parse(localStorage.getItem("mimikara_unremembered_words") || "[]")).toHaveLength(0);
+    // The hidden N3 session did not react to the click or the shortcut.
+    expect(within(vocabPanel()).queryByText(/Câu tiếp theo/)).not.toBeInTheDocument();
+
+    fireEvent.click(within(panel).getByRole("button", { name: /Thẻ ghi nhớ/ }));
+    expect(localStorage.getItem("mimikara_vocab_mode_n5")).toBe("flashcard");
+    fireEvent.keyDown(window, { key: " " });
+    fireEvent.keyDown(window, { key: "3" });
+    expect(Object.values(JSON.parse(localStorage.getItem("mimikara_srs_n5") || "{}"))).toEqual([
+      expect.objectContaining({ box: 1, reviews: 1 }),
+    ]);
+    expect(localStorage.getItem("mimikara_srs_n3")).toBeNull();
+  });
+});
+
+describe("N2 vocabulary", () => {
+  const n2Panel = () => document.getElementById("panel-n2-vocab")!;
   const n2Card = () => n2Panel().querySelector<HTMLElement>(".question-card")!;
 
   beforeEach(() => {
     localStorage.clear();
     render(<App />);
-    fireEvent.click(screen.getByRole("tab", { name: /Từ vựng N2/i }));
+    fireEvent.click(levelTab("N2"));
   });
 
   it("practices the N2 list by chapter and lesson with Hán Việt derived from the kanji", () => {
-    expect(localStorage.getItem("mimikara_active_tab")).toBe("vocab-n2");
+    expect(localStorage.getItem("mimikara_level")).toBe("n2");
 
     const select = within(n2Panel()).getByLabelText<HTMLSelectElement>("Chọn bài");
     expect(select.querySelectorAll("optgroup")).toHaveLength(12);
@@ -383,9 +462,9 @@ describe("N2 vocabulary tab", () => {
     expect(within(vocabPanel()).queryByText(/Câu tiếp theo/)).not.toBeInTheDocument();
   });
 
-  it("shares display settings with the N3 tab", () => {
+  it("shares display settings with the N3 vocabulary", () => {
     fireEvent.click(screen.getByRole("button", { name: /Toggle Ẩn Hán Việt/i }));
-    fireEvent.click(screen.getByRole("tab", { name: /Từ vựng N3/i }));
+    fireEvent.click(levelTab("N3"));
 
     expect(screen.getByRole("button", { name: /Toggle Ẩn Hán Việt/i })).toHaveTextContent(/Hán Việt: Ẩn/i);
   });

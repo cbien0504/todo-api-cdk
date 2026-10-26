@@ -8,8 +8,10 @@ A static **React** study app for JLPT vocabulary, hosted on **S3 + CloudFront (O
 
 ## 📖 Overview
 
-- **📖 Từ vựng N3 / 📗 Từ vựng N2** – Mimikara Oboeru N3 and the JLPT N2 list of jtest.net, practiced as a multiple-choice quiz or as spaced-repetition flashcards. Every answer also teaches its companion words (自動詞/他動詞 pair, synonyms, antonyms) and Hán Việt.
-- **📝 Luyện đề N3** – JLPT N3 文字・語彙 exam papers generated from `JLPT_N3_tu_vung_Minchan.docx`.
+The app is organized by JLPT level (N5 · N4 · N3 · N2), each level with its own sections:
+
+- **📖 Từ vựng** (every level) – the N5, N4 and N2 lists of jtest.net and Mimikara Oboeru N3, practiced as a multiple-choice quiz or as spaced-repetition flashcards. Every answer also teaches its companion words (自動詞/他動詞 pair, synonyms, antonyms) and Hán Việt.
+- **📝 Luyện đề** (N3) – JLPT N3 文字・語彙 exam papers generated from `JLPT_N3_tu_vung_Minchan.docx`.
 
 The app runs entirely in the browser: progress (unremembered words, flashcards, settings) is kept in `localStorage`. See [frontend/README.md](frontend/README.md) for features, structure and how the data is built.
 

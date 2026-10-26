@@ -1,7 +1,7 @@
 import { trackEvent } from "../utils/gtm";
 import { booleanCodec, usePersistentState } from "./usePersistentState";
 
-/** Audio and display settings shared by every vocabulary tab, so a toggle applies to N3 and N2 alike. */
+/** Audio and display settings shared by the vocabulary of every level, so a toggle applies to N5 and N2 alike. */
 export function useVocabSettings() {
   const [isMuted, setIsMuted] = usePersistentState("mimikara_is_muted", false, booleanCodec);
   const [hideHanViet, setHideHanViet] = usePersistentState("mimikara_hide_han_viet", false, booleanCodec);

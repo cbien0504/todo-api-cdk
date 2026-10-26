@@ -1,11 +1,11 @@
-"""Build the kanji → Hán Việt table used for exam words and the N2 vocabulary.
+"""Build the kanji → Hán Việt table used for exam words and the N5, N4 and N2 vocabulary.
 
 Usage (from the repo root):
     python3 scripts/build_han_viet_data.py [path/to/kanjidic2.xml[.gz]] [path/to/output.json]
 
 Without a path, KANJIDIC2 is downloaded from EDRDG. Each kanji used by the exam words
-(underlined targets and options), by the N2 vocabulary (which has no Hán Việt of its
-own) or by the companion words gets one reading, chosen in this order:
+(underlined targets and options), by the jtest.net decks (N5, N4 and N2, which have no
+Hán Việt of their own) or by the companion words gets one reading, chosen in this order:
   1. OVERRIDES below (common reading when KANJIDIC2 lists several or a wrong one);
   2. the most frequent reading in the vocabulary JSON, so the exam agrees with the
      Hán Việt shown in the vocabulary quiz;
@@ -27,7 +27,8 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "frontend" / "src" / "data"
 VOCAB_PATH = DATA_DIR / "mimikara_oboeru_vocab.json"
 EXAM_PATH = DATA_DIR / "jlpt_n3_minchan_exam.json"
-N2_VOCAB_PATH = DATA_DIR / "jtest_n2_vocab.json"
+# The decks written by scripts/build_vocab_data.py.
+JTEST_DECK_GLOB = "jtest_*_vocab.json"
 COMPANIONS_PATH = DATA_DIR / "vocab_companions.json"
 DEFAULT_OUTPUT = DATA_DIR / "kanji_han_viet.json"
 
@@ -85,6 +86,8 @@ OVERRIDES = {
     "繰": "TAO",
     "怖": "BỐ",
     "浜": "TÂN",
+    # Kanji of the N5 and N4 vocabulary.
+    "飲": "ẨM",
 }
 
 
@@ -114,7 +117,11 @@ def vocab_readings() -> dict[str, Counter]:
 
 
 def needed_kanji() -> set[str]:
-    words = [item["kanji"] for item in json.loads(N2_VOCAB_PATH.read_text(encoding="utf-8"))["words"]]
+    words = [
+        item["kanji"]
+        for path in sorted(DATA_DIR.glob(JTEST_DECK_GLOB))
+        for item in json.loads(path.read_text(encoding="utf-8"))["words"]
+    ]
     for deck in json.loads(COMPANIONS_PATH.read_text(encoding="utf-8")).values():
         words += [companion["word"] for companions in deck.values() for companion in companions]
     for question in json.loads(EXAM_PATH.read_text(encoding="utf-8"))["questions"]:

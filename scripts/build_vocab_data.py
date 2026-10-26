@@ -3,12 +3,13 @@
 Usage (from the repo root):
     python3 scripts/build_vocab_data.py [path/to/JMdict_e[.gz]]
 
-Inputs: scripts/data/jtest_<level>.json (scripts/crawl_jtest.py; n2 is required, n3, n4,
-n1 and n5 are used when present), the Mimikara N3 vocabulary, and JMdict (EDRDG,
+Inputs: scripts/data/jtest_<level>.json (scripts/crawl_jtest.py; n5, n4 and n2 are
+required, n3 and n1 are used when present), the Mimikara N3 vocabulary, and JMdict (EDRDG,
 CC BY-SA 4.0), downloaded when no path is given. Outputs:
-  - frontend/src/data/jtest_n2_vocab.json: the N2 deck (words without related lists);
-  - frontend/src/data/vocab_companions.json: up to two companion words per N3 and N2
-    word, so that learning one word teaches two. In order of preference:
+  - frontend/src/data/jtest_<level>_vocab.json: the N5, N4 and N2 decks (words without
+    related lists);
+  - frontend/src/data/vocab_companions.json: up to two companion words per word of every
+    deck (N5, N4, N3, N2), so that learning one word teaches two. In order of preference:
       * its transitive/intransitive pair (自動詞/他動詞, types "vt"/"vi"), detected
         with the transitivity of JMdict and the usual okurigana alternations;
       * synonyms ("syn") and antonyms ("ant") from the "Từ liên quan" lists of
@@ -30,10 +31,11 @@ ROOT = Path(__file__).resolve().parent.parent
 SCRIPT_DATA = ROOT / "scripts" / "data"
 FRONTEND_DATA = ROOT / "frontend" / "src" / "data"
 N3_VOCAB_PATH = FRONTEND_DATA / "mimikara_oboeru_vocab.json"
-N2_OUTPUT = FRONTEND_DATA / "jtest_n2_vocab.json"
 COMPANIONS_OUTPUT = FRONTEND_DATA / "vocab_companions.json"
 
 JTEST_LEVELS = ["n3", "n2", "n4", "n1", "n5"]
+# Levels practiced from their jtest list, each written to frontend/src/data/jtest_<level>_vocab.json.
+DECK_LEVELS = ["n5", "n4", "n2"]
 MAX_COMPANIONS = 2
 # Categories of jtest "Từ liên quan", and the companion types written to the JSON.
 SYNONYM, ANTONYM = "Đồng nghĩa", "Trái nghĩa"
@@ -261,7 +263,6 @@ def main() -> None:
         for level in JTEST_LEVELS
         if (path := SCRIPT_DATA / f"jtest_{level}.json").exists()
     }
-    n2 = jtest["n2"]
 
     dictionary = VietnameseDictionary()
     related_by_form: dict[tuple[str, str], dict] = {}
@@ -293,19 +294,22 @@ def main() -> None:
         pair = find_pair(word, reading, verbs, dictionary)
         return pick_companions(word, pair, related.get(SYNONYM, []), antonyms)
 
+    decks = {"n3": n3, **{level: jtest[level]["words"] for level in DECK_LEVELS}}
     companions = {
-        "n3": {str(e["stt"]): c for e in n3 if (c := companions_of(e, None))},
-        "n2": {str(e["stt"]): c for e in n2["words"] if (c := companions_of(e, e["related"]))},
+        level: {str(e["stt"]): c for e in words if (c := companions_of(e, e.get("related")))}
+        for level, words in decks.items()
     }
     COMPANIONS_OUTPUT.write_text(json.dumps(companions, ensure_ascii=False, separators=(",", ":")) + "\n", encoding="utf-8")
 
-    n2_deck = {**n2, "words": [{k: v for k, v in w.items() if k != "related"} for w in n2["words"]]}
-    N2_OUTPUT.write_text(json.dumps(n2_deck, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    for level in DECK_LEVELS:
+        deck = {**jtest[level], "words": [{k: v for k, v in w.items() if k != "related"} for w in decks[level]]}
+        output = FRONTEND_DATA / f"jtest_{level}_vocab.json"
+        output.write_text(json.dumps(deck, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
 
-    for level, deck in (("n3", n3), ("n2", n2["words"])):
+    for level, words in decks.items():
         found = companions[level]
         pairs = sum(1 for c in found.values() if c[0]["type"] in (TRANSITIVE, INTRANSITIVE))
-        print(f"{level}: {len(found)}/{len(deck)} words with companions, {pairs} 自動詞/他動詞 pairs")
+        print(f"{level}: {len(found)}/{len(words)} words with companions, {pairs} 自動詞/他動詞 pairs")
 
 
 if __name__ == "__main__":

@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { N2_DECK, N3_DECK, UNREMEMBERED_BATCH_KEY, getItemKey } from "./vocabDecks";
+import { N2_DECK, N3_DECK, N4_DECK, N5_DECK, UNREMEMBERED_BATCH_KEY, getItemKey } from "./vocabDecks";
 
 const n2Word = (kanji: string, hiragana?: string) =>
   N2_DECK.items.find((i) => i.kanji === kanji && (!hiragana || i.hiragana === hiragana))!;
@@ -20,17 +20,48 @@ describe("vocabulary decks", () => {
     expect(new Set(N2_DECK.items.map(getItemKey)).size).toBe(N2_DECK.items.length);
   });
 
+  it("groups the crawled N5 and N4 lists into chapters of lessons, with their own storage", () => {
+    expect(N5_DECK.unitGroups.map((group) => group.lessons.length)).toEqual(Array(10).fill(5));
+    expect(N5_DECK.unitGroups[0].name).toBe("Chapter 1 – Tự giới thiệu");
+    expect(N5_DECK.firstLesson?.title).toBe("Chapter 1 - Bài 1: Là");
+    expect(N4_DECK.unitGroups.map((group) => group.lessons.length)).toEqual([5, 5, 5, 5, 5, 5, 6]);
+    expect(N4_DECK.unitGroups[0].name).toBe("Chapter 1 – Mỗi ngày của chúng tôi");
+    expect(N4_DECK.firstLesson?.title).toBe("Chapter 1 - Bài 1: Thời gian");
+
+    for (const deck of [N5_DECK, N4_DECK]) {
+      expect(deck.items.length).toBeGreaterThan(850);
+      expect(new Set(deck.items.map(getItemKey)).size).toBe(deck.items.length);
+    }
+    expect([N5_DECK, N4_DECK, N3_DECK, N2_DECK].map((deck) => deck.unrememberedStorageKey)).toEqual([
+      "mimikara_n5_unremembered_words",
+      "mimikara_n4_unremembered_words",
+      "mimikara_unremembered_words",
+      "mimikara_n2_unremembered_words",
+    ]);
+    expect([N5_DECK, N4_DECK, N3_DECK, N2_DECK].map((deck) => deck.srsStorageKey)).toEqual([
+      "mimikara_srs_n5",
+      "mimikara_srs_n4",
+      "mimikara_srs_n3",
+      "mimikara_srs_n2",
+    ]);
+  });
+
   it("reads kana-only N2 words from their reading", () => {
     const item = N2_DECK.items.find((i) => i.hiragana === "ありがたい")!;
     expect(item.kanji).toBe("");
     expect(item.question_text).toBe("ありがたい");
   });
 
-  it("derives the Hán Việt of N2 kanji words", () => {
+  it("derives the Hán Việt of N5, N4 and N2 kanji words", () => {
     expect(n2Word("一家").han_viet).toBe("NHẤT GIA");
     expect(n2Word("自立（する）").han_viet).toBe("TỰ LẬP");
     expect(N2_DECK.items.find((i) => i.hiragana === "ありがたい")!.han_viet).toBe("");
-    expect(N2_DECK.items.filter((i) => i.han_viet.includes("?"))).toEqual([]);
+    expect(N5_DECK.items.find((i) => i.kanji === "飲む")!.han_viet).toBe("ẨM");
+    // The context in brackets is not part of the word.
+    expect(N4_DECK.items.find((i) => i.kanji === "（お金を）下ろす")!.han_viet).toBe("HẠ");
+    for (const deck of [N5_DECK, N4_DECK, N2_DECK]) {
+      expect(deck.items.filter((i) => i.han_viet.includes("?"))).toEqual([]);
+    }
   });
 
   it("pairs words with companions: verb pairs, synonyms and antonyms", () => {
@@ -47,8 +78,17 @@ describe("vocabulary decks", () => {
       { type: "syn", word: "家族", reading: "かぞく", meaning: "gia đình" },
       { type: "syn", word: "世帯", reading: "せたい", meaning: "hộ gia đình" },
     ]);
+    // Kana words have no reading of their own.
+    expect(N5_DECK.companionsOf(N5_DECK.items.find((i) => i.hiragana === "わたし")!)).toEqual([
+      { type: "syn", word: "ぼく", meaning: "tôi (nam, thân mật)" },
+      { type: "syn", word: "わたくし", meaning: "tôi (rất lịch sự)" },
+    ]);
+    expect(N4_DECK.companionsOf(N4_DECK.items.find((i) => i.kanji === "開ける")!)[0]).toMatchObject({
+      type: "vi",
+      word: "開く",
+    });
 
-    for (const deck of [N3_DECK, N2_DECK]) {
+    for (const deck of [N5_DECK, N4_DECK, N3_DECK, N2_DECK]) {
       for (const item of deck.items) {
         const companions = deck.companionsOf(item);
         expect(companions.length).toBeLessThanOrEqual(2);

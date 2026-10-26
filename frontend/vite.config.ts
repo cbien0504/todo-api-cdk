@@ -6,8 +6,8 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   build: {
-    // The vocab-data chunk is the word lists themselves (~800 kB, ~180 kB gzipped).
-    chunkSizeWarningLimit: 1000,
+    // The vocab-data chunk is the word lists of N5–N2 themselves (~1.2 MB, ~250 kB gzipped).
+    chunkSizeWarningLimit: 1300,
     rolldownOptions: {
       output: {
         // The word lists rarely change: keep them and React in their own chunks so browsers

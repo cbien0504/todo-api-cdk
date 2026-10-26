@@ -1,0 +1,7368 @@
+{
+ "title": "はじめての日本語能力試験 N5 単語 1000",
+ "source": "JTest.net – https://jtest.net/tu-vung-n5",
+ "units": {
+  "Chapter 1": "Tự giới thiệu",
+  "Chapter 2": "Học tập",
+  "Chapter 3": "Công việc",
+  "Chapter 4": "Bạn bè",
+  "Chapter 5": "Cơm hôm nay",
+  "Chapter 6": "Sở thích",
+  "Chapter 7": "Mua sắm",
+  "Chapter 8": "Ngày nghỉ",
+  "Chapter 9": "Sống",
+  "Chapter 10": "Sức khỏe"
+ },
+ "words": [
+  {
+   "stt": 1,
+   "kanji": "",
+   "hiragana": "わたし",
+   "meaning": "Tôi",
+   "lesson": "Chapter 1 - Bài 1: Là"
+  },
+  {
+   "stt": 2,
+   "kanji": "",
+   "hiragana": "です",
+   "meaning": "Là",
+   "lesson": "Chapter 1 - Bài 1: Là"
+  },
+  {
+   "stt": 3,
+   "kanji": "",
+   "hiragana": "さん",
+   "meaning": "Ông/bà/anh/chị (hậu tố kính ngữ)",
+   "lesson": "Chapter 1 - Bài 1: Là"
+  },
+  {
+   "stt": 4,
+   "kanji": "",
+   "hiragana": "ちゃん",
+   "meaning": "Bé (hậu tố thân mật)",
+   "lesson": "Chapter 1 - Bài 1: Là"
+  },
+  {
+   "stt": 5,
+   "kanji": "",
+   "hiragana": "あなた",
+   "meaning": "Ông/bà/anh/chị/bạn (ngôi thứ hai số ít)",
+   "lesson": "Chapter 1 - Bài 1: Là"
+  },
+  {
+   "stt": 6,
+   "kanji": "",
+   "hiragana": "かれ",
+   "meaning": "Anh ấy (ngôi thứ ba số ít), bạn trai",
+   "lesson": "Chapter 1 - Bài 1: Là"
+  },
+  {
+   "stt": 7,
+   "kanji": "",
+   "hiragana": "かのじょ",
+   "meaning": "Cô ấy, chị ấy (ngôi thứ ba số ít), bạn gái",
+   "lesson": "Chapter 1 - Bài 1: Là"
+  },
+  {
+   "stt": 8,
+   "kanji": "",
+   "hiragana": "「お」なまえ",
+   "meaning": "Tên (của bạn)",
+   "lesson": "Chapter 1 - Bài 1: Là"
+  },
+  {
+   "stt": 9,
+   "kanji": "",
+   "hiragana": "はい",
+   "meaning": "Vâng, dạ",
+   "lesson": "Chapter 1 - Bài 1: Là"
+  },
+  {
+   "stt": 10,
+   "kanji": "",
+   "hiragana": "ええ",
+   "meaning": "Vâng, ừ (thân mật)",
+   "lesson": "Chapter 1 - Bài 1: Là"
+  },
+  {
+   "stt": 11,
+   "kanji": "",
+   "hiragana": "いいえ",
+   "meaning": "Không",
+   "lesson": "Chapter 1 - Bài 1: Là"
+  },
+  {
+   "stt": 12,
+   "kanji": "",
+   "hiragana": "そうです",
+   "meaning": "Đúng vậy",
+   "lesson": "Chapter 1 - Bài 1: Là"
+  },
+  {
+   "stt": 13,
+   "kanji": "",
+   "hiragana": "ちがいます",
+   "meaning": "Không phải",
+   "lesson": "Chapter 1 - Bài 1: Là"
+  },
+  {
+   "stt": 14,
+   "kanji": "",
+   "hiragana": "おはよう。",
+   "meaning": "Chào buổi sáng. (thân mật)",
+   "lesson": "Chapter 1 - Bài 2: Xin chào"
+  },
+  {
+   "stt": 15,
+   "kanji": "",
+   "hiragana": "おはようございます。",
+   "meaning": "Xin chào buổi sáng. (lịch sự)",
+   "lesson": "Chapter 1 - Bài 2: Xin chào"
+  },
+  {
+   "stt": 16,
+   "kanji": "",
+   "hiragana": "こんにちは。",
+   "meaning": "Xin chào. (ban ngày)",
+   "lesson": "Chapter 1 - Bài 2: Xin chào"
+  },
+  {
+   "stt": 17,
+   "kanji": "",
+   "hiragana": "こんばんは。",
+   "meaning": "Xin chào. (buổi tối)",
+   "lesson": "Chapter 1 - Bài 2: Xin chào"
+  },
+  {
+   "stt": 18,
+   "kanji": "",
+   "hiragana": "さようなら。",
+   "meaning": "Tạm biệt.",
+   "lesson": "Chapter 1 - Bài 2: Xin chào"
+  },
+  {
+   "stt": 19,
+   "kanji": "",
+   "hiragana": "じゃ、また。",
+   "meaning": "Vậy nhé, hẹn gặp lại.",
+   "lesson": "Chapter 1 - Bài 2: Xin chào"
+  },
+  {
+   "stt": 20,
+   "kanji": "",
+   "hiragana": "おやすみなさい。",
+   "meaning": "Chúc ngủ ngon.",
+   "lesson": "Chapter 1 - Bài 2: Xin chào"
+  },
+  {
+   "stt": 21,
+   "kanji": "",
+   "hiragana": "ありがとう。",
+   "meaning": "Cảm ơn. (thân mật)",
+   "lesson": "Chapter 1 - Bài 2: Xin chào"
+  },
+  {
+   "stt": 22,
+   "kanji": "",
+   "hiragana": "どういたしまして。",
+   "meaning": "Không có chi.",
+   "lesson": "Chapter 1 - Bài 2: Xin chào"
+  },
+  {
+   "stt": 23,
+   "kanji": "",
+   "hiragana": "ありがとうございます。",
+   "meaning": "Xin cảm ơn. (lịch sự)",
+   "lesson": "Chapter 1 - Bài 2: Xin chào"
+  },
+  {
+   "stt": 24,
+   "kanji": "",
+   "hiragana": "どうぞ。",
+   "meaning": "Xin mời. / Đây ạ.",
+   "lesson": "Chapter 1 - Bài 2: Xin chào"
+  },
+  {
+   "stt": 25,
+   "kanji": "",
+   "hiragana": "どうも。",
+   "meaning": "Cảm ơn. (thân mật)",
+   "lesson": "Chapter 1 - Bài 2: Xin chào"
+  },
+  {
+   "stt": 26,
+   "kanji": "",
+   "hiragana": "はじめまして。",
+   "meaning": "Rất vui được gặp bạn. (dùng khi gặp lần đầu)",
+   "lesson": "Chapter 1 - Bài 2: Xin chào"
+  },
+  {
+   "stt": 27,
+   "kanji": "",
+   "hiragana": "どうぞよろしく。",
+   "meaning": "Rất vui được làm quen. / Mong được giúp đỡ.",
+   "lesson": "Chapter 1 - Bài 2: Xin chào"
+  },
+  {
+   "stt": 28,
+   "kanji": "",
+   "hiragana": "こちらこそ。",
+   "meaning": "Tôi mới phải nhờ. / Tôi mới phải cảm ơn. / Tôi mới phải xin lỗi.",
+   "lesson": "Chapter 1 - Bài 2: Xin chào"
+  },
+  {
+   "stt": 29,
+   "kanji": "",
+   "hiragana": "かぞく",
+   "meaning": "Gia đình",
+   "lesson": "Chapter 1 - Bài 3: Gia đình"
+  },
+  {
+   "stt": 30,
+   "kanji": "",
+   "hiragana": "わたしのかぞく",
+   "meaning": "Gia đình của tôi",
+   "lesson": "Chapter 1 - Bài 3: Gia đình"
+  },
+  {
+   "stt": 31,
+   "kanji": "父",
+   "hiragana": "ちち",
+   "meaning": "Cha, bố (của tôi)",
+   "lesson": "Chapter 1 - Bài 3: Gia đình"
+  },
+  {
+   "stt": 32,
+   "kanji": "",
+   "hiragana": "りょうしん",
+   "meaning": "Cha mẹ, song thân",
+   "lesson": "Chapter 1 - Bài 3: Gia đình"
+  },
+  {
+   "stt": 33,
+   "kanji": "母",
+   "hiragana": "はは",
+   "meaning": "Mẹ (của tôi)",
+   "lesson": "Chapter 1 - Bài 3: Gia đình"
+  },
+  {
+   "stt": 34,
+   "kanji": "",
+   "hiragana": "あね",
+   "meaning": "Chị gái (của tôi)",
+   "lesson": "Chapter 1 - Bài 3: Gia đình"
+  },
+  {
+   "stt": 35,
+   "kanji": "",
+   "hiragana": "あに",
+   "meaning": "Anh trai (của tôi)",
+   "lesson": "Chapter 1 - Bài 3: Gia đình"
+  },
+  {
+   "stt": 36,
+   "kanji": "",
+   "hiragana": "おとうと",
+   "meaning": "Em trai (của tôi)",
+   "lesson": "Chapter 1 - Bài 3: Gia đình"
+  },
+  {
+   "stt": 37,
+   "kanji": "",
+   "hiragana": "いもうと",
+   "meaning": "Em gái (của tôi)",
+   "lesson": "Chapter 1 - Bài 3: Gia đình"
+  },
+  {
+   "stt": 38,
+   "kanji": "",
+   "hiragana": "きょうだい",
+   "meaning": "Anh chị em",
+   "lesson": "Chapter 1 - Bài 3: Gia đình"
+  },
+  {
+   "stt": 39,
+   "kanji": "",
+   "hiragana": "いぬ",
+   "meaning": "Con chó",
+   "lesson": "Chapter 1 - Bài 3: Gia đình"
+  },
+  {
+   "stt": 40,
+   "kanji": "",
+   "hiragana": "ねこ",
+   "meaning": "Con mèo",
+   "lesson": "Chapter 1 - Bài 3: Gia đình"
+  },
+  {
+   "stt": 41,
+   "kanji": "",
+   "hiragana": "いる",
+   "meaning": "Có, ở (dùng cho người, động vật)",
+   "lesson": "Chapter 1 - Bài 3: Gia đình"
+  },
+  {
+   "stt": 42,
+   "kanji": "",
+   "hiragana": "うち",
+   "meaning": "Nhà",
+   "lesson": "Chapter 1 - Bài 3: Gia đình"
+  },
+  {
+   "stt": 43,
+   "kanji": "",
+   "hiragana": "やまださんのかぞく",
+   "meaning": "Gia đình của anh/chị Yamada",
+   "lesson": "Chapter 1 - Bài 3: Gia đình"
+  },
+  {
+   "stt": 44,
+   "kanji": "",
+   "hiragana": "おじいさん",
+   "meaning": "Ông (nội, ngoại), ông cụ",
+   "lesson": "Chapter 1 - Bài 3: Gia đình"
+  },
+  {
+   "stt": 45,
+   "kanji": "",
+   "hiragana": "おばあさん",
+   "meaning": "Bà (nội, ngoại), bà cụ",
+   "lesson": "Chapter 1 - Bài 3: Gia đình"
+  },
+  {
+   "stt": 46,
+   "kanji": "",
+   "hiragana": "ごりょうしん",
+   "meaning": "Cha mẹ (kính ngữ)",
+   "lesson": "Chapter 1 - Bài 3: Gia đình"
+  },
+  {
+   "stt": 47,
+   "kanji": "お父さん",
+   "hiragana": "おとうさん",
+   "meaning": "Bố, cha (kính ngữ)",
+   "lesson": "Chapter 1 - Bài 3: Gia đình"
+  },
+  {
+   "stt": 48,
+   "kanji": "お母さん",
+   "hiragana": "おかあさん",
+   "meaning": "Mẹ (kính ngữ)",
+   "lesson": "Chapter 1 - Bài 3: Gia đình"
+  },
+  {
+   "stt": 49,
+   "kanji": "",
+   "hiragana": "おねえさん",
+   "meaning": "Chị gái (kính ngữ)",
+   "lesson": "Chapter 1 - Bài 3: Gia đình"
+  },
+  {
+   "stt": 50,
+   "kanji": "",
+   "hiragana": "おにいさん",
+   "meaning": "Anh trai (kính ngữ)",
+   "lesson": "Chapter 1 - Bài 3: Gia đình"
+  },
+  {
+   "stt": 51,
+   "kanji": "",
+   "hiragana": "やまださん",
+   "meaning": "Anh/chị Yamada",
+   "lesson": "Chapter 1 - Bài 3: Gia đình"
+  },
+  {
+   "stt": 52,
+   "kanji": "",
+   "hiragana": "おとうとさん",
+   "meaning": "Em trai (kính ngữ)",
+   "lesson": "Chapter 1 - Bài 3: Gia đình"
+  },
+  {
+   "stt": 53,
+   "kanji": "",
+   "hiragana": "いもうとさん",
+   "meaning": "Em gái (kính ngữ)",
+   "lesson": "Chapter 1 - Bài 3: Gia đình"
+  },
+  {
+   "stt": 54,
+   "kanji": "",
+   "hiragana": "ひとり",
+   "meaning": "Một người",
+   "lesson": "Chapter 1 - Bài 4: Bao nhiêu người"
+  },
+  {
+   "stt": 55,
+   "kanji": "",
+   "hiragana": "ふたり",
+   "meaning": "Hai người",
+   "lesson": "Chapter 1 - Bài 4: Bao nhiêu người"
+  },
+  {
+   "stt": 56,
+   "kanji": "",
+   "hiragana": "さんにん",
+   "meaning": "Ba người",
+   "lesson": "Chapter 1 - Bài 4: Bao nhiêu người"
+  },
+  {
+   "stt": 57,
+   "kanji": "",
+   "hiragana": "よにん",
+   "meaning": "Bốn người",
+   "lesson": "Chapter 1 - Bài 4: Bao nhiêu người"
+  },
+  {
+   "stt": 58,
+   "kanji": "",
+   "hiragana": "ごにん",
+   "meaning": "Năm người",
+   "lesson": "Chapter 1 - Bài 4: Bao nhiêu người"
+  },
+  {
+   "stt": 59,
+   "kanji": "",
+   "hiragana": "ろくにん",
+   "meaning": "Sáu người",
+   "lesson": "Chapter 1 - Bài 4: Bao nhiêu người"
+  },
+  {
+   "stt": 60,
+   "kanji": "",
+   "hiragana": "しちにん/ななにん",
+   "meaning": "Bảy người",
+   "lesson": "Chapter 1 - Bài 4: Bao nhiêu người"
+  },
+  {
+   "stt": 61,
+   "kanji": "",
+   "hiragana": "はちにん",
+   "meaning": "Tám người",
+   "lesson": "Chapter 1 - Bài 4: Bao nhiêu người"
+  },
+  {
+   "stt": 62,
+   "kanji": "",
+   "hiragana": "くにん/きゅうにん",
+   "meaning": "Chín người",
+   "lesson": "Chapter 1 - Bài 4: Bao nhiêu người"
+  },
+  {
+   "stt": 63,
+   "kanji": "",
+   "hiragana": "じゅうにん",
+   "meaning": "Mười người",
+   "lesson": "Chapter 1 - Bài 4: Bao nhiêu người"
+  },
+  {
+   "stt": 64,
+   "kanji": "",
+   "hiragana": "なんにん",
+   "meaning": "Mấy người, bao nhiêu người",
+   "lesson": "Chapter 1 - Bài 4: Bao nhiêu người"
+  },
+  {
+   "stt": 65,
+   "kanji": "",
+   "hiragana": "おとな",
+   "meaning": "Người lớn",
+   "lesson": "Chapter 1 - Bài 4: Bao nhiêu người"
+  },
+  {
+   "stt": 66,
+   "kanji": "",
+   "hiragana": "こども",
+   "meaning": "Trẻ em, trẻ con, con cái",
+   "lesson": "Chapter 1 - Bài 4: Bao nhiêu người"
+  },
+  {
+   "stt": 67,
+   "kanji": "",
+   "hiragana": "おとこのひと",
+   "meaning": "Người đàn ông",
+   "lesson": "Chapter 1 - Bài 4: Bao nhiêu người"
+  },
+  {
+   "stt": 68,
+   "kanji": "",
+   "hiragana": "おんなのひと",
+   "meaning": "Người phụ nữ",
+   "lesson": "Chapter 1 - Bài 4: Bao nhiêu người"
+  },
+  {
+   "stt": 69,
+   "kanji": "",
+   "hiragana": "おとこのこ",
+   "meaning": "Cậu bé, đứa bé trai",
+   "lesson": "Chapter 1 - Bài 4: Bao nhiêu người"
+  },
+  {
+   "stt": 70,
+   "kanji": "",
+   "hiragana": "おんなのこ",
+   "meaning": "Cô bé, đứa bé gái",
+   "lesson": "Chapter 1 - Bài 4: Bao nhiêu người"
+  },
+  {
+   "stt": 71,
+   "kanji": "",
+   "hiragana": "くに",
+   "meaning": "Đất nước, nước",
+   "lesson": "Chapter 1 - Bài 5: Đến từ"
+  },
+  {
+   "stt": 72,
+   "kanji": "",
+   "hiragana": "ある",
+   "meaning": "Có, ở",
+   "lesson": "Chapter 1 - Bài 5: Đến từ"
+  },
+  {
+   "stt": 73,
+   "kanji": "",
+   "hiragana": "どちら",
+   "meaning": "Ở đâu, hướng nào",
+   "lesson": "Chapter 1 - Bài 5: Đến từ"
+  },
+  {
+   "stt": 74,
+   "kanji": "",
+   "hiragana": "〜からきました！",
+   "meaning": "Đến từ ~",
+   "lesson": "Chapter 1 - Bài 5: Đến từ"
+  },
+  {
+   "stt": 75,
+   "kanji": "",
+   "hiragana": "〜じん",
+   "meaning": "Người ~",
+   "lesson": "Chapter 1 - Bài 5: Đến từ"
+  },
+  {
+   "stt": 76,
+   "kanji": "",
+   "hiragana": "ちず",
+   "meaning": "Bản đồ",
+   "lesson": "Chapter 1 - Bài 5: Đến từ"
+  },
+  {
+   "stt": 77,
+   "kanji": "",
+   "hiragana": "せかい",
+   "meaning": "Thế giới",
+   "lesson": "Chapter 1 - Bài 5: Đến từ"
+  },
+  {
+   "stt": 78,
+   "kanji": "",
+   "hiragana": "にほん",
+   "meaning": "Nhật Bản",
+   "lesson": "Chapter 1 - Bài 5: Đến từ"
+  },
+  {
+   "stt": 79,
+   "kanji": "",
+   "hiragana": "ベトナム",
+   "meaning": "Việt Nam",
+   "lesson": "Chapter 1 - Bài 5: Đến từ"
+  },
+  {
+   "stt": 80,
+   "kanji": "",
+   "hiragana": "インド",
+   "meaning": "Ấn Độ",
+   "lesson": "Chapter 1 - Bài 5: Đến từ"
+  },
+  {
+   "stt": 81,
+   "kanji": "",
+   "hiragana": "マレーシア",
+   "meaning": "Malaysia",
+   "lesson": "Chapter 1 - Bài 5: Đến từ"
+  },
+  {
+   "stt": 82,
+   "kanji": "",
+   "hiragana": "インドネシア",
+   "meaning": "Indonesia",
+   "lesson": "Chapter 1 - Bài 5: Đến từ"
+  },
+  {
+   "stt": 83,
+   "kanji": "",
+   "hiragana": "ミャンマー",
+   "meaning": "Myanmar",
+   "lesson": "Chapter 1 - Bài 5: Đến từ"
+  },
+  {
+   "stt": 84,
+   "kanji": "",
+   "hiragana": "かんこく",
+   "meaning": "Hàn Quốc",
+   "lesson": "Chapter 1 - Bài 5: Đến từ"
+  },
+  {
+   "stt": 85,
+   "kanji": "",
+   "hiragana": "トルコ",
+   "meaning": "Thổ Nhĩ Kỳ",
+   "lesson": "Chapter 1 - Bài 5: Đến từ"
+  },
+  {
+   "stt": 86,
+   "kanji": "",
+   "hiragana": "タイ",
+   "meaning": "Thái Lan",
+   "lesson": "Chapter 1 - Bài 5: Đến từ"
+  },
+  {
+   "stt": 87,
+   "kanji": "",
+   "hiragana": "オーストラリア",
+   "meaning": "Úc",
+   "lesson": "Chapter 1 - Bài 5: Đến từ"
+  },
+  {
+   "stt": 88,
+   "kanji": "",
+   "hiragana": "たいわん",
+   "meaning": "Đài Loan",
+   "lesson": "Chapter 1 - Bài 5: Đến từ"
+  },
+  {
+   "stt": 89,
+   "kanji": "",
+   "hiragana": "ニュージーランド",
+   "meaning": "New Zealand",
+   "lesson": "Chapter 1 - Bài 5: Đến từ"
+  },
+  {
+   "stt": 90,
+   "kanji": "",
+   "hiragana": "ちゅうごく",
+   "meaning": "Trung Quốc",
+   "lesson": "Chapter 1 - Bài 5: Đến từ"
+  },
+  {
+   "stt": 91,
+   "kanji": "",
+   "hiragana": "アメリカ",
+   "meaning": "Mỹ",
+   "lesson": "Chapter 1 - Bài 5: Đến từ"
+  },
+  {
+   "stt": 92,
+   "kanji": "",
+   "hiragana": "ネパール",
+   "meaning": "Nepal",
+   "lesson": "Chapter 1 - Bài 5: Đến từ"
+  },
+  {
+   "stt": 93,
+   "kanji": "",
+   "hiragana": "カナダ",
+   "meaning": "Canada",
+   "lesson": "Chapter 1 - Bài 5: Đến từ"
+  },
+  {
+   "stt": 94,
+   "kanji": "",
+   "hiragana": "フィリピン",
+   "meaning": "Philippines",
+   "lesson": "Chapter 1 - Bài 5: Đến từ"
+  },
+  {
+   "stt": 95,
+   "kanji": "",
+   "hiragana": "メキシコ",
+   "meaning": "Mexico",
+   "lesson": "Chapter 1 - Bài 5: Đến từ"
+  },
+  {
+   "stt": 96,
+   "kanji": "",
+   "hiragana": "ブラジル",
+   "meaning": "Brazil",
+   "lesson": "Chapter 1 - Bài 5: Đến từ"
+  },
+  {
+   "stt": 97,
+   "kanji": "",
+   "hiragana": "スイス",
+   "meaning": "Thụy Sĩ",
+   "lesson": "Chapter 1 - Bài 5: Đến từ"
+  },
+  {
+   "stt": 98,
+   "kanji": "",
+   "hiragana": "ロシア",
+   "meaning": "Nga",
+   "lesson": "Chapter 1 - Bài 5: Đến từ"
+  },
+  {
+   "stt": 99,
+   "kanji": "",
+   "hiragana": "イタリア",
+   "meaning": "Ý",
+   "lesson": "Chapter 1 - Bài 5: Đến từ"
+  },
+  {
+   "stt": 100,
+   "kanji": "",
+   "hiragana": "イギリス",
+   "meaning": "Anh",
+   "lesson": "Chapter 1 - Bài 5: Đến từ"
+  },
+  {
+   "stt": 101,
+   "kanji": "",
+   "hiragana": "スペイン",
+   "meaning": "Tây Ban Nha",
+   "lesson": "Chapter 1 - Bài 5: Đến từ"
+  },
+  {
+   "stt": 102,
+   "kanji": "",
+   "hiragana": "フランス",
+   "meaning": "Pháp",
+   "lesson": "Chapter 1 - Bài 5: Đến từ"
+  },
+  {
+   "stt": 103,
+   "kanji": "",
+   "hiragana": "エジプト",
+   "meaning": "Ai Cập",
+   "lesson": "Chapter 1 - Bài 5: Đến từ"
+  },
+  {
+   "stt": 104,
+   "kanji": "",
+   "hiragana": "ドイツ",
+   "meaning": "Đức",
+   "lesson": "Chapter 1 - Bài 5: Đến từ"
+  },
+  {
+   "stt": 105,
+   "kanji": "先生",
+   "hiragana": "せんせい",
+   "meaning": "Thầy, cô, giáo viên",
+   "lesson": "Chapter 2 - Bài 1: Trường học"
+  },
+  {
+   "stt": 106,
+   "kanji": "学生",
+   "hiragana": "がくせい",
+   "meaning": "Học sinh, sinh viên",
+   "lesson": "Chapter 2 - Bài 1: Trường học"
+  },
+  {
+   "stt": 107,
+   "kanji": "",
+   "hiragana": "りゅうがくせい",
+   "meaning": "Du học sinh",
+   "lesson": "Chapter 2 - Bài 1: Trường học"
+  },
+  {
+   "stt": 108,
+   "kanji": "学校",
+   "hiragana": "がっこう",
+   "meaning": "Trường học",
+   "lesson": "Chapter 2 - Bài 1: Trường học"
+  },
+  {
+   "stt": 109,
+   "kanji": "",
+   "hiragana": "べんきょうする",
+   "meaning": "Học, học tập",
+   "lesson": "Chapter 2 - Bài 1: Trường học"
+  },
+  {
+   "stt": 110,
+   "kanji": "にほんご学校",
+   "hiragana": "にほんごがっこう",
+   "meaning": "Trường dạy tiếng Nhật, trường Nhật ngữ",
+   "lesson": "Chapter 2 - Bài 1: Trường học"
+  },
+  {
+   "stt": 111,
+   "kanji": "小学校",
+   "hiragana": "しょうがっこう",
+   "meaning": "Trường tiểu học",
+   "lesson": "Chapter 2 - Bài 1: Trường học"
+  },
+  {
+   "stt": 112,
+   "kanji": "中学校",
+   "hiragana": "ちゅうがっこう",
+   "meaning": "Trường cấp 2, trường trung học cơ sở",
+   "lesson": "Chapter 2 - Bài 1: Trường học"
+  },
+  {
+   "stt": 113,
+   "kanji": "高校",
+   "hiragana": "こうこう",
+   "meaning": "Trường cấp 3, trường trung học phổ thông",
+   "lesson": "Chapter 2 - Bài 1: Trường học"
+  },
+  {
+   "stt": 114,
+   "kanji": "大学",
+   "hiragana": "だいがく",
+   "meaning": "Đại học",
+   "lesson": "Chapter 2 - Bài 1: Trường học"
+  },
+  {
+   "stt": 115,
+   "kanji": "",
+   "hiragana": "きょうしつ",
+   "meaning": "Phòng học, lớp học",
+   "lesson": "Chapter 2 - Bài 1: Trường học"
+  },
+  {
+   "stt": 116,
+   "kanji": "",
+   "hiragana": "クラス",
+   "meaning": "Lớp",
+   "lesson": "Chapter 2 - Bài 1: Trường học"
+  },
+  {
+   "stt": 117,
+   "kanji": "行く",
+   "hiragana": "いく",
+   "meaning": "Đi",
+   "lesson": "Chapter 2 - Bài 1: Trường học"
+  },
+  {
+   "stt": 118,
+   "kanji": "来る",
+   "hiragana": "くる",
+   "meaning": "Đến",
+   "lesson": "Chapter 2 - Bài 1: Trường học"
+  },
+  {
+   "stt": 119,
+   "kanji": "帰る",
+   "hiragana": "かえる",
+   "meaning": "Về",
+   "lesson": "Chapter 2 - Bài 1: Trường học"
+  },
+  {
+   "stt": 120,
+   "kanji": "",
+   "hiragana": "ゼロ",
+   "meaning": "Số 0, không",
+   "lesson": "Chapter 2 - Bài 2: Số đếm"
+  },
+  {
+   "stt": 121,
+   "kanji": "",
+   "hiragana": "いち",
+   "meaning": "Một",
+   "lesson": "Chapter 2 - Bài 2: Số đếm"
+  },
+  {
+   "stt": 122,
+   "kanji": "",
+   "hiragana": "に",
+   "meaning": "Hai",
+   "lesson": "Chapter 2 - Bài 2: Số đếm"
+  },
+  {
+   "stt": 123,
+   "kanji": "",
+   "hiragana": "さん",
+   "meaning": "Ba",
+   "lesson": "Chapter 2 - Bài 2: Số đếm"
+  },
+  {
+   "stt": 124,
+   "kanji": "",
+   "hiragana": "し/よん",
+   "meaning": "Bốn",
+   "lesson": "Chapter 2 - Bài 2: Số đếm"
+  },
+  {
+   "stt": 125,
+   "kanji": "",
+   "hiragana": "ご",
+   "meaning": "Năm",
+   "lesson": "Chapter 2 - Bài 2: Số đếm"
+  },
+  {
+   "stt": 126,
+   "kanji": "",
+   "hiragana": "ろく",
+   "meaning": "Sáu",
+   "lesson": "Chapter 2 - Bài 2: Số đếm"
+  },
+  {
+   "stt": 127,
+   "kanji": "",
+   "hiragana": "しち/なな",
+   "meaning": "Bảy",
+   "lesson": "Chapter 2 - Bài 2: Số đếm"
+  },
+  {
+   "stt": 128,
+   "kanji": "",
+   "hiragana": "はち",
+   "meaning": "Tám",
+   "lesson": "Chapter 2 - Bài 2: Số đếm"
+  },
+  {
+   "stt": 129,
+   "kanji": "",
+   "hiragana": "く/きゅう",
+   "meaning": "Chín",
+   "lesson": "Chapter 2 - Bài 2: Số đếm"
+  },
+  {
+   "stt": 130,
+   "kanji": "",
+   "hiragana": "じゅう",
+   "meaning": "Mười",
+   "lesson": "Chapter 2 - Bài 2: Số đếm"
+  },
+  {
+   "stt": 131,
+   "kanji": "",
+   "hiragana": "じゅういち",
+   "meaning": "Mười một",
+   "lesson": "Chapter 2 - Bài 2: Số đếm"
+  },
+  {
+   "stt": 132,
+   "kanji": "",
+   "hiragana": "じゅうに",
+   "meaning": "Mười hai",
+   "lesson": "Chapter 2 - Bài 2: Số đếm"
+  },
+  {
+   "stt": 133,
+   "kanji": "〜月",
+   "hiragana": "がつ",
+   "meaning": "Tháng",
+   "lesson": "Chapter 2 - Bài 2: Số đếm"
+  },
+  {
+   "stt": 134,
+   "kanji": "1月",
+   "hiragana": "いちがつ",
+   "meaning": "Tháng Một, tháng Giêng",
+   "lesson": "Chapter 2 - Bài 2: Số đếm"
+  },
+  {
+   "stt": 135,
+   "kanji": "2月",
+   "hiragana": "にがつ",
+   "meaning": "Tháng Hai",
+   "lesson": "Chapter 2 - Bài 2: Số đếm"
+  },
+  {
+   "stt": 136,
+   "kanji": "3月",
+   "hiragana": "さんがつ",
+   "meaning": "Tháng Ba",
+   "lesson": "Chapter 2 - Bài 2: Số đếm"
+  },
+  {
+   "stt": 137,
+   "kanji": "4月",
+   "hiragana": "しがつ",
+   "meaning": "Tháng Tư",
+   "lesson": "Chapter 2 - Bài 2: Số đếm"
+  },
+  {
+   "stt": 138,
+   "kanji": "5月",
+   "hiragana": "ごがつ",
+   "meaning": "Tháng Năm",
+   "lesson": "Chapter 2 - Bài 2: Số đếm"
+  },
+  {
+   "stt": 139,
+   "kanji": "6月",
+   "hiragana": "ろくがつ",
+   "meaning": "Tháng Sáu",
+   "lesson": "Chapter 2 - Bài 2: Số đếm"
+  },
+  {
+   "stt": 140,
+   "kanji": "7月",
+   "hiragana": "しちがつ",
+   "meaning": "Tháng Bảy",
+   "lesson": "Chapter 2 - Bài 2: Số đếm"
+  },
+  {
+   "stt": 141,
+   "kanji": "8月",
+   "hiragana": "はちがつ",
+   "meaning": "Tháng Tám",
+   "lesson": "Chapter 2 - Bài 2: Số đếm"
+  },
+  {
+   "stt": 142,
+   "kanji": "9月",
+   "hiragana": "くがつ",
+   "meaning": "Tháng Chín",
+   "lesson": "Chapter 2 - Bài 2: Số đếm"
+  },
+  {
+   "stt": 143,
+   "kanji": "10月",
+   "hiragana": "じゅうがつ",
+   "meaning": "Tháng Mười",
+   "lesson": "Chapter 2 - Bài 2: Số đếm"
+  },
+  {
+   "stt": 144,
+   "kanji": "11月",
+   "hiragana": "じゅういちがつ",
+   "meaning": "Tháng Mười Một",
+   "lesson": "Chapter 2 - Bài 2: Số đếm"
+  },
+  {
+   "stt": 145,
+   "kanji": "12月",
+   "hiragana": "じゅうにがつ",
+   "meaning": "Tháng Mười Hai, tháng Chạp",
+   "lesson": "Chapter 2 - Bài 2: Số đếm"
+  },
+  {
+   "stt": 146,
+   "kanji": "何月",
+   "hiragana": "なんがつ",
+   "meaning": "Tháng mấy?",
+   "lesson": "Chapter 2 - Bài 2: Số đếm"
+  },
+  {
+   "stt": 147,
+   "kanji": "日よう日",
+   "hiragana": "にちようび",
+   "meaning": "Chủ nhật",
+   "lesson": "Chapter 2 - Bài 3: Thứ (trong tuần)"
+  },
+  {
+   "stt": 148,
+   "kanji": "月よう日",
+   "hiragana": "げつようび",
+   "meaning": "Thứ Hai",
+   "lesson": "Chapter 2 - Bài 3: Thứ (trong tuần)"
+  },
+  {
+   "stt": 149,
+   "kanji": "火よう日",
+   "hiragana": "かようび",
+   "meaning": "Thứ Ba",
+   "lesson": "Chapter 2 - Bài 3: Thứ (trong tuần)"
+  },
+  {
+   "stt": 150,
+   "kanji": "水よう日",
+   "hiragana": "すいようび",
+   "meaning": "Thứ Tư",
+   "lesson": "Chapter 2 - Bài 3: Thứ (trong tuần)"
+  },
+  {
+   "stt": 151,
+   "kanji": "木よう日",
+   "hiragana": "もくようび",
+   "meaning": "Thứ Năm",
+   "lesson": "Chapter 2 - Bài 3: Thứ (trong tuần)"
+  },
+  {
+   "stt": 152,
+   "kanji": "金よう日",
+   "hiragana": "きんようび",
+   "meaning": "Thứ Sáu",
+   "lesson": "Chapter 2 - Bài 3: Thứ (trong tuần)"
+  },
+  {
+   "stt": 153,
+   "kanji": "土よう日",
+   "hiragana": "どようび",
+   "meaning": "Thứ Bảy",
+   "lesson": "Chapter 2 - Bài 3: Thứ (trong tuần)"
+  },
+  {
+   "stt": 154,
+   "kanji": "何よう日",
+   "hiragana": "なんようび",
+   "meaning": "Thứ mấy?",
+   "lesson": "Chapter 2 - Bài 3: Thứ (trong tuần)"
+  },
+  {
+   "stt": 155,
+   "kanji": "",
+   "hiragana": "きょう",
+   "meaning": "Hôm nay",
+   "lesson": "Chapter 2 - Bài 3: Thứ (trong tuần)"
+  },
+  {
+   "stt": 156,
+   "kanji": "",
+   "hiragana": "あした",
+   "meaning": "Ngày mai",
+   "lesson": "Chapter 2 - Bài 3: Thứ (trong tuần)"
+  },
+  {
+   "stt": 157,
+   "kanji": "",
+   "hiragana": "きのう",
+   "meaning": "Hôm qua",
+   "lesson": "Chapter 2 - Bài 3: Thứ (trong tuần)"
+  },
+  {
+   "stt": 158,
+   "kanji": "",
+   "hiragana": "まいにち",
+   "meaning": "Hàng ngày, mỗi ngày",
+   "lesson": "Chapter 2 - Bài 3: Thứ (trong tuần)"
+  },
+  {
+   "stt": 159,
+   "kanji": "",
+   "hiragana": "〜しゅうかん",
+   "meaning": "~ tuần",
+   "lesson": "Chapter 2 - Bài 3: Thứ (trong tuần)"
+  },
+  {
+   "stt": 160,
+   "kanji": "〜か月",
+   "hiragana": "〜かげつ",
+   "meaning": "~ tháng",
+   "lesson": "Chapter 2 - Bài 3: Thứ (trong tuần)"
+  },
+  {
+   "stt": 161,
+   "kanji": "〜年",
+   "hiragana": "〜ねん",
+   "meaning": "~ năm",
+   "lesson": "Chapter 2 - Bài 3: Thứ (trong tuần)"
+  },
+  {
+   "stt": 162,
+   "kanji": "",
+   "hiragana": "〜かい",
+   "meaning": "~ lần",
+   "lesson": "Chapter 2 - Bài 3: Thứ (trong tuần)"
+  },
+  {
+   "stt": 163,
+   "kanji": "何かい",
+   "hiragana": "なんかい",
+   "meaning": "Mấy lần",
+   "lesson": "Chapter 2 - Bài 3: Thứ (trong tuần)"
+  },
+  {
+   "stt": 164,
+   "kanji": "",
+   "hiragana": "アルバイト<する>",
+   "meaning": "Việc làm thêm",
+   "lesson": "Chapter 2 - Bài 3: Thứ (trong tuần)"
+  },
+  {
+   "stt": 165,
+   "kanji": "",
+   "hiragana": "する",
+   "meaning": "Làm",
+   "lesson": "Chapter 2 - Bài 3: Thứ (trong tuần)"
+  },
+  {
+   "stt": 166,
+   "kanji": "",
+   "hiragana": "ことば",
+   "meaning": "Từ ngữ, tiếng",
+   "lesson": "Chapter 2 - Bài 4: Từ ngữ"
+  },
+  {
+   "stt": 167,
+   "kanji": "字",
+   "hiragana": "じ",
+   "meaning": "Chữ",
+   "lesson": "Chapter 2 - Bài 4: Từ ngữ"
+  },
+  {
+   "stt": 168,
+   "kanji": "",
+   "hiragana": "にほんご",
+   "meaning": "Tiếng Nhật",
+   "lesson": "Chapter 2 - Bài 4: Từ ngữ"
+  },
+  {
+   "stt": 169,
+   "kanji": "",
+   "hiragana": "〜ご",
+   "meaning": "Tiếng~",
+   "lesson": "Chapter 2 - Bài 4: Từ ngữ"
+  },
+  {
+   "stt": 170,
+   "kanji": "話す",
+   "hiragana": "はなす",
+   "meaning": "Nói, nói chuyện",
+   "lesson": "Chapter 2 - Bài 4: Từ ngữ"
+  },
+  {
+   "stt": 171,
+   "kanji": "",
+   "hiragana": "ゆっくり",
+   "meaning": "Chậm, chậm rãi",
+   "lesson": "Chapter 2 - Bài 4: Từ ngữ"
+  },
+  {
+   "stt": 172,
+   "kanji": "言う",
+   "hiragana": "いう",
+   "meaning": "Nói",
+   "lesson": "Chapter 2 - Bài 4: Từ ngữ"
+  },
+  {
+   "stt": 173,
+   "kanji": "",
+   "hiragana": "もういちど",
+   "meaning": "Một lần nữa",
+   "lesson": "Chapter 2 - Bài 4: Từ ngữ"
+  },
+  {
+   "stt": 174,
+   "kanji": "",
+   "hiragana": "おねがいします",
+   "meaning": "Xin vui lòng",
+   "lesson": "Chapter 2 - Bài 4: Từ ngữ"
+  },
+  {
+   "stt": 175,
+   "kanji": "",
+   "hiragana": "わかる",
+   "meaning": "Hiểu, biết",
+   "lesson": "Chapter 2 - Bài 4: Từ ngữ"
+  },
+  {
+   "stt": 176,
+   "kanji": "少し",
+   "hiragana": "すこし",
+   "meaning": "Một chút",
+   "lesson": "Chapter 2 - Bài 4: Từ ngữ"
+  },
+  {
+   "stt": 177,
+   "kanji": "もう少し",
+   "hiragana": "もうすこし",
+   "meaning": "Một chút nữa",
+   "lesson": "Chapter 2 - Bài 4: Từ ngữ"
+  },
+  {
+   "stt": 178,
+   "kanji": "",
+   "hiragana": "よく",
+   "meaning": "Rõ, giỏi, tốt",
+   "lesson": "Chapter 2 - Bài 4: Từ ngữ"
+  },
+  {
+   "stt": 179,
+   "kanji": "",
+   "hiragana": "だいたい",
+   "meaning": "Đại khái",
+   "lesson": "Chapter 2 - Bài 4: Từ ngữ"
+  },
+  {
+   "stt": 180,
+   "kanji": "",
+   "hiragana": "ぜんぜん",
+   "meaning": "Hoàn toàn (không)",
+   "lesson": "Chapter 2 - Bài 4: Từ ngữ"
+  },
+  {
+   "stt": 181,
+   "kanji": "",
+   "hiragana": "ひらがな",
+   "meaning": "(Chữ) Hiragana",
+   "lesson": "Chapter 2 - Bài 4: Từ ngữ"
+  },
+  {
+   "stt": 182,
+   "kanji": "",
+   "hiragana": "かたかな",
+   "meaning": "(Chữ) Katakana",
+   "lesson": "Chapter 2 - Bài 4: Từ ngữ"
+  },
+  {
+   "stt": 183,
+   "kanji": "",
+   "hiragana": "かんじ",
+   "meaning": "Chữ Hán",
+   "lesson": "Chapter 2 - Bài 4: Từ ngữ"
+  },
+  {
+   "stt": 184,
+   "kanji": "ローマ字",
+   "hiragana": "ローマじ",
+   "meaning": "Chữ La-tinh",
+   "lesson": "Chapter 2 - Bài 4: Từ ngữ"
+  },
+  {
+   "stt": 185,
+   "kanji": "読む",
+   "hiragana": "よむ",
+   "meaning": "Đọc",
+   "lesson": "Chapter 2 - Bài 5: Học tập"
+  },
+  {
+   "stt": 186,
+   "kanji": "本",
+   "hiragana": "ほん",
+   "meaning": "Sách, quyển sách",
+   "lesson": "Chapter 2 - Bài 5: Học tập"
+  },
+  {
+   "stt": 187,
+   "kanji": "書く",
+   "hiragana": "かく",
+   "meaning": "Viết",
+   "lesson": "Chapter 2 - Bài 5: Học tập"
+  },
+  {
+   "stt": 188,
+   "kanji": "聞く",
+   "hiragana": "きく",
+   "meaning": "Nghe, hỏi",
+   "lesson": "Chapter 2 - Bài 5: Học tập"
+  },
+  {
+   "stt": 189,
+   "kanji": "CD",
+   "hiragana": "シーディー",
+   "meaning": "Đĩa CD",
+   "lesson": "Chapter 2 - Bài 5: Học tập"
+  },
+  {
+   "stt": 190,
+   "kanji": "",
+   "hiragana": "しらべる",
+   "meaning": "Tra, tìm hiểu",
+   "lesson": "Chapter 2 - Bài 5: Học tập"
+  },
+  {
+   "stt": 191,
+   "kanji": "買う",
+   "hiragana": "かう",
+   "meaning": "Mua",
+   "lesson": "Chapter 2 - Bài 5: Học tập"
+  },
+  {
+   "stt": 192,
+   "kanji": "",
+   "hiragana": "じしょ",
+   "meaning": "Từ điển",
+   "lesson": "Chapter 2 - Bài 5: Học tập"
+  },
+  {
+   "stt": 193,
+   "kanji": "",
+   "hiragana": "でんしじしょ",
+   "meaning": "Từ điển điện tử",
+   "lesson": "Chapter 2 - Bài 5: Học tập"
+  },
+  {
+   "stt": 194,
+   "kanji": "",
+   "hiragana": "いみ",
+   "meaning": "Ý nghĩa",
+   "lesson": "Chapter 2 - Bài 5: Học tập"
+  },
+  {
+   "stt": 195,
+   "kanji": "",
+   "hiragana": "がんばる",
+   "meaning": "Cố gắng",
+   "lesson": "Chapter 2 - Bài 5: Học tập"
+  },
+  {
+   "stt": 196,
+   "kanji": "",
+   "hiragana": "しゅくだい",
+   "meaning": "Bài tập về nhà",
+   "lesson": "Chapter 2 - Bài 5: Học tập"
+  },
+  {
+   "stt": 197,
+   "kanji": "",
+   "hiragana": "にっき",
+   "meaning": "Nhật ký",
+   "lesson": "Chapter 2 - Bài 5: Học tập"
+  },
+  {
+   "stt": 198,
+   "kanji": "",
+   "hiragana": "レポート",
+   "meaning": "Bài báo cáo",
+   "lesson": "Chapter 2 - Bài 5: Học tập"
+  },
+  {
+   "stt": 199,
+   "kanji": "",
+   "hiragana": "としょかん",
+   "meaning": "Thư viện",
+   "lesson": "Chapter 2 - Bài 5: Học tập"
+  },
+  {
+   "stt": 200,
+   "kanji": "",
+   "hiragana": "ほんや",
+   "meaning": "Tiệm sách",
+   "lesson": "Chapter 2 - Bài 5: Học tập"
+  },
+  {
+   "stt": 201,
+   "kanji": "",
+   "hiragana": "れんしゅう<する>",
+   "meaning": "Luyện tập",
+   "lesson": "Chapter 2 - Bài 5: Học tập"
+  },
+  {
+   "stt": 202,
+   "kanji": "",
+   "hiragana": "スピーチ",
+   "meaning": "Bài phát biểu",
+   "lesson": "Chapter 2 - Bài 5: Học tập"
+  },
+  {
+   "stt": 203,
+   "kanji": "",
+   "hiragana": "おぼえる",
+   "meaning": "Nhớ, ghi nhớ",
+   "lesson": "Chapter 2 - Bài 5: Học tập"
+  },
+  {
+   "stt": 204,
+   "kanji": "",
+   "hiragana": "わすれる",
+   "meaning": "Quên",
+   "lesson": "Chapter 2 - Bài 5: Học tập"
+  },
+  {
+   "stt": 205,
+   "kanji": "",
+   "hiragana": "もんだい",
+   "meaning": "Vấn đề, câu hỏi",
+   "lesson": "Chapter 2 - Bài 5: Học tập"
+  },
+  {
+   "stt": 206,
+   "kanji": "",
+   "hiragana": "れい",
+   "meaning": "Ví dụ",
+   "lesson": "Chapter 2 - Bài 5: Học tập"
+  },
+  {
+   "stt": 207,
+   "kanji": "",
+   "hiragana": "こたえ",
+   "meaning": "Câu trả lời",
+   "lesson": "Chapter 2 - Bài 5: Học tập"
+  },
+  {
+   "stt": 208,
+   "kanji": "",
+   "hiragana": "しつもん<する>",
+   "meaning": "Câu hỏi",
+   "lesson": "Chapter 2 - Bài 5: Học tập"
+  },
+  {
+   "stt": 209,
+   "kanji": "",
+   "hiragana": "けんがく<する>",
+   "meaning": "Tham quan",
+   "lesson": "Chapter 2 - Bài 5: Học tập"
+  },
+  {
+   "stt": 210,
+   "kanji": "",
+   "hiragana": "かいしゃ",
+   "meaning": "Công ty",
+   "lesson": "Chapter 3 - Bài 1: Làm việc, lao động"
+  },
+  {
+   "stt": 211,
+   "kanji": "",
+   "hiragana": "ぎんこう",
+   "meaning": "Ngân hàng",
+   "lesson": "Chapter 3 - Bài 1: Làm việc, lao động"
+  },
+  {
+   "stt": 212,
+   "kanji": "",
+   "hiragana": "はたらく",
+   "meaning": "Làm việc, lao động",
+   "lesson": "Chapter 3 - Bài 1: Làm việc, lao động"
+  },
+  {
+   "stt": 213,
+   "kanji": "休む",
+   "hiragana": "やすむ",
+   "meaning": "Nghỉ, nghỉ ngơi",
+   "lesson": "Chapter 3 - Bài 1: Làm việc, lao động"
+  },
+  {
+   "stt": 214,
+   "kanji": "休み",
+   "hiragana": "やすみ",
+   "meaning": "Ngày nghỉ",
+   "lesson": "Chapter 3 - Bài 1: Làm việc, lao động"
+  },
+  {
+   "stt": 215,
+   "kanji": "ひる休み",
+   "hiragana": "ひるやすみ",
+   "meaning": "Nghỉ trưa",
+   "lesson": "Chapter 3 - Bài 1: Làm việc, lao động"
+  },
+  {
+   "stt": 216,
+   "kanji": "",
+   "hiragana": "ひまな",
+   "meaning": "Rảnh rỗi",
+   "lesson": "Chapter 3 - Bài 1: Làm việc, lao động"
+  },
+  {
+   "stt": 217,
+   "kanji": "",
+   "hiragana": "いそがしい",
+   "meaning": "Bận rộn",
+   "lesson": "Chapter 3 - Bài 1: Làm việc, lao động"
+  },
+  {
+   "stt": 218,
+   "kanji": "",
+   "hiragana": "ざんぎょう（する）",
+   "meaning": "Làm tăng ca, làm thêm giờ",
+   "lesson": "Chapter 3 - Bài 1: Làm việc, lao động"
+  },
+  {
+   "stt": 219,
+   "kanji": "",
+   "hiragana": "しゅっちょう（する）",
+   "meaning": "Công tác",
+   "lesson": "Chapter 3 - Bài 1: Làm việc, lao động"
+  },
+  {
+   "stt": 220,
+   "kanji": "",
+   "hiragana": "じむしょ",
+   "meaning": "Văn phòng",
+   "lesson": "Chapter 3 - Bài 1: Làm việc, lao động"
+  },
+  {
+   "stt": 221,
+   "kanji": "",
+   "hiragana": "こうじょう",
+   "meaning": "Nhà máy",
+   "lesson": "Chapter 3 - Bài 1: Làm việc, lao động"
+  },
+  {
+   "stt": 222,
+   "kanji": "",
+   "hiragana": "うけつけ",
+   "meaning": "Tiếp tân, lễ tân",
+   "lesson": "Chapter 3 - Bài 1: Làm việc, lao động"
+  },
+  {
+   "stt": 223,
+   "kanji": "",
+   "hiragana": "かいぎ",
+   "meaning": "Họp, hội nghị",
+   "lesson": "Chapter 3 - Bài 1: Làm việc, lao động"
+  },
+  {
+   "stt": 224,
+   "kanji": "",
+   "hiragana": "かいぎしつ",
+   "meaning": "Phòng họp",
+   "lesson": "Chapter 3 - Bài 1: Làm việc, lao động"
+  },
+  {
+   "stt": 225,
+   "kanji": "電話",
+   "hiragana": "でんわ",
+   "meaning": "Điện thoại",
+   "lesson": "Chapter 3 - Bài 1: Làm việc, lao động"
+  },
+  {
+   "stt": 226,
+   "kanji": "（電話を）かける",
+   "hiragana": "でんわかける",
+   "meaning": "Gọi (điện thoại)",
+   "lesson": "Chapter 3 - Bài 1: Làm việc, lao động"
+  },
+  {
+   "stt": 227,
+   "kanji": "",
+   "hiragana": "もしもし",
+   "meaning": "Alô",
+   "lesson": "Chapter 3 - Bài 1: Làm việc, lao động"
+  },
+  {
+   "stt": 228,
+   "kanji": "電話ばんごう",
+   "hiragana": "でんわばんごう",
+   "meaning": "Số điện thoại",
+   "lesson": "Chapter 3 - Bài 1: Làm việc, lao động"
+  },
+  {
+   "stt": 229,
+   "kanji": "",
+   "hiragana": "しる",
+   "meaning": "Biết",
+   "lesson": "Chapter 3 - Bài 1: Làm việc, lao động"
+  },
+  {
+   "stt": 230,
+   "kanji": "何ばん",
+   "hiragana": "なんばん",
+   "meaning": "Số mấy",
+   "lesson": "Chapter 3 - Bài 1: Làm việc, lao động"
+  },
+  {
+   "stt": 231,
+   "kanji": "",
+   "hiragana": "おしえる",
+   "meaning": "Chỉ, dạy, cho biết",
+   "lesson": "Chapter 3 - Bài 1: Làm việc, lao động"
+  },
+  {
+   "stt": 232,
+   "kanji": "",
+   "hiragana": "てつだう",
+   "meaning": "Giúp đỡ",
+   "lesson": "Chapter 3 - Bài 1: Làm việc, lao động"
+  },
+  {
+   "stt": 233,
+   "kanji": "",
+   "hiragana": "つくる",
+   "meaning": "Làm, tạo ra, sản xuất",
+   "lesson": "Chapter 3 - Bài 1: Làm việc, lao động"
+  },
+  {
+   "stt": 234,
+   "kanji": "",
+   "hiragana": "やくにたつ",
+   "meaning": "Có ích",
+   "lesson": "Chapter 3 - Bài 1: Làm việc, lao động"
+  },
+  {
+   "stt": 235,
+   "kanji": "",
+   "hiragana": "しごと",
+   "meaning": "Công việc",
+   "lesson": "Chapter 3 - Bài 2: Công việc"
+  },
+  {
+   "stt": 236,
+   "kanji": "",
+   "hiragana": "かいしゃいん",
+   "meaning": "Nhân viên công ty",
+   "lesson": "Chapter 3 - Bài 2: Công việc"
+  },
+  {
+   "stt": 237,
+   "kanji": "",
+   "hiragana": "きんこういん",
+   "meaning": "Nhân viên ngân hàng",
+   "lesson": "Chapter 3 - Bài 2: Công việc"
+  },
+  {
+   "stt": 238,
+   "kanji": "",
+   "hiragana": "おいしゃさん",
+   "meaning": "Bác sĩ",
+   "lesson": "Chapter 3 - Bài 2: Công việc"
+  },
+  {
+   "stt": 239,
+   "kanji": "",
+   "hiragana": "かんごしさん",
+   "meaning": "Y tá",
+   "lesson": "Chapter 3 - Bài 2: Công việc"
+  },
+  {
+   "stt": 240,
+   "kanji": "",
+   "hiragana": "かいごしさん",
+   "meaning": "Điều dưỡng viên",
+   "lesson": "Chapter 3 - Bài 2: Công việc"
+  },
+  {
+   "stt": 241,
+   "kanji": "",
+   "hiragana": "けいさつかん",
+   "meaning": "Cảnh sát",
+   "lesson": "Chapter 3 - Bài 2: Công việc"
+  },
+  {
+   "stt": 242,
+   "kanji": "",
+   "hiragana": "えきいん",
+   "meaning": "Nhân viên nhà ga",
+   "lesson": "Chapter 3 - Bài 2: Công việc"
+  },
+  {
+   "stt": 243,
+   "kanji": "",
+   "hiragana": "うんてんしゅ",
+   "meaning": "Tài xế",
+   "lesson": "Chapter 3 - Bài 2: Công việc"
+  },
+  {
+   "stt": 244,
+   "kanji": "",
+   "hiragana": "しゃちょう",
+   "meaning": "Giám đốc",
+   "lesson": "Chapter 3 - Bài 2: Công việc"
+  },
+  {
+   "stt": 245,
+   "kanji": "",
+   "hiragana": "ぶちょう",
+   "meaning": "Trưởng phòng",
+   "lesson": "Chapter 3 - Bài 2: Công việc"
+  },
+  {
+   "stt": 246,
+   "kanji": "",
+   "hiragana": "かちょう",
+   "meaning": "Trưởng ban",
+   "lesson": "Chapter 3 - Bài 2: Công việc"
+  },
+  {
+   "stt": 247,
+   "kanji": "",
+   "hiragana": "しゃいん",
+   "meaning": "Nhân viên",
+   "lesson": "Chapter 3 - Bài 2: Công việc"
+  },
+  {
+   "stt": 248,
+   "kanji": "",
+   "hiragana": "これ",
+   "meaning": "Cái này, đây",
+   "lesson": "Chapter 3 - Bài 3: Đây là cái gì?"
+  },
+  {
+   "stt": 249,
+   "kanji": "",
+   "hiragana": "それ",
+   "meaning": "Cái đó, đó",
+   "lesson": "Chapter 3 - Bài 3: Đây là cái gì?"
+  },
+  {
+   "stt": 250,
+   "kanji": "",
+   "hiragana": "あれ",
+   "meaning": "Cái kia, kia",
+   "lesson": "Chapter 3 - Bài 3: Đây là cái gì?"
+  },
+  {
+   "stt": 251,
+   "kanji": "",
+   "hiragana": "どれ",
+   "meaning": "Cái nào",
+   "lesson": "Chapter 3 - Bài 3: Đây là cái gì?"
+  },
+  {
+   "stt": 252,
+   "kanji": "",
+   "hiragana": "この",
+   "meaning": "~ này",
+   "lesson": "Chapter 3 - Bài 3: Đây là cái gì?"
+  },
+  {
+   "stt": 253,
+   "kanji": "",
+   "hiragana": "その",
+   "meaning": "~ đó",
+   "lesson": "Chapter 3 - Bài 3: Đây là cái gì?"
+  },
+  {
+   "stt": 254,
+   "kanji": "",
+   "hiragana": "あの",
+   "meaning": "~ kia",
+   "lesson": "Chapter 3 - Bài 3: Đây là cái gì?"
+  },
+  {
+   "stt": 255,
+   "kanji": "",
+   "hiragana": "どの",
+   "meaning": "~ nào",
+   "lesson": "Chapter 3 - Bài 3: Đây là cái gì?"
+  },
+  {
+   "stt": 256,
+   "kanji": "何",
+   "hiragana": "なん",
+   "meaning": "Cái gì",
+   "lesson": "Chapter 3 - Bài 3: Đây là cái gì?"
+  },
+  {
+   "stt": 257,
+   "kanji": "",
+   "hiragana": "めいし",
+   "meaning": "Danh thiếp",
+   "lesson": "Chapter 3 - Bài 3: Đây là cái gì?"
+  },
+  {
+   "stt": 258,
+   "kanji": "",
+   "hiragana": "ケータイ",
+   "meaning": "Điện thoại di động (cầm tay)",
+   "lesson": "Chapter 3 - Bài 3: Đây là cái gì?"
+  },
+  {
+   "stt": 259,
+   "kanji": "",
+   "hiragana": "スマホ",
+   "meaning": "Điện thoại thông minh (nói tắt)",
+   "lesson": "Chapter 3 - Bài 3: Đây là cái gì?"
+  },
+  {
+   "stt": 260,
+   "kanji": "",
+   "hiragana": "でんち",
+   "meaning": "Pin",
+   "lesson": "Chapter 3 - Bài 3: Đây là cái gì?"
+  },
+  {
+   "stt": 261,
+   "kanji": "",
+   "hiragana": "ノート",
+   "meaning": "Quyển vở, quyển tập",
+   "lesson": "Chapter 3 - Bài 3: Đây là cái gì?"
+  },
+  {
+   "stt": 262,
+   "kanji": "",
+   "hiragana": "かみ",
+   "meaning": "Tờ giấy, giấy",
+   "lesson": "Chapter 3 - Bài 3: Đây là cái gì?"
+  },
+  {
+   "stt": 263,
+   "kanji": "",
+   "hiragana": "てちょう",
+   "meaning": "Sổ tay",
+   "lesson": "Chapter 3 - Bài 3: Đây là cái gì?"
+  },
+  {
+   "stt": 264,
+   "kanji": "",
+   "hiragana": "ボールペン",
+   "meaning": "Bút bi",
+   "lesson": "Chapter 3 - Bài 3: Đây là cái gì?"
+  },
+  {
+   "stt": 265,
+   "kanji": "",
+   "hiragana": "シャープペンシル",
+   "meaning": "Bút chì bấm",
+   "lesson": "Chapter 3 - Bài 3: Đây là cái gì?"
+  },
+  {
+   "stt": 266,
+   "kanji": "",
+   "hiragana": "えんぴつ",
+   "meaning": "Bút chì",
+   "lesson": "Chapter 3 - Bài 3: Đây là cái gì?"
+  },
+  {
+   "stt": 267,
+   "kanji": "",
+   "hiragana": "けしごむ",
+   "meaning": "Cục tẩy, gôm",
+   "lesson": "Chapter 3 - Bài 3: Đây là cái gì?"
+  },
+  {
+   "stt": 268,
+   "kanji": "",
+   "hiragana": "パンチ",
+   "meaning": "Đồ bấm lỗ",
+   "lesson": "Chapter 3 - Bài 3: Đây là cái gì?"
+  },
+  {
+   "stt": 269,
+   "kanji": "",
+   "hiragana": "ホッチキス",
+   "meaning": "Dập ghim",
+   "lesson": "Chapter 3 - Bài 3: Đây là cái gì?"
+  },
+  {
+   "stt": 270,
+   "kanji": "",
+   "hiragana": "セロテープ",
+   "meaning": "Băng keo trong",
+   "lesson": "Chapter 3 - Bài 3: Đây là cái gì?"
+  },
+  {
+   "stt": 271,
+   "kanji": "",
+   "hiragana": "はさみ",
+   "meaning": "Cái kéo, cây kéo",
+   "lesson": "Chapter 3 - Bài 3: Đây là cái gì?"
+  },
+  {
+   "stt": 272,
+   "kanji": "",
+   "hiragana": "はこ",
+   "meaning": "Cái hộp",
+   "lesson": "Chapter 3 - Bài 3: Đây là cái gì?"
+  },
+  {
+   "stt": 273,
+   "kanji": "",
+   "hiragana": "コンピューター",
+   "meaning": "Máy tính",
+   "lesson": "Chapter 3 - Bài 3: Đây là cái gì?"
+  },
+  {
+   "stt": 274,
+   "kanji": "",
+   "hiragana": "パソコン",
+   "meaning": "Máy tính (cá nhân)",
+   "lesson": "Chapter 3 - Bài 3: Đây là cái gì?"
+  },
+  {
+   "stt": 275,
+   "kanji": "",
+   "hiragana": "インターネット",
+   "meaning": "Internet",
+   "lesson": "Chapter 3 - Bài 3: Đây là cái gì?"
+  },
+  {
+   "stt": 276,
+   "kanji": "",
+   "hiragana": "しりょう",
+   "meaning": "Tài liệu",
+   "lesson": "Chapter 3 - Bài 3: Đây là cái gì?"
+  },
+  {
+   "stt": 277,
+   "kanji": "",
+   "hiragana": "きる",
+   "meaning": "Cắt",
+   "lesson": "Chapter 3 - Bài 3: Đây là cái gì?"
+  },
+  {
+   "stt": 278,
+   "kanji": "",
+   "hiragana": "つかう",
+   "meaning": "Dùng, sử dụng",
+   "lesson": "Chapter 3 - Bài 3: Đây là cái gì?"
+  },
+  {
+   "stt": 279,
+   "kanji": "何こ",
+   "hiragana": "なんこ",
+   "meaning": "Bao nhiêu (mấy) cái (cục, trái, chiếc...)",
+   "lesson": "Chapter 3 - Bài 4: Có bao nhiêu cái?"
+  },
+  {
+   "stt": 280,
+   "kanji": "",
+   "hiragana": "~ こ",
+   "meaning": "Cái, cục, quả (trợ từ đếm vật nhỏ)",
+   "lesson": "Chapter 3 - Bài 4: Có bao nhiêu cái?"
+  },
+  {
+   "stt": 281,
+   "kanji": "何だい",
+   "hiragana": "なんだい",
+   "meaning": "Bao nhiêu (mấy) cái (đếm máy móc, xe cộ...)",
+   "lesson": "Chapter 3 - Bài 4: Có bao nhiêu cái?"
+  },
+  {
+   "stt": 282,
+   "kanji": "何時",
+   "hiragana": "なんじ",
+   "meaning": "Mấy giờ",
+   "lesson": "Chapter 3 - Bài 5: Thời gian"
+  },
+  {
+   "stt": 283,
+   "kanji": "何分",
+   "hiragana": "なんぷん",
+   "meaning": "Mấy phút",
+   "lesson": "Chapter 3 - Bài 5: Thời gian"
+  },
+  {
+   "stt": 284,
+   "kanji": "〜時",
+   "hiragana": "じ",
+   "meaning": "~ giờ",
+   "lesson": "Chapter 3 - Bài 5: Thời gian"
+  },
+  {
+   "stt": 285,
+   "kanji": "〜分",
+   "hiragana": "ぷん",
+   "meaning": "~ phút",
+   "lesson": "Chapter 3 - Bài 5: Thời gian"
+  },
+  {
+   "stt": 286,
+   "kanji": "",
+   "hiragana": "〜ごろ",
+   "meaning": "Khoảng ~ (chỉ thời điểm)",
+   "lesson": "Chapter 3 - Bài 5: Thời gian"
+  },
+  {
+   "stt": 287,
+   "kanji": "",
+   "hiragana": "ごぜん",
+   "meaning": "Buổi sáng (tính đến 12 giờ trưa)",
+   "lesson": "Chapter 3 - Bài 5: Thời gian"
+  },
+  {
+   "stt": 288,
+   "kanji": "",
+   "hiragana": "ごご",
+   "meaning": "Buổi chiều tối (tính từ 12 giờ trưa)",
+   "lesson": "Chapter 3 - Bài 5: Thời gian"
+  },
+  {
+   "stt": 289,
+   "kanji": "",
+   "hiragana": "いま",
+   "meaning": "Bây giờ",
+   "lesson": "Chapter 3 - Bài 5: Thời gian"
+  },
+  {
+   "stt": 290,
+   "kanji": "",
+   "hiragana": "〜ぐらい",
+   "meaning": "Khoảng ~ (chỉ khoảng thời gian)",
+   "lesson": "Chapter 3 - Bài 5: Thời gian"
+  },
+  {
+   "stt": 291,
+   "kanji": "〜時間",
+   "hiragana": "じかん",
+   "meaning": "~ tiếng (đồng hồ)",
+   "lesson": "Chapter 3 - Bài 5: Thời gian"
+  },
+  {
+   "stt": 292,
+   "kanji": "何時間",
+   "hiragana": "なんじかん",
+   "meaning": "Bao nhiêu (mấy) tiếng (đồng hồ)",
+   "lesson": "Chapter 3 - Bài 5: Thời gian"
+  },
+  {
+   "stt": 293,
+   "kanji": "",
+   "hiragana": "〜から",
+   "meaning": "Từ ~",
+   "lesson": "Chapter 3 - Bài 5: Thời gian"
+  },
+  {
+   "stt": 294,
+   "kanji": "",
+   "hiragana": "〜まで",
+   "meaning": "Đến ~",
+   "lesson": "Chapter 3 - Bài 5: Thời gian"
+  },
+  {
+   "stt": 295,
+   "kanji": "友だち",
+   "hiragana": "ともだち",
+   "meaning": "Bạn bè",
+   "lesson": "Chapter 4 - Bài 1: Người như thế nào?"
+  },
+  {
+   "stt": 296,
+   "kanji": "",
+   "hiragana": "どんな",
+   "meaning": "Như thế nào",
+   "lesson": "Chapter 4 - Bài 1: Người như thế nào?"
+  },
+  {
+   "stt": 297,
+   "kanji": "人",
+   "hiragana": "ひと",
+   "meaning": "Người",
+   "lesson": "Chapter 4 - Bài 1: Người như thế nào?"
+  },
+  {
+   "stt": 298,
+   "kanji": "",
+   "hiragana": "しんせつな",
+   "meaning": "Tử tế",
+   "lesson": "Chapter 4 - Bài 1: Người như thế nào?"
+  },
+  {
+   "stt": 299,
+   "kanji": "",
+   "hiragana": "みんな",
+   "meaning": "Mọi người",
+   "lesson": "Chapter 4 - Bài 1: Người như thế nào?"
+  },
+  {
+   "stt": 300,
+   "kanji": "元気な",
+   "hiragana": "げんきな",
+   "meaning": "Khỏe mạnh",
+   "lesson": "Chapter 4 - Bài 1: Người như thế nào?"
+  },
+  {
+   "stt": 301,
+   "kanji": "",
+   "hiragana": "きれいな",
+   "meaning": "Đẹp, sạch",
+   "lesson": "Chapter 4 - Bài 1: Người như thế nào?"
+  },
+  {
+   "stt": 302,
+   "kanji": "",
+   "hiragana": "ハンサムな",
+   "meaning": "Đẹp trai",
+   "lesson": "Chapter 4 - Bài 1: Người như thế nào?"
+  },
+  {
+   "stt": 303,
+   "kanji": "",
+   "hiragana": "かわいい",
+   "meaning": "Dễ thương",
+   "lesson": "Chapter 4 - Bài 1: Người như thế nào?"
+  },
+  {
+   "stt": 304,
+   "kanji": "",
+   "hiragana": "かっこいい",
+   "meaning": "Đẹp trai, phong độ",
+   "lesson": "Chapter 4 - Bài 1: Người như thế nào?"
+  },
+  {
+   "stt": 305,
+   "kanji": "",
+   "hiragana": "あたまがいい",
+   "meaning": "Thông minh",
+   "lesson": "Chapter 4 - Bài 1: Người như thế nào?"
+  },
+  {
+   "stt": 306,
+   "kanji": "",
+   "hiragana": "やさしい",
+   "meaning": "Tử tế, hiền lành",
+   "lesson": "Chapter 4 - Bài 1: Người như thế nào?"
+  },
+  {
+   "stt": 307,
+   "kanji": "",
+   "hiragana": "ユーモア",
+   "meaning": "Hài hước, hóm hỉnh",
+   "lesson": "Chapter 4 - Bài 1: Người như thế nào?"
+  },
+  {
+   "stt": 308,
+   "kanji": "",
+   "hiragana": "せ",
+   "meaning": "Chiều cao, lưng",
+   "lesson": "Chapter 4 - Bài 1: Người như thế nào?"
+  },
+  {
+   "stt": 309,
+   "kanji": "高い",
+   "hiragana": "たかい",
+   "meaning": "Cao, đắt",
+   "lesson": "Chapter 4 - Bài 1: Người như thế nào?"
+  },
+  {
+   "stt": 310,
+   "kanji": "",
+   "hiragana": "ひくい",
+   "meaning": "Thấp",
+   "lesson": "Chapter 4 - Bài 1: Người như thế nào?"
+  },
+  {
+   "stt": 311,
+   "kanji": "目",
+   "hiragana": "め",
+   "meaning": "Mắt",
+   "lesson": "Chapter 4 - Bài 1: Người như thế nào?"
+  },
+  {
+   "stt": 312,
+   "kanji": "大きい",
+   "hiragana": "おおきい",
+   "meaning": "To, lớn",
+   "lesson": "Chapter 4 - Bài 1: Người như thế nào?"
+  },
+  {
+   "stt": 313,
+   "kanji": "小さい",
+   "hiragana": "ちいさい",
+   "meaning": "Nhỏ",
+   "lesson": "Chapter 4 - Bài 1: Người như thế nào?"
+  },
+  {
+   "stt": 314,
+   "kanji": "",
+   "hiragana": "かみ",
+   "meaning": "Tóc",
+   "lesson": "Chapter 4 - Bài 1: Người như thế nào?"
+  },
+  {
+   "stt": 315,
+   "kanji": "長い",
+   "hiragana": "ながい",
+   "meaning": "Dài",
+   "lesson": "Chapter 4 - Bài 1: Người như thế nào?"
+  },
+  {
+   "stt": 316,
+   "kanji": "",
+   "hiragana": "みじかい",
+   "meaning": "Ngắn",
+   "lesson": "Chapter 4 - Bài 1: Người như thế nào?"
+  },
+  {
+   "stt": 317,
+   "kanji": "",
+   "hiragana": "ふく",
+   "meaning": "Quần áo",
+   "lesson": "Chapter 4 - Bài 2: Mặc áo"
+  },
+  {
+   "stt": 318,
+   "kanji": "",
+   "hiragana": "サイズ",
+   "meaning": "Kích cỡ",
+   "lesson": "Chapter 4 - Bài 2: Mặc áo"
+  },
+  {
+   "stt": 319,
+   "kanji": "",
+   "hiragana": "すてきな",
+   "meaning": "Xinh đẹp, tuyệt vời",
+   "lesson": "Chapter 4 - Bài 2: Mặc áo"
+  },
+  {
+   "stt": 320,
+   "kanji": "",
+   "hiragana": "デザイン",
+   "meaning": "Thiết kế, mẫu mã",
+   "lesson": "Chapter 4 - Bài 2: Mặc áo"
+  },
+  {
+   "stt": 321,
+   "kanji": "",
+   "hiragana": "きる",
+   "meaning": "Mặc",
+   "lesson": "Chapter 4 - Bài 2: Mặc áo"
+  },
+  {
+   "stt": 322,
+   "kanji": "",
+   "hiragana": "ぬぐ",
+   "meaning": "Cởi",
+   "lesson": "Chapter 4 - Bài 2: Mặc áo"
+  },
+  {
+   "stt": 323,
+   "kanji": "",
+   "hiragana": "あかい",
+   "meaning": "Đỏ",
+   "lesson": "Chapter 4 - Bài 2: Mặc áo"
+  },
+  {
+   "stt": 324,
+   "kanji": "",
+   "hiragana": "あおい",
+   "meaning": "Xanh (da trời)",
+   "lesson": "Chapter 4 - Bài 2: Mặc áo"
+  },
+  {
+   "stt": 325,
+   "kanji": "",
+   "hiragana": "しろい",
+   "meaning": "Trắng",
+   "lesson": "Chapter 4 - Bài 2: Mặc áo"
+  },
+  {
+   "stt": 326,
+   "kanji": "",
+   "hiragana": "くろい",
+   "meaning": "Đen",
+   "lesson": "Chapter 4 - Bài 2: Mặc áo"
+  },
+  {
+   "stt": 327,
+   "kanji": "",
+   "hiragana": "きいろい",
+   "meaning": "Vàng",
+   "lesson": "Chapter 4 - Bài 2: Mặc áo"
+  },
+  {
+   "stt": 328,
+   "kanji": "",
+   "hiragana": "いろいろな",
+   "meaning": "Nhiều loại, đủ thứ",
+   "lesson": "Chapter 4 - Bài 2: Mặc áo"
+  },
+  {
+   "stt": 329,
+   "kanji": "",
+   "hiragana": "シャツ",
+   "meaning": "Áo sơ mi, áo thun",
+   "lesson": "Chapter 4 - Bài 2: Mặc áo"
+  },
+  {
+   "stt": 330,
+   "kanji": "",
+   "hiragana": "セーター",
+   "meaning": "Áo len",
+   "lesson": "Chapter 4 - Bài 2: Mặc áo"
+  },
+  {
+   "stt": 331,
+   "kanji": "",
+   "hiragana": "コート",
+   "meaning": "Áo khoác, áo choàng",
+   "lesson": "Chapter 4 - Bài 2: Mặc áo"
+  },
+  {
+   "stt": 332,
+   "kanji": "",
+   "hiragana": "スーツ",
+   "meaning": "Bộ vest",
+   "lesson": "Chapter 4 - Bài 2: Mặc áo"
+  },
+  {
+   "stt": 333,
+   "kanji": "",
+   "hiragana": "うわぎ",
+   "meaning": "Áo khoác, áo ngoài",
+   "lesson": "Chapter 4 - Bài 2: Mặc áo"
+  },
+  {
+   "stt": 334,
+   "kanji": "",
+   "hiragana": "したぎ",
+   "meaning": "Đồ lót",
+   "lesson": "Chapter 4 - Bài 2: Mặc áo"
+  },
+  {
+   "stt": 335,
+   "kanji": "",
+   "hiragana": "きもの",
+   "meaning": "Kimono, đồ mặc",
+   "lesson": "Chapter 4 - Bài 2: Mặc áo"
+  },
+  {
+   "stt": 336,
+   "kanji": "",
+   "hiragana": "はく",
+   "meaning": "Mặc (quần, váy), đi (giày, dép)",
+   "lesson": "Chapter 4 - Bài 3: Mặc váy"
+  },
+  {
+   "stt": 337,
+   "kanji": "",
+   "hiragana": "ズボン",
+   "meaning": "Quần, quần dài",
+   "lesson": "Chapter 4 - Bài 3: Mặc váy"
+  },
+  {
+   "stt": 338,
+   "kanji": "",
+   "hiragana": "ジーンズ",
+   "meaning": "Quần jeans",
+   "lesson": "Chapter 4 - Bài 3: Mặc váy"
+  },
+  {
+   "stt": 339,
+   "kanji": "",
+   "hiragana": "パンツ",
+   "meaning": "Quần",
+   "lesson": "Chapter 4 - Bài 3: Mặc váy"
+  },
+  {
+   "stt": 340,
+   "kanji": "",
+   "hiragana": "スカート",
+   "meaning": "Váy",
+   "lesson": "Chapter 4 - Bài 3: Mặc váy"
+  },
+  {
+   "stt": 341,
+   "kanji": "",
+   "hiragana": "くつ",
+   "meaning": "Giày",
+   "lesson": "Chapter 4 - Bài 3: Mặc váy"
+  },
+  {
+   "stt": 342,
+   "kanji": "",
+   "hiragana": "くつした",
+   "meaning": "Vớ, tất",
+   "lesson": "Chapter 4 - Bài 3: Mặc váy"
+  },
+  {
+   "stt": 343,
+   "kanji": "",
+   "hiragana": "かぶる",
+   "meaning": "Đội",
+   "lesson": "Chapter 4 - Bài 3: Mặc váy"
+  },
+  {
+   "stt": 344,
+   "kanji": "",
+   "hiragana": "ぼうし",
+   "meaning": "Nón, mũ",
+   "lesson": "Chapter 4 - Bài 3: Mặc váy"
+  },
+  {
+   "stt": 345,
+   "kanji": "",
+   "hiragana": "（めがねを）かける",
+   "meaning": "Đeo (mắt kính)",
+   "lesson": "Chapter 4 - Bài 3: Mặc váy"
+  },
+  {
+   "stt": 346,
+   "kanji": "",
+   "hiragana": "めがね",
+   "meaning": "Mắt kính",
+   "lesson": "Chapter 4 - Bài 3: Mặc váy"
+  },
+  {
+   "stt": 347,
+   "kanji": "",
+   "hiragana": "サングラス",
+   "meaning": "Kính mát",
+   "lesson": "Chapter 4 - Bài 3: Mặc váy"
+  },
+  {
+   "stt": 348,
+   "kanji": "",
+   "hiragana": "（ゆびわを）する",
+   "meaning": "Đeo (nhẫn)",
+   "lesson": "Chapter 4 - Bài 3: Mặc váy"
+  },
+  {
+   "stt": 349,
+   "kanji": "",
+   "hiragana": "ネクタイ",
+   "meaning": "Cà vạt",
+   "lesson": "Chapter 4 - Bài 3: Mặc váy"
+  },
+  {
+   "stt": 350,
+   "kanji": "",
+   "hiragana": "ゆびわ",
+   "meaning": "Chiếc nhẫn",
+   "lesson": "Chapter 4 - Bài 3: Mặc váy"
+  },
+  {
+   "stt": 351,
+   "kanji": "",
+   "hiragana": "とけい",
+   "meaning": "Đồng hồ",
+   "lesson": "Chapter 4 - Bài 3: Mặc váy"
+  },
+  {
+   "stt": 352,
+   "kanji": "",
+   "hiragana": "もつ",
+   "meaning": "Có, cầm, giữ, xách",
+   "lesson": "Chapter 4 - Bài 3: Mặc váy"
+  },
+  {
+   "stt": 353,
+   "kanji": "",
+   "hiragana": "かばん",
+   "meaning": "Túi xách",
+   "lesson": "Chapter 4 - Bài 3: Mặc váy"
+  },
+  {
+   "stt": 354,
+   "kanji": "",
+   "hiragana": "さいふ",
+   "meaning": "Ví, bóp",
+   "lesson": "Chapter 4 - Bài 3: Mặc váy"
+  },
+  {
+   "stt": 355,
+   "kanji": "",
+   "hiragana": "あそぶ",
+   "meaning": "Chơi đùa, chơi",
+   "lesson": "Chapter 4 - Bài 4: Chơi"
+  },
+  {
+   "stt": 356,
+   "kanji": "",
+   "hiragana": "あんない<する>",
+   "meaning": "Hướng dẫn, giới thiệu",
+   "lesson": "Chapter 4 - Bài 4: Chơi"
+  },
+  {
+   "stt": 357,
+   "kanji": "",
+   "hiragana": "むかえる",
+   "meaning": "Đón",
+   "lesson": "Chapter 4 - Bài 4: Chơi"
+  },
+  {
+   "stt": 358,
+   "kanji": "",
+   "hiragana": "つれていく",
+   "meaning": "Dẫn đi",
+   "lesson": "Chapter 4 - Bài 4: Chơi"
+  },
+  {
+   "stt": 359,
+   "kanji": "",
+   "hiragana": "つれてくる",
+   "meaning": "Dẫn đến",
+   "lesson": "Chapter 4 - Bài 4: Chơi"
+  },
+  {
+   "stt": 360,
+   "kanji": "",
+   "hiragana": "どうぶつ",
+   "meaning": "Động vật, con vật",
+   "lesson": "Chapter 4 - Bài 4: Chơi"
+  },
+  {
+   "stt": 361,
+   "kanji": "",
+   "hiragana": "どうぶつえん",
+   "meaning": "Sở thú",
+   "lesson": "Chapter 4 - Bài 4: Chơi"
+  },
+  {
+   "stt": 362,
+   "kanji": "",
+   "hiragana": "パンダ",
+   "meaning": "Gấu trúc",
+   "lesson": "Chapter 4 - Bài 4: Chơi"
+  },
+  {
+   "stt": 363,
+   "kanji": "",
+   "hiragana": "ぞう",
+   "meaning": "Con voi",
+   "lesson": "Chapter 4 - Bài 4: Chơi"
+  },
+  {
+   "stt": 364,
+   "kanji": "",
+   "hiragana": "うま",
+   "meaning": "Con ngựa",
+   "lesson": "Chapter 4 - Bài 4: Chơi"
+  },
+  {
+   "stt": 365,
+   "kanji": "",
+   "hiragana": "[お]まつり",
+   "meaning": "Lễ hội",
+   "lesson": "Chapter 4 - Bài 4: Chơi"
+  },
+  {
+   "stt": 366,
+   "kanji": "",
+   "hiragana": "[お]てら",
+   "meaning": "Chùa",
+   "lesson": "Chapter 4 - Bài 4: Chơi"
+  },
+  {
+   "stt": 367,
+   "kanji": "",
+   "hiragana": "じんじゃ",
+   "meaning": "Đền thờ Thần đạo",
+   "lesson": "Chapter 4 - Bài 4: Chơi"
+  },
+  {
+   "stt": 368,
+   "kanji": "",
+   "hiragana": "りょこう<する>",
+   "meaning": "(Chuyến) du lịch",
+   "lesson": "Chapter 4 - Bài 4: Chơi"
+  },
+  {
+   "stt": 369,
+   "kanji": "",
+   "hiragana": "じゅんび<する>",
+   "meaning": "Chuẩn bị",
+   "lesson": "Chapter 4 - Bài 4: Chơi"
+  },
+  {
+   "stt": 370,
+   "kanji": "",
+   "hiragana": "よやく<する>",
+   "meaning": "Đặt trước",
+   "lesson": "Chapter 4 - Bài 4: Chơi"
+  },
+  {
+   "stt": 371,
+   "kanji": "",
+   "hiragana": "ホテル",
+   "meaning": "Khách sạn",
+   "lesson": "Chapter 4 - Bài 4: Chơi"
+  },
+  {
+   "stt": 372,
+   "kanji": "",
+   "hiragana": "とまる",
+   "meaning": "Nghỉ trọ",
+   "lesson": "Chapter 4 - Bài 4: Chơi"
+  },
+  {
+   "stt": 373,
+   "kanji": "",
+   "hiragana": "ロビー",
+   "meaning": "Sảnh",
+   "lesson": "Chapter 4 - Bài 4: Chơi"
+  },
+  {
+   "stt": 374,
+   "kanji": "",
+   "hiragana": "おみやげ",
+   "meaning": "Quà lưu niệm",
+   "lesson": "Chapter 4 - Bài 4: Chơi"
+  },
+  {
+   "stt": 375,
+   "kanji": "",
+   "hiragana": "サービス",
+   "meaning": "Dịch vụ",
+   "lesson": "Chapter 4 - Bài 4: Chơi"
+  },
+  {
+   "stt": 376,
+   "kanji": "",
+   "hiragana": "ホームステイ<する>",
+   "meaning": "Homestay, ở nhà dân",
+   "lesson": "Chapter 4 - Bài 4: Chơi"
+  },
+  {
+   "stt": 377,
+   "kanji": "町",
+   "hiragana": "まち",
+   "meaning": "Phố, thị trấn",
+   "lesson": "Chapter 4 - Bài 5: Phố xá, thị trấn"
+  },
+  {
+   "stt": 378,
+   "kanji": "",
+   "hiragana": "けん",
+   "meaning": "Tỉnh",
+   "lesson": "Chapter 4 - Bài 5: Phố xá, thị trấn"
+  },
+  {
+   "stt": 379,
+   "kanji": "",
+   "hiragana": "とうきょう",
+   "meaning": "Tokyo",
+   "lesson": "Chapter 4 - Bài 5: Phố xá, thị trấn"
+  },
+  {
+   "stt": 380,
+   "kanji": "",
+   "hiragana": "なりた",
+   "meaning": "Narita",
+   "lesson": "Chapter 4 - Bài 5: Phố xá, thị trấn"
+  },
+  {
+   "stt": 381,
+   "kanji": "",
+   "hiragana": "うえの",
+   "meaning": "Ueno",
+   "lesson": "Chapter 4 - Bài 5: Phố xá, thị trấn"
+  },
+  {
+   "stt": 382,
+   "kanji": "",
+   "hiragana": "あさくさ",
+   "meaning": "Asakusa",
+   "lesson": "Chapter 4 - Bài 5: Phố xá, thị trấn"
+  },
+  {
+   "stt": 383,
+   "kanji": "",
+   "hiragana": "しんじゅく",
+   "meaning": "Shinjuku",
+   "lesson": "Chapter 4 - Bài 5: Phố xá, thị trấn"
+  },
+  {
+   "stt": 384,
+   "kanji": "",
+   "hiragana": "あきはばら",
+   "meaning": "Akihabara",
+   "lesson": "Chapter 4 - Bài 5: Phố xá, thị trấn"
+  },
+  {
+   "stt": 385,
+   "kanji": "",
+   "hiragana": "しぶや",
+   "meaning": "Shibuya",
+   "lesson": "Chapter 4 - Bài 5: Phố xá, thị trấn"
+  },
+  {
+   "stt": 386,
+   "kanji": "",
+   "hiragana": "ぎんざ",
+   "meaning": "Ginza",
+   "lesson": "Chapter 4 - Bài 5: Phố xá, thị trấn"
+  },
+  {
+   "stt": 387,
+   "kanji": "",
+   "hiragana": "はねだ",
+   "meaning": "Haneda",
+   "lesson": "Chapter 4 - Bài 5: Phố xá, thị trấn"
+  },
+  {
+   "stt": 388,
+   "kanji": "",
+   "hiragana": "よこはま",
+   "meaning": "Yokohama",
+   "lesson": "Chapter 4 - Bài 5: Phố xá, thị trấn"
+  },
+  {
+   "stt": 389,
+   "kanji": "",
+   "hiragana": "かまくら",
+   "meaning": "Kamakura",
+   "lesson": "Chapter 4 - Bài 5: Phố xá, thị trấn"
+  },
+  {
+   "stt": 390,
+   "kanji": "",
+   "hiragana": "ほっかいどう",
+   "meaning": "Hokkaido",
+   "lesson": "Chapter 4 - Bài 5: Phố xá, thị trấn"
+  },
+  {
+   "stt": 391,
+   "kanji": "",
+   "hiragana": "さっぽろ",
+   "meaning": "Sapporo",
+   "lesson": "Chapter 4 - Bài 5: Phố xá, thị trấn"
+  },
+  {
+   "stt": 392,
+   "kanji": "",
+   "hiragana": "おおさか",
+   "meaning": "Osaka",
+   "lesson": "Chapter 4 - Bài 5: Phố xá, thị trấn"
+  },
+  {
+   "stt": 393,
+   "kanji": "",
+   "hiragana": "せんだい",
+   "meaning": "Sendai",
+   "lesson": "Chapter 4 - Bài 5: Phố xá, thị trấn"
+  },
+  {
+   "stt": 394,
+   "kanji": "",
+   "hiragana": "こうべ",
+   "meaning": "Kobe",
+   "lesson": "Chapter 4 - Bài 5: Phố xá, thị trấn"
+  },
+  {
+   "stt": 395,
+   "kanji": "",
+   "hiragana": "にっこう",
+   "meaning": "Nikko",
+   "lesson": "Chapter 4 - Bài 5: Phố xá, thị trấn"
+  },
+  {
+   "stt": 396,
+   "kanji": "",
+   "hiragana": "ひろしま",
+   "meaning": "Hiroshima",
+   "lesson": "Chapter 4 - Bài 5: Phố xá, thị trấn"
+  },
+  {
+   "stt": 397,
+   "kanji": "",
+   "hiragana": "ふじさん",
+   "meaning": "Núi Phú Sĩ",
+   "lesson": "Chapter 4 - Bài 5: Phố xá, thị trấn"
+  },
+  {
+   "stt": 398,
+   "kanji": "",
+   "hiragana": "ふくおか",
+   "meaning": "Fukuoka",
+   "lesson": "Chapter 4 - Bài 5: Phố xá, thị trấn"
+  },
+  {
+   "stt": 399,
+   "kanji": "",
+   "hiragana": "かなざわ",
+   "meaning": "Kanazawa",
+   "lesson": "Chapter 4 - Bài 5: Phố xá, thị trấn"
+  },
+  {
+   "stt": 400,
+   "kanji": "",
+   "hiragana": "ながさき",
+   "meaning": "Nagasaki",
+   "lesson": "Chapter 4 - Bài 5: Phố xá, thị trấn"
+  },
+  {
+   "stt": 401,
+   "kanji": "",
+   "hiragana": "なごや",
+   "meaning": "Nagoya",
+   "lesson": "Chapter 4 - Bài 5: Phố xá, thị trấn"
+  },
+  {
+   "stt": 402,
+   "kanji": "",
+   "hiragana": "おきなわ",
+   "meaning": "Okinawa",
+   "lesson": "Chapter 4 - Bài 5: Phố xá, thị trấn"
+  },
+  {
+   "stt": 403,
+   "kanji": "",
+   "hiragana": "きょうと",
+   "meaning": "Kyoto",
+   "lesson": "Chapter 4 - Bài 5: Phố xá, thị trấn"
+  },
+  {
+   "stt": 404,
+   "kanji": "",
+   "hiragana": "あさ",
+   "meaning": "Buổi sáng",
+   "lesson": "Chapter 5 - Bài 1: Sáng, tối"
+  },
+  {
+   "stt": 405,
+   "kanji": "",
+   "hiragana": "ひる",
+   "meaning": "Buổi trưa, ban ngày",
+   "lesson": "Chapter 5 - Bài 1: Sáng, tối"
+  },
+  {
+   "stt": 406,
+   "kanji": "",
+   "hiragana": "よる",
+   "meaning": "Buổi tối",
+   "lesson": "Chapter 5 - Bài 1: Sáng, tối"
+  },
+  {
+   "stt": 407,
+   "kanji": "",
+   "hiragana": "まいあさ",
+   "meaning": "Mỗi buổi sáng",
+   "lesson": "Chapter 5 - Bài 1: Sáng, tối"
+  },
+  {
+   "stt": 408,
+   "kanji": "",
+   "hiragana": "まいばん",
+   "meaning": "Mỗi tối",
+   "lesson": "Chapter 5 - Bài 1: Sáng, tối"
+  },
+  {
+   "stt": 409,
+   "kanji": "",
+   "hiragana": "けさ",
+   "meaning": "Sáng nay",
+   "lesson": "Chapter 5 - Bài 1: Sáng, tối"
+  },
+  {
+   "stt": 410,
+   "kanji": "",
+   "hiragana": "こんばん",
+   "meaning": "Tối nay",
+   "lesson": "Chapter 5 - Bài 1: Sáng, tối"
+  },
+  {
+   "stt": 411,
+   "kanji": "",
+   "hiragana": "おきる",
+   "meaning": "Thức dậy",
+   "lesson": "Chapter 5 - Bài 1: Sáng, tối"
+  },
+  {
+   "stt": 412,
+   "kanji": "",
+   "hiragana": "ねる",
+   "meaning": "Ngủ",
+   "lesson": "Chapter 5 - Bài 1: Sáng, tối"
+  },
+  {
+   "stt": 413,
+   "kanji": "見る",
+   "hiragana": "みる",
+   "meaning": "Nhìn, xem",
+   "lesson": "Chapter 5 - Bài 1: Sáng, tối"
+  },
+  {
+   "stt": 414,
+   "kanji": "",
+   "hiragana": "ニュース",
+   "meaning": "Tin tức",
+   "lesson": "Chapter 5 - Bài 1: Sáng, tối"
+  },
+  {
+   "stt": 415,
+   "kanji": "",
+   "hiragana": "ラジオ",
+   "meaning": "Ra-đi-ô",
+   "lesson": "Chapter 5 - Bài 1: Sáng, tối"
+  },
+  {
+   "stt": 416,
+   "kanji": "",
+   "hiragana": "テレビ",
+   "meaning": "Tivi",
+   "lesson": "Chapter 5 - Bài 1: Sáng, tối"
+  },
+  {
+   "stt": 417,
+   "kanji": "",
+   "hiragana": "はやい",
+   "meaning": "Nhanh, sớm",
+   "lesson": "Chapter 5 - Bài 1: Sáng, tối"
+  },
+  {
+   "stt": 418,
+   "kanji": "",
+   "hiragana": "おそい",
+   "meaning": "Trễ, muộn, chậm",
+   "lesson": "Chapter 5 - Bài 1: Sáng, tối"
+  },
+  {
+   "stt": 419,
+   "kanji": "",
+   "hiragana": "かがみ",
+   "meaning": "Gương soi",
+   "lesson": "Chapter 5 - Bài 1: Sáng, tối"
+  },
+  {
+   "stt": 420,
+   "kanji": "",
+   "hiragana": "かお",
+   "meaning": "Mặt, khuôn mặt",
+   "lesson": "Chapter 5 - Bài 1: Sáng, tối"
+  },
+  {
+   "stt": 421,
+   "kanji": "",
+   "hiragana": "あらう",
+   "meaning": "Rửa",
+   "lesson": "Chapter 5 - Bài 1: Sáng, tối"
+  },
+  {
+   "stt": 422,
+   "kanji": "",
+   "hiragana": "[お]ふろ",
+   "meaning": "Bồn tắm, tắm",
+   "lesson": "Chapter 5 - Bài 1: Sáng, tối"
+  },
+  {
+   "stt": 423,
+   "kanji": "入る",
+   "hiragana": "はいる",
+   "meaning": "Vào, đi (tắm)",
+   "lesson": "Chapter 5 - Bài 1: Sáng, tối"
+  },
+  {
+   "stt": 424,
+   "kanji": "",
+   "hiragana": "シャワー",
+   "meaning": "Vòi sen",
+   "lesson": "Chapter 5 - Bài 1: Sáng, tối"
+  },
+  {
+   "stt": 425,
+   "kanji": "",
+   "hiragana": "あびる",
+   "meaning": "Tắm (vòi sen)",
+   "lesson": "Chapter 5 - Bài 1: Sáng, tối"
+  },
+  {
+   "stt": 426,
+   "kanji": "",
+   "hiragana": "は",
+   "meaning": "Răng",
+   "lesson": "Chapter 5 - Bài 1: Sáng, tối"
+  },
+  {
+   "stt": 427,
+   "kanji": "",
+   "hiragana": "みがく",
+   "meaning": "Đánh, chải (răng)",
+   "lesson": "Chapter 5 - Bài 1: Sáng, tối"
+  },
+  {
+   "stt": 428,
+   "kanji": "食べる",
+   "hiragana": "たべる",
+   "meaning": "Ăn",
+   "lesson": "Chapter 5 - Bài 2: Ăn, uống"
+  },
+  {
+   "stt": 429,
+   "kanji": "食べ物",
+   "hiragana": "たべもの",
+   "meaning": "Đồ ăn, thức ăn",
+   "lesson": "Chapter 5 - Bài 2: Ăn, uống"
+  },
+  {
+   "stt": 430,
+   "kanji": "",
+   "hiragana": "あさごはん",
+   "meaning": "Cơm sáng, điểm tâm",
+   "lesson": "Chapter 5 - Bài 2: Ăn, uống"
+  },
+  {
+   "stt": 431,
+   "kanji": "",
+   "hiragana": "ひるごはん",
+   "meaning": "Cơm trưa",
+   "lesson": "Chapter 5 - Bài 2: Ăn, uống"
+  },
+  {
+   "stt": 432,
+   "kanji": "",
+   "hiragana": "ばんごはん",
+   "meaning": "Cơm tối",
+   "lesson": "Chapter 5 - Bài 2: Ăn, uống"
+  },
+  {
+   "stt": 433,
+   "kanji": "",
+   "hiragana": "たくさん",
+   "meaning": "Nhiều",
+   "lesson": "Chapter 5 - Bài 2: Ăn, uống"
+  },
+  {
+   "stt": 434,
+   "kanji": "",
+   "hiragana": "スーパー",
+   "meaning": "Siêu thị",
+   "lesson": "Chapter 5 - Bài 2: Ăn, uống"
+  },
+  {
+   "stt": 435,
+   "kanji": "肉",
+   "hiragana": "にく",
+   "meaning": "Thịt",
+   "lesson": "Chapter 5 - Bài 2: Ăn, uống"
+  },
+  {
+   "stt": 436,
+   "kanji": "ぎゅう肉",
+   "hiragana": "ぎゅうにく",
+   "meaning": "Thịt bò",
+   "lesson": "Chapter 5 - Bài 2: Ăn, uống"
+  },
+  {
+   "stt": 437,
+   "kanji": "ぶた肉",
+   "hiragana": "ぶたにく",
+   "meaning": "Thịt lợn, thịt heo",
+   "lesson": "Chapter 5 - Bài 2: Ăn, uống"
+  },
+  {
+   "stt": 438,
+   "kanji": "とり肉",
+   "hiragana": "とりにく",
+   "meaning": "Thịt gà",
+   "lesson": "Chapter 5 - Bài 2: Ăn, uống"
+  },
+  {
+   "stt": 439,
+   "kanji": "魚",
+   "hiragana": "さかな",
+   "meaning": "Cá",
+   "lesson": "Chapter 5 - Bài 2: Ăn, uống"
+  },
+  {
+   "stt": 440,
+   "kanji": "",
+   "hiragana": "たまご",
+   "meaning": "Trứng",
+   "lesson": "Chapter 5 - Bài 2: Ăn, uống"
+  },
+  {
+   "stt": 441,
+   "kanji": "",
+   "hiragana": "やさい",
+   "meaning": "Rau",
+   "lesson": "Chapter 5 - Bài 2: Ăn, uống"
+  },
+  {
+   "stt": 442,
+   "kanji": "",
+   "hiragana": "くだもの",
+   "meaning": "Trái cây",
+   "lesson": "Chapter 5 - Bài 2: Ăn, uống"
+  },
+  {
+   "stt": 443,
+   "kanji": "",
+   "hiragana": "バナナ",
+   "meaning": "Chuối",
+   "lesson": "Chapter 5 - Bài 2: Ăn, uống"
+  },
+  {
+   "stt": 444,
+   "kanji": "",
+   "hiragana": "りんご",
+   "meaning": "Táo",
+   "lesson": "Chapter 5 - Bài 2: Ăn, uống"
+  },
+  {
+   "stt": 445,
+   "kanji": "",
+   "hiragana": "レモン",
+   "meaning": "Chanh",
+   "lesson": "Chapter 5 - Bài 2: Ăn, uống"
+  },
+  {
+   "stt": 446,
+   "kanji": "",
+   "hiragana": "みかん",
+   "meaning": "Quýt",
+   "lesson": "Chapter 5 - Bài 2: Ăn, uống"
+  },
+  {
+   "stt": 447,
+   "kanji": "",
+   "hiragana": "パン",
+   "meaning": "Bánh mì",
+   "lesson": "Chapter 5 - Bài 2: Ăn, uống"
+  },
+  {
+   "stt": 448,
+   "kanji": "",
+   "hiragana": "[お]かし",
+   "meaning": "Bánh kẹo",
+   "lesson": "Chapter 5 - Bài 2: Ăn, uống"
+  },
+  {
+   "stt": 449,
+   "kanji": "",
+   "hiragana": "チョコレート",
+   "meaning": "Sô-cô-la",
+   "lesson": "Chapter 5 - Bài 2: Ăn, uống"
+  },
+  {
+   "stt": 450,
+   "kanji": "飲む",
+   "hiragana": "のむ",
+   "meaning": "Uống",
+   "lesson": "Chapter 5 - Bài 2: Ăn, uống"
+  },
+  {
+   "stt": 451,
+   "kanji": "飲み物",
+   "hiragana": "のみもの",
+   "meaning": "Thức uống",
+   "lesson": "Chapter 5 - Bài 2: Ăn, uống"
+  },
+  {
+   "stt": 452,
+   "kanji": "水",
+   "hiragana": "みず",
+   "meaning": "Nước",
+   "lesson": "Chapter 5 - Bài 2: Ăn, uống"
+  },
+  {
+   "stt": 453,
+   "kanji": "",
+   "hiragana": "[お]ゆ",
+   "meaning": "Nước nóng",
+   "lesson": "Chapter 5 - Bài 2: Ăn, uống"
+  },
+  {
+   "stt": 454,
+   "kanji": "",
+   "hiragana": "つめたい",
+   "meaning": "Lạnh",
+   "lesson": "Chapter 5 - Bài 2: Ăn, uống"
+  },
+  {
+   "stt": 455,
+   "kanji": "",
+   "hiragana": "〜がいい",
+   "meaning": "Thích ~, muốn ~",
+   "lesson": "Chapter 5 - Bài 2: Ăn, uống"
+  },
+  {
+   "stt": 456,
+   "kanji": "入れる",
+   "hiragana": "いれる",
+   "meaning": "Cho vào",
+   "lesson": "Chapter 5 - Bài 2: Ăn, uống"
+  },
+  {
+   "stt": 457,
+   "kanji": "",
+   "hiragana": "ミルク",
+   "meaning": "Sữa",
+   "lesson": "Chapter 5 - Bài 2: Ăn, uống"
+  },
+  {
+   "stt": 458,
+   "kanji": "",
+   "hiragana": "じどうはんばいき",
+   "meaning": "Máy bán hàng tự động",
+   "lesson": "Chapter 5 - Bài 2: Ăn, uống"
+  },
+  {
+   "stt": 459,
+   "kanji": "",
+   "hiragana": "ぎゅうにゅう",
+   "meaning": "Sữa tươi",
+   "lesson": "Chapter 5 - Bài 2: Ăn, uống"
+  },
+  {
+   "stt": 460,
+   "kanji": "",
+   "hiragana": "ジュース",
+   "meaning": "Nước trái cây",
+   "lesson": "Chapter 5 - Bài 2: Ăn, uống"
+  },
+  {
+   "stt": 461,
+   "kanji": "",
+   "hiragana": "コーヒー",
+   "meaning": "Cà phê",
+   "lesson": "Chapter 5 - Bài 2: Ăn, uống"
+  },
+  {
+   "stt": 462,
+   "kanji": "",
+   "hiragana": "こうちゃ",
+   "meaning": "Hồng trà",
+   "lesson": "Chapter 5 - Bài 2: Ăn, uống"
+  },
+  {
+   "stt": 463,
+   "kanji": "",
+   "hiragana": "おちゃ",
+   "meaning": "Trà",
+   "lesson": "Chapter 5 - Bài 2: Ăn, uống"
+  },
+  {
+   "stt": 464,
+   "kanji": "",
+   "hiragana": "[お]さけ",
+   "meaning": "Rượu sake",
+   "lesson": "Chapter 5 - Bài 2: Ăn, uống"
+  },
+  {
+   "stt": 465,
+   "kanji": "",
+   "hiragana": "ビール",
+   "meaning": "Bia",
+   "lesson": "Chapter 5 - Bài 2: Ăn, uống"
+  },
+  {
+   "stt": 466,
+   "kanji": "",
+   "hiragana": "ワイン",
+   "meaning": "Rượu vang",
+   "lesson": "Chapter 5 - Bài 2: Ăn, uống"
+  },
+  {
+   "stt": 467,
+   "kanji": "",
+   "hiragana": "カップ",
+   "meaning": "Tách, cốc",
+   "lesson": "Chapter 5 - Bài 2: Ăn, uống"
+  },
+  {
+   "stt": 468,
+   "kanji": "",
+   "hiragana": "コップ",
+   "meaning": "Ly, cốc",
+   "lesson": "Chapter 5 - Bài 2: Ăn, uống"
+  },
+  {
+   "stt": 469,
+   "kanji": "",
+   "hiragana": "りょうり",
+   "meaning": "Món ăn",
+   "lesson": "Chapter 5 - Bài 3: Món ăn"
+  },
+  {
+   "stt": 470,
+   "kanji": "",
+   "hiragana": "ごはん",
+   "meaning": "Cơm / bữa ăn",
+   "lesson": "Chapter 5 - Bài 3: Món ăn"
+  },
+  {
+   "stt": 471,
+   "kanji": "",
+   "hiragana": "サンドイッチ",
+   "meaning": "Bánh mì sandwich",
+   "lesson": "Chapter 5 - Bài 3: Món ăn"
+  },
+  {
+   "stt": 472,
+   "kanji": "",
+   "hiragana": "おにぎり",
+   "meaning": "Cơm nắm",
+   "lesson": "Chapter 5 - Bài 3: Món ăn"
+  },
+  {
+   "stt": 473,
+   "kanji": "",
+   "hiragana": "[お]べんとう",
+   "meaning": "Cơm hộp",
+   "lesson": "Chapter 5 - Bài 3: Món ăn"
+  },
+  {
+   "stt": 474,
+   "kanji": "",
+   "hiragana": "ラーメン",
+   "meaning": "Mì ramen",
+   "lesson": "Chapter 5 - Bài 3: Món ăn"
+  },
+  {
+   "stt": 475,
+   "kanji": "",
+   "hiragana": "パスタ",
+   "meaning": "Mì Ý",
+   "lesson": "Chapter 5 - Bài 3: Món ăn"
+  },
+  {
+   "stt": 476,
+   "kanji": "",
+   "hiragana": "うどん",
+   "meaning": "Mì udon",
+   "lesson": "Chapter 5 - Bài 3: Món ăn"
+  },
+  {
+   "stt": 477,
+   "kanji": "",
+   "hiragana": "そば",
+   "meaning": "Mì soba",
+   "lesson": "Chapter 5 - Bài 3: Món ăn"
+  },
+  {
+   "stt": 478,
+   "kanji": "",
+   "hiragana": "てんぷら",
+   "meaning": "Tempura (món chiên bột)",
+   "lesson": "Chapter 5 - Bài 3: Món ăn"
+  },
+  {
+   "stt": 479,
+   "kanji": "",
+   "hiragana": "すきやき",
+   "meaning": "Sukiyaki (món lẩu bò Nhật)",
+   "lesson": "Chapter 5 - Bài 3: Món ăn"
+  },
+  {
+   "stt": 480,
+   "kanji": "",
+   "hiragana": "さしみ",
+   "meaning": "Sashimi (cá sống thái lát)",
+   "lesson": "Chapter 5 - Bài 3: Món ăn"
+  },
+  {
+   "stt": 481,
+   "kanji": "",
+   "hiragana": "カレーライス",
+   "meaning": "Cơm cà ri",
+   "lesson": "Chapter 5 - Bài 3: Món ăn"
+  },
+  {
+   "stt": 482,
+   "kanji": "",
+   "hiragana": "ぎゅうどん",
+   "meaning": "Cơm thịt bò",
+   "lesson": "Chapter 5 - Bài 3: Món ăn"
+  },
+  {
+   "stt": 483,
+   "kanji": "",
+   "hiragana": "[お]すし",
+   "meaning": "Sushi",
+   "lesson": "Chapter 5 - Bài 3: Món ăn"
+  },
+  {
+   "stt": 484,
+   "kanji": "",
+   "hiragana": "ケーキ",
+   "meaning": "Bánh kem",
+   "lesson": "Chapter 5 - Bài 3: Món ăn"
+  },
+  {
+   "stt": 485,
+   "kanji": "",
+   "hiragana": "アイスクリーム",
+   "meaning": "Kem",
+   "lesson": "Chapter 5 - Bài 3: Món ăn"
+  },
+  {
+   "stt": 486,
+   "kanji": "",
+   "hiragana": "とる",
+   "meaning": "Lấy",
+   "lesson": "Chapter 5 - Bài 3: Món ăn"
+  },
+  {
+   "stt": 487,
+   "kanji": "",
+   "hiragana": "さとう",
+   "meaning": "Đường",
+   "lesson": "Chapter 5 - Bài 3: Món ăn"
+  },
+  {
+   "stt": 488,
+   "kanji": "",
+   "hiragana": "しお",
+   "meaning": "Muối",
+   "lesson": "Chapter 5 - Bài 3: Món ăn"
+  },
+  {
+   "stt": 489,
+   "kanji": "",
+   "hiragana": "しょうゆ",
+   "meaning": "Nước tương",
+   "lesson": "Chapter 5 - Bài 3: Món ăn"
+  },
+  {
+   "stt": 490,
+   "kanji": "",
+   "hiragana": "ニョクマム",
+   "meaning": "Nước mắm",
+   "lesson": "Chapter 5 - Bài 3: Món ăn"
+  },
+  {
+   "stt": 491,
+   "kanji": "",
+   "hiragana": "ナンプラー",
+   "meaning": "Nước mắm Thái Lan",
+   "lesson": "Chapter 5 - Bài 3: Món ăn"
+  },
+  {
+   "stt": 492,
+   "kanji": "何",
+   "hiragana": "なん",
+   "meaning": "Cái gì",
+   "lesson": "Chapter 5 - Bài 4: Nhà hàng"
+  },
+  {
+   "stt": 493,
+   "kanji": "何か",
+   "hiragana": "なにか",
+   "meaning": "Cái gì đó",
+   "lesson": "Chapter 5 - Bài 4: Nhà hàng"
+  },
+  {
+   "stt": 494,
+   "kanji": "",
+   "hiragana": "しょくじ（する）",
+   "meaning": "Bữa ăn, dùng bữa",
+   "lesson": "Chapter 5 - Bài 4: Nhà hàng"
+  },
+  {
+   "stt": 495,
+   "kanji": "",
+   "hiragana": "ゆうめいな",
+   "meaning": "Nổi tiếng",
+   "lesson": "Chapter 5 - Bài 4: Nhà hàng"
+  },
+  {
+   "stt": 496,
+   "kanji": "入る",
+   "hiragana": "はいる",
+   "meaning": "Vào",
+   "lesson": "Chapter 5 - Bài 4: Nhà hàng"
+  },
+  {
+   "stt": 497,
+   "kanji": "",
+   "hiragana": "レストラン",
+   "meaning": "Nhà hàng",
+   "lesson": "Chapter 5 - Bài 4: Nhà hàng"
+  },
+  {
+   "stt": 498,
+   "kanji": "",
+   "hiragana": "しょくどう",
+   "meaning": "Tiệm ăn, quán ăn",
+   "lesson": "Chapter 5 - Bài 4: Nhà hàng"
+  },
+  {
+   "stt": 499,
+   "kanji": "",
+   "hiragana": "ていしょく",
+   "meaning": "Cơm phần (bao gồm cơm, canh, thức ăn)",
+   "lesson": "Chapter 5 - Bài 4: Nhà hàng"
+  },
+  {
+   "stt": 500,
+   "kanji": "",
+   "hiragana": "きっさてん",
+   "meaning": "Quán nước",
+   "lesson": "Chapter 5 - Bài 4: Nhà hàng"
+  },
+  {
+   "stt": 501,
+   "kanji": "",
+   "hiragana": "〜で",
+   "meaning": "Bằng",
+   "lesson": "Chapter 5 - Bài 4: Nhà hàng"
+  },
+  {
+   "stt": 502,
+   "kanji": "",
+   "hiragana": "はし",
+   "meaning": "Đũa",
+   "lesson": "Chapter 5 - Bài 4: Nhà hàng"
+  },
+  {
+   "stt": 503,
+   "kanji": "",
+   "hiragana": "スプーン",
+   "meaning": "Muỗng, thìa",
+   "lesson": "Chapter 5 - Bài 4: Nhà hàng"
+  },
+  {
+   "stt": 504,
+   "kanji": "",
+   "hiragana": "フォーク",
+   "meaning": "Nĩa",
+   "lesson": "Chapter 5 - Bài 4: Nhà hàng"
+  },
+  {
+   "stt": 505,
+   "kanji": "",
+   "hiragana": "ナイフ",
+   "meaning": "Dao",
+   "lesson": "Chapter 5 - Bài 4: Nhà hàng"
+  },
+  {
+   "stt": 506,
+   "kanji": "",
+   "hiragana": "さら",
+   "meaning": "Đĩa",
+   "lesson": "Chapter 5 - Bài 4: Nhà hàng"
+  },
+  {
+   "stt": 507,
+   "kanji": "",
+   "hiragana": "ちゃわん",
+   "meaning": "Chén, bát",
+   "lesson": "Chapter 5 - Bài 4: Nhà hàng"
+  },
+  {
+   "stt": 508,
+   "kanji": "",
+   "hiragana": "いらっしゃいませ",
+   "meaning": "Kính chào quý khách.",
+   "lesson": "Chapter 5 - Bài 4: Nhà hàng"
+  },
+  {
+   "stt": 509,
+   "kanji": "",
+   "hiragana": "サンドイッチをおねがいします。",
+   "meaning": "Cho tôi sandwich.",
+   "lesson": "Chapter 5 - Bài 4: Nhà hàng"
+  },
+  {
+   "stt": 510,
+   "kanji": "",
+   "hiragana": "これでおねがいします。",
+   "meaning": "Lấy cho tôi cái này.",
+   "lesson": "Chapter 5 - Bài 4: Nhà hàng"
+  },
+  {
+   "stt": 511,
+   "kanji": "",
+   "hiragana": "ほかに",
+   "meaning": "Ngoài ra, khác",
+   "lesson": "Chapter 5 - Bài 4: Nhà hàng"
+  },
+  {
+   "stt": 512,
+   "kanji": "",
+   "hiragana": "べつべつに",
+   "meaning": "Riêng lẻ, riêng biệt",
+   "lesson": "Chapter 5 - Bài 4: Nhà hàng"
+  },
+  {
+   "stt": 513,
+   "kanji": "",
+   "hiragana": "どう",
+   "meaning": "Thế nào",
+   "lesson": "Chapter 5 - Bài 5: Như thế nào?"
+  },
+  {
+   "stt": 514,
+   "kanji": "",
+   "hiragana": "あまい",
+   "meaning": "Ngọt",
+   "lesson": "Chapter 5 - Bài 5: Như thế nào?"
+  },
+  {
+   "stt": 515,
+   "kanji": "",
+   "hiragana": "からい",
+   "meaning": "Cay",
+   "lesson": "Chapter 5 - Bài 5: Như thế nào?"
+  },
+  {
+   "stt": 516,
+   "kanji": "",
+   "hiragana": "おいしい",
+   "meaning": "Ngon",
+   "lesson": "Chapter 5 - Bài 5: Như thế nào?"
+  },
+  {
+   "stt": 517,
+   "kanji": "",
+   "hiragana": "ぜんぶ",
+   "meaning": "Toàn bộ, tất cả",
+   "lesson": "Chapter 5 - Bài 5: Như thế nào?"
+  },
+  {
+   "stt": 518,
+   "kanji": "",
+   "hiragana": "じぶんで",
+   "meaning": "Tự mình",
+   "lesson": "Chapter 5 - Bài 5: Như thế nào?"
+  },
+  {
+   "stt": 519,
+   "kanji": "",
+   "hiragana": "おなかがすく",
+   "meaning": "Đói bụng",
+   "lesson": "Chapter 5 - Bài 5: Như thế nào?"
+  },
+  {
+   "stt": 520,
+   "kanji": "",
+   "hiragana": "のどがかわく",
+   "meaning": "Khát nước",
+   "lesson": "Chapter 5 - Bài 5: Như thế nào?"
+  },
+  {
+   "stt": 521,
+   "kanji": "",
+   "hiragana": "いっぱいな",
+   "meaning": "Nhiều, no, đầy",
+   "lesson": "Chapter 5 - Bài 5: Như thế nào?"
+  },
+  {
+   "stt": 522,
+   "kanji": "",
+   "hiragana": "いかがですか",
+   "meaning": "Thế nào, mời ai ăn / uống (cách nói lịch sự)",
+   "lesson": "Chapter 5 - Bài 5: Như thế nào?"
+  },
+  {
+   "stt": 523,
+   "kanji": "",
+   "hiragana": "もういっぱい",
+   "meaning": "Thêm một (ly, chén)",
+   "lesson": "Chapter 5 - Bài 5: Như thế nào?"
+  },
+  {
+   "stt": 524,
+   "kanji": "",
+   "hiragana": "けっこうです",
+   "meaning": "Không, cảm ơn (từ chối lịch sự)",
+   "lesson": "Chapter 5 - Bài 5: Như thế nào?"
+  },
+  {
+   "stt": 525,
+   "kanji": "",
+   "hiragana": "かんぱい",
+   "meaning": "Cạn ly",
+   "lesson": "Chapter 5 - Bài 5: Như thế nào?"
+  },
+  {
+   "stt": 526,
+   "kanji": "",
+   "hiragana": "いただきます。",
+   "meaning": "Tôi xin phép ăn. / Mời dùng. (Nói trước khi ăn, uống)",
+   "lesson": "Chapter 5 - Bài 5: Như thế nào?"
+  },
+  {
+   "stt": 527,
+   "kanji": "",
+   "hiragana": "ごちそうさまでした。",
+   "meaning": "Cảm ơn đã cho bữa ăn ngon. (Nói sau khi ăn, uống)",
+   "lesson": "Chapter 5 - Bài 5: Như thế nào?"
+  },
+  {
+   "stt": 528,
+   "kanji": "",
+   "hiragana": "しゅみ",
+   "meaning": "Sở thích",
+   "lesson": "Chapter 6 - Bài 1: Sở thích"
+  },
+  {
+   "stt": 529,
+   "kanji": "日",
+   "hiragana": "ひ",
+   "meaning": "Ngày",
+   "lesson": "Chapter 6 - Bài 1: Sở thích"
+  },
+  {
+   "stt": 530,
+   "kanji": "",
+   "hiragana": "たのしい",
+   "meaning": "Vui",
+   "lesson": "Chapter 6 - Bài 1: Sở thích"
+  },
+  {
+   "stt": 531,
+   "kanji": "好きな",
+   "hiragana": "すきな",
+   "meaning": "Thích",
+   "lesson": "Chapter 6 - Bài 1: Sở thích"
+  },
+  {
+   "stt": 532,
+   "kanji": "",
+   "hiragana": "きらいな",
+   "meaning": "Ghét, không thích",
+   "lesson": "Chapter 6 - Bài 1: Sở thích"
+  },
+  {
+   "stt": 533,
+   "kanji": "",
+   "hiragana": "あまり",
+   "meaning": "(Không) ~ lắm",
+   "lesson": "Chapter 6 - Bài 1: Sở thích"
+  },
+  {
+   "stt": 534,
+   "kanji": "",
+   "hiragana": "どちら",
+   "meaning": "Cái nào, đằng nào",
+   "lesson": "Chapter 6 - Bài 1: Sở thích"
+  },
+  {
+   "stt": 535,
+   "kanji": "",
+   "hiragana": "どちらも",
+   "meaning": "Cái nào cũng, đằng nào cũng",
+   "lesson": "Chapter 6 - Bài 1: Sở thích"
+  },
+  {
+   "stt": 536,
+   "kanji": "",
+   "hiragana": "どっち",
+   "meaning": "Cái nào, đằng nào (cách nói thân mật)",
+   "lesson": "Chapter 6 - Bài 1: Sở thích"
+  },
+  {
+   "stt": 537,
+   "kanji": "",
+   "hiragana": "じょうずな",
+   "meaning": "Giỏi, khéo",
+   "lesson": "Chapter 6 - Bài 1: Sở thích"
+  },
+  {
+   "stt": 538,
+   "kanji": "",
+   "hiragana": "へたな",
+   "meaning": "Dở, kém",
+   "lesson": "Chapter 6 - Bài 1: Sở thích"
+  },
+  {
+   "stt": 539,
+   "kanji": "",
+   "hiragana": "まだまだです",
+   "meaning": "Chưa giỏi, vẫn còn kém",
+   "lesson": "Chapter 6 - Bài 1: Sở thích"
+  },
+  {
+   "stt": 540,
+   "kanji": "",
+   "hiragana": "ならう",
+   "meaning": "Học (luyện tập)",
+   "lesson": "Chapter 6 - Bài 1: Sở thích"
+  },
+  {
+   "stt": 541,
+   "kanji": "",
+   "hiragana": "いけばな",
+   "meaning": "Cắm hoa (nghệ thuật Nhật Bản)",
+   "lesson": "Chapter 6 - Bài 1: Sở thích"
+  },
+  {
+   "stt": 542,
+   "kanji": "",
+   "hiragana": "さどう",
+   "meaning": "Trà đạo",
+   "lesson": "Chapter 6 - Bài 1: Sở thích"
+  },
+  {
+   "stt": 543,
+   "kanji": "",
+   "hiragana": "かんたんな",
+   "meaning": "Đơn giản",
+   "lesson": "Chapter 6 - Bài 1: Sở thích"
+  },
+  {
+   "stt": 544,
+   "kanji": "",
+   "hiragana": "やさしい",
+   "meaning": "Dễ",
+   "lesson": "Chapter 6 - Bài 1: Sở thích"
+  },
+  {
+   "stt": 545,
+   "kanji": "",
+   "hiragana": "むずかしい",
+   "meaning": "Khó",
+   "lesson": "Chapter 6 - Bài 1: Sở thích"
+  },
+  {
+   "stt": 546,
+   "kanji": "",
+   "hiragana": "しゃしん",
+   "meaning": "Ảnh, hình",
+   "lesson": "Chapter 6 - Bài 1: Sở thích"
+  },
+  {
+   "stt": 547,
+   "kanji": "",
+   "hiragana": "とる",
+   "meaning": "Chụp (ảnh)",
+   "lesson": "Chapter 6 - Bài 1: Sở thích"
+  },
+  {
+   "stt": 548,
+   "kanji": "",
+   "hiragana": "カメラ",
+   "meaning": "Máy ảnh",
+   "lesson": "Chapter 6 - Bài 1: Sở thích"
+  },
+  {
+   "stt": 549,
+   "kanji": "",
+   "hiragana": "え",
+   "meaning": "Tranh, bức vẽ",
+   "lesson": "Chapter 6 - Bài 1: Sở thích"
+  },
+  {
+   "stt": 550,
+   "kanji": "",
+   "hiragana": "かく",
+   "meaning": "Vẽ",
+   "lesson": "Chapter 6 - Bài 1: Sở thích"
+  },
+  {
+   "stt": 551,
+   "kanji": "",
+   "hiragana": "びじゅつかん",
+   "meaning": "Bảo tàng mỹ thuật",
+   "lesson": "Chapter 6 - Bài 1: Sở thích"
+  },
+  {
+   "stt": 552,
+   "kanji": "",
+   "hiragana": "おんがく",
+   "meaning": "Âm nhạc",
+   "lesson": "Chapter 6 - Bài 2: Âm nhạc"
+  },
+  {
+   "stt": 553,
+   "kanji": "",
+   "hiragana": "カラオケ",
+   "meaning": "Karaoke",
+   "lesson": "Chapter 6 - Bài 2: Âm nhạc"
+  },
+  {
+   "stt": 554,
+   "kanji": "",
+   "hiragana": "いっしょに",
+   "meaning": "Cùng với",
+   "lesson": "Chapter 6 - Bài 2: Âm nhạc"
+  },
+  {
+   "stt": 555,
+   "kanji": "",
+   "hiragana": "みんなで",
+   "meaning": "Tất cả mọi người",
+   "lesson": "Chapter 6 - Bài 2: Âm nhạc"
+  },
+  {
+   "stt": 556,
+   "kanji": "",
+   "hiragana": "うた",
+   "meaning": "Bài hát",
+   "lesson": "Chapter 6 - Bài 2: Âm nhạc"
+  },
+  {
+   "stt": 557,
+   "kanji": "",
+   "hiragana": "うたう",
+   "meaning": "Hát",
+   "lesson": "Chapter 6 - Bài 2: Âm nhạc"
+  },
+  {
+   "stt": 558,
+   "kanji": "",
+   "hiragana": "コンサート",
+   "meaning": "Hòa nhạc, buổi trình diễn âm nhạc",
+   "lesson": "Chapter 6 - Bài 2: Âm nhạc"
+  },
+  {
+   "stt": 559,
+   "kanji": "",
+   "hiragana": "クラシック",
+   "meaning": "Nhạc cổ điển",
+   "lesson": "Chapter 6 - Bài 2: Âm nhạc"
+  },
+  {
+   "stt": 560,
+   "kanji": "",
+   "hiragana": "ジャズ",
+   "meaning": "Nhạc jazz",
+   "lesson": "Chapter 6 - Bài 2: Âm nhạc"
+  },
+  {
+   "stt": 561,
+   "kanji": "",
+   "hiragana": "ポップス",
+   "meaning": "Nhạc pop",
+   "lesson": "Chapter 6 - Bài 2: Âm nhạc"
+  },
+  {
+   "stt": 562,
+   "kanji": "",
+   "hiragana": "ロック",
+   "meaning": "Nhạc rock",
+   "lesson": "Chapter 6 - Bài 2: Âm nhạc"
+  },
+  {
+   "stt": 563,
+   "kanji": "",
+   "hiragana": "ピアノ",
+   "meaning": "Đàn piano",
+   "lesson": "Chapter 6 - Bài 2: Âm nhạc"
+  },
+  {
+   "stt": 564,
+   "kanji": "",
+   "hiragana": "ギター",
+   "meaning": "Đàn guitar",
+   "lesson": "Chapter 6 - Bài 2: Âm nhạc"
+  },
+  {
+   "stt": 565,
+   "kanji": "",
+   "hiragana": "ひく",
+   "meaning": "Đánh đàn, chơi đàn",
+   "lesson": "Chapter 6 - Bài 2: Âm nhạc"
+  },
+  {
+   "stt": 566,
+   "kanji": "",
+   "hiragana": "えいが",
+   "meaning": "Phim (điện ảnh)",
+   "lesson": "Chapter 6 - Bài 2: Âm nhạc"
+  },
+  {
+   "stt": 567,
+   "kanji": "",
+   "hiragana": "えいがかん",
+   "meaning": "Rạp chiếu phim",
+   "lesson": "Chapter 6 - Bài 2: Âm nhạc"
+  },
+  {
+   "stt": 568,
+   "kanji": "",
+   "hiragana": "はじまる",
+   "meaning": "Bắt đầu",
+   "lesson": "Chapter 6 - Bài 2: Âm nhạc"
+  },
+  {
+   "stt": 569,
+   "kanji": "",
+   "hiragana": "おわる",
+   "meaning": "Kết thúc",
+   "lesson": "Chapter 6 - Bài 2: Âm nhạc"
+  },
+  {
+   "stt": 570,
+   "kanji": "",
+   "hiragana": "まんが",
+   "meaning": "Truyện tranh",
+   "lesson": "Chapter 6 - Bài 2: Âm nhạc"
+  },
+  {
+   "stt": 571,
+   "kanji": "",
+   "hiragana": "アニメ",
+   "meaning": "Phim hoạt hình",
+   "lesson": "Chapter 6 - Bài 2: Âm nhạc"
+  },
+  {
+   "stt": 572,
+   "kanji": "",
+   "hiragana": "ゲーム",
+   "meaning": "Trò chơi điện tử",
+   "lesson": "Chapter 6 - Bài 2: Âm nhạc"
+  },
+  {
+   "stt": 573,
+   "kanji": "",
+   "hiragana": "ソフト",
+   "meaning": "Phần mềm",
+   "lesson": "Chapter 6 - Bài 2: Âm nhạc"
+  },
+  {
+   "stt": 574,
+   "kanji": "",
+   "hiragana": "おもしろい",
+   "meaning": "Thú vị",
+   "lesson": "Chapter 6 - Bài 2: Âm nhạc"
+  },
+  {
+   "stt": 575,
+   "kanji": "",
+   "hiragana": "ジョギング",
+   "meaning": "Chạy bộ",
+   "lesson": "Chapter 6 - Bài 3: Thể thao"
+  },
+  {
+   "stt": 576,
+   "kanji": "",
+   "hiragana": "スキー",
+   "meaning": "Trượt tuyết",
+   "lesson": "Chapter 6 - Bài 3: Thể thao"
+  },
+  {
+   "stt": 577,
+   "kanji": "",
+   "hiragana": "ダンス",
+   "meaning": "Khiêu vũ, nhảy, múa",
+   "lesson": "Chapter 6 - Bài 3: Thể thao"
+  },
+  {
+   "stt": 578,
+   "kanji": "",
+   "hiragana": "およぐ",
+   "meaning": "Bơi",
+   "lesson": "Chapter 6 - Bài 3: Thể thao"
+  },
+  {
+   "stt": 579,
+   "kanji": "",
+   "hiragana": "うみ",
+   "meaning": "Biển",
+   "lesson": "Chapter 6 - Bài 3: Thể thao"
+  },
+  {
+   "stt": 580,
+   "kanji": "",
+   "hiragana": "プール",
+   "meaning": "Hồ bơi",
+   "lesson": "Chapter 6 - Bài 3: Thể thao"
+  },
+  {
+   "stt": 581,
+   "kanji": "川",
+   "hiragana": "かわ",
+   "meaning": "Sông",
+   "lesson": "Chapter 6 - Bài 3: Thể thao"
+  },
+  {
+   "stt": 582,
+   "kanji": "",
+   "hiragana": "つり",
+   "meaning": "Câu cá",
+   "lesson": "Chapter 6 - Bài 3: Thể thao"
+  },
+  {
+   "stt": 583,
+   "kanji": "",
+   "hiragana": "のぼる",
+   "meaning": "Leo, trèo",
+   "lesson": "Chapter 6 - Bài 3: Thể thao"
+  },
+  {
+   "stt": 584,
+   "kanji": "山",
+   "hiragana": "やま",
+   "meaning": "Núi",
+   "lesson": "Chapter 6 - Bài 3: Thể thao"
+  },
+  {
+   "stt": 585,
+   "kanji": "",
+   "hiragana": "しあい",
+   "meaning": "Trận đấu",
+   "lesson": "Chapter 6 - Bài 3: Thể thao"
+  },
+  {
+   "stt": 586,
+   "kanji": "",
+   "hiragana": "かつ",
+   "meaning": "Thắng",
+   "lesson": "Chapter 6 - Bài 3: Thể thao"
+  },
+  {
+   "stt": 587,
+   "kanji": "",
+   "hiragana": "まける",
+   "meaning": "Thua",
+   "lesson": "Chapter 6 - Bài 3: Thể thao"
+  },
+  {
+   "stt": 588,
+   "kanji": "",
+   "hiragana": "さあ",
+   "meaning": "Chà..., nào...",
+   "lesson": "Chapter 6 - Bài 3: Thể thao"
+  },
+  {
+   "stt": 589,
+   "kanji": "",
+   "hiragana": "つよい",
+   "meaning": "Mạnh",
+   "lesson": "Chapter 6 - Bài 3: Thể thao"
+  },
+  {
+   "stt": 590,
+   "kanji": "",
+   "hiragana": "よわい",
+   "meaning": "Yếu",
+   "lesson": "Chapter 6 - Bài 3: Thể thao"
+  },
+  {
+   "stt": 591,
+   "kanji": "",
+   "hiragana": "サッカー",
+   "meaning": "Bóng đá",
+   "lesson": "Chapter 6 - Bài 3: Thể thao"
+  },
+  {
+   "stt": 592,
+   "kanji": "",
+   "hiragana": "やきゅう",
+   "meaning": "Bóng chày",
+   "lesson": "Chapter 6 - Bài 3: Thể thao"
+  },
+  {
+   "stt": 593,
+   "kanji": "",
+   "hiragana": "すもう",
+   "meaning": "Đấu vật sumo",
+   "lesson": "Chapter 6 - Bài 3: Thể thao"
+  },
+  {
+   "stt": 594,
+   "kanji": "",
+   "hiragana": "じゅうどう",
+   "meaning": "Nhu đạo",
+   "lesson": "Chapter 6 - Bài 3: Thể thao"
+  },
+  {
+   "stt": 595,
+   "kanji": "",
+   "hiragana": "テニス",
+   "meaning": "Quần vợt",
+   "lesson": "Chapter 6 - Bài 3: Thể thao"
+  },
+  {
+   "stt": 596,
+   "kanji": "",
+   "hiragana": "ゴルフ",
+   "meaning": "Gôn",
+   "lesson": "Chapter 6 - Bài 3: Thể thao"
+  },
+  {
+   "stt": 597,
+   "kanji": "",
+   "hiragana": "てんき",
+   "meaning": "Thời tiết",
+   "lesson": "Chapter 6 - Bài 4: Thời tiết"
+  },
+  {
+   "stt": 598,
+   "kanji": "",
+   "hiragana": "いい",
+   "meaning": "Đẹp, tốt",
+   "lesson": "Chapter 6 - Bài 4: Thời tiết"
+  },
+  {
+   "stt": 599,
+   "kanji": "",
+   "hiragana": "わるい",
+   "meaning": "Xấu",
+   "lesson": "Chapter 6 - Bài 4: Thời tiết"
+  },
+  {
+   "stt": 600,
+   "kanji": "",
+   "hiragana": "いい[お]てんきですね",
+   "meaning": "Trời (thời tiết) đẹp nhỉ",
+   "lesson": "Chapter 6 - Bài 4: Thời tiết"
+  },
+  {
+   "stt": 601,
+   "kanji": "雨",
+   "hiragana": "あめ",
+   "meaning": "Mưa",
+   "lesson": "Chapter 6 - Bài 4: Thời tiết"
+  },
+  {
+   "stt": 602,
+   "kanji": "",
+   "hiragana": "ゆき",
+   "meaning": "Tuyết",
+   "lesson": "Chapter 6 - Bài 4: Thời tiết"
+  },
+  {
+   "stt": 603,
+   "kanji": "",
+   "hiragana": "ふる",
+   "meaning": "Rơi (mưa, tuyết)",
+   "lesson": "Chapter 6 - Bài 4: Thời tiết"
+  },
+  {
+   "stt": 604,
+   "kanji": "",
+   "hiragana": "あつい",
+   "meaning": "Nóng",
+   "lesson": "Chapter 6 - Bài 4: Thời tiết"
+  },
+  {
+   "stt": 605,
+   "kanji": "",
+   "hiragana": "すずしい",
+   "meaning": "Mát",
+   "lesson": "Chapter 6 - Bài 4: Thời tiết"
+  },
+  {
+   "stt": 606,
+   "kanji": "",
+   "hiragana": "さむい",
+   "meaning": "Lạnh",
+   "lesson": "Chapter 6 - Bài 4: Thời tiết"
+  },
+  {
+   "stt": 607,
+   "kanji": "",
+   "hiragana": "あたたかい",
+   "meaning": "Ấm",
+   "lesson": "Chapter 6 - Bài 4: Thời tiết"
+  },
+  {
+   "stt": 608,
+   "kanji": "多い",
+   "hiragana": "おおい",
+   "meaning": "Nhiều",
+   "lesson": "Chapter 6 - Bài 4: Thời tiết"
+  },
+  {
+   "stt": 609,
+   "kanji": "少ない",
+   "hiragana": "すくない",
+   "meaning": "Ít",
+   "lesson": "Chapter 6 - Bài 4: Thời tiết"
+  },
+  {
+   "stt": 610,
+   "kanji": "",
+   "hiragana": "おもう",
+   "meaning": "Nghĩ",
+   "lesson": "Chapter 6 - Bài 4: Thời tiết"
+  },
+  {
+   "stt": 611,
+   "kanji": "",
+   "hiragana": "たぶん",
+   "meaning": "Có lẽ",
+   "lesson": "Chapter 6 - Bài 4: Thời tiết"
+  },
+  {
+   "stt": 612,
+   "kanji": "",
+   "hiragana": "きっと",
+   "meaning": "Chắc, chắc chắn",
+   "lesson": "Chapter 6 - Bài 4: Thời tiết"
+  },
+  {
+   "stt": 613,
+   "kanji": "",
+   "hiragana": "かさ",
+   "meaning": "Dù, ô",
+   "lesson": "Chapter 6 - Bài 4: Thời tiết"
+  },
+  {
+   "stt": 614,
+   "kanji": "",
+   "hiragana": "もってくる",
+   "meaning": "Đem (mang) đến",
+   "lesson": "Chapter 6 - Bài 4: Thời tiết"
+  },
+  {
+   "stt": 615,
+   "kanji": "",
+   "hiragana": "もっていく",
+   "meaning": "Đem (mang) đi",
+   "lesson": "Chapter 6 - Bài 4: Thời tiết"
+  },
+  {
+   "stt": 616,
+   "kanji": "",
+   "hiragana": "ばんぐみ",
+   "meaning": "Chương trình (truyền hình)",
+   "lesson": "Chapter 6 - Bài 4: Thời tiết"
+  },
+  {
+   "stt": 617,
+   "kanji": "",
+   "hiragana": "いつ",
+   "meaning": "Khi nào?",
+   "lesson": "Chapter 6 - Bài 5: Mùa"
+  },
+  {
+   "stt": 618,
+   "kanji": "",
+   "hiragana": "きょねん",
+   "meaning": "Năm ngoái",
+   "lesson": "Chapter 6 - Bài 5: Mùa"
+  },
+  {
+   "stt": 619,
+   "kanji": "",
+   "hiragana": "ことし",
+   "meaning": "Năm nay",
+   "lesson": "Chapter 6 - Bài 5: Mùa"
+  },
+  {
+   "stt": 620,
+   "kanji": "",
+   "hiragana": "らいねん",
+   "meaning": "Sang năm",
+   "lesson": "Chapter 6 - Bài 5: Mùa"
+  },
+  {
+   "stt": 621,
+   "kanji": "",
+   "hiragana": "きせつ",
+   "meaning": "Mùa",
+   "lesson": "Chapter 6 - Bài 5: Mùa"
+  },
+  {
+   "stt": 622,
+   "kanji": "",
+   "hiragana": "いちばん",
+   "meaning": "Nhất",
+   "lesson": "Chapter 6 - Bài 5: Mùa"
+  },
+  {
+   "stt": 623,
+   "kanji": "",
+   "hiragana": "なる",
+   "meaning": "Trở nên, trở thành",
+   "lesson": "Chapter 6 - Bài 5: Mùa"
+  },
+  {
+   "stt": 624,
+   "kanji": "",
+   "hiragana": "はる",
+   "meaning": "Mùa xuân",
+   "lesson": "Chapter 6 - Bài 5: Mùa"
+  },
+  {
+   "stt": 625,
+   "kanji": "",
+   "hiragana": "なつ",
+   "meaning": "Mùa hè",
+   "lesson": "Chapter 6 - Bài 5: Mùa"
+  },
+  {
+   "stt": 626,
+   "kanji": "",
+   "hiragana": "あき",
+   "meaning": "Mùa thu",
+   "lesson": "Chapter 6 - Bài 5: Mùa"
+  },
+  {
+   "stt": 627,
+   "kanji": "",
+   "hiragana": "ふゆ",
+   "meaning": "Mùa đông",
+   "lesson": "Chapter 6 - Bài 5: Mùa"
+  },
+  {
+   "stt": 628,
+   "kanji": "花",
+   "hiragana": "はな",
+   "meaning": "Hoa",
+   "lesson": "Chapter 6 - Bài 5: Mùa"
+  },
+  {
+   "stt": 629,
+   "kanji": "月",
+   "hiragana": "つき",
+   "meaning": "Mặt trăng",
+   "lesson": "Chapter 6 - Bài 5: Mùa"
+  },
+  {
+   "stt": 630,
+   "kanji": "[お]花見",
+   "hiragana": "[お]はなみ",
+   "meaning": "Ngắm hoa",
+   "lesson": "Chapter 6 - Bài 5: Mùa"
+  },
+  {
+   "stt": 631,
+   "kanji": "",
+   "hiragana": "さくら",
+   "meaning": "Hoa anh đào",
+   "lesson": "Chapter 6 - Bài 5: Mùa"
+  },
+  {
+   "stt": 632,
+   "kanji": "花火",
+   "hiragana": "はなび",
+   "meaning": "Pháo hoa",
+   "lesson": "Chapter 6 - Bài 5: Mùa"
+  },
+  {
+   "stt": 633,
+   "kanji": "",
+   "hiragana": "もみじ",
+   "meaning": "Lá phong, lá đỏ",
+   "lesson": "Chapter 6 - Bài 5: Mùa"
+  },
+  {
+   "stt": 634,
+   "kanji": "",
+   "hiragana": "はじめて",
+   "meaning": "Lần đầu tiên",
+   "lesson": "Chapter 6 - Bài 5: Mùa"
+  },
+  {
+   "stt": 635,
+   "kanji": "",
+   "hiragana": "いちど",
+   "meaning": "Một lần",
+   "lesson": "Chapter 6 - Bài 5: Mùa"
+  },
+  {
+   "stt": 636,
+   "kanji": "何かいも",
+   "hiragana": "なんかいも",
+   "meaning": "Nhiều lần",
+   "lesson": "Chapter 6 - Bài 5: Mùa"
+  },
+  {
+   "stt": 637,
+   "kanji": "",
+   "hiragana": "いちども",
+   "meaning": "Chưa lần nào, chưa bao giờ",
+   "lesson": "Chapter 6 - Bài 5: Mùa"
+  },
+  {
+   "stt": 638,
+   "kanji": "",
+   "hiragana": "こうえん",
+   "meaning": "Công viên",
+   "lesson": "Chapter 6 - Bài 5: Mùa"
+  },
+  {
+   "stt": 639,
+   "kanji": "",
+   "hiragana": "さんぽ（する）",
+   "meaning": "Đi dạo",
+   "lesson": "Chapter 6 - Bài 5: Mùa"
+  },
+  {
+   "stt": 640,
+   "kanji": "",
+   "hiragana": "とても",
+   "meaning": "Rất",
+   "lesson": "Chapter 6 - Bài 5: Mùa"
+  },
+  {
+   "stt": 641,
+   "kanji": "",
+   "hiragana": "ほんとうに",
+   "meaning": "Thật sự là",
+   "lesson": "Chapter 6 - Bài 5: Mùa"
+  },
+  {
+   "stt": 642,
+   "kanji": "",
+   "hiragana": "ぜひ",
+   "meaning": "Nhất định",
+   "lesson": "Chapter 6 - Bài 5: Mùa"
+  },
+  {
+   "stt": 643,
+   "kanji": "",
+   "hiragana": "もちろん",
+   "meaning": "Đương nhiên",
+   "lesson": "Chapter 6 - Bài 5: Mùa"
+  },
+  {
+   "stt": 644,
+   "kanji": "買い物<する>",
+   "hiragana": "かいもの<する>",
+   "meaning": "Mua sắm",
+   "lesson": "Chapter 7 - Bài 1: Mua sắm"
+  },
+  {
+   "stt": 645,
+   "kanji": "",
+   "hiragana": "〜をください",
+   "meaning": "Cho tôi ~",
+   "lesson": "Chapter 7 - Bài 1: Mua sắm"
+  },
+  {
+   "stt": 646,
+   "kanji": "",
+   "hiragana": "〜と",
+   "meaning": "Và ~",
+   "lesson": "Chapter 7 - Bài 1: Mua sắm"
+  },
+  {
+   "stt": 647,
+   "kanji": "",
+   "hiragana": "〜や〜[など]",
+   "meaning": "~ và ~ (v.v.)",
+   "lesson": "Chapter 7 - Bài 1: Mua sắm"
+  },
+  {
+   "stt": 648,
+   "kanji": "",
+   "hiragana": "いくら",
+   "meaning": "Bao nhiêu tiền",
+   "lesson": "Chapter 7 - Bài 1: Mua sắm"
+  },
+  {
+   "stt": 649,
+   "kanji": "円",
+   "hiragana": "えん",
+   "meaning": "Yên",
+   "lesson": "Chapter 7 - Bài 1: Mua sắm"
+  },
+  {
+   "stt": 650,
+   "kanji": "高い",
+   "hiragana": "たかい",
+   "meaning": "Đắt; cao",
+   "lesson": "Chapter 7 - Bài 1: Mua sắm"
+  },
+  {
+   "stt": 651,
+   "kanji": "安い",
+   "hiragana": "やすい",
+   "meaning": "Rẻ",
+   "lesson": "Chapter 7 - Bài 1: Mua sắm"
+  },
+  {
+   "stt": 652,
+   "kanji": "百",
+   "hiragana": "ひゃく",
+   "meaning": "Trăm",
+   "lesson": "Chapter 7 - Bài 1: Mua sắm"
+  },
+  {
+   "stt": 653,
+   "kanji": "千",
+   "hiragana": "せん",
+   "meaning": "Ngàn",
+   "lesson": "Chapter 7 - Bài 1: Mua sắm"
+  },
+  {
+   "stt": 654,
+   "kanji": "万",
+   "hiragana": "まん",
+   "meaning": "Vạn, mười ngàn",
+   "lesson": "Chapter 7 - Bài 1: Mua sắm"
+  },
+  {
+   "stt": 655,
+   "kanji": "",
+   "hiragana": "おく",
+   "meaning": "Trăm triệu",
+   "lesson": "Chapter 7 - Bài 1: Mua sắm"
+  },
+  {
+   "stt": 656,
+   "kanji": "",
+   "hiragana": "ちょっと",
+   "meaning": "Một chút",
+   "lesson": "Chapter 7 - Bài 1: Mua sắm"
+  },
+  {
+   "stt": 657,
+   "kanji": "",
+   "hiragana": "では",
+   "meaning": "Vậy thì",
+   "lesson": "Chapter 7 - Bài 1: Mua sắm"
+  },
+  {
+   "stt": 658,
+   "kanji": "",
+   "hiragana": "じゃ",
+   "meaning": "Vậy thì",
+   "lesson": "Chapter 7 - Bài 1: Mua sắm"
+  },
+  {
+   "stt": 659,
+   "kanji": "[お]金",
+   "hiragana": "[お]かね",
+   "meaning": "Tiền",
+   "lesson": "Chapter 7 - Bài 1: Mua sắm"
+  },
+  {
+   "stt": 660,
+   "kanji": "",
+   "hiragana": "はらう",
+   "meaning": "Trả (tiền), thanh toán",
+   "lesson": "Chapter 7 - Bài 1: Mua sắm"
+  },
+  {
+   "stt": 661,
+   "kanji": "",
+   "hiragana": "おつり",
+   "meaning": "Tiền thối",
+   "lesson": "Chapter 7 - Bài 1: Mua sắm"
+  },
+  {
+   "stt": 662,
+   "kanji": "こまかい[お]金",
+   "hiragana": "こまかい[お]かね",
+   "meaning": "Tiền lẻ",
+   "lesson": "Chapter 7 - Bài 1: Mua sắm"
+  },
+  {
+   "stt": 663,
+   "kanji": "",
+   "hiragana": "たりる",
+   "meaning": "Đủ",
+   "lesson": "Chapter 7 - Bài 1: Mua sắm"
+  },
+  {
+   "stt": 664,
+   "kanji": "",
+   "hiragana": "せいかつ",
+   "meaning": "Cuộc sống, sinh hoạt",
+   "lesson": "Chapter 7 - Bài 1: Mua sắm"
+  },
+  {
+   "stt": 665,
+   "kanji": "",
+   "hiragana": "ぶっか",
+   "meaning": "Vật giá",
+   "lesson": "Chapter 7 - Bài 1: Mua sắm"
+  },
+  {
+   "stt": 666,
+   "kanji": "",
+   "hiragana": "いくつ",
+   "meaning": "Bao nhiêu cái, mấy cái",
+   "lesson": "Chapter 7 - Bài 1: Mua sắm"
+  },
+  {
+   "stt": 667,
+   "kanji": "",
+   "hiragana": "ぜんぶで",
+   "meaning": "Tất cả, tổng cộng",
+   "lesson": "Chapter 7 - Bài 1: Mua sắm"
+  },
+  {
+   "stt": 668,
+   "kanji": "",
+   "hiragana": "みせ",
+   "meaning": "Cửa hàng, cửa tiệm",
+   "lesson": "Chapter 7 - Bài 2: Cửa hàng, của tiệm"
+  },
+  {
+   "stt": 669,
+   "kanji": "",
+   "hiragana": "〜や",
+   "meaning": "Tiệm ~",
+   "lesson": "Chapter 7 - Bài 2: Cửa hàng, của tiệm"
+  },
+  {
+   "stt": 670,
+   "kanji": "",
+   "hiragana": "デパート",
+   "meaning": "Cửa hàng bách hóa, trung tâm thương mại",
+   "lesson": "Chapter 7 - Bài 2: Cửa hàng, của tiệm"
+  },
+  {
+   "stt": 671,
+   "kanji": "",
+   "hiragana": "コンビニ",
+   "meaning": "Cửa hàng tiện lợi",
+   "lesson": "Chapter 7 - Bài 2: Cửa hàng, của tiệm"
+  },
+  {
+   "stt": 672,
+   "kanji": "",
+   "hiragana": "うる",
+   "meaning": "Bán",
+   "lesson": "Chapter 7 - Bài 2: Cửa hàng, của tiệm"
+  },
+  {
+   "stt": 673,
+   "kanji": "",
+   "hiragana": "うりば",
+   "meaning": "Quầy bán hàng",
+   "lesson": "Chapter 7 - Bài 2: Cửa hàng, của tiệm"
+  },
+  {
+   "stt": 674,
+   "kanji": "",
+   "hiragana": "コーナー",
+   "meaning": "Góc, khu",
+   "lesson": "Chapter 7 - Bài 2: Cửa hàng, của tiệm"
+  },
+  {
+   "stt": 675,
+   "kanji": "",
+   "hiragana": "たな",
+   "meaning": "Kệ (hàng)",
+   "lesson": "Chapter 7 - Bài 2: Cửa hàng, của tiệm"
+  },
+  {
+   "stt": 676,
+   "kanji": "",
+   "hiragana": "コピー<する>",
+   "meaning": "Phô-tô, sao chép",
+   "lesson": "Chapter 7 - Bài 2: Cửa hàng, của tiệm"
+  },
+  {
+   "stt": 677,
+   "kanji": "",
+   "hiragana": "チケット",
+   "meaning": "Vé",
+   "lesson": "Chapter 7 - Bài 2: Cửa hàng, của tiệm"
+  },
+  {
+   "stt": 678,
+   "kanji": "",
+   "hiragana": "カタログ",
+   "meaning": "Tập giới thiệu, catalogue",
+   "lesson": "Chapter 7 - Bài 2: Cửa hàng, của tiệm"
+  },
+  {
+   "stt": 679,
+   "kanji": "",
+   "hiragana": "ざっし",
+   "meaning": "Tạp chí",
+   "lesson": "Chapter 7 - Bài 2: Cửa hàng, của tiệm"
+  },
+  {
+   "stt": 680,
+   "kanji": "",
+   "hiragana": "しんぶん",
+   "meaning": "Báo",
+   "lesson": "Chapter 7 - Bài 2: Cửa hàng, của tiệm"
+  },
+  {
+   "stt": 681,
+   "kanji": "",
+   "hiragana": "ほしい",
+   "meaning": "Muốn có",
+   "lesson": "Chapter 7 - Bài 2: Cửa hàng, của tiệm"
+  },
+  {
+   "stt": 682,
+   "kanji": "",
+   "hiragana": "できる",
+   "meaning": "Có thể",
+   "lesson": "Chapter 7 - Bài 2: Cửa hàng, của tiệm"
+  },
+  {
+   "stt": 683,
+   "kanji": "",
+   "hiragana": "〜でございます",
+   "meaning": "Là ~ (kính ngữ)",
+   "lesson": "Chapter 7 - Bài 2: Cửa hàng, của tiệm"
+  },
+  {
+   "stt": 684,
+   "kanji": "",
+   "hiragana": "おさがしですか。",
+   "meaning": "Tìm ~ ạ? (kính ngữ)",
+   "lesson": "Chapter 7 - Bài 2: Cửa hàng, của tiệm"
+  },
+  {
+   "stt": 685,
+   "kanji": "見せる",
+   "hiragana": "みせる",
+   "meaning": "Cho xem",
+   "lesson": "Chapter 7 - Bài 2: Cửa hàng, của tiệm"
+  },
+  {
+   "stt": 686,
+   "kanji": "",
+   "hiragana": "かしこまりました。",
+   "meaning": "Tôi đã hiểu rồi ạ.",
+   "lesson": "Chapter 7 - Bài 2: Cửa hàng, của tiệm"
+  },
+  {
+   "stt": 687,
+   "kanji": "",
+   "hiragana": "しょうしょうおまちください。",
+   "meaning": "Vui lòng chờ cho một chút.",
+   "lesson": "Chapter 7 - Bài 2: Cửa hàng, của tiệm"
+  },
+  {
+   "stt": 688,
+   "kanji": "",
+   "hiragana": "どんなカメラをおさがしですか.",
+   "meaning": "Anh / chị tìm máy ảnh như thế nào ạ?",
+   "lesson": "Chapter 7 - Bài 2: Cửa hàng, của tiệm"
+  },
+  {
+   "stt": 689,
+   "kanji": "",
+   "hiragana": "あのカメラを見せてください.",
+   "meaning": "Cho tôi xem máy ảnh kia.",
+   "lesson": "Chapter 7 - Bài 2: Cửa hàng, của tiệm"
+  },
+  {
+   "stt": 690,
+   "kanji": "",
+   "hiragana": "〜かた",
+   "meaning": "Cách ~",
+   "lesson": "Chapter 7 - Bài 3: Máy rút tiền tự động"
+  },
+  {
+   "stt": 691,
+   "kanji": "",
+   "hiragana": "おひきだしですか。",
+   "meaning": "Quý khách rút (tiền) ạ?",
+   "lesson": "Chapter 7 - Bài 3: Máy rút tiền tự động"
+  },
+  {
+   "stt": 692,
+   "kanji": "",
+   "hiragana": "げんきん",
+   "meaning": "Tiền mặt",
+   "lesson": "Chapter 7 - Bài 3: Máy rút tiền tự động"
+  },
+  {
+   "stt": 693,
+   "kanji": "",
+   "hiragana": "ATM",
+   "meaning": "Máy rút tiền tự động",
+   "lesson": "Chapter 7 - Bài 3: Máy rút tiền tự động"
+  },
+  {
+   "stt": 694,
+   "kanji": "",
+   "hiragana": "おろす",
+   "meaning": "Rút (tiền)",
+   "lesson": "Chapter 7 - Bài 3: Máy rút tiền tự động"
+  },
+  {
+   "stt": 695,
+   "kanji": "",
+   "hiragana": "まず/キャッシュカード",
+   "meaning": "Trước tiên / thẻ ngân hàng",
+   "lesson": "Chapter 7 - Bài 3: Máy rút tiền tự động"
+  },
+  {
+   "stt": 696,
+   "kanji": "",
+   "hiragana": "つぎに/[あんしょう]ばんごう",
+   "meaning": "Tiếp theo / mã số bí mật (mã PIN)",
+   "lesson": "Chapter 7 - Bài 3: Máy rút tiền tự động"
+  },
+  {
+   "stt": 697,
+   "kanji": "",
+   "hiragana": "おす/それから",
+   "meaning": "Bấm, nhấn / sau đó",
+   "lesson": "Chapter 7 - Bài 3: Máy rút tiền tự động"
+  },
+  {
+   "stt": 698,
+   "kanji": "",
+   "hiragana": "きんがく / かくにん〈する> / ボタン",
+   "meaning": "Số tiền / xác nhận, kiểm tra / nút",
+   "lesson": "Chapter 7 - Bài 3: Máy rút tiền tự động"
+  },
+  {
+   "stt": 699,
+   "kanji": "出る",
+   "hiragana": "でる",
+   "meaning": "Ra, đi ra",
+   "lesson": "Chapter 7 - Bài 3: Máy rút tiền tự động"
+  },
+  {
+   "stt": 700,
+   "kanji": "",
+   "hiragana": "かえる",
+   "meaning": "Đổi",
+   "lesson": "Chapter 7 - Bài 3: Máy rút tiền tự động"
+  },
+  {
+   "stt": 701,
+   "kanji": "",
+   "hiragana": "ゆうびんきょく",
+   "meaning": "Bưu điện",
+   "lesson": "Chapter 7 - Bài 4: Gửi"
+  },
+  {
+   "stt": 702,
+   "kanji": "",
+   "hiragana": "ポスト",
+   "meaning": "Thùng thư",
+   "lesson": "Chapter 7 - Bài 4: Gửi"
+  },
+  {
+   "stt": 703,
+   "kanji": "",
+   "hiragana": "てがみ",
+   "meaning": "Thư",
+   "lesson": "Chapter 7 - Bài 4: Gửi"
+  },
+  {
+   "stt": 704,
+   "kanji": "",
+   "hiragana": "はがき",
+   "meaning": "Thiệp, bưu thiếp",
+   "lesson": "Chapter 7 - Bài 4: Gửi"
+  },
+  {
+   "stt": 705,
+   "kanji": "",
+   "hiragana": "ねんがじょう",
+   "meaning": "Thiệp chúc mừng năm mới",
+   "lesson": "Chapter 7 - Bài 4: Gửi"
+  },
+  {
+   "stt": 706,
+   "kanji": "出す",
+   "hiragana": "だす",
+   "meaning": "Gửi (thư)",
+   "lesson": "Chapter 7 - Bài 4: Gửi"
+  },
+  {
+   "stt": 707,
+   "kanji": "",
+   "hiragana": "メール",
+   "meaning": "Email, thư điện tử",
+   "lesson": "Chapter 7 - Bài 4: Gửi"
+  },
+  {
+   "stt": 708,
+   "kanji": "",
+   "hiragana": "おくる",
+   "meaning": "Gửi",
+   "lesson": "Chapter 7 - Bài 4: Gửi"
+  },
+  {
+   "stt": 709,
+   "kanji": "",
+   "hiragana": "きって",
+   "meaning": "Tem",
+   "lesson": "Chapter 7 - Bài 4: Gửi"
+  },
+  {
+   "stt": 710,
+   "kanji": "",
+   "hiragana": "あつめる",
+   "meaning": "Sưu tầm",
+   "lesson": "Chapter 7 - Bài 4: Gửi"
+  },
+  {
+   "stt": 711,
+   "kanji": "",
+   "hiragana": "ふうとう",
+   "meaning": "Phong bì",
+   "lesson": "Chapter 7 - Bài 4: Gửi"
+  },
+  {
+   "stt": 712,
+   "kanji": "",
+   "hiragana": "がいこく",
+   "meaning": "Nước ngoài",
+   "lesson": "Chapter 7 - Bài 4: Gửi"
+  },
+  {
+   "stt": 713,
+   "kanji": "",
+   "hiragana": "エアメール",
+   "meaning": "Thư hàng không",
+   "lesson": "Chapter 7 - Bài 4: Gửi"
+  },
+  {
+   "stt": 714,
+   "kanji": "",
+   "hiragana": "こうくうびん",
+   "meaning": "Thư hàng không",
+   "lesson": "Chapter 7 - Bài 4: Gửi"
+  },
+  {
+   "stt": 715,
+   "kanji": "",
+   "hiragana": "ふなびん",
+   "meaning": "Thư đường biển",
+   "lesson": "Chapter 7 - Bài 4: Gửi"
+  },
+  {
+   "stt": 716,
+   "kanji": "",
+   "hiragana": "にもつ",
+   "meaning": "Hành lý, kiện hàng, gói đồ",
+   "lesson": "Chapter 7 - Bài 4: Gửi"
+  },
+  {
+   "stt": 717,
+   "kanji": "",
+   "hiragana": "おもい",
+   "meaning": "Nặng",
+   "lesson": "Chapter 7 - Bài 4: Gửi"
+  },
+  {
+   "stt": 718,
+   "kanji": "",
+   "hiragana": "かるい",
+   "meaning": "Nhẹ",
+   "lesson": "Chapter 7 - Bài 4: Gửi"
+  },
+  {
+   "stt": 719,
+   "kanji": "",
+   "hiragana": "あげる",
+   "meaning": "tặng, cho",
+   "lesson": "Chapter 7 - Bài 5: Quà tặng"
+  },
+  {
+   "stt": 720,
+   "kanji": "",
+   "hiragana": "もらう",
+   "meaning": "nhận",
+   "lesson": "Chapter 7 - Bài 5: Quà tặng"
+  },
+  {
+   "stt": 721,
+   "kanji": "",
+   "hiragana": "くれる",
+   "meaning": "(Được) cho, tặng",
+   "lesson": "Chapter 7 - Bài 5: Quà tặng"
+  },
+  {
+   "stt": 722,
+   "kanji": "",
+   "hiragana": "プレゼント",
+   "meaning": "quà tặng",
+   "lesson": "Chapter 7 - Bài 5: Quà tặng"
+  },
+  {
+   "stt": 723,
+   "kanji": "物",
+   "hiragana": "もの",
+   "meaning": "đồ vật",
+   "lesson": "Chapter 7 - Bài 5: Quà tặng"
+  },
+  {
+   "stt": 724,
+   "kanji": "",
+   "hiragana": "パーティー",
+   "meaning": "tiệc",
+   "lesson": "Chapter 7 - Bài 5: Quà tặng"
+  },
+  {
+   "stt": 725,
+   "kanji": "",
+   "hiragana": "はじめる",
+   "meaning": "bắt đầu",
+   "lesson": "Chapter 7 - Bài 5: Quà tặng"
+  },
+  {
+   "stt": 726,
+   "kanji": "",
+   "hiragana": "だれ",
+   "meaning": "ai",
+   "lesson": "Chapter 7 - Bài 5: Quà tặng"
+  },
+  {
+   "stt": 727,
+   "kanji": "",
+   "hiragana": "どなた",
+   "meaning": "ai (kính ngữ)",
+   "lesson": "Chapter 7 - Bài 5: Quà tặng"
+  },
+  {
+   "stt": 728,
+   "kanji": "",
+   "hiragana": "あのかた",
+   "meaning": "người đó (kính ngữ)",
+   "lesson": "Chapter 7 - Bài 5: Quà tặng"
+  },
+  {
+   "stt": 729,
+   "kanji": "",
+   "hiragana": "クリスマス",
+   "meaning": "Giáng sinh",
+   "lesson": "Chapter 7 - Bài 5: Quà tặng"
+  },
+  {
+   "stt": 730,
+   "kanji": "",
+   "hiragana": "[お]たんじょうび",
+   "meaning": "sinh nhật",
+   "lesson": "Chapter 7 - Bài 5: Quà tặng"
+  },
+  {
+   "stt": 731,
+   "kanji": "生まれる",
+   "hiragana": "うまれる",
+   "meaning": "chào đời, được sinh ra",
+   "lesson": "Chapter 7 - Bài 5: Quà tặng"
+  },
+  {
+   "stt": 732,
+   "kanji": "",
+   "hiragana": "おめでとう[ございます]",
+   "meaning": "(Xin) chúc mừng",
+   "lesson": "Chapter 7 - Bài 5: Quà tặng"
+  },
+  {
+   "stt": 733,
+   "kanji": "",
+   "hiragana": "わあ",
+   "meaning": "ôi, ồ",
+   "lesson": "Chapter 7 - Bài 5: Quà tặng"
+  },
+  {
+   "stt": 734,
+   "kanji": "何さい",
+   "hiragana": "なんさい",
+   "meaning": "bao nhiêu (mấy) tuổi",
+   "lesson": "Chapter 7 - Bài 5: Quà tặng"
+  },
+  {
+   "stt": 735,
+   "kanji": "",
+   "hiragana": "[お]いくつ",
+   "meaning": "bao nhiêu (mấy) tuổi (kính ngữ)",
+   "lesson": "Chapter 7 - Bài 5: Quà tặng"
+  },
+  {
+   "stt": 736,
+   "kanji": "",
+   "hiragana": "〜さい",
+   "meaning": "~tuổi",
+   "lesson": "Chapter 7 - Bài 5: Quà tặng"
+  },
+  {
+   "stt": 737,
+   "kanji": "何日",
+   "hiragana": "なんにち",
+   "meaning": "ngày mấy",
+   "lesson": "Chapter 7 - Bài 5: Quà tặng"
+  },
+  {
+   "stt": 738,
+   "kanji": "〜日",
+   "hiragana": "～にち",
+   "meaning": "ngày",
+   "lesson": "Chapter 7 - Bài 5: Quà tặng"
+  },
+  {
+   "stt": 739,
+   "kanji": "",
+   "hiragana": "えき",
+   "meaning": "Nhà ga, ga",
+   "lesson": "Chapter 8 - Bài 1: Phương tiện giao thông"
+  },
+  {
+   "stt": 740,
+   "kanji": "電車",
+   "hiragana": "でんしゃ",
+   "meaning": "Tàu điện",
+   "lesson": "Chapter 8 - Bài 1: Phương tiện giao thông"
+  },
+  {
+   "stt": 741,
+   "kanji": "",
+   "hiragana": "のる",
+   "meaning": "Lên, đi (tàu xe)",
+   "lesson": "Chapter 8 - Bài 1: Phương tiện giao thông"
+  },
+  {
+   "stt": 742,
+   "kanji": "",
+   "hiragana": "おりる",
+   "meaning": "Xuống (tàu, xe)",
+   "lesson": "Chapter 8 - Bài 1: Phương tiện giao thông"
+  },
+  {
+   "stt": 743,
+   "kanji": "",
+   "hiragana": "きっぷ",
+   "meaning": "Vé",
+   "lesson": "Chapter 8 - Bài 1: Phương tiện giao thông"
+  },
+  {
+   "stt": 744,
+   "kanji": "",
+   "hiragana": "つぎの",
+   "meaning": "Tiếp theo",
+   "lesson": "Chapter 8 - Bài 1: Phương tiện giao thông"
+  },
+  {
+   "stt": 745,
+   "kanji": "",
+   "hiragana": "のりかえる",
+   "meaning": "Đổi tàu (chuyến), chuyển tàu",
+   "lesson": "Chapter 8 - Bài 1: Phương tiện giao thông"
+  },
+  {
+   "stt": 746,
+   "kanji": "",
+   "hiragana": "かくえき",
+   "meaning": "Tàu chạy từng ga (tàu chợ)",
+   "lesson": "Chapter 8 - Bài 1: Phương tiện giao thông"
+  },
+  {
+   "stt": 747,
+   "kanji": "",
+   "hiragana": "きゅうこう",
+   "meaning": "Tàu nhanh",
+   "lesson": "Chapter 8 - Bài 1: Phương tiện giao thông"
+  },
+  {
+   "stt": 748,
+   "kanji": "",
+   "hiragana": "とっきゅう",
+   "meaning": "Tàu tốc hành",
+   "lesson": "Chapter 8 - Bài 1: Phương tiện giao thông"
+  },
+  {
+   "stt": 749,
+   "kanji": "",
+   "hiragana": "しんかんせん",
+   "meaning": "Tàu cao tốc Shinkansen",
+   "lesson": "Chapter 8 - Bài 1: Phương tiện giao thông"
+  },
+  {
+   "stt": 750,
+   "kanji": "",
+   "hiragana": "ちかてつ",
+   "meaning": "Tàu điện ngầm",
+   "lesson": "Chapter 8 - Bài 1: Phương tiện giao thông"
+  },
+  {
+   "stt": 751,
+   "kanji": "",
+   "hiragana": "〜ばんせん",
+   "meaning": "Tuyến số ~",
+   "lesson": "Chapter 8 - Bài 1: Phương tiện giao thông"
+  },
+  {
+   "stt": 752,
+   "kanji": "何ばんせん",
+   "hiragana": "なんばんせん",
+   "meaning": "Tuyến số mấy",
+   "lesson": "Chapter 8 - Bài 1: Phương tiện giao thông"
+  },
+  {
+   "stt": 753,
+   "kanji": "",
+   "hiragana": "じどうしゃ",
+   "meaning": "Xe hơi (chỉ các loại xe có gắn động cơ)",
+   "lesson": "Chapter 8 - Bài 1: Phương tiện giao thông"
+  },
+  {
+   "stt": 754,
+   "kanji": "車",
+   "hiragana": "くるま",
+   "meaning": "Xe cộ (các loại xe nói chung)",
+   "lesson": "Chapter 8 - Bài 1: Phương tiện giao thông"
+  },
+  {
+   "stt": 755,
+   "kanji": "",
+   "hiragana": "うんてんする",
+   "meaning": "Lái (xe)",
+   "lesson": "Chapter 8 - Bài 1: Phương tiện giao thông"
+  },
+  {
+   "stt": 756,
+   "kanji": "",
+   "hiragana": "おくる",
+   "meaning": "Tiễn, đưa",
+   "lesson": "Chapter 8 - Bài 1: Phương tiện giao thông"
+  },
+  {
+   "stt": 757,
+   "kanji": "",
+   "hiragana": "ちゅうしゃじょう",
+   "meaning": "Bãi đậu (đỗ) xe",
+   "lesson": "Chapter 8 - Bài 1: Phương tiện giao thông"
+  },
+  {
+   "stt": 758,
+   "kanji": "",
+   "hiragana": "とめる",
+   "meaning": "Đậu (xe), đỗ (xe), dừng",
+   "lesson": "Chapter 8 - Bài 1: Phương tiện giao thông"
+  },
+  {
+   "stt": 759,
+   "kanji": "",
+   "hiragana": "じてんしゃ",
+   "meaning": "Xe đạp",
+   "lesson": "Chapter 8 - Bài 1: Phương tiện giao thông"
+  },
+  {
+   "stt": 760,
+   "kanji": "",
+   "hiragana": "バイク",
+   "meaning": "Xe gắn máy, xe mô-tô",
+   "lesson": "Chapter 8 - Bài 1: Phương tiện giao thông"
+  },
+  {
+   "stt": 761,
+   "kanji": "",
+   "hiragana": "バス",
+   "meaning": "Xe buýt",
+   "lesson": "Chapter 8 - Bài 1: Phương tiện giao thông"
+  },
+  {
+   "stt": 762,
+   "kanji": "",
+   "hiragana": "タクシー",
+   "meaning": "Xe taxi",
+   "lesson": "Chapter 8 - Bài 1: Phương tiện giao thông"
+  },
+  {
+   "stt": 763,
+   "kanji": "",
+   "hiragana": "ひこうき",
+   "meaning": "Máy bay",
+   "lesson": "Chapter 8 - Bài 1: Phương tiện giao thông"
+  },
+  {
+   "stt": 764,
+   "kanji": "",
+   "hiragana": "ふね",
+   "meaning": "Tàu, thuyền",
+   "lesson": "Chapter 8 - Bài 1: Phương tiện giao thông"
+  },
+  {
+   "stt": 765,
+   "kanji": "",
+   "hiragana": "のりば",
+   "meaning": "Bến, trạm (xe buýt/taxi)",
+   "lesson": "Chapter 8 - Bài 1: Phương tiện giao thông"
+  },
+  {
+   "stt": 766,
+   "kanji": "",
+   "hiragana": "くうこう",
+   "meaning": "Sân bay",
+   "lesson": "Chapter 8 - Bài 1: Phương tiện giao thông"
+  },
+  {
+   "stt": 767,
+   "kanji": "時間",
+   "hiragana": "じかん",
+   "meaning": "Thời gian",
+   "lesson": "Chapter 8 - Bài 2: Khoảng bao lâu?"
+  },
+  {
+   "stt": 768,
+   "kanji": "",
+   "hiragana": "いそぐ",
+   "meaning": "Gấp rút, vội vã",
+   "lesson": "Chapter 8 - Bài 2: Khoảng bao lâu?"
+  },
+  {
+   "stt": 769,
+   "kanji": "",
+   "hiragana": "どのくらい/ぐらい",
+   "meaning": "Khoảng bao lâu",
+   "lesson": "Chapter 8 - Bài 2: Khoảng bao lâu?"
+  },
+  {
+   "stt": 770,
+   "kanji": "",
+   "hiragana": "かかる",
+   "meaning": "Mất, tốn (thời gian, tiền bạc)",
+   "lesson": "Chapter 8 - Bài 2: Khoảng bao lâu?"
+  },
+  {
+   "stt": 771,
+   "kanji": "",
+   "hiragana": "ちかい",
+   "meaning": "Gần",
+   "lesson": "Chapter 8 - Bài 2: Khoảng bao lâu?"
+  },
+  {
+   "stt": 772,
+   "kanji": "",
+   "hiragana": "とおい",
+   "meaning": "Xa",
+   "lesson": "Chapter 8 - Bài 2: Khoảng bao lâu?"
+  },
+  {
+   "stt": 773,
+   "kanji": "",
+   "hiragana": "ずっと",
+   "meaning": "Suốt, hẳn",
+   "lesson": "Chapter 8 - Bài 2: Khoảng bao lâu?"
+  },
+  {
+   "stt": 774,
+   "kanji": "",
+   "hiragana": "いつも",
+   "meaning": "Luôn luôn",
+   "lesson": "Chapter 8 - Bài 2: Khoảng bao lâu?"
+  },
+  {
+   "stt": 775,
+   "kanji": "",
+   "hiragana": "たいてい",
+   "meaning": "Đại thể, thường",
+   "lesson": "Chapter 8 - Bài 2: Khoảng bao lâu?"
+  },
+  {
+   "stt": 776,
+   "kanji": "",
+   "hiragana": "よく",
+   "meaning": "Thường, hay",
+   "lesson": "Chapter 8 - Bài 2: Khoảng bao lâu?"
+  },
+  {
+   "stt": 777,
+   "kanji": "",
+   "hiragana": "ときどき",
+   "meaning": "Thỉnh thoảng, đôi khi",
+   "lesson": "Chapter 8 - Bài 2: Khoảng bao lâu?"
+  },
+  {
+   "stt": 778,
+   "kanji": "",
+   "hiragana": "だけ",
+   "meaning": "Chỉ",
+   "lesson": "Chapter 8 - Bài 2: Khoảng bao lâu?"
+  },
+  {
+   "stt": 779,
+   "kanji": "",
+   "hiragana": "どうやって",
+   "meaning": "Bằng cách nào, làm thế nào",
+   "lesson": "Chapter 8 - Bài 3: Đường đi"
+  },
+  {
+   "stt": 780,
+   "kanji": "",
+   "hiragana": "あるく",
+   "meaning": "Đi bộ",
+   "lesson": "Chapter 8 - Bài 3: Đường đi"
+  },
+  {
+   "stt": 781,
+   "kanji": "",
+   "hiragana": "みち",
+   "meaning": "Đường, con đường",
+   "lesson": "Chapter 8 - Bài 3: Đường đi"
+  },
+  {
+   "stt": 782,
+   "kanji": "",
+   "hiragana": "まっすぐ",
+   "meaning": "Thẳng",
+   "lesson": "Chapter 8 - Bài 3: Đường đi"
+  },
+  {
+   "stt": 783,
+   "kanji": "",
+   "hiragana": "まがる",
+   "meaning": "Quẹo, rẽ",
+   "lesson": "Chapter 8 - Bài 3: Đường đi"
+  },
+  {
+   "stt": 784,
+   "kanji": "",
+   "hiragana": "わたる",
+   "meaning": "Băng qua",
+   "lesson": "Chapter 8 - Bài 3: Đường đi"
+  },
+  {
+   "stt": 785,
+   "kanji": "",
+   "hiragana": "せつめい<する>",
+   "meaning": "Giải thích",
+   "lesson": "Chapter 8 - Bài 3: Đường đi"
+  },
+  {
+   "stt": 786,
+   "kanji": "",
+   "hiragana": "かど",
+   "meaning": "Góc",
+   "lesson": "Chapter 8 - Bài 3: Đường đi"
+  },
+  {
+   "stt": 787,
+   "kanji": "",
+   "hiragana": "こうさてん",
+   "meaning": "Giao lộ",
+   "lesson": "Chapter 8 - Bài 3: Đường đi"
+  },
+  {
+   "stt": 788,
+   "kanji": "",
+   "hiragana": "しんごう",
+   "meaning": "Đèn giao thông",
+   "lesson": "Chapter 8 - Bài 3: Đường đi"
+  },
+  {
+   "stt": 789,
+   "kanji": "左",
+   "hiragana": "ひだり",
+   "meaning": "Trái",
+   "lesson": "Chapter 8 - Bài 3: Đường đi"
+  },
+  {
+   "stt": 790,
+   "kanji": "右",
+   "hiragana": "みぎ",
+   "meaning": "Phải",
+   "lesson": "Chapter 8 - Bài 3: Đường đi"
+  },
+  {
+   "stt": 791,
+   "kanji": "",
+   "hiragana": "はし",
+   "meaning": "Cầu",
+   "lesson": "Chapter 8 - Bài 3: Đường đi"
+  },
+  {
+   "stt": 792,
+   "kanji": "東",
+   "hiragana": "ひがし",
+   "meaning": "Đông",
+   "lesson": "Chapter 8 - Bài 3: Đường đi"
+  },
+  {
+   "stt": 793,
+   "kanji": "西",
+   "hiragana": "にし",
+   "meaning": "Tây",
+   "lesson": "Chapter 8 - Bài 3: Đường đi"
+  },
+  {
+   "stt": 794,
+   "kanji": "南",
+   "hiragana": "みなみ",
+   "meaning": "Nam",
+   "lesson": "Chapter 8 - Bài 3: Đường đi"
+  },
+  {
+   "stt": 795,
+   "kanji": "北",
+   "hiragana": "きた",
+   "meaning": "Bắc",
+   "lesson": "Chapter 8 - Bài 3: Đường đi"
+  },
+  {
+   "stt": 796,
+   "kanji": "いくつ目",
+   "hiragana": "いくつめ",
+   "meaning": "Cái thứ mấy?",
+   "lesson": "Chapter 8 - Bài 3: Đường đi"
+  },
+  {
+   "stt": 797,
+   "kanji": "1つ目",
+   "hiragana": "ひとつめ",
+   "meaning": "Cái thứ nhất",
+   "lesson": "Chapter 8 - Bài 3: Đường đi"
+  },
+  {
+   "stt": 798,
+   "kanji": "2つ目",
+   "hiragana": "ふたつめ",
+   "meaning": "Cái thứ hai",
+   "lesson": "Chapter 8 - Bài 3: Đường đi"
+  },
+  {
+   "stt": 799,
+   "kanji": "3つ目",
+   "hiragana": "みっつめ",
+   "meaning": "Cái thứ ba",
+   "lesson": "Chapter 8 - Bài 3: Đường đi"
+  },
+  {
+   "stt": 800,
+   "kanji": "何メートル",
+   "hiragana": "なんメートル",
+   "meaning": "Bao nhiêu (mấy) mét",
+   "lesson": "Chapter 8 - Bài 3: Đường đi"
+  },
+  {
+   "stt": 801,
+   "kanji": "",
+   "hiragana": "〜メートル",
+   "meaning": "Mét",
+   "lesson": "Chapter 8 - Bài 3: Đường đi"
+  },
+  {
+   "stt": 802,
+   "kanji": "",
+   "hiragana": "となり",
+   "meaning": "Bên cạnh",
+   "lesson": "Chapter 8 - Bài 4: Ở đâu"
+  },
+  {
+   "stt": 803,
+   "kanji": "間",
+   "hiragana": "あいだ",
+   "meaning": "Giữa",
+   "lesson": "Chapter 8 - Bài 4: Ở đâu"
+  },
+  {
+   "stt": 804,
+   "kanji": "",
+   "hiragana": "ちかく",
+   "meaning": "Gần",
+   "lesson": "Chapter 8 - Bài 4: Ở đâu"
+  },
+  {
+   "stt": 805,
+   "kanji": "上",
+   "hiragana": "うえ",
+   "meaning": "Trên",
+   "lesson": "Chapter 8 - Bài 4: Ở đâu"
+  },
+  {
+   "stt": 806,
+   "kanji": "下",
+   "hiragana": "した",
+   "meaning": "Dưới",
+   "lesson": "Chapter 8 - Bài 4: Ở đâu"
+  },
+  {
+   "stt": 807,
+   "kanji": "",
+   "hiragana": "まえ",
+   "meaning": "Trước, phía trước",
+   "lesson": "Chapter 8 - Bài 4: Ở đâu"
+  },
+  {
+   "stt": 808,
+   "kanji": "",
+   "hiragana": "うしろ",
+   "meaning": "Sau, phía sau",
+   "lesson": "Chapter 8 - Bài 4: Ở đâu"
+  },
+  {
+   "stt": 809,
+   "kanji": "中",
+   "hiragana": "なか",
+   "meaning": "Trong, bên trong",
+   "lesson": "Chapter 8 - Bài 4: Ở đâu"
+  },
+  {
+   "stt": 810,
+   "kanji": "外",
+   "hiragana": "そと",
+   "meaning": "Ngoài, bên ngoài",
+   "lesson": "Chapter 8 - Bài 4: Ở đâu"
+  },
+  {
+   "stt": 811,
+   "kanji": "",
+   "hiragana": "あそこ",
+   "meaning": "Đằng kia, chỗ kia",
+   "lesson": "Chapter 8 - Bài 4: Ở đâu"
+  },
+  {
+   "stt": 812,
+   "kanji": "",
+   "hiragana": "ここ",
+   "meaning": "Đây, chỗ này",
+   "lesson": "Chapter 8 - Bài 4: Ở đâu"
+  },
+  {
+   "stt": 813,
+   "kanji": "",
+   "hiragana": "そこ",
+   "meaning": "Chỗ đó, nơi đó",
+   "lesson": "Chapter 8 - Bài 4: Ở đâu"
+  },
+  {
+   "stt": 814,
+   "kanji": "",
+   "hiragana": "どこ",
+   "meaning": "Ở đâu",
+   "lesson": "Chapter 8 - Bài 4: Ở đâu"
+  },
+  {
+   "stt": 815,
+   "kanji": "出かける",
+   "hiragana": "でかける",
+   "meaning": "Đi ra ngoài",
+   "lesson": "Chapter 8 - Bài 5: Ra ngoài"
+  },
+  {
+   "stt": 816,
+   "kanji": "出る",
+   "hiragana": "でる",
+   "meaning": "Ra, rời khỏi, tốt nghiệp",
+   "lesson": "Chapter 8 - Bài 5: Ra ngoài"
+  },
+  {
+   "stt": 817,
+   "kanji": "",
+   "hiragana": "つく",
+   "meaning": "Đến nơi",
+   "lesson": "Chapter 8 - Bài 5: Ra ngoài"
+  },
+  {
+   "stt": 818,
+   "kanji": "",
+   "hiragana": "あう",
+   "meaning": "Gặp",
+   "lesson": "Chapter 8 - Bài 5: Ra ngoài"
+  },
+  {
+   "stt": 819,
+   "kanji": "",
+   "hiragana": "まつ",
+   "meaning": "Chờ, đợi",
+   "lesson": "Chapter 8 - Bài 5: Ra ngoài"
+  },
+  {
+   "stt": 820,
+   "kanji": "",
+   "hiragana": "デート<する>",
+   "meaning": "Hẹn hò",
+   "lesson": "Chapter 8 - Bài 5: Ra ngoài"
+  },
+  {
+   "stt": 821,
+   "kanji": "",
+   "hiragana": "やくそく（する）",
+   "meaning": "Hứa, hẹn",
+   "lesson": "Chapter 8 - Bài 5: Ra ngoài"
+  },
+  {
+   "stt": 822,
+   "kanji": "",
+   "hiragana": "ようじ",
+   "meaning": "Việc riêng",
+   "lesson": "Chapter 8 - Bài 5: Ra ngoài"
+  },
+  {
+   "stt": 823,
+   "kanji": "",
+   "hiragana": "つごうがいい",
+   "meaning": "Thuận tiện, có giờ rảnh",
+   "lesson": "Chapter 8 - Bài 5: Ra ngoài"
+  },
+  {
+   "stt": 824,
+   "kanji": "",
+   "hiragana": "つごうがわるい",
+   "meaning": "Không tiện, không có giờ rảnh",
+   "lesson": "Chapter 8 - Bài 5: Ra ngoài"
+  },
+  {
+   "stt": 825,
+   "kanji": "",
+   "hiragana": "だめです",
+   "meaning": "Không được",
+   "lesson": "Chapter 8 - Bài 5: Ra ngoài"
+  },
+  {
+   "stt": 826,
+   "kanji": "",
+   "hiragana": "かえる",
+   "meaning": "Thay đổi",
+   "lesson": "Chapter 8 - Bài 5: Ra ngoài"
+  },
+  {
+   "stt": 827,
+   "kanji": "お出かけですか",
+   "hiragana": "おでかけですか",
+   "meaning": "Anh/chị ra ngoài à?",
+   "lesson": "Chapter 8 - Bài 5: Ra ngoài"
+  },
+  {
+   "stt": 828,
+   "kanji": "",
+   "hiragana": "ちょっとまで",
+   "meaning": "(Đi) đến ~ một chút",
+   "lesson": "Chapter 8 - Bài 5: Ra ngoài"
+  },
+  {
+   "stt": 829,
+   "kanji": "",
+   "hiragana": "よかったら〜",
+   "meaning": "Nếu được thì ~",
+   "lesson": "Chapter 8 - Bài 5: Ra ngoài"
+  },
+  {
+   "stt": 830,
+   "kanji": "",
+   "hiragana": "すみません",
+   "meaning": "Xin lỗi, làm ơn",
+   "lesson": "Chapter 8 - Bài 5: Ra ngoài"
+  },
+  {
+   "stt": 831,
+   "kanji": "",
+   "hiragana": "〜でも〜ませんか",
+   "meaning": "~ hay gì đó không?",
+   "lesson": "Chapter 8 - Bài 5: Ra ngoài"
+  },
+  {
+   "stt": 832,
+   "kanji": "",
+   "hiragana": "〜はちょっと......",
+   "meaning": "~ thì hơi... (cách từ chối khéo)",
+   "lesson": "Chapter 8 - Bài 5: Ra ngoài"
+  },
+  {
+   "stt": 833,
+   "kanji": "",
+   "hiragana": "ざんねんですが",
+   "meaning": "Tiếc là",
+   "lesson": "Chapter 8 - Bài 5: Ra ngoài"
+  },
+  {
+   "stt": 834,
+   "kanji": "",
+   "hiragana": "またこんどおねがいします",
+   "meaning": "Lần tới nhờ bạn (rủ) nhé",
+   "lesson": "Chapter 8 - Bài 5: Ra ngoài"
+  },
+  {
+   "stt": 835,
+   "kanji": "",
+   "hiragana": "チャンス",
+   "meaning": "Cơ hội, dịp",
+   "lesson": "Chapter 8 - Bài 5: Ra ngoài"
+  },
+  {
+   "stt": 836,
+   "kanji": "",
+   "hiragana": "いってきます。",
+   "meaning": "Tôi đi đây. (câu chào trước khi rời khỏi nhà)",
+   "lesson": "Chapter 8 - Bài 5: Ra ngoài"
+  },
+  {
+   "stt": 837,
+   "kanji": "",
+   "hiragana": "いってらっしゃい。",
+   "meaning": "Đi nhé. (câu chào tiễn người đi)",
+   "lesson": "Chapter 8 - Bài 5: Ra ngoài"
+  },
+  {
+   "stt": 838,
+   "kanji": "",
+   "hiragana": "ただいま。",
+   "meaning": "Tôi về rồi đây. (câu chào khi về đến nhà)",
+   "lesson": "Chapter 8 - Bài 5: Ra ngoài"
+  },
+  {
+   "stt": 839,
+   "kanji": "",
+   "hiragana": "おかえりなさい。",
+   "meaning": "Về rồi à. (câu chào đón người vừa về nhà)",
+   "lesson": "Chapter 8 - Bài 5: Ra ngoài"
+  },
+  {
+   "stt": 840,
+   "kanji": "",
+   "hiragana": "いえ",
+   "meaning": "Nhà",
+   "lesson": "Chapter 9 - Bài 1: Nhà"
+  },
+  {
+   "stt": 841,
+   "kanji": "",
+   "hiragana": "へや",
+   "meaning": "Phòng",
+   "lesson": "Chapter 9 - Bài 1: Nhà"
+  },
+  {
+   "stt": 842,
+   "kanji": "",
+   "hiragana": "まど",
+   "meaning": "Cửa sổ",
+   "lesson": "Chapter 9 - Bài 1: Nhà"
+  },
+  {
+   "stt": 843,
+   "kanji": "",
+   "hiragana": "ドア",
+   "meaning": "Cửa",
+   "lesson": "Chapter 9 - Bài 1: Nhà"
+  },
+  {
+   "stt": 844,
+   "kanji": "",
+   "hiragana": "あける",
+   "meaning": "Mở",
+   "lesson": "Chapter 9 - Bài 1: Nhà"
+  },
+  {
+   "stt": 845,
+   "kanji": "",
+   "hiragana": "しめる",
+   "meaning": "Đóng",
+   "lesson": "Chapter 9 - Bài 1: Nhà"
+  },
+  {
+   "stt": 846,
+   "kanji": "",
+   "hiragana": "かぎ",
+   "meaning": "Chìa khóa",
+   "lesson": "Chapter 9 - Bài 1: Nhà"
+  },
+  {
+   "stt": 847,
+   "kanji": "",
+   "hiragana": "ベッド",
+   "meaning": "Giường",
+   "lesson": "Chapter 9 - Bài 1: Nhà"
+  },
+  {
+   "stt": 848,
+   "kanji": "",
+   "hiragana": "ダイニングキッチン",
+   "meaning": "Phòng ăn và bếp",
+   "lesson": "Chapter 9 - Bài 1: Nhà"
+  },
+  {
+   "stt": 849,
+   "kanji": "",
+   "hiragana": "わしつ",
+   "meaning": "Phòng kiểu Nhật",
+   "lesson": "Chapter 9 - Bài 1: Nhà"
+  },
+  {
+   "stt": 850,
+   "kanji": "",
+   "hiragana": "トイレ/おてあらい",
+   "meaning": "Nhà vệ sinh",
+   "lesson": "Chapter 9 - Bài 1: Nhà"
+  },
+  {
+   "stt": 851,
+   "kanji": "",
+   "hiragana": "ふとん",
+   "meaning": "Nệm futon",
+   "lesson": "Chapter 9 - Bài 1: Nhà"
+  },
+  {
+   "stt": 852,
+   "kanji": "",
+   "hiragana": "テーブル",
+   "meaning": "Bàn (ăn)",
+   "lesson": "Chapter 9 - Bài 1: Nhà"
+  },
+  {
+   "stt": 853,
+   "kanji": "",
+   "hiragana": "つくえ",
+   "meaning": "Bàn (học, làm việc)",
+   "lesson": "Chapter 9 - Bài 1: Nhà"
+  },
+  {
+   "stt": 854,
+   "kanji": "",
+   "hiragana": "いす",
+   "meaning": "Ghế",
+   "lesson": "Chapter 9 - Bài 1: Nhà"
+  },
+  {
+   "stt": 855,
+   "kanji": "",
+   "hiragana": "すわる",
+   "meaning": "Ngồi",
+   "lesson": "Chapter 9 - Bài 1: Nhà"
+  },
+  {
+   "stt": 856,
+   "kanji": "立つ",
+   "hiragana": "たつ",
+   "meaning": "Đứng",
+   "lesson": "Chapter 9 - Bài 1: Nhà"
+  },
+  {
+   "stt": 857,
+   "kanji": "",
+   "hiragana": "せんたく<する>",
+   "meaning": "Giặt giũ",
+   "lesson": "Chapter 9 - Bài 1: Nhà"
+  },
+  {
+   "stt": 858,
+   "kanji": "",
+   "hiragana": "そうじ<する>",
+   "meaning": "Dọn dẹp",
+   "lesson": "Chapter 9 - Bài 1: Nhà"
+  },
+  {
+   "stt": 859,
+   "kanji": "",
+   "hiragana": "ごみ",
+   "meaning": "Rác",
+   "lesson": "Chapter 9 - Bài 1: Nhà"
+  },
+  {
+   "stt": 860,
+   "kanji": "",
+   "hiragana": "すてる",
+   "meaning": "Vứt",
+   "lesson": "Chapter 9 - Bài 1: Nhà"
+  },
+  {
+   "stt": 861,
+   "kanji": "",
+   "hiragana": "おく",
+   "meaning": "Đặt, để",
+   "lesson": "Chapter 9 - Bài 1: Nhà"
+  },
+  {
+   "stt": 862,
+   "kanji": "",
+   "hiragana": "すむ",
+   "meaning": "Sống",
+   "lesson": "Chapter 9 - Bài 1: Nhà"
+  },
+  {
+   "stt": 863,
+   "kanji": "",
+   "hiragana": "じゅうしょ",
+   "meaning": "Địa chỉ",
+   "lesson": "Chapter 9 - Bài 1: Nhà"
+  },
+  {
+   "stt": 864,
+   "kanji": "",
+   "hiragana": "れいぞうこ",
+   "meaning": "Tủ lạnh",
+   "lesson": "Chapter 9 - Bài 1: Nhà"
+  },
+  {
+   "stt": 865,
+   "kanji": "",
+   "hiragana": "せんたくき",
+   "meaning": "Máy giặt",
+   "lesson": "Chapter 9 - Bài 1: Nhà"
+  },
+  {
+   "stt": 866,
+   "kanji": "",
+   "hiragana": "そうじき",
+   "meaning": "Máy hút bụi",
+   "lesson": "Chapter 9 - Bài 1: Nhà"
+  },
+  {
+   "stt": 867,
+   "kanji": "",
+   "hiragana": "たてもの",
+   "meaning": "Tòa nhà (chỉ các công trình kiến trúc nói chung)",
+   "lesson": "Chapter 9 - Bài 2: Tầng 2 chung cư"
+  },
+  {
+   "stt": 868,
+   "kanji": "",
+   "hiragana": "アパート",
+   "meaning": "Chung cư",
+   "lesson": "Chapter 9 - Bài 2: Tầng 2 chung cư"
+  },
+  {
+   "stt": 869,
+   "kanji": "",
+   "hiragana": "りょう",
+   "meaning": "Ký túc xá",
+   "lesson": "Chapter 9 - Bài 2: Tầng 2 chung cư"
+  },
+  {
+   "stt": 870,
+   "kanji": "",
+   "hiragana": "ビル",
+   "meaning": "Tòa nhà",
+   "lesson": "Chapter 9 - Bài 2: Tầng 2 chung cư"
+  },
+  {
+   "stt": 871,
+   "kanji": "",
+   "hiragana": "かいだん",
+   "meaning": "Cầu thang",
+   "lesson": "Chapter 9 - Bài 2: Tầng 2 chung cư"
+  },
+  {
+   "stt": 872,
+   "kanji": "",
+   "hiragana": "エスカレーター",
+   "meaning": "Thang cuốn",
+   "lesson": "Chapter 9 - Bài 2: Tầng 2 chung cư"
+  },
+  {
+   "stt": 873,
+   "kanji": "",
+   "hiragana": "エレベーター",
+   "meaning": "Thang máy",
+   "lesson": "Chapter 9 - Bài 2: Tầng 2 chung cư"
+  },
+  {
+   "stt": 874,
+   "kanji": "何かい/がい",
+   "hiragana": "なんかい/がい",
+   "meaning": "Tầng mấy",
+   "lesson": "Chapter 9 - Bài 2: Tầng 2 chung cư"
+  },
+  {
+   "stt": 875,
+   "kanji": "",
+   "hiragana": "〜かい/がい",
+   "meaning": "Tầng",
+   "lesson": "Chapter 9 - Bài 2: Tầng 2 chung cư"
+  },
+  {
+   "stt": 876,
+   "kanji": "",
+   "hiragana": "ちか",
+   "meaning": "Tầng hầm",
+   "lesson": "Chapter 9 - Bài 2: Tầng 2 chung cư"
+  },
+  {
+   "stt": 877,
+   "kanji": "",
+   "hiragana": "ひっこし",
+   "meaning": "Chuyển nhà, chuyển chỗ ở",
+   "lesson": "Chapter 9 - Bài 3: Chuyển nhà"
+  },
+  {
+   "stt": 878,
+   "kanji": "",
+   "hiragana": "てんきん<する>",
+   "meaning": "Chuyển công tác",
+   "lesson": "Chapter 9 - Bài 3: Chuyển nhà"
+  },
+  {
+   "stt": 879,
+   "kanji": "",
+   "hiragana": "やちん",
+   "meaning": "Tiền nhà",
+   "lesson": "Chapter 9 - Bài 3: Chuyển nhà"
+  },
+  {
+   "stt": 880,
+   "kanji": "",
+   "hiragana": "ところ",
+   "meaning": "Nơi, chỗ",
+   "lesson": "Chapter 9 - Bài 3: Chuyển nhà"
+  },
+  {
+   "stt": 881,
+   "kanji": "",
+   "hiragana": "いなか",
+   "meaning": "Quê, vùng quê",
+   "lesson": "Chapter 9 - Bài 3: Chuyển nhà"
+  },
+  {
+   "stt": 882,
+   "kanji": "",
+   "hiragana": "しずかな",
+   "meaning": "Yên tĩnh",
+   "lesson": "Chapter 9 - Bài 3: Chuyển nhà"
+  },
+  {
+   "stt": 883,
+   "kanji": "",
+   "hiragana": "にぎやかな",
+   "meaning": "Nhộn nhịp",
+   "lesson": "Chapter 9 - Bài 3: Chuyển nhà"
+  },
+  {
+   "stt": 884,
+   "kanji": "",
+   "hiragana": "べんりな",
+   "meaning": "Tiện lợi",
+   "lesson": "Chapter 9 - Bài 3: Chuyển nhà"
+  },
+  {
+   "stt": 885,
+   "kanji": "",
+   "hiragana": "ふべんな",
+   "meaning": "Bất tiện",
+   "lesson": "Chapter 9 - Bài 3: Chuyển nhà"
+  },
+  {
+   "stt": 886,
+   "kanji": "",
+   "hiragana": "こうつう",
+   "meaning": "Giao thông",
+   "lesson": "Chapter 9 - Bài 3: Chuyển nhà"
+  },
+  {
+   "stt": 887,
+   "kanji": "",
+   "hiragana": "にわ",
+   "meaning": "Vườn, sân vườn",
+   "lesson": "Chapter 9 - Bài 3: Chuyển nhà"
+  },
+  {
+   "stt": 888,
+   "kanji": "木",
+   "hiragana": "き",
+   "meaning": "Cây",
+   "lesson": "Chapter 9 - Bài 3: Chuyển nhà"
+  },
+  {
+   "stt": 889,
+   "kanji": "",
+   "hiragana": "みどり",
+   "meaning": "Màu xanh, cây xanh, mảng xanh",
+   "lesson": "Chapter 9 - Bài 3: Chuyển nhà"
+  },
+  {
+   "stt": 890,
+   "kanji": "",
+   "hiragana": "わかい",
+   "meaning": "Trẻ",
+   "lesson": "Chapter 9 - Bài 3: Chuyển nhà"
+  },
+  {
+   "stt": 891,
+   "kanji": "年をとる",
+   "hiragana": "としをとる",
+   "meaning": "Già đi",
+   "lesson": "Chapter 9 - Bài 3: Chuyển nhà"
+  },
+  {
+   "stt": 892,
+   "kanji": "",
+   "hiragana": "しやくしょ",
+   "meaning": "Tòa thị chính",
+   "lesson": "Chapter 9 - Bài 3: Chuyển nhà"
+  },
+  {
+   "stt": 893,
+   "kanji": "",
+   "hiragana": "ひろい",
+   "meaning": "Rộng, rộng rãi",
+   "lesson": "Chapter 9 - Bài 3: Chuyển nhà"
+  },
+  {
+   "stt": 894,
+   "kanji": "",
+   "hiragana": "せまい",
+   "meaning": "Chật, hẹp",
+   "lesson": "Chapter 9 - Bài 3: Chuyển nhà"
+  },
+  {
+   "stt": 895,
+   "kanji": "新しい",
+   "hiragana": "あたらしい",
+   "meaning": "Mới",
+   "lesson": "Chapter 9 - Bài 3: Chuyển nhà"
+  },
+  {
+   "stt": 896,
+   "kanji": "古い",
+   "hiragana": "ふるい",
+   "meaning": "Cũ, cổ",
+   "lesson": "Chapter 9 - Bài 3: Chuyển nhà"
+  },
+  {
+   "stt": 897,
+   "kanji": "",
+   "hiragana": "いらっしゃい。",
+   "meaning": "Xin mời vào.",
+   "lesson": "Chapter 9 - Bài 4: Nhà của giáo viên"
+  },
+  {
+   "stt": 898,
+   "kanji": "",
+   "hiragana": "どうぞおあがりください。",
+   "meaning": "Xin mời vào.",
+   "lesson": "Chapter 9 - Bài 4: Nhà của giáo viên"
+  },
+  {
+   "stt": 899,
+   "kanji": "",
+   "hiragana": "しつれいします。",
+   "meaning": "Xin phép thất lễ.",
+   "lesson": "Chapter 9 - Bài 4: Nhà của giáo viên"
+  },
+  {
+   "stt": 900,
+   "kanji": "",
+   "hiragana": "そろそろしつれいします。",
+   "meaning": "Xin phép, tôi về đây ạ.",
+   "lesson": "Chapter 9 - Bài 4: Nhà của giáo viên"
+  },
+  {
+   "stt": 901,
+   "kanji": "",
+   "hiragana": "またいらっしゃってください。",
+   "meaning": "Lại đến chơi nữa nhé.",
+   "lesson": "Chapter 9 - Bài 4: Nhà của giáo viên"
+  },
+  {
+   "stt": 902,
+   "kanji": "",
+   "hiragana": "おっと",
+   "meaning": "Chồng (tôi), người chồng",
+   "lesson": "Chapter 9 - Bài 4: Nhà của giáo viên"
+  },
+  {
+   "stt": 903,
+   "kanji": "",
+   "hiragana": "つま",
+   "meaning": "Vợ (tôi), người vợ",
+   "lesson": "Chapter 9 - Bài 4: Nhà của giáo viên"
+  },
+  {
+   "stt": 904,
+   "kanji": "",
+   "hiragana": "ごしゅじん",
+   "meaning": "Chồng (kính ngữ)",
+   "lesson": "Chapter 9 - Bài 4: Nhà của giáo viên"
+  },
+  {
+   "stt": 905,
+   "kanji": "",
+   "hiragana": "おくさん",
+   "meaning": "Vợ (kính ngữ)",
+   "lesson": "Chapter 9 - Bài 4: Nhà của giáo viên"
+  },
+  {
+   "stt": 906,
+   "kanji": "",
+   "hiragana": "しょうかいする",
+   "meaning": "Giới thiệu",
+   "lesson": "Chapter 9 - Bài 4: Nhà của giáo viên"
+  },
+  {
+   "stt": 907,
+   "kanji": "",
+   "hiragana": "こちらは〜さんです",
+   "meaning": "Đây là anh/chị ~.",
+   "lesson": "Chapter 9 - Bài 4: Nhà của giáo viên"
+  },
+  {
+   "stt": 908,
+   "kanji": "",
+   "hiragana": "これからおせわになります",
+   "meaning": "Từ nay nhờ anh/chị giúp đỡ.",
+   "lesson": "Chapter 9 - Bài 4: Nhà của giáo viên"
+  },
+  {
+   "stt": 909,
+   "kanji": "",
+   "hiragana": "いらっしゃいます",
+   "meaning": "Ở, có mặt (kính ngữ)",
+   "lesson": "Chapter 9 - Bài 4: Nhà của giáo viên"
+  },
+  {
+   "stt": 910,
+   "kanji": "",
+   "hiragana": "どくしん",
+   "meaning": "Độc thân",
+   "lesson": "Chapter 9 - Bài 4: Nhà của giáo viên"
+  },
+  {
+   "stt": 911,
+   "kanji": "",
+   "hiragana": "けっこんする",
+   "meaning": "Kết hôn",
+   "lesson": "Chapter 9 - Bài 4: Nhà của giáo viên"
+  },
+  {
+   "stt": 912,
+   "kanji": "",
+   "hiragana": "ぼく",
+   "meaning": "Tôi (nam giới dùng)",
+   "lesson": "Chapter 9 - Bài 4: Nhà của giáo viên"
+  },
+  {
+   "stt": 913,
+   "kanji": "",
+   "hiragana": "ありがとうございました",
+   "meaning": "Xin cảm ơn (về việc đã xảy ra).",
+   "lesson": "Chapter 9 - Bài 4: Nhà của giáo viên"
+  },
+  {
+   "stt": 914,
+   "kanji": "",
+   "hiragana": "いろいろ[と]",
+   "meaning": "Nhiều thứ, đủ thứ",
+   "lesson": "Chapter 9 - Bài 4: Nhà của giáo viên"
+  },
+  {
+   "stt": 915,
+   "kanji": "",
+   "hiragana": "おせわになりました",
+   "meaning": "Đã được anh/chị giúp đỡ nhiều.",
+   "lesson": "Chapter 9 - Bài 4: Nhà của giáo viên"
+  },
+  {
+   "stt": 916,
+   "kanji": "気をつけて",
+   "hiragana": "きをつけて",
+   "meaning": "Cẩn thận nhé",
+   "lesson": "Chapter 9 - Bài 4: Nhà của giáo viên"
+  },
+  {
+   "stt": 917,
+   "kanji": "",
+   "hiragana": "あぶない",
+   "meaning": "Nguy hiểm",
+   "lesson": "Chapter 9 - Bài 4: Nhà của giáo viên"
+  },
+  {
+   "stt": 918,
+   "kanji": "",
+   "hiragana": "しゅうまつ",
+   "meaning": "Cuối tuần",
+   "lesson": "Chapter 9 - Bài 4: Nhà của giáo viên"
+  },
+  {
+   "stt": 919,
+   "kanji": "",
+   "hiragana": "はじめ",
+   "meaning": "Khoảng đầu, lúc bắt đầu",
+   "lesson": "Chapter 9 - Bài 4: Nhà của giáo viên"
+  },
+  {
+   "stt": 920,
+   "kanji": "",
+   "hiragana": "おわり",
+   "meaning": "Khoảng cuối, lúc kết thúc",
+   "lesson": "Chapter 9 - Bài 4: Nhà của giáo viên"
+  },
+  {
+   "stt": 921,
+   "kanji": "",
+   "hiragana": "おととい",
+   "meaning": "Hôm kia",
+   "lesson": "Chapter 9 - Bài 4: Nhà của giáo viên"
+  },
+  {
+   "stt": 922,
+   "kanji": "",
+   "hiragana": "あさって",
+   "meaning": "Ngày mốt",
+   "lesson": "Chapter 9 - Bài 4: Nhà của giáo viên"
+  },
+  {
+   "stt": 923,
+   "kanji": "",
+   "hiragana": "せんしゅう",
+   "meaning": "Tuần trước",
+   "lesson": "Chapter 9 - Bài 4: Nhà của giáo viên"
+  },
+  {
+   "stt": 924,
+   "kanji": "",
+   "hiragana": "こんしゅう",
+   "meaning": "Tuần này",
+   "lesson": "Chapter 9 - Bài 4: Nhà của giáo viên"
+  },
+  {
+   "stt": 925,
+   "kanji": "",
+   "hiragana": "らいしゅう",
+   "meaning": "Tuần tới",
+   "lesson": "Chapter 9 - Bài 4: Nhà của giáo viên"
+  },
+  {
+   "stt": 926,
+   "kanji": "",
+   "hiragana": "せんげつ",
+   "meaning": "Tháng trước",
+   "lesson": "Chapter 9 - Bài 4: Nhà của giáo viên"
+  },
+  {
+   "stt": 927,
+   "kanji": "",
+   "hiragana": "こんげつ",
+   "meaning": "Tháng này",
+   "lesson": "Chapter 9 - Bài 4: Nhà của giáo viên"
+  },
+  {
+   "stt": 928,
+   "kanji": "",
+   "hiragana": "らいげつ",
+   "meaning": "Tháng tới",
+   "lesson": "Chapter 9 - Bài 4: Nhà của giáo viên"
+  },
+  {
+   "stt": 929,
+   "kanji": "電気",
+   "hiragana": "でんき",
+   "meaning": "Đèn, điện",
+   "lesson": "Chapter 9 - Bài 5: Điện"
+  },
+  {
+   "stt": 930,
+   "kanji": "",
+   "hiragana": "つける",
+   "meaning": "Bật, mở",
+   "lesson": "Chapter 9 - Bài 5: Điện"
+  },
+  {
+   "stt": 931,
+   "kanji": "",
+   "hiragana": "けす",
+   "meaning": "Tắt",
+   "lesson": "Chapter 9 - Bài 5: Điện"
+  },
+  {
+   "stt": 932,
+   "kanji": "明るい",
+   "hiragana": "あかるい",
+   "meaning": "Sáng, sáng sủa, tươi sáng",
+   "lesson": "Chapter 9 - Bài 5: Điện"
+  },
+  {
+   "stt": 933,
+   "kanji": "暗い",
+   "hiragana": "くらい",
+   "meaning": "Tối, tối tăm",
+   "lesson": "Chapter 9 - Bài 5: Điện"
+  },
+  {
+   "stt": 934,
+   "kanji": "",
+   "hiragana": "エアコン",
+   "meaning": "Máy điều hòa",
+   "lesson": "Chapter 9 - Bài 5: Điện"
+  },
+  {
+   "stt": 935,
+   "kanji": "",
+   "hiragana": "ビデオ",
+   "meaning": "Video",
+   "lesson": "Chapter 9 - Bài 5: Điện"
+  },
+  {
+   "stt": 936,
+   "kanji": "",
+   "hiragana": "スイッチ",
+   "meaning": "Công tắc, nút bấm",
+   "lesson": "Chapter 9 - Bài 5: Điện"
+  },
+  {
+   "stt": 937,
+   "kanji": "",
+   "hiragana": "まわす",
+   "meaning": "Quay, xoay",
+   "lesson": "Chapter 9 - Bài 5: Điện"
+  },
+  {
+   "stt": 938,
+   "kanji": "",
+   "hiragana": "ひく",
+   "meaning": "Kéo",
+   "lesson": "Chapter 9 - Bài 5: Điện"
+  },
+  {
+   "stt": 939,
+   "kanji": "",
+   "hiragana": "うごく",
+   "meaning": "Chuyển động, hoạt động",
+   "lesson": "Chapter 9 - Bài 5: Điện"
+  },
+  {
+   "stt": 940,
+   "kanji": "音",
+   "hiragana": "おと",
+   "meaning": "Âm thanh, tiếng động",
+   "lesson": "Chapter 9 - Bài 5: Điện"
+  },
+  {
+   "stt": 941,
+   "kanji": "",
+   "hiragana": "もし[〜たら]",
+   "meaning": "Nếu",
+   "lesson": "Chapter 9 - Bài 5: Điện"
+  },
+  {
+   "stt": 942,
+   "kanji": "",
+   "hiragana": "こしょう（する）",
+   "meaning": "Hư, hỏng",
+   "lesson": "Chapter 9 - Bài 5: Điện"
+  },
+  {
+   "stt": 943,
+   "kanji": "",
+   "hiragana": "しゅうり（する）",
+   "meaning": "Sửa chữa",
+   "lesson": "Chapter 9 - Bài 5: Điện"
+  },
+  {
+   "stt": 944,
+   "kanji": "",
+   "hiragana": "よぶ",
+   "meaning": "Gọi",
+   "lesson": "Chapter 9 - Bài 5: Điện"
+  },
+  {
+   "stt": 945,
+   "kanji": "",
+   "hiragana": "なおす",
+   "meaning": "Sửa, sửa chữa, chỉnh sửa",
+   "lesson": "Chapter 9 - Bài 5: Điện"
+  },
+  {
+   "stt": 946,
+   "kanji": "",
+   "hiragana": "せいひん",
+   "meaning": "Sản phẩm",
+   "lesson": "Chapter 9 - Bài 5: Điện"
+  },
+  {
+   "stt": 947,
+   "kanji": "",
+   "hiragana": "びょうき",
+   "meaning": "Bệnh, ốm",
+   "lesson": "Chapter 10 - Bài 1: Bệnh"
+  },
+  {
+   "stt": 948,
+   "kanji": "",
+   "hiragana": "びょういん",
+   "meaning": "Bệnh viện",
+   "lesson": "Chapter 10 - Bài 1: Bệnh"
+  },
+  {
+   "stt": 949,
+   "kanji": "",
+   "hiragana": "どうしましたか",
+   "meaning": "Anh/chị bị làm sao?",
+   "lesson": "Chapter 10 - Bài 1: Bệnh"
+  },
+  {
+   "stt": 950,
+   "kanji": "",
+   "hiragana": "ねつ",
+   "meaning": "Sốt",
+   "lesson": "Chapter 10 - Bài 1: Bệnh"
+  },
+  {
+   "stt": 951,
+   "kanji": "",
+   "hiragana": "かぜ",
+   "meaning": "Cảm",
+   "lesson": "Chapter 10 - Bài 1: Bệnh"
+  },
+  {
+   "stt": 952,
+   "kanji": "",
+   "hiragana": "インフルエンザ",
+   "meaning": "Cúm",
+   "lesson": "Chapter 10 - Bài 1: Bệnh"
+  },
+  {
+   "stt": 953,
+   "kanji": "",
+   "hiragana": "くすり",
+   "meaning": "Thuốc",
+   "lesson": "Chapter 10 - Bài 1: Bệnh"
+  },
+  {
+   "stt": 954,
+   "kanji": "",
+   "hiragana": "はな",
+   "meaning": "Mũi",
+   "lesson": "Chapter 10 - Bài 1: Bệnh"
+  },
+  {
+   "stt": 955,
+   "kanji": "口",
+   "hiragana": "くち",
+   "meaning": "Miệng",
+   "lesson": "Chapter 10 - Bài 1: Bệnh"
+  },
+  {
+   "stt": 956,
+   "kanji": "",
+   "hiragana": "のど",
+   "meaning": "Cổ họng",
+   "lesson": "Chapter 10 - Bài 1: Bệnh"
+  },
+  {
+   "stt": 957,
+   "kanji": "耳",
+   "hiragana": "みみ",
+   "meaning": "Tai",
+   "lesson": "Chapter 10 - Bài 1: Bệnh"
+  },
+  {
+   "stt": 958,
+   "kanji": "目",
+   "hiragana": "め",
+   "meaning": "Mắt",
+   "lesson": "Chapter 10 - Bài 1: Bệnh"
+  },
+  {
+   "stt": 959,
+   "kanji": "",
+   "hiragana": "あたま",
+   "meaning": "Đầu",
+   "lesson": "Chapter 10 - Bài 1: Bệnh"
+  },
+  {
+   "stt": 960,
+   "kanji": "手",
+   "hiragana": "て",
+   "meaning": "Tay",
+   "lesson": "Chapter 10 - Bài 1: Bệnh"
+  },
+  {
+   "stt": 961,
+   "kanji": "",
+   "hiragana": "かお",
+   "meaning": "Mặt, khuôn mặt",
+   "lesson": "Chapter 10 - Bài 1: Bệnh"
+  },
+  {
+   "stt": 962,
+   "kanji": "",
+   "hiragana": "おなか",
+   "meaning": "Bụng",
+   "lesson": "Chapter 10 - Bài 1: Bệnh"
+  },
+  {
+   "stt": 963,
+   "kanji": "足",
+   "hiragana": "あし",
+   "meaning": "Chân",
+   "lesson": "Chapter 10 - Bài 1: Bệnh"
+  },
+  {
+   "stt": 964,
+   "kanji": "",
+   "hiragana": "おだいじに",
+   "meaning": "Giữ gìn sức khỏe, mau khỏe nhé (câu nói với người đang bị bệnh)",
+   "lesson": "Chapter 10 - Bài 1: Bệnh"
+  },
+  {
+   "stt": 965,
+   "kanji": "2、3日",
+   "hiragana": "に，さんにち",
+   "meaning": "2, 3 ngày",
+   "lesson": "Chapter 10 - Bài 1: Bệnh"
+  },
+  {
+   "stt": 966,
+   "kanji": "",
+   "hiragana": "〜がいたい",
+   "meaning": "Đau ~",
+   "lesson": "Chapter 10 - Bài 1: Bệnh"
+  },
+  {
+   "stt": 967,
+   "kanji": "",
+   "hiragana": "はいしゃ[さん]",
+   "meaning": "Nha sĩ",
+   "lesson": "Chapter 10 - Bài 1: Bệnh"
+  },
+  {
+   "stt": 968,
+   "kanji": "一人で",
+   "hiragana": "ひとり",
+   "meaning": "Một mình",
+   "lesson": "Chapter 10 - Bài 1: Bệnh"
+  },
+  {
+   "stt": 969,
+   "kanji": "",
+   "hiragana": "けんこう",
+   "meaning": "Khỏe mạnh, sức khỏe",
+   "lesson": "Chapter 10 - Bài 1: Bệnh"
+  },
+  {
+   "stt": 970,
+   "kanji": "",
+   "hiragana": "[けんこう]ほけんしょう",
+   "meaning": "Thẻ bảo hiểm (sức khỏe)",
+   "lesson": "Chapter 10 - Bài 1: Bệnh"
+  },
+  {
+   "stt": 971,
+   "kanji": "体",
+   "hiragana": "からだ",
+   "meaning": "Cơ thể",
+   "lesson": "Chapter 10 - Bài 2: (Bạn) khỏe không?"
+  },
+  {
+   "stt": 972,
+   "kanji": "体にいい",
+   "hiragana": "からだにいい",
+   "meaning": "Tốt (có lợi) cho cơ thể",
+   "lesson": "Chapter 10 - Bài 2: (Bạn) khỏe không?"
+  },
+  {
+   "stt": 973,
+   "kanji": "",
+   "hiragana": "ちょうし",
+   "meaning": "Tình trạng",
+   "lesson": "Chapter 10 - Bài 2: (Bạn) khỏe không?"
+  },
+  {
+   "stt": 974,
+   "kanji": "",
+   "hiragana": "つかれる",
+   "meaning": "Mệt mỏi",
+   "lesson": "Chapter 10 - Bài 2: (Bạn) khỏe không?"
+  },
+  {
+   "stt": 975,
+   "kanji": "",
+   "hiragana": "ねむい",
+   "meaning": "Buồn ngủ",
+   "lesson": "Chapter 10 - Bài 2: (Bạn) khỏe không?"
+  },
+  {
+   "stt": 976,
+   "kanji": "",
+   "hiragana": "はやく",
+   "meaning": "Sớm, mau",
+   "lesson": "Chapter 10 - Bài 2: (Bạn) khỏe không?"
+  },
+  {
+   "stt": 977,
+   "kanji": "",
+   "hiragana": "たいへんな",
+   "meaning": "Vất vả",
+   "lesson": "Chapter 10 - Bài 2: (Bạn) khỏe không?"
+  },
+  {
+   "stt": 978,
+   "kanji": "",
+   "hiragana": "さいきん",
+   "meaning": "Gần đây",
+   "lesson": "Chapter 10 - Bài 2: (Bạn) khỏe không?"
+  },
+  {
+   "stt": 979,
+   "kanji": "",
+   "hiragana": "しんぱいする",
+   "meaning": "Lo lắng",
+   "lesson": "Chapter 10 - Bài 2: (Bạn) khỏe không?"
+  },
+  {
+   "stt": 980,
+   "kanji": "",
+   "hiragana": "たばこ",
+   "meaning": "Thuốc lá",
+   "lesson": "Chapter 10 - Bài 2: (Bạn) khỏe không?"
+  },
+  {
+   "stt": 981,
+   "kanji": "",
+   "hiragana": "すう",
+   "meaning": "Hút",
+   "lesson": "Chapter 10 - Bài 2: (Bạn) khỏe không?"
+  },
+  {
+   "stt": 982,
+   "kanji": "",
+   "hiragana": "きんえん",
+   "meaning": "Cấm hút thuốc",
+   "lesson": "Chapter 10 - Bài 2: (Bạn) khỏe không?"
+  },
+  {
+   "stt": 983,
+   "kanji": "",
+   "hiragana": "だいじょうぶな",
+   "meaning": "Ổn, không sao",
+   "lesson": "Chapter 10 - Bài 2: (Bạn) khỏe không?"
+  },
+  {
+   "stt": 984,
+   "kanji": "",
+   "hiragana": "むりな",
+   "meaning": "Quá sức, miễn cưỡng",
+   "lesson": "Chapter 10 - Bài 2: (Bạn) khỏe không?"
+  },
+  {
+   "stt": 985,
+   "kanji": "",
+   "hiragana": "ダイエット",
+   "meaning": "Ăn kiêng",
+   "lesson": "Chapter 10 - Bài 2: (Bạn) khỏe không?"
+  },
+  {
+   "stt": 986,
+   "kanji": "",
+   "hiragana": "おもいだす",
+   "meaning": "Nhớ ra, nhớ lại",
+   "lesson": "Chapter 10 - Bài 2: (Bạn) khỏe không?"
+  },
+  {
+   "stt": 987,
+   "kanji": "",
+   "hiragana": "さびしい",
+   "meaning": "Cô đơn, buồn",
+   "lesson": "Chapter 10 - Bài 2: (Bạn) khỏe không?"
+  },
+  {
+   "stt": 988,
+   "kanji": "",
+   "hiragana": "[お]ひさしぶりです[ね]",
+   "meaning": "Lâu ngày quá",
+   "lesson": "Chapter 10 - Bài 2: (Bạn) khỏe không?"
+  },
+  {
+   "stt": 989,
+   "kanji": "",
+   "hiragana": "あっ",
+   "meaning": "Á, a",
+   "lesson": "Chapter 10 - Bài 2: (Bạn) khỏe không?"
+  },
+  {
+   "stt": 990,
+   "kanji": "[お]元気ですか",
+   "hiragana": "[お]げんきですか",
+   "meaning": "Anh/chị khỏe không?",
+   "lesson": "Chapter 10 - Bài 2: (Bạn) khỏe không?"
+  },
+  {
+   "stt": 991,
+   "kanji": "",
+   "hiragana": "おかげさまで",
+   "meaning": "Nhờ ơn (mọi người)",
+   "lesson": "Chapter 10 - Bài 2: (Bạn) khỏe không?"
+  },
+  {
+   "stt": 992,
+   "kanji": "",
+   "hiragana": "パスポート",
+   "meaning": "Hộ chiếu",
+   "lesson": "Chapter 10 - Bài 3: Vật - việc quan trọng"
+  },
+  {
+   "stt": 993,
+   "kanji": "",
+   "hiragana": "ビザ",
+   "meaning": "Thị thực",
+   "lesson": "Chapter 10 - Bài 3: Vật - việc quan trọng"
+  },
+  {
+   "stt": 994,
+   "kanji": "",
+   "hiragana": "たいしかん",
+   "meaning": "Đại sứ quán",
+   "lesson": "Chapter 10 - Bài 3: Vật - việc quan trọng"
+  },
+  {
+   "stt": 995,
+   "kanji": "",
+   "hiragana": "たいせつな",
+   "meaning": "Quan trọng",
+   "lesson": "Chapter 10 - Bài 3: Vật - việc quan trọng"
+  },
+  {
+   "stt": 996,
+   "kanji": "",
+   "hiragana": "なくす",
+   "meaning": "Đánh mất",
+   "lesson": "Chapter 10 - Bài 3: Vật - việc quan trọng"
+  },
+  {
+   "stt": 997,
+   "kanji": "",
+   "hiragana": "かす",
+   "meaning": "Cho mượn",
+   "lesson": "Chapter 10 - Bài 3: Vật - việc quan trọng"
+  },
+  {
+   "stt": 998,
+   "kanji": "",
+   "hiragana": "かりる",
+   "meaning": "Mượn",
+   "lesson": "Chapter 10 - Bài 3: Vật - việc quan trọng"
+  },
+  {
+   "stt": 999,
+   "kanji": "",
+   "hiragana": "かえす",
+   "meaning": "Trả lại",
+   "lesson": "Chapter 10 - Bài 3: Vật - việc quan trọng"
+  },
+  {
+   "stt": 1000,
+   "kanji": "",
+   "hiragana": "むだな",
+   "meaning": "Hoang phí, phí phạm",
+   "lesson": "Chapter 10 - Bài 3: Vật - việc quan trọng"
+  },
+  {
+   "stt": 1001,
+   "kanji": "",
+   "hiragana": "いる",
+   "meaning": "Cần thiết",
+   "lesson": "Chapter 10 - Bài 3: Vật - việc quan trọng"
+  },
+  {
+   "stt": 1002,
+   "kanji": "",
+   "hiragana": "えっ",
+   "meaning": "Hả, ơ",
+   "lesson": "Chapter 10 - Bài 3: Vật - việc quan trọng"
+  },
+  {
+   "stt": 1003,
+   "kanji": "",
+   "hiragana": "ほんとう",
+   "meaning": "Thật",
+   "lesson": "Chapter 10 - Bài 3: Vật - việc quan trọng"
+  },
+  {
+   "stt": 1004,
+   "kanji": "",
+   "hiragana": "うそ",
+   "meaning": "Lời nói dối, nói xạo",
+   "lesson": "Chapter 10 - Bài 3: Vật - việc quan trọng"
+  },
+  {
+   "stt": 1005,
+   "kanji": "",
+   "hiragana": "こと",
+   "meaning": "Việc (về ~)",
+   "lesson": "Chapter 10 - Bài 3: Vật - việc quan trọng"
+  },
+  {
+   "stt": 1006,
+   "kanji": "",
+   "hiragana": "おいのり",
+   "meaning": "Cầu nguyện",
+   "lesson": "Chapter 10 - Bài 3: Vật - việc quan trọng"
+  },
+  {
+   "stt": 1007,
+   "kanji": "",
+   "hiragana": "さわる",
+   "meaning": "Sờ, rờ",
+   "lesson": "Chapter 10 - Bài 3: Vật - việc quan trọng"
+  },
+  {
+   "stt": 1008,
+   "kanji": "",
+   "hiragana": "しょうらい",
+   "meaning": "Tương lai",
+   "lesson": "Chapter 10 - Bài 4: Tương lai"
+  },
+  {
+   "stt": 1009,
+   "kanji": "",
+   "hiragana": "ゆめ",
+   "meaning": "Ước mơ, giấc mơ",
+   "lesson": "Chapter 10 - Bài 4: Tương lai"
+  },
+  {
+   "stt": 1010,
+   "kanji": "",
+   "hiragana": "りゅうがく<する>",
+   "meaning": "Du học",
+   "lesson": "Chapter 10 - Bài 4: Tương lai"
+  },
+  {
+   "stt": 1011,
+   "kanji": "",
+   "hiragana": "けんきゅう<する>",
+   "meaning": "Nghiên cứu",
+   "lesson": "Chapter 10 - Bài 4: Tương lai"
+  },
+  {
+   "stt": 1012,
+   "kanji": "",
+   "hiragana": "けんきゅうしゃ",
+   "meaning": "Nhà nghiên cứu",
+   "lesson": "Chapter 10 - Bài 4: Tương lai"
+  },
+  {
+   "stt": 1013,
+   "kanji": "大学いん",
+   "hiragana": "だいがくいん",
+   "meaning": "Cao học",
+   "lesson": "Chapter 10 - Bài 4: Tương lai"
+  },
+  {
+   "stt": 1014,
+   "kanji": "",
+   "hiragana": "せんもん",
+   "meaning": "Chuyên môn, chuyên ngành",
+   "lesson": "Chapter 10 - Bài 4: Tương lai"
+  },
+  {
+   "stt": 1015,
+   "kanji": "",
+   "hiragana": "けいざい",
+   "meaning": "Kinh tế",
+   "lesson": "Chapter 10 - Bài 4: Tương lai"
+  },
+  {
+   "stt": 1016,
+   "kanji": "",
+   "hiragana": "びじゅつ",
+   "meaning": "Mỹ thuật",
+   "lesson": "Chapter 10 - Bài 4: Tương lai"
+  },
+  {
+   "stt": 1017,
+   "kanji": "",
+   "hiragana": "ちきゅう",
+   "meaning": "Địa cầu, trái đất",
+   "lesson": "Chapter 10 - Bài 4: Tương lai"
+  },
+  {
+   "stt": 1018,
+   "kanji": "",
+   "hiragana": "〜について",
+   "meaning": "Về ~",
+   "lesson": "Chapter 10 - Bài 4: Tương lai"
+  },
+  {
+   "stt": 1019,
+   "kanji": "",
+   "hiragana": "やめる",
+   "meaning": "Nghỉ, bỏ, thôi",
+   "lesson": "Chapter 10 - Bài 4: Tương lai"
+  },
+  {
+   "stt": 1020,
+   "kanji": "",
+   "hiragana": "かんがえる",
+   "meaning": "Suy nghĩ",
+   "lesson": "Chapter 10 - Bài 4: Tương lai"
+  },
+  {
+   "stt": 1021,
+   "kanji": "",
+   "hiragana": "もう",
+   "meaning": "(Đã) rồi",
+   "lesson": "Chapter 10 - Bài 4: Tương lai"
+  },
+  {
+   "stt": 1022,
+   "kanji": "",
+   "hiragana": "まだ",
+   "meaning": "Chưa",
+   "lesson": "Chapter 10 - Bài 4: Tương lai"
+  },
+  {
+   "stt": 1023,
+   "kanji": "",
+   "hiragana": "これから",
+   "meaning": "Từ giờ, từ bây giờ",
+   "lesson": "Chapter 10 - Bài 4: Tương lai"
+  },
+  {
+   "stt": 1024,
+   "kanji": "",
+   "hiragana": "そして",
+   "meaning": "Và, rồi",
+   "lesson": "Chapter 10 - Bài 5: Hãy nhớ cả những từ này!"
+  },
+  {
+   "stt": 1025,
+   "kanji": "",
+   "hiragana": "まえ",
+   "meaning": "Trước",
+   "lesson": "Chapter 10 - Bài 5: Hãy nhớ cả những từ này!"
+  },
+  {
+   "stt": 1026,
+   "kanji": "",
+   "hiragana": "あと",
+   "meaning": "Sau",
+   "lesson": "Chapter 10 - Bài 5: Hãy nhớ cả những từ này!"
+  },
+  {
+   "stt": 1027,
+   "kanji": "",
+   "hiragana": "もうすぐ",
+   "meaning": "Sắp sửa",
+   "lesson": "Chapter 10 - Bài 5: Hãy nhớ cả những từ này!"
+  },
+  {
+   "stt": 1028,
+   "kanji": "",
+   "hiragana": "すぐ",
+   "meaning": "Ngay",
+   "lesson": "Chapter 10 - Bài 5: Hãy nhớ cả những từ này!"
+  },
+  {
+   "stt": 1029,
+   "kanji": "",
+   "hiragana": "あとで",
+   "meaning": "Lát nữa, sau",
+   "lesson": "Chapter 10 - Bài 5: Hãy nhớ cả những từ này!"
+  },
+  {
+   "stt": 1030,
+   "kanji": "",
+   "hiragana": "また",
+   "meaning": "Lại nữa",
+   "lesson": "Chapter 10 - Bài 5: Hãy nhớ cả những từ này!"
+  },
+  {
+   "stt": 1031,
+   "kanji": "",
+   "hiragana": "までに",
+   "meaning": "Trước ~",
+   "lesson": "Chapter 10 - Bài 5: Hãy nhớ cả những từ này!"
+  },
+  {
+   "stt": 1032,
+   "kanji": "",
+   "hiragana": "ですから",
+   "meaning": "Vì vậy",
+   "lesson": "Chapter 10 - Bài 5: Hãy nhớ cả những từ này!"
+  },
+  {
+   "stt": 1033,
+   "kanji": "",
+   "hiragana": "そんなに",
+   "meaning": "Đến thế, như thế",
+   "lesson": "Chapter 10 - Bài 5: Hãy nhớ cả những từ này!"
+  },
+  {
+   "stt": 1034,
+   "kanji": "",
+   "hiragana": "だんだん",
+   "meaning": "Dần dần",
+   "lesson": "Chapter 10 - Bài 5: Hãy nhớ cả những từ này!"
+  },
+  {
+   "stt": 1035,
+   "kanji": "",
+   "hiragana": "みなさん",
+   "meaning": "Mọi người",
+   "lesson": "Chapter 10 - Bài 5: Hãy nhớ cả những từ này!"
+  },
+  {
+   "stt": 1036,
+   "kanji": "",
+   "hiragana": "ロボット",
+   "meaning": "Người máy",
+   "lesson": "Chapter 10 - Bài 5: Hãy nhớ cả những từ này!"
+  },
+  {
+   "stt": 1037,
+   "kanji": "",
+   "hiragana": "へえ",
+   "meaning": "Ồ, hả",
+   "lesson": "Chapter 10 - Bài 5: Hãy nhớ cả những từ này!"
+  },
+  {
+   "stt": 1038,
+   "kanji": "",
+   "hiragana": "すごい",
+   "meaning": "Tuyệt, giỏi",
+   "lesson": "Chapter 10 - Bài 5: Hãy nhớ cả những từ này!"
+  },
+  {
+   "stt": 1039,
+   "kanji": "",
+   "hiragana": "とくに",
+   "meaning": "Đặc biệt là",
+   "lesson": "Chapter 10 - Bài 5: Hãy nhớ cả những từ này!"
+  },
+  {
+   "stt": 1040,
+   "kanji": "",
+   "hiragana": "なかなか",
+   "meaning": "Mãi (không)",
+   "lesson": "Chapter 10 - Bài 5: Hãy nhớ cả những từ này!"
+  },
+  {
+   "stt": 1041,
+   "kanji": "",
+   "hiragana": "〜が",
+   "meaning": "~ nhưng",
+   "lesson": "Chapter 10 - Bài 5: Hãy nhớ cả những từ này!"
+  },
+  {
+   "stt": 1042,
+   "kanji": "",
+   "hiragana": "そうですね",
+   "meaning": "Ừ nhỉ",
+   "lesson": "Chapter 10 - Bài 5: Hãy nhớ cả những từ này!"
+  },
+  {
+   "stt": 1043,
+   "kanji": "",
+   "hiragana": "しつれいですが",
+   "meaning": "Xin lỗi, ~",
+   "lesson": "Chapter 10 - Bài 5: Hãy nhớ cả những từ này!"
+  },
+  {
+   "stt": 1044,
+   "kanji": "",
+   "hiragana": "きく",
+   "meaning": "Hỏi, nghe",
+   "lesson": "Chapter 10 - Bài 5: Hãy nhớ cả những từ này!"
+  },
+  {
+   "stt": 1045,
+   "kanji": "",
+   "hiragana": "あのー",
+   "meaning": "Xin lỗi, à này",
+   "lesson": "Chapter 10 - Bài 5: Hãy nhớ cả những từ này!"
+  },
+  {
+   "stt": 1046,
+   "kanji": "",
+   "hiragana": "えーっと",
+   "meaning": "À... thì",
+   "lesson": "Chapter 10 - Bài 5: Hãy nhớ cả những từ này!"
+  },
+  {
+   "stt": 1047,
+   "kanji": "",
+   "hiragana": "でも",
+   "meaning": "Nhưng",
+   "lesson": "Chapter 10 - Bài 5: Hãy nhớ cả những từ này!"
+  },
+  {
+   "stt": 1048,
+   "kanji": "",
+   "hiragana": "どうして",
+   "meaning": "Tại sao",
+   "lesson": "Chapter 10 - Bài 5: Hãy nhớ cả những từ này!"
+  },
+  {
+   "stt": 1049,
+   "kanji": "",
+   "hiragana": "～から",
+   "meaning": "Vì ~",
+   "lesson": "Chapter 10 - Bài 5: Hãy nhớ cả những từ này!"
+  },
+  {
+   "stt": 1050,
+   "kanji": "",
+   "hiragana": "そうですか",
+   "meaning": "Vậy à?",
+   "lesson": "Chapter 10 - Bài 5: Hãy nhớ cả những từ này!"
+  }
+ ]
+}

@@ -1,4 +1,6 @@
 import n3VocabData from "./mimikara_oboeru_vocab.json";
+import n5VocabData from "./jtest_n5_vocab.json";
+import n4VocabData from "./jtest_n4_vocab.json";
 import n2VocabData from "./jtest_n2_vocab.json";
 import companionsData from "./vocab_companions.json";
 import type { Companion, RawVocabItem, VocabItem } from "../types/quiz";
@@ -20,7 +22,7 @@ export interface UnitGroup extends VocabBatch {
   lessons: VocabBatch[];
 }
 
-/** A vocabulary list practiced in its own tab, with its batches and its own unremembered words. */
+/** The vocabulary list of a JLPT level, with its batches and its own unremembered words. */
 export interface VocabDeck {
   id: string;
   level: string;
@@ -136,17 +138,31 @@ export const N3_DECK = createVocabDeck({
   },
 });
 
-export const N2_DECK = createVocabDeck({
-  id: "n2",
-  level: "N2",
-  source: `${n2VocabData.title} · ${n2VocabData.source}`,
-  unrememberedStorageKey: "mimikara_n2_unremembered_words",
-  srsStorageKey: "mimikara_srs_n2",
-  companions: companionsData.n2 as Record<string, Companion[]>,
-  // The N2 list has no Hán Việt of its own: it is derived from the kanji.
-  items: cleanVocabData(n2VocabData.words.map((word) => ({ ...word, han_viet: getHanViet(word.kanji) }))),
-  unitTitles: Object.fromEntries(Object.entries(n2VocabData.units).map(([unit, title]) => [unit, `${unit} – ${title}`])),
-});
+/** A JLPT list of jtest.net, written by scripts/build_vocab_data.py. */
+interface JtestVocabData {
+  title: string;
+  source: string;
+  /** Chapter titles keyed by "Chapter 1", "Chapter 2"… */
+  units: Record<string, string>;
+  words: RawVocabItem[];
+}
+
+const createJtestDeck = (id: "n5" | "n4" | "n2", data: JtestVocabData): VocabDeck =>
+  createVocabDeck({
+    id,
+    level: id.toUpperCase(),
+    source: `${data.title} · ${data.source}`,
+    unrememberedStorageKey: `mimikara_${id}_unremembered_words`,
+    srsStorageKey: `mimikara_srs_${id}`,
+    companions: companionsData[id] as Record<string, Companion[]>,
+    // The jtest lists have no Hán Việt of their own: it is derived from the kanji.
+    items: cleanVocabData(data.words.map((word) => ({ ...word, han_viet: getHanViet(word.kanji ?? "") }))),
+    unitTitles: Object.fromEntries(Object.entries(data.units).map(([unit, title]) => [unit, `${unit} – ${title}`])),
+  });
+
+export const N5_DECK = createJtestDeck("n5", n5VocabData);
+export const N4_DECK = createJtestDeck("n4", n4VocabData);
+export const N2_DECK = createJtestDeck("n2", n2VocabData);
 
 export const isUnitBatch = (key: string): boolean => key.startsWith("unit_");
 

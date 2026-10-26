@@ -7,11 +7,16 @@ const KANJI_HAN_VIET: Record<string, string> = hanVietData.kanji;
 
 const KANJI = /[㐀-鿿豈-﫿]/;
 const ITERATION_MARK = "々";
+/** Context or another spelling written in brackets by the word lists: "（お金を）下ろす", "足元（足下）". */
+const ANNOTATION = /[（(][^）)]*[）)]/g;
 
-/** Kanji of a word in order, with 々 repeating the previous one: "様々な" → ["様", "様"]. */
+/**
+ * Kanji of a word in order, with 々 repeating the previous one: "様々な" → ["様", "様"].
+ * Bracketed annotations are not part of the word: "（お金を）下ろす" → ["下"].
+ */
 const kanjiOf = (word: string): string[] => {
   const chars: string[] = [];
-  for (const char of word) {
+  for (const char of word.replace(ANNOTATION, "")) {
     if (KANJI.test(char)) chars.push(char);
     else if (char === ITERATION_MARK && chars.length > 0) chars.push(chars[chars.length - 1]);
   }

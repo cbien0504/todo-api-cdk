@@ -1,14 +1,15 @@
 """Crawl a JLPT vocabulary list of jtest.net, with the related words of every entry.
 
 Usage (from the repo root):
-    python3 scripts/crawl_jtest.py LEVEL [path/to/output.json]     # LEVEL: n2, n3, ...
+    python3 scripts/crawl_jtest.py LEVEL [path/to/output.json]     # LEVEL: n5, n4, n3, n2, n1
 
-The index page https://jtest.net/tu-vung-<level> links 12 chapters of 5 sections each
-(はじめての日本語能力試験 単語). Every section page has a table with the word, its
-furigana (absent for kana-only words), the Vietnamese meaning and "Từ liên quan"
-(synonyms, antonyms, ... each with reading and meaning). Pages are fetched one at a
-time with a short pause. The raw result goes to scripts/data/jtest_<level>.json; run
-scripts/build_vocab_data.py afterwards to update the frontend data.
+The index page https://jtest.net/tu-vung-<level> links the chapters of the book
+(はじめての日本語能力試験 単語), 5 or 6 sections each. Every section page has a table
+with the word, its furigana (absent for kana-only words), the Vietnamese meaning and
+"Từ liên quan" (synonyms, antonyms, ... each with reading and meaning). Pages are
+fetched one at a time with a short pause. The raw result goes to
+scripts/data/jtest_<level>.json; run scripts/build_vocab_data.py afterwards to update
+the frontend data.
 """
 
 import html
