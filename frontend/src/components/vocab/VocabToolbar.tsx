@@ -1,4 +1,4 @@
-import { ALL_BATCH_KEY, UNREMEMBERED_BATCH_KEY, type VocabDeck } from "../../data/vocabBatches";
+import { ALL_BATCH_KEY, UNREMEMBERED_BATCH_KEY, type VocabDeck } from "../../data/vocabDecks";
 import SettingToggle from "../ui/SettingToggle";
 
 interface VocabToolbarProps {

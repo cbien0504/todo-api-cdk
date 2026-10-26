@@ -13,15 +13,15 @@ own) or by the companion words gets one reading, chosen in this order:
 Run it again after regenerating the exam data or scripts/build_vocab_data.py.
 """
 
-import gzip
 import json
 import re
 import sys
 import unicodedata
-import urllib.request
 import xml.etree.ElementTree as ET
 from collections import Counter, defaultdict
 from pathlib import Path
+
+from edrdg import KANJIDIC_URL, read_dictionary
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "frontend" / "src" / "data"
@@ -30,7 +30,6 @@ EXAM_PATH = DATA_DIR / "jlpt_n3_minchan_exam.json"
 N2_VOCAB_PATH = DATA_DIR / "jtest_n2_vocab.json"
 COMPANIONS_PATH = DATA_DIR / "vocab_companions.json"
 DEFAULT_OUTPUT = DATA_DIR / "kanji_han_viet.json"
-KANJIDIC_URL = "http://www.edrdg.org/kanjidic/kanjidic2.xml.gz"
 
 KANJI_RE = re.compile(r"[㐀-鿿豈-﫿]")
 
@@ -94,16 +93,8 @@ def normalize(reading: str) -> str:
 
 
 def load_kanjidic(source: Path | None) -> dict[str, list[str]]:
-    if source is None:
-        with urllib.request.urlopen(KANJIDIC_URL) as response:
-            raw = gzip.decompress(response.read())
-    elif source.suffix == ".gz":
-        raw = gzip.decompress(source.read_bytes())
-    else:
-        raw = source.read_bytes()
-
     readings = {}
-    for character in ET.fromstring(raw).iter("character"):
+    for character in ET.fromstring(read_dictionary(source, KANJIDIC_URL)).iter("character"):
         vietnamese = [normalize(r.text) for r in character.iter("reading") if r.get("r_type") == "vietnam"]
         if vietnamese:
             readings[character.findtext("literal")] = vietnamese

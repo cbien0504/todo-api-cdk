@@ -27,11 +27,11 @@ npm run build   # type-check and build to dist/
 src/
 ├── App.tsx                 # header, theme and tabs
 ├── components/
-│   ├── ui/                 # shared pieces: OptionButton, HanVietButton, CompanionList, ResultPanel, Modal, SettingToggle, VocabTable
-│   ├── vocab/              # vocabulary tab of a deck: quiz, flashcards, word hero, toolbar, progress, unremembered modal
+│   ├── ui/                 # shared pieces: OptionButton, HanVietButton, CompanionList, ProgressCard, ResultPanel, Modal, SettingToggle, VocabTable
+│   ├── vocab/              # vocabulary tab of a deck: mode switch + toolbar (VocabPractice), QuizPractice, FlashcardPractice, QuestionCard, WordHero, UnrememberedModal
 │   └── exam/               # exam papers (sections, questions, result)
 ├── hooks/                  # persistent state, shared vocab settings, flashcard progress, speech, keyboard shortcuts, quiz session
-├── data/                   # N3/N2 vocabulary, companions, exam and kanji Hán Việt JSON; vocabBatches builds the N3 and N2 decks
+├── data/                   # N3/N2 vocabulary, companions, exam and kanji Hán Việt JSON; vocabDecks builds the N3 and N2 decks
 ├── utils/                  # quizEngine (vocab queue), srs (spaced repetition), examEngine (papers & scoring), hanViet, gtm
 └── types/
 ```

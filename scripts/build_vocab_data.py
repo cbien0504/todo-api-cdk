@@ -18,13 +18,13 @@ CC BY-SA 4.0), downloaded when no path is given. Outputs:
 Run scripts/build_han_viet_data.py afterwards so companions get their Hán Việt.
 """
 
-import gzip
 import json
 import re
 import sys
-import urllib.request
 import xml.etree.ElementTree as ET
 from pathlib import Path
+
+from edrdg import JMDICT_URL, read_dictionary
 
 ROOT = Path(__file__).resolve().parent.parent
 SCRIPT_DATA = ROOT / "scripts" / "data"
@@ -32,7 +32,6 @@ FRONTEND_DATA = ROOT / "frontend" / "src" / "data"
 N3_VOCAB_PATH = FRONTEND_DATA / "mimikara_oboeru_vocab.json"
 N2_OUTPUT = FRONTEND_DATA / "jtest_n2_vocab.json"
 COMPANIONS_OUTPUT = FRONTEND_DATA / "vocab_companions.json"
-JMDICT_URL = "http://ftp.edrdg.org/pub/Nihongo/JMdict_e.gz"
 
 JTEST_LEVELS = ["n3", "n2", "n4", "n1", "n5"]
 MAX_COMPANIONS = 2
@@ -122,17 +121,9 @@ def load_jmdict(source: Path | None) -> tuple[dict[tuple[str, str], dict], dict[
 
     A verb is {"trans": {"vi"} or {"vt"} of its main sense, "common": bool, "potential": bool}.
     """
-    if source is None:
-        with urllib.request.urlopen(JMDICT_URL) as response:
-            raw = gzip.decompress(response.read())
-    elif source.suffix == ".gz":
-        raw = gzip.decompress(source.read_bytes())
-    else:
-        raw = source.read_bytes()
-
     verbs: dict[tuple[str, str], dict] = {}
     antonyms: dict[str, list[str]] = {}
-    for entry in ET.fromstring(raw).iter("entry"):
+    for entry in ET.fromstring(read_dictionary(source, JMDICT_URL)).iter("entry"):
         kanji_forms = [k.findtext("keb") for k in entry.iter("k_ele")]
         # <ant>最低・2</ant> names the antonym's word and sense.
         for form in kanji_forms or [r.findtext("reb") for r in entry.iter("r_ele")]:

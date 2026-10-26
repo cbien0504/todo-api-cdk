@@ -28,7 +28,7 @@ export const pushToDataLayer = (payload: Record<string, unknown>): void => {
 /**
  * Helper to push standard custom events with parameters to the GTM dataLayer.
  *
- * @param eventName Name of the custom event (e.g. 'todo_create', 'theme_change')
+ * @param eventName Name of the custom event (e.g. 'quiz_answer', 'theme_toggle')
  * @param eventParams Optional dictionary of event parameters
  */
 export const trackEvent = (

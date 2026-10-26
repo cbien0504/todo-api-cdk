@@ -34,13 +34,13 @@ describe("Google Tag Manager utility (gtm.ts)", () => {
 
   describe("trackEvent", () => {
     it("pushes custom event with given name and parameters", () => {
-      trackEvent("todo_created", { id: "123", title: "Test task" });
+      trackEvent("quiz_answer", { level: "N3", result: "correct" });
 
       expect(window.dataLayer).toHaveLength(1);
       expect(window.dataLayer?.[0]).toEqual({
-        event: "todo_created",
-        id: "123",
-        title: "Test task",
+        event: "quiz_answer",
+        level: "N3",
+        result: "correct",
       });
     });
 

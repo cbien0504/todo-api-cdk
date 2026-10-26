@@ -1,6 +1,6 @@
 import { useState } from "react";
 import type { Question, VocabItem } from "../types/quiz";
-import { UNREMEMBERED_BATCH_KEY, type VocabDeck } from "../data/vocabBatches";
+import { UNREMEMBERED_BATCH_KEY, type VocabDeck } from "../data/vocabDecks";
 import { QuizBuffer, buildQuestion } from "../utils/quizEngine";
 import { trackEvent } from "../utils/gtm";
 

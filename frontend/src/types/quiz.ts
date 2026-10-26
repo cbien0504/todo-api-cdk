@@ -39,23 +39,3 @@ export interface Question {
   vocabIndex: number;
   lesson?: string;
 }
-
-export interface QuizStats {
-  round: number;
-  totalAnswered: number;
-  correctCount: number;
-  wrongCount: number;
-  streak: number;
-  bestStreak: number;
-  masteredCount: number;
-  totalInBatch: number;
-  remainingCount: number;
-  retryCount: number;
-}
-
-export interface AnswerHistoryEntry {
-  question: Question;
-  selectedOption: string;
-  isCorrect: boolean;
-  timestamp: number;
-}

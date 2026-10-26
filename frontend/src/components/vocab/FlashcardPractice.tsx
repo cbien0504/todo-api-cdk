@@ -1,7 +1,8 @@
 import { useState } from "react";
-import { getItemKey, type VocabDeck } from "../../data/vocabBatches";
+import { getItemKey, type VocabDeck } from "../../data/vocabDecks";
 import { useKeyboardShortcuts } from "../../hooks/useKeyboardShortcuts";
 import { useSrsProgress } from "../../hooks/useSrsProgress";
+import type { VocabSettings } from "../../hooks/useVocabSettings";
 import type { VocabItem } from "../../types/quiz";
 import { trackEvent } from "../../utils/gtm";
 import {
@@ -13,6 +14,7 @@ import {
   type SrsGrade,
 } from "../../utils/srs";
 import CompanionList from "../ui/CompanionList";
+import ProgressCard from "../ui/ProgressCard";
 import ResultPanel from "../ui/ResultPanel";
 import type { Tone } from "../ui/helpers";
 import WordHero from "./WordHero";
@@ -32,11 +34,9 @@ interface FlashcardPracticeProps {
   title: string;
   /** Words of the selected batch. */
   items: VocabItem[];
+  settings: VocabSettings;
   /** Keyboard shortcuts are listened to. */
   active: boolean;
-  hideHanViet: boolean;
-  hideHiragana: boolean;
-  isMuted: boolean;
   isSpeaking: boolean;
   speak: (text: string, force?: boolean) => void;
   onForget: (item: VocabItem) => void;
@@ -50,14 +50,13 @@ export default function FlashcardPractice({
   deck,
   title,
   items,
+  settings,
   active,
-  hideHanViet,
-  hideHiragana,
-  isMuted,
   isSpeaking,
   speak,
   onForget,
 }: FlashcardPracticeProps) {
+  const { isMuted, hideHanViet, hideHiragana } = settings;
   const { cards, grade } = useSrsProgress(deck.srsStorageKey);
   const [today] = useState(dayNumber);
   const [queue, setQueue] = useState(() => buildStudyQueue(items, cards, getItemKey, today, NEW_CARDS_PER_SESSION));
@@ -119,42 +118,28 @@ export default function FlashcardPractice({
     }
   });
 
-  const width = (value: number) => `${stats.total > 0 ? (value / stats.total) * 100 : 0}%`;
-  const segments = [
-    { tone: "success", label: "Đã thuộc", value: stats.mastered },
-    { tone: "warning", label: "Đang học", value: stats.learning },
-    { tone: "primary", label: "Chưa học", value: stats.unseen },
-  ];
-
   return (
     <>
-      <section className="card progress-panel">
-        <div className="progress-head">
-          <div>
-            <span className="eyebrow">Thẻ ghi nhớ · Lặp lại ngắt quãng</span>
-            <h2 className="progress-title">{title}</h2>
-          </div>
-          <span className="progress-count">
+      <ProgressCard
+        eyebrow="Thẻ ghi nhớ · Lặp lại ngắt quãng"
+        title={title}
+        count={
+          <>
             Hôm nay đã ôn <strong>{reviewed}</strong> thẻ · còn {queue.length}
-          </span>
-        </div>
-        <div className="progress-bar" role="progressbar" aria-valuemin={0} aria-valuemax={stats.total} aria-valuenow={stats.mastered}>
-          {segments.map((s) => (
-            <span key={s.label} className={`progress-seg tone-${s.tone}`} style={{ width: width(s.value) }} title={`${s.label}: ${s.value} từ`} />
-          ))}
-        </div>
-        <ul className="progress-legend">
-          {segments.map((s) => (
-            <li key={s.label}>
-              <span className={`dot tone-${s.tone}`} />
-              {s.label} <strong>{s.value}</strong>
-            </li>
-          ))}
-          <li>
+          </>
+        }
+        total={stats.total}
+        segments={[
+          { tone: "success", label: "Đã thuộc", value: stats.mastered },
+          { tone: "warning", label: "Đang học", value: stats.learning },
+          { tone: "primary", label: "Chưa học", value: stats.unseen },
+        ]}
+        extra={
+          <>
             ⏰ Đến hạn ôn <strong>{stats.due}</strong>
-          </li>
-        </ul>
-      </section>
+          </>
+        }
+      />
 
       {current ? (
         <section className="card question-card flashcard">

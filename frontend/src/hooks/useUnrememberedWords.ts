@@ -1,6 +1,6 @@
 import { useCallback, useMemo } from "react";
 import type { VocabItem } from "../types/quiz";
-import { getItemKey } from "../data/vocabBatches";
+import { getItemKey } from "../data/vocabDecks";
 import { trackEvent } from "../utils/gtm";
 import { jsonArrayCodec, usePersistentState } from "./usePersistentState";
 
@@ -36,3 +36,5 @@ export function useUnrememberedWords(storageKey: string) {
 
   return { words, isUnremembered, markUnremembered, markRemembered };
 }
+
+export type UnrememberedWords = ReturnType<typeof useUnrememberedWords>;

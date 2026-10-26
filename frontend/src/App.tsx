@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { N2_DECK, N3_DECK } from "./data/vocabBatches";
+import { N2_DECK, N3_DECK } from "./data/vocabDecks";
 import { enumCodec, usePersistentState } from "./hooks/usePersistentState";
 import { useVocabSettings } from "./hooks/useVocabSettings";
 import { trackEvent } from "./utils/gtm";
@@ -7,10 +7,11 @@ import ExamPractice from "./components/exam/ExamPractice";
 import VocabPractice from "./components/vocab/VocabPractice";
 
 const THEMES = ["dark", "light"] as const;
+// Vocabulary tabs practice a deck; the exam tab has none.
 const TABS = [
-  { id: "vocab", label: "📖 Từ vựng N3" },
-  { id: "vocab-n2", label: "📗 Từ vựng N2" },
-  { id: "exam", label: "📝 Luyện đề N3" },
+  { id: "vocab", label: "📖 Từ vựng N3", deck: N3_DECK },
+  { id: "vocab-n2", label: "📗 Từ vựng N2", deck: N2_DECK },
+  { id: "exam", label: "📝 Luyện đề N3", deck: null },
 ] as const;
 
 type TabId = (typeof TABS)[number]["id"];
@@ -83,21 +84,18 @@ export default function App() {
       </nav>
 
       {/* Every panel stays mounted so switching tabs keeps the current session. */}
-      <section id="panel-vocab" role="tabpanel" aria-labelledby="tab-vocab" className="panel" hidden={tab !== "vocab"}>
-        <VocabPractice deck={N3_DECK} active={tab === "vocab"} settings={vocabSettings} />
-      </section>
-      <section
-        id="panel-vocab-n2"
-        role="tabpanel"
-        aria-labelledby="tab-vocab-n2"
-        className="panel"
-        hidden={tab !== "vocab-n2"}
-      >
-        <VocabPractice deck={N2_DECK} active={tab === "vocab-n2"} settings={vocabSettings} />
-      </section>
-      <section id="panel-exam" role="tabpanel" aria-labelledby="tab-exam" className="panel" hidden={tab !== "exam"}>
-        <ExamPractice />
-      </section>
+      {TABS.map((t) => (
+        <section
+          key={t.id}
+          id={`panel-${t.id}`}
+          role="tabpanel"
+          aria-labelledby={`tab-${t.id}`}
+          className="panel"
+          hidden={tab !== t.id}
+        >
+          {t.deck ? <VocabPractice deck={t.deck} active={tab === t.id} settings={vocabSettings} /> : <ExamPractice />}
+        </section>
+      ))}
     </div>
   );
 }

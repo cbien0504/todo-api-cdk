@@ -1,7 +1,7 @@
 import { render, screen, fireEvent, within } from "@testing-library/react";
 import { describe, it, expect, beforeEach, vi } from "vitest";
 import App from "./App";
-import { N2_DECK, N3_DECK } from "./data/vocabBatches";
+import { N2_DECK, N3_DECK } from "./data/vocabDecks";
 
 const vocabPanel = () => document.getElementById("panel-vocab")!;
 const optionButtons = () => Array.from(vocabPanel().querySelectorAll<HTMLElement>(".option"));

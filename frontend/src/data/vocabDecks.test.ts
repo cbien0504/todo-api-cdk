@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { N2_DECK, N3_DECK, UNREMEMBERED_BATCH_KEY, getItemKey } from "./vocabBatches";
+import { N2_DECK, N3_DECK, UNREMEMBERED_BATCH_KEY, getItemKey } from "./vocabDecks";
 
 const n2Word = (kanji: string, hiragana?: string) =>
   N2_DECK.items.find((i) => i.kanji === kanji && (!hiragana || i.hiragana === hiragana))!;
