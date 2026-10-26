@@ -105,13 +105,26 @@ const resolvePaper = (key: string): { title: string; questions: ExamQuestion[] }
   };
 };
 
+/** Copy of a question with its options in random order; `answer` follows the correct option. */
+export const shuffleOptions = (question: ExamQuestion): ExamQuestion => {
+  const order = shuffleArray(question.options.map((_, idx) => idx));
+  return { ...question, options: order.map((idx) => question.options[idx]), answer: order.indexOf(question.answer) };
+};
+
+/** Same paper and questions with the options of every question shuffled again, for a new attempt. */
+export const reshuffleOptions = (paper: ExamPaper): ExamPaper => ({
+  ...paper,
+  sections: paper.sections.map((section) => ({ ...section, questions: section.questions.map(shuffleOptions) })),
+});
+
 /**
- * Build an exam paper. Lesson and part papers keep the source order; any other key
- * produces a random mock paper with the question counts of the real JLPT N3 exam.
+ * Build an exam paper with shuffled options. Lesson and part papers keep the source order
+ * of questions; any other key produces a random mock paper with the question counts of
+ * the real JLPT N3 exam.
  */
 export const buildExamPaper = (key: string): ExamPaper => {
   const { title, questions } = resolvePaper(key);
-  const sections = groupIntoSections(questions);
+  const sections = groupIntoSections(questions.map(shuffleOptions));
   return { key, title, total: questions.length, sections };
 };
 

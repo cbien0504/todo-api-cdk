@@ -1,5 +1,5 @@
 import { useMemo, useRef, useState } from "react";
-import type { ExamAnswers } from "../../types/exam";
+import type { ExamAnswers, ExamPaper } from "../../types/exam";
 import {
   EXAM_SOURCE,
   LESSON_PAPER_OPTIONS,
@@ -7,6 +7,7 @@ import {
   MOCK_TOTAL,
   PART_PAPER_OPTIONS,
   buildExamPaper,
+  reshuffleOptions,
   scoreExam,
 } from "../../utils/examEngine";
 import { HAN_VIET_SOURCE } from "../../utils/hanViet";
@@ -23,6 +24,8 @@ export default function ExamPractice() {
   const [answers, setAnswers] = useState<ExamAnswers>({});
   const [submitted, setSubmitted] = useState(false);
   const [onlyWrong, setOnlyWrong] = useState(false);
+  /** Remounts the questions on every attempt so revealed Hán Việt readings are hidden again. */
+  const [attempt, setAttempt] = useState(0);
   const resultRef = useRef<HTMLElement>(null);
 
   const score = useMemo(() => scoreExam(paper, answers), [paper, answers]);
@@ -31,16 +34,23 @@ export default function ExamPractice() {
   const resultTone = toneForPercent(percent);
   const isMock = paper.key === MOCK_PAPER_KEY;
 
-  const resetAttempt = () => {
+  const startAttempt = (next: ExamPaper) => {
+    setPaper(next);
     setAnswers({});
     setSubmitted(false);
     setOnlyWrong(false);
+    setAttempt((n) => n + 1);
   };
 
   const startPaper = (key: string) => {
-    setPaper(buildExamPaper(key));
-    resetAttempt();
+    startAttempt(buildExamPaper(key));
     trackEvent("exam_start", { paper: key });
+  };
+
+  // Same questions, options in a new order.
+  const retryPaper = () => {
+    startAttempt(reshuffleOptions(paper));
+    trackEvent("exam_retry", { paper: paper.key });
   };
 
   const answer = (questionId: string, index: number) => {
@@ -107,7 +117,7 @@ export default function ExamPractice() {
           }))}
           actions={
             <>
-              <button type="button" className="btn btn--primary" onClick={resetAttempt}>
+              <button type="button" className="btn btn--primary" onClick={retryPaper}>
                 🔄 Làm lại đề này
               </button>
               <button
@@ -125,7 +135,7 @@ export default function ExamPractice() {
 
       {paper.sections.map((section, idx) => (
         <ExamSectionCard
-          key={section.part.id}
+          key={`${attempt}-${section.part.id}`}
           section={section}
           mondai={idx + 1}
           answers={answers}

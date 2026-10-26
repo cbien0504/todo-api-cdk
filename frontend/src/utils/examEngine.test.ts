@@ -7,7 +7,9 @@ import {
   MOCK_TOTAL,
   buildExamPaper,
   groupIntoSections,
+  reshuffleOptions,
   scoreExam,
+  shuffleOptions,
 } from "./examEngine";
 
 describe("examEngine (JLPT N3 Minchan)", () => {
@@ -61,6 +63,23 @@ describe("examEngine (JLPT N3 Minchan)", () => {
     const shuffled = [...EXAM_QUESTIONS].reverse().slice(0, 200);
     const order = groupIntoSections(shuffled).map((s) => s.part.id);
     expect(order).toEqual(EXAM_PARTS.map((p) => p.id).filter((id) => order.includes(id)));
+  });
+
+  it("shuffles options without losing the correct answer", () => {
+    const question = EXAM_QUESTIONS[0];
+    const original = [...question.options];
+    for (let i = 0; i < 20; i++) {
+      const shuffled = shuffleOptions(question);
+      expect([...shuffled.options].sort()).toEqual([...original].sort());
+      expect(shuffled.options[shuffled.answer]).toBe(original[question.answer]);
+    }
+    expect(question.options).toEqual(original);
+  });
+
+  it("reshuffles a paper without changing its questions or answers", () => {
+    const paper = buildExamPaper(MOCK_PAPER_KEY);
+    const answersOf = (p: typeof paper) => p.sections.flatMap((s) => s.questions.map((q) => [q.id, q.options[q.answer]]));
+    expect(answersOf(reshuffleOptions(paper))).toEqual(answersOf(paper));
   });
 
   it("scores answers per section", () => {

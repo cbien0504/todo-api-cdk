@@ -6,6 +6,10 @@ import { EXAM_QUESTIONS } from "../../utils/examEngine";
 const selectPaper = (key: string) => fireEvent.change(screen.getByLabelText("Chọn đề"), { target: { value: key } });
 const questionItems = () => screen.getAllByRole("listitem");
 const optionsOf = (item: HTMLElement) => Array.from(item.querySelectorAll<HTMLButtonElement>("button.option"));
+const optionTexts = (item: HTMLElement) => optionsOf(item).map((b) => b.querySelector(".option-text")!.textContent);
+// Options are shuffled, so tests pick them by text.
+const optionOf = (item: HTMLElement, text: string) => optionsOf(item)[optionTexts(item).indexOf(text)];
+const optionOrders = () => questionItems().map((item) => optionTexts(item).join("|"));
 
 describe("ExamPractice", () => {
   it("renders a mock paper grouped into the 4 parts of the real N3 exam", () => {
@@ -33,7 +37,8 @@ describe("ExamPractice", () => {
 
     const first = questionItems()[0];
     expect(first.querySelector("u")!.textContent).toBe("包ん");
-    expect(optionsOf(first).map((b) => b.textContent)).toEqual(["1つつんで", "2つづんで", "3つうつんで", "4つうづんで"]);
+    expect(optionsOf(first).map((b) => b.querySelector(".option-key")!.textContent)).toEqual(["1", "2", "3", "4"]);
+    expect(optionTexts(first).sort()).toEqual(["つうつんで", "つうづんで", "つつんで", "つづんで"]);
   });
 
   it("lets the user change an answer before submitting and scores per section", () => {
@@ -41,12 +46,12 @@ describe("ExamPractice", () => {
     selectPaper("lesson-1");
 
     const [q1, q2] = questionItems();
-    fireEvent.click(optionsOf(q1)[2]);
-    fireEvent.click(optionsOf(q1)[0]); // change mind: つつんで is correct
-    fireEvent.click(optionsOf(q2)[0]); // どおくい is wrong (answer: とくい)
+    fireEvent.click(optionOf(q1, "つうつんで"));
+    fireEvent.click(optionOf(q1, "つつんで")); // change mind: つつんで is correct
+    fireEvent.click(optionOf(q2, "どおくい")); // wrong (answer: とくい)
 
-    expect(optionsOf(q1)[0]).toHaveAttribute("aria-pressed", "true");
-    expect(optionsOf(q1)[2]).not.toHaveAttribute("aria-pressed");
+    expect(optionOf(q1, "つつんで")).toHaveAttribute("aria-pressed", "true");
+    expect(optionOf(q1, "つうつんで")).not.toHaveAttribute("aria-pressed");
     expect(screen.getByText(/Đã làm/).textContent).toContain("2 / 60");
 
     fireEvent.click(screen.getByRole("button", { name: /Nộp bài/i }));
@@ -56,7 +61,7 @@ describe("ExamPractice", () => {
     expect(screen.getByText("0/30 đúng")).toBeInTheDocument();
     expect(questionItems()[0]).toHaveClass("is-correct");
     expect(questionItems()[1]).toHaveClass("is-wrong");
-    expect(optionsOf(questionItems()[1])[3].className).toContain("option--correct");
+    expect(optionOf(questionItems()[1], "とくい").className).toContain("option--correct");
     expect(screen.queryByRole("button", { name: /Nộp bài/i })).not.toBeInTheDocument();
 
     fireEvent.click(screen.getByRole("button", { name: /Chỉ xem câu sai/i }));
@@ -66,6 +71,35 @@ describe("ExamPractice", () => {
     expect(questionItems()).toHaveLength(60);
     expect(questionItems()[0]).not.toHaveClass("is-correct");
     expect(screen.getByText(/Đã làm/).textContent).toContain("0 / 60");
+  });
+
+  it("shuffles the options of every new attempt and keeps the right answer", () => {
+    render(<ExamPractice />);
+    selectPaper("lesson-1");
+    const first = optionOrders();
+
+    fireEvent.click(screen.getByRole("button", { name: "Làm lại đề" }));
+    const second = optionOrders();
+    // 60 questions of 4 options: the chance that no order changes is negligible.
+    expect(second).not.toEqual(first);
+    second.forEach((order, idx) => expect(order.split("|").sort()).toEqual(first[idx].split("|").sort()));
+
+    fireEvent.click(screen.getByRole("button", { name: /Nộp bài/i }));
+    const correct = questionItems().map((item) => item.querySelector(".option--correct .option-text")!.textContent);
+    expect(correct).toEqual(EXAM_QUESTIONS.filter((q) => q.lesson === 1).map((q) => q.options[q.answer]));
+  });
+
+  it("retries a mock paper with the same questions and options in a new order", () => {
+    render(<ExamPractice />);
+    const sentences = () => questionItems().map((item) => item.querySelector(".exam-sentence")!.textContent);
+    const questions = sentences();
+    const orders = optionOrders();
+
+    fireEvent.click(screen.getByRole("button", { name: /Nộp bài/i }));
+    fireEvent.click(screen.getByRole("button", { name: /Làm lại đề này/i }));
+
+    expect(sentences()).toEqual(questions);
+    expect(optionOrders()).not.toEqual(orders);
   });
 
   it("renders blanks for context questions and fills them with the answer after submit", () => {
@@ -103,6 +137,10 @@ describe("ExamPractice", () => {
     fireEvent.click(within(orthography).getByRole("button", { name: "Xem âm Hán Việt của 正常" }));
     expect(within(orthography).getByRole("button", { name: /của 正常: CHÁNH THƯỜNG/ })).toBeInTheDocument();
     expect(optionsOf(orthography)).toHaveLength(4);
+
+    // A new attempt hides the readings again.
+    fireEvent.click(screen.getByRole("button", { name: "Làm lại đề" }));
+    expect(screen.queryByRole("button", { name: /của 正常: / })).not.toBeInTheDocument();
   });
 
   it("offers papers by part with every question of that part", () => {
