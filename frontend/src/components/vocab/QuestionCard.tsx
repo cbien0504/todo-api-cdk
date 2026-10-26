@@ -1,5 +1,6 @@
 import type { VocabItem } from "../../types/quiz";
 import type { SessionQuestion } from "../../hooks/useVocabSession";
+import HanVietButton from "../ui/HanVietButton";
 import OptionButton from "../ui/OptionButton";
 import { getOptionState } from "../ui/helpers";
 
@@ -79,9 +80,13 @@ export default function QuestionCard({
               {question.hiragana}
             </div>
           ))}
-        {!hideHanViet && question.han_viet && (
-          <span className="badge tone-warning badge--lg">Hán Việt: {question.han_viet}</span>
-        )}
+        {question.han_viet &&
+          (hideHanViet ? (
+            // Keyed by word so the reading is hidden again for the next question.
+            <HanVietButton key={question.question_text} word={question.question_text} hanViet={question.han_viet} />
+          ) : (
+            <span className="badge tone-warning badge--lg">Hán Việt: {question.han_viet}</span>
+          ))}
       </div>
 
       <div className="options options--stacked">

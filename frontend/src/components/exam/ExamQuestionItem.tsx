@@ -1,4 +1,5 @@
 import type { ExamQuestion } from "../../types/exam";
+import HanVietButton from "../ui/HanVietButton";
 import OptionButton from "../ui/OptionButton";
 import { getOptionState } from "../ui/helpers";
 
@@ -21,7 +22,10 @@ export default function ExamQuestionItem({ question, displayNumber, selected, su
         <p className="exam-sentence" lang="ja">
           {before}
           {target ? (
-            <u className="exam-target">{target}</u>
+            <>
+              <u className="exam-target">{target}</u>
+              <HanVietButton word={target} />
+            </>
           ) : (
             <span className={`exam-blank ${submitted ? "is-filled" : ""}`}>{submitted ? options[answer] : "　　"}</span>
           )}
@@ -32,15 +36,17 @@ export default function ExamQuestionItem({ question, displayNumber, selected, su
 
       <div className="options options--grid" role="group" aria-label={`Đáp án câu ${displayNumber}`}>
         {options.map((option, idx) => (
-          <OptionButton
-            key={idx}
-            index={idx}
-            label={option}
-            lang="ja"
-            state={getOptionState({ isSelected: selected === idx, isAnswer: idx === answer, revealed: submitted })}
-            disabled={submitted}
-            onSelect={() => onAnswer(idx)}
-          />
+          <div key={idx} className="option-cell">
+            <OptionButton
+              index={idx}
+              label={option}
+              lang="ja"
+              state={getOptionState({ isSelected: selected === idx, isAnswer: idx === answer, revealed: submitted })}
+              disabled={submitted}
+              onSelect={() => onAnswer(idx)}
+            />
+            <HanVietButton word={option} />
+          </div>
         ))}
       </div>
 

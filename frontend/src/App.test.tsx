@@ -93,6 +93,14 @@ describe("Mimikara Oboeru N3 – vocabulary practice", () => {
     expect(localStorage.getItem("mimikara_hide_han_viet")).toBe("true");
     expect(hvBtn).toHaveTextContent(/Hán Việt: Ẩn/i);
 
+    // While hidden, the current word reveals its Hán Việt on demand.
+    const revealBtn = within(questionCard()).getByRole("button", { name: /Xem âm Hán Việt/ });
+    expect(revealBtn).toHaveTextContent("Hán Việt");
+    fireEvent.click(revealBtn);
+    const word = questionCard().querySelector(".word-main")!.textContent;
+    const item = ALL_ITEMS.find((i) => (i.kanji || i.hiragana) === word)!;
+    expect(revealBtn).toHaveTextContent(item.han_viet);
+
     fireEvent.click(hvBtn);
     expect(localStorage.getItem("mimikara_hide_han_viet")).toBe("false");
   });

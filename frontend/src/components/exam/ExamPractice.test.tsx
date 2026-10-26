@@ -5,7 +5,7 @@ import { EXAM_QUESTIONS } from "../../utils/examEngine";
 
 const selectPaper = (key: string) => fireEvent.change(screen.getByLabelText("Chọn đề"), { target: { value: key } });
 const questionItems = () => screen.getAllByRole("listitem");
-const optionsOf = (item: HTMLElement) => within(item).getAllByRole("button");
+const optionsOf = (item: HTMLElement) => Array.from(item.querySelectorAll<HTMLButtonElement>("button.option"));
 
 describe("ExamPractice", () => {
   it("renders a mock paper grouped into the 4 parts of the real N3 exam", () => {
@@ -79,6 +79,30 @@ describe("ExamPractice", () => {
     fireEvent.click(screen.getByRole("button", { name: /Nộp bài/i }));
     expect(questionItems()[0].querySelector(".exam-blank")!.textContent).toBe("カタログ");
     expect(within(questionItems()[0]).getByText("Chưa trả lời")).toBeInTheDocument();
+  });
+
+  it("shows the Hán Việt of a word when its button is clicked", () => {
+    render(<ExamPractice />);
+    selectPaper("lesson-1");
+
+    // Kanji reading question: only the underlined word has kanji.
+    const first = questionItems()[0];
+    expect(within(first).getAllByRole("button", { name: /Hán Việt/ })).toHaveLength(1);
+    const targetBtn = within(first).getByRole("button", { name: "Xem âm Hán Việt của 包ん" });
+    expect(targetBtn).toHaveTextContent("Hán Việt");
+
+    fireEvent.click(targetBtn);
+    expect(targetBtn).toHaveTextContent("BAO");
+    expect(targetBtn).toHaveAttribute("aria-pressed", "true");
+
+    fireEvent.click(targetBtn);
+    expect(targetBtn).toHaveTextContent("Hán Việt");
+
+    // Orthography question: every option is written in kanji.
+    const orthography = questionItems().find((item) => within(item).queryByText("正常"))!;
+    fireEvent.click(within(orthography).getByRole("button", { name: "Xem âm Hán Việt của 正常" }));
+    expect(within(orthography).getByRole("button", { name: /của 正常: CHÁNH THƯỜNG/ })).toBeInTheDocument();
+    expect(optionsOf(orthography)).toHaveLength(4);
   });
 
   it("offers papers by part with every question of that part", () => {

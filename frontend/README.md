@@ -20,12 +20,12 @@ npm run build   # type-check and build to dist/
 src/
 ├── App.tsx                 # header, theme and tabs
 ├── components/
-│   ├── ui/                 # shared pieces: OptionButton, ResultPanel, Modal, SettingToggle, VocabTable
+│   ├── ui/                 # shared pieces: OptionButton, HanVietButton, ResultPanel, Modal, SettingToggle, VocabTable
 │   ├── vocab/              # vocabulary quiz (toolbar, progress, question card, unremembered modal)
 │   └── exam/               # exam papers (sections, questions, result)
 ├── hooks/                  # persistent state, speech, keyboard shortcuts, quiz session
-├── data/                   # vocabulary + exam JSON and batch definitions
-├── utils/                  # quizEngine (vocab queue), examEngine (papers & scoring), gtm
+├── data/                   # vocabulary, exam and kanji Hán Việt JSON, batch definitions
+├── utils/                  # quizEngine (vocab queue), examEngine (papers & scoring), hanViet, gtm
 └── types/
 ```
 
@@ -39,3 +39,13 @@ python3 scripts/build_exam_data.py   # run from the repository root
 ```
 
 Underlined words in the document become the `target` of each question; answers marked `*` in the answer key are flagged `inferred` and shown as reference answers.
+
+## Hán Việt buttons
+
+Every exam word written in kanji (the underlined word and each option) has a **Hán Việt** button that shows its Sino-Vietnamese reading; in the vocabulary quiz the same button appears while Hán Việt is hidden. Readings come from the vocabulary data when the word is in it, otherwise kanji by kanji from `src/data/kanji_han_viet.json`. Regenerate that table after changing the exam data:
+
+```bash
+python3 scripts/build_han_viet_data.py   # run from the repository root; downloads KANJIDIC2
+```
+
+Per-kanji readings prefer the vocabulary data, then the first Vietnamese reading of [KANJIDIC2](https://www.edrdg.org/wiki/index.php/KANJIDIC_Project) (EDRDG, CC BY-SA 4.0); `OVERRIDES` in the script fixes kanji whose KANJIDIC2 reading is uncommon.

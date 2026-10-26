@@ -9,6 +9,7 @@ import {
   buildExamPaper,
   scoreExam,
 } from "../../utils/examEngine";
+import { HAN_VIET_SOURCE } from "../../utils/hanViet";
 import { toPercent } from "../../utils/quizEngine";
 import { trackEvent } from "../../utils/gtm";
 import ResultPanel from "../ui/ResultPanel";
@@ -146,7 +147,9 @@ export default function ExamPractice() {
         </div>
       )}
 
-      <p className="hint">Nguồn đề: {EXAM_SOURCE}</p>
+      <p className="hint">
+        Nguồn đề: {EXAM_SOURCE} · Âm Hán Việt: {HAN_VIET_SOURCE}
+      </p>
     </>
   );
 }

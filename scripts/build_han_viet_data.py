@@ -1,0 +1,126 @@
+"""Build the kanji → Hán Việt table used by the Hán Việt buttons of the exam papers.
+
+Usage (from the repo root):
+    python3 scripts/build_han_viet_data.py [path/to/kanjidic2.xml[.gz]] [path/to/output.json]
+
+Without a path, KANJIDIC2 is downloaded from EDRDG. Each kanji used by the exam words
+(underlined targets and options) gets one reading, chosen in this order:
+  1. OVERRIDES below (common reading when KANJIDIC2 lists several or a wrong one);
+  2. the most frequent reading in the vocabulary JSON, so the exam agrees with the
+     Hán Việt shown in the vocabulary quiz;
+  3. the first Vietnamese reading of KANJIDIC2.
+Run it again after regenerating the exam data.
+"""
+
+import gzip
+import json
+import re
+import sys
+import unicodedata
+import urllib.request
+import xml.etree.ElementTree as ET
+from collections import Counter, defaultdict
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent
+DATA_DIR = ROOT / "frontend" / "src" / "data"
+VOCAB_PATH = DATA_DIR / "mimikara_oboeru_vocab.json"
+EXAM_PATH = DATA_DIR / "jlpt_n3_minchan_exam.json"
+DEFAULT_OUTPUT = DATA_DIR / "kanji_han_viet.json"
+KANJIDIC_URL = "http://www.edrdg.org/kanjidic/kanjidic2.xml.gz"
+
+KANJI_RE = re.compile(r"[㐀-鿿豈-﫿]")
+
+OVERRIDES = {
+    "両": "LƯỠNG",
+    "刊": "SAN",
+    "区": "KHU",
+    "単": "ĐƠN",
+    "収": "THU",
+    "台": "ĐÀI",
+    "択": "TRẠCH",
+    "探": "THÁM",
+    "朝": "TRIỀU",
+    "校": "HIỆU",
+    "着": "TRƯỚC",
+    "示": "THỊ",
+    "般": "BAN",
+    "錬": "LUYỆN",
+    # Read both ways in the vocabulary data.
+    "長": "TRƯỜNG",
+    "任": "NHIỆM",
+}
+
+
+def normalize(reading: str) -> str:
+    return unicodedata.normalize("NFC", reading.strip().upper())
+
+
+def load_kanjidic(source: Path | None) -> dict[str, list[str]]:
+    if source is None:
+        with urllib.request.urlopen(KANJIDIC_URL) as response:
+            raw = gzip.decompress(response.read())
+    elif source.suffix == ".gz":
+        raw = gzip.decompress(source.read_bytes())
+    else:
+        raw = source.read_bytes()
+
+    readings = {}
+    for character in ET.fromstring(raw).iter("character"):
+        vietnamese = [normalize(r.text) for r in character.iter("reading") if r.get("r_type") == "vietnam"]
+        if vietnamese:
+            readings[character.findtext("literal")] = vietnamese
+    return readings
+
+
+def vocab_readings() -> dict[str, Counter]:
+    """Per-kanji readings of the vocabulary words whose Hán Việt has one syllable per kanji."""
+    counts: dict[str, Counter] = defaultdict(Counter)
+    for item in json.loads(VOCAB_PATH.read_text(encoding="utf-8")):
+        kanji = KANJI_RE.findall(item.get("kanji") or "")
+        syllables = (item.get("han_viet") or "").split()
+        if kanji and len(kanji) == len(syllables):
+            for char, syllable in zip(kanji, syllables):
+                counts[char][normalize(syllable)] += 1
+    return counts
+
+
+def exam_kanji() -> set[str]:
+    chars = set()
+    for question in json.loads(EXAM_PATH.read_text(encoding="utf-8"))["questions"]:
+        for word in [question["target"], *question["options"]]:
+            chars.update(KANJI_RE.findall(word))
+    return chars
+
+
+def main() -> None:
+    source = Path(sys.argv[1]) if len(sys.argv) > 1 else None
+    output = Path(sys.argv[2]) if len(sys.argv) > 2 else DEFAULT_OUTPUT
+
+    kanjidic = load_kanjidic(source)
+    vocab = vocab_readings()
+    table = {}
+    missing = []
+    for char in sorted(exam_kanji()):
+        if char in OVERRIDES:
+            table[char] = OVERRIDES[char]
+        elif char in vocab:
+            table[char] = vocab[char].most_common(1)[0][0]
+        elif char in kanjidic:
+            table[char] = kanjidic[char][0]
+        else:
+            missing.append(char)
+
+    if missing:
+        raise SystemExit(f"No Hán Việt reading for: {''.join(missing)} (add them to OVERRIDES)")
+
+    data = {
+        "source": "KANJIDIC2 (EDRDG, CC BY-SA 4.0) & từ vựng Mimikara Oboeru N3",
+        "kanji": table,
+    }
+    output.write_text(json.dumps(data, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    print(f"Wrote {len(table)} kanji readings to {output}")
+
+
+if __name__ == "__main__":
+    main()
