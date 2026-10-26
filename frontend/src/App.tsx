@@ -1,13 +1,16 @@
 import { useEffect } from "react";
+import { N2_DECK, N3_DECK } from "./data/vocabBatches";
 import { enumCodec, usePersistentState } from "./hooks/usePersistentState";
+import { useVocabSettings } from "./hooks/useVocabSettings";
 import { trackEvent } from "./utils/gtm";
 import ExamPractice from "./components/exam/ExamPractice";
 import VocabPractice from "./components/vocab/VocabPractice";
 
 const THEMES = ["dark", "light"] as const;
 const TABS = [
-  { id: "vocab", label: "📖 Học từ vựng" },
-  { id: "exam", label: "📝 Luyện đề JLPT" },
+  { id: "vocab", label: "📖 Từ vựng N3" },
+  { id: "vocab-n2", label: "📗 Từ vựng N2" },
+  { id: "exam", label: "📝 Luyện đề N3" },
 ] as const;
 
 type TabId = (typeof TABS)[number]["id"];
@@ -18,6 +21,7 @@ const tabCodec = enumCodec<TabId>(TABS.map((t) => t.id));
 export default function App() {
   const [theme, setTheme] = usePersistentState<(typeof THEMES)[number]>("mimikara_theme", "dark", themeCodec);
   const [tab, setTab] = usePersistentState<TabId>("mimikara_active_tab", "vocab", tabCodec);
+  const vocabSettings = useVocabSettings();
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
@@ -38,11 +42,11 @@ export default function App() {
     <div className="app">
       <header className="app-header">
         <div className="brand">
-          <span className="brand-badge">N3 VOCAB</span>
+          <span className="brand-badge">N3 · N2</span>
           <div>
             <h1 className="brand-title">Mimikara Oboeru</h1>
             <p className="brand-sub">
-              Học từ vựng & luyện đề{" "}
+              Học từ vựng N3 · N2 & luyện đề{" "}
               <span className="nowrap" lang="ja">
                 文字・語彙
               </span>{" "}
@@ -78,9 +82,18 @@ export default function App() {
         ))}
       </nav>
 
-      {/* Both panels stay mounted so switching tabs keeps the current session. */}
+      {/* Every panel stays mounted so switching tabs keeps the current session. */}
       <section id="panel-vocab" role="tabpanel" aria-labelledby="tab-vocab" className="panel" hidden={tab !== "vocab"}>
-        <VocabPractice active={tab === "vocab"} />
+        <VocabPractice deck={N3_DECK} active={tab === "vocab"} settings={vocabSettings} />
+      </section>
+      <section
+        id="panel-vocab-n2"
+        role="tabpanel"
+        aria-labelledby="tab-vocab-n2"
+        className="panel"
+        hidden={tab !== "vocab-n2"}
+      >
+        <VocabPractice deck={N2_DECK} active={tab === "vocab-n2"} settings={vocabSettings} />
       </section>
       <section id="panel-exam" role="tabpanel" aria-labelledby="tab-exam" className="panel" hidden={tab !== "exam"}>
         <ExamPractice />

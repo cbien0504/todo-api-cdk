@@ -1,6 +1,6 @@
 import { useState } from "react";
 import type { Question, VocabItem } from "../types/quiz";
-import { ALL_ITEMS, FIRST_LESSON_KEY, UNREMEMBERED_BATCH_KEY, getBatchItems } from "../data/vocabBatches";
+import { UNREMEMBERED_BATCH_KEY, type VocabDeck } from "../data/vocabBatches";
 import { QuizBuffer, buildQuestion } from "../utils/quizEngine";
 import { trackEvent } from "../utils/gtm";
 
@@ -24,23 +24,23 @@ interface SessionState {
   wrongWords: VocabItem[];
 }
 
-const drawQuestion = (buffer: QuizBuffer, items: VocabItem[], batchKey: string): SessionQuestion | null => {
+const drawQuestion = (deck: VocabDeck, buffer: QuizBuffer, items: VocabItem[], batchKey: string): SessionQuestion | null => {
   if (buffer.isRoundComplete() || items.length === 0) return null;
   const isRetry = buffer.getPendingNewCount() === 0;
   const index = buffer.nextIndex();
   if (index === null || !items[index]) return null;
-  // Review batches and tiny batches borrow distractor meanings from the whole vocabulary.
-  const distractorPool = batchKey === UNREMEMBERED_BATCH_KEY || items.length < 4 ? ALL_ITEMS : undefined;
+  // Review batches and tiny batches borrow distractor meanings from the whole deck.
+  const distractorPool = batchKey === UNREMEMBERED_BATCH_KEY || items.length < 4 ? deck.items : undefined;
   return { ...buildQuestion(items, index, distractorPool), isRetry };
 };
 
-const startRound = (batchKey: string, items: VocabItem[]) => {
+const startRound = (deck: VocabDeck, batchKey: string, items: VocabItem[]) => {
   const buffer = new QuizBuffer(items.map((_, i) => i));
   return {
     batchKey,
     items,
     buffer,
-    question: drawQuestion(buffer, items, batchKey),
+    question: drawQuestion(deck, buffer, items, batchKey),
     selectedIndex: null,
     correctCount: 0,
     wrongCount: 0,
@@ -49,15 +49,16 @@ const startRound = (batchKey: string, items: VocabItem[]) => {
 };
 
 interface SessionOptions {
+  deck: VocabDeck;
   unrememberedWords: VocabItem[];
   onAnswer: (question: Question) => void;
   onWrong: (item: VocabItem) => void;
 }
 
 /** Vocabulary quiz session: batch selection, question queue, answers and round stats. */
-export function useVocabSession({ unrememberedWords, onAnswer, onWrong }: SessionOptions) {
+export function useVocabSession({ deck, unrememberedWords, onAnswer, onWrong }: SessionOptions) {
   const [state, setState] = useState<SessionState>(() => ({
-    ...startRound(FIRST_LESSON_KEY, getBatchItems(FIRST_LESSON_KEY, unrememberedWords)),
+    ...startRound(deck, deck.firstLessonKey, deck.getBatchItems(deck.firstLessonKey, unrememberedWords)),
     round: 1,
     streak: 0,
     bestStreak: 0,
@@ -75,15 +76,15 @@ export function useVocabSession({ unrememberedWords, onAnswer, onWrong }: Sessio
   const total = items.length;
 
   const selectBatch = (key: string) => {
-    const batchItems = getBatchItems(key, unrememberedWords);
-    setState({ ...startRound(key, batchItems), round: 1, streak: 0, bestStreak: 0 });
-    trackEvent("batch_reset", { batchKey: key, totalItems: batchItems.length });
+    const batchItems = deck.getBatchItems(key, unrememberedWords);
+    setState({ ...startRound(deck, key, batchItems), round: 1, streak: 0, bestStreak: 0 });
+    trackEvent("batch_reset", { level: deck.level, batchKey: key, totalItems: batchItems.length });
   };
 
   const nextRound = () => {
-    const roundItems = batchKey === UNREMEMBERED_BATCH_KEY ? getBatchItems(batchKey, unrememberedWords) : items;
-    setState({ ...state, ...startRound(batchKey, roundItems), round: state.round + 1 });
-    trackEvent("quiz_start_round", { round: state.round + 1, totalItems: roundItems.length });
+    const roundItems = batchKey === UNREMEMBERED_BATCH_KEY ? deck.getBatchItems(batchKey, unrememberedWords) : items;
+    setState({ ...state, ...startRound(deck, batchKey, roundItems), round: state.round + 1 });
+    trackEvent("quiz_start_round", { level: deck.level, round: state.round + 1, totalItems: roundItems.length });
   };
 
   const answer = (index: number) => {
@@ -100,7 +101,7 @@ export function useVocabSession({ unrememberedWords, onAnswer, onWrong }: Sessio
         streak,
         bestStreak: Math.max(state.bestStreak, streak),
       });
-      trackEvent("quiz_answer", { result: "correct", word: question.question_text, stt: question.stt });
+      trackEvent("quiz_answer", { level: deck.level, result: "correct", word: question.question_text, stt: question.stt });
       return;
     }
 
@@ -112,6 +113,7 @@ export function useVocabSession({ unrememberedWords, onAnswer, onWrong }: Sessio
     if (currentItem) onWrong(currentItem);
     setState({ ...state, selectedIndex: index, wrongCount: state.wrongCount + 1, streak: 0, wrongWords });
     trackEvent("quiz_answer", {
+      level: deck.level,
       result: "wrong",
       word: question.question_text,
       correctAnswer: question.answer,
@@ -120,10 +122,11 @@ export function useVocabSession({ unrememberedWords, onAnswer, onWrong }: Sessio
   };
 
   const next = () => {
-    const nextQuestion = drawQuestion(buffer, items, batchKey);
+    const nextQuestion = drawQuestion(deck, buffer, items, batchKey);
     setState({ ...state, question: nextQuestion, selectedIndex: null });
     if (!nextQuestion) {
       trackEvent("quiz_completed", {
+        level: deck.level,
         round: state.round,
         correct: state.correctCount,
         wrong: state.wrongCount,

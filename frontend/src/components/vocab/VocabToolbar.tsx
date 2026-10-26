@@ -1,7 +1,8 @@
-import { ALL_BATCH_KEY, ALL_ITEMS, UNIT_GROUPS, UNREMEMBERED_BATCH_KEY } from "../../data/vocabBatches";
+import { ALL_BATCH_KEY, UNREMEMBERED_BATCH_KEY, type VocabDeck } from "../../data/vocabBatches";
 import SettingToggle from "../ui/SettingToggle";
 
 interface VocabToolbarProps {
+  deck: VocabDeck;
   batchKey: string;
   unrememberedCount: number;
   isMuted: boolean;
@@ -15,6 +16,7 @@ interface VocabToolbarProps {
 }
 
 export default function VocabToolbar({
+  deck,
   batchKey,
   unrememberedCount,
   isMuted,
@@ -26,16 +28,20 @@ export default function VocabToolbar({
   onToggleHiragana,
   onOpenList,
 }: VocabToolbarProps) {
+  const selectId = `batch-select-${deck.id}`;
+
   return (
     <section className="card toolbar">
       <div className="toolbar-row">
-        <label htmlFor="batch-select" className="field-label">
+        <label htmlFor={selectId} className="field-label">
           Chọn bài
         </label>
-        <select id="batch-select" className="select" value={batchKey} onChange={(e) => onSelectBatch(e.target.value)}>
+        <select id={selectId} className="select" value={batchKey} onChange={(e) => onSelectBatch(e.target.value)}>
           <option value={UNREMEMBERED_BATCH_KEY}>📌 Ôn tập từ chưa nhớ ({unrememberedCount} từ)</option>
-          <option value={ALL_BATCH_KEY}>📚 Tất cả ({ALL_ITEMS.length} từ vựng N3)</option>
-          {UNIT_GROUPS.map((group) => (
+          <option value={ALL_BATCH_KEY}>
+            📚 Tất cả ({deck.items.length} từ vựng {deck.level})
+          </option>
+          {deck.unitGroups.map((group) => (
             <optgroup key={group.key} label={group.name}>
               <option value={group.key}>{group.label}</option>
               {group.lessons.map((lesson) => (

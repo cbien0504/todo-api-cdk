@@ -1,15 +1,16 @@
-"""Build the kanji → Hán Việt table used by the Hán Việt buttons of the exam papers.
+"""Build the kanji → Hán Việt table used for exam words and the N2 vocabulary.
 
 Usage (from the repo root):
     python3 scripts/build_han_viet_data.py [path/to/kanjidic2.xml[.gz]] [path/to/output.json]
 
 Without a path, KANJIDIC2 is downloaded from EDRDG. Each kanji used by the exam words
-(underlined targets and options) gets one reading, chosen in this order:
+(underlined targets and options) or by the N2 vocabulary (which has no Hán Việt of its
+own) gets one reading, chosen in this order:
   1. OVERRIDES below (common reading when KANJIDIC2 lists several or a wrong one);
   2. the most frequent reading in the vocabulary JSON, so the exam agrees with the
      Hán Việt shown in the vocabulary quiz;
   3. the first Vietnamese reading of KANJIDIC2.
-Run it again after regenerating the exam data.
+Run it again after regenerating the exam data or the N2 vocabulary.
 """
 
 import gzip
@@ -26,6 +27,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "frontend" / "src" / "data"
 VOCAB_PATH = DATA_DIR / "mimikara_oboeru_vocab.json"
 EXAM_PATH = DATA_DIR / "jlpt_n3_minchan_exam.json"
+N2_VOCAB_PATH = DATA_DIR / "jtest_n2_vocab.json"
 DEFAULT_OUTPUT = DATA_DIR / "kanji_han_viet.json"
 KANJIDIC_URL = "http://www.edrdg.org/kanjidic/kanjidic2.xml.gz"
 
@@ -49,6 +51,26 @@ OVERRIDES = {
     # Read both ways in the vocabulary data.
     "長": "TRƯỜNG",
     "任": "NHIỆM",
+    # Kanji of the N2 vocabulary.
+    "刷": "LOÁT",
+    "医": "Y",
+    "占": "CHIẾM",
+    "尽": "TẬN",
+    "属": "THUỘC",
+    "彩": "THÁI",
+    "担": "ĐẢM",
+    "挟": "HIỆP",
+    "採": "THÁI",
+    "易": "DỊ",
+    "汰": "THẢI",
+    "滝": "LANG",
+    "監": "GIÁM",
+    "索": "SÁCH",
+    "継": "KẾ",
+    "説": "THUYẾT",
+    "較": "GIẢO",
+    "払": "PHẤT",
+    "政": "CHÍNH",
 }
 
 
@@ -85,12 +107,11 @@ def vocab_readings() -> dict[str, Counter]:
     return counts
 
 
-def exam_kanji() -> set[str]:
-    chars = set()
+def needed_kanji() -> set[str]:
+    words = [item["kanji"] for item in json.loads(N2_VOCAB_PATH.read_text(encoding="utf-8"))["words"]]
     for question in json.loads(EXAM_PATH.read_text(encoding="utf-8"))["questions"]:
-        for word in [question["target"], *question["options"]]:
-            chars.update(KANJI_RE.findall(word))
-    return chars
+        words += [question["target"], *question["options"]]
+    return {char for word in words for char in KANJI_RE.findall(word)}
 
 
 def main() -> None:
@@ -101,7 +122,7 @@ def main() -> None:
     vocab = vocab_readings()
     table = {}
     missing = []
-    for char in sorted(exam_kanji()):
+    for char in sorted(needed_kanji()):
         if char in OVERRIDES:
             table[char] = OVERRIDES[char]
         elif char in vocab:

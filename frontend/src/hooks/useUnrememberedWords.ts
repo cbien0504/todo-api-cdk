@@ -4,13 +4,13 @@ import { getItemKey } from "../data/vocabBatches";
 import { trackEvent } from "../utils/gtm";
 import { jsonArrayCodec, usePersistentState } from "./usePersistentState";
 
-const STORAGE_KEY = "mimikara_unremembered_words";
 const codec = jsonArrayCodec<VocabItem>();
 
 type MaybeItem = VocabItem | null | undefined;
 
-export function useUnrememberedWords() {
-  const [words, setWords] = usePersistentState<VocabItem[]>(STORAGE_KEY, [], codec);
+/** Words to review, saved in localStorage under `storageKey` (one list per vocabulary deck). */
+export function useUnrememberedWords(storageKey: string) {
+  const [words, setWords] = usePersistentState<VocabItem[]>(storageKey, [], codec);
   const keys = useMemo(() => new Set(words.map(getItemKey)), [words]);
 
   const isUnremembered = useCallback((item: MaybeItem) => !!item && keys.has(getItemKey(item)), [keys]);

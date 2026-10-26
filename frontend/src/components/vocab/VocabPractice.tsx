@@ -1,18 +1,11 @@
 import { useState } from "react";
-import {
-  FIRST_LESSON,
-  FIRST_LESSON_KEY,
-  UNREMEMBERED_BATCH_KEY,
-  getBatchTitle,
-  isUnitBatch,
-} from "../../data/vocabBatches";
-import { booleanCodec, usePersistentState } from "../../hooks/usePersistentState";
+import { UNREMEMBERED_BATCH_KEY, isUnitBatch, type VocabDeck } from "../../data/vocabBatches";
 import { useKeyboardShortcuts } from "../../hooks/useKeyboardShortcuts";
 import { useSpeech } from "../../hooks/useSpeech";
 import { useUnrememberedWords } from "../../hooks/useUnrememberedWords";
+import type { VocabSettings } from "../../hooks/useVocabSettings";
 import { useVocabSession } from "../../hooks/useVocabSession";
 import { toPercent } from "../../utils/quizEngine";
-import { trackEvent } from "../../utils/gtm";
 import ResultPanel from "../ui/ResultPanel";
 import VocabTable from "../ui/VocabTable";
 import ProgressPanel from "./ProgressPanel";
@@ -20,17 +13,21 @@ import QuestionCard from "./QuestionCard";
 import UnrememberedModal from "./UnrememberedModal";
 import VocabToolbar from "./VocabToolbar";
 
-const FIRST_LESSON_NAME = FIRST_LESSON ? FIRST_LESSON.title : "Bài đầu tiên";
+interface VocabPracticeProps {
+  deck: VocabDeck;
+  active: boolean;
+  settings: VocabSettings;
+}
 
-export default function VocabPractice({ active }: { active: boolean }) {
-  const [isMuted, setIsMuted] = usePersistentState("mimikara_is_muted", false, booleanCodec);
-  const [hideHanViet, setHideHanViet] = usePersistentState("mimikara_hide_han_viet", false, booleanCodec);
-  const [hideHiragana, setHideHiragana] = usePersistentState("mimikara_hide_hiragana", false, booleanCodec);
+export default function VocabPractice({ deck, active, settings }: VocabPracticeProps) {
+  const { isMuted, hideHanViet, hideHiragana } = settings;
   const [isListOpen, setIsListOpen] = useState(false);
+  const firstLessonName = deck.firstLesson ? deck.firstLesson.title : "Bài đầu tiên";
 
   const { speak, stop, isSpeaking } = useSpeech(isMuted);
-  const unremembered = useUnrememberedWords();
+  const unremembered = useUnrememberedWords(deck.unrememberedStorageKey);
   const session = useVocabSession({
+    deck,
     unrememberedWords: unremembered.words,
     onAnswer: (question) => speak(question.hiragana),
     onWrong: unremembered.markUnremembered,
@@ -40,20 +37,8 @@ export default function VocabPractice({ active }: { active: boolean }) {
   const remainingToReview = unremembered.words.length;
 
   const toggleMute = () => {
-    const next = !isMuted;
-    setIsMuted(next);
-    if (next) stop();
-    trackEvent("toggle_mute", { muted: next });
-  };
-
-  const toggleHanViet = () => {
-    setHideHanViet(!hideHanViet);
-    trackEvent("toggle_hide_han_viet", { hide: !hideHanViet });
-  };
-
-  const toggleHiragana = () => {
-    setHideHiragana(!hideHiragana);
-    trackEvent("toggle_hide_hiragana", { hide: !hideHiragana });
+    if (!isMuted) stop();
+    settings.toggleMute();
   };
 
   const reviewUnremembered = () => {
@@ -64,7 +49,7 @@ export default function VocabPractice({ active }: { active: boolean }) {
   // Single primary action of the round-complete screen, shared by its button and Enter/Space.
   const completeAction =
     isReviewMode && remainingToReview === 0
-      ? { label: `📖 Quay lại Luyện tập Bài 1 (${FIRST_LESSON_NAME})`, run: () => session.selectBatch(FIRST_LESSON_KEY) }
+      ? { label: `📖 Quay lại Luyện tập Bài 1 (${firstLessonName})`, run: () => session.selectBatch(deck.firstLessonKey) }
       : {
           label: isReviewMode
             ? `🔄 Tiếp tục ôn tập (${remainingToReview} từ còn lại)`
@@ -118,8 +103,8 @@ export default function VocabPractice({ active }: { active: boolean }) {
         title="Danh sách Chưa nhớ hiện đang trống!"
         description="Tuyệt vời! Bạn không có từ vựng nào trong danh sách chưa nhớ. Hãy chọn bài học để luyện tập tiếp nhé!"
         actions={
-          <button type="button" className="btn btn--primary" onClick={() => session.selectBatch(FIRST_LESSON_KEY)}>
-            📖 Luyện tập Bài 1 ({FIRST_LESSON_NAME})
+          <button type="button" className="btn btn--primary" onClick={() => session.selectBatch(deck.firstLessonKey)}>
+            📖 Luyện tập Bài 1 ({firstLessonName})
           </button>
         }
       />
@@ -187,6 +172,7 @@ export default function VocabPractice({ active }: { active: boolean }) {
   return (
     <>
       <VocabToolbar
+        deck={deck}
         batchKey={session.batchKey}
         unrememberedCount={unremembered.words.length}
         isMuted={isMuted}
@@ -194,13 +180,13 @@ export default function VocabPractice({ active }: { active: boolean }) {
         hideHiragana={hideHiragana}
         onSelectBatch={session.selectBatch}
         onToggleMute={toggleMute}
-        onToggleHanViet={toggleHanViet}
-        onToggleHiragana={toggleHiragana}
+        onToggleHanViet={settings.toggleHanViet}
+        onToggleHiragana={settings.toggleHiragana}
         onOpenList={() => setIsListOpen(true)}
       />
 
       <ProgressPanel
-        title={getBatchTitle(session.batchKey)}
+        title={deck.getBatchTitle(session.batchKey)}
         round={session.round}
         streak={session.streak}
         bestStreak={session.bestStreak}
@@ -212,6 +198,8 @@ export default function VocabPractice({ active }: { active: boolean }) {
       <p className="hint">
         Phím tắt: <kbd>1</kbd>–<kbd>4</kbd> chọn đáp án · <kbd>C</kbd> chưa nhớ / <kbd>D</kbd> đã nhớ ·{" "}
         <kbd>Space</kbd>/<kbd>Enter</kbd> câu tiếp theo · <kbd>M</kbd> bật/tắt loa
+        <br />
+        Nguồn từ vựng: {deck.source}
       </p>
 
       {isListOpen && (

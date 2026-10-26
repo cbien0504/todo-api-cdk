@@ -1,5 +1,6 @@
 import hanVietData from "../data/kanji_han_viet.json";
-import { ALL_ITEMS } from "../data/vocabBatches";
+import n3VocabData from "../data/mimikara_oboeru_vocab.json";
+import type { RawVocabItem } from "../types/quiz";
 
 export const HAN_VIET_SOURCE = hanVietData.source;
 const KANJI_HAN_VIET: Record<string, string> = hanVietData.kanji;
@@ -17,11 +18,11 @@ const kanjiOf = (word: string): string[] => {
   return chars;
 };
 
-/** Hán Việt of vocabulary words keyed by their kanji, so readings match the vocabulary quiz. */
+/** Hán Việt of the N3 vocabulary words keyed by their kanji, so readings match the N3 quiz. */
 const WORD_HAN_VIET = new Map<string, string>();
-for (const item of ALL_ITEMS) {
-  const chars = kanjiOf(item.kanji);
-  const syllables = item.han_viet.toUpperCase().split(/\s+/).filter(Boolean);
+for (const item of n3VocabData as RawVocabItem[]) {
+  const chars = kanjiOf(item.kanji ?? "");
+  const syllables = (item.han_viet ?? "").toUpperCase().split(/\s+/).filter(Boolean);
   const key = chars.join("");
   if (chars.length > 0 && chars.length === syllables.length && !WORD_HAN_VIET.has(key)) {
     WORD_HAN_VIET.set(key, syllables.join(" "));
