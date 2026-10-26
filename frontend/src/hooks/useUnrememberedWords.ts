@@ -1,40 +1,58 @@
 import { useCallback, useMemo } from "react";
 import type { VocabItem } from "../types/quiz";
-import { getItemKey } from "../data/vocabDecks";
+import { getItemKey, type VocabDeck } from "../data/vocabDecks";
 import { trackEvent } from "../utils/gtm";
-import { jsonArrayCodec, usePersistentState } from "./usePersistentState";
-
-const codec = jsonArrayCodec<VocabItem>();
+import { useDeckProgress, useProgressStore } from "./useProgress";
 
 type MaybeItem = VocabItem | null | undefined;
 
-/** Words to review, saved in localStorage under `storageKey` (one list per vocabulary deck). */
-export function useUnrememberedWords(storageKey: string) {
-  const [words, setWords] = usePersistentState<VocabItem[]>(storageKey, [], codec);
-  const keys = useMemo(() => new Set(words.map(getItemKey)), [words]);
+/**
+ * Words of a deck the learner has to review (`words`, chưa nhớ) and has remembered (`known`, đã nhớ),
+ * in the order they were marked. They belong to the logged-in learner (see utils/progressStore).
+ */
+export function useUnrememberedWords(deck: VocabDeck) {
+  const store = useProgressStore();
+  const { words: entries } = useDeckProgress(deck.id);
 
-  const isUnremembered = useCallback((item: MaybeItem) => !!item && keys.has(getItemKey(item)), [keys]);
+  const { words, known } = useMemo(() => {
+    const lists = { u: [] as { t: number; item: VocabItem }[], k: [] as { t: number; item: VocabItem }[] };
+    for (const [key, entry] of Object.entries(entries)) {
+      const item = deck.itemByKey(key);
+      if (item) lists[entry.s].push({ t: entry.t, item });
+    }
+    const ordered = (list: { t: number; item: VocabItem }[]) => list.sort((a, b) => a.t - b.t).map(({ item }) => item);
+    return { words: ordered(lists.u), known: ordered(lists.k) };
+  }, [deck, entries]);
+
+  const isUnremembered = useCallback((item: MaybeItem) => !!item && entries[getItemKey(item)]?.s === "u", [entries]);
 
   const markUnremembered = useCallback(
     (item: MaybeItem) => {
-      if (!item || keys.has(getItemKey(item))) return;
-      setWords([...words, item]);
-      trackEvent("vocab_mark_unremembered", { word: item.question_text });
+      if (item && store.setWordStatus(deck.id, getItemKey(item), "u")) {
+        trackEvent("vocab_mark_unremembered", { word: item.question_text });
+      }
     },
-    [keys, words, setWords]
+    [store, deck.id]
   );
 
   const markRemembered = useCallback(
     (item: MaybeItem) => {
-      if (!item) return;
-      const targetKey = getItemKey(item);
-      setWords(words.filter((w) => getItemKey(w) !== targetKey));
-      trackEvent("vocab_mark_remembered", { word: item.question_text });
+      if (item && store.setWordStatus(deck.id, getItemKey(item), "k")) {
+        trackEvent("vocab_mark_remembered", { word: item.question_text });
+      }
     },
-    [words, setWords]
+    [store, deck.id]
   );
 
-  return { words, isUnremembered, markUnremembered, markRemembered };
+  /** A correct answer or a remembered flashcard: the word is remembered, unless it waits for review. */
+  const markKnown = useCallback(
+    (item: MaybeItem) => {
+      if (item) store.markKnown(deck.id, getItemKey(item));
+    },
+    [store, deck.id]
+  );
+
+  return { words, known, isUnremembered, markUnremembered, markRemembered, markKnown };
 }
 
 export type UnrememberedWords = ReturnType<typeof useUnrememberedWords>;

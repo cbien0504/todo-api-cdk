@@ -202,9 +202,73 @@ kbd {
 
 .app-header {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 16px;
+  gap: 12px 16px;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+}
+
+/* Logged-in learner and whether their progress is saved on the server. */
+.user-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+.user-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  padding: 6px 12px;
+  border-radius: var(--radius-pill);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  font-size: 0.85rem;
+}
+
+.user-name {
+  font-weight: 700;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 180px;
+}
+
+.sync-label {
+  font-size: 0.75rem;
+  color: var(--text-3);
+  white-space: nowrap;
+}
+
+.sync-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background: var(--text-3);
+}
+
+.sync-dot.is-synced {
+  background: var(--success);
+}
+
+.sync-dot.is-loading,
+.sync-dot.is-pending {
+  background: var(--warning);
+}
+
+.sync-dot.is-offline,
+.sync-dot.is-expired {
+  background: var(--danger);
 }
 
 .brand {
@@ -291,6 +355,117 @@ kbd {
 .tab.is-active .level-meta {
   color: inherit;
   opacity: 0.85;
+}
+
+/* Remembered words of the level. */
+.level-bar {
+  display: block;
+  width: 70%;
+  height: 3px;
+  margin-top: 4px;
+  border-radius: var(--radius-pill);
+  background: var(--border-strong);
+  overflow: hidden;
+}
+
+.level-bar > span {
+  display: block;
+  height: 100%;
+  background: var(--success);
+}
+
+.tab.is-active .level-bar {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.tab.is-active .level-bar > span {
+  background: #fff;
+}
+
+/* Username-only login. */
+.login {
+  display: flex;
+  justify-content: center;
+  padding-top: 24px;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 540px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.login-title {
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.login-lead {
+  color: var(--text-2);
+  font-size: 0.92rem;
+}
+
+.password-row {
+  display: flex;
+  gap: 8px;
+}
+
+.password-row .input {
+  flex: 1;
+  min-width: 0;
+}
+
+.login-rule {
+  margin-top: -4px;
+  font-size: 0.8rem;
+  color: var(--text-3);
+}
+
+.login-error,
+.login-message {
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.login-error {
+  color: var(--danger-text);
+  background: color-mix(in srgb, var(--danger) 12%, transparent);
+}
+
+.login-message {
+  color: var(--warning-text);
+  background: color-mix(in srgb, var(--warning) 12%, transparent);
+}
+
+.login-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.login-note {
+  margin-top: 6px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+  font-size: 0.8rem;
+  color: var(--text-3);
+}
+
+.notice {
+  --tone: var(--info);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 16px;
+  font-size: 0.9rem;
+  background: color-mix(in srgb, var(--tone) 10%, var(--surface));
+  border-color: color-mix(in srgb, var(--tone) 35%, transparent);
 }
 
 /* Sections of a level (vocabulary, exam papers), under the level tabs. */
@@ -1229,6 +1404,20 @@ kbd {
   border-bottom: 1px solid var(--border);
 }
 
+.list-switch {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.modal-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px 20px;
+  font-size: 0.92rem;
+}
+
 .modal-body {
   flex: 1;
   overflow-y: auto;
@@ -1465,6 +1654,14 @@ kbd {
 
   .toolbar-end {
     margin-left: 0;
+  }
+
+  .sync-label {
+    display: none;
+  }
+
+  .user-name {
+    max-width: 120px;
   }
 
   .tab {

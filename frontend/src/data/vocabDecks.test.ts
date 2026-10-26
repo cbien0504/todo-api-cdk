@@ -8,7 +8,6 @@ describe("vocabulary decks", () => {
   it("groups the N3 list into units of lessons", () => {
     expect(N3_DECK.unitGroups).toHaveLength(11);
     expect(N3_DECK.firstLesson?.title).toBe("Unit 1 - Lesson 1: Con người & quan hệ");
-    expect(N3_DECK.unrememberedStorageKey).toBe("mimikara_unremembered_words");
   });
 
   it("groups the crawled N2 list into 12 chapters of 5 lessons", () => {
@@ -20,7 +19,7 @@ describe("vocabulary decks", () => {
     expect(new Set(N2_DECK.items.map(getItemKey)).size).toBe(N2_DECK.items.length);
   });
 
-  it("groups the crawled N5 and N4 lists into chapters of lessons, with their own storage", () => {
+  it("groups the crawled N5 and N4 lists into chapters of lessons", () => {
     expect(N5_DECK.unitGroups.map((group) => group.lessons.length)).toEqual(Array(10).fill(5));
     expect(N5_DECK.unitGroups[0].name).toBe("Chapter 1 – Tự giới thiệu");
     expect(N5_DECK.firstLesson?.title).toBe("Chapter 1 - Bài 1: Là");
@@ -30,20 +29,18 @@ describe("vocabulary decks", () => {
 
     for (const deck of [N5_DECK, N4_DECK]) {
       expect(deck.items.length).toBeGreaterThan(850);
-      expect(new Set(deck.items.map(getItemKey)).size).toBe(deck.items.length);
     }
-    expect([N5_DECK, N4_DECK, N3_DECK, N2_DECK].map((deck) => deck.unrememberedStorageKey)).toEqual([
-      "mimikara_n5_unremembered_words",
-      "mimikara_n4_unremembered_words",
-      "mimikara_unremembered_words",
-      "mimikara_n2_unremembered_words",
-    ]);
-    expect([N5_DECK, N4_DECK, N3_DECK, N2_DECK].map((deck) => deck.srsStorageKey)).toEqual([
-      "mimikara_srs_n5",
-      "mimikara_srs_n4",
-      "mimikara_srs_n3",
-      "mimikara_srs_n2",
-    ]);
+  });
+
+  it("finds every word by its key in the learner's progress", () => {
+    expect([N5_DECK, N4_DECK, N3_DECK, N2_DECK].map((deck) => deck.id)).toEqual(["n5", "n4", "n3", "n2"]);
+    for (const deck of [N5_DECK, N4_DECK, N3_DECK, N2_DECK]) {
+      // Progress is matched by number: numbers are unique in a deck.
+      expect(new Set(deck.items.map(getItemKey)).size).toBe(deck.items.length);
+      for (const item of deck.items) expect(deck.itemByKey(getItemKey(item))).toBe(item);
+    }
+    expect(N3_DECK.itemByKey("stt_127")?.kanji).toBe("倒れる");
+    expect(N3_DECK.itemByKey("stt_9999")).toBeUndefined();
   });
 
   it("reads kana-only N2 words from their reading", () => {

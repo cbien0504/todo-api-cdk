@@ -5,6 +5,12 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  server: {
+    // The progress API: backend/dev_server.py, or a deployed app with API_PROXY=https://<CloudFront domain>.
+    proxy: {
+      '/api': { target: process.env.API_PROXY ?? 'http://127.0.0.1:8787', changeOrigin: true },
+    },
+  },
   build: {
     // The vocab-data chunk is the word lists of N5–N2 themselves (~1.2 MB, ~250 kB gzipped).
     chunkSizeWarningLimit: 1300,
@@ -25,6 +31,8 @@ export default defineConfig({
     globals: true,
     environment: 'jsdom',
     setupFiles: './src/test/setup.ts',
+    // The exam tests render papers of up to 60 questions: a few seconds each next to the other test files.
+    testTimeout: 15_000,
   },
 })
 

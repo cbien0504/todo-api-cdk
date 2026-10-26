@@ -35,11 +35,12 @@ export default function VocabPractice({ deck, active, settings }: VocabPracticeP
   const [flashcardRun, setFlashcardRun] = useState(0);
 
   const { speak, stop, isSpeaking } = useSpeech(isMuted);
-  const unremembered = useUnrememberedWords(deck.unrememberedStorageKey);
+  const unremembered = useUnrememberedWords(deck);
   const session = useVocabSession({
     deck,
     unrememberedWords: unremembered.words,
     onAnswer: (question) => speak(question.hiragana),
+    onCorrect: unremembered.markKnown,
     onWrong: unremembered.markUnremembered,
   });
 
@@ -113,6 +114,7 @@ export default function VocabPractice({ deck, active, settings }: VocabPracticeP
           isSpeaking={isSpeaking}
           speak={speak}
           onForget={unremembered.markUnremembered}
+          onRecall={unremembered.markKnown}
         />
       ) : (
         <QuizPractice
@@ -146,11 +148,13 @@ export default function VocabPractice({ deck, active, settings }: VocabPracticeP
       {isListOpen && (
         <UnrememberedModal
           words={unremembered.words}
+          known={unremembered.known}
           onClose={() => setIsListOpen(false)}
           onReview={reviewUnremembered}
           onSpeak={(item) => speak(item.hiragana, true)}
           companionsOf={deck.companionsOf}
           onMarkRemembered={unremembered.markRemembered}
+          onMarkUnremembered={unremembered.markUnremembered}
         />
       )}
     </>

@@ -52,11 +52,12 @@ interface SessionOptions {
   deck: VocabDeck;
   unrememberedWords: VocabItem[];
   onAnswer: (question: Question) => void;
+  onCorrect: (item: VocabItem) => void;
   onWrong: (item: VocabItem) => void;
 }
 
 /** Vocabulary quiz session: batch selection, question queue, answers and round stats. */
-export function useVocabSession({ deck, unrememberedWords, onAnswer, onWrong }: SessionOptions) {
+export function useVocabSession({ deck, unrememberedWords, onAnswer, onCorrect, onWrong }: SessionOptions) {
   const [state, setState] = useState<SessionState>(() => ({
     ...startRound(deck, deck.firstLessonKey, deck.getBatchItems(deck.firstLessonKey, unrememberedWords)),
     round: 1,
@@ -93,6 +94,7 @@ export function useVocabSession({ deck, unrememberedWords, onAnswer, onWrong }: 
     onAnswer(question);
 
     if (correct) {
+      if (currentItem) onCorrect(currentItem);
       const streak = state.streak + 1;
       setState({
         ...state,

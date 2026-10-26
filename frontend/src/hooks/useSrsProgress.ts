@@ -1,23 +1,17 @@
 import { useCallback } from "react";
-import { gradeCard, type SrsCards, type SrsGrade } from "../utils/srs";
-import { usePersistentState, type StorageCodec } from "./usePersistentState";
+import type { DeckId } from "../types/progress";
+import { gradeCard, type SrsGrade } from "../utils/srs";
+import { useDeckProgress, useProgressStore } from "./useProgress";
 
-const codec: StorageCodec<SrsCards> = {
-  parse: (raw) => {
-    const parsed = JSON.parse(raw);
-    return parsed && typeof parsed === "object" && !Array.isArray(parsed) ? (parsed as SrsCards) : undefined;
-  },
-  serialize: (value) => JSON.stringify(value),
-};
-
-/** Flashcard progress of a deck, saved in localStorage under `storageKey`. */
-export function useSrsProgress(storageKey: string) {
-  const [cards, setCards] = usePersistentState<SrsCards>(storageKey, {}, codec);
+/** Flashcard progress of a deck for the logged-in learner. */
+export function useSrsProgress(deck: DeckId) {
+  const store = useProgressStore();
+  const { cards } = useDeckProgress(deck);
 
   const grade = useCallback(
     (key: string, value: SrsGrade, today: number) =>
-      setCards((previous) => ({ ...previous, [key]: gradeCard(previous[key], value, today) })),
-    [setCards]
+      store.setCard(deck, key, gradeCard(store.getDeck(deck).cards[key], value, today)),
+    [store, deck]
   );
 
   return { cards, grade };

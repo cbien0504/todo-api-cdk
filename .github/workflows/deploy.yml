@@ -44,6 +44,11 @@ jobs:
         run: |
           npm run build --prefix frontend
 
+      - name: Run Backend Unit Tests
+        run: |
+          pip install -r backend/requirements-dev.txt
+          python -m unittest discover -s backend/tests -t backend
+
       - name: Configure AWS credentials via OIDC
         uses: aws-actions/configure-aws-credentials@v4
         with:

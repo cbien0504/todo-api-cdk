@@ -3,6 +3,7 @@ import n5VocabData from "./jtest_n5_vocab.json";
 import n4VocabData from "./jtest_n4_vocab.json";
 import n2VocabData from "./jtest_n2_vocab.json";
 import companionsData from "./vocab_companions.json";
+import type { DeckId } from "../types/progress";
 import type { Companion, RawVocabItem, VocabItem } from "../types/quiz";
 import { cleanVocabData } from "../utils/quizEngine";
 import { getHanViet } from "../utils/hanViet";
@@ -22,16 +23,15 @@ export interface UnitGroup extends VocabBatch {
   lessons: VocabBatch[];
 }
 
-/** The vocabulary list of a JLPT level, with its batches and its own unremembered words. */
+/** The vocabulary list of a JLPT level, with its batches. */
 export interface VocabDeck {
-  id: string;
+  /** Also names the deck in the learner's progress. */
+  id: DeckId;
   level: string;
   source: string;
-  /** localStorage key of the deck's unremembered words. */
-  unrememberedStorageKey: string;
-  /** localStorage key of the deck's flashcard (spaced repetition) progress. */
-  srsStorageKey: string;
   items: VocabItem[];
+  /** The word of a progress key (`getItemKey`). */
+  itemByKey: (key: string) => VocabItem | undefined;
   unitGroups: UnitGroup[];
   firstLesson: VocabBatch | undefined;
   firstLessonKey: string;
@@ -44,6 +44,14 @@ export interface VocabDeck {
 
 export const UNREMEMBERED_BATCH_KEY = "unremembered";
 export const ALL_BATCH_KEY = "all";
+
+/** Key of a word in the progress of its deck: "stt_12". */
+export const getItemKey = (item: { stt?: string | number; question_text?: string; meaning?: string }) => {
+  if (item.stt !== undefined && item.stt !== null && String(item.stt).trim() !== "") {
+    return `stt_${item.stt}`;
+  }
+  return `${item.question_text || ""}:::${item.meaning || ""}`;
+};
 
 const groupBy = <T>(list: T[], keyOf: (item: T) => string): Map<string, T[]> => {
   const map = new Map<string, T[]>();
@@ -59,11 +67,9 @@ const groupBy = <T>(list: T[], keyOf: (item: T) => string): Map<string, T[]> => 
 const unitOf = (lesson: VocabBatch): string => lesson.title.match(/^((?:Unit|Chapter)\s+\d+)/i)?.[1] ?? "Khác";
 
 interface DeckConfig {
-  id: string;
+  id: DeckId;
   level: string;
   source: string;
-  unrememberedStorageKey: string;
-  srsStorageKey: string;
   items: VocabItem[];
   unitTitles: Record<string, string>;
   /** Companions keyed by `stt`. */
@@ -101,10 +107,12 @@ const createVocabDeck = ({ items, unitTitles, companions, ...config }: DeckConfi
     items,
   };
   const batches = new Map<string, VocabBatch>([all, ...unitGroups, ...lessons].map((batch) => [batch.key, batch]));
+  const itemsByKey = new Map(items.map((item) => [getItemKey(item), item]));
 
   return {
     ...config,
     items,
+    itemByKey: (key) => itemsByKey.get(key),
     unitGroups,
     firstLesson: lessons[0],
     firstLessonKey: lessons[0] ? lessons[0].key : ALL_BATCH_KEY,
@@ -119,8 +127,6 @@ export const N3_DECK = createVocabDeck({
   id: "n3",
   level: "N3",
   source: "Mimikara Oboeru N3",
-  unrememberedStorageKey: "mimikara_unremembered_words",
-  srsStorageKey: "mimikara_srs_n3",
   items: cleanVocabData(n3VocabData as RawVocabItem[]),
   companions: companionsData.n3 as Record<string, Companion[]>,
   unitTitles: {
@@ -152,8 +158,6 @@ const createJtestDeck = (id: "n5" | "n4" | "n2", data: JtestVocabData): VocabDec
     id,
     level: id.toUpperCase(),
     source: `${data.title} · ${data.source}`,
-    unrememberedStorageKey: `mimikara_${id}_unremembered_words`,
-    srsStorageKey: `mimikara_srs_${id}`,
     companions: companionsData[id] as Record<string, Companion[]>,
     // The jtest lists have no Hán Việt of their own: it is derived from the kanji.
     items: cleanVocabData(data.words.map((word) => ({ ...word, han_viet: getHanViet(word.kanji ?? "") }))),
@@ -165,10 +169,3 @@ export const N4_DECK = createJtestDeck("n4", n4VocabData);
 export const N2_DECK = createJtestDeck("n2", n2VocabData);
 
 export const isUnitBatch = (key: string): boolean => key.startsWith("unit_");
-
-export const getItemKey = (item: { stt?: string | number; question_text?: string; meaning?: string }) => {
-  if (item.stt !== undefined && item.stt !== null && String(item.stt).trim() !== "") {
-    return `stt_${item.stt}`;
-  }
-  return `${item.question_text || ""}:::${item.meaning || ""}`;
-};

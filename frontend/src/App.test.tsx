@@ -1,7 +1,13 @@
-import { render, screen, fireEvent, within } from "@testing-library/react";
-import { describe, it, expect, beforeEach, vi } from "vitest";
+import { render, screen, fireEvent, within, waitFor } from "@testing-library/react";
+import { describe, it, expect, beforeEach, afterEach, vi } from "vitest";
 import App from "./App";
-import { N2_DECK, N3_DECK, N4_DECK, N5_DECK } from "./data/vocabDecks";
+import { N2_DECK, N3_DECK, N4_DECK, N5_DECK, getItemKey } from "./data/vocabDecks";
+import { serveFakeApi } from "./test/fakeApi";
+import type { DeckId, DeckProgress, WordStatus } from "./types/progress";
+import type { VocabItem } from "./types/quiz";
+import { progressStorageKey } from "./utils/progressStore";
+
+const USER = "tester";
 
 const vocabPanel = () => document.getElementById("panel-n3-vocab")!;
 const optionButtons = () => Array.from(vocabPanel().querySelectorAll<HTMLElement>(".option"));
@@ -9,27 +15,62 @@ const questionCard = () => vocabPanel().querySelector<HTMLElement>(".question-ca
 const progressCount = () => vocabPanel().querySelector(".progress-count")!.textContent;
 // Every vocabulary panel stays mounted, so queries that also see hidden elements are scoped to the N3 panel.
 const batchSelect = () => within(vocabPanel()).getByLabelText<HTMLSelectElement>("Chọn bài");
+const listButton = () => within(vocabPanel()).getByRole("button", { name: /Xem danh sách từ chưa nhớ/i });
 const levelTab = (level: string) => screen.getByRole("tab", { name: new RegExp(`^${level} `) });
 const shownPanels = () => screen.getAllByRole("tabpanel").map((panel) => panel.id);
+const n3Word = (word: string) => N3_DECK.items.find((i) => (i.kanji || i.hiragana) === word)!;
 
-/** Meaning of the word currently asked, looked up from the vocabulary data. */
-const currentMeaning = () => {
+/** The item asked in the N3 question card, looked up from the vocabulary data. */
+const currentItem = () => {
   const word = questionCard().querySelector(".word-main")!.textContent;
   const lesson = questionCard().querySelector(".badge.tone-success")?.textContent;
-  const item = N3_DECK.items.find((i) => (i.kanji || i.hiragana) === word && (!lesson || i.lesson === lesson));
-  return item!.meaning;
+  return N3_DECK.items.find((i) => (i.kanji || i.hiragana) === word && (!lesson || i.lesson === lesson))!;
 };
 
 const answer = (correct: boolean) => {
-  const meaning = currentMeaning();
+  const { meaning } = currentItem();
   const button = optionButtons().find((b) => (b.querySelector(".option-text")!.textContent === meaning) === correct);
   fireEvent.click(button!);
+};
+
+/** Progress of a learner in a deck, as cached on this device. */
+const progressOf = (deck: DeckId, user = USER): DeckProgress =>
+  JSON.parse(localStorage.getItem(progressStorageKey(user)) ?? "{}").decks?.[deck] ?? { words: {}, cards: {} };
+
+const wordsWith = (status: WordStatus, deck: DeckId, user = USER) =>
+  Object.entries(progressOf(deck, user).words)
+    .filter(([, entry]) => entry.s === status)
+    .map(([key]) => key);
+
+/** Logs USER in, with these words to review in a deck saved on this device. */
+const loginWithUnremembered = (deck: DeckId, items: VocabItem[]) => {
+  localStorage.setItem("mimikara_user", USER);
+  const words = Object.fromEntries(items.map((item, i) => [getItemKey(item), { s: "u", t: i + 1 }]));
+  localStorage.setItem(progressStorageKey(USER), JSON.stringify({ decks: { [deck]: { words, cards: {} } }, dirty: {} }));
+};
+
+const PASSWORD = "mat-khau-1";
+
+const submitAccount = (button: "Đăng nhập" | "Đăng ký", username: string, password = PASSWORD) => {
+  fireEvent.change(screen.getByLabelText("Tên đăng nhập"), { target: { value: username } });
+  fireEvent.change(screen.getByLabelText("Mật khẩu"), { target: { value: password } });
+  fireEvent.click(screen.getByRole("button", { name: button }));
+};
+const login = (username: string, password?: string) => submitAccount("Đăng nhập", username, password);
+const register = (username: string, password?: string) => submitAccount("Đăng ký", username, password);
+
+/** Logging out saves the last changes first, then shows the login. */
+const logout = async () => {
+  fireEvent.click(screen.getByRole("button", { name: "Đăng xuất" }));
+  // A role query over every mounted level is too slow to poll.
+  await screen.findByLabelText("Mật khẩu", {}, { timeout: 5_000 });
 };
 
 describe("Mimikara Oboeru N3 – vocabulary practice", () => {
   beforeEach(() => {
     vi.clearAllMocks();
     localStorage.clear();
+    localStorage.setItem("mimikara_user", USER);
   });
 
   it("renders the header and quiz statistics", () => {
@@ -71,8 +112,29 @@ describe("Mimikara Oboeru N3 – vocabulary practice", () => {
 
     const legend = vocabPanel().querySelector<HTMLElement>(".progress-legend")!;
     expect(within(legend).getByText(/Cần làm lại/).querySelector("strong")!.textContent).toBe("1");
-    expect(JSON.parse(localStorage.getItem("mimikara_unremembered_words") || "[]")).toHaveLength(1);
+    expect(wordsWith("u", "n3")).toHaveLength(1);
     expect(screen.getByText(/tự động thêm vào danh sách Chưa nhớ/i)).toBeInTheDocument();
+  });
+
+  it("counts a correctly answered word as remembered, in the level tab and the word lists", () => {
+    render(<App />);
+    const word = currentItem();
+    expect(levelTab("N3")).toHaveTextContent(`0/${N3_DECK.items.length}`);
+
+    answer(true);
+    expect(wordsWith("k", "n3")).toEqual([getItemKey(word)]);
+    expect(levelTab("N3")).toHaveTextContent(`1/${N3_DECK.items.length}`);
+
+    fireEvent.click(listButton());
+    const dialog = screen.getByRole("dialog");
+    fireEvent.click(within(dialog).getByRole("button", { name: /✅ Đã nhớ/ }));
+    expect(within(dialog).getByText(/Bảng từ đã nhớ \(1 từ\)/)).toBeInTheDocument();
+    expect(within(dialog).getByText(word.question_text)).toBeInTheDocument();
+
+    // Back to the words to review.
+    fireEvent.click(within(dialog).getByRole("button", { name: "📌 Chưa nhớ" }));
+    expect(wordsWith("u", "n3")).toEqual([getItemKey(word)]);
+    expect(levelTab("N3")).toHaveTextContent(`0/${N3_DECK.items.length}`);
   });
 
   it("toggles dark and light mode", () => {
@@ -171,16 +233,17 @@ describe("Mimikara Oboeru N3 – vocabulary practice", () => {
     expect(screen.getByRole("button", { name: /Câu tiếp theo/i })).toBeInTheDocument();
   });
 
-  it("marks word as unremembered and remembered after answering, with localStorage persistence", () => {
+  it("marks word as unremembered and remembered after answering", () => {
     render(<App />);
 
     fireEvent.click(optionButtons()[0]);
 
     fireEvent.click(screen.getByRole("button", { name: /Chưa nhớ \(C\)/i }));
-    expect(JSON.parse(localStorage.getItem("mimikara_unremembered_words") || "[]").length).toBeGreaterThanOrEqual(1);
+    expect(wordsWith("u", "n3")).toHaveLength(1);
 
     fireEvent.click(screen.getByRole("button", { name: /Đã nhớ \(D\)/i }));
-    expect(JSON.parse(localStorage.getItem("mimikara_unremembered_words") || "[]")).toHaveLength(0);
+    expect(wordsWith("u", "n3")).toHaveLength(0);
+    expect(wordsWith("k", "n3")).toHaveLength(1);
   });
 
   it("marks word as unremembered via 'c' and remembered via 'd' keyboard shortcuts", () => {
@@ -189,21 +252,17 @@ describe("Mimikara Oboeru N3 – vocabulary practice", () => {
     fireEvent.click(optionButtons()[0]);
 
     fireEvent.keyDown(window, { key: "c" });
-    expect(JSON.parse(localStorage.getItem("mimikara_unremembered_words") || "[]").length).toBeGreaterThanOrEqual(1);
+    expect(wordsWith("u", "n3")).toHaveLength(1);
 
     fireEvent.keyDown(window, { key: "d" });
-    expect(JSON.parse(localStorage.getItem("mimikara_unremembered_words") || "[]")).toHaveLength(0);
+    expect(wordsWith("u", "n3")).toHaveLength(0);
   });
 
   it("starts reviewing unremembered words from the list modal and displays the review mode tag", () => {
-    const testVocab = [
-      { stt: 999, kanji: "試験", han_viet: "THÍ NGHIỆM", hiragana: "しけん", meaning: "kỳ thi", question_text: "試験 (しけん)" },
-    ];
-    localStorage.setItem("mimikara_unremembered_words", JSON.stringify(testVocab));
-
+    loginWithUnremembered("n3", [n3Word("家庭")]);
     render(<App />);
 
-    fireEvent.click(screen.getByRole("button", { name: /Xem danh sách từ chưa nhớ/i }));
+    fireEvent.click(listButton());
     fireEvent.click(screen.getByRole("button", { name: /Ôn tập các từ này/i }));
 
     expect(screen.queryByRole("dialog")).not.toBeInTheDocument();
@@ -212,18 +271,14 @@ describe("Mimikara Oboeru N3 – vocabulary practice", () => {
   });
 
   it("finishes a review round and continues it with Enter", () => {
-    const testVocab = [
-      { stt: 999, kanji: "試験", han_viet: "THÍ NGHIỆM", hiragana: "しけん", meaning: "kỳ thi", question_text: "試験 (しけん)" },
-    ];
-    localStorage.setItem("mimikara_unremembered_words", JSON.stringify(testVocab));
-
+    loginWithUnremembered("n3", [n3Word("家庭")]);
     render(<App />);
     fireEvent.change(batchSelect(), { target: { value: "unremembered" } });
 
-    const correct = optionButtons().find((b) => b.textContent?.includes("kỳ thi"))!;
-    fireEvent.click(correct);
+    fireEvent.click(optionButtons().find((b) => b.querySelector(".option-text")!.textContent === "gia đình")!);
     fireEvent.keyDown(window, { key: "Enter" });
 
+    // A correct answer does not take a word out of the list: "Đã nhớ" does.
     expect(screen.getByText(/Hoàn thành 1 lượt ôn tập! Hiện còn 1 từ chưa nhớ/i)).toBeInTheDocument();
     expect(screen.getByRole("button", { name: /Tiếp tục ôn tập \(1 từ còn lại\)/i })).toBeInTheDocument();
 
@@ -243,14 +298,10 @@ describe("Mimikara Oboeru N3 – vocabulary practice", () => {
   });
 
   it("opens unremembered words modal, displays words list and closes modal", () => {
-    const testVocab = [
-      { stt: 312, kanji: "家庭", han_viet: "GIA ĐÌNH", hiragana: "かてい", meaning: "gia đình", question_text: "家庭 (かてい)" },
-    ];
-    localStorage.setItem("mimikara_unremembered_words", JSON.stringify(testVocab));
-
+    loginWithUnremembered("n3", [n3Word("家庭")]);
     render(<App />);
 
-    fireEvent.click(screen.getByRole("button", { name: /Xem danh sách từ chưa nhớ/i }));
+    fireEvent.click(listButton());
 
     const dialog = screen.getByRole("dialog");
     expect(within(dialog).getByText(/Bảng từ chưa nhớ \(1 từ\)/i)).toBeInTheDocument();
@@ -264,26 +315,21 @@ describe("Mimikara Oboeru N3 – vocabulary practice", () => {
   });
 
   it("filters the modal list, ignores shortcuts while typing and closes with Escape", () => {
-    const testVocab = [
-      { stt: 312, kanji: "家庭", han_viet: "GIA ĐÌNH", hiragana: "かてい", meaning: "gia đình", question_text: "家庭 (かてい)" },
-      { stt: 999, kanji: "試験", han_viet: "THÍ NGHIỆM", hiragana: "しけん", meaning: "kỳ thi", question_text: "試験 (しけん)" },
-    ];
-    localStorage.setItem("mimikara_unremembered_words", JSON.stringify(testVocab));
-
+    loginWithUnremembered("n3", [n3Word("家庭"), n3Word("コンテスト")]);
     render(<App />);
-    fireEvent.click(screen.getByRole("button", { name: /Xem danh sách từ chưa nhớ/i }));
+    fireEvent.click(listButton());
 
     const search = screen.getByRole("searchbox", { name: /Tìm từ chưa nhớ/i });
     fireEvent.change(search, { target: { value: "thi" } });
     fireEvent.keyDown(search, { key: "m" });
 
     const dialog = screen.getByRole("dialog");
-    expect(within(dialog).getByText("試験 (しけん)")).toBeInTheDocument();
+    expect(within(dialog).getByText("コンテスト")).toBeInTheDocument();
     expect(within(dialog).queryByText("家庭 (かてい)")).not.toBeInTheDocument();
     expect(localStorage.getItem("mimikara_is_muted")).toBe("false");
 
-    fireEvent.click(within(dialog).getAllByRole("button", { name: /Đã nhớ/i })[0]);
-    expect(JSON.parse(localStorage.getItem("mimikara_unremembered_words") || "[]")).toHaveLength(1);
+    fireEvent.click(within(dialog).getByRole("button", { name: "✨ Đã nhớ" }));
+    expect(wordsWith("u", "n3")).toEqual([getItemKey(n3Word("家庭"))]);
 
     fireEvent.keyDown(window, { key: "Escape" });
     expect(screen.queryByRole("dialog")).not.toBeInTheDocument();
@@ -321,6 +367,7 @@ describe("Mimikara Oboeru N3 – vocabulary practice", () => {
 describe("JLPT levels and their sections", () => {
   beforeEach(() => {
     localStorage.clear();
+    localStorage.setItem("mimikara_user", USER);
   });
 
   it("lists the levels from N5 to N2 and opens the N3 vocabulary first", () => {
@@ -328,7 +375,7 @@ describe("JLPT levels and their sections", () => {
 
     const levels = within(screen.getByRole("tablist", { name: "Cấp độ JLPT" })).getAllByRole("tab");
     expect(levels.map((tab) => tab.querySelector(".level-name")!.textContent)).toEqual(["N5", "N4", "N3", "N2"]);
-    expect(levelTab("N5")).toHaveTextContent(`${N5_DECK.items.length} từ`);
+    expect(levelTab("N5")).toHaveTextContent(`0/${N5_DECK.items.length}`);
     expect(levelTab("N3")).toHaveAttribute("aria-selected", "true");
     expect(shownPanels()).toEqual(["level-n3", "panel-n3-vocab"]);
   });
@@ -385,6 +432,7 @@ describe("JLPT levels and their sections", () => {
 describe("N5 and N4 vocabulary", () => {
   beforeEach(() => {
     localStorage.clear();
+    localStorage.setItem("mimikara_user", USER);
     render(<App />);
   });
 
@@ -409,8 +457,8 @@ describe("N5 and N4 vocabulary", () => {
 
     fireEvent.click(panel.querySelector<HTMLElement>(".option")!);
     fireEvent.keyDown(window, { key: "c" });
-    expect(JSON.parse(localStorage.getItem("mimikara_n5_unremembered_words") || "[]")).toHaveLength(1);
-    expect(JSON.parse(localStorage.getItem("mimikara_unremembered_words") || "[]")).toHaveLength(0);
+    expect(wordsWith("u", "n5")).toHaveLength(1);
+    expect(wordsWith("u", "n3")).toHaveLength(0);
     // The hidden N3 session did not react to the click or the shortcut.
     expect(within(vocabPanel()).queryByText(/Câu tiếp theo/)).not.toBeInTheDocument();
 
@@ -418,10 +466,8 @@ describe("N5 and N4 vocabulary", () => {
     expect(localStorage.getItem("mimikara_vocab_mode_n5")).toBe("flashcard");
     fireEvent.keyDown(window, { key: " " });
     fireEvent.keyDown(window, { key: "3" });
-    expect(Object.values(JSON.parse(localStorage.getItem("mimikara_srs_n5") || "{}"))).toEqual([
-      expect.objectContaining({ box: 1, reviews: 1 }),
-    ]);
-    expect(localStorage.getItem("mimikara_srs_n3")).toBeNull();
+    expect(Object.values(progressOf("n5").cards)).toEqual([expect.objectContaining({ box: 1, reviews: 1 })]);
+    expect(progressOf("n3").cards).toEqual({});
   });
 });
 
@@ -431,6 +477,7 @@ describe("N2 vocabulary", () => {
 
   beforeEach(() => {
     localStorage.clear();
+    localStorage.setItem("mimikara_user", USER);
     render(<App />);
     fireEvent.click(levelTab("N2"));
   });
@@ -456,8 +503,8 @@ describe("N2 vocabulary", () => {
     fireEvent.click(n2Panel().querySelector<HTMLElement>(".option")!);
     fireEvent.keyDown(window, { key: "c" });
 
-    expect(JSON.parse(localStorage.getItem("mimikara_n2_unremembered_words") || "[]")).toHaveLength(1);
-    expect(JSON.parse(localStorage.getItem("mimikara_unremembered_words") || "[]")).toHaveLength(0);
+    expect(wordsWith("u", "n2")).toHaveLength(1);
+    expect(wordsWith("u", "n3")).toHaveLength(0);
     // The hidden N3 session did not react to the click or the shortcut.
     expect(within(vocabPanel()).queryByText(/Câu tiếp theo/)).not.toBeInTheDocument();
   });
@@ -471,12 +518,12 @@ describe("N2 vocabulary", () => {
 });
 
 describe("Học 1 được 2 and flashcards", () => {
-  const word = N3_DECK.items.find((i) => i.kanji === "倒れる")!;
-  const srsCards = () => JSON.parse(localStorage.getItem("mimikara_srs_n3") || "{}");
+  const word = n3Word("倒れる");
+  const srsCards = () => progressOf("n3").cards;
 
   beforeEach(() => {
     localStorage.clear();
-    localStorage.setItem("mimikara_unremembered_words", JSON.stringify([word]));
+    loginWithUnremembered("n3", [word]);
     render(<App />);
     fireEvent.change(batchSelect(), { target: { value: "unremembered" } });
   });
@@ -507,16 +554,16 @@ describe("Học 1 được 2 and flashcards", () => {
 
     // Forgotten: comes back in the same session and stays in the unremembered list.
     fireEvent.keyDown(window, { key: "1" });
-    expect(srsCards()[`stt_${word.stt}`]).toMatchObject({ box: 0, lapses: 1 });
+    expect(srsCards()[getItemKey(word)]).toMatchObject({ box: 0, lapses: 1 });
     expect(within(card()).getByText("🔁 Ôn tập lần 2")).toBeInTheDocument();
 
     fireEvent.click(within(card()).getByRole("button", { name: /Lật thẻ/ }));
     fireEvent.click(within(card()).getByRole("button", { name: /Nhớ/ }));
 
-    expect(srsCards()[`stt_${word.stt}`]).toMatchObject({ box: 1, reviews: 2 });
+    expect(srsCards()[getItemKey(word)]).toMatchObject({ box: 1, reviews: 2 });
     expect(within(vocabPanel()).getByText("Hoàn thành phiên ôn tập!")).toBeInTheDocument();
     expect(within(vocabPanel()).getByText(/Ngày mai có 1 thẻ đến hạn ôn/)).toBeInTheDocument();
-    expect(JSON.parse(localStorage.getItem("mimikara_unremembered_words") || "[]")).toHaveLength(1);
+    expect(wordsWith("u", "n3")).toEqual([getItemKey(word)]);
   });
 
   it("keeps the quiz shortcuts away from the flashcards", () => {
@@ -525,5 +572,136 @@ describe("Học 1 được 2 and flashcards", () => {
 
     expect(srsCards()).toEqual({});
     expect(vocabPanel().querySelector(".question-card .options")).toBeNull();
+  });
+});
+
+describe("Accounts and the progress of each learner", () => {
+  beforeEach(() => {
+    localStorage.clear();
+  });
+
+  afterEach(() => {
+    // Back to the visibility of the document prototype.
+    delete (document as { visibilityState?: DocumentVisibilityState }).visibilityState;
+  });
+
+  it("registers a new account after checking the username and password", async () => {
+    const api = serveFakeApi();
+    const { unmount } = render(<App />);
+    expect(screen.queryByRole("tablist", { name: "Cấp độ JLPT" })).not.toBeInTheDocument();
+
+    register("bien nguyen");
+    expect(screen.getByRole("alert")).toHaveTextContent(/Tên đăng nhập chưa hợp lệ/);
+    register("Bien.Nguyen", "12345");
+    expect(screen.getByRole("alert")).toHaveTextContent(/Mật khẩu chưa hợp lệ/);
+    expect(api.fetch).not.toHaveBeenCalled();
+
+    register(" Bien.Nguyen ");
+    expect(await screen.findByText(/Đã tạo tài khoản/)).toBeInTheDocument();
+    expect(screen.getByText("👤 bien.nguyen")).toBeInTheDocument();
+    expect(api.accounts["bien.nguyen"].password).toBe(PASSWORD);
+    expect(await screen.findByText("Đã lưu")).toBeInTheDocument();
+
+    // The next visit opens the levels directly.
+    unmount();
+    render(<App />);
+    expect(screen.getByRole("tablist", { name: "Cấp độ JLPT" })).toBeInTheDocument();
+  });
+
+  it("logs in with the right password and downloads the progress saved from another device", async () => {
+    const key = getItemKey(n3Word("家庭"));
+    serveFakeApi({ "an.le": { password: PASSWORD, progress: { n3: { words: { [key]: { s: "u", t: 1 } }, cards: {} } } } });
+    render(<App />);
+
+    login("chua.co");
+    expect(await screen.findByText(/Chưa có tài khoản tên này/)).toBeInTheDocument();
+    login("an.le", "sai-mat-khau");
+    expect(await screen.findByText(/Sai mật khẩu/)).toBeInTheDocument();
+    register("an.le", "mat-khau-khac");
+    expect(await screen.findByText(/đã có người dùng/)).toBeInTheDocument();
+
+    login("An.Le");
+    expect(await screen.findByText(/Chào mừng trở lại/)).toBeInTheDocument();
+    expect(await screen.findByText("Đã lưu")).toBeInTheDocument();
+    expect(listButton()).toHaveTextContent("1");
+  });
+
+  it("explains that logging in needs the server", async () => {
+    render(<App />);
+    login(USER);
+    expect(await screen.findByRole("alert")).toHaveTextContent(/Không kết nối được máy chủ/);
+  });
+
+  it("keeps the progress of each learner apart and saves it before logging out", async () => {
+    const api = serveFakeApi({ "an.le": { password: PASSWORD, progress: {} }, binh: { password: "mat-khau-2", progress: {} } });
+    render(<App />);
+    login("an.le");
+    await screen.findByText("Đã lưu");
+    answer(false);
+    expect(listButton()).toHaveTextContent("1");
+
+    await logout();
+    const calls = api.fetch.mock.calls.map(([url, init]) => `${init?.method} ${url}`);
+    expect(calls.slice(-2)).toEqual(["PATCH /api/users/an.le/progress/n3", "POST /api/logout"]);
+    expect(Object.keys(api.accounts["an.le"].progress.n3!.words)).toHaveLength(1);
+
+    login("binh", "mat-khau-2");
+    await screen.findByText("Đã lưu");
+    expect(listButton()).toHaveTextContent("0");
+
+    await logout();
+    login("an.le");
+    await screen.findByText("Đã lưu");
+    expect(listButton()).toHaveTextContent("1");
+  });
+
+  it("asks to log in again when the session expired, keeping the progress of this device", async () => {
+    serveFakeApi({ [USER]: { password: PASSWORD, progress: {} } });
+    loginWithUnremembered("n3", [n3Word("家庭")]);
+    render(<App />);
+
+    expect(await screen.findByText(/Phiên đăng nhập đã hết hạn/)).toBeInTheDocument();
+    expect(wordsWith("u", "n3")).toHaveLength(1);
+
+    login(USER);
+    expect(await screen.findByText("Đã lưu")).toBeInTheDocument();
+    expect(listButton()).toHaveTextContent("1");
+  });
+
+  it("saves the changes on the server when the page is hidden", async () => {
+    const api = serveFakeApi({ [USER]: { password: PASSWORD, progress: {} } }, USER);
+    localStorage.setItem("mimikara_user", USER);
+    render(<App />);
+    expect(await screen.findByText("Đã lưu")).toBeInTheDocument();
+
+    answer(false);
+    expect(screen.getByText("Đang lưu…")).toBeInTheDocument();
+
+    Object.defineProperty(document, "visibilityState", { value: "hidden", configurable: true });
+    document.dispatchEvent(new Event("visibilitychange"));
+
+    expect(await screen.findByText("Đã lưu")).toBeInTheDocument();
+    await waitFor(() => expect(Object.keys(api.accounts[USER].progress.n3?.words ?? {})).toHaveLength(1));
+    const [[, init]] = api.fetch.mock.calls.filter(([url]) => url === `/api/users/${USER}/progress/n3`);
+    expect(init).toMatchObject({ method: "PATCH", keepalive: true });
+  });
+
+  it("moves the progress saved before logins existed into the learner's progress", async () => {
+    serveFakeApi({ [USER]: { password: PASSWORD, progress: {} } }, USER);
+    localStorage.setItem("mimikara_unremembered_words", JSON.stringify([n3Word("家庭")]));
+    localStorage.setItem("mimikara_srs_n2", JSON.stringify({ stt_5: { box: 2, due: 1, reviews: 2, lapses: 0 } }));
+    localStorage.setItem("mimikara_user", USER);
+    render(<App />);
+
+    const dialog = await screen.findByRole("dialog", { name: /Tiến độ cũ/ });
+    expect(dialog).toHaveTextContent("1 từ chưa nhớ và 1 thẻ ghi nhớ");
+    fireEvent.click(within(dialog).getByRole("button", { name: /Gộp vào tiến độ của tester/ }));
+
+    expect(screen.queryByRole("dialog")).not.toBeInTheDocument();
+    expect(wordsWith("u", "n3")).toEqual([getItemKey(n3Word("家庭"))]);
+    expect(wordsWith("k", "n2")).toEqual(["stt_5"]);
+    expect(progressOf("n2").cards.stt_5).toMatchObject({ box: 2, reviews: 2 });
+    expect(localStorage.getItem("mimikara_unremembered_words")).toBeNull();
+    expect(localStorage.getItem("mimikara_srs_n2")).toBeNull();
   });
 });

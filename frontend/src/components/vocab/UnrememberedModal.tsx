@@ -4,13 +4,36 @@ import { trackEvent } from "../../utils/gtm";
 import Modal from "../ui/Modal";
 import VocabTable from "../ui/VocabTable";
 
+const LISTS = {
+  unremembered: {
+    label: "📌 Chưa nhớ",
+    title: "📋 Bảng từ chưa nhớ",
+    search: "Tìm từ chưa nhớ",
+    empty: "🎉 Danh sách Chưa nhớ hiện đang trống!",
+    tone: "tone-warning",
+  },
+  known: {
+    label: "✅ Đã nhớ",
+    title: "✅ Bảng từ đã nhớ",
+    search: "Tìm từ đã nhớ",
+    empty: "Chưa có từ nào: trả lời đúng một câu hoặc bấm “Đã nhớ” để thêm từ vào đây.",
+    tone: "tone-success",
+  },
+} as const;
+
+type ListId = keyof typeof LISTS;
+
 interface UnrememberedModalProps {
+  /** Words to review (chưa nhớ). */
   words: VocabItem[];
+  /** Remembered words (đã nhớ). */
+  known: VocabItem[];
   onClose: () => void;
   onReview: () => void;
   onSpeak: (item: VocabItem) => void;
   companionsOf: (item: VocabItem) => Companion[];
   onMarkRemembered: (item: VocabItem) => void;
+  onMarkUnremembered: (item: VocabItem) => void;
 }
 
 const matchesQuery = (item: VocabItem, q: string) =>
@@ -27,49 +50,67 @@ const formatForClipboard = (words: VocabItem[]) =>
     })
     .join("\n");
 
+/** The learner's words to review and remembered words of a deck: search, copy, review, move between lists. */
 export default function UnrememberedModal({
   words,
+  known,
   onClose,
   onReview,
   onSpeak,
   companionsOf,
   onMarkRemembered,
+  onMarkUnremembered,
 }: UnrememberedModalProps) {
+  const [list, setList] = useState<ListId>("unremembered");
   const [query, setQuery] = useState("");
   const [copied, setCopied] = useState(false);
+  const shown = list === "unremembered" ? words : known;
 
   const filtered = useMemo(() => {
     const q = query.toLowerCase().trim();
-    return q ? words.filter((item) => matchesQuery(item, q)) : words;
-  }, [words, query]);
+    return q ? shown.filter((item) => matchesQuery(item, q)) : shown;
+  }, [shown, query]);
 
   const copyList = () => {
     navigator.clipboard
-      ?.writeText(formatForClipboard(words))
+      ?.writeText(formatForClipboard(shown))
       .then(() => {
         setCopied(true);
         setTimeout(() => setCopied(false), 2000);
       })
-      .catch((e) => console.error("Failed to copy unremembered words", e));
-    trackEvent("copy_unremembered_text", { count: words.length });
+      .catch((e) => console.error("Failed to copy the word list", e));
+    trackEvent(list === "unremembered" ? "copy_unremembered_text" : "copy_known_text", { count: shown.length });
   };
 
   return (
     <Modal
-      title={`📋 Bảng từ chưa nhớ (${words.length} từ)`}
+      title={`${LISTS[list].title} (${shown.length} từ)`}
       subtitle="Xem bảng từ vựng, tìm kiếm, sao chép và ôn tập lại"
       onClose={onClose}
       toolbar={
         <>
+          <div className="list-switch" role="group" aria-label="Danh sách từ">
+            {(Object.keys(LISTS) as ListId[]).map((id) => (
+              <button
+                key={id}
+                type="button"
+                className={`btn btn--sm btn--secondary ${LISTS[id].tone} ${list === id ? "is-active" : ""}`}
+                aria-pressed={list === id}
+                onClick={() => setList(id)}
+              >
+                {LISTS[id].label} <span className="count-pill">{(id === "unremembered" ? words : known).length}</span>
+              </button>
+            ))}
+          </div>
           <input
             type="search"
             className="input"
             placeholder="🔍 Tìm theo Kanji, Hiragana, Hán Việt hoặc nghĩa..."
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            aria-label="Tìm từ chưa nhớ"
+            aria-label={LISTS[list].search}
           />
-          <button type="button" className="btn btn--sm btn--secondary" onClick={copyList} disabled={words.length === 0}>
+          <button type="button" className="btn btn--sm btn--secondary" onClick={copyList} disabled={shown.length === 0}>
             {copied ? "✅ Đã sao chép!" : "📋 Sao chép danh sách"}
           </button>
         </>
@@ -77,10 +118,10 @@ export default function UnrememberedModal({
       footer={
         <>
           <span className="muted">
-            Hiển thị: <strong>{filtered.length}</strong> / {words.length} từ
+            Hiển thị: <strong>{filtered.length}</strong> / {shown.length} từ
           </span>
           <div className="modal-footer-actions">
-            {words.length > 0 && (
+            {list === "unremembered" && words.length > 0 && (
               <button type="button" className="btn btn--sm btn--secondary tone-warning" onClick={onReview}>
                 📌 Ôn tập các từ này
               </button>
@@ -92,8 +133,8 @@ export default function UnrememberedModal({
         </>
       }
     >
-      {words.length === 0 ? (
-        <p className="empty-state">🎉 Danh sách Chưa nhớ hiện đang trống!</p>
+      {shown.length === 0 ? (
+        <p className="empty-state">{LISTS[list].empty}</p>
       ) : filtered.length === 0 ? (
         <p className="empty-state">Không tìm thấy từ vựng nào khớp với từ khóa "{query}".</p>
       ) : (
@@ -101,16 +142,27 @@ export default function UnrememberedModal({
           items={filtered}
           onSpeak={onSpeak}
           companionsOf={companionsOf}
-          renderAction={(item) => (
-            <button
-              type="button"
-              className="btn btn--xs btn--secondary tone-success"
-              onClick={() => onMarkRemembered(item)}
-              title="Đánh dấu đã nhớ (gỡ khỏi danh sách chưa nhớ)"
-            >
-              ✨ Đã nhớ
-            </button>
-          )}
+          renderAction={(item) =>
+            list === "unremembered" ? (
+              <button
+                type="button"
+                className="btn btn--xs btn--secondary tone-success"
+                onClick={() => onMarkRemembered(item)}
+                title="Đánh dấu đã nhớ (gỡ khỏi danh sách chưa nhớ)"
+              >
+                ✨ Đã nhớ
+              </button>
+            ) : (
+              <button
+                type="button"
+                className="btn btn--xs btn--secondary tone-warning"
+                onClick={() => onMarkUnremembered(item)}
+                title="Chuyển lại vào danh sách chưa nhớ để ôn tập"
+              >
+                📌 Chưa nhớ
+              </button>
+            )
+          }
         />
       )}
     </Modal>

@@ -16,14 +16,6 @@ export const enumCodec = <T extends string>(allowed: readonly T[]): StorageCodec
   serialize: (value) => value,
 });
 
-export const jsonArrayCodec = <T>(): StorageCodec<T[]> => ({
-  parse: (raw) => {
-    const parsed = JSON.parse(raw);
-    return Array.isArray(parsed) ? (parsed as T[]) : undefined;
-  },
-  serialize: (value) => JSON.stringify(value),
-});
-
 /**
  * `useState` backed by localStorage. The codec must be a stable reference
  * (declare it at module level) so the value is only written when it changes.

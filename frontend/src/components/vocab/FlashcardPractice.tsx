@@ -40,6 +40,8 @@ interface FlashcardPracticeProps {
   isSpeaking: boolean;
   speak: (text: string, force?: boolean) => void;
   onForget: (item: VocabItem) => void;
+  /** Graded Nhớ or Dễ. */
+  onRecall: (item: VocabItem) => void;
 }
 
 /**
@@ -55,9 +57,10 @@ export default function FlashcardPractice({
   isSpeaking,
   speak,
   onForget,
+  onRecall,
 }: FlashcardPracticeProps) {
   const { isMuted, hideHanViet, hideHiragana } = settings;
-  const { cards, grade } = useSrsProgress(deck.srsStorageKey);
+  const { cards, grade } = useSrsProgress(deck.id);
   const [today] = useState(dayNumber);
   const [queue, setQueue] = useState(() => buildStudyQueue(items, cards, getItemKey, today, NEW_CARDS_PER_SESSION));
   const [flipped, setFlipped] = useState(false);
@@ -83,6 +86,7 @@ export default function FlashcardPractice({
       onForget(current);
       setQueue([...rest.slice(0, RELEARN_GAP), current, ...rest.slice(RELEARN_GAP)]);
     } else {
+      if (value === "good" || value === "easy") onRecall(current);
       setQueue(rest);
     }
     setFlipped(false);

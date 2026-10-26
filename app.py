@@ -1,12 +1,12 @@
 import aws_cdk as cdk
 
-from infra.frontend_stack import FrontendStack
+from infra.study_app_stack import StudyAppStack
 
 app = cdk.App()
 
 # The stack keeps its original CloudFormation name so deployments update it in place:
 # a new name would create a second stack, with a new CloudFront domain.
-FrontendStack(
+StudyAppStack(
     app,
     "TodoApiStack",
     env=cdk.Environment(

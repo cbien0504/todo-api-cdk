@@ -1,0 +1,3 @@
+# Backend tests only: the Lambda itself uses the standard library and the boto3 of its runtime.
+boto3
+moto[dynamodb]>=5
