@@ -1,4 +1,4 @@
-name: Deploy Todo API
+name: Deploy study app
 
 on:
   push:
@@ -28,18 +28,13 @@ jobs:
           python-version: "3.12"
           cache: "pip"
 
-      - name: Install Backend requirements
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r backend/requirements.txt
-
-      - name: Run Backend Unit Tests
-        run: |
-          PYTHONPATH=backend pytest backend/tests
-
       - name: Install Frontend Dependencies
         run: |
           npm ci --prefix frontend
+
+      - name: Lint Frontend
+        run: |
+          npm run lint --prefix frontend
 
       - name: Run Frontend Unit Tests
         run: |
@@ -60,6 +55,7 @@ jobs:
           npm install -g aws-cdk
           pip install -r requirements.txt
 
-      - name: CDK Deploy Todo Stack
+      # The stack keeps its original name (see app.py).
+      - name: CDK Deploy
         run: |
           cdk deploy TodoApiStack --require-approval never

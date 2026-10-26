@@ -1,6 +1,6 @@
-# Serverless Todo API on AWS (CDK & GitHub Actions OIDC)
+# Mimikara Oboeru – JLPT study app on AWS (CDK & GitHub Actions OIDC)
 
-A robust, modern serverless CRUD Todo Application managed via **AWS CDK (Python)**, featuring a secure static frontend hosted on **S3 + CloudFront (OAC)**, and automated CI/CD using **GitHub Actions** via passwordless **OIDC authentication**.
+A static **React** study app for JLPT vocabulary, hosted on **S3 + CloudFront (OAC)** and provisioned with **AWS CDK (Python)**. Every push to `main` is tested and deployed by **GitHub Actions** through passwordless **OIDC authentication**.
 
 [![Deploy](https://github.com/cbien0504/todo-api-cdk/actions/workflows/deploy.yml/badge.svg)](https://github.com/cbien0504/todo-api-cdk/actions/workflows/deploy.yml)
 
@@ -8,134 +8,94 @@ A robust, modern serverless CRUD Todo Application managed via **AWS CDK (Python)
 
 ## 📖 Overview
 
-This repository acts as a real-world demonstration and learning laboratory for provisioning enterprise-grade serverless architectures using the AWS Cloud Development Kit (CDK). 
+- **📖 Từ vựng N3 / 📗 Từ vựng N2** – Mimikara Oboeru N3 and the JLPT N2 list of jtest.net, practiced as a multiple-choice quiz or as spaced-repetition flashcards. Every answer also teaches its companion words (自動詞/他動詞 pair, synonyms, antonyms) and Hán Việt.
+- **📝 Luyện đề N3** – JLPT N3 文字・語彙 exam papers generated from `JLPT_N3_tu_vung_Minchan.docx`.
 
-By using a serverless model, the application achieves:
-* **Zero Infrastructure Management**: No OS updates or server configurations.
-* **Auto-Scaling**: Seamless scaling from zero requests to millions.
-* **Cost Efficiency**: Pay-as-you-go billing model with no idle runtime costs.
-* **High Availability**: Multi-Availability Zone deployment out of the box through AWS serverless primitives.
-
-### Frontend app
-
-The CloudFront-hosted frontend is a **Mimikara Oboeru** study app: N3 and N2 vocabulary quizzes and spaced-repetition flashcards with companion words (the N2 list and the related words are crawled from jtest.net) plus JLPT N3 文字・語彙 exam practice generated from `JLPT_N3_tu_vung_Minchan.docx`. See [frontend/README.md](frontend/README.md) for features, structure and how to regenerate the exam data.
+The app runs entirely in the browser: progress (unremembered words, flashcards, settings) is kept in `localStorage`. See [frontend/README.md](frontend/README.md) for features, structure and how the data is built.
 
 ---
 
 ## 📐 Architecture
 
 ```text
-┌─────────────────────────────────────────────────────────────┐
-│                     Client Browser                          │
-└──────────────┬───────────────────────────────┬──────────────┘
-               │                               │
-         Retrieves Web Assets            Makes API Calls
-               │                               │
-               ▼                               ▼
-┌──────────────────────────────┐┌─────────────────────────────┐
-│      Amazon CloudFront       ││     Amazon API Gateway      │
-└──────────────┬───────────────┘└──────────────┬──────────────┘
-               │                               │
-          Fetches from                         │ Triggers Handler
-               │                               │
-               ▼                               ▼
-┌──────────────────────────────┐┌─────────────────────────────┐
-│          Amazon S3           ││        AWS Lambda          │
-│      (Frontend Assets)       ││     (Python Handler)        │
-└──────────────────────────────┘└──────────────┬──────────────┘
-                                               │
-                                          Reads/Writes
-                                               │
-                                               ▼
-                                ┌─────────────────────────────┐
-                                │       Amazon DynamoDB       │
-                                │        (Todo Table)         │
-                                └─────────────────────────────┘
+┌──────────────────────┐      HTTPS      ┌──────────────────────┐   Origin Access   ┌──────────────────────┐
+│    Client Browser    │ ──────────────▶ │  Amazon CloudFront   │ ────────────────▶ │      Amazon S3       │
+└──────────────────────┘                 │  (SPA, edge cache)   │      Control      │ (frontend/dist, private)
+                                         └──────────────────────┘                   └──────────────────────┘
 ```
 
-### Infrastructure Components & Design Decisions
+* **Amazon S3**: private bucket holding the built frontend (`frontend/dist`), uploaded by a CDK `BucketDeployment` that also invalidates the CloudFront cache. `auto_delete_objects=True` and `RemovalPolicy.DESTROY` allow a clean teardown.
+* **Amazon CloudFront**: serves the app over HTTPS from edge locations. **Origin Access Control** blocks direct access to the bucket; 403/404 responses fall back to `index.html` for the single-page app.
 
-* **Amazon CloudFront**: Serves the static single-page client application globally with local caching at edge locations to minimize latency. Enabled with **Origin Access Control (OAC)** to block direct public requests to the S3 bucket, enforcing traffic through the CDN.
-* **Amazon S3**: Hosts the built frontend (`frontend/dist`). Configured with `auto_delete_objects=True` and `RemovalPolicy.DESTROY` to enable clean resources teardown upon CDK stack deletion.
-* **Amazon API Gateway**: Serverless REST API endpoint configured with CORS enabled. Serves as the Entrypoint routing HTTP methods to the backend Lambda function.
-* **AWS Lambda**: Leverages `Python 3.12` runtime to process requests, formulate JSON response payloads, and manage database operations.
-* **Amazon DynamoDB**: Key-value NoSQL database storing todos. Provisioned with **Pay-Per-Request (On-Demand)** billing mode, which scales down to zero dollars when the API experiences zero traffic.
+---
+
+## 📁 Repository layout
+
+```text
+.
+├── app.py                         # CDK app entry point
+├── infra/frontend_stack.py        # S3 bucket + CloudFront distribution + deployment
+├── frontend/                      # React + TypeScript + Vite app (see frontend/README.md)
+├── scripts/                       # data builders: exam papers, jtest.net crawler, companions, Hán Việt
+│   └── data/                      # raw jtest.net crawls used by scripts/build_vocab_data.py
+├── JLPT_N3_tu_vung_Minchan.docx   # source of the N3 exam papers
+└── .github/workflows/deploy.yml   # lint, test, build and deploy on push to main
+```
 
 ---
 
 ## 🛠️ Tech Stack
 
-* **Infrastructure as Code (IaC)**: AWS CDK (Python)
-* **API Layer**: Amazon API Gateway (REST API proxy)
-* **Compute Layer**: AWS Lambda (Python 3.12)
-* **Database Layer**: Amazon DynamoDB
-* **Web Hosting**: Amazon S3 & Amazon CloudFront (Origin Access Control)
-* **CI/CD Orchestration**: GitHub Actions (OpenID Connect federation)
+* **Frontend**: React 19, TypeScript, Vite, Vitest, Oxlint
+* **Infrastructure as Code**: AWS CDK (Python)
+* **Hosting**: Amazon S3 & Amazon CloudFront (Origin Access Control)
+* **CI/CD**: GitHub Actions (OpenID Connect federation)
 
 ---
 
 ## 📋 Prerequisites
 
-Before deploying the stack, ensure you have set up:
-1. **AWS Account**: Active account with configured billing/payment methods.
-2. **AWS CLI**: Installed and configured locally via `aws configure`.
-3. **Node.js (>= 20)**: Required for the AWS CDK CLI tool.
+1. **AWS Account** and the **AWS CLI** configured locally via `aws configure`.
+2. **Node.js (>= 20)**: for the frontend and the AWS CDK CLI.
    > [!WARNING]
    > Running the CDK CLI on deprecated Node.js versions (e.g. Node 12, 14, or 18) will cause compatibility warnings and execution failures. Ensure Node is on an active LTS release (v20 or v22).
-4. **Python (>= 3.10)**: Needed for CDK Python runtime.
-5. **AWS CDK CLI**: Installed globally via npm:
+3. **Python (>= 3.10)**: for the CDK app and the data scripts.
+4. **AWS CDK CLI**, installed globally:
    ```bash
    npm install -g aws-cdk
    ```
 
 ---
 
-## 🚀 Quick Start & Local Deployment
+## 🚀 Local development & deployment
 
-Follow these steps to deploy the application manually from your local workstation:
-
-1. **Clone the Repository**:
+1. **Clone the repository**:
    ```bash
    git clone https://github.com/cbien0504/todo-api-cdk.git
    cd todo-api-cdk
    ```
 
-2. **Configure Virtual Environment**:
+2. **Run the app locally**:
    ```bash
-   python3 -m venv .venv
-   source .venv/bin/activate
+   npm ci --prefix frontend
+   npm run dev --prefix frontend
    ```
 
-3. **Install Dependencies**:
+3. **Deploy manually** (the stack uploads `frontend/dist`, so build first):
    ```bash
+   python3 -m venv .venv && source .venv/bin/activate
    pip install -r requirements.txt
-   ```
-
-4. **Synthesize & Deploy**:
-   ```bash
-   cdk synth TodoApiStack
+   npm run build --prefix frontend
    cdk deploy TodoApiStack --require-approval never
    ```
 
----
-
-## 🧱 API Endpoints Reference
-
-Once deployed, the API Gateway exposes the following endpoints (replace `<api-id>` with your deployment's REST API ID):
-
-| Method | Endpoint | Description | Sample Request Body |
-| :--- | :--- | :--- | :--- |
-| **GET** | `/todos` | List all todo tasks | *None* |
-| **POST** | `/todos` | Create a new todo task | `{"title": "Learn AWS CDK", "done": false}` |
-| **GET** | `/todos/{id}` | Query a specific todo task | *None* |
-| **PUT** | `/todos/{id}` | Update title or progress status | `{"title": "Learn AWS CDK", "done": true}` |
-| **DELETE** | `/todos/{id}`| Delete a specific todo task | *None* |
+   The CloudFormation stack keeps its original name `TodoApiStack` so that deployments update it in place and the CloudFront URL does not change.
 
 ---
 
 ## 🤖 CI/CD with GitHub Actions (OIDC Setup)
 
-This project does not store static AWS Access Keys in GitHub Secrets. Instead, it utilizes **OpenID Connect (OIDC)** to securely acquire temporary security credentials.
+On every push to `main`, the workflow lints, tests and builds the frontend, then runs `cdk deploy`. It does not store static AWS Access Keys in GitHub Secrets: it uses **OpenID Connect (OIDC)** to acquire temporary security credentials.
 
 ### Initial AWS IAM Roles Configuration (Done Once)
 
