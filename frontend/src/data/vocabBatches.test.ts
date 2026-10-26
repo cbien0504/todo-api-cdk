@@ -33,6 +33,33 @@ describe("vocabulary decks", () => {
     expect(N2_DECK.items.filter((i) => i.han_viet.includes("?"))).toEqual([]);
   });
 
+  it("pairs words with companions: verb pairs, synonyms and antonyms", () => {
+    const n3Word = (kanji: string) => N3_DECK.items.find((i) => i.kanji === kanji)!;
+    expect(N3_DECK.companionsOf(n3Word("倒れる"))[0]).toEqual({
+      type: "vt",
+      word: "倒す",
+      reading: "たおす",
+      meaning: expect.any(String),
+    });
+    expect(N3_DECK.companionsOf(n3Word("倒す"))[0]).toMatchObject({ type: "vi", word: "倒れる" });
+    expect(N3_DECK.companionsOf(n3Word("男性")).map((c) => [c.type, c.word])).toContainEqual(["ant", "女性"]);
+    expect(N2_DECK.companionsOf(n2Word("一家"))).toEqual([
+      { type: "syn", word: "家族", reading: "かぞく", meaning: "gia đình" },
+      { type: "syn", word: "世帯", reading: "せたい", meaning: "hộ gia đình" },
+    ]);
+
+    for (const deck of [N3_DECK, N2_DECK]) {
+      for (const item of deck.items) {
+        const companions = deck.companionsOf(item);
+        expect(companions.length).toBeLessThanOrEqual(2);
+        for (const companion of companions) {
+          expect(companion.word).not.toBe(item.kanji || item.hiragana);
+          expect(companion.meaning).not.toBe("");
+        }
+      }
+    }
+  });
+
   it("returns the items and title of a batch", () => {
     const [chapter1] = N2_DECK.unitGroups;
     expect(N2_DECK.getBatchItems(chapter1.key, [])).toHaveLength(

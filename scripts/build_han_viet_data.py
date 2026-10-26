@@ -4,13 +4,13 @@ Usage (from the repo root):
     python3 scripts/build_han_viet_data.py [path/to/kanjidic2.xml[.gz]] [path/to/output.json]
 
 Without a path, KANJIDIC2 is downloaded from EDRDG. Each kanji used by the exam words
-(underlined targets and options) or by the N2 vocabulary (which has no Hán Việt of its
-own) gets one reading, chosen in this order:
+(underlined targets and options), by the N2 vocabulary (which has no Hán Việt of its
+own) or by the companion words gets one reading, chosen in this order:
   1. OVERRIDES below (common reading when KANJIDIC2 lists several or a wrong one);
   2. the most frequent reading in the vocabulary JSON, so the exam agrees with the
      Hán Việt shown in the vocabulary quiz;
   3. the first Vietnamese reading of KANJIDIC2.
-Run it again after regenerating the exam data or the N2 vocabulary.
+Run it again after regenerating the exam data or scripts/build_vocab_data.py.
 """
 
 import gzip
@@ -28,6 +28,7 @@ DATA_DIR = ROOT / "frontend" / "src" / "data"
 VOCAB_PATH = DATA_DIR / "mimikara_oboeru_vocab.json"
 EXAM_PATH = DATA_DIR / "jlpt_n3_minchan_exam.json"
 N2_VOCAB_PATH = DATA_DIR / "jtest_n2_vocab.json"
+COMPANIONS_PATH = DATA_DIR / "vocab_companions.json"
 DEFAULT_OUTPUT = DATA_DIR / "kanji_han_viet.json"
 KANJIDIC_URL = "http://www.edrdg.org/kanjidic/kanjidic2.xml.gz"
 
@@ -71,6 +72,20 @@ OVERRIDES = {
     "較": "GIẢO",
     "払": "PHẤT",
     "政": "CHÍNH",
+    # Kanji of the companion words.
+    "乾": "CAN",
+    "創": "SÁNG",
+    "将": "TƯƠNG",
+    "山": "SƠN",
+    "斉": "TỀ",
+    "晩": "VÃN",
+    "沖": "XUNG",
+    "脱": "THOÁT",
+    "販": "PHÁN",
+    "縦": "TUNG",
+    "繰": "TAO",
+    "怖": "BỐ",
+    "浜": "TÂN",
 }
 
 
@@ -109,6 +124,8 @@ def vocab_readings() -> dict[str, Counter]:
 
 def needed_kanji() -> set[str]:
     words = [item["kanji"] for item in json.loads(N2_VOCAB_PATH.read_text(encoding="utf-8"))["words"]]
+    for deck in json.loads(COMPANIONS_PATH.read_text(encoding="utf-8")).values():
+        words += [companion["word"] for companions in deck.values() for companion in companions]
     for question in json.loads(EXAM_PATH.read_text(encoding="utf-8"))["questions"]:
         words += [question["target"], *question["options"]]
     return {char for word in words for char in KANJI_RE.findall(word)}

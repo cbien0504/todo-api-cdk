@@ -18,7 +18,7 @@ By using a serverless model, the application achieves:
 
 ### Frontend app
 
-The CloudFront-hosted frontend is a **Mimikara Oboeru** study app: N3 and N2 vocabulary quizzes (the N2 list is crawled from jtest.net) plus JLPT N3 文字・語彙 exam practice generated from `JLPT_N3_tu_vung_Minchan.docx`. See [frontend/README.md](frontend/README.md) for features, structure and how to regenerate the exam data.
+The CloudFront-hosted frontend is a **Mimikara Oboeru** study app: N3 and N2 vocabulary quizzes and spaced-repetition flashcards with companion words (the N2 list and the related words are crawled from jtest.net) plus JLPT N3 文字・語彙 exam practice generated from `JLPT_N3_tu_vung_Minchan.docx`. See [frontend/README.md](frontend/README.md) for features, structure and how to regenerate the exam data.
 
 ---
 

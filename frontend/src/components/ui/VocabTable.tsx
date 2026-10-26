@@ -1,15 +1,17 @@
 import type { ReactNode } from "react";
-import type { VocabItem } from "../../types/quiz";
+import type { Companion, VocabItem } from "../../types/quiz";
+import { COMPANION_TYPES } from "./helpers";
 
 interface VocabTableProps {
   items: VocabItem[];
   showHanViet?: boolean;
+  companionsOf?: (item: VocabItem) => Companion[];
   onSpeak?: (item: VocabItem) => void;
   renderAction?: (item: VocabItem) => ReactNode;
 }
 
 /** Vocabulary list used by the round summary and the unremembered-words modal. */
-export default function VocabTable({ items, showHanViet = true, onSpeak, renderAction }: VocabTableProps) {
+export default function VocabTable({ items, showHanViet = true, companionsOf, onSpeak, renderAction }: VocabTableProps) {
   return (
     <div className="table-wrap">
       <table className="vocab-table">
@@ -48,7 +50,15 @@ export default function VocabTable({ items, showHanViet = true, onSpeak, renderA
               {showHanViet && (
                 <td>{item.han_viet ? <span className="badge tone-warning">{item.han_viet}</span> : <span className="muted">-</span>}</td>
               )}
-              <td className="vocab-meaning">{item.meaning}</td>
+              <td className="vocab-meaning">
+                {item.meaning}
+                {companionsOf?.(item).map((companion) => (
+                  <div key={`${companion.type}-${companion.word}`} className="vocab-companion">
+                    🔗 {COMPANION_TYPES[companion.type].label}:{" "}
+                    <span lang="ja">{companion.word}</span> – {companion.meaning}
+                  </div>
+                ))}
+              </td>
               {renderAction && <td className="col-action">{renderAction(item)}</td>}
             </tr>
           ))}

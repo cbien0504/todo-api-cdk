@@ -1,6 +1,7 @@
 import n3VocabData from "./mimikara_oboeru_vocab.json";
 import n2VocabData from "./jtest_n2_vocab.json";
-import type { RawVocabItem, VocabItem } from "../types/quiz";
+import companionsData from "./vocab_companions.json";
+import type { Companion, RawVocabItem, VocabItem } from "../types/quiz";
 import { cleanVocabData } from "../utils/quizEngine";
 import { getHanViet } from "../utils/hanViet";
 
@@ -26,6 +27,8 @@ export interface VocabDeck {
   source: string;
   /** localStorage key of the deck's unremembered words. */
   unrememberedStorageKey: string;
+  /** localStorage key of the deck's flashcard (spaced repetition) progress. */
+  srsStorageKey: string;
   items: VocabItem[];
   unitGroups: UnitGroup[];
   firstLesson: VocabBatch | undefined;
@@ -33,6 +36,8 @@ export interface VocabDeck {
   getBatchTitle: (key: string) => string;
   /** Items to practice for a batch; the unremembered batch is a snapshot of the current list. */
   getBatchItems: (key: string, unremembered: VocabItem[]) => VocabItem[];
+  /** Synonyms, antonyms or verb pair shown with a word (built by scripts/build_vocab_data.py). */
+  companionsOf: (item: VocabItem) => Companion[];
 }
 
 export const UNREMEMBERED_BATCH_KEY = "unremembered";
@@ -56,11 +61,14 @@ interface DeckConfig {
   level: string;
   source: string;
   unrememberedStorageKey: string;
+  srsStorageKey: string;
   items: VocabItem[];
   unitTitles: Record<string, string>;
+  /** Companions keyed by `stt`. */
+  companions: Record<string, Companion[]>;
 }
 
-const createVocabDeck = ({ items, unitTitles, ...config }: DeckConfig): VocabDeck => {
+const createVocabDeck = ({ items, unitTitles, companions, ...config }: DeckConfig): VocabDeck => {
   const lessons: VocabBatch[] = Array.from(groupBy(items, (item) => item.lesson || "Chưa phân loại").entries()).map(
     ([lessonName, lessonItems], index) => ({
       key: `lesson_${index + 1}`,
@@ -101,6 +109,7 @@ const createVocabDeck = ({ items, unitTitles, ...config }: DeckConfig): VocabDec
     getBatchTitle: (key) => (key === UNREMEMBERED_BATCH_KEY ? "Từ chưa nhớ" : (batches.get(key)?.title ?? "Bài học")),
     getBatchItems: (key, unremembered) =>
       key === UNREMEMBERED_BATCH_KEY ? [...unremembered] : (batches.get(key)?.items ?? items),
+    companionsOf: (item) => companions[String(item.stt)] ?? [],
   };
 };
 
@@ -109,7 +118,9 @@ export const N3_DECK = createVocabDeck({
   level: "N3",
   source: "Mimikara Oboeru N3",
   unrememberedStorageKey: "mimikara_unremembered_words",
+  srsStorageKey: "mimikara_srs_n3",
   items: cleanVocabData(n3VocabData as RawVocabItem[]),
+  companions: companionsData.n3 as Record<string, Companion[]>,
   unitTitles: {
     "Unit 1": "Unit 1 – Con người & cuộc sống",
     "Unit 2": "Unit 2 – Động từ (1)",
@@ -130,6 +141,8 @@ export const N2_DECK = createVocabDeck({
   level: "N2",
   source: `${n2VocabData.title} · ${n2VocabData.source}`,
   unrememberedStorageKey: "mimikara_n2_unremembered_words",
+  srsStorageKey: "mimikara_srs_n2",
+  companions: companionsData.n2 as Record<string, Companion[]>,
   // The N2 list has no Hán Việt of its own: it is derived from the kanji.
   items: cleanVocabData(n2VocabData.words.map((word) => ({ ...word, han_viet: getHanViet(word.kanji) }))),
   unitTitles: Object.fromEntries(Object.entries(n2VocabData.units).map(([unit, title]) => [unit, `${unit} – ${title}`])),

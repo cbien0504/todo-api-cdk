@@ -390,3 +390,61 @@ describe("N2 vocabulary tab", () => {
     expect(screen.getByRole("button", { name: /Toggle Ẩn Hán Việt/i })).toHaveTextContent(/Hán Việt: Ẩn/i);
   });
 });
+
+describe("Học 1 được 2 and flashcards", () => {
+  const word = N3_DECK.items.find((i) => i.kanji === "倒れる")!;
+  const srsCards = () => JSON.parse(localStorage.getItem("mimikara_srs_n3") || "{}");
+
+  beforeEach(() => {
+    localStorage.clear();
+    localStorage.setItem("mimikara_unremembered_words", JSON.stringify([word]));
+    render(<App />);
+    fireEvent.change(batchSelect(), { target: { value: "unremembered" } });
+  });
+
+  it("shows the companion words with the answer of the quiz", () => {
+    expect(questionCard().querySelector(".companions")).toBeNull();
+
+    fireEvent.click(optionButtons().find((b) => b.textContent?.includes(word.meaning))!);
+
+    const companions = within(questionCard()).getByText("🔗 Học 1 được 2").parentElement!;
+    expect(within(companions).getByText("Tha động từ")).toBeInTheDocument();
+    expect(within(companions).getByText("倒す")).toBeInTheDocument();
+    expect(within(companions).getByText("たおす")).toBeInTheDocument();
+  });
+
+  it("studies words as flashcards graded with spaced repetition", () => {
+    fireEvent.click(within(vocabPanel()).getByRole("button", { name: /Thẻ ghi nhớ/ }));
+    expect(localStorage.getItem("mimikara_vocab_mode_n3")).toBe("flashcard");
+
+    const card = () => vocabPanel().querySelector<HTMLElement>(".flashcard")!;
+    expect(within(card()).getByText("🆕 Từ mới")).toBeInTheDocument();
+    expect(within(card()).queryByText(word.meaning)).not.toBeInTheDocument();
+
+    // Flip with Space: meaning and companions on the back.
+    fireEvent.keyDown(window, { key: " " });
+    expect(within(card()).getByText(word.meaning)).toBeInTheDocument();
+    expect(within(card()).getByText("倒す")).toBeInTheDocument();
+
+    // Forgotten: comes back in the same session and stays in the unremembered list.
+    fireEvent.keyDown(window, { key: "1" });
+    expect(srsCards()[`stt_${word.stt}`]).toMatchObject({ box: 0, lapses: 1 });
+    expect(within(card()).getByText("🔁 Ôn tập lần 2")).toBeInTheDocument();
+
+    fireEvent.click(within(card()).getByRole("button", { name: /Lật thẻ/ }));
+    fireEvent.click(within(card()).getByRole("button", { name: /Nhớ/ }));
+
+    expect(srsCards()[`stt_${word.stt}`]).toMatchObject({ box: 1, reviews: 2 });
+    expect(within(vocabPanel()).getByText("Hoàn thành phiên ôn tập!")).toBeInTheDocument();
+    expect(within(vocabPanel()).getByText(/Ngày mai có 1 thẻ đến hạn ôn/)).toBeInTheDocument();
+    expect(JSON.parse(localStorage.getItem("mimikara_unremembered_words") || "[]")).toHaveLength(1);
+  });
+
+  it("keeps the quiz shortcuts away from the flashcards", () => {
+    fireEvent.click(within(vocabPanel()).getByRole("button", { name: /Thẻ ghi nhớ/ }));
+    fireEvent.keyDown(window, { key: "2" });
+
+    expect(srsCards()).toEqual({});
+    expect(vocabPanel().querySelector(".question-card .options")).toBeNull();
+  });
+});

@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import type { VocabItem } from "../../types/quiz";
+import type { Companion, VocabItem } from "../../types/quiz";
 import { trackEvent } from "../../utils/gtm";
 import Modal from "../ui/Modal";
 import VocabTable from "../ui/VocabTable";
@@ -9,6 +9,7 @@ interface UnrememberedModalProps {
   onClose: () => void;
   onReview: () => void;
   onSpeak: (item: VocabItem) => void;
+  companionsOf: (item: VocabItem) => Companion[];
   onMarkRemembered: (item: VocabItem) => void;
 }
 
@@ -26,7 +27,14 @@ const formatForClipboard = (words: VocabItem[]) =>
     })
     .join("\n");
 
-export default function UnrememberedModal({ words, onClose, onReview, onSpeak, onMarkRemembered }: UnrememberedModalProps) {
+export default function UnrememberedModal({
+  words,
+  onClose,
+  onReview,
+  onSpeak,
+  companionsOf,
+  onMarkRemembered,
+}: UnrememberedModalProps) {
   const [query, setQuery] = useState("");
   const [copied, setCopied] = useState(false);
 
@@ -92,6 +100,7 @@ export default function UnrememberedModal({ words, onClose, onReview, onSpeak, o
         <VocabTable
           items={filtered}
           onSpeak={onSpeak}
+          companionsOf={companionsOf}
           renderAction={(item) => (
             <button
               type="button"

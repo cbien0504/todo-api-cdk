@@ -1,12 +1,15 @@
-import type { VocabItem } from "../../types/quiz";
+import type { Companion, VocabItem } from "../../types/quiz";
 import type { SessionQuestion } from "../../hooks/useVocabSession";
-import HanVietButton from "../ui/HanVietButton";
+import CompanionList from "../ui/CompanionList";
 import OptionButton from "../ui/OptionButton";
 import { getOptionState } from "../ui/helpers";
+import WordHero from "./WordHero";
 
 interface QuestionCardProps {
   question: SessionQuestion;
   item: VocabItem | null;
+  /** Words shown with the answer ("học 1 được 2"). */
+  companions: Companion[];
   selectedIndex: number | null;
   isCorrect: boolean;
   isUnitMode: boolean;
@@ -17,6 +20,7 @@ interface QuestionCardProps {
   isMuted: boolean;
   isSpeaking: boolean;
   onSpeak: () => void;
+  onSpeakText: (text: string) => void;
   onAnswer: (index: number) => void;
   onMarkUnremembered: () => void;
   onMarkRemembered: () => void;
@@ -26,6 +30,7 @@ interface QuestionCardProps {
 export default function QuestionCard({
   question,
   item,
+  companions,
   selectedIndex,
   isCorrect,
   isUnitMode,
@@ -36,6 +41,7 @@ export default function QuestionCard({
   isMuted,
   isSpeaking,
   onSpeak,
+  onSpeakText,
   onAnswer,
   onMarkUnremembered,
   onMarkRemembered,
@@ -56,38 +62,15 @@ export default function QuestionCard({
         <span className="eyebrow">Chọn nghĩa tiếng Việt đúng</span>
       </div>
 
-      <div className="word-hero">
-        <button
-          type="button"
-          className={`btn btn--secondary btn--icon btn--round word-audio ${isSpeaking ? "is-playing" : ""}`}
-          onClick={onSpeak}
-          title={isMuted ? "Loa đang tắt (Nhấn để nghe từ này)" : "Nghe phát âm tiếng Nhật"}
-          aria-label="Phát âm tiếng Nhật"
-        >
-          {isMuted ? "🔇" : "🔊"}
-        </button>
-
-        <div className="word-main" lang="ja">
-          {question.kanji || question.hiragana}
-        </div>
-        {question.kanji &&
-          (hideHiragana && !isAnswered ? (
-            <div className="word-reading is-hidden" title="Hiragana đang ẩn (sẽ hiện khi trả lời)">
-              ••••
-            </div>
-          ) : (
-            <div className={`word-reading ${hideHiragana ? "is-revealed" : ""}`} lang="ja">
-              {question.hiragana}
-            </div>
-          ))}
-        {question.han_viet &&
-          (hideHanViet ? (
-            // Keyed by word so the reading is hidden again for the next question.
-            <HanVietButton key={question.question_text} word={question.question_text} hanViet={question.han_viet} />
-          ) : (
-            <span className="badge tone-warning badge--lg">Hán Việt: {question.han_viet}</span>
-          ))}
-      </div>
+      <WordHero
+        word={question}
+        revealed={isAnswered}
+        hideHanViet={hideHanViet}
+        hideHiragana={hideHiragana}
+        isMuted={isMuted}
+        isSpeaking={isSpeaking}
+        onSpeak={onSpeak}
+      />
 
       <div className="options options--stacked">
         {question.options.map((option, idx) => (
@@ -122,6 +105,7 @@ export default function QuestionCard({
               {question.han_viet ? ` [Hán Việt: ${question.han_viet}]` : ""} = <strong>{question.answer}</strong>
               {!isCorrect && " (tự động thêm vào danh sách Chưa nhớ)"}
             </p>
+            <CompanionList companions={companions} onSpeak={onSpeakText} />
             {item && (
               <div className="feedback-actions">
                 <span className="muted">Đánh dấu:</span>

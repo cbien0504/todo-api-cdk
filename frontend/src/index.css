@@ -487,6 +487,50 @@ kbd {
   padding: 14px 16px;
 }
 
+.mode-switch {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.mode-btn {
+  --tone: var(--primary);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 10px 14px;
+  text-align: left;
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.mode-btn:hover {
+  border-color: var(--primary);
+}
+
+.mode-btn.is-active {
+  background: color-mix(in srgb, var(--primary) 16%, transparent);
+  border-color: var(--primary);
+}
+
+.mode-btn:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+.mode-label {
+  font-weight: 800;
+  font-size: 0.95rem;
+}
+
+.mode-hint {
+  font-size: 0.75rem;
+  color: var(--text-3);
+}
+
 .toolbar-row {
   display: flex;
   flex-wrap: wrap;
@@ -802,6 +846,99 @@ kbd {
   font-size: 0.8rem;
 }
 
+/* Companion words ("học 1 được 2") shown with the answer and on the back of flashcards. */
+.companions {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.companions-title {
+  font-size: 0.78rem;
+  font-weight: 800;
+  color: var(--text-2);
+}
+
+.companion-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.companion {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 8px;
+  font-size: 0.88rem;
+}
+
+.companion-word {
+  font-weight: 800;
+  font-size: 1rem;
+  color: var(--text);
+}
+
+.companion-reading {
+  color: var(--info-text);
+}
+
+.companion-hanviet {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--warning-text);
+}
+
+.companion-meaning {
+  color: var(--text-2);
+}
+
+/* ==========================================================================
+   Flashcards
+   ========================================================================== */
+
+.flashcard-flip {
+  align-self: center;
+  min-width: min(100%, 280px);
+}
+
+.flashcard-back {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 16px 18px;
+  border-radius: var(--radius-md);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  animation: fade-in 0.2s ease-out;
+}
+
+.flashcard-meaning {
+  font-size: 1.25rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+.grade-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.grade-btn {
+  flex-direction: column;
+  gap: 2px;
+  padding: 10px 8px;
+  white-space: normal;
+}
+
+.grade-btn small {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--text-3);
+}
+
 /* ==========================================================================
    Result panel
    ========================================================================== */
@@ -970,6 +1107,12 @@ kbd {
 
 .vocab-meaning {
   color: var(--text-2);
+}
+
+.vocab-companion {
+  margin-top: 4px;
+  font-size: 0.76rem;
+  color: var(--text-3);
 }
 
 /* ==========================================================================
@@ -1273,6 +1416,10 @@ kbd {
   .tab {
     padding: 8px 4px;
     font-size: 0.8rem;
+  }
+
+  .grade-buttons {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .options--grid {

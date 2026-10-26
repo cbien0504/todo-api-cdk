@@ -1,17 +1,29 @@
 import { useState } from "react";
 import { UNREMEMBERED_BATCH_KEY, isUnitBatch, type VocabDeck } from "../../data/vocabBatches";
 import { useKeyboardShortcuts } from "../../hooks/useKeyboardShortcuts";
+import { enumCodec, usePersistentState } from "../../hooks/usePersistentState";
 import { useSpeech } from "../../hooks/useSpeech";
 import { useUnrememberedWords } from "../../hooks/useUnrememberedWords";
 import type { VocabSettings } from "../../hooks/useVocabSettings";
 import { useVocabSession } from "../../hooks/useVocabSession";
+import { trackEvent } from "../../utils/gtm";
 import { toPercent } from "../../utils/quizEngine";
 import ResultPanel from "../ui/ResultPanel";
 import VocabTable from "../ui/VocabTable";
+import FlashcardPractice from "./FlashcardPractice";
 import ProgressPanel from "./ProgressPanel";
 import QuestionCard from "./QuestionCard";
 import UnrememberedModal from "./UnrememberedModal";
 import VocabToolbar from "./VocabToolbar";
+
+const MODES = [
+  { id: "quiz", label: "📝 Trắc nghiệm", hint: "Chọn nghĩa đúng trong 4 đáp án" },
+  { id: "flashcard", label: "🧠 Thẻ ghi nhớ", hint: "Lặp lại ngắt quãng: học nhanh, nhớ lâu" },
+] as const;
+
+type VocabMode = (typeof MODES)[number]["id"];
+
+const modeCodec = enumCodec<VocabMode>(MODES.map((m) => m.id));
 
 interface VocabPracticeProps {
   deck: VocabDeck;
@@ -22,6 +34,9 @@ interface VocabPracticeProps {
 export default function VocabPractice({ deck, active, settings }: VocabPracticeProps) {
   const { isMuted, hideHanViet, hideHiragana } = settings;
   const [isListOpen, setIsListOpen] = useState(false);
+  const [mode, setMode] = usePersistentState<VocabMode>(`mimikara_vocab_mode_${deck.id}`, "quiz", modeCodec);
+  // Restarts the flashcard session whenever a batch is (re)selected.
+  const [flashcardRun, setFlashcardRun] = useState(0);
   const firstLessonName = deck.firstLesson ? deck.firstLesson.title : "Bài đầu tiên";
 
   const { speak, stop, isSpeaking } = useSpeech(isMuted);
@@ -41,15 +56,25 @@ export default function VocabPractice({ deck, active, settings }: VocabPracticeP
     settings.toggleMute();
   };
 
+  const selectMode = (next: VocabMode) => {
+    setMode(next);
+    trackEvent("vocab_mode", { level: deck.level, mode: next });
+  };
+
+  const selectBatch = (key: string) => {
+    session.selectBatch(key);
+    setFlashcardRun((run) => run + 1);
+  };
+
   const reviewUnremembered = () => {
     setIsListOpen(false);
-    session.selectBatch(UNREMEMBERED_BATCH_KEY);
+    selectBatch(UNREMEMBERED_BATCH_KEY);
   };
 
   // Single primary action of the round-complete screen, shared by its button and Enter/Space.
   const completeAction =
     isReviewMode && remainingToReview === 0
-      ? { label: `📖 Quay lại Luyện tập Bài 1 (${firstLessonName})`, run: () => session.selectBatch(deck.firstLessonKey) }
+      ? { label: `📖 Quay lại Luyện tập Bài 1 (${firstLessonName})`, run: () => selectBatch(deck.firstLessonKey) }
       : {
           label: isReviewMode
             ? `🔄 Tiếp tục ôn tập (${remainingToReview} từ còn lại)`
@@ -66,7 +91,8 @@ export default function VocabPractice({ deck, active, settings }: VocabPracticeP
       toggleMute();
       return;
     }
-    if (isEmptyReview) return;
+    // Flashcards listen to their own keys.
+    if (mode !== "quiz" || isEmptyReview) return;
     if (session.isRoundComplete) {
       if (e.key === "Enter" || e.key === " ") {
         e.preventDefault();
@@ -103,7 +129,7 @@ export default function VocabPractice({ deck, active, settings }: VocabPracticeP
         title="Danh sách Chưa nhớ hiện đang trống!"
         description="Tuyệt vời! Bạn không có từ vựng nào trong danh sách chưa nhớ. Hãy chọn bài học để luyện tập tiếp nhé!"
         actions={
-          <button type="button" className="btn btn--primary" onClick={() => session.selectBatch(deck.firstLessonKey)}>
+          <button type="button" className="btn btn--primary" onClick={() => selectBatch(deck.firstLessonKey)}>
             📖 Luyện tập Bài 1 ({firstLessonName})
           </button>
         }
@@ -141,7 +167,7 @@ export default function VocabPractice({ deck, active, settings }: VocabPracticeP
             <h3 className="result-section-title">
               📝 Các từ bạn đã từng làm sai trong lượt này ({session.wrongWords.length} từ)
             </h3>
-            <VocabTable items={session.wrongWords} showHanViet={!hideHanViet} />
+            <VocabTable items={session.wrongWords} showHanViet={!hideHanViet} companionsOf={deck.companionsOf} />
           </div>
         )}
       </ResultPanel>
@@ -151,6 +177,7 @@ export default function VocabPractice({ deck, active, settings }: VocabPracticeP
       <QuestionCard
         question={session.question}
         item={session.currentItem}
+        companions={session.currentItem ? deck.companionsOf(session.currentItem) : []}
         selectedIndex={session.selectedIndex}
         isCorrect={session.isCorrect}
         isUnitMode={isUnitBatch(session.batchKey)}
@@ -161,6 +188,7 @@ export default function VocabPractice({ deck, active, settings }: VocabPracticeP
         isMuted={isMuted}
         isSpeaking={isSpeaking}
         onSpeak={() => speak(session.question!.hiragana, true)}
+        onSpeakText={(text) => speak(text, true)}
         onAnswer={session.answer}
         onMarkUnremembered={() => unremembered.markUnremembered(session.currentItem)}
         onMarkRemembered={() => unremembered.markRemembered(session.currentItem)}
@@ -171,6 +199,21 @@ export default function VocabPractice({ deck, active, settings }: VocabPracticeP
 
   return (
     <>
+      <div className="mode-switch" role="group" aria-label="Cách học">
+        {MODES.map((m) => (
+          <button
+            key={m.id}
+            type="button"
+            className={`mode-btn ${mode === m.id ? "is-active" : ""}`}
+            aria-pressed={mode === m.id}
+            onClick={() => selectMode(m.id)}
+          >
+            <span className="mode-label">{m.label}</span>
+            <span className="mode-hint">{m.hint}</span>
+          </button>
+        ))}
+      </div>
+
       <VocabToolbar
         deck={deck}
         batchKey={session.batchKey}
@@ -178,26 +221,52 @@ export default function VocabPractice({ deck, active, settings }: VocabPracticeP
         isMuted={isMuted}
         hideHanViet={hideHanViet}
         hideHiragana={hideHiragana}
-        onSelectBatch={session.selectBatch}
+        onSelectBatch={selectBatch}
         onToggleMute={toggleMute}
         onToggleHanViet={settings.toggleHanViet}
         onToggleHiragana={settings.toggleHiragana}
         onOpenList={() => setIsListOpen(true)}
       />
 
-      <ProgressPanel
-        title={deck.getBatchTitle(session.batchKey)}
-        round={session.round}
-        streak={session.streak}
-        bestStreak={session.bestStreak}
-        {...session.progress}
-      />
-
-      {content}
+      {mode === "flashcard" ? (
+        <FlashcardPractice
+          key={flashcardRun}
+          deck={deck}
+          title={deck.getBatchTitle(session.batchKey)}
+          items={session.items}
+          active={active && !isListOpen}
+          hideHanViet={hideHanViet}
+          hideHiragana={hideHiragana}
+          isMuted={isMuted}
+          isSpeaking={isSpeaking}
+          speak={speak}
+          onForget={unremembered.markUnremembered}
+        />
+      ) : (
+        <>
+          <ProgressPanel
+            title={deck.getBatchTitle(session.batchKey)}
+            round={session.round}
+            streak={session.streak}
+            bestStreak={session.bestStreak}
+            {...session.progress}
+          />
+          {content}
+        </>
+      )}
 
       <p className="hint">
-        Phím tắt: <kbd>1</kbd>–<kbd>4</kbd> chọn đáp án · <kbd>C</kbd> chưa nhớ / <kbd>D</kbd> đã nhớ ·{" "}
-        <kbd>Space</kbd>/<kbd>Enter</kbd> câu tiếp theo · <kbd>M</kbd> bật/tắt loa
+        {mode === "flashcard" ? (
+          <>
+            Phím tắt: <kbd>Space</kbd>/<kbd>Enter</kbd> lật thẻ · <kbd>1</kbd> Quên · <kbd>2</kbd> Khó · <kbd>3</kbd> Nhớ ·{" "}
+            <kbd>4</kbd> Dễ · <kbd>M</kbd> bật/tắt loa
+          </>
+        ) : (
+          <>
+            Phím tắt: <kbd>1</kbd>–<kbd>4</kbd> chọn đáp án · <kbd>C</kbd> chưa nhớ / <kbd>D</kbd> đã nhớ ·{" "}
+            <kbd>Space</kbd>/<kbd>Enter</kbd> câu tiếp theo · <kbd>M</kbd> bật/tắt loa
+          </>
+        )}
         <br />
         Nguồn từ vựng: {deck.source}
       </p>
@@ -208,6 +277,7 @@ export default function VocabPractice({ deck, active, settings }: VocabPracticeP
           onClose={() => setIsListOpen(false)}
           onReview={reviewUnremembered}
           onSpeak={(item) => speak(item.hiragana, true)}
+          companionsOf={deck.companionsOf}
           onMarkRemembered={unremembered.markRemembered}
         />
       )}
