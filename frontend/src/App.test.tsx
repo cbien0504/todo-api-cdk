@@ -4,7 +4,7 @@ import App from "./App";
 import { ALL_ITEMS } from "./data/vocabBatches";
 
 const vocabPanel = () => document.getElementById("panel-vocab")!;
-const optionButtons = () => Array.from(vocabPanel().querySelectorAll<HTMLButtonElement>("button.option"));
+const optionButtons = () => Array.from(vocabPanel().querySelectorAll<HTMLElement>(".option"));
 const questionCard = () => vocabPanel().querySelector<HTMLElement>(".question-card")!;
 const progressCount = () => vocabPanel().querySelector(".progress-count")!.textContent;
 
@@ -49,7 +49,7 @@ describe("Mimikara Oboeru N3 – vocabulary practice", () => {
     fireEvent.click(optionButtons()[0]);
 
     expect(screen.getByRole("button", { name: /Câu tiếp theo/i })).toBeInTheDocument();
-    expect(optionButtons().every((b) => b.disabled)).toBe(true);
+    optionButtons().forEach((b) => expect(b).toHaveAttribute("aria-disabled", "true"));
   });
 
   it("counts the current question as pending until it is answered correctly", () => {

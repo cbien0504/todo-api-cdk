@@ -5,7 +5,7 @@ import { EXAM_QUESTIONS } from "../../utils/examEngine";
 
 const selectPaper = (key: string) => fireEvent.change(screen.getByLabelText("Chọn đề"), { target: { value: key } });
 const questionItems = () => screen.getAllByRole("listitem");
-const optionsOf = (item: HTMLElement) => Array.from(item.querySelectorAll<HTMLButtonElement>("button.option"));
+const optionsOf = (item: HTMLElement) => Array.from(item.querySelectorAll<HTMLElement>(".option"));
 const optionTexts = (item: HTMLElement) => optionsOf(item).map((b) => b.querySelector(".option-text")!.textContent);
 // Options are shuffled, so tests pick them by text.
 const optionOf = (item: HTMLElement, text: string) => optionsOf(item)[optionTexts(item).indexOf(text)];

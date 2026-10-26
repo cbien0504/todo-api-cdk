@@ -612,17 +612,19 @@ kbd {
   transition: var(--transition);
 }
 
-.option:hover:not(:disabled) {
+.option:hover:not([aria-disabled="true"]) {
   background: var(--surface-hover);
   border-color: var(--primary);
   transform: translateX(3px);
 }
 
-.option:disabled {
-  cursor: default;
+.option[aria-disabled="true"] {
+  cursor: text;
 }
 
 .option-key {
+  /* Copying an option gives only its text. */
+  user-select: none;
   display: inline-flex;
   align-items: center;
   justify-content: center;
