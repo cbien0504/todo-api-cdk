@@ -1,10 +1,13 @@
 import { ALL_BATCH_KEY, UNREMEMBERED_BATCH_KEY, type VocabDeck } from "../../data/vocabDecks";
+import type { VocabItem } from "../../types/quiz";
 import SettingToggle from "../ui/SettingToggle";
 
 interface VocabToolbarProps {
   deck: VocabDeck;
   batchKey: string;
   unrememberedCount: number;
+  /** How many of these words are remembered: each batch shows it, e.g. "(12/14 đã nhớ)". */
+  countKnown: (items: VocabItem[]) => number;
   isMuted: boolean;
   hideHanViet: boolean;
   hideHiragana: boolean;
@@ -19,6 +22,7 @@ export default function VocabToolbar({
   deck,
   batchKey,
   unrememberedCount,
+  countKnown,
   isMuted,
   hideHanViet,
   hideHiragana,
@@ -29,6 +33,7 @@ export default function VocabToolbar({
   onOpenList,
 }: VocabToolbarProps) {
   const selectId = `batch-select-${deck.id}`;
+  const knownRatio = (items: VocabItem[], known = countKnown(items)) => `(${known}/${items.length} đã nhớ)`;
 
   return (
     <section className="card toolbar">
@@ -38,17 +43,20 @@ export default function VocabToolbar({
         </label>
         <select id={selectId} className="select" value={batchKey} onChange={(e) => onSelectBatch(e.target.value)}>
           <option value={UNREMEMBERED_BATCH_KEY}>📌 Ôn tập từ chưa nhớ ({unrememberedCount} từ)</option>
-          <option value={ALL_BATCH_KEY}>
-            📚 Tất cả ({deck.items.length} từ vựng {deck.level})
-          </option>
+          <option value={ALL_BATCH_KEY}>{`📚 Tất cả từ vựng ${deck.level} ${knownRatio(deck.items)}`}</option>
           {deck.unitGroups.map((group) => (
             <optgroup key={group.key} label={group.name}>
-              <option value={group.key}>{group.label}</option>
-              {group.lessons.map((lesson) => (
-                <option key={lesson.key} value={lesson.key}>
-                  {lesson.label}
-                </option>
-              ))}
+              <option value={group.key}>{`🎯 ${group.title} ${knownRatio(group.items)}`}</option>
+              {group.lessons.map((lesson) => {
+                const known = countKnown(lesson.items);
+                // A learned lesson is ticked, so the lessons left to learn stand out.
+                const mark = known === lesson.items.length ? "✅ " : "";
+                return (
+                  <option key={lesson.key} value={lesson.key}>
+                    {`${mark}${lesson.title} ${knownRatio(lesson.items, known)}`}
+                  </option>
+                );
+              })}
             </optgroup>
           ))}
         </select>

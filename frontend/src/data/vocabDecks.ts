@@ -12,8 +12,6 @@ export interface VocabBatch {
   key: string;
   /** Title shown while practicing the batch. */
   title: string;
-  /** Label shown in the batch selector. */
-  label: string;
   items: VocabItem[];
 }
 
@@ -81,7 +79,6 @@ const createVocabDeck = ({ items, unitTitles, companions, ...config }: DeckConfi
     ([lessonName, lessonItems], index) => ({
       key: `lesson_${index + 1}`,
       title: lessonName,
-      label: `${lessonName} (${lessonItems.length} từ)`,
       items: lessonItems,
     })
   );
@@ -94,7 +91,6 @@ const createVocabDeck = ({ items, unitTitles, companions, ...config }: DeckConfi
       unit,
       name,
       title: `Cả ${name}`,
-      label: `🎯 Cả ${name} (${unitItems.length} từ)`,
       items: unitItems,
       lessons: unitLessons,
     };
@@ -103,7 +99,6 @@ const createVocabDeck = ({ items, unitTitles, companions, ...config }: DeckConfi
   const all: VocabBatch = {
     key: ALL_BATCH_KEY,
     title: `Tất cả (${items.length} từ vựng ${config.level})`,
-    label: `📚 Tất cả (${items.length} từ vựng ${config.level})`,
     items,
   };
   const batches = new Map<string, VocabBatch>([all, ...unitGroups, ...lessons].map((batch) => [batch.key, batch]));

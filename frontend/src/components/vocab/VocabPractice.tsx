@@ -93,6 +93,7 @@ export default function VocabPractice({ deck, active, settings }: VocabPracticeP
         deck={deck}
         batchKey={session.batchKey}
         unrememberedCount={unremembered.words.length}
+        countKnown={unremembered.countKnown}
         isMuted={isMuted}
         hideHanViet={hideHanViet}
         hideHiragana={hideHiragana}

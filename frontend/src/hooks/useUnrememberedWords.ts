@@ -26,6 +26,12 @@ export function useUnrememberedWords(deck: VocabDeck) {
 
   const isUnremembered = useCallback((item: MaybeItem) => !!item && entries[getItemKey(item)]?.s === "u", [entries]);
 
+  /** How many of these words are remembered (đã nhớ). */
+  const countKnown = useCallback(
+    (items: VocabItem[]) => items.filter((item) => entries[getItemKey(item)]?.s === "k").length,
+    [entries]
+  );
+
   const markUnremembered = useCallback(
     (item: MaybeItem) => {
       if (item && store.setWordStatus(deck.id, getItemKey(item), "u")) {
@@ -52,7 +58,7 @@ export function useUnrememberedWords(deck: VocabDeck) {
     [store, deck.id]
   );
 
-  return { words, known, isUnremembered, markUnremembered, markRemembered, markKnown };
+  return { words, known, isUnremembered, countKnown, markUnremembered, markRemembered, markKnown };
 }
 
 export type UnrememberedWords = ReturnType<typeof useUnrememberedWords>;

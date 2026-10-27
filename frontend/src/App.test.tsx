@@ -350,6 +350,36 @@ describe("Mimikara Oboeru N3 – vocabulary practice", () => {
     expect(screen.getAllByText(/Unit 1 - Lesson 2: Sinh ra, học hành, công việc/i).length).toBeGreaterThanOrEqual(1);
   });
 
+  it("shows how many words of each batch are remembered and ticks a learned lesson", () => {
+    const lesson = N3_DECK.firstLesson!;
+    const [first, ...rest] = lesson.items;
+    localStorage.setItem(
+      progressStorageKey(USER),
+      JSON.stringify({
+        decks: { n3: { words: Object.fromEntries(rest.map((item, i) => [getItemKey(item), { s: "k", t: i + 1 }])), cards: {} } },
+        dirty: {},
+      })
+    );
+    render(<App />);
+
+    const option = (key: string) => batchSelect().querySelector(`option[value="${key}"]`)!.textContent;
+    const ratio = `${rest.length}/${lesson.items.length} đã nhớ`;
+    expect(option(lesson.key)).toBe(`${lesson.title} (${ratio})`);
+    expect(option("unit_1")).toMatch(new RegExp(`\\(${rest.length}/120 đã nhớ\\)$`));
+    expect(option("all")).toBe(`📚 Tất cả từ vựng N3 (${rest.length}/${N3_DECK.items.length} đã nhớ)`);
+
+    // Remembering the last word of the lesson ticks it; forgetting it again removes the tick.
+    while (getItemKey(currentItem()) !== getItemKey(first)) {
+      answer(true);
+      fireEvent.keyDown(window, { key: "Enter" });
+    }
+    answer(true);
+    expect(option(lesson.key)).toBe(`✅ ${lesson.title} (${lesson.items.length}/${lesson.items.length} đã nhớ)`);
+
+    fireEvent.keyDown(window, { key: "c" });
+    expect(option(lesson.key)).toBe(`${lesson.title} (${ratio})`);
+  });
+
   it("allows practicing an entire unit, updating batch count to total words in that unit", () => {
     render(<App />);
 
@@ -358,7 +388,7 @@ describe("Mimikara Oboeru N3 – vocabulary practice", () => {
     expect(select.value).toBe("unit_1");
 
     expect(screen.getAllByText(/Cả Unit 1 – Con người & cuộc sống/i).length).toBeGreaterThanOrEqual(1);
-    expect(screen.getAllByText(/\(120 từ\)/i).length).toBeGreaterThanOrEqual(1);
+    expect(within(select).getByText("🎯 Cả Unit 1 – Con người & cuộc sống (0/120 đã nhớ)")).toBeInTheDocument();
     expect(progressCount()).toMatch(/\/ 120 từ/);
     expect(within(questionCard()).getByText(/Luyện cả Unit/)).toBeInTheDocument();
   });
@@ -445,7 +475,7 @@ describe("N5 and N4 vocabulary", () => {
     const panel = document.getElementById(`panel-${deck.id}-vocab`)!;
     const select = within(panel).getByLabelText<HTMLSelectElement>("Chọn bài");
     expect(select.querySelectorAll("optgroup")).toHaveLength(chapters);
-    expect(within(select).getByText(`📚 Tất cả (${deck.items.length} từ vựng ${level})`)).toBeInTheDocument();
+    expect(within(select).getByText(`📚 Tất cả từ vựng ${level} (0/${deck.items.length} đã nhớ)`)).toBeInTheDocument();
     expect(within(panel.querySelector<HTMLElement>(".question-card")!).getByText(firstLesson)).toBeInTheDocument();
     expect(panel.querySelectorAll(".option")).toHaveLength(4);
     expect(panel.querySelector(".hint")).toHaveTextContent(`Nguồn từ vựng: ${deck.source}`);
@@ -487,7 +517,7 @@ describe("N2 vocabulary", () => {
 
     const select = within(n2Panel()).getByLabelText<HTMLSelectElement>("Chọn bài");
     expect(select.querySelectorAll("optgroup")).toHaveLength(12);
-    expect(within(select).getByText(`📚 Tất cả (${N2_DECK.items.length} từ vựng N2)`)).toBeInTheDocument();
+    expect(within(select).getByText(`📚 Tất cả từ vựng N2 (0/${N2_DECK.items.length} đã nhớ)`)).toBeInTheDocument();
     expect(within(n2Card()).getByText("Chapter 1 - Bài 1: Gia đình")).toBeInTheDocument();
     expect(n2Panel().querySelectorAll(".option")).toHaveLength(4);
 
