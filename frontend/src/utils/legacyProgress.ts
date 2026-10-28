@@ -33,8 +33,8 @@ const isCard = (value: unknown): value is SrsCard =>
 
 /**
  * The progress saved in this browser before logins existed, as entries of the current format:
- * its unremembered words (in their order) and flashcards; a flashcard remembered at least once
- * counts as a remembered word. Null when there is none.
+ * its unremembered words (in their order) and flashcards. A word becomes remembered only when the
+ * learner marks it so, never from a flashcard. Null when there is none.
  */
 export const readLegacyProgress = (now = Date.now()): LegacyProgress | null => {
   const progress: Progress = {};
@@ -53,7 +53,6 @@ export const readLegacyProgress = (now = Date.now()): LegacyProgress | null => {
     for (const [key, card] of Object.entries(srs && typeof srs === "object" ? srs : {})) {
       if (!WORD_KEY.test(key) || !isCard(card)) continue;
       deckProgress.cards[key] = { box: card.box, due: card.due, reviews: card.reviews, lapses: card.lapses, t: now };
-      if (card.box > 0) deckProgress.words[key] ??= { s: "k", t: now };
     }
     unremembered += Object.values(deckProgress.words).filter((entry) => entry.s === "u").length;
     cards += Object.keys(deckProgress.cards).length;

@@ -30,8 +30,8 @@ describe("progress saved before logins existed", () => {
         // In the order of the list.
         n3: { words: { stt_12: { s: "u", t: NOW - 2 }, stt_3: { s: "u", t: NOW - 1 } }, cards: {} },
         n5: {
-          // Remembered once at least: remembered.
-          words: { stt_4: { s: "k", t: NOW } },
+          // Flashcards do not mark words remembered: only the learner does.
+          words: {},
           cards: {
             stt_4: { box: 2, due: 20_000, reviews: 3, lapses: 1, t: NOW },
             stt_5: { box: 0, due: 20_000, reviews: 1, lapses: 1, t: NOW },

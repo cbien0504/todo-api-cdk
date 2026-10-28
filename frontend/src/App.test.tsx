@@ -787,7 +787,8 @@ describe("Accounts and the progress of each learner", () => {
 
     expect(screen.queryByRole("dialog")).not.toBeInTheDocument();
     expect(wordsWith("u", "n3")).toEqual([getItemKey(n3Word("家庭"))]);
-    expect(wordsWith("k", "n2")).toEqual(["stt_5"]);
+    // The flashcard comes along, the word is not marked remembered for the learner.
+    expect(wordsWith("k", "n2")).toEqual([]);
     expect(progressOf("n2").cards.stt_5).toMatchObject({ box: 2, reviews: 2 });
     expect(localStorage.getItem("mimikara_unremembered_words")).toBeNull();
     expect(localStorage.getItem("mimikara_srs_n2")).toBeNull();
