@@ -116,12 +116,16 @@ describe("Mimikara Oboeru N3 – vocabulary practice", () => {
     expect(screen.getByText(/tự động thêm vào danh sách Chưa nhớ/i)).toBeInTheDocument();
   });
 
-  it("counts a correctly answered word as remembered, in the level tab and the word lists", () => {
+  it("counts a word as remembered only once the learner marks it, in the level tab and the word lists", () => {
     render(<App />);
     const word = currentItem();
     expect(levelTab("N3")).toHaveTextContent(`0/${N3_DECK.items.length}`);
 
     answer(true);
+    expect(progressOf("n3").words).toEqual({});
+    expect(within(questionCard()).getByRole("button", { name: /Đã nhớ \(D\)/ })).toHaveAttribute("aria-pressed", "false");
+
+    fireEvent.keyDown(window, { key: "d" });
     expect(wordsWith("k", "n3")).toEqual([getItemKey(word)]);
     expect(levelTab("N3")).toHaveTextContent(`1/${N3_DECK.items.length}`);
 
@@ -368,16 +372,70 @@ describe("Mimikara Oboeru N3 – vocabulary practice", () => {
     expect(option("unit_1")).toMatch(new RegExp(`\\(${rest.length}/120 đã nhớ\\)$`));
     expect(option("all")).toBe(`📚 Tất cả từ vựng N3 (${rest.length}/${N3_DECK.items.length} đã nhớ)`);
 
-    // Remembering the last word of the lesson ticks it; forgetting it again removes the tick.
+    // A correct answer leaves the word as it is: the learner marks it Đã nhớ, which ticks the lesson.
     while (getItemKey(currentItem()) !== getItemKey(first)) {
       answer(true);
       fireEvent.keyDown(window, { key: "Enter" });
     }
     answer(true);
+    expect(option(lesson.key)).toBe(`${lesson.title} (${ratio})`);
+    fireEvent.keyDown(window, { key: "d" });
     expect(option(lesson.key)).toBe(`✅ ${lesson.title} (${lesson.items.length}/${lesson.items.length} đã nhớ)`);
 
     fireEvent.keyDown(window, { key: "c" });
     expect(option(lesson.key)).toBe(`${lesson.title} (${ratio})`);
+  });
+
+  it("practices only the words not marked Đã nhớ yet, new words included, until all are marked", () => {
+    const lesson = N3_DECK.firstLesson!;
+    const [newWord, reviewWord, ...rest] = lesson.items;
+    const words = {
+      [getItemKey(reviewWord)]: { s: "u", t: 1 },
+      ...Object.fromEntries(rest.map((item, i) => [getItemKey(item), { s: "k", t: i + 2 }])),
+    };
+    localStorage.setItem(progressStorageKey(USER), JSON.stringify({ decks: { n3: { words, cards: {} } }, dirty: {} }));
+    render(<App />);
+
+    const filter = within(vocabPanel()).getByRole("button", { name: /Chỉ từ chưa thuộc/ });
+    fireEvent.click(filter);
+    expect(filter).toHaveAttribute("aria-pressed", "true");
+    expect(localStorage.getItem("mimikara_only_unlearned_n3")).toBe("true");
+    expect(progressCount()).toMatch(/\/ 2 từ/);
+
+    const asked = [];
+    for (let i = 0; i < 2; i++) {
+      asked.push(getItemKey(currentItem()));
+      answer(true);
+      fireEvent.keyDown(window, { key: "d" });
+      fireEvent.keyDown(window, { key: "Enter" });
+    }
+    expect(asked.sort()).toEqual([getItemKey(newWord), getItemKey(reviewWord)].sort());
+
+    // The next round has no word left to learn.
+    fireEvent.keyDown(window, { key: "Enter" });
+    expect(screen.getByText("Bạn đã nhớ hết các từ ở đây!")).toBeInTheDocument();
+
+    fireEvent.click(screen.getByRole("button", { name: /Luyện lại cả phần/ }));
+    expect(filter).toHaveAttribute("aria-pressed", "false");
+    expect(progressCount()).toMatch(new RegExp(`/ ${lesson.items.length} từ`));
+  });
+
+  it("marks a flashcard remembered only with the Đã nhớ button, not with its grade", () => {
+    render(<App />);
+    fireEvent.click(within(vocabPanel()).getByRole("button", { name: /Thẻ ghi nhớ/ }));
+
+    fireEvent.keyDown(window, { key: " " });
+    fireEvent.keyDown(window, { key: "4" });
+    expect(progressOf("n3").words).toEqual({});
+
+    fireEvent.keyDown(window, { key: " " });
+    fireEvent.keyDown(window, { key: "d" });
+    expect(wordsWith("k", "n3")).toHaveLength(1);
+    expect(within(vocabPanel()).getByRole("button", { name: /Đã nhớ \(D\)/ })).toHaveAttribute("aria-pressed", "true");
+
+    fireEvent.keyDown(window, { key: "1" });
+    expect(wordsWith("k", "n3")).toHaveLength(0);
+    expect(wordsWith("u", "n3")).toHaveLength(1);
   });
 
   it("allows practicing an entire unit, updating batch count to total words in that unit", () => {

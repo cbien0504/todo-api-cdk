@@ -16,7 +16,7 @@ const LISTS = {
     label: "✅ Đã nhớ",
     title: "✅ Bảng từ đã nhớ",
     search: "Tìm từ đã nhớ",
-    empty: "Chưa có từ nào: trả lời đúng một câu hoặc bấm “Đã nhớ” để thêm từ vào đây.",
+    empty: "Chưa có từ nào: bấm “Đã nhớ” (phím D) sau khi trả lời hoặc lật thẻ để thêm từ vào đây.",
     tone: "tone-success",
   },
 } as const;

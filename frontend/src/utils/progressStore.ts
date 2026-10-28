@@ -99,11 +99,6 @@ export class ProgressStore {
     return true;
   }
 
-  /** A correct answer or a remembered flashcard: the word is remembered, unless it waits for review. */
-  markKnown(deck: DeckId, key: string): void {
-    if (!this.decks[deck].words[key]) this.update(deck, { words: { [key]: { s: "k", t: this.nextTime() } } });
-  }
-
   setCard(deck: DeckId, key: string, card: SrsCard): void {
     this.update(deck, { cards: { [key]: { ...card, t: this.nextTime() } } });
   }

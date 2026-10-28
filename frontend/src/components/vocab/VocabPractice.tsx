@@ -1,11 +1,12 @@
 import { useState } from "react";
 import { UNREMEMBERED_BATCH_KEY, type VocabDeck } from "../../data/vocabDecks";
 import { useKeyboardShortcuts } from "../../hooks/useKeyboardShortcuts";
-import { enumCodec, usePersistentState } from "../../hooks/usePersistentState";
+import { booleanCodec, enumCodec, usePersistentState } from "../../hooks/usePersistentState";
 import { useSpeech } from "../../hooks/useSpeech";
 import { useUnrememberedWords } from "../../hooks/useUnrememberedWords";
 import type { VocabSettings } from "../../hooks/useVocabSettings";
 import { useVocabSession } from "../../hooks/useVocabSession";
+import type { VocabItem } from "../../types/quiz";
 import { trackEvent } from "../../utils/gtm";
 import FlashcardPractice from "./FlashcardPractice";
 import QuizPractice from "./QuizPractice";
@@ -31,6 +32,8 @@ export default function VocabPractice({ deck, active, settings }: VocabPracticeP
   const { isMuted, hideHanViet, hideHiragana } = settings;
   const [isListOpen, setIsListOpen] = useState(false);
   const [mode, setMode] = usePersistentState<VocabMode>(`mimikara_vocab_mode_${deck.id}`, "quiz", modeCodec);
+  // Lessons, units and the whole list keep only the words not marked Đã nhớ yet.
+  const [onlyUnlearned, setOnlyUnlearned] = usePersistentState(`mimikara_only_unlearned_${deck.id}`, false, booleanCodec);
   // Restarts the flashcard session whenever a batch is (re)selected.
   const [flashcardRun, setFlashcardRun] = useState(0);
 
@@ -38,9 +41,8 @@ export default function VocabPractice({ deck, active, settings }: VocabPracticeP
   const unremembered = useUnrememberedWords(deck);
   const session = useVocabSession({
     deck,
-    unrememberedWords: unremembered.words,
+    batchItems: (key) => unremembered.batchItems(key, onlyUnlearned),
     onAnswer: (question) => speak(question.hiragana),
-    onCorrect: unremembered.markKnown,
     onWrong: unremembered.markUnremembered,
   });
 
@@ -54,9 +56,15 @@ export default function VocabPractice({ deck, active, settings }: VocabPracticeP
     trackEvent("vocab_mode", { level: deck.level, mode: next });
   };
 
-  const selectBatch = (key: string) => {
-    session.selectBatch(key);
+  const selectBatch = (key: string, items?: VocabItem[]) => {
+    session.selectBatch(key, items);
     setFlashcardRun((run) => run + 1);
+  };
+
+  const setUnlearnedFilter = (enabled: boolean) => {
+    setOnlyUnlearned(enabled);
+    selectBatch(session.batchKey, unremembered.batchItems(session.batchKey, enabled));
+    trackEvent("toggle_only_unlearned", { level: deck.level, enabled });
   };
 
   const reviewUnremembered = () => {
@@ -94,10 +102,12 @@ export default function VocabPractice({ deck, active, settings }: VocabPracticeP
         batchKey={session.batchKey}
         unrememberedCount={unremembered.words.length}
         countKnown={unremembered.countKnown}
+        onlyUnlearned={onlyUnlearned}
         isMuted={isMuted}
         hideHanViet={hideHanViet}
         hideHiragana={hideHiragana}
         onSelectBatch={selectBatch}
+        onToggleOnlyUnlearned={() => setUnlearnedFilter(!onlyUnlearned)}
         onToggleMute={toggleMute}
         onToggleHanViet={settings.toggleHanViet}
         onToggleHiragana={settings.toggleHiragana}
@@ -114,8 +124,9 @@ export default function VocabPractice({ deck, active, settings }: VocabPracticeP
           active={active && !isListOpen}
           isSpeaking={isSpeaking}
           speak={speak}
-          onForget={unremembered.markUnremembered}
-          onRecall={unremembered.markKnown}
+          statusOf={unremembered.statusOf}
+          onMarkUnremembered={unremembered.markUnremembered}
+          onMarkRemembered={unremembered.markRemembered}
         />
       ) : (
         <QuizPractice
@@ -127,6 +138,7 @@ export default function VocabPractice({ deck, active, settings }: VocabPracticeP
           isSpeaking={isSpeaking}
           speak={speak}
           onSelectBatch={selectBatch}
+          onShowAllWords={() => setUnlearnedFilter(false)}
         />
       )}
 
@@ -134,7 +146,7 @@ export default function VocabPractice({ deck, active, settings }: VocabPracticeP
         {mode === "flashcard" ? (
           <>
             Phím tắt: <kbd>Space</kbd>/<kbd>Enter</kbd> lật thẻ · <kbd>1</kbd> Quên · <kbd>2</kbd> Khó · <kbd>3</kbd> Nhớ ·{" "}
-            <kbd>4</kbd> Dễ · <kbd>M</kbd> bật/tắt loa
+            <kbd>4</kbd> Dễ · <kbd>C</kbd> chưa nhớ / <kbd>D</kbd> đã nhớ · <kbd>M</kbd> bật/tắt loa
           </>
         ) : (
           <>

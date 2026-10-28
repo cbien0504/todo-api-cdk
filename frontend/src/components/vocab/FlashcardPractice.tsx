@@ -3,6 +3,7 @@ import { getItemKey, type VocabDeck } from "../../data/vocabDecks";
 import { useKeyboardShortcuts } from "../../hooks/useKeyboardShortcuts";
 import { useSrsProgress } from "../../hooks/useSrsProgress";
 import type { VocabSettings } from "../../hooks/useVocabSettings";
+import type { WordStatus } from "../../types/progress";
 import type { VocabItem } from "../../types/quiz";
 import { trackEvent } from "../../utils/gtm";
 import {
@@ -18,6 +19,7 @@ import ProgressCard from "../ui/ProgressCard";
 import ResultPanel from "../ui/ResultPanel";
 import type { Tone } from "../ui/helpers";
 import WordHero from "./WordHero";
+import WordMarkButtons from "./WordMarkButtons";
 
 const GRADES: { grade: SrsGrade; label: string; key: string; tone: Tone }[] = [
   { grade: "again", label: "😵 Quên", key: "1", tone: "danger" },
@@ -39,9 +41,10 @@ interface FlashcardPracticeProps {
   active: boolean;
   isSpeaking: boolean;
   speak: (text: string, force?: boolean) => void;
-  onForget: (item: VocabItem) => void;
-  /** Graded Nhớ or Dễ. */
-  onRecall: (item: VocabItem) => void;
+  statusOf: (item: VocabItem) => WordStatus | undefined;
+  /** Also called for a card graded Quên. */
+  onMarkUnremembered: (item: VocabItem) => void;
+  onMarkRemembered: (item: VocabItem) => void;
 }
 
 /**
@@ -56,8 +59,9 @@ export default function FlashcardPractice({
   active,
   isSpeaking,
   speak,
-  onForget,
-  onRecall,
+  statusOf,
+  onMarkUnremembered,
+  onMarkRemembered,
 }: FlashcardPracticeProps) {
   const { isMuted, hideHanViet, hideHiragana } = settings;
   const { cards, grade } = useSrsProgress(deck.id);
@@ -83,10 +87,9 @@ export default function FlashcardPractice({
     grade(getItemKey(current), value, today);
     const rest = queue.slice(1);
     if (value === "again") {
-      onForget(current);
+      onMarkUnremembered(current);
       setQueue([...rest.slice(0, RELEARN_GAP), current, ...rest.slice(RELEARN_GAP)]);
     } else {
-      if (value === "good" || value === "easy") onRecall(current);
       setQueue(rest);
     }
     setFlipped(false);
@@ -113,6 +116,12 @@ export default function FlashcardPractice({
         e.preventDefault();
         flip();
       }
+      return;
+    }
+    const key = e.key.toLowerCase();
+    if (key === "c" || key === "d") {
+      e.preventDefault();
+      (key === "c" ? onMarkUnremembered : onMarkRemembered)(current);
       return;
     }
     const match = GRADES.find((g) => g.key === e.key);
@@ -173,6 +182,11 @@ export default function FlashcardPractice({
               <div className="flashcard-back">
                 <p className="flashcard-meaning">{current.meaning}</p>
                 <CompanionList companions={deck.companionsOf(current)} onSpeak={(text) => speak(text, true)} />
+                <WordMarkButtons
+                  status={statusOf(current)}
+                  onMarkUnremembered={() => onMarkUnremembered(current)}
+                  onMarkRemembered={() => onMarkRemembered(current)}
+                />
               </div>
               <div className="grade-buttons" role="group" aria-label="Tự đánh giá mức độ nhớ">
                 {GRADES.map((g) => (

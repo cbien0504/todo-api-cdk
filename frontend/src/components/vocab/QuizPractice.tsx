@@ -19,6 +19,8 @@ interface QuizPracticeProps {
   isSpeaking: boolean;
   speak: (text: string, force?: boolean) => void;
   onSelectBatch: (key: string) => void;
+  /** Practices the whole batch again, remembered words included. */
+  onShowAllWords: () => void;
 }
 
 /** Multiple-choice quiz: pick the Vietnamese meaning; wrong answers come back later in the round. */
@@ -31,12 +33,14 @@ export default function QuizPractice({
   isSpeaking,
   speak,
   onSelectBatch,
+  onShowAllWords,
 }: QuizPracticeProps) {
   const { isMuted, hideHanViet, hideHiragana } = settings;
   const firstLessonName = deck.firstLesson ? deck.firstLesson.title : "Bài đầu tiên";
   const isReviewMode = session.batchKey === UNREMEMBERED_BATCH_KEY;
   const remainingToReview = unremembered.words.length;
-  const isEmptyReview = isReviewMode && session.items.length === 0;
+  // Only the review list or a batch filtered to its unlearned words can be empty.
+  const isEmpty = session.items.length === 0;
 
   // Single primary action of the round-complete screen, shared by its button and Enter/Space.
   const completeAction =
@@ -49,7 +53,7 @@ export default function QuizPractice({
           run: session.nextRound,
         };
 
-  useKeyboardShortcuts(active && !isEmptyReview, (e) => {
+  useKeyboardShortcuts(active && !isEmpty, (e) => {
     const key = e.key.toLowerCase();
     if (session.isRoundComplete) {
       if (e.key === "Enter" || e.key === " ") {
@@ -81,7 +85,20 @@ export default function QuizPractice({
   const accuracy = toPercent(session.correctCount, session.correctCount + session.wrongCount);
 
   let content;
-  if (isEmptyReview) {
+  if (isEmpty && !isReviewMode) {
+    content = (
+      <ResultPanel
+        icon="🎉"
+        title="Bạn đã nhớ hết các từ ở đây!"
+        description="Mọi từ của phần này đều đã được đánh dấu Đã nhớ. Hãy luyện lại cả phần, hoặc chọn bài khác còn từ chưa thuộc."
+        actions={
+          <button type="button" className="btn btn--primary" onClick={onShowAllWords}>
+            📖 Luyện lại cả phần
+          </button>
+        }
+      />
+    );
+  } else if (isEmpty) {
     content = (
       <ResultPanel
         icon="🎉"
@@ -141,7 +158,7 @@ export default function QuizPractice({
         isCorrect={session.isCorrect}
         isUnitMode={isUnitBatch(session.batchKey)}
         isReviewMode={isReviewMode}
-        isUnremembered={unremembered.isUnremembered(session.currentItem)}
+        status={unremembered.statusOf(session.currentItem)}
         hideHanViet={hideHanViet}
         hideHiragana={hideHiragana}
         isMuted={isMuted}

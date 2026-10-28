@@ -1,9 +1,11 @@
+import type { WordStatus } from "../../types/progress";
 import type { Companion, VocabItem } from "../../types/quiz";
 import type { SessionQuestion } from "../../hooks/useVocabSession";
 import CompanionList from "../ui/CompanionList";
 import OptionButton from "../ui/OptionButton";
 import { getOptionState } from "../ui/helpers";
 import WordHero from "./WordHero";
+import WordMarkButtons from "./WordMarkButtons";
 
 interface QuestionCardProps {
   question: SessionQuestion;
@@ -14,7 +16,8 @@ interface QuestionCardProps {
   isCorrect: boolean;
   isUnitMode: boolean;
   isReviewMode: boolean;
-  isUnremembered: boolean;
+  /** Status of the word in the learner's progress; `undefined` while it was never marked. */
+  status: WordStatus | undefined;
   hideHanViet: boolean;
   hideHiragana: boolean;
   isMuted: boolean;
@@ -35,7 +38,7 @@ export default function QuestionCard({
   isCorrect,
   isUnitMode,
   isReviewMode,
-  isUnremembered,
+  status,
   hideHanViet,
   hideHiragana,
   isMuted,
@@ -94,9 +97,9 @@ export default function QuestionCard({
           <div className="feedback-body">
             <div className="feedback-title">
               <span>{isCorrect ? "✅ Chính xác!" : "❌ Chưa chính xác!"}</span>
-              {item && (
-                <span className={`badge tone-${isUnremembered ? "danger" : "success"}`}>
-                  {isUnremembered ? "📌 Chưa nhớ" : "✨ Đã nhớ"}
+              {item && status && (
+                <span className={`badge tone-${status === "u" ? "danger" : "success"}`}>
+                  {status === "u" ? "📌 Chưa nhớ" : "✨ Đã nhớ"}
                 </span>
               )}
             </div>
@@ -107,25 +110,7 @@ export default function QuestionCard({
             </p>
             <CompanionList companions={companions} onSpeak={onSpeakText} />
             {item && (
-              <div className="feedback-actions">
-                <span className="muted">Đánh dấu:</span>
-                <button
-                  type="button"
-                  className={`btn btn--xs btn--secondary tone-danger ${isUnremembered ? "is-active" : ""}`}
-                  onClick={onMarkUnremembered}
-                  title="Đánh dấu từ là chưa nhớ (Phím C)"
-                >
-                  📌 Chưa nhớ (C)
-                </button>
-                <button
-                  type="button"
-                  className={`btn btn--xs btn--secondary tone-success ${isUnremembered ? "" : "is-active"}`}
-                  onClick={onMarkRemembered}
-                  title="Đánh dấu từ là đã nhớ (Phím D)"
-                >
-                  ✨ Đã nhớ (D)
-                </button>
-              </div>
+              <WordMarkButtons status={status} onMarkUnremembered={onMarkUnremembered} onMarkRemembered={onMarkRemembered} />
             )}
           </div>
           <button type="button" className="btn btn--primary" onClick={onNext}>

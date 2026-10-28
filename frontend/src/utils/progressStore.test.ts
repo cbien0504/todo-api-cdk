@@ -38,12 +38,10 @@ describe("ProgressStore", () => {
 
     expect(store.setWordStatus("n3", "stt_1", "u")).toBe(true);
     expect(store.setWordStatus("n3", "stt_1", "u")).toBe(false);
-    store.markKnown("n3", "stt_1");
-    store.markKnown("n3", "stt_2");
+    store.setWordStatus("n3", "stt_2", "k");
     store.setCard("n5", "stt_9", CARD);
 
     const n3 = store.getDeck("n3");
-    // A word waiting for review stays so after a correct answer.
     expect(n3.words.stt_1.s).toBe("u");
     expect(n3.words.stt_2.s).toBe("k");
     expect(n3.words.stt_2.t).toBeGreaterThan(n3.words.stt_1.t);

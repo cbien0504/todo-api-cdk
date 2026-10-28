@@ -8,10 +8,13 @@ interface VocabToolbarProps {
   unrememberedCount: number;
   /** How many of these words are remembered: each batch shows it, e.g. "(12/14 đã nhớ)". */
   countKnown: (items: VocabItem[]) => number;
+  /** Batches keep only the words not marked Đã nhớ yet. */
+  onlyUnlearned: boolean;
   isMuted: boolean;
   hideHanViet: boolean;
   hideHiragana: boolean;
   onSelectBatch: (key: string) => void;
+  onToggleOnlyUnlearned: () => void;
   onToggleMute: () => void;
   onToggleHanViet: () => void;
   onToggleHiragana: () => void;
@@ -23,10 +26,12 @@ export default function VocabToolbar({
   batchKey,
   unrememberedCount,
   countKnown,
+  onlyUnlearned,
   isMuted,
   hideHanViet,
   hideHiragana,
   onSelectBatch,
+  onToggleOnlyUnlearned,
   onToggleMute,
   onToggleHanViet,
   onToggleHiragana,
@@ -68,6 +73,19 @@ export default function VocabToolbar({
           aria-label="Reset bài này ngay lập tức"
         >
           🔄
+        </button>
+        <button
+          type="button"
+          className={`btn btn--sm btn--secondary tone-warning ${onlyUnlearned ? "is-active" : ""}`}
+          aria-pressed={onlyUnlearned}
+          onClick={onToggleOnlyUnlearned}
+          title={
+            onlyUnlearned
+              ? "Đang chỉ luyện các từ chưa đánh dấu Đã nhớ (gồm cả từ chưa học). Nhấn để luyện cả bài"
+              : "Chỉ luyện các từ chưa đánh dấu Đã nhớ, gồm cả từ chưa học"
+          }
+        >
+          🎯 Chỉ từ chưa thuộc: {onlyUnlearned ? "Bật" : "Tắt"}
         </button>
       </div>
 

@@ -50,16 +50,16 @@ const startRound = (deck: VocabDeck, batchKey: string, items: VocabItem[]) => {
 
 interface SessionOptions {
   deck: VocabDeck;
-  unrememberedWords: VocabItem[];
+  /** Words to practice in a batch now: they follow the learner's marks, so every round asks for them again. */
+  batchItems: (key: string) => VocabItem[];
   onAnswer: (question: Question) => void;
-  onCorrect: (item: VocabItem) => void;
   onWrong: (item: VocabItem) => void;
 }
 
 /** Vocabulary quiz session: batch selection, question queue, answers and round stats. */
-export function useVocabSession({ deck, unrememberedWords, onAnswer, onCorrect, onWrong }: SessionOptions) {
+export function useVocabSession({ deck, batchItems, onAnswer, onWrong }: SessionOptions) {
   const [state, setState] = useState<SessionState>(() => ({
-    ...startRound(deck, deck.firstLessonKey, deck.getBatchItems(deck.firstLessonKey, unrememberedWords)),
+    ...startRound(deck, deck.firstLessonKey, batchItems(deck.firstLessonKey)),
     round: 1,
     streak: 0,
     bestStreak: 0,
@@ -76,14 +76,13 @@ export function useVocabSession({ deck, unrememberedWords, onAnswer, onCorrect, 
   const retry = buffer.getPendingRetryCount() + (pendingCurrent && question.isRetry ? 1 : 0);
   const total = items.length;
 
-  const selectBatch = (key: string) => {
-    const batchItems = deck.getBatchItems(key, unrememberedWords);
-    setState({ ...startRound(deck, key, batchItems), round: 1, streak: 0, bestStreak: 0 });
-    trackEvent("batch_reset", { level: deck.level, batchKey: key, totalItems: batchItems.length });
+  const selectBatch = (key: string, keyItems = batchItems(key)) => {
+    setState({ ...startRound(deck, key, keyItems), round: 1, streak: 0, bestStreak: 0 });
+    trackEvent("batch_reset", { level: deck.level, batchKey: key, totalItems: keyItems.length });
   };
 
   const nextRound = () => {
-    const roundItems = batchKey === UNREMEMBERED_BATCH_KEY ? deck.getBatchItems(batchKey, unrememberedWords) : items;
+    const roundItems = batchItems(batchKey);
     setState({ ...state, ...startRound(deck, batchKey, roundItems), round: state.round + 1 });
     trackEvent("quiz_start_round", { level: deck.level, round: state.round + 1, totalItems: roundItems.length });
   };
@@ -94,7 +93,6 @@ export function useVocabSession({ deck, unrememberedWords, onAnswer, onCorrect, 
     onAnswer(question);
 
     if (correct) {
-      if (currentItem) onCorrect(currentItem);
       const streak = state.streak + 1;
       setState({
         ...state,
