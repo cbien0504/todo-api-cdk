@@ -1,0 +1,5600 @@
+{
+ "title": "Trắc nghiệm JLPT N2 Từ vựng",
+ "source": "JTest.net – https://jtest.net/jlpt/n2/vocabulary",
+ "questions": [
+  {
+   "id": "q1-1",
+   "lesson": 1,
+   "number": 1,
+   "part": "context",
+   "before": "若い大統領には経験不足という",
+   "target": "",
+   "after": "がある。",
+   "options": [
+    "弱点",
+    "過失",
+    "飢饉",
+    "落第"
+   ],
+   "answer": 0,
+   "inferred": false,
+   "explanation": {
+    "word": "弱点（じゃくてん）: điểm yếu",
+    "translation": "Vị tổng thống trẻ tuổi có điểm yếu là thiếu kinh nghiệm."
+   }
+  },
+  {
+   "id": "q1-2",
+   "lesson": 1,
+   "number": 2,
+   "part": "context",
+   "before": "ここの研究",
+   "target": "",
+   "after": "の多くは古代言語で記された文章を含んでいる。",
+   "options": [
+    "給料",
+    "資料",
+    "送料",
+    "原料"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "資料（しりょう）: tài liệu",
+    "translation": "Nhiều tài liệu nghiên cứu ở đây chứa các văn bản được viết bằng ngôn ngữ cổ đại."
+   }
+  },
+  {
+   "id": "q1-3",
+   "lesson": 1,
+   "number": 3,
+   "part": "context",
+   "before": "",
+   "target": "",
+   "after": "されている象牙の在庫が低を突いた後、大量生産ができなければ、密猟業者が参入してくる。",
+   "options": [
+    "持続",
+    "維持",
+    "貯蔵",
+    "整備"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "貯蔵（ちょぞう）: tích trữ, dự trữ",
+    "translation": "Sau khi lượng ngà voi dự trữ trong kho cạn kiệt, nếu không thể sản xuất hàng loạt thì những kẻ săn trộm sẽ nhảy vào.",
+    "vocab": [
+     "象牙（ぞうげ）: ngà voi",
+     "密猟（みつりょう）: săn trộm"
+    ]
+   }
+  },
+  {
+   "id": "q1-4",
+   "lesson": 1,
+   "number": 4,
+   "part": "context",
+   "before": "象牙の売却許可が発表された",
+   "target": "",
+   "after": "、密猟は６６％、密売は７１％増加したとされる。",
+   "options": [
+    "直接",
+    "直通",
+    "直線",
+    "直後"
+   ],
+   "answer": 3,
+   "inferred": false,
+   "explanation": {
+    "word": "直後（ちょくご）: ngay sau",
+    "translation": "Được cho là ngay sau khi công bố giấy phép bán ngà voi, nạn săn trộm tăng 66% và buôn lậu tăng 71%.",
+    "vocab": [
+     "密売（みつばい）: buôn lậu"
+    ]
+   }
+  },
+  {
+   "id": "q1-5",
+   "lesson": 1,
+   "number": 5,
+   "part": "context",
+   "before": "彼は高校の転入",
+   "target": "",
+   "after": "もすでにすませていて、車を買うのにも協力してくれた。",
+   "options": [
+    "手続",
+    "配置",
+    "処理",
+    "作業"
+   ],
+   "answer": 0,
+   "inferred": false,
+   "explanation": {
+    "word": "手続（てつづき）: thủ tục",
+    "translation": "Anh ấy đã hoàn tất thủ tục chuyển trường cấp ba, và còn giúp đỡ việc mua xe nữa."
+   }
+  },
+  {
+   "id": "q1-6",
+   "lesson": 1,
+   "number": 6,
+   "part": "context",
+   "before": "新たな",
+   "target": "",
+   "after": "になると、気になりはじめるのが健康診断です。",
+   "options": [
+    "年鑑",
+    "年月",
+    "年齢",
+    "年度"
+   ],
+   "answer": 3,
+   "inferred": false,
+   "explanation": {
+    "word": "年度（ねんど）: năm tài chính, niên độ",
+    "translation": "Khi bước sang năm tài chính mới, điều bắt đầu quan tâm là khám sức khỏe."
+   }
+  },
+  {
+   "id": "q1-7",
+   "lesson": 1,
+   "number": 7,
+   "part": "context",
+   "before": "今日は先輩がサッカーの試合に出るので、友達と一緒に",
+   "target": "",
+   "after": "に行った。",
+   "options": [
+    "参加",
+    "指導",
+    "応援",
+    "競争"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "応援（おうえん）: cổ vũ",
+    "translation": "Hôm nay tiền bối thi đấu bóng đá nên tôi đã cùng bạn bè đi cổ vũ."
+   }
+  },
+  {
+   "id": "q1-8",
+   "lesson": 1,
+   "number": 8,
+   "part": "context",
+   "before": "受け取った後、必ず箱の",
+   "target": "",
+   "after": "を確認してください。",
+   "options": [
+    "最中",
+    "中身",
+    "仲間",
+    "以内"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "中身（なかみ）: bên trong, nội dung",
+    "translation": "Sau khi nhận, hãy nhớ kiểm tra bên trong hộp."
+   }
+  },
+  {
+   "id": "q1-9",
+   "lesson": 1,
+   "number": 9,
+   "part": "context",
+   "before": "彼は辛いことがあっても、",
+   "target": "",
+   "after": "な顔をしている。",
+   "options": [
+    "得意",
+    "不安",
+    "正直",
+    "平気"
+   ],
+   "answer": 3,
+   "inferred": false,
+   "explanation": {
+    "word": "平気（へいき）: bình thản, không sao",
+    "translation": "Dù có chuyện buồn, anh ấy vẫn giữ vẻ mặt bình thản."
+   }
+  },
+  {
+   "id": "q1-10",
+   "lesson": 1,
+   "number": 10,
+   "part": "context",
+   "before": "彼の説明はいつも長くて",
+   "target": "",
+   "after": "ので、いらいらする。",
+   "options": [
+    "えらい",
+    "くどい",
+    "かゆい",
+    "ゆるい"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "くどい: dài dòng, lê thê",
+    "translation": "Lời giải thích của anh ấy lúc nào cũng dài dòng lê thê nên rất bực mình."
+   }
+  },
+  {
+   "id": "q1-11",
+   "lesson": 1,
+   "number": 11,
+   "part": "context",
+   "before": "有名なレストランに出かけたが、店は休みで",
+   "target": "",
+   "after": "が閉まっていた。",
+   "options": [
+    "ロッカー",
+    "クーラー",
+    "メニュー",
+    "シャッター"
+   ],
+   "answer": 3,
+   "inferred": false,
+   "explanation": {
+    "word": "シャッター: cửa cuốn",
+    "translation": "Tôi đã đến nhà hàng nổi tiếng nhưng cửa hàng nghỉ, cửa cuốn đóng kín."
+   }
+  },
+  {
+   "id": "q1-12",
+   "lesson": 1,
+   "number": 12,
+   "part": "context",
+   "before": "きのうは国の友だちに会ったので、",
+   "target": "",
+   "after": "遅くまで話し込んでしまった。",
+   "options": [
+    "おしくて",
+    "くやしくて",
+    "したしくて",
+    "なつかしくて"
+   ],
+   "answer": 3,
+   "inferred": false,
+   "explanation": {
+    "word": "なつかしい: nhớ nhung, hoài niệm",
+    "translation": "Hôm qua gặp bạn ở quê nên vì nhớ nhung mà mải nói chuyện đến khuya."
+   }
+  },
+  {
+   "id": "q2-1",
+   "lesson": 2,
+   "number": 1,
+   "part": "context",
+   "before": "今、そこの駅前で田中さんに",
+   "target": "",
+   "after": "会った。",
+   "options": [
+    "ときどき",
+    "たまに",
+    "つい",
+    "ばったり"
+   ],
+   "answer": 3,
+   "inferred": false,
+   "explanation": {
+    "word": "ばったり: tình cờ, bất ngờ",
+    "translation": "Vừa nãy, tôi đã tình cờ gặp anh Tanaka ở trước ga."
+   }
+  },
+  {
+   "id": "q2-2",
+   "lesson": 2,
+   "number": 2,
+   "part": "context",
+   "before": "近所で火事があったが、その家の人たちは幸い",
+   "target": "",
+   "after": "だった。",
+   "options": [
+    "安定",
+    "用心",
+    "無事",
+    "不足"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "無事（ぶじ）: bình an, vô sự",
+    "translation": "Gần đây có vụ cháy, nhưng may mắn là người trong nhà đó đều bình an vô sự.",
+    "vocab": [
+     "幸い（さいわい）: may mắn thay"
+    ]
+   }
+  },
+  {
+   "id": "q2-3",
+   "lesson": 2,
+   "number": 3,
+   "part": "context",
+   "before": "お父さまに、あさっての午前１１時にうかがうと",
+   "target": "",
+   "after": "ください。",
+   "options": [
+    "お届け",
+    "お渡し",
+    "お伝え",
+    "お配り"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "お伝え（おつたえ）: chuyển lời, nhắn lại",
+    "translation": "Xin hãy chuyển lời với bố rằng tôi sẽ đến thăm lúc 11 giờ sáng ngày kia.",
+    "vocab": [
+     "うかがう: đến thăm (kính ngữ của 訪ねる)"
+    ]
+   }
+  },
+  {
+   "id": "q2-4",
+   "lesson": 2,
+   "number": 4,
+   "part": "context",
+   "before": "私は気が",
+   "target": "",
+   "after": "方だから、いつまででも持ちますよ。",
+   "options": [
+    "遠い",
+    "長い",
+    "細い",
+    "遅い"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "気が長い（きがながい）: kiên nhẫn, nhẫn nại",
+    "translation": "Tôi thuộc loại kiên nhẫn nên đợi bao lâu cũng được."
+   }
+  },
+  {
+   "id": "q2-5",
+   "lesson": 2,
+   "number": 5,
+   "part": "context",
+   "before": "コンピューターを使って、国内だけでなく海外とも",
+   "target": "",
+   "after": "が可能になった。",
+   "options": [
+    "通知",
+    "通信",
+    "通行",
+    "通用"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "通信（つうしん）: thông tin, liên lạc",
+    "translation": "Nhờ sử dụng máy tính, không chỉ trong nước mà việc liên lạc với nước ngoài cũng trở nên khả thi."
+   }
+  },
+  {
+   "id": "q2-6",
+   "lesson": 2,
+   "number": 6,
+   "part": "context",
+   "before": "親が自分の子供をかわいいと思うのは",
+   "target": "",
+   "after": "。",
+   "options": [
+    "あたりまえだ",
+    "なまいきだ",
+    "おおざっぱだ",
+    "えらそうだ"
+   ],
+   "answer": 0,
+   "inferred": false,
+   "explanation": {
+    "word": "あたりまえ: đương nhiên, tất nhiên",
+    "translation": "Việc cha mẹ nghĩ con mình đáng yêu là điều đương nhiên."
+   }
+  },
+  {
+   "id": "q2-7",
+   "lesson": 2,
+   "number": 7,
+   "part": "context",
+   "before": "",
+   "target": "",
+   "after": "の結果、私たちの活動は社会に認められました。",
+   "options": [
+    "自慢",
+    "努力",
+    "目的",
+    "覚悟"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "努力（どりょく）: nỗ lực",
+    "translation": "Nhờ nỗ lực, hoạt động của chúng tôi đã được xã hội công nhận."
+   }
+  },
+  {
+   "id": "q2-8",
+   "lesson": 2,
+   "number": 8,
+   "part": "context",
+   "before": "真の国際交流とは何かを考えなければならない",
+   "target": "",
+   "after": "にきている。",
+   "options": [
+    "期間",
+    "期限",
+    "時間",
+    "時期"
+   ],
+   "answer": 3,
+   "inferred": false,
+   "explanation": {
+    "word": "時期（じき）: thời kỳ, thời điểm",
+    "translation": "Đã đến lúc phải suy nghĩ thế nào mới thực sự là giao lưu quốc tế.",
+    "vocab": [
+     "真の（しんの）: thực sự, đích thực"
+    ]
+   }
+  },
+  {
+   "id": "q2-9",
+   "lesson": 2,
+   "number": 9,
+   "part": "context",
+   "before": "今年の夏は天候が非常に悪かった。",
+   "target": "",
+   "after": "米の収穫がかなりすくなくなりそうだ。",
+   "options": [
+    "あるいは",
+    "したがって",
+    "ただし",
+    "ところで"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "したがって: do đó, vì vậy",
+    "translation": "Mùa hè năm nay thời tiết rất xấu. Do đó, sản lượng thu hoạch gạo có vẻ sẽ giảm đáng kể."
+   }
+  },
+  {
+   "id": "q2-10",
+   "lesson": 2,
+   "number": 10,
+   "part": "context",
+   "before": "ここにある物は、",
+   "target": "",
+   "after": "自由に使ってかまいませんよ。",
+   "options": [
+    "なんでも",
+    "なんだか",
+    "なんで",
+    "なんとも"
+   ],
+   "answer": 0,
+   "inferred": false,
+   "explanation": {
+    "word": "なんでも: bất cứ thứ gì, cái gì cũng",
+    "translation": "Những thứ ở đây, bạn dùng bất cứ cái gì cũng được."
+   }
+  },
+  {
+   "id": "q3-1",
+   "lesson": 3,
+   "number": 1,
+   "part": "context",
+   "before": "彼は顔が",
+   "target": "",
+   "after": "から、彼に頼めばいい人を紹介してくれるだろう。",
+   "options": [
+    "大きい",
+    "太い",
+    "多い",
+    "広い"
+   ],
+   "answer": 3,
+   "inferred": false,
+   "explanation": {
+    "word": "顔が広い（かおがひろい）: quen biết rộng",
+    "translation": "Anh ấy quen biết rộng nên nếu nhờ anh ấy, chắc sẽ giới thiệu được người tốt."
+   }
+  },
+  {
+   "id": "q3-2",
+   "lesson": 3,
+   "number": 2,
+   "part": "context",
+   "before": "学校の",
+   "target": "",
+   "after": "にようちえんがあって、子供が遊んでいるのが教室からよく見える。",
+   "options": [
+    "向き",
+    "向かい",
+    "向かう",
+    "向け"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "向かい（むかい）: đối diện",
+    "translation": "Đối diện trường học có trường mẫu giáo, từ lớp học có thể nhìn rõ bọn trẻ đang chơi."
+   }
+  },
+  {
+   "id": "q3-3",
+   "lesson": 3,
+   "number": 3,
+   "part": "context",
+   "before": "予算が",
+   "target": "",
+   "after": "しまったので、計画は中止になった。",
+   "options": [
+    "とじられて",
+    "こすらてて",
+    "にげられて",
+    "けずられて"
+   ],
+   "answer": 3,
+   "inferred": false,
+   "explanation": {
+    "word": "削る（けずる）: cắt giảm",
+    "translation": "Ngân sách đã bị cắt giảm nên kế hoạch bị hủy bỏ."
+   }
+  },
+  {
+   "id": "q3-4",
+   "lesson": 3,
+   "number": 4,
+   "part": "context",
+   "before": "急な用事ができて、私は子どもを友人の家に",
+   "target": "",
+   "after": "ことにした。",
+   "options": [
+    "あずかる",
+    "あずける",
+    "うけとる",
+    "あたえる"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "預ける（あずける）: gửi, nhờ trông",
+    "translation": "Có việc gấp phát sinh nên tôi quyết định gửi con ở nhà bạn."
+   }
+  },
+  {
+   "id": "q3-5",
+   "lesson": 3,
+   "number": 5,
+   "part": "context",
+   "before": "この湖は水がきれいで、まるで",
+   "target": "",
+   "after": "ガラスのようだ。",
+   "options": [
+    "新鮮な",
+    "正確な",
+    "透明な",
+    "明確な"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "透明（とうめい）: trong suốt",
+    "translation": "Nước hồ này trong sạch, trong suốt như kính vậy."
+   }
+  },
+  {
+   "id": "q3-6",
+   "lesson": 3,
+   "number": 6,
+   "part": "context",
+   "before": "夜おそく暗い道を一人で歩くのは",
+   "target": "",
+   "after": "ものです。",
+   "options": [
+    "にくらしい",
+    "おそろしい",
+    "おとなしい",
+    "やかましい"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "恐ろしい（おそろしい）: đáng sợ",
+    "translation": "Đi bộ một mình trên đường tối vào ban đêm muộn thật đáng sợ."
+   }
+  },
+  {
+   "id": "q3-7",
+   "lesson": 3,
+   "number": 7,
+   "part": "context",
+   "before": "このホテルは",
+   "target": "",
+   "after": "が良いので、お客は満足しているようだ。",
+   "options": [
+    "サービス",
+    "チッブ",
+    "リズム",
+    "スピード"
+   ],
+   "answer": 0,
+   "inferred": false,
+   "explanation": {
+    "word": "サービス: dịch vụ",
+    "translation": "Khách sạn này dịch vụ tốt nên khách có vẻ hài lòng."
+   }
+  },
+  {
+   "id": "q3-8",
+   "lesson": 3,
+   "number": 8,
+   "part": "context",
+   "before": "「悲しい」や「うれしい」は",
+   "target": "",
+   "after": "を表すことばです。",
+   "options": [
+    "感心",
+    "意見",
+    "意志",
+    "感情"
+   ],
+   "answer": 3,
+   "inferred": false,
+   "explanation": {
+    "word": "感情（かんじょう）: cảm xúc, tình cảm",
+    "translation": "\"Buồn\" và \"vui\" là những từ biểu đạt cảm xúc."
+   }
+  },
+  {
+   "id": "q3-9",
+   "lesson": 3,
+   "number": 9,
+   "part": "context",
+   "before": "今",
+   "target": "",
+   "after": "いる風邪は、高い熱が出る。",
+   "options": [
+    "かたよって",
+    "つながって",
+    "はやって",
+    "やとって"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "流行る（はやる）: lan truyền, thịnh hành",
+    "translation": "Cảm cúm đang lan truyền hiện nay gây sốt cao."
+   }
+  },
+  {
+   "id": "q3-10",
+   "lesson": 3,
+   "number": 10,
+   "part": "context",
+   "before": "他の人はみんなスーツを着ているのに自分だけ",
+   "target": "",
+   "after": "着で恥ずかしかった。",
+   "options": [
+    "普通",
+    "平凡",
+    "普段",
+    "本来"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "普段着（ふだんぎ）: quần áo thường ngày",
+    "translation": "Mọi người đều mặc vest mà chỉ mình mặc đồ thường ngày nên thật xấu hổ."
+   }
+  },
+  {
+   "id": "q4-1",
+   "lesson": 4,
+   "number": 1,
+   "part": "context",
+   "before": "何をするにも、",
+   "target": "",
+   "after": "方法をとっていては、成功はむずかしい。",
+   "options": [
+    "安静な",
+    "安定な",
+    "安易な",
+    "安価な"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "安易（あんい）: dễ dãi, qua loa",
+    "translation": "Dù làm gì, nếu cứ chọn cách dễ dãi thì khó mà thành công."
+   }
+  },
+  {
+   "id": "q4-2",
+   "lesson": 4,
+   "number": 2,
+   "part": "context",
+   "before": "目が痛かったので、しばらく目を",
+   "target": "",
+   "after": "いた。",
+   "options": [
+    "さげて",
+    "しめて",
+    "とじて",
+    "とめて"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "閉じる（とじる）: nhắm, đóng lại",
+    "translation": "Vì mắt bị đau nên tôi đã nhắm mắt một lúc."
+   }
+  },
+  {
+   "id": "q4-3",
+   "lesson": 4,
+   "number": 3,
+   "part": "context",
+   "before": "その話に深く",
+   "target": "",
+   "after": "して、泣いてしまった。",
+   "options": [
+    "強調",
+    "理解",
+    "暗記",
+    "感動"
+   ],
+   "answer": 3,
+   "inferred": false,
+   "explanation": {
+    "word": "感動（かんどう）: cảm động, xúc động",
+    "translation": "Nghe câu chuyện đó, tôi xúc động sâu sắc và khóc mất."
+   }
+  },
+  {
+   "id": "q4-4",
+   "lesson": 4,
+   "number": 4,
+   "part": "context",
+   "before": "むだな抵抗はやめて、",
+   "target": "",
+   "after": "武器をすてて出てきなさい。",
+   "options": [
+    "げんに",
+    "ただちに",
+    "ついた",
+    "めったに"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "ただちに: ngay lập tức",
+    "translation": "Hãy ngừng kháng cự vô ích, lập tức bỏ vũ khí và ra đây.",
+    "vocab": [
+     "抵抗（ていこう）: kháng cự",
+     "武器（ぶき）: vũ khí"
+    ]
+   }
+  },
+  {
+   "id": "q4-5",
+   "lesson": 4,
+   "number": 5,
+   "part": "context",
+   "before": "少し走っただけでそんなに疲れるなんて",
+   "target": "",
+   "after": "。",
+   "options": [
+    "だらしない",
+    "やかましい",
+    "くだらない",
+    "ずうずうしい"
+   ],
+   "answer": 0,
+   "inferred": false,
+   "explanation": {
+    "word": "だらしない: yếu đuối, không ra gì",
+    "translation": "Chỉ chạy một chút mà mệt như vậy thì thật không ra gì."
+   }
+  },
+  {
+   "id": "q4-6",
+   "lesson": 4,
+   "number": 6,
+   "part": "context",
+   "before": "悪い人にだまされて、財産をすべて",
+   "target": "",
+   "after": "しまった。",
+   "options": [
+    "失って",
+    "疑って",
+    "補って",
+    "払って"
+   ],
+   "answer": 0,
+   "inferred": false,
+   "explanation": {
+    "word": "失う（うしなう）: mất, đánh mất",
+    "translation": "Bị kẻ xấu lừa, tài sản đã mất sạch.",
+    "vocab": [
+     "財産（ざいさん）: tài sản"
+    ]
+   }
+  },
+  {
+   "id": "q4-7",
+   "lesson": 4,
+   "number": 7,
+   "part": "context",
+   "before": "弟は毎日、研究所で化学の",
+   "target": "",
+   "after": "をしている。",
+   "options": [
+    "実行",
+    "実験",
+    "実用",
+    "実感"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "実験（じっけん）: thí nghiệm",
+    "translation": "Em trai tôi hàng ngày làm thí nghiệm hóa học ở viện nghiên cứu.",
+    "vocab": [
+     "研究所（けんきゅうじょ）: viện nghiên cứu"
+    ]
+   }
+  },
+  {
+   "id": "q4-8",
+   "lesson": 4,
+   "number": 8,
+   "part": "context",
+   "before": "父が死んだ後、わたしたちは悲しみを",
+   "target": "",
+   "after": "、今日までがんばってきた。",
+   "options": [
+    "のりかえて",
+    "のりすぎて",
+    "のりこえて",
+    "のりあげて"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "乗り越える（のりこえる）: vượt qua",
+    "translation": "Sau khi cha mất, chúng tôi đã vượt qua nỗi buồn và cố gắng cho đến hôm nay."
+   }
+  },
+  {
+   "id": "q4-9",
+   "lesson": 4,
+   "number": 9,
+   "part": "context",
+   "before": "病気の母が泣いて止めたけれど、",
+   "target": "",
+   "after": "留学したい気持ちは変わらなかった。",
+   "options": [
+    "それとも",
+    "それで",
+    "それなら",
+    "それでも"
+   ],
+   "answer": 3,
+   "inferred": false,
+   "explanation": {
+    "word": "それでも: dù vậy, mặc dù thế",
+    "translation": "Mẹ bị bệnh đã khóc và ngăn cản, nhưng dù vậy ý muốn đi du học vẫn không thay đổi."
+   }
+  },
+  {
+   "id": "q4-10",
+   "lesson": 4,
+   "number": 10,
+   "part": "context",
+   "before": "初めて降りた駅で",
+   "target": "",
+   "after": "していたら、知らない人が親切に案内してくれた。",
+   "options": [
+    "ぶつぶつ",
+    "まごまご",
+    "はきはき",
+    "もともと"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "まごまご: lúng túng, bối rối",
+    "translation": "Khi đang lúng túng ở ga lần đầu xuống, một người lạ đã tốt bụng chỉ đường cho tôi."
+   }
+  },
+  {
+   "id": "q5-1",
+   "lesson": 5,
+   "number": 1,
+   "part": "context",
+   "before": "医者に、太りすぎだから",
+   "target": "",
+   "after": "の高くない食事をしろと言われた。",
+   "options": [
+    "カロリー",
+    "ナンバー",
+    "サービス",
+    "アイデア"
+   ],
+   "answer": 0,
+   "inferred": false,
+   "explanation": {
+    "word": "カロリー: calo, năng lượng",
+    "translation": "Bác sĩ bảo tôi béo quá nên hãy ăn những bữa ăn không có calo cao."
+   }
+  },
+  {
+   "id": "q5-2",
+   "lesson": 5,
+   "number": 2,
+   "part": "context",
+   "before": "この辞書は説明がわかりやすく、",
+   "target": "",
+   "after": "くわしい。",
+   "options": [
+    "さて",
+    "ただ",
+    "しかも",
+    "または"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "しかも: hơn nữa, thêm vào đó",
+    "translation": "Cuốn từ điển này giải thích dễ hiểu, hơn nữa còn chi tiết."
+   }
+  },
+  {
+   "id": "q5-3",
+   "lesson": 5,
+   "number": 3,
+   "part": "context",
+   "before": "私は家へ帰ると、いつも",
+   "target": "",
+   "after": "まどを開けて空気を入れかえる。",
+   "options": [
+    "まつさおに",
+    "まっすぐに",
+    "まっさきに",
+    "まっしろに"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "まっさきに: đầu tiên, trước hết",
+    "translation": "Mỗi khi về nhà, tôi luôn mở cửa sổ trước tiên để thay đổi không khí."
+   }
+  },
+  {
+   "id": "q5-4",
+   "lesson": 5,
+   "number": 4,
+   "part": "context",
+   "before": "この仕事は私に",
+   "target": "",
+   "after": "ください。",
+   "options": [
+    "働いて",
+    "引き受けて",
+    "役立って",
+    "任せて"
+   ],
+   "answer": 3,
+   "inferred": false,
+   "explanation": {
+    "word": "任せる（まかせる）: giao phó, ủy thác",
+    "translation": "Hãy giao công việc này cho tôi."
+   }
+  },
+  {
+   "id": "q5-5",
+   "lesson": 5,
+   "number": 5,
+   "part": "context",
+   "before": "このテープレコーダーは電池が",
+   "target": "",
+   "after": "いて、動かない。",
+   "options": [
+    "きれて",
+    "たまって",
+    "とまって",
+    "おくれて"
+   ],
+   "answer": 0,
+   "inferred": false,
+   "explanation": {
+    "word": "きれる: hết, cạn",
+    "translation": "Máy ghi âm này pin đã hết nên không chạy được.",
+    "vocab": [
+     "電池がきれる: pin hết, pin cạn"
+    ]
+   }
+  },
+  {
+   "id": "q5-6",
+   "lesson": 5,
+   "number": 6,
+   "part": "context",
+   "before": "大きな仕事を完成させるためには、人と対立することがあっても",
+   "target": "",
+   "after": "と思う。",
+   "options": [
+    "うむをえない",
+    "やむをえらない",
+    "やむをえない",
+    "うむをえらない"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "やむをえない: bất đắc dĩ, không thể tránh khỏi",
+    "translation": "Để hoàn thành công việc lớn, tôi nghĩ dù có đối lập với người khác cũng là điều không thể tránh khỏi.",
+    "vocab": [
+     "対立（たいりつ）: đối lập, xung đột"
+    ]
+   }
+  },
+  {
+   "id": "q5-7",
+   "lesson": 5,
+   "number": 7,
+   "part": "context",
+   "before": "信号が青になって、止まっていた車が",
+   "target": "",
+   "after": "走り出した。",
+   "options": [
+    "いっそうに",
+    "いっぱんに",
+    "いっせいに",
+    "いったんに"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "いっせいに（一斉に）: đồng loạt, cùng một lúc",
+    "translation": "Đèn chuyển xanh, những chiếc xe đang dừng đồng loạt chạy."
+   }
+  },
+  {
+   "id": "q5-8",
+   "lesson": 5,
+   "number": 8,
+   "part": "context",
+   "before": "今年文学賞をもらった作家に、新聞記者が",
+   "target": "",
+   "after": "をして記事を書いた。",
+   "options": [
+    "ステージ",
+    "コンクール",
+    "インタビュー",
+    "レクリエーション"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "インタビュー: phỏng vấn",
+    "translation": "Phóng viên báo chí đã phỏng vấn nhà văn nhận giải thưởng văn học năm nay và viết bài.",
+    "vocab": [
+     "文学賞（ぶんがくしょう）: giải thưởng văn học"
+    ]
+   }
+  },
+  {
+   "id": "q5-9",
+   "lesson": 5,
+   "number": 9,
+   "part": "context",
+   "before": "姉は健康のため、プールに通っている。私も姉に",
+   "target": "",
+   "after": "、水泳を始めることにした。",
+   "options": [
+    "かわって",
+    "ならって",
+    "まざって",
+    "ならんで"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "ならう（倣う）: noi theo, học theo",
+    "translation": "Chị gái đi bơi vì sức khỏe. Tôi cũng noi theo chị, quyết định bắt đầu bơi lội."
+   }
+  },
+  {
+   "id": "q5-10",
+   "lesson": 5,
+   "number": 10,
+   "part": "context",
+   "before": "食べたら歯をみがく習慣を",
+   "target": "",
+   "after": "ものだ。",
+   "options": [
+    "もらいたい",
+    "とりたい",
+    "つけたい",
+    "したい"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "つける: tạo, hình thành",
+    "translation": "Nên tạo thói quen đánh răng sau khi ăn.",
+    "vocab": [
+     "習慣をつける: hình thành thói quen"
+    ]
+   }
+  },
+  {
+   "id": "q6-1",
+   "lesson": 6,
+   "number": 1,
+   "part": "context",
+   "before": "彼の意見は問題点を",
+   "target": "",
+   "after": "指摘している。",
+   "options": [
+    "まずしく",
+    "したしく",
+    "にぶく",
+    "するどく"
+   ],
+   "answer": 3,
+   "inferred": false,
+   "explanation": {
+    "word": "鋭い（するどい）: sắc bén, nhạy bén",
+    "translation": "Ý kiến của anh ấy chỉ ra vấn đề một cách sắc bén."
+   }
+  },
+  {
+   "id": "q6-2",
+   "lesson": 6,
+   "number": 2,
+   "part": "context",
+   "before": "「山本さんのお子さん、野球の練習でけがをなさったそうですよ。」「それは",
+   "target": "",
+   "after": "。」",
+   "options": [
+    "おきのどくに",
+    "おじゃまします",
+    "おせわになります",
+    "おまちどおさま"
+   ],
+   "answer": 0,
+   "inferred": false,
+   "explanation": {
+    "word": "お気の毒に（おきのどくに）: tội nghiệp, đáng thương",
+    "translation": "\"Nghe nói con của anh Yamamoto bị thương khi tập bóng chày đấy.\" \"Tội nghiệp quá.\""
+   }
+  },
+  {
+   "id": "q6-3",
+   "lesson": 6,
+   "number": 3,
+   "part": "context",
+   "before": "商品の質を",
+   "target": "",
+   "after": "するために、さまざまな保存技術が研究されている。",
+   "options": [
+    "連続",
+    "維持",
+    "普及",
+    "催促"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "維持（いじ）: duy trì",
+    "translation": "Để duy trì chất lượng sản phẩm, nhiều kỹ thuật bảo quản đang được nghiên cứu."
+   }
+  },
+  {
+   "id": "q6-4",
+   "lesson": 6,
+   "number": 4,
+   "part": "context",
+   "before": "国会議事堂のまわりは",
+   "target": "",
+   "after": "警備されている。",
+   "options": [
+    "独特に",
+    "重大に",
+    "厳重に",
+    "特定に"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "厳重（げんじゅう）: nghiêm ngặt",
+    "translation": "Xung quanh tòa nhà Quốc hội được canh gác nghiêm ngặt.",
+    "vocab": [
+     "国会議事堂（こっかいぎじどう）: tòa nhà Quốc hội"
+    ]
+   }
+  },
+  {
+   "id": "q6-5",
+   "lesson": 6,
+   "number": 5,
+   "part": "context",
+   "before": "私はオリンピックの選手に",
+   "target": "",
+   "after": "水泳を始めた。",
+   "options": [
+    "めざして",
+    "もとめて",
+    "はりきって",
+    "あこがれて"
+   ],
+   "answer": 3,
+   "inferred": false,
+   "explanation": {
+    "word": "憧れる（あこがれる）: ngưỡng mộ, khao khát",
+    "translation": "Tôi ngưỡng mộ các vận động viên Olympic nên đã bắt đầu bơi lội."
+   }
+  },
+  {
+   "id": "q6-6",
+   "lesson": 6,
+   "number": 6,
+   "part": "context",
+   "before": "相手の意見を",
+   "target": "",
+   "after": "して、私たちはこの計画を変えた。",
+   "options": [
+    "尊敬",
+    "敬意",
+    "尊重",
+    "貴重"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "尊重（そんちょう）: tôn trọng",
+    "translation": "Tôn trọng ý kiến của đối phương, chúng tôi đã thay đổi kế hoạch này."
+   }
+  },
+  {
+   "id": "q6-7",
+   "lesson": 6,
+   "number": 7,
+   "part": "context",
+   "before": "一人ずつ",
+   "target": "",
+   "after": "歌ってもらいましよう。",
+   "options": [
+    "番号に",
+    "順番に",
+    "順調に",
+    "調子に"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "順番（じゅんばん）: theo thứ tự, lần lượt",
+    "translation": "Hãy lần lượt từng người một hát nhé."
+   }
+  },
+  {
+   "id": "q6-8",
+   "lesson": 6,
+   "number": 8,
+   "part": "context",
+   "before": "この法律は学者によって",
+   "target": "",
+   "after": "がちがっている。",
+   "options": [
+    "解散",
+    "解決",
+    "解放",
+    "解釈"
+   ],
+   "answer": 3,
+   "inferred": false,
+   "explanation": {
+    "word": "解釈（かいしゃく）: cách hiểu, cách diễn giải",
+    "translation": "Luật này có cách diễn giải khác nhau tùy theo học giả."
+   }
+  },
+  {
+   "id": "q6-9",
+   "lesson": 6,
+   "number": 9,
+   "part": "context",
+   "before": "父の大切なカメラをなくしてしまい、",
+   "target": "",
+   "after": "気持ちでいっぱいだ。",
+   "options": [
+    "いけない",
+    "しょうがない",
+    "もうしわけない",
+    "だらしない"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "申し訳ない（もうしわけない）: xin lỗi, áy náy",
+    "translation": "Làm mất chiếc máy ảnh quý giá của bố, tôi tràn đầy cảm giác áy náy."
+   }
+  },
+  {
+   "id": "q6-10",
+   "lesson": 6,
+   "number": 10,
+   "part": "context",
+   "before": "友だちがしている",
+   "target": "",
+   "after": "は、軽くてあたたかそうだ。",
+   "options": [
+    "スカーフ",
+    "スクール",
+    "スケート",
+    "スカート"
+   ],
+   "answer": 0,
+   "inferred": false,
+   "explanation": {
+    "word": "スカーフ: khăn quàng cổ",
+    "translation": "Chiếc khăn quàng cổ mà bạn tôi đang đeo trông nhẹ và ấm áp."
+   }
+  },
+  {
+   "id": "q7-1",
+   "lesson": 7,
+   "number": 1,
+   "part": "context",
+   "before": "雨は",
+   "target": "",
+   "after": "やむでしょう。それまでお茶でも飲んでいましょう。",
+   "options": [
+    "じきに",
+    "すでに",
+    "ただちに",
+    "ひとりでに"
+   ],
+   "answer": 0,
+   "inferred": false,
+   "explanation": {
+    "word": "じきに: sắp, chẳng bao lâu nữa",
+    "translation": "Mưa chắc sắp tạnh thôi. Trong lúc chờ, chúng ta uống trà đi."
+   }
+  },
+  {
+   "id": "q7-2",
+   "lesson": 7,
+   "number": 2,
+   "part": "context",
+   "before": "試験に落ちたからといって",
+   "target": "",
+   "after": "しないでください。",
+   "options": [
+    "がっかり",
+    "しっかり",
+    "すっかり",
+    "うっかり"
+   ],
+   "answer": 0,
+   "inferred": false,
+   "explanation": {
+    "word": "がっかり: thất vọng, chán nản",
+    "translation": "Dù có trượt kỳ thi thì cũng đừng thất vọng."
+   }
+  },
+  {
+   "id": "q7-3",
+   "lesson": 7,
+   "number": 3,
+   "part": "context",
+   "before": "来月のコンサートの",
+   "target": "",
+   "after": "には、好きな曲があまり入っていない。",
+   "options": [
+    "グイヤ",
+    "スタイル",
+    "リズム",
+    "プログラム"
+   ],
+   "answer": 3,
+   "inferred": false,
+   "explanation": {
+    "word": "プログラム: chương trình",
+    "translation": "Trong chương trình buổi hòa nhạc tháng sau, không có mấy bài mình thích."
+   }
+  },
+  {
+   "id": "q7-4",
+   "lesson": 7,
+   "number": 4,
+   "part": "context",
+   "before": "びょうきでにゅういんしたのを",
+   "target": "",
+   "after": "に、たばこをやめることにした。",
+   "options": [
+    "きっかけ",
+    "はじめ",
+    "おかげ",
+    "こころあたり"
+   ],
+   "answer": 0,
+   "inferred": false,
+   "explanation": {
+    "word": "きっかけ: cơ hội, dịp, động lực",
+    "translation": "Nhân dịp nhập viện vì bệnh, tôi đã quyết định bỏ thuốc lá.",
+    "vocab": [
+     "びょうき（病気）: bệnh、にゅういん（入院）: nhập viện"
+    ]
+   }
+  },
+  {
+   "id": "q7-5",
+   "lesson": 7,
+   "number": 5,
+   "part": "context",
+   "before": "ひさしぶうりに",
+   "target": "",
+   "after": "がとれたので、一日中何もしないでのんびりした。",
+   "options": [
+    "休業",
+    "休憩",
+    "休講",
+    "休暇"
+   ],
+   "answer": 3,
+   "inferred": false,
+   "explanation": {
+    "word": "休暇（きゅうか）: kỳ nghỉ, nghỉ phép",
+    "translation": "Lâu lắm mới được nghỉ phép nên cả ngày không làm gì, thư thả nghỉ ngơi."
+   }
+  },
+  {
+   "id": "q7-6",
+   "lesson": 7,
+   "number": 6,
+   "part": "context",
+   "before": "",
+   "target": "",
+   "after": "財布を落としてしまい、家へ帰るバス代がない。",
+   "options": [
+    "ずっと",
+    "しっかり",
+    "こっそり",
+    "うっかり"
+   ],
+   "answer": 3,
+   "inferred": false,
+   "explanation": {
+    "word": "うっかり: lơ đễnh, bất cẩn",
+    "translation": "Lơ đễnh làm rơi ví, không có tiền xe buýt để về nhà."
+   }
+  },
+  {
+   "id": "q7-7",
+   "lesson": 7,
+   "number": 7,
+   "part": "context",
+   "before": "車が多くあぶないから、もっと道の",
+   "target": "",
+   "after": "を歩きなさい。",
+   "options": [
+    "まわり",
+    "はし",
+    "かど",
+    "となり"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "端（はし）: mép, rìa, bên lề",
+    "translation": "Xe cộ nhiều nguy hiểm lắm, hãy đi sát mép đường hơn."
+   }
+  },
+  {
+   "id": "q7-8",
+   "lesson": 7,
+   "number": 8,
+   "part": "context",
+   "before": "東京から見て、名古屋は大阪より",
+   "target": "",
+   "after": "にある。",
+   "options": [
+    "手頃",
+    "手前",
+    "手入れ",
+    "手当て"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "手前（てまえ）: phía trước, bên này (gần hơn từ góc nhìn người nói)",
+    "translation": "Nhìn từ Tokyo, Nagoya nằm ở phía gần hơn so với Osaka."
+   }
+  },
+  {
+   "id": "q7-9",
+   "lesson": 7,
+   "number": 9,
+   "part": "context",
+   "before": "今日は友達の結婚式でスピーチをするので、とても",
+   "target": "",
+   "after": "している。",
+   "options": [
+    "拡張",
+    "出張",
+    "緊張",
+    "主張"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "緊張（きんちょう）: căng thẳng, hồi hộp",
+    "translation": "Hôm nay phải phát biểu ở đám cưới bạn nên rất hồi hộp."
+   }
+  },
+  {
+   "id": "q7-10",
+   "lesson": 7,
+   "number": 10,
+   "part": "context",
+   "before": "",
+   "target": "",
+   "after": "いつでもお手伝いさせていただきます。",
+   "options": [
+    "喜んで",
+    "好んで",
+    "望んで",
+    "幸せで"
+   ],
+   "answer": 0,
+   "inferred": false,
+   "explanation": {
+    "word": "喜んで（よろこんで）: sẵn lòng, vui lòng",
+    "translation": "Tôi sẵn lòng giúp đỡ bất cứ lúc nào."
+   }
+  },
+  {
+   "id": "q8-1",
+   "lesson": 8,
+   "number": 1,
+   "part": "context",
+   "before": "山本さんは、",
+   "target": "",
+   "after": "値段のかばんをさがしている。",
+   "options": [
+    "気楽な",
+    "けんきょな",
+    "そまつな",
+    "手ごろな"
+   ],
+   "answer": 3,
+   "inferred": false,
+   "explanation": {
+    "word": "手頃（てごろ）: vừa phải, phải chăng",
+    "translation": "Anh Yamamoto đang tìm cặp có giá vừa phải."
+   }
+  },
+  {
+   "id": "q8-2",
+   "lesson": 8,
+   "number": 2,
+   "part": "context",
+   "before": "今、母の病気が心配で、勉強に",
+   "target": "",
+   "after": "できない。",
+   "options": [
+    "熱心",
+    "集中",
+    "上達",
+    "専門"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "集中（しゅうちゅう）: tập trung",
+    "translation": "Bây giờ tôi lo lắng về bệnh của mẹ nên không thể tập trung học được."
+   }
+  },
+  {
+   "id": "q8-3",
+   "lesson": 8,
+   "number": 3,
+   "part": "context",
+   "before": "年に一度の祭りの日は．町",
+   "target": "",
+   "after": "が活気に満ちている。",
+   "options": [
+    "全身",
+    "全体",
+    "全力",
+    "全集"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "全体（ぜんたい）: toàn bộ, toàn thể",
+    "translation": "Vào ngày lễ hội mỗi năm một lần, toàn bộ thị trấn tràn đầy sức sống.",
+    "vocab": [
+     "活気（かっき）: sức sống, sinh khí"
+    ]
+   }
+  },
+  {
+   "id": "q8-4",
+   "lesson": 8,
+   "number": 4,
+   "part": "context",
+   "before": "あの人は、同僚と",
+   "target": "",
+   "after": "起こすのを恐れて、自分の意見を言わないことが多い。",
+   "options": [
+    "競争",
+    "健闘",
+    "摩擦",
+    "損害"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "摩擦（まさつ）: ma sát, xung đột",
+    "translation": "Người đó sợ gây xung đột với đồng nghiệp nên thường không nói ý kiến của mình."
+   }
+  },
+  {
+   "id": "q8-5",
+   "lesson": 8,
+   "number": 5,
+   "part": "context",
+   "before": "この大学は就職",
+   "target": "",
+   "after": "が高い。",
+   "options": [
+    "率",
+    "割",
+    "度",
+    "倍"
+   ],
+   "answer": 0,
+   "inferred": false,
+   "explanation": {
+    "word": "率（りつ）: tỷ lệ",
+    "translation": "Trường đại học này có tỷ lệ có việc làm cao.",
+    "vocab": [
+     "就職率（しゅうしょくりつ）: tỷ lệ có việc làm"
+    ]
+   }
+  },
+  {
+   "id": "q8-6",
+   "lesson": 8,
+   "number": 6,
+   "part": "context",
+   "before": "うちの畑でできるトマトは、",
+   "target": "",
+   "after": "はよくないけれど、味がいい。",
+   "options": [
+    "見出し",
+    "見かけ",
+    "見直し",
+    "見方"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "見かけ（みかけ）: vẻ bề ngoài, hình thức bên ngoài",
+    "translation": "Cà chua trồng ở vườn nhà tôi tuy bề ngoài không đẹp nhưng ngon."
+   }
+  },
+  {
+   "id": "q8-7",
+   "lesson": 8,
+   "number": 7,
+   "part": "context",
+   "before": "冷蔵庫の奥から古い肉を出し、鼻を",
+   "target": "",
+   "after": "においをかいでみた。",
+   "options": [
+    "ふり向いて",
+    "付き合って",
+    "あてはめて",
+    "近づけて"
+   ],
+   "answer": 3,
+   "inferred": false,
+   "explanation": {
+    "word": "近づける（ちかづける）: đưa lại gần",
+    "translation": "Tôi lấy miếng thịt cũ từ sâu trong tủ lạnh ra, đưa mũi lại gần và ngửi thử."
+   }
+  },
+  {
+   "id": "q8-8",
+   "lesson": 8,
+   "number": 8,
+   "part": "context",
+   "before": "",
+   "target": "",
+   "after": "期間で日本語が上手になる方法はありませんか。",
+   "options": [
+    "前",
+    "小",
+    "短",
+    "半"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "短期間（たんきかん）: thời gian ngắn",
+    "translation": "Có phương pháp nào để giỏi tiếng Nhật trong thời gian ngắn không?"
+   }
+  },
+  {
+   "id": "q8-9",
+   "lesson": 8,
+   "number": 9,
+   "part": "context",
+   "before": "スープが",
+   "target": "",
+   "after": "しまったので、もう一度あたためた。",
+   "options": [
+    "さめて",
+    "つめて",
+    "うすめて",
+    "よわめて"
+   ],
+   "answer": 0,
+   "inferred": false,
+   "explanation": {
+    "word": "冷める（さめる）: nguội đi",
+    "translation": "Súp đã nguội mất nên tôi hâm nóng lại lần nữa."
+   }
+  },
+  {
+   "id": "q8-10",
+   "lesson": 8,
+   "number": 10,
+   "part": "context",
+   "before": "この公園は国が",
+   "target": "",
+   "after": "している。",
+   "options": [
+    "監督",
+    "管理",
+    "生産",
+    "調節"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "管理（かんり）: quản lý",
+    "translation": "Công viên này do nhà nước quản lý."
+   }
+  },
+  {
+   "id": "q9-1",
+   "lesson": 9,
+   "number": 1,
+   "part": "context",
+   "before": "このごろ彼は",
+   "target": "",
+   "after": "元気がないようだ。",
+   "options": [
+    "なんとなく",
+    "なんとか",
+    "なんで",
+    "なんでも"
+   ],
+   "answer": 0,
+   "inferred": false,
+   "explanation": {
+    "word": "なんとなく: không hiểu sao, không rõ lý do",
+    "translation": "Dạo này anh ấy dường như không hiểu sao lại không khỏe."
+   }
+  },
+  {
+   "id": "q9-2",
+   "lesson": 9,
+   "number": 2,
+   "part": "context",
+   "before": "今日の会議で．計画の変更を",
+   "target": "",
+   "after": "つもりだ。",
+   "options": [
+    "提案する",
+    "展開する",
+    "観察する",
+    "投票する"
+   ],
+   "answer": 0,
+   "inferred": false,
+   "explanation": {
+    "word": "提案（ていあん）する: đề xuất, đề nghị",
+    "translation": "Tôi định đề xuất thay đổi kế hoạch trong cuộc họp hôm nay."
+   }
+  },
+  {
+   "id": "q9-3",
+   "lesson": 9,
+   "number": 3,
+   "part": "context",
+   "before": "会議が始まるまでに、この書類の",
+   "target": "",
+   "after": "を20人分お願いします。",
+   "options": [
+    "テ－マ",
+    "シーツ",
+    "カラー",
+    "コピー"
+   ],
+   "answer": 3,
+   "inferred": false,
+   "explanation": {
+    "word": "コピー: bản sao, photocopy",
+    "translation": "Trước khi cuộc họp bắt đầu, xin hãy photo tài liệu này cho 20 người."
+   }
+  },
+  {
+   "id": "q9-4",
+   "lesson": 9,
+   "number": 4,
+   "part": "context",
+   "before": "次の文章をよく読んで、",
+   "target": "",
+   "after": "をまとめなさい。",
+   "options": [
+    "整理",
+    "要旨",
+    "理解",
+    "要領"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "要旨（ようし）: đại ý, ý chính",
+    "translation": "Hãy đọc kỹ đoạn văn sau và tóm tắt ý chính."
+   }
+  },
+  {
+   "id": "q9-5",
+   "lesson": 9,
+   "number": 5,
+   "part": "context",
+   "before": "台風に",
+   "target": "",
+   "after": "、十分な注意が必要です。",
+   "options": [
+    "したがって",
+    "とって",
+    "受けて",
+    "そなえて"
+   ],
+   "answer": 3,
+   "inferred": false,
+   "explanation": {
+    "word": "備えて（そなえて）: phòng bị, chuẩn bị",
+    "translation": "Cần hết sức chú ý để phòng bị cho bão."
+   }
+  },
+  {
+   "id": "q9-6",
+   "lesson": 9,
+   "number": 6,
+   "part": "context",
+   "before": "",
+   "target": "",
+   "after": "日本へ出発する時が来た。",
+   "options": [
+    "いきいき",
+    "いろいろ",
+    "いよいよ",
+    "いちいち"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "いよいよ: cuối cùng cũng, rốt cuộc",
+    "translation": "Cuối cùng cũng đã đến lúc khởi hành đi Nhật."
+   }
+  },
+  {
+   "id": "q9-7",
+   "lesson": 9,
+   "number": 7,
+   "part": "context",
+   "before": "父からの手紙を読んで、親はありがたいものだと",
+   "target": "",
+   "after": "思った。",
+   "options": [
+    "せいぜい",
+    "しみじみ",
+    "ちかぢか",
+    "ひろびろ"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "しみじみ: thấm thía, sâu sắc",
+    "translation": "Đọc thư của bố, tôi thấm thía nghĩ rằng cha mẹ thật đáng quý."
+   }
+  },
+  {
+   "id": "q9-8",
+   "lesson": 9,
+   "number": 8,
+   "part": "context",
+   "before": "この会社では、仕事が忙しい間は、アルバイトを",
+   "target": "",
+   "after": "ことにしている。",
+   "options": [
+    "えらぶ",
+    "たくわえる",
+    "やとう",
+    "とらえる"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "雇う（やとう）: thuê, tuyển dụng",
+    "translation": "Ở công ty này, trong thời gian bận việc thì thuê thêm nhân viên bán thời gian."
+   }
+  },
+  {
+   "id": "q9-9",
+   "lesson": 9,
+   "number": 9,
+   "part": "context",
+   "before": "",
+   "target": "",
+   "after": "子供なので、自分の思っていることを言わないことが多い。",
+   "options": [
+    "なつかしい",
+    "くわしい",
+    "おとなしい",
+    "さわがしい"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "大人しい（おとなしい）: hiền lành, ngoan ngoãn",
+    "translation": "Vì là đứa trẻ hiền lành nên thường không nói ra những gì mình nghĩ."
+   }
+  },
+  {
+   "id": "q9-10",
+   "lesson": 9,
+   "number": 10,
+   "part": "context",
+   "before": "家具屋でつくえを買って、",
+   "target": "",
+   "after": "もらった。",
+   "options": [
+    "発達して",
+    "配達して",
+    "速達して",
+    "伝達して"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "配達（はいたつ）する: giao hàng",
+    "translation": "Tôi mua bàn ở cửa hàng nội thất và nhờ họ giao hàng."
+   }
+  },
+  {
+   "id": "q10-1",
+   "lesson": 10,
+   "number": 1,
+   "part": "context",
+   "before": "大都市は交通、住宅、教育など、さまざまな問題を",
+   "target": "",
+   "after": "いる。",
+   "options": [
+    "だいて",
+    "めぐって",
+    "かかえて",
+    "さわって"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "抱える（かかえる）: ôm, gánh chịu",
+    "translation": "Các thành phố lớn đang gánh chịu nhiều vấn đề khác nhau như giao thông, nhà ở, giáo dục."
+   }
+  },
+  {
+   "id": "q10-2",
+   "lesson": 10,
+   "number": 2,
+   "part": "context",
+   "before": "全国から送られた寄付け金の",
+   "target": "",
+   "after": "使い方を検討する。",
+   "options": [
+    "退屈な",
+    "無事な",
+    "有効な",
+    "粗末な"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "有効（ゆうこう）: hiệu quả, hữu hiệu",
+    "translation": "Xem xét cách sử dụng hiệu quả số tiền quyên góp được gửi từ khắp cả nước."
+   }
+  },
+  {
+   "id": "q10-3",
+   "lesson": 10,
+   "number": 3,
+   "part": "context",
+   "before": "寝る前に、明日持っていくものを",
+   "target": "",
+   "after": "かばんの中に入れておきなさい。",
+   "options": [
+    "そなえて",
+    "そろえて",
+    "たくわえて",
+    "たとえて"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "揃える（そろえる）: sắp xếp, chuẩn bị đầy đủ",
+    "translation": "Trước khi ngủ, hãy chuẩn bị đầy đủ những thứ cần mang ngày mai và cho vào cặp."
+   }
+  },
+  {
+   "id": "q10-4",
+   "lesson": 10,
+   "number": 4,
+   "part": "context",
+   "before": "あの人は",
+   "target": "",
+   "after": "がよいとみんなに言われている。",
+   "options": [
+    "精神",
+    "性格",
+    "心理",
+    "感情"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "性格（せいかく）: tính cách",
+    "translation": "Mọi người đều nói rằng người đó có tính cách tốt."
+   }
+  },
+  {
+   "id": "q10-5",
+   "lesson": 10,
+   "number": 5,
+   "part": "context",
+   "before": "母の母、",
+   "target": "",
+   "after": "私の祖母は現在72歳です。",
+   "options": [
+    "すなわち",
+    "そのうえ",
+    "ところが",
+    "なぜなら"
+   ],
+   "answer": 0,
+   "inferred": false,
+   "explanation": {
+    "word": "即ち（すなわち）: tức là, nghĩa là",
+    "translation": "Mẹ của mẹ tôi, tức là bà ngoại tôi, năm nay 72 tuổi."
+   }
+  },
+  {
+   "id": "q10-6",
+   "lesson": 10,
+   "number": 6,
+   "part": "context",
+   "before": "コンサートの",
+   "target": "",
+   "after": "は、会場の入り口でもらってください。",
+   "options": [
+    "メニュー",
+    "プラン",
+    "プログラム",
+    "リズム"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "プログラム（program）: chương trình",
+    "translation": "Hãy nhận chương trình buổi hòa nhạc tại lối vào hội trường."
+   }
+  },
+  {
+   "id": "q10-7",
+   "lesson": 10,
+   "number": 7,
+   "part": "context",
+   "before": "今度の家は、近くに公園や川があって",
+   "target": "",
+   "after": "がいい。",
+   "options": [
+    "場面",
+    "結構",
+    "環境",
+    "自然"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "環境（かんきょう）: môi trường",
+    "translation": "Nhà mới gần công viên và sông nên môi trường rất tốt."
+   }
+  },
+  {
+   "id": "q10-8",
+   "lesson": 10,
+   "number": 8,
+   "part": "context",
+   "before": "今年の夏の暑さは",
+   "target": "",
+   "after": "だったので、毎晩クーラーをつけたままねていた。",
+   "options": [
+    "格別",
+    "過剰",
+    "巨大",
+    "強引"
+   ],
+   "answer": 0,
+   "inferred": false,
+   "explanation": {
+    "word": "格別（かくべつ）: đặc biệt, khác thường",
+    "translation": "Mùa hè năm nay nóng đặc biệt nên mỗi đêm tôi đều ngủ với máy lạnh bật suốt."
+   }
+  },
+  {
+   "id": "q10-9",
+   "lesson": 10,
+   "number": 9,
+   "part": "context",
+   "before": "たしかに彼は有能だが、一人でできることには",
+   "target": "",
+   "after": "がある。",
+   "options": [
+    "欠陥",
+    "限界",
+    "欠点",
+    "無限"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "限界（げんかい）: giới hạn",
+    "translation": "Anh ấy quả thật có năng lực, nhưng những gì một người có thể làm thì có giới hạn."
+   }
+  },
+  {
+   "id": "q10-10",
+   "lesson": 10,
+   "number": 10,
+   "part": "context",
+   "before": "外は",
+   "target": "",
+   "after": "雨が降り出しそうな天気です。",
+   "options": [
+    "いつまで",
+    "いまにも",
+    "いままで",
+    "いつから"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "今にも（いまにも）: sắp sửa, bất cứ lúc nào",
+    "translation": "Bên ngoài trời có vẻ như sắp mưa bất cứ lúc nào."
+   }
+  },
+  {
+   "id": "q11-1",
+   "lesson": 11,
+   "number": 1,
+   "part": "context",
+   "before": "生活習慣を",
+   "target": "",
+   "after": "してから、ほとんど病気をしなくなりました。",
+   "options": [
+    "訂正",
+    "変換",
+    "整備",
+    "改善"
+   ],
+   "answer": 3,
+   "inferred": false,
+   "explanation": {
+    "word": "改善（かいぜん）: cải thiện",
+    "translation": "Kể từ khi cải thiện thói quen sinh hoạt, tôi hầu như không còn bị bệnh nữa."
+   }
+  },
+  {
+   "id": "q11-2",
+   "lesson": 11,
+   "number": 2,
+   "part": "context",
+   "before": "パソコンに関しては",
+   "target": "",
+   "after": "で、まったくできなかった父が最近日記を書き始めたそうだ。",
+   "options": [
+    "初歩",
+    "素人",
+    "初級",
+    "純情"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "素人（しろうと）: người nghiệp dư, người không chuyên",
+    "translation": "Nghe nói bố tôi, người hoàn toàn không biết gì về máy tính vì là người nghiệp dư, gần đây đã bắt đầu viết nhật ký."
+   }
+  },
+  {
+   "id": "q11-3",
+   "lesson": 11,
+   "number": 3,
+   "part": "context",
+   "before": "彼女は疑わしそうな",
+   "target": "",
+   "after": "つきでわたしを見た。",
+   "options": [
+    "顔",
+    "手",
+    "口",
+    "目"
+   ],
+   "answer": 0,
+   "inferred": false,
+   "explanation": {
+    "word": "顔つき（かおつき）: vẻ mặt, biểu cảm khuôn mặt",
+    "translation": "Cô ấy nhìn tôi với vẻ mặt nghi ngờ."
+   }
+  },
+  {
+   "id": "q11-4",
+   "lesson": 11,
+   "number": 4,
+   "part": "context",
+   "before": "ご予約をお取り",
+   "target": "",
+   "after": "の場合、事前にご連絡ください。",
+   "options": [
+    "かえ",
+    "あげ",
+    "けし",
+    "かけ"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "取り消し（とりけし）: hủy bỏ",
+    "translation": "Trong trường hợp muốn hủy bỏ đặt chỗ, xin vui lòng liên hệ trước."
+   }
+  },
+  {
+   "id": "q11-5",
+   "lesson": 11,
+   "number": 5,
+   "part": "context",
+   "before": "イベント開始の３時間前に、みんなで最終",
+   "target": "",
+   "after": "合わせを行った。",
+   "options": [
+    "言い",
+    "打ち",
+    "持ち",
+    "会い"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "打ち合わせ（うちあわせ）: cuộc họp bàn, thảo luận",
+    "translation": "Ba tiếng trước khi sự kiện bắt đầu, mọi người đã tiến hành cuộc họp bàn cuối cùng."
+   }
+  },
+  {
+   "id": "q11-6",
+   "lesson": 11,
+   "number": 6,
+   "part": "paraphrase",
+   "before": "お電話での",
+   "target": "お問い合わせ",
+   "after": "はご遠慮ください。",
+   "options": [
+    "対応",
+    "質問",
+    "批判",
+    "注文"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "問い合わせ（といあわせ）: hỏi thăm, liên hệ hỏi",
+    "translation": "Xin vui lòng không liên hệ hỏi qua điện thoại."
+   }
+  },
+  {
+   "id": "q11-7",
+   "lesson": 11,
+   "number": 7,
+   "part": "paraphrase",
+   "before": "５年の",
+   "target": "付き合い",
+   "after": "を経て彼らはついに結婚するそうです。",
+   "options": [
+    "間",
+    "交流",
+    "月日",
+    "交際"
+   ],
+   "answer": 3,
+   "inferred": false,
+   "explanation": {
+    "word": "付き合い（つきあい）: giao lưu, quen biết, hẹn hò",
+    "translation": "Nghe nói sau 5 năm hẹn hò, họ cuối cùng cũng kết hôn."
+   }
+  },
+  {
+   "id": "q11-8",
+   "lesson": 11,
+   "number": 8,
+   "part": "paraphrase",
+   "before": "彼は大学を卒業した後、",
+   "target": "みずから",
+   "after": "会社を立ち上げる。",
+   "options": [
+    "自分で",
+    "すぐに",
+    "仲間と",
+    "しばらくして"
+   ],
+   "answer": 0,
+   "inferred": false,
+   "explanation": {
+    "word": "自ら（みずから）: tự mình",
+    "translation": "Sau khi tốt nghiệp đại học, anh ấy tự mình thành lập công ty."
+   }
+  },
+  {
+   "id": "q11-9",
+   "lesson": 11,
+   "number": 9,
+   "part": "paraphrase",
+   "before": "来週は天気が",
+   "target": "回復する",
+   "after": "そうだ。",
+   "options": [
+    "あまり変わらない",
+    "変わりやすい",
+    "よくなる",
+    "悪くなる"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "回復（かいふく）: hồi phục, phục hồi",
+    "translation": "Nghe nói tuần sau thời tiết sẽ khá hơn."
+   }
+  },
+  {
+   "id": "q11-10",
+   "lesson": 11,
+   "number": 10,
+   "part": "paraphrase",
+   "before": "この法律の実施は交通事故を減らすのに",
+   "target": "ゆうこう",
+   "after": "だ。",
+   "options": [
+    "よく効く",
+    "効果がない",
+    "時間の制限がある",
+    "時間がかかる"
+   ],
+   "answer": 0,
+   "inferred": false,
+   "explanation": {
+    "word": "有効（ゆうこう）: hữu hiệu, có hiệu quả",
+    "translation": "Việc thực thi luật này có hiệu quả trong việc giảm tai nạn giao thông."
+   }
+  },
+  {
+   "id": "q12-1",
+   "lesson": 12,
+   "number": 1,
+   "part": "context",
+   "before": "新しい電球に取り",
+   "target": "",
+   "after": "たら、明るくなった。",
+   "options": [
+    "だし",
+    "かえ",
+    "いれ",
+    "もどし"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "取り替える（とりかえる）: thay thế",
+    "translation": "Khi thay bóng đèn mới thì phòng sáng hơn rồi."
+   }
+  },
+  {
+   "id": "q12-2",
+   "lesson": 12,
+   "number": 2,
+   "part": "context",
+   "before": "この携帯電話には、いろいろな",
+   "target": "",
+   "after": "がついている。",
+   "options": [
+    "効用",
+    "才能",
+    "機能",
+    "効力"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "機能（きのう）: chức năng",
+    "translation": "Chiếc điện thoại di động này có nhiều chức năng khác nhau."
+   }
+  },
+  {
+   "id": "q12-3",
+   "lesson": 12,
+   "number": 3,
+   "part": "context",
+   "before": "卒業したら、出版",
+   "target": "",
+   "after": "の仕事につきたいと思っている。",
+   "options": [
+    "相関",
+    "関係",
+    "連携",
+    "連結"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "出版関係（しゅっぱんかんけい）: liên quan đến xuất bản",
+    "translation": "Sau khi tốt nghiệp, tôi muốn làm công việc liên quan đến xuất bản."
+   }
+  },
+  {
+   "id": "q12-4",
+   "lesson": 12,
+   "number": 4,
+   "part": "context",
+   "before": "日当たりが悪いので、この部屋は昼でも",
+   "target": "",
+   "after": "暗い。",
+   "options": [
+    "浅",
+    "軽",
+    "薄",
+    "弱"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "薄暗い（うすぐらい）: tờ mờ, hơi tối",
+    "translation": "Vì ánh sáng mặt trời không chiếu vào nên căn phòng này ban ngày cũng hơi tối."
+   }
+  },
+  {
+   "id": "q12-5",
+   "lesson": 12,
+   "number": 5,
+   "part": "context",
+   "before": "学生ごろの甘い考えは厳しい社会で",
+   "target": "",
+   "after": "しないものが多い。",
+   "options": [
+    "共通",
+    "通用",
+    "共用",
+    "同様"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "通用（つうよう）: có hiệu lực, áp dụng được",
+    "translation": "Nhiều suy nghĩ ngây thơ thời sinh viên không thể áp dụng được trong xã hội khắc nghiệt."
+   }
+  },
+  {
+   "id": "q12-6",
+   "lesson": 12,
+   "number": 6,
+   "part": "usage",
+   "before": "",
+   "target": "いちいち",
+   "after": "",
+   "options": [
+    "難しいところをいちいち説明してもらう。",
+    "受験生いちいちが質問を受ける。",
+    "みんなの意見がいちいちでまとまらない。",
+    "子どもたちはいちいち部屋を持っている。"
+   ],
+   "answer": 0,
+   "inferred": false,
+   "explanation": {
+    "word": "一々（いちいち）: từng cái một, lần lượt",
+    "translation": "Nhờ người giải thích từng chỗ khó một."
+   }
+  },
+  {
+   "id": "q12-7",
+   "lesson": 12,
+   "number": 7,
+   "part": "usage",
+   "before": "",
+   "target": "深刻",
+   "after": "",
+   "options": [
+    "自分のやったことを深刻に反省している。",
+    "不景気がますます深刻になってきた。",
+    "事件についての深刻な考えに感心した。",
+    "あの二人は深刻に仲良く２０年も付き合ってきた。"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "深刻（しんこく）: nghiêm trọng",
+    "translation": "Tình trạng kinh tế suy thoái ngày càng trở nên nghiêm trọng.",
+    "vocab": [
+     "不景気（ふけいき）: suy thoái kinh tế"
+    ]
+   }
+  },
+  {
+   "id": "q12-8",
+   "lesson": 12,
+   "number": 8,
+   "part": "usage",
+   "before": "",
+   "target": "はきはき",
+   "after": "",
+   "options": [
+    "犯人が誰なのかまだはきはき分からない。",
+    "この子はどんな質問でも、はきはきと答えられる。",
+    "年を取っても、頭がはきはきしている。",
+    "久しぶりに帰った故郷ははきはきと変わっていた。"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "はきはき: rõ ràng, dứt khoát",
+    "translation": "Đứa trẻ này có thể trả lời rõ ràng dứt khoát bất kỳ câu hỏi nào."
+   }
+  },
+  {
+   "id": "q12-9",
+   "lesson": 12,
+   "number": 9,
+   "part": "usage",
+   "before": "",
+   "target": "通う",
+   "after": "",
+   "options": [
+    "毎日、地下鉄で会社に通っている。",
+    "改修工事で、この道を通うことができない。",
+    "彼とは電子メールを通って、連絡する。",
+    "一度沖縄へ通ったことがある。"
+   ],
+   "answer": 0,
+   "inferred": false,
+   "explanation": {
+    "word": "通う（かよう）: đi lại thường xuyên, đi đều đặn",
+    "translation": "Hàng ngày tôi đi tàu điện ngầm đến công ty."
+   }
+  },
+  {
+   "id": "q12-10",
+   "lesson": 12,
+   "number": 10,
+   "part": "usage",
+   "before": "",
+   "target": "気配",
+   "after": "",
+   "options": [
+    "今回の成績の気配から見れば、大学合格は危ないだろう。",
+    "あの人の服装はいつも外国人の気配がする。",
+    "空の気配がおかしいので、傘を持っていってください。",
+    "これは人の気配を察知することができる装置だ。"
+   ],
+   "answer": 3,
+   "inferred": false,
+   "explanation": {
+    "word": "気配（けはい）: dấu hiệu, sự hiện diện",
+    "translation": "Đây là thiết bị có thể phát hiện sự hiện diện của con người.",
+    "vocab": [
+     "察知（さっち）: nhận ra, phát hiện"
+    ]
+   }
+  },
+  {
+   "id": "q13-1",
+   "lesson": 13,
+   "number": 1,
+   "part": "context",
+   "before": "業界、企業によって、給料の",
+   "target": "",
+   "after": "も異なる。",
+   "options": [
+    "基準",
+    "標準",
+    "定価",
+    "平均"
+   ],
+   "answer": 0,
+   "inferred": false,
+   "explanation": {
+    "word": "基準（きじゅん）: tiêu chuẩn, cơ sở",
+    "translation": "Tùy theo ngành nghề và doanh nghiệp, tiêu chuẩn lương cũng khác nhau."
+   }
+  },
+  {
+   "id": "q13-2",
+   "lesson": 13,
+   "number": 2,
+   "part": "context",
+   "before": "父は一日に",
+   "target": "",
+   "after": "ジョギングをしている。",
+   "options": [
+    "かけ",
+    "あき",
+    "ぬけ",
+    "おき"
+   ],
+   "answer": 3,
+   "inferred": false,
+   "explanation": {
+    "word": "一日おき（いちにちおき）: cách một ngày",
+    "translation": "Bố tôi chạy bộ cách một ngày."
+   }
+  },
+  {
+   "id": "q13-3",
+   "lesson": 13,
+   "number": 3,
+   "part": "context",
+   "before": "試験が近くなってきたので、アルバイトはやめて、勉強に",
+   "target": "",
+   "after": "することにした。",
+   "options": [
+    "特定",
+    "統一",
+    "専念",
+    "注目"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "専念（せんねん）: chuyên tâm, tập trung",
+    "translation": "Vì kỳ thi đã đến gần nên tôi quyết định nghỉ làm thêm để chuyên tâm học tập."
+   }
+  },
+  {
+   "id": "q13-4",
+   "lesson": 13,
+   "number": 4,
+   "part": "context",
+   "before": "この小説は今の時代を",
+   "target": "",
+   "after": "した作品だ。",
+   "options": [
+    "反映",
+    "放映",
+    "引用",
+    "採用"
+   ],
+   "answer": 0,
+   "inferred": false,
+   "explanation": {
+    "word": "反映（はんえい）: phản ánh",
+    "translation": "Tiểu thuyết này là tác phẩm phản ánh thời đại hiện nay."
+   }
+  },
+  {
+   "id": "q13-5",
+   "lesson": 13,
+   "number": 5,
+   "part": "context",
+   "before": "気持ちが違えば、見",
+   "target": "",
+   "after": "風景も新鮮に感じるときがある。",
+   "options": [
+    "こなした",
+    "なれた",
+    "かえた",
+    "すぎた"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "見慣れた（みなれた）: quen thuộc, nhìn quen",
+    "translation": "Nếu tâm trạng khác đi, đôi khi phong cảnh quen thuộc cũng cảm thấy mới mẻ."
+   }
+  },
+  {
+   "id": "q13-6",
+   "lesson": 13,
+   "number": 6,
+   "part": "context",
+   "before": "先生、大変ご",
+   "target": "",
+   "after": "しております。去年の卒業生、田中です。",
+   "options": [
+    "無沙汰",
+    "無事",
+    "不正",
+    "不良"
+   ],
+   "answer": 0,
+   "inferred": false,
+   "explanation": {
+    "word": "ご無沙汰（ごぶさた）: lâu không liên lạc",
+    "translation": "Thưa thầy, lâu lắm rồi em không liên lạc. Em là Tanaka, sinh viên tốt nghiệp năm ngoái."
+   }
+  },
+  {
+   "id": "q13-7",
+   "lesson": 13,
+   "number": 7,
+   "part": "context",
+   "before": "仕事に優先順位をつけて",
+   "target": "",
+   "after": "にやっていくことが大事だ。",
+   "options": [
+    "順調",
+    "順番",
+    "順序",
+    "順余"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "順番（じゅんばん）: thứ tự, lần lượt",
+    "translation": "Điều quan trọng là phải sắp xếp thứ tự ưu tiên công việc rồi làm theo thứ tự."
+   }
+  },
+  {
+   "id": "q13-8",
+   "lesson": 13,
+   "number": 8,
+   "part": "context",
+   "before": "過ぎたことでくよくよしないで、前向きな思考",
+   "target": "",
+   "after": "に変えよう。",
+   "options": [
+    "パイプ",
+    "プラン",
+    "パターン",
+    "バター"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "思考パターン（しこうパターン）: kiểu suy nghĩ",
+    "translation": "Đừng buồn phiền về chuyện đã qua, hãy thay đổi sang kiểu suy nghĩ tích cực.",
+    "vocab": [
+     "くよくよ: buồn phiền, ưu tư"
+    ]
+   }
+  },
+  {
+   "id": "q13-9",
+   "lesson": 13,
+   "number": 9,
+   "part": "context",
+   "before": "大阪出張のついでに、京都まで足を",
+   "target": "",
+   "after": "紅葉狩に行った。",
+   "options": [
+    "ひっぱって",
+    "のばして",
+    "はこんで",
+    "あらって"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "足を伸ばす（あしをのばす）: ghé thêm, đi xa hơn",
+    "translation": "Nhân chuyến công tác Osaka, tôi ghé thêm đến Kyoto để ngắm lá đỏ.",
+    "vocab": [
+     "紅葉狩（もみじがり）: ngắm lá đỏ"
+    ]
+   }
+  },
+  {
+   "id": "q13-10",
+   "lesson": 13,
+   "number": 10,
+   "part": "context",
+   "before": "自分のやったことがきちんと評価されると、仕事への",
+   "target": "",
+   "after": "も高まる。",
+   "options": [
+    "活気",
+    "根気",
+    "意図",
+    "意欲"
+   ],
+   "answer": 3,
+   "inferred": false,
+   "explanation": {
+    "word": "意欲（いよく）: động lực, ý chí",
+    "translation": "Khi những gì mình làm được đánh giá đúng đắn, động lực làm việc cũng tăng lên."
+   }
+  },
+  {
+   "id": "q14-1",
+   "lesson": 14,
+   "number": 1,
+   "part": "context",
+   "before": "人間はしょせん欲の",
+   "target": "",
+   "after": "で、自己中心的なものである。",
+   "options": [
+    "あつまり",
+    "かみなり",
+    "かたまり",
+    "つながり"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "塊（かたまり）: khối, cục",
+    "translation": "Con người xét cho cùng là khối dục vọng và luôn lấy bản thân làm trung tâm.",
+    "vocab": [
+     "しょせん（所詮）: xét cho cùng, rốt cuộc"
+    ]
+   }
+  },
+  {
+   "id": "q14-2",
+   "lesson": 14,
+   "number": 2,
+   "part": "context",
+   "before": "「すぐ失礼しますので、",
+   "target": "",
+   "after": "。」",
+   "options": [
+    "おかまいなく",
+    "ご遠慮なく",
+    "ごめんください",
+    "お大事に"
+   ],
+   "answer": 0,
+   "inferred": false,
+   "explanation": {
+    "word": "お構いなく（おかまいなく）: xin đừng bận tâm",
+    "translation": "\"Tôi sẽ xin phép đi ngay nên xin đừng bận tâm.\""
+   }
+  },
+  {
+   "id": "q14-3",
+   "lesson": 14,
+   "number": 3,
+   "part": "context",
+   "before": "今回の大臣の訪問は",
+   "target": "",
+   "after": "公式に行われた。",
+   "options": [
+    "不",
+    "未",
+    "無",
+    "非"
+   ],
+   "answer": 3,
+   "inferred": false,
+   "explanation": {
+    "word": "非公式（ひこうしき）: không chính thức",
+    "translation": "Chuyến thăm của bộ trưởng lần này được thực hiện một cách không chính thức."
+   }
+  },
+  {
+   "id": "q14-4",
+   "lesson": 14,
+   "number": 4,
+   "part": "context",
+   "before": "西洋占星術で今年の運勢を",
+   "target": "",
+   "after": "みた。",
+   "options": [
+    "うらやんで",
+    "うらぎって",
+    "うらなって",
+    "うらがえして"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "占う（うらなう）: bói, xem bói",
+    "translation": "Tôi đã thử xem bói vận mệnh năm nay bằng chiêm tinh học phương Tây.",
+    "vocab": [
+     "占星術（せんせいじゅつ）: chiêm tinh học"
+    ]
+   }
+  },
+  {
+   "id": "q14-5",
+   "lesson": 14,
+   "number": 5,
+   "part": "context",
+   "before": "ストレスを",
+   "target": "",
+   "after": "するために、何かしていますか。",
+   "options": [
+    "解消",
+    "削除",
+    "減量",
+    "停止"
+   ],
+   "answer": 0,
+   "inferred": false,
+   "explanation": {
+    "word": "解消（かいしょう）: giải tỏa, xóa bỏ",
+    "translation": "Bạn có làm gì để giải tỏa căng thẳng không?"
+   }
+  },
+  {
+   "id": "q14-6",
+   "lesson": 14,
+   "number": 6,
+   "part": "paraphrase",
+   "before": "引っ越しの荷物は",
+   "target": "大半",
+   "after": "片付いた。",
+   "options": [
+    "全面",
+    "大通り",
+    "大抵",
+    "何分"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "大半（たいはん）: phần lớn",
+    "translation": "Đồ đạc chuyển nhà phần lớn đã dọn xong."
+   }
+  },
+  {
+   "id": "q14-7",
+   "lesson": 14,
+   "number": 7,
+   "part": "paraphrase",
+   "before": "この作業は",
+   "target": "慎重に",
+   "after": "やってください。",
+   "options": [
+    "急いで",
+    "絶対忘れずに",
+    "静かに",
+    "十分注意して"
+   ],
+   "answer": 3,
+   "inferred": false,
+   "explanation": {
+    "word": "慎重（しんちょう）: thận trọng, cẩn thận",
+    "translation": "Hãy làm công việc này một cách thận trọng."
+   }
+  },
+  {
+   "id": "q14-8",
+   "lesson": 14,
+   "number": 8,
+   "part": "paraphrase",
+   "before": "人が前に立つと、ドアが",
+   "target": "ひとりでに",
+   "after": "開く。",
+   "options": [
+    "自然に",
+    "突然",
+    "偶然",
+    "必然に"
+   ],
+   "answer": 0,
+   "inferred": false,
+   "explanation": {
+    "word": "ひとりでに: tự động, tự nhiên (không ai tác động)",
+    "translation": "Khi có người đứng phía trước, cửa sẽ tự động mở ra."
+   }
+  },
+  {
+   "id": "q14-9",
+   "lesson": 14,
+   "number": 9,
+   "part": "paraphrase",
+   "before": "公演の",
+   "target": "スケジュール",
+   "after": "はもう決まった。",
+   "options": [
+    "予約",
+    "日程",
+    "計算",
+    "企画"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "スケジュール（schedule）: lịch trình",
+    "translation": "Lịch trình buổi biểu diễn đã được quyết định rồi."
+   }
+  },
+  {
+   "id": "q14-10",
+   "lesson": 14,
+   "number": 10,
+   "part": "paraphrase",
+   "before": "人気商品で、",
+   "target": "たちまち",
+   "after": "売切れてしまう。",
+   "options": [
+    "しばしば",
+    "ゆっくり",
+    "すぐに",
+    "さらに"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "たちまち: ngay lập tức, chớp nhoáng",
+    "translation": "Là sản phẩm được ưa chuộng nên bán hết ngay lập tức."
+   }
+  },
+  {
+   "id": "q15-1",
+   "lesson": 15,
+   "number": 1,
+   "part": "context",
+   "before": "外国語を習得するためには、まずたくさんの単語を",
+   "target": "",
+   "after": "する必要がある。",
+   "options": [
+    "マスター",
+    "マスク",
+    "マフラー",
+    "マウス"
+   ],
+   "answer": 0,
+   "inferred": false,
+   "explanation": {
+    "word": "マスター（master）: nắm vững, thành thạo",
+    "translation": "Để học ngoại ngữ, trước hết cần phải nắm vững nhiều từ vựng."
+   }
+  },
+  {
+   "id": "q15-2",
+   "lesson": 15,
+   "number": 2,
+   "part": "context",
+   "before": "誰か今日のそうじ",
+   "target": "",
+   "after": "を変わってくれないかな。",
+   "options": [
+    "担任",
+    "責任",
+    "世話",
+    "当番"
+   ],
+   "answer": 3,
+   "inferred": false,
+   "explanation": {
+    "word": "当番（とうばん）: phiên trực, lượt",
+    "translation": "Có ai đổi phiên trực dọn dẹp hôm nay cho tôi không nhỉ."
+   }
+  },
+  {
+   "id": "q15-3",
+   "lesson": 15,
+   "number": 3,
+   "part": "context",
+   "before": "",
+   "target": "",
+   "after": "段階では詳細は決まっていないらしい。",
+   "options": [
+    "現",
+    "直",
+    "近",
+    "当"
+   ],
+   "answer": 0,
+   "inferred": false,
+   "explanation": {
+    "word": "現段階（げんだんかい）: giai đoạn hiện tại",
+    "translation": "Nghe nói ở giai đoạn hiện tại, chi tiết vẫn chưa được quyết định."
+   }
+  },
+  {
+   "id": "q15-4",
+   "lesson": 15,
+   "number": 4,
+   "part": "context",
+   "before": "あまり",
+   "target": "",
+   "after": "せずに、自分のペースで頑張ろうと思う。",
+   "options": [
+    "無限",
+    "無駄",
+    "無理",
+    "無数"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "無理（むり）: quá sức, gắng gượng",
+    "translation": "Tôi định không gắng gượng quá mà sẽ cố gắng theo nhịp độ của bản thân."
+   }
+  },
+  {
+   "id": "q15-5",
+   "lesson": 15,
+   "number": 5,
+   "part": "context",
+   "before": "大切なものを守る",
+   "target": "",
+   "after": "ができたとき、人は強くなれるものだ。",
+   "options": [
+    "感情",
+    "覚悟",
+    "準備",
+    "思想"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "覚悟（かくご）: quyết tâm, sự chuẩn bị tinh thần",
+    "translation": "Khi có quyết tâm bảo vệ những thứ quan trọng, con người có thể trở nên mạnh mẽ."
+   }
+  },
+  {
+   "id": "q15-6",
+   "lesson": 15,
+   "number": 6,
+   "part": "usage",
+   "before": "",
+   "target": "往復",
+   "after": "",
+   "options": [
+    "新しい言葉は往復して覚える必要がある。",
+    "事前に往復のチケットを買ったほうが安くつく。",
+    "バランスのとれた食事で血液の往復をよくする。",
+    "新聞紙などの資源ごみを往復利用する。"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "往復（おうふく）: khứ hồi",
+    "translation": "Mua vé khứ hồi trước sẽ rẻ hơn."
+   }
+  },
+  {
+   "id": "q15-7",
+   "lesson": 15,
+   "number": 7,
+   "part": "usage",
+   "before": "",
+   "target": "範囲",
+   "after": "",
+   "options": [
+    "この町は川によって二つの範囲に分かれている。",
+    "この会社は新しい範囲に進出した。",
+    "明日は広い範囲で強い雨が降るでしょう。",
+    "家から駅までの範囲は２キロぐらいだ。"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "範囲（はんい）: phạm vi",
+    "translation": "Ngày mai có lẽ sẽ có mưa lớn trên phạm vi rộng."
+   }
+  },
+  {
+   "id": "q15-8",
+   "lesson": 15,
+   "number": 8,
+   "part": "usage",
+   "before": "",
+   "target": "見事",
+   "after": "",
+   "options": [
+    "この湖の水の見事でそのままで飲んでもかまわない。",
+    "うちのチームは見事に優勝した。",
+    "彼女は見事な顔している美人だ。",
+    "彼はいつも見事なアドバイスをしてくれる友人だ。"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "見事（みごと）: tuyệt vời, xuất sắc",
+    "translation": "Đội của chúng tôi đã vô địch một cách xuất sắc."
+   }
+  },
+  {
+   "id": "q15-9",
+   "lesson": 15,
+   "number": 9,
+   "part": "usage",
+   "before": "",
+   "target": "世間",
+   "after": "",
+   "options": [
+    "この映画は動物の世間を描いた作品だ。",
+    "あの政党は、よりよい世間の実現を目指している。",
+    "田中さんは数学の世間では有名だ。",
+    "その事件は世間の注目を集めた。"
+   ],
+   "answer": 3,
+   "inferred": false,
+   "explanation": {
+    "word": "世間（せけん）: xã hội, công chúng",
+    "translation": "Vụ việc đó đã thu hút sự chú ý của công chúng."
+   }
+  },
+  {
+   "id": "q15-10",
+   "lesson": 15,
+   "number": 10,
+   "part": "usage",
+   "before": "",
+   "target": "快い",
+   "after": "",
+   "options": [
+    "要らないパソコンでしたら、快くもらっていきます。",
+    "遠慮しないでいつでも快く遊びに来てください。",
+    "急な仕事だったが、彼が快く引き受けてくれて助かった。",
+    "親友の森さんには、どんな悩みも快く打ち明けられる。"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "快い（こころよい）: vui vẻ, sảng khoái",
+    "translation": "Tuy là công việc đột xuất nhưng anh ấy vui vẻ nhận lời nên thật may mắn."
+   }
+  },
+  {
+   "id": "q16-1",
+   "lesson": 16,
+   "number": 1,
+   "part": "context",
+   "before": "申し込みの締め切りは明日に",
+   "target": "",
+   "after": "いる。",
+   "options": [
+    "迫って",
+    "限って",
+    "寄って",
+    "至って"
+   ],
+   "answer": 0,
+   "inferred": false,
+   "explanation": {
+    "word": "迫る（せまる）: áp sát, đến gần",
+    "translation": "Hạn đăng ký đang đến gần, chỉ còn ngày mai."
+   }
+  },
+  {
+   "id": "q16-2",
+   "lesson": 16,
+   "number": 2,
+   "part": "context",
+   "before": "東京にある病院へ祖父の",
+   "target": "",
+   "after": "に行った。",
+   "options": [
+    "文句",
+    "見舞い",
+    "土産",
+    "勇気"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "見舞い（みまい）: thăm bệnh",
+    "translation": "Tôi đã đến bệnh viện ở Tokyo để thăm ông nội."
+   }
+  },
+  {
+   "id": "q16-3",
+   "lesson": 16,
+   "number": 3,
+   "part": "context",
+   "before": "多くの人が旅行する",
+   "target": "",
+   "after": "は、飛行機のチケットが高い。",
+   "options": [
+    "シリーズ",
+    "タイム",
+    "シーズン",
+    "チャンス"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "シーズン（season）: mùa",
+    "translation": "Vào mùa nhiều người đi du lịch, vé máy bay đắt."
+   }
+  },
+  {
+   "id": "q16-4",
+   "lesson": 16,
+   "number": 4,
+   "part": "context",
+   "before": "心配事が解消されて、胸が",
+   "target": "",
+   "after": "した。",
+   "options": [
+    "さっと",
+    "すっと",
+    "すらっと",
+    "きらっと"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "すっと: nhẹ nhõm, thông suốt",
+    "translation": "Nỗi lo lắng được giải tỏa, lòng cảm thấy nhẹ nhõm."
+   }
+  },
+  {
+   "id": "q16-5",
+   "lesson": 16,
+   "number": 5,
+   "part": "context",
+   "before": "なんと美しい",
+   "target": "",
+   "after": "のある名前の花なんでしょう。",
+   "options": [
+    "晴れ",
+    "におい",
+    "風俗",
+    "響き"
+   ],
+   "answer": 3,
+   "inferred": false,
+   "explanation": {
+    "word": "響き（ひびき）: âm vang, âm thanh",
+    "translation": "Đây là loài hoa có cái tên nghe thật đẹp làm sao."
+   }
+  },
+  {
+   "id": "q16-6",
+   "lesson": 16,
+   "number": 6,
+   "part": "context",
+   "before": "外国では泣いている赤ちゃんをしばらく",
+   "target": "",
+   "after": "おくのが一般的だそうだ。",
+   "options": [
+    "なげて",
+    "ねさせて",
+    "ほうって",
+    "いだいて"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "放っておく（ほうっておく）: để mặc, không can thiệp",
+    "translation": "Nghe nói ở nước ngoài, việc để mặc em bé khóc một lúc là chuyện phổ biến."
+   }
+  },
+  {
+   "id": "q16-7",
+   "lesson": 16,
+   "number": 7,
+   "part": "context",
+   "before": "明日のハイキングは午前１０時集合、午後４時",
+   "target": "",
+   "after": "の予定です。",
+   "options": [
+    "解散",
+    "解放",
+    "退出",
+    "退場"
+   ],
+   "answer": 0,
+   "inferred": false,
+   "explanation": {
+    "word": "解散（かいさん）: giải tán",
+    "translation": "Chuyến đi bộ ngày mai dự kiến tập trung lúc 10 giờ sáng, giải tán lúc 4 giờ chiều."
+   }
+  },
+  {
+   "id": "q16-8",
+   "lesson": 16,
+   "number": 8,
+   "part": "context",
+   "before": "経済だけでなく、法律にも詳しいのが彼の",
+   "target": "",
+   "after": "だ。",
+   "options": [
+    "深み",
+    "強み",
+    "高み",
+    "重み"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "強み（つよみ）: thế mạnh, điểm mạnh",
+    "translation": "Điểm mạnh của anh ấy là không chỉ giỏi kinh tế mà còn am hiểu luật pháp."
+   }
+  },
+  {
+   "id": "q16-9",
+   "lesson": 16,
+   "number": 9,
+   "part": "context",
+   "before": "ゴールデンウイークなどの大型連休になると、生活の",
+   "target": "",
+   "after": "が崩れやすい。",
+   "options": [
+    "リズム",
+    "ガム",
+    "ジャム",
+    "ダム"
+   ],
+   "answer": 0,
+   "inferred": false,
+   "explanation": {
+    "word": "リズム（rhythm）: nhịp điệu",
+    "translation": "Vào những kỳ nghỉ dài như Tuần lễ Vàng, nhịp sống dễ bị đảo lộn."
+   }
+  },
+  {
+   "id": "q16-10",
+   "lesson": 16,
+   "number": 10,
+   "part": "context",
+   "before": "新幹線の指定",
+   "target": "",
+   "after": "の予約はネットでも可能になった。",
+   "options": [
+    "座",
+    "位",
+    "席",
+    "先"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "指定席（していせき）: ghế chỉ định, chỗ ngồi đặt trước",
+    "translation": "Việc đặt chỗ ngồi chỉ định trên tàu Shinkansen giờ cũng có thể thực hiện trên mạng."
+   }
+  },
+  {
+   "id": "q17-1",
+   "lesson": 17,
+   "number": 1,
+   "part": "paraphrase",
+   "before": "もう全員",
+   "target": "そろいました",
+   "after": "か。",
+   "options": [
+    "集まりました",
+    "訪ねました",
+    "出発しました",
+    "案内しました"
+   ],
+   "answer": 0,
+   "inferred": false,
+   "explanation": {
+    "word": "揃う（そろう）: đầy đủ, tập hợp đủ",
+    "translation": "Mọi người đã có mặt đầy đủ chưa?"
+   }
+  },
+  {
+   "id": "q17-2",
+   "lesson": 17,
+   "number": 2,
+   "part": "paraphrase",
+   "before": "",
+   "target": "差し支え",
+   "after": "がなければ電話番号を教えてください。",
+   "options": [
+    "仕方",
+    "変便",
+    "問題",
+    "不平"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "差し支え（さしつかえ）: trở ngại, vấn đề",
+    "translation": "Nếu không có vấn đề gì thì xin hãy cho tôi biết số điện thoại."
+   }
+  },
+  {
+   "id": "q17-3",
+   "lesson": 17,
+   "number": 3,
+   "part": "paraphrase",
+   "before": "熱いなら",
+   "target": "クーラー",
+   "after": "をつけましょう。",
+   "options": [
+    "冷房",
+    "暖房",
+    "窓",
+    "テレビ"
+   ],
+   "answer": 0,
+   "inferred": false,
+   "explanation": {
+    "word": "クーラー（cooler）: máy lạnh",
+    "translation": "Nếu nóng thì bật máy lạnh nhé."
+   }
+  },
+  {
+   "id": "q17-4",
+   "lesson": 17,
+   "number": 4,
+   "part": "paraphrase",
+   "before": "宿題のレポートは",
+   "target": "ほぼ",
+   "after": "終わった。",
+   "options": [
+    "すべて",
+    "すぐに",
+    "だいたい",
+    "やっと"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "ほぼ: gần như, đại khái",
+    "translation": "Bài báo cáo gần như đã xong."
+   }
+  },
+  {
+   "id": "q17-5",
+   "lesson": 17,
+   "number": 5,
+   "part": "paraphrase",
+   "before": "検査の結果は",
+   "target": "みょうごにち",
+   "after": "に分かりますので、また来てください。",
+   "options": [
+    "あす",
+    "そのうち",
+    "らいしゅう",
+    "あさって"
+   ],
+   "answer": 3,
+   "inferred": false,
+   "explanation": {
+    "word": "明後日（みょうごにち）: ngày kia, ngày mốt",
+    "translation": "Kết quả xét nghiệm sẽ có vào ngày kia, xin hãy đến lại."
+   }
+  },
+  {
+   "id": "q17-6",
+   "lesson": 17,
+   "number": 6,
+   "part": "paraphrase",
+   "before": "できるだけ早く仕事を",
+   "target": "済ます",
+   "after": "ようにします。",
+   "options": [
+    "覚える",
+    "終える",
+    "始める",
+    "教える"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "済ます（すます）: hoàn thành, xong",
+    "translation": "Tôi sẽ cố gắng hoàn thành công việc càng sớm càng tốt."
+   }
+  },
+  {
+   "id": "q17-7",
+   "lesson": 17,
+   "number": 7,
+   "part": "paraphrase",
+   "before": "玄関でくつを脱いだら、",
+   "target": "向き",
+   "after": "をそろえましょう。",
+   "options": [
+    "方向",
+    "長さ",
+    "左右",
+    "順番"
+   ],
+   "answer": 0,
+   "inferred": false,
+   "explanation": {
+    "word": "向き（むき）: hướng, chiều",
+    "translation": "Khi cởi giày ở lối vào, hãy xếp cho đều hướng nhé."
+   }
+  },
+  {
+   "id": "q17-8",
+   "lesson": 17,
+   "number": 8,
+   "part": "paraphrase",
+   "before": "景気が",
+   "target": "次第に",
+   "after": "回復に向かっている。",
+   "options": [
+    "やっと",
+    "以外に",
+    "すっかり",
+    "だんだん"
+   ],
+   "answer": 3,
+   "inferred": false,
+   "explanation": {
+    "word": "次第に（しだいに）: dần dần",
+    "translation": "Kinh tế đang dần dần phục hồi."
+   }
+  },
+  {
+   "id": "q17-9",
+   "lesson": 17,
+   "number": 9,
+   "part": "paraphrase",
+   "before": "当店では注文を受けてから全ての",
+   "target": "料理",
+   "after": "をお作りしております。",
+   "options": [
+    "献立",
+    "食事",
+    "味",
+    "材料"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "料理（りょうり）: món ăn, ẩm thực",
+    "translation": "Nhà hàng chúng tôi chế biến tất cả các món ăn sau khi nhận đơn đặt hàng."
+   }
+  },
+  {
+   "id": "q17-10",
+   "lesson": 17,
+   "number": 10,
+   "part": "paraphrase",
+   "before": "同じ分野の専門家でも、立場によって",
+   "target": "見解",
+   "after": "が異なる。",
+   "options": [
+    "教え方",
+    "調べ方",
+    "考え方",
+    "決め方"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "見解（けんかい）: quan điểm, ý kiến",
+    "translation": "Ngay cả các chuyên gia cùng lĩnh vực, quan điểm cũng khác nhau tùy theo lập trường."
+   }
+  },
+  {
+   "id": "q18-1",
+   "lesson": 18,
+   "number": 1,
+   "part": "context",
+   "before": "日曜だから込んでいるかと思ったけど、",
+   "target": "",
+   "after": "すいているね。",
+   "options": [
+    "たいして",
+    "どうりで",
+    "わりと",
+    "よけい"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "割と（わりと）: khá, tương đối",
+    "translation": "Tôi tưởng chủ nhật sẽ đông, nhưng khá vắng nhỉ."
+   }
+  },
+  {
+   "id": "q18-2",
+   "lesson": 18,
+   "number": 2,
+   "part": "context",
+   "before": "司会をしてくれる人がいると、話し合いが",
+   "target": "",
+   "after": "進む。",
+   "options": [
+    "シャンプルに",
+    "スムーズに",
+    "ソフトに",
+    "クリアに"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "スムーズ（smooth）: suôn sẻ, trôi chảy",
+    "translation": "Khi có người dẫn chương trình, cuộc thảo luận diễn ra suôn sẻ."
+   }
+  },
+  {
+   "id": "q18-3",
+   "lesson": 18,
+   "number": 3,
+   "part": "context",
+   "before": "彼は昼は会社で働き、",
+   "target": "",
+   "after": "は大学で勉強している。",
+   "options": [
+    "やこう",
+    "やくめ",
+    "やね",
+    "やかん"
+   ],
+   "answer": 3,
+   "inferred": false,
+   "explanation": {
+    "word": "夜間（やかん）: ban đêm",
+    "translation": "Anh ấy ban ngày làm việc ở công ty, ban đêm học ở trường đại học."
+   }
+  },
+  {
+   "id": "q18-4",
+   "lesson": 18,
+   "number": 4,
+   "part": "context",
+   "before": "池田さんはまじめすぎて、冗談が",
+   "target": "",
+   "after": "。",
+   "options": [
+    "当たらない",
+    "渡らない",
+    "構わない",
+    "通じない"
+   ],
+   "answer": 3,
+   "inferred": false,
+   "explanation": {
+    "word": "通じない（つうじない）: không hiểu, không thông",
+    "translation": "Anh Ikeda quá nghiêm túc nên không hiểu được trò đùa."
+   }
+  },
+  {
+   "id": "q18-5",
+   "lesson": 18,
+   "number": 5,
+   "part": "context",
+   "before": "田中さんは長い間",
+   "target": "",
+   "after": "窓の外を見ていた。",
+   "options": [
+    "ぼんやり",
+    "ふんわり",
+    "うっすら",
+    "しっとり"
+   ],
+   "answer": 0,
+   "inferred": false,
+   "explanation": {
+    "word": "ぼんやり: lơ đãng, mơ màng",
+    "translation": "Anh Tanaka đã nhìn ra ngoài cửa sổ một cách lơ đãng trong thời gian dài."
+   }
+  },
+  {
+   "id": "q18-6",
+   "lesson": 18,
+   "number": 6,
+   "part": "context",
+   "before": "決勝戦で負けて、",
+   "target": "",
+   "after": "優勝に終わった。",
+   "options": [
+    "後",
+    "準",
+    "次",
+    "副"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "準優勝（じゅんゆうしょう）: á quân",
+    "translation": "Thua ở trận chung kết nên chỉ đạt á quân."
+   }
+  },
+  {
+   "id": "q18-7",
+   "lesson": 18,
+   "number": 7,
+   "part": "context",
+   "before": "",
+   "target": "",
+   "after": "の価格が上がったので、家賃も高くなってきた。",
+   "options": [
+    "敷地",
+    "地理",
+    "土地",
+    "田んぼ"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "土地（とち）: đất đai",
+    "translation": "Giá đất tăng nên tiền thuê nhà cũng trở nên đắt hơn."
+   }
+  },
+  {
+   "id": "q18-8",
+   "lesson": 18,
+   "number": 8,
+   "part": "context",
+   "before": "組織のトップに立つ人間は、広い",
+   "target": "",
+   "after": "を持つことが必要だ。",
+   "options": [
+    "視界",
+    "視野",
+    "視線",
+    "視察"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "視野（しや）: tầm nhìn",
+    "translation": "Người đứng đầu tổ chức cần phải có tầm nhìn rộng."
+   }
+  },
+  {
+   "id": "q18-9",
+   "lesson": 18,
+   "number": 9,
+   "part": "context",
+   "before": "食器",
+   "target": "",
+   "after": "は、この箱に詰めてください。",
+   "options": [
+    "型",
+    "種",
+    "属",
+    "類"
+   ],
+   "answer": 3,
+   "inferred": false,
+   "explanation": {
+    "word": "食器類（しょっきるい）: các loại bát đĩa",
+    "translation": "Hãy xếp các loại bát đĩa vào hộp này."
+   }
+  },
+  {
+   "id": "q18-10",
+   "lesson": 18,
+   "number": 10,
+   "part": "paraphrase",
+   "before": "誤解しないで、沙織さんとは",
+   "target": "単なる",
+   "after": "友人なんだから。",
+   "options": [
+    "唯一の",
+    "ただの",
+    "大切な",
+    "珍しい"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "単なる（たんなる）: chỉ là, đơn thuần",
+    "translation": "Đừng hiểu lầm, tôi và Saori chỉ là bạn bè thôi mà."
+   }
+  },
+  {
+   "id": "q19-1",
+   "lesson": 19,
+   "number": 1,
+   "part": "usage",
+   "before": "",
+   "target": "違反",
+   "after": "",
+   "options": [
+    "ルールに違反して退場になった選手が３人もいる。",
+    "子供のころは皆、親に違反する時期があるものだ。",
+    "彼の意見に違反する人はあまりいなかった。",
+    "見た目がよくないが、予想に違反しておいしかった。"
+   ],
+   "answer": 0,
+   "inferred": false,
+   "explanation": {
+    "word": "違反（いはん）: vi phạm",
+    "translation": "Có tới 3 cầu thủ bị đuổi khỏi sân vì vi phạm luật."
+   }
+  },
+  {
+   "id": "q19-2",
+   "lesson": 19,
+   "number": 2,
+   "part": "usage",
+   "before": "",
+   "target": "ふさわしい",
+   "after": "",
+   "options": [
+    "中川さんの指摘は、いつもふさわしいです。",
+    "彼は責任感が強く、この仕事のリーダーにふさわしい。",
+    "私にふさわしいサイズの帽子がやっと見つかった。",
+    "私、あの人とは性格がふさわしいんです。"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "ふさわしい: xứng đáng, phù hợp",
+    "translation": "Anh ấy có tinh thần trách nhiệm cao, xứng đáng làm trưởng nhóm cho công việc này."
+   }
+  },
+  {
+   "id": "q19-3",
+   "lesson": 19,
+   "number": 3,
+   "part": "usage",
+   "before": "",
+   "target": "利益",
+   "after": "",
+   "options": [
+    "彼は最近毎日運動を続けていると言っていたが、全然利益がないようだ。",
+    "２０００万円借りたら利益をいくらつけて返すことになりますか。",
+    "店で買うよりもインターネットを利益して買うほうが２０００円も安い。",
+    "それが売れれば２０００万円の利益になる。"
+   ],
+   "answer": 3,
+   "inferred": false,
+   "explanation": {
+    "word": "利益（りえき）: lợi nhuận",
+    "translation": "Nếu bán được thì sẽ thu về 20 triệu yên lợi nhuận."
+   }
+  },
+  {
+   "id": "q19-4",
+   "lesson": 19,
+   "number": 4,
+   "part": "usage",
+   "before": "",
+   "target": "方針",
+   "after": "",
+   "options": [
+    "台風の方針がそれたので、特に被害は出なかった。",
+    "私の今年の方針は漢字を６００字覚えることだ。",
+    "この料理を作る方針を教えてください。",
+    "教育に関する政府の方針が大きく変わった。"
+   ],
+   "answer": 3,
+   "inferred": false,
+   "explanation": {
+    "word": "方針（ほうしん）: phương châm, chính sách",
+    "translation": "Chính sách của chính phủ về giáo dục đã thay đổi lớn."
+   }
+  },
+  {
+   "id": "q19-5",
+   "lesson": 19,
+   "number": 5,
+   "part": "usage",
+   "before": "",
+   "target": "はずす",
+   "after": "",
+   "options": [
+    "歯医者で虫歯をはずしてもらった。",
+    "腕時計をはずして、机の上に置いた。",
+    "家に入る前に、靴の汚れをはずした。",
+    "食事の後、テーブルから皿をはずした。"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "はずす（外す）: tháo ra, gỡ ra",
+    "translation": "Tháo đồng hồ đeo tay ra và đặt lên bàn."
+   }
+  },
+  {
+   "id": "q19-6",
+   "lesson": 19,
+   "number": 6,
+   "part": "usage",
+   "before": "",
+   "target": "生き生き",
+   "after": "",
+   "options": [
+    "わたしは体が生き生きしているうちに、あちこち旅行をしたいと思う。",
+    "子供が熱を出したが、薬を飲ませたらだんだん生き生きしてきた。",
+    "彼は、好きなサッカーをしているときが一番生き生きしている。",
+    "記憶が生き生きしているので、今なら間違えずに答えることができる。"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "生き生き（いきいき）: tràn đầy sức sống, sinh động",
+    "translation": "Anh ấy tràn đầy sức sống nhất khi chơi môn bóng đá yêu thích."
+   }
+  },
+  {
+   "id": "q19-7",
+   "lesson": 19,
+   "number": 7,
+   "part": "usage",
+   "before": "",
+   "target": "質素",
+   "after": "",
+   "options": [
+    "この文章は質素で、とてもわかりやすい。",
+    "もう少し値段の質素なツアーはありませんか。",
+    "経験は質素でも、やる気がある人を採用したい。",
+    "無駄なものを買わずに、質素な生活を送っている。"
+   ],
+   "answer": 3,
+   "inferred": false,
+   "explanation": {
+    "word": "質素（しっそ）: giản dị, đạm bạc",
+    "translation": "Không mua những thứ lãng phí, sống một cuộc sống giản dị."
+   }
+  },
+  {
+   "id": "q19-8",
+   "lesson": 19,
+   "number": 8,
+   "part": "usage",
+   "before": "",
+   "target": "普及",
+   "after": "",
+   "options": [
+    "携帯電話は急速に普及してきている。",
+    "今、若者の間ではこんなうわさが普及している。",
+    "この病気は人から人へ普及する可能性がある。",
+    "あの大臣の発言は国際問題にまで普及した。"
+   ],
+   "answer": 0,
+   "inferred": false,
+   "explanation": {
+    "word": "普及（ふきゅう）: phổ biến, phổ cập",
+    "translation": "Điện thoại di động đang phổ biến nhanh chóng."
+   }
+  },
+  {
+   "id": "q19-9",
+   "lesson": 19,
+   "number": 9,
+   "part": "usage",
+   "before": "",
+   "target": "催促",
+   "after": "",
+   "options": [
+    "外国への興味は言葉を学ぶ催促の一つになります。",
+    "商品がなかなか届かないので、催促の電話をかけた。",
+    "山下先生がパーティーへの催促の手紙を書いた。",
+    "次の会議の催促の日をもっと早くしましょう。"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "催促（さいそく）: thúc giục, giục",
+    "translation": "Vì hàng mãi không đến nên đã gọi điện thúc giục."
+   }
+  },
+  {
+   "id": "q19-10",
+   "lesson": 19,
+   "number": 10,
+   "part": "usage",
+   "before": "",
+   "target": "手入れ",
+   "after": "",
+   "options": [
+    "ほぼ毎日入院中の祖母の手入れをしに病院へ行きます。",
+    "街のの大きなスーパーなら手入れできる食材です。",
+    "父がこの庭の草木の手入れをしている。",
+    "人数が少なかったので手入れのままの料理がテーブルに残った。"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "手入れ（ていれ）: chăm sóc, bảo dưỡng",
+    "translation": "Bố đang chăm sóc cây cối trong vườn."
+   }
+  },
+  {
+   "id": "q20-1",
+   "lesson": 20,
+   "number": 1,
+   "part": "context",
+   "before": "転校する日はクラスのみんなと別れるのが",
+   "target": "",
+   "after": "、涙が止まらなかった。",
+   "options": [
+    "にくくて",
+    "つらくて",
+    "痛ましくて",
+    "重苦しくて"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "つらい（辛い）: đau khổ, khó chịu",
+    "translation": "Ngày chuyển trường, việc chia tay mọi người trong lớp quá đau lòng nên không thể ngừng khóc."
+   }
+  },
+  {
+   "id": "q20-2",
+   "lesson": 20,
+   "number": 2,
+   "part": "context",
+   "before": "緊急配達の場合は、バイク",
+   "target": "",
+   "after": "を利用したほうがいい。",
+   "options": [
+    "便",
+    "送",
+    "件",
+    "郵"
+   ],
+   "answer": 0,
+   "inferred": false,
+   "explanation": {
+    "word": "バイク便（バイクびん）: dịch vụ chuyển phát bằng xe máy",
+    "translation": "Trường hợp giao hàng khẩn cấp thì nên sử dụng dịch vụ chuyển phát bằng xe máy."
+   }
+  },
+  {
+   "id": "q20-3",
+   "lesson": 20,
+   "number": 3,
+   "part": "context",
+   "before": "当社は学歴よりも、仕事への情熱とやる気を",
+   "target": "",
+   "after": "視しています。",
+   "options": [
+    "重要",
+    "疑問",
+    "問題",
+    "差別"
+   ],
+   "answer": 0,
+   "inferred": false,
+   "explanation": {
+    "word": "重要視（じゅうようし）: coi trọng",
+    "translation": "Công ty chúng tôi coi trọng nhiệt huyết và động lực trong công việc hơn là bằng cấp."
+   }
+  },
+  {
+   "id": "q20-4",
+   "lesson": 20,
+   "number": 4,
+   "part": "context",
+   "before": "街を",
+   "target": "",
+   "after": "していたら、山本さんに会った。",
+   "options": [
+    "ぐらぐら",
+    "がらがら",
+    "ばらばら",
+    "ぶらぶら"
+   ],
+   "answer": 3,
+   "inferred": false,
+   "explanation": {
+    "word": "ぶらぶら: đi dạo, lang thang",
+    "translation": "Đang đi dạo trong phố thì gặp anh Yamamoto."
+   }
+  },
+  {
+   "id": "q20-5",
+   "lesson": 20,
+   "number": 5,
+   "part": "context",
+   "before": "この文章にはなんとなく",
+   "target": "",
+   "after": "感を覚える。",
+   "options": [
+    "不和",
+    "無和",
+    "違和",
+    "非和"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "違和感（いわかん）: cảm giác khó chịu, cảm giác không tự nhiên",
+    "translation": "Tôi cảm thấy có gì đó không tự nhiên trong bài văn này."
+   }
+  },
+  {
+   "id": "q20-6",
+   "lesson": 20,
+   "number": 6,
+   "part": "context",
+   "before": "一つだけあなたの",
+   "target": "",
+   "after": "をかなえてあげましょう。",
+   "options": [
+    "なかなおり",
+    "のぞみ",
+    "ひとやすみ",
+    "ほこり"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "望み（のぞみ）: mong muốn, ước nguyện",
+    "translation": "Tôi sẽ thực hiện cho bạn một điều ước."
+   }
+  },
+  {
+   "id": "q20-7",
+   "lesson": 20,
+   "number": 7,
+   "part": "context",
+   "before": "あまり知識のないまま自己",
+   "target": "",
+   "after": "のダイエットをするのは危険だ。",
+   "options": [
+    "式",
+    "流",
+    "風",
+    "派"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "自己流（じこりゅう）: theo cách riêng của mình",
+    "translation": "Giảm cân theo cách riêng mà không có nhiều kiến thức là rất nguy hiểm."
+   }
+  },
+  {
+   "id": "q20-8",
+   "lesson": 20,
+   "number": 8,
+   "part": "context",
+   "before": "長年、風雨にさらされている部屋の外壁は",
+   "target": "",
+   "after": "が剥れている。",
+   "options": [
+    "ランチ",
+    "ベンチ",
+    "ペンキ",
+    "ラケット"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "ペンキ: sơn (từ tiếng Hà Lan \"pek\")",
+    "translation": "Tường ngoài của căn phòng chịu mưa gió nhiều năm đã bị bong sơn.",
+    "vocab": [
+     "剥れる（はがれる）: bong ra, tróc ra"
+    ]
+   }
+  },
+  {
+   "id": "q20-9",
+   "lesson": 20,
+   "number": 9,
+   "part": "context",
+   "before": "家族で泊まった旅館は",
+   "target": "",
+   "after": "で一つの部屋を二つに分けることができた。",
+   "options": [
+    "しょうじ",
+    "じゅうたん",
+    "てんじょう",
+    "たたみ"
+   ],
+   "answer": 0,
+   "inferred": false,
+   "explanation": {
+    "word": "障子（しょうじ）: cửa giấy kiểu Nhật",
+    "translation": "Nhà trọ kiểu Nhật mà cả gia đình nghỉ có thể dùng cửa giấy chia một phòng thành hai."
+   }
+  },
+  {
+   "id": "q20-10",
+   "lesson": 20,
+   "number": 10,
+   "part": "context",
+   "before": "",
+   "target": "",
+   "after": "シーズンは、あの選手の活躍が楽しみだ。",
+   "options": [
+    "明",
+    "迎",
+    "来",
+    "越"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "来シーズン（らいシーズン）: mùa giải tới",
+    "translation": "Mùa giải tới, tôi rất mong chờ sự thi đấu của cầu thủ đó."
+   }
+  },
+  {
+   "id": "q21-1",
+   "lesson": 21,
+   "number": 1,
+   "part": "context",
+   "before": "最後まで投げ出さずに頑張り",
+   "target": "",
+   "after": "こと自体が貴重な経験になった。",
+   "options": [
+    "こんだ",
+    "おわった",
+    "ぬいた",
+    "とおした"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "頑張りぬく（がんばりぬく）: kiên trì đến cùng",
+    "translation": "Bản thân việc không bỏ cuộc mà kiên trì đến cùng đã trở thành một trải nghiệm quý giá."
+   }
+  },
+  {
+   "id": "q21-2",
+   "lesson": 21,
+   "number": 2,
+   "part": "context",
+   "before": "",
+   "target": "",
+   "after": "な彼女は食べられないくらいの料理を皿に取ってきた。",
+   "options": [
+    "欲高",
+    "欲張り",
+    "欲好き",
+    "欲過ぎ"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "欲張り（よくばり）: tham lam",
+    "translation": "Cô ấy tham lam nên lấy đồ ăn vào đĩa nhiều đến mức không thể ăn hết."
+   }
+  },
+  {
+   "id": "q21-3",
+   "lesson": 21,
+   "number": 3,
+   "part": "context",
+   "before": "姉は何事も深く考え",
+   "target": "",
+   "after": "性格で、かなりの慎重派だ。",
+   "options": [
+    "だす",
+    "なおす",
+    "ぬく",
+    "こむ"
+   ],
+   "answer": 3,
+   "inferred": false,
+   "explanation": {
+    "word": "考えこむ（かんがえこむ）: suy nghĩ sâu, trầm tư",
+    "translation": "Chị gái có tính cách hay suy nghĩ sâu về mọi việc, thuộc kiểu rất thận trọng."
+   }
+  },
+  {
+   "id": "q21-4",
+   "lesson": 21,
+   "number": 4,
+   "part": "context",
+   "before": "このレストランは、いつも親子",
+   "target": "",
+   "after": "の客で込んでいる。",
+   "options": [
+    "添え",
+    "連れ",
+    "伴い",
+    "付き"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "親子連れ（おやこづれ）: cha mẹ đi cùng con cái",
+    "translation": "Nhà hàng này lúc nào cũng đông khách là các gia đình có con nhỏ."
+   }
+  },
+  {
+   "id": "q21-5",
+   "lesson": 21,
+   "number": 5,
+   "part": "context",
+   "before": "朝ごはんを",
+   "target": "",
+   "after": "と脳のエネルギーが不足して集中力が低下する。",
+   "options": [
+    "ぬく",
+    "はく",
+    "ひく",
+    "ふく"
+   ],
+   "answer": 0,
+   "inferred": false,
+   "explanation": {
+    "word": "朝ごはんをぬく（抜く）: bỏ bữa sáng",
+    "translation": "Nếu bỏ bữa sáng thì não sẽ thiếu năng lượng và khả năng tập trung giảm sút."
+   }
+  },
+  {
+   "id": "q21-6",
+   "lesson": 21,
+   "number": 6,
+   "part": "context",
+   "before": "今は",
+   "target": "",
+   "after": "制度からの移行時期だ。",
+   "options": [
+    "先",
+    "旧",
+    "昔",
+    "元"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "旧制度（きゅうせいど）: chế độ cũ",
+    "translation": "Bây giờ là giai đoạn chuyển đổi từ chế độ cũ."
+   }
+  },
+  {
+   "id": "q21-7",
+   "lesson": 21,
+   "number": 7,
+   "part": "context",
+   "before": "天気",
+   "target": "",
+   "after": "によると明日も晴れて気温が上がるそうです。",
+   "options": [
+    "予言",
+    "予知",
+    "予報",
+    "予期"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "天気予報（てんきよほう）: dự báo thời tiết",
+    "translation": "Theo dự báo thời tiết thì ngày mai cũng nắng và nhiệt độ sẽ tăng."
+   }
+  },
+  {
+   "id": "q21-8",
+   "lesson": 21,
+   "number": 8,
+   "part": "context",
+   "before": "彼のエリートぶっている態度に、手を",
+   "target": "",
+   "after": "。",
+   "options": [
+    "うっている",
+    "かしている",
+    "ぬいている",
+    "やいている"
+   ],
+   "answer": 3,
+   "inferred": false,
+   "explanation": {
+    "word": "手を焼く（てをやく）: bó tay, không biết xử lý thế nào",
+    "translation": "Tôi bó tay trước thái độ tỏ vẻ cao ngạo của anh ta.",
+    "vocab": [
+     "エリートぶる: tỏ vẻ tinh hoa, làm ra vẻ giỏi"
+    ]
+   }
+  },
+  {
+   "id": "q21-9",
+   "lesson": 21,
+   "number": 9,
+   "part": "context",
+   "before": "よく切れる",
+   "target": "",
+   "after": "ですから、手まで切らないよう気をつけてね。",
+   "options": [
+    "ほうちょう",
+    "ふみきり",
+    "はしご",
+    "ほうき"
+   ],
+   "answer": 0,
+   "inferred": false,
+   "explanation": {
+    "word": "包丁（ほうちょう）: dao bếp",
+    "translation": "Dao bếp rất sắc nên hãy cẩn thận kẻo cắt vào tay nhé."
+   }
+  },
+  {
+   "id": "q21-10",
+   "lesson": 21,
+   "number": 10,
+   "part": "context",
+   "before": "卒業パーティーには、ちゃんとした",
+   "target": "",
+   "after": "で行ったほうがいいのかな。",
+   "options": [
+    "様子",
+    "容姿",
+    "外見",
+    "格好"
+   ],
+   "answer": 3,
+   "inferred": false,
+   "explanation": {
+    "word": "格好（かっこう）: trang phục, dáng vẻ",
+    "translation": "Đi dự tiệc tốt nghiệp thì nên mặc đồ chỉn chu nhỉ?"
+   }
+  },
+  {
+   "id": "q22-1",
+   "lesson": 22,
+   "number": 1,
+   "part": "paraphrase",
+   "before": "シャツが",
+   "target": "ちぢんで",
+   "after": "しまった。",
+   "options": [
+    "小さくなって",
+    "古くなって",
+    "汚れて",
+    "破れて"
+   ],
+   "answer": 0,
+   "inferred": false,
+   "explanation": {
+    "word": "ちぢむ（縮む）: co lại, rút lại",
+    "translation": "Áo sơ mi đã bị co lại."
+   }
+  },
+  {
+   "id": "q22-2",
+   "lesson": 22,
+   "number": 2,
+   "part": "paraphrase",
+   "before": "頑張ったかいがあって、彼は見事に大学に",
+   "target": "合格した",
+   "after": "。",
+   "options": [
+    "出た",
+    "受かった",
+    "通った",
+    "勝った"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "合格する（ごうかくする）: đỗ, trúng tuyển",
+    "translation": "Nỗ lực đã được đền đáp, anh ấy đã đỗ đại học một cách xuất sắc.",
+    "vocab": [
+     "かいがある: xứng đáng, được đền đáp"
+    ]
+   }
+  },
+  {
+   "id": "q22-3",
+   "lesson": 22,
+   "number": 3,
+   "part": "paraphrase",
+   "before": "この靴は",
+   "target": "ぶかぶかだ",
+   "after": "。",
+   "options": [
+    "とても重い",
+    "とても小さい",
+    "とても軽い",
+    "とても大きい"
+   ],
+   "answer": 3,
+   "inferred": false,
+   "explanation": {
+    "word": "ぶかぶか: rộng thùng thình, lỏng lẻo",
+    "translation": "Đôi giày này rộng quá."
+   }
+  },
+  {
+   "id": "q22-4",
+   "lesson": 22,
+   "number": 4,
+   "part": "paraphrase",
+   "before": "一般的にねこは",
+   "target": "日中",
+   "after": "寝て過ごすことが多い。",
+   "options": [
+    "一日中",
+    "普段",
+    "昼間",
+    "日夜"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "日中（にっちゅう）: ban ngày, trong ngày",
+    "translation": "Nói chung mèo thường ngủ suốt ban ngày."
+   }
+  },
+  {
+   "id": "q22-5",
+   "lesson": 22,
+   "number": 5,
+   "part": "paraphrase",
+   "before": "強い勢力を保った台風１５号が関東地域に",
+   "target": "接近して",
+   "after": "いる。",
+   "options": [
+    "ひろがって",
+    "たかまって",
+    "せまって",
+    "せめて"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "接近する（せっきんする）: tiếp cận, đến gần",
+    "translation": "Bão số 15 vẫn giữ nguyên sức mạnh đang tiến gần vùng Kanto."
+   }
+  },
+  {
+   "id": "q22-6",
+   "lesson": 22,
+   "number": 6,
+   "part": "usage",
+   "before": "",
+   "target": "多少",
+   "after": "",
+   "options": [
+    "現金で支払えば、多少お安くいたします。",
+    "バーゲンセールで、人々は多少売り場に押しかけた。",
+    "何をするにも、多少必要なのはお金だろう。",
+    "２週間前より、英語が多少上手になったのでびっくりした。"
+   ],
+   "answer": 0,
+   "inferred": false,
+   "explanation": {
+    "word": "多少（たしょう）: ít nhiều, đôi chút",
+    "translation": "Nếu thanh toán bằng tiền mặt, chúng tôi sẽ giảm giá đôi chút."
+   }
+  },
+  {
+   "id": "q22-7",
+   "lesson": 22,
+   "number": 7,
+   "part": "usage",
+   "before": "",
+   "target": "行方",
+   "after": "",
+   "options": [
+    "飛行機はゆっくりと行方を南に変えました。",
+    "何度も確認したので東京駅への行方は分かっている。",
+    "数年前に出て行った弟の行方はまだ分からないままだ。",
+    "新婚旅行の行方はヨーロッパにしました。"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "行方（ゆくえ）: tung tích, hành tung",
+    "translation": "Tung tích của em trai ra đi từ vài năm trước vẫn chưa biết."
+   }
+  },
+  {
+   "id": "q22-8",
+   "lesson": 22,
+   "number": 8,
+   "part": "usage",
+   "before": "",
+   "target": "不平",
+   "after": "",
+   "options": [
+    "家の近くにスーパーがないのでとても不平だ。",
+    "仕事上の人間関係で、つい不平を言うことがある。",
+    "地面が不平で、家具が斜めになっている。",
+    "風が吹いてきて、水面が不平になった。"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "不平（ふへい）: bất bình, phàn nàn",
+    "translation": "Đôi khi vô tình phàn nàn về mối quan hệ con người trong công việc."
+   }
+  },
+  {
+   "id": "q22-9",
+   "lesson": 22,
+   "number": 9,
+   "part": "usage",
+   "before": "",
+   "target": "領収",
+   "after": "",
+   "options": [
+    "１０名様のお食事代として５万円、確かに領収いたしました。",
+    "山田さんの荷物がわたしのロッカーにまで領収している。",
+    "彼らは親の領収なしで旅行に行こうとして注意を受けた。",
+    "冬の間ずっとはいてたブーツを箱に入れて領収する。"
+   ],
+   "answer": 0,
+   "inferred": false,
+   "explanation": {
+    "word": "領収（りょうしゅう）: nhận tiền, thu nhận",
+    "translation": "Xin xác nhận đã nhận 50.000 yên tiền ăn cho 10 quý khách."
+   }
+  },
+  {
+   "id": "q22-10",
+   "lesson": 22,
+   "number": 10,
+   "part": "usage",
+   "before": "",
+   "target": "かなう",
+   "after": "",
+   "options": [
+    "苦労がかない、彼は俳優として成功をおさめた。",
+    "天気予報がなかい、今日は一日中快晴だった。",
+    "準備を重ねてきたイベントが無事かなった。",
+    "自分の店を持つという夢が、とうとうかなった。"
+   ],
+   "answer": 3,
+   "inferred": false,
+   "explanation": {
+    "word": "かなう（叶う）: thành hiện thực, trở thành sự thật",
+    "translation": "Ước mơ có cửa hàng riêng cuối cùng cũng đã thành hiện thực."
+   }
+  },
+  {
+   "id": "q23-1",
+   "lesson": 23,
+   "number": 1,
+   "part": "context",
+   "before": "駅前を歩いていたら、テレビのリポーターに突然",
+   "target": "",
+   "after": "、インタビューを受けた。",
+   "options": [
+    "聞き取られて",
+    "呼び止められて",
+    "問い合わせられて",
+    "見分けられて"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "呼び止める（よびとめる）: gọi dừng lại, chặn lại",
+    "translation": "Đang đi bộ trước ga thì bị phóng viên truyền hình bất ngờ chặn lại và phỏng vấn."
+   }
+  },
+  {
+   "id": "q23-2",
+   "lesson": 23,
+   "number": 2,
+   "part": "context",
+   "before": "まだ冷蔵庫がない時代、ここに食べ物を",
+   "target": "",
+   "after": "したそうです。",
+   "options": [
+    "倉庫",
+    "地帯",
+    "貯蔵",
+    "寝台"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "貯蔵（ちょぞう）: dự trữ, tích trữ",
+    "translation": "Nghe nói vào thời chưa có tủ lạnh, thực phẩm được tích trữ ở đây."
+   }
+  },
+  {
+   "id": "q23-3",
+   "lesson": 23,
+   "number": 3,
+   "part": "context",
+   "before": "ゴルフの初心者から",
+   "target": "",
+   "after": "者までレベルに合わせて上達方法を教える。",
+   "options": [
+    "上級",
+    "上等",
+    "高等",
+    "高級"
+   ],
+   "answer": 0,
+   "inferred": false,
+   "explanation": {
+    "word": "上級者（じょうきゅうしゃ）: người trình độ cao",
+    "translation": "Dạy cách tiến bộ phù hợp với trình độ từ người mới bắt đầu đến người chơi golf nâng cao."
+   }
+  },
+  {
+   "id": "q23-4",
+   "lesson": 23,
+   "number": 4,
+   "part": "context",
+   "before": "先週北京へ行ったとき、友達が案内",
+   "target": "",
+   "after": "をつとめてくれた。",
+   "options": [
+    "長",
+    "務",
+    "師",
+    "役"
+   ],
+   "answer": 3,
+   "inferred": false,
+   "explanation": {
+    "word": "案内役（あんないやく）: người hướng dẫn",
+    "translation": "Khi đi Bắc Kinh tuần trước, bạn tôi đã đảm nhận vai trò hướng dẫn."
+   }
+  },
+  {
+   "id": "q23-5",
+   "lesson": 23,
+   "number": 5,
+   "part": "context",
+   "before": "よく",
+   "target": "",
+   "after": "、メモをしながら話を聞くと好感を持たれる。",
+   "options": [
+    "うなずいて",
+    "うながして",
+    "おいついて",
+    "つながって"
+   ],
+   "answer": 0,
+   "inferred": false,
+   "explanation": {
+    "word": "うなずく（頷く）: gật đầu",
+    "translation": "Nếu vừa gật đầu, vừa ghi chép mà lắng nghe thì sẽ tạo được thiện cảm."
+   }
+  },
+  {
+   "id": "q23-6",
+   "lesson": 23,
+   "number": 6,
+   "part": "context",
+   "before": "暑い日は",
+   "target": "",
+   "after": "室にあるアイスクリームを食べるのが楽しみだ。",
+   "options": [
+    "冷凍",
+    "零点",
+    "零下",
+    "冷蔵"
+   ],
+   "answer": 0,
+   "inferred": false,
+   "explanation": {
+    "word": "冷凍室（れいとうしつ）: ngăn đông, phòng đông lạnh",
+    "translation": "Ngày nóng, thú vui là ăn kem trong ngăn đông."
+   }
+  },
+  {
+   "id": "q23-7",
+   "lesson": 23,
+   "number": 7,
+   "part": "context",
+   "before": "来週に大学受験を控えている姉は、神経が",
+   "target": "",
+   "after": "ぴりぴりしている。",
+   "options": [
+    "けずって",
+    "とがって",
+    "めだって",
+    "ひねって"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "神経がとがる（しんけいがとがる）: thần kinh căng thẳng, dễ cáu",
+    "translation": "Chị gái sắp thi đại học vào tuần tới nên thần kinh căng thẳng, bồn chồn."
+   }
+  },
+  {
+   "id": "q23-8",
+   "lesson": 23,
+   "number": 8,
+   "part": "context",
+   "before": "さまざまなデータを",
+   "target": "",
+   "after": "した結果、事故の原因が明らかになった。",
+   "options": [
+    "視察",
+    "検査",
+    "発明",
+    "分析"
+   ],
+   "answer": 3,
+   "inferred": false,
+   "explanation": {
+    "word": "分析（ぶんせき）: phân tích",
+    "translation": "Kết quả phân tích nhiều dữ liệu khác nhau, nguyên nhân vụ tai nạn đã được làm rõ."
+   }
+  },
+  {
+   "id": "q23-9",
+   "lesson": 23,
+   "number": 9,
+   "part": "context",
+   "before": "今回は",
+   "target": "",
+   "after": "条件がいくつも重ねってしまって、大変だった。",
+   "options": [
+    "苦",
+    "悪",
+    "損",
+    "劣"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "悪条件（あくじょうけん）: điều kiện xấu, điều kiện bất lợi",
+    "translation": "Lần này nhiều điều kiện bất lợi chồng chất lên nhau nên rất vất vả."
+   }
+  },
+  {
+   "id": "q23-10",
+   "lesson": 23,
+   "number": 10,
+   "part": "context",
+   "before": "",
+   "target": "",
+   "after": "は窓から侵入し、その家にある高価なものを探していた。",
+   "options": [
+    "すり",
+    "どろぼう",
+    "しんじゅう",
+    "さぎ"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "泥棒（どろぼう）: tên trộm",
+    "translation": "Tên trộm đột nhập qua cửa sổ và lục tìm những thứ có giá trị trong nhà.",
+    "vocab": [
+     "侵入（しんにゅう）: xâm nhập, đột nhập"
+    ]
+   }
+  },
+  {
+   "id": "q24-1",
+   "lesson": 24,
+   "number": 1,
+   "part": "paraphrase",
+   "before": "あの人は",
+   "target": "たびたび",
+   "after": "夜遅くに電話をかけてくる。",
+   "options": [
+    "たまに",
+    "何度も",
+    "たいてい",
+    "突然"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "たびたび: nhiều lần, thường xuyên",
+    "translation": "Người đó thường xuyên gọi điện vào lúc khuya."
+   }
+  },
+  {
+   "id": "q24-2",
+   "lesson": 24,
+   "number": 2,
+   "part": "paraphrase",
+   "before": "数日前から、家の前に",
+   "target": "怪しい",
+   "after": "人が立っていたので、警察に通報した。",
+   "options": [
+    "はでな",
+    "かってな",
+    "へんな",
+    "みじめな"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "怪しい（あやしい）: đáng ngờ, kỳ lạ",
+    "translation": "Từ vài ngày trước, có người đáng ngờ đứng trước nhà nên đã báo cảnh sát.",
+    "vocab": [
+     "通報（つうほう）: báo cáo, thông báo"
+    ]
+   }
+  },
+  {
+   "id": "q24-3",
+   "lesson": 24,
+   "number": 3,
+   "part": "paraphrase",
+   "before": "この辺りは夜になるとかなり",
+   "target": "物騒",
+   "after": "ですから、一人では歩かないように。",
+   "options": [
+    "危険",
+    "混雑",
+    "無用心",
+    "酒場"
+   ],
+   "answer": 0,
+   "inferred": false,
+   "explanation": {
+    "word": "物騒（ぶっそう）: không an toàn, nguy hiểm",
+    "translation": "Khu vực này vào ban đêm khá nguy hiểm nên đừng đi bộ một mình."
+   }
+  },
+  {
+   "id": "q24-4",
+   "lesson": 24,
+   "number": 4,
+   "part": "paraphrase",
+   "before": "先週、車を",
+   "target": "レンタルした",
+   "after": "。",
+   "options": [
+    "修理した",
+    "借りた",
+    "検査した",
+    "買った"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "レンタルする: thuê, mượn",
+    "translation": "Tuần trước, tôi đã thuê xe ô tô."
+   }
+  },
+  {
+   "id": "q24-5",
+   "lesson": 24,
+   "number": 5,
+   "part": "paraphrase",
+   "before": "自分のミスで迷惑をかけたことを",
+   "target": "詫びた",
+   "after": "。",
+   "options": [
+    "説いた",
+    "謝った",
+    "語った",
+    "解いた"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "詫びる（わびる）: xin lỗi, tạ lỗi",
+    "translation": "Anh ấy đã xin lỗi vì đã gây phiền phức do lỗi của bản thân."
+   }
+  },
+  {
+   "id": "q24-6",
+   "lesson": 24,
+   "number": 6,
+   "part": "usage",
+   "before": "",
+   "target": "注目",
+   "after": "",
+   "options": [
+    "きれいな眺めに注目して、時間がたつのを忘れた。",
+    "寝不足で注目が足りないと、仕事でミスが多くなる。",
+    "来月の選挙の結果が注目されている。",
+    "この問題を別の注目から見てみよう。"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "注目（ちゅうもく）: chú ý, quan tâm",
+    "translation": "Kết quả cuộc bầu cử tháng sau đang được quan tâm."
+   }
+  },
+  {
+   "id": "q24-7",
+   "lesson": 24,
+   "number": 7,
+   "part": "usage",
+   "before": "",
+   "target": "臨時",
+   "after": "",
+   "options": [
+    "欠席することは許されませんが、臨時として次のような場合は認められます。",
+    "毎年、夏休み期間中は臨時電車が運転される。",
+    "地震に備えて年に一度は非難の臨時について家族で話し合ったほうがいい。",
+    "ここではろうかの電気を２４時間臨時でつけてあります。"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "臨時（りんじ）: lâm thời, tạm thời",
+    "translation": "Hàng năm, trong kỳ nghỉ hè sẽ có tàu điện tạm thời được vận hành."
+   }
+  },
+  {
+   "id": "q24-8",
+   "lesson": 24,
+   "number": 8,
+   "part": "usage",
+   "before": "",
+   "target": "工夫",
+   "after": "",
+   "options": [
+    "使いやすいようにいろいろと工夫している。",
+    "牛肉をおいしく作るには、けっこう工夫がかかる。",
+    "卒業まで、あまり工夫がないのだ。",
+    "彼には工夫の才能がある。"
+   ],
+   "answer": 0,
+   "inferred": false,
+   "explanation": {
+    "word": "工夫（くふう）: sáng tạo, nghĩ cách",
+    "translation": "Tôi đang nghĩ nhiều cách để làm cho nó dễ sử dụng hơn."
+   }
+  },
+  {
+   "id": "q24-9",
+   "lesson": 24,
+   "number": 9,
+   "part": "usage",
+   "before": "",
+   "target": "伝言",
+   "after": "",
+   "options": [
+    "あの人はまだ生きているという伝言が流れている。",
+    "あの連中はいつも人の伝言を言っている。",
+    "ご家族によろしくと伝言を頼まれた。",
+    "彼は食事の伝言をしょっちゅう言っている。"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "伝言（でんごん）: nhắn tin, lời nhắn",
+    "translation": "Tôi được nhờ nhắn lại là gửi lời chào đến gia đình."
+   }
+  },
+  {
+   "id": "q24-10",
+   "lesson": 24,
+   "number": 10,
+   "part": "usage",
+   "before": "",
+   "target": "無地",
+   "after": "",
+   "options": [
+    "パーティーに行くのにその服は無地過ぎると思う。",
+    "朝寝坊して時間がなかったので、無地の顔で会社へ行った。",
+    "川の水は無地で、気持ちよさそうに泳ぐ魚などもよく見えました。",
+    "無地の生地に１本の鮮やかな赤いライオンが印象的です。"
+   ],
+   "answer": 3,
+   "inferred": false,
+   "explanation": {
+    "word": "無地（むじ）: trơn, không hoa văn",
+    "translation": "Hình ảnh con sư tử đỏ rực trên nền vải trơn thật ấn tượng.",
+    "vocab": [
+     "鮮やか（あざやか）: tươi sáng, rực rỡ"
+    ]
+   }
+  },
+  {
+   "id": "q25-1",
+   "lesson": 25,
+   "number": 1,
+   "part": "context",
+   "before": "男女の学生の数を比べると男子の",
+   "target": "",
+   "after": "が高い。",
+   "options": [
+    "割り算",
+    "割り当て",
+    "割合",
+    "割引き"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "割合（わりあい）: tỷ lệ",
+    "translation": "So sánh số lượng nam nữ sinh viên thì tỷ lệ nam sinh cao hơn."
+   }
+  },
+  {
+   "id": "q25-2",
+   "lesson": 25,
+   "number": 2,
+   "part": "context",
+   "before": "コピー機に紙が",
+   "target": "",
+   "after": "、出てこない。",
+   "options": [
+    "もぐって",
+    "つまって",
+    "しずんで",
+    "うまって"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "つまる（詰まる）: bị tắc, bị kẹt",
+    "translation": "Giấy bị kẹt trong máy photocopy, không ra được."
+   }
+  },
+  {
+   "id": "q25-3",
+   "lesson": 25,
+   "number": 3,
+   "part": "context",
+   "before": "水道工事のため、日本は臨時",
+   "target": "",
+   "after": "とさせていただきます。",
+   "options": [
+    "休暇",
+    "休養",
+    "休憩",
+    "休業"
+   ],
+   "answer": 3,
+   "inferred": false,
+   "explanation": {
+    "word": "臨時休業（りんじきゅうぎょう）: tạm ngừng kinh doanh",
+    "translation": "Do công trình sửa chữa đường nước, hôm nay xin phép tạm ngừng kinh doanh."
+   }
+  },
+  {
+   "id": "q25-4",
+   "lesson": 25,
+   "number": 4,
+   "part": "context",
+   "before": "屋根のないところにずっと自転車を置いておいたら",
+   "target": "",
+   "after": "だらけになった。",
+   "options": [
+    "さび",
+    "しわ",
+    "すじ",
+    "しっけ"
+   ],
+   "answer": 0,
+   "inferred": false,
+   "explanation": {
+    "word": "錆（さび）: rỉ sét",
+    "translation": "Để xe đạp ở chỗ không có mái che suốt thì bị rỉ sét khắp nơi."
+   }
+  },
+  {
+   "id": "q25-5",
+   "lesson": 25,
+   "number": 5,
+   "part": "context",
+   "before": "建物に入る前に入り口でかばんや荷物の",
+   "target": "",
+   "after": "をチェックされた。",
+   "options": [
+    "分数",
+    "内容",
+    "中身",
+    "仲間"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "中身（なかみ）: đồ bên trong, nội dung",
+    "translation": "Trước khi vào tòa nhà, đồ bên trong cặp và hành lý bị kiểm tra ở lối vào."
+   }
+  },
+  {
+   "id": "q25-6",
+   "lesson": 25,
+   "number": 6,
+   "part": "context",
+   "before": "子供が風邪",
+   "target": "",
+   "after": "なので、今日は学校を休ませることにした。",
+   "options": [
+    "気味",
+    "具合",
+    "寄り",
+    "向き"
+   ],
+   "answer": 0,
+   "inferred": false,
+   "explanation": {
+    "word": "風邪気味（かぜぎみ）: hơi bị cảm",
+    "translation": "Con hơi bị cảm nên hôm nay cho nghỉ học."
+   }
+  },
+  {
+   "id": "q25-7",
+   "lesson": 25,
+   "number": 7,
+   "part": "context",
+   "before": "日本から送ってもらった荷物が税関で引っ",
+   "target": "",
+   "after": "しまいました。",
+   "options": [
+    "こんで",
+    "かかって",
+    "ぱって",
+    "こして"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "引っかかる（ひっかかる）: bị mắc, bị giữ lại",
+    "translation": "Hàng gửi từ Nhật Bản đã bị giữ lại ở hải quan.",
+    "vocab": [
+     "税関（ぜいかん）: hải quan"
+    ]
+   }
+  },
+  {
+   "id": "q25-8",
+   "lesson": 25,
+   "number": 8,
+   "part": "context",
+   "before": "結婚式の招待",
+   "target": "",
+   "after": "が届いたら、なるべく早く返信を出す。",
+   "options": [
+    "書",
+    "券",
+    "状",
+    "信"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "招待状（しょうたいじょう）: thiệp mời",
+    "translation": "Khi nhận được thiệp mời đám cưới, hãy hồi âm càng sớm càng tốt."
+   }
+  },
+  {
+   "id": "q25-9",
+   "lesson": 25,
+   "number": 9,
+   "part": "context",
+   "before": "夏の雨不足のせいで畑の",
+   "target": "",
+   "after": "に影響が出そうだ。",
+   "options": [
+    "食物",
+    "作法",
+    "食料",
+    "作物"
+   ],
+   "answer": 3,
+   "inferred": false,
+   "explanation": {
+    "word": "作物（さくもつ）: nông sản, hoa màu",
+    "translation": "Do thiếu mưa mùa hè, hoa màu trên ruộng có vẻ sẽ bị ảnh hưởng."
+   }
+  },
+  {
+   "id": "q25-10",
+   "lesson": 25,
+   "number": 10,
+   "part": "context",
+   "before": "１９７０",
+   "target": "",
+   "after": "に流行したファッションが再び注目を集めています。",
+   "options": [
+    "年間",
+    "年月",
+    "年代",
+    "年度"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "年代（ねんだい）: niên đại, thập niên",
+    "translation": "Thời trang từng thịnh hành vào thập niên 1970 đang thu hút sự chú ý trở lại."
+   }
+  },
+  {
+   "id": "q26-1",
+   "lesson": 26,
+   "number": 1,
+   "part": "paraphrase",
+   "before": "電車の中で、夫婦げんかしないでください。",
+   "target": "みっともない",
+   "after": "から。",
+   "options": [
+    "なまいきだ",
+    "あわれだ",
+    "かなしい",
+    "はずかしい"
+   ],
+   "answer": 3,
+   "inferred": false,
+   "explanation": {
+    "word": "みっともない: xấu hổ, đáng xấu hổ",
+    "translation": "Đừng cãi nhau vợ chồng trên tàu điện. Vì rất đáng xấu hổ."
+   }
+  },
+  {
+   "id": "q26-2",
+   "lesson": 26,
+   "number": 2,
+   "part": "paraphrase",
+   "before": "どんな車を買うかは",
+   "target": "すきずき",
+   "after": "ですから、わたしは口は出せませにょ。",
+   "options": [
+    "それぞれ",
+    "良し悪し",
+    "左右",
+    "大小"
+   ],
+   "answer": 0,
+   "inferred": false,
+   "explanation": {
+    "word": "すきずき（好き好き）: tùy sở thích mỗi người",
+    "translation": "Mua xe gì là tùy sở thích mỗi người nên tôi không thể xen vào."
+   }
+  },
+  {
+   "id": "q26-3",
+   "lesson": 26,
+   "number": 3,
+   "part": "paraphrase",
+   "before": "",
+   "target": "せっかく",
+   "after": "ですが、いただけません。",
+   "options": [
+    "もったいない",
+    "ありがたい",
+    "うらやましい",
+    "もうしわけない"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "せっかく: hiếm có, khó được",
+    "translation": "Rất cảm ơn nhưng tôi không thể nhận."
+   }
+  },
+  {
+   "id": "q26-4",
+   "lesson": 26,
+   "number": 4,
+   "part": "paraphrase",
+   "before": "",
+   "target": "発育",
+   "after": "に必要な栄養をとらなかったので、大きくならなかったようだ。",
+   "options": [
+    "発展",
+    "育児",
+    "成長",
+    "発生"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "発育（はついく）: phát triển, lớn lên",
+    "translation": "Vì không hấp thu đủ dinh dưỡng cần thiết cho sự phát triển nên có vẻ đã không lớn được."
+   }
+  },
+  {
+   "id": "q26-5",
+   "lesson": 26,
+   "number": 5,
+   "part": "paraphrase",
+   "before": "今日もコンビニへ行って",
+   "target": "余計",
+   "after": "なものを買ってしまった。",
+   "options": [
+    "邪魔",
+    "経済的",
+    "無駄",
+    "不正"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "余計（よけい）: thừa, không cần thiết",
+    "translation": "Hôm nay cũng lại đi cửa hàng tiện lợi và mua những thứ không cần thiết."
+   }
+  },
+  {
+   "id": "q26-6",
+   "lesson": 26,
+   "number": 6,
+   "part": "paraphrase",
+   "before": "今日遅刻した",
+   "target": "理由",
+   "after": "を話しなさい。",
+   "options": [
+    "わき",
+    "わか",
+    "わけ",
+    "わざ"
+   ],
+   "answer": 2,
+   "inferred": false,
+   "explanation": {
+    "word": "理由（りゆう）: lý do",
+    "translation": "Hãy nói lý do đi muộn hôm nay."
+   }
+  },
+  {
+   "id": "q26-7",
+   "lesson": 26,
+   "number": 7,
+   "part": "paraphrase",
+   "before": "そんな機会はきわめて",
+   "target": "まれ",
+   "after": "だった。",
+   "options": [
+    "めずらしい",
+    "おかしい",
+    "おおい",
+    "あやしい"
+   ],
+   "answer": 0,
+   "inferred": false,
+   "explanation": {
+    "word": "まれ（稀）: hiếm, ít khi",
+    "translation": "Cơ hội như thế cực kỳ hiếm.",
+    "vocab": [
+     "きわめて（極めて）: cực kỳ, vô cùng"
+    ]
+   }
+  },
+  {
+   "id": "q26-8",
+   "lesson": 26,
+   "number": 8,
+   "part": "paraphrase",
+   "before": "この１０年で、この鳥の自然環境",
+   "target": "わずかに",
+   "after": "変化した。",
+   "options": [
+    "急に",
+    "ゆっくり",
+    "大きく",
+    "少し"
+   ],
+   "answer": 3,
+   "inferred": false,
+   "explanation": {
+    "word": "わずかに: một chút, rất ít",
+    "translation": "Trong 10 năm qua, môi trường tự nhiên của loài chim này đã thay đổi một chút."
+   }
+  },
+  {
+   "id": "q26-9",
+   "lesson": 26,
+   "number": 9,
+   "part": "paraphrase",
+   "before": "息子は今アメリカのロック音楽に",
+   "target": "熱中",
+   "after": "している。",
+   "options": [
+    "想像中だ",
+    "夢中だ",
+    "流行中だ",
+    "真ん中だ"
+   ],
+   "answer": 1,
+   "inferred": false,
+   "explanation": {
+    "word": "熱中（ねっちゅう）: say mê, mải mê",
+    "translation": "Con trai tôi hiện đang say mê nhạc rock Mỹ."
+   }
+  },
+  {
+   "id": "q26-10",
+   "lesson": 26,
+   "number": 10,
+   "part": "paraphrase",
+   "before": "あの人は美人で、しかも",
+   "target": "かしこい",
+   "after": "。",
+   "options": [
+    "頭がいい",
+    "まぶしい",
+    "まずしい",
+    "するどい"
+   ],
+   "answer": 0,
+   "inferred": false,
+   "explanation": {
+    "word": "かしこい（賢い）: thông minh, lanh lợi",
+    "translation": "Người đó vừa đẹp lại còn thông minh."
+   }
+  }
+ ]
+}

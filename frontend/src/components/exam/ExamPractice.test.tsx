@@ -1,7 +1,9 @@
 import { render, screen, fireEvent, within } from "@testing-library/react";
 import { describe, it, expect } from "vitest";
 import ExamPractice from "./ExamPractice";
-import { EXAM_QUESTIONS } from "../../utils/examEngine";
+import { N2_EXAM, N3_EXAM } from "../../data/examBanks";
+
+const EXAM_QUESTIONS = N3_EXAM.questions;
 
 const selectPaper = (key: string) => fireEvent.change(screen.getByLabelText("Chọn đề"), { target: { value: key } });
 const questionItems = () => screen.getAllByRole("listitem");
@@ -11,9 +13,9 @@ const optionTexts = (item: HTMLElement) => optionsOf(item).map((b) => b.querySel
 const optionOf = (item: HTMLElement, text: string) => optionsOf(item)[optionTexts(item).indexOf(text)];
 const optionOrders = () => questionItems().map((item) => optionTexts(item).join("|"));
 
-describe("ExamPractice", () => {
+describe("ExamPractice (N3)", () => {
   it("renders a mock paper grouped into the 4 parts of the real N3 exam", () => {
-    render(<ExamPractice />);
+    render(<ExamPractice bank={N3_EXAM} />);
 
     const headings = screen.getAllByRole("heading", { level: 2 }).map((h) => h.textContent);
     expect(headings).toEqual([
@@ -28,7 +30,7 @@ describe("ExamPractice", () => {
   });
 
   it("shows a lesson paper with the shared instruction once per section", () => {
-    render(<ExamPractice />);
+    render(<ExamPractice bank={N3_EXAM} />);
     selectPaper("lesson-1");
 
     expect(questionItems()).toHaveLength(60);
@@ -42,7 +44,7 @@ describe("ExamPractice", () => {
   });
 
   it("lets the user change an answer before submitting and scores per section", () => {
-    render(<ExamPractice />);
+    render(<ExamPractice bank={N3_EXAM} />);
     selectPaper("lesson-1");
 
     const [q1, q2] = questionItems();
@@ -74,7 +76,7 @@ describe("ExamPractice", () => {
   });
 
   it("shuffles the options of every new attempt and keeps the right answer", () => {
-    render(<ExamPractice />);
+    render(<ExamPractice bank={N3_EXAM} />);
     selectPaper("lesson-1");
     const first = optionOrders();
 
@@ -90,7 +92,7 @@ describe("ExamPractice", () => {
   });
 
   it("retries a mock paper with the same questions and options in a new order", () => {
-    render(<ExamPractice />);
+    render(<ExamPractice bank={N3_EXAM} />);
     const sentences = () => questionItems().map((item) => item.querySelector(".exam-sentence")!.textContent);
     const questions = sentences();
     const orders = optionOrders();
@@ -103,7 +105,7 @@ describe("ExamPractice", () => {
   });
 
   it("renders blanks for context questions and fills them with the answer after submit", () => {
-    render(<ExamPractice />);
+    render(<ExamPractice bank={N3_EXAM} />);
     selectPaper("lesson-5");
 
     const first = questionItems()[0];
@@ -116,7 +118,7 @@ describe("ExamPractice", () => {
   });
 
   it("shows the Hán Việt of a word when its button is clicked", () => {
-    render(<ExamPractice />);
+    render(<ExamPractice bank={N3_EXAM} />);
     selectPaper("lesson-1");
 
     // Kanji reading question: only the underlined word has kanji.
@@ -144,10 +146,55 @@ describe("ExamPractice", () => {
   });
 
   it("offers papers by part with every question of that part", () => {
-    render(<ExamPractice />);
+    render(<ExamPractice bank={N3_EXAM} />);
     selectPaper("part-paraphrase");
 
     expect(questionItems()).toHaveLength(EXAM_QUESTIONS.filter((q) => q.part === "paraphrase").length);
     expect(screen.getAllByRole("heading", { level: 2 })).toHaveLength(1);
+  });
+});
+
+describe("ExamPractice (N2)", () => {
+  it("renders a mock paper with the parts of the jtest.net quizzes", () => {
+    render(<ExamPractice bank={N2_EXAM} />);
+
+    const headings = screen.getAllByRole("heading", { level: 2 }).map((h) => h.textContent);
+    expect(headings).toEqual([
+      expect.stringContaining("問題1文脈規定"),
+      expect.stringContaining("問題2言い換え類義"),
+      expect.stringContaining("問題3用法"),
+    ]);
+    expect(questionItems()).toHaveLength(17);
+    expect(screen.getByRole("option", { name: "Quiz 26 (10 câu)" })).toBeInTheDocument();
+  });
+
+  it("shows usage questions as the word with one sentence per option", () => {
+    render(<ExamPractice bank={N2_EXAM} />);
+    selectPaper("lesson-19");
+
+    const first = questionItems()[0];
+    expect(first.querySelector(".exam-sentence")!.textContent).toBe("違反Hán Việt");
+    expect(first.querySelector(".options")).toHaveClass("options--stacked");
+    expect(optionTexts(first)).toContain("ルールに違反して退場になった選手が３人もいる。");
+    // Only the word has a Hán Việt button, not the sentences.
+    expect(within(first).getAllByRole("button", { name: /Hán Việt/ })).toHaveLength(1);
+  });
+
+  it("explains every answer after submitting", () => {
+    render(<ExamPractice bank={N2_EXAM} />);
+    selectPaper("lesson-1");
+
+    const first = questionItems()[0];
+    expect(first.querySelector(".exam-explanation")).toBeNull();
+    fireEvent.click(optionOf(first, "弱点"));
+    fireEvent.click(screen.getByRole("button", { name: /Nộp bài/i }));
+
+    const answered = questionItems()[0];
+    expect(answered).toHaveClass("is-correct");
+    expect(answered.querySelector(".exam-blank")!.textContent).toBe("弱点");
+    expect(within(answered).getByText("弱点（じゃくてん）: điểm yếu")).toBeInTheDocument();
+    expect(within(answered).getByText("Vị tổng thống trẻ tuổi có điểm yếu là thiếu kinh nghiệm.")).toBeInTheDocument();
+    expect(within(answered).getByText("Nguồn: Quiz 1 – câu 1")).toBeInTheDocument();
+    expect(within(questionItems()[2]).getByText("象牙（ぞうげ）: ngà voi · 密猟（みつりょう）: săn trộm")).toBeInTheDocument();
   });
 });

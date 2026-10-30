@@ -1,6 +1,6 @@
 # Mimikara Oboeru N5 → N2 – Frontend
 
-React + TypeScript + Vite app organized by JLPT level: the level tabs **N5 · N4 · N3 · N2** each open the sections of that level, **📖 Từ vựng** for every level and **📝 Luyện đề** for N3. The chosen level and section are saved in localStorage (`mimikara_level`, `mimikara_section`); a level without the chosen section opens its vocabulary. Every level and section stays mounted, so switching keeps the current session.
+React + TypeScript + Vite app organized by JLPT level: the level tabs **N5 · N4 · N3 · N2** each open the sections of that level, **📖 Từ vựng** for every level and **📝 Luyện đề** for N3 and N2. The chosen level and section are saved in localStorage (`mimikara_level`, `mimikara_section`); a level without the chosen section opens its vocabulary. Every level and section stays mounted, so switching keeps the current session.
 
 Learners first register or log in with a username and a password (see [Login and progress](#login-and-progress)); the level tabs then show how many words of each level they remembered.
 
@@ -14,6 +14,7 @@ In every level, each learner has their own words to review (📌 Chưa nhớ) an
 - **🔗 Học 1 được 2** – after answering (and on the back of a flashcard) up to two companion words are shown: the 自動詞/他動詞 pair of a verb (倒れる → 倒す), then synonyms and antonyms, each with reading, Hán Việt, meaning and speaker.
 
 - **📝 Luyện đề N3** – 文字・語彙 exam papers built from `JLPT_N3_tu_vung_Minchan.docx` (440 questions). Questions are grouped by part like the real exam: 問題1 漢字読み, 問題2 表記, 問題3 文脈規定, 問題4 言い換え類義. Pick a random mock paper (real N3 question counts), a lesson (Bài 1–8) or a whole part, then submit to see the score per part. The options of every question are shuffled each time a paper is started or retried.
+- **📝 Luyện đề N2** – the 26 vocabulary quizzes of [JTest.net](https://jtest.net/jlpt/n2/vocabulary) (262 questions) in the same papers: 文脈規定 (191 questions), 言い換え類義 (41) and 用法 (30), whose options are sentences shown one per row. Pick a mock paper (7 + 5 + 5 questions like the real N2 paper), a quiz (Quiz 1–26) or a part; after submitting, every question shows the explanation of the site: the word with its reading and meaning, the sentence in Vietnamese and the other words of the sentence.
 
 ## Scripts
 
@@ -49,7 +50,7 @@ src/
 │   ├── vocab/              # vocabulary section of a level: mode switch + toolbar (VocabPractice), QuizPractice, FlashcardPractice, QuestionCard, WordHero, UnrememberedModal
 │   └── exam/               # exam papers (sections, questions, result)
 ├── hooks/                  # persistent state, learner progress (useProgress, word lists, flashcards), shared vocab settings, speech, keyboard shortcuts, quiz session
-├── data/                   # N5/N4/N2 (jtest.net) and N3 vocabulary, companions, exam and kanji Hán Việt JSON; vocabDecks builds the deck of every level
+├── data/                   # N5/N4/N2 (jtest.net) and N3 vocabulary, companions, exam and kanji Hán Việt JSON; vocabDecks builds the deck of every level, examBanks the exam papers of N3 and N2
 ├── utils/                  # progressStore + progressApi (accounts, learner progress & sync), progress (merge, username and password rules), legacyProgress, quizEngine, srs, examEngine, hanViet, gtm
 ├── test/                   # test setup (offline by default) and fakeApi, the backend served from memory
 └── types/
@@ -65,6 +66,12 @@ python3 scripts/build_exam_data.py   # run from the repository root
 ```
 
 Underlined words in the document become the `target` of each question; answers marked `*` in the answer key are flagged `inferred` and shown as reference answers.
+
+`src/data/jtest_n2_exam.json` is crawled from the quizzes of jtest.net. A quiz page has no answers: the crawler submits every quiz unanswered, like a visitor, and reads the correct option and the explanation from the result page (two requests per quiz, with a pause between requests). `src/data/examBanks.ts` builds the papers of every level from these files, with the question count of each part in the mock paper.
+
+```bash
+python3 scripts/crawl_jtest_quiz.py n2   # run from the repository root, then build_han_viet_data.py
+```
 
 ## N5, N4, N2 vocabulary and companion words
 
@@ -82,7 +89,7 @@ python3 scripts/build_han_viet_data.py   # downloads KANJIDIC2
 
 ## Hán Việt buttons
 
-Every exam word written in kanji (the underlined word and each option) has a **Hán Việt** button that shows its Sino-Vietnamese reading; in the vocabulary quiz the same button appears while Hán Việt is hidden. Readings come from the N3 vocabulary data when the word is in it, otherwise kanji by kanji from `src/data/kanji_han_viet.json`; the N5, N4 and N2 vocabulary and the companion words get their Hán Việt the same way, leaving out the context in brackets (（お金を）下ろす → HẠ). Regenerate that table after changing the exam data or running `build_vocab_data.py`:
+Every exam word written in kanji (the underlined word and each option, except the sentences of 用法 options) has a **Hán Việt** button that shows its Sino-Vietnamese reading; in the vocabulary quiz the same button appears while Hán Việt is hidden. Readings come from the N3 vocabulary data when the word is in it, otherwise kanji by kanji from `src/data/kanji_han_viet.json`; the N5, N4 and N2 vocabulary and the companion words get their Hán Việt the same way, leaving out the context in brackets (（お金を）下ろす → HẠ). Regenerate that table after changing the exam data or running `build_vocab_data.py`:
 
 ```bash
 python3 scripts/build_han_viet_data.py   # run from the repository root; downloads KANJIDIC2

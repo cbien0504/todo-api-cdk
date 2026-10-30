@@ -4,13 +4,15 @@ Usage (from the repo root):
     python3 scripts/build_han_viet_data.py [path/to/kanjidic2.xml[.gz]] [path/to/output.json]
 
 Without a path, KANJIDIC2 is downloaded from EDRDG. Each kanji used by the exam words
-(underlined targets and options), by the jtest.net decks (N5, N4 and N2, which have no
+(underlined targets and options, but not the sentences of usage options) of N3 and of
+the jtest.net quizzes, by the jtest.net decks (N5, N4 and N2, which have no
 Hán Việt of their own) or by the companion words gets one reading, chosen in this order:
   1. OVERRIDES below (common reading when KANJIDIC2 lists several or a wrong one);
   2. the most frequent reading in the vocabulary JSON, so the exam agrees with the
      Hán Việt shown in the vocabulary quiz;
   3. the first Vietnamese reading of KANJIDIC2.
-Run it again after regenerating the exam data or scripts/build_vocab_data.py.
+Run it again after regenerating the exam data (build_exam_data.py, crawl_jtest_quiz.py) or
+scripts/build_vocab_data.py.
 """
 
 import json
@@ -27,6 +29,8 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "frontend" / "src" / "data"
 VOCAB_PATH = DATA_DIR / "mimikara_oboeru_vocab.json"
 EXAM_PATH = DATA_DIR / "jlpt_n3_minchan_exam.json"
+# The quizzes written by scripts/crawl_jtest_quiz.py.
+JTEST_EXAM_GLOB = "jtest_*_exam.json"
 # The decks written by scripts/build_vocab_data.py.
 JTEST_DECK_GLOB = "jtest_*_vocab.json"
 COMPANIONS_PATH = DATA_DIR / "vocab_companions.json"
@@ -88,6 +92,8 @@ OVERRIDES = {
     "浜": "TÂN",
     # Kanji of the N5 and N4 vocabulary.
     "飲": "ẨM",
+    # Kanji of the N2 exam quizzes.
+    "陥": "HÃM",
 }
 
 
@@ -124,8 +130,10 @@ def needed_kanji() -> set[str]:
     ]
     for deck in json.loads(COMPANIONS_PATH.read_text(encoding="utf-8")).values():
         words += [companion["word"] for companions in deck.values() for companion in companions]
-    for question in json.loads(EXAM_PATH.read_text(encoding="utf-8"))["questions"]:
-        words += [question["target"], *question["options"]]
+    for path in [EXAM_PATH, *sorted(DATA_DIR.glob(JTEST_EXAM_GLOB))]:
+        for question in json.loads(path.read_text(encoding="utf-8"))["questions"]:
+            # Usage options are sentences, shown without Hán Việt.
+            words += [question["target"], *(question["options"] if question["part"] != "usage" else [])]
     return {char for word in words for char in KANJI_RE.findall(word)}
 
 

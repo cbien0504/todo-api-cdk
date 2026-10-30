@@ -1,15 +1,6 @@
 import { useMemo, useRef, useState } from "react";
 import type { ExamAnswers, ExamPaper } from "../../types/exam";
-import {
-  EXAM_SOURCE,
-  LESSON_PAPER_OPTIONS,
-  MOCK_PAPER_KEY,
-  MOCK_TOTAL,
-  PART_PAPER_OPTIONS,
-  buildExamPaper,
-  reshuffleOptions,
-  scoreExam,
-} from "../../utils/examEngine";
+import { MOCK_PAPER_KEY, reshuffleOptions, scoreExam, type ExamBank } from "../../utils/examEngine";
 import { HAN_VIET_SOURCE } from "../../utils/hanViet";
 import { toPercent } from "../../utils/quizEngine";
 import { trackEvent } from "../../utils/gtm";
@@ -19,8 +10,8 @@ import ExamSectionCard from "./ExamSectionCard";
 
 const RESULT_ICONS = { success: "🎉", warning: "👍", danger: "💪" } as const;
 
-export default function ExamPractice() {
-  const [paper, setPaper] = useState(() => buildExamPaper(MOCK_PAPER_KEY));
+export default function ExamPractice({ bank }: { bank: ExamBank }) {
+  const [paper, setPaper] = useState(() => bank.buildPaper(MOCK_PAPER_KEY));
   const [answers, setAnswers] = useState<ExamAnswers>({});
   const [submitted, setSubmitted] = useState(false);
   const [onlyWrong, setOnlyWrong] = useState(false);
@@ -33,6 +24,7 @@ export default function ExamPractice() {
   const percent = toPercent(score.correct, score.total);
   const resultTone = toneForPercent(percent);
   const isMock = paper.key === MOCK_PAPER_KEY;
+  const selectId = `exam-paper-select-${bank.id}`;
 
   const startAttempt = (next: ExamPaper) => {
     setPaper(next);
@@ -43,14 +35,14 @@ export default function ExamPractice() {
   };
 
   const startPaper = (key: string) => {
-    startAttempt(buildExamPaper(key));
-    trackEvent("exam_start", { paper: key });
+    startAttempt(bank.buildPaper(key));
+    trackEvent("exam_start", { level: bank.id, paper: key });
   };
 
   // Same questions, options in a new order.
   const retryPaper = () => {
     startAttempt(reshuffleOptions(paper));
-    trackEvent("exam_retry", { paper: paper.key });
+    trackEvent("exam_retry", { level: bank.id, paper: paper.key });
   };
 
   const answer = (questionId: string, index: number) => {
@@ -59,7 +51,7 @@ export default function ExamPractice() {
 
   const submit = () => {
     setSubmitted(true);
-    trackEvent("exam_submit", { paper: paper.key, correct: score.correct, total: score.total });
+    trackEvent("exam_submit", { level: bank.id, paper: paper.key, correct: score.correct, total: score.total });
     requestAnimationFrame(() => resultRef.current?.scrollIntoView?.({ behavior: "smooth", block: "start" }));
   };
 
@@ -67,20 +59,20 @@ export default function ExamPractice() {
     <>
       <section className="card toolbar">
         <div className="toolbar-row">
-          <label htmlFor="exam-paper-select" className="field-label">
+          <label htmlFor={selectId} className="field-label">
             Chọn đề
           </label>
-          <select id="exam-paper-select" className="select" value={paper.key} onChange={(e) => startPaper(e.target.value)}>
-            <option value={MOCK_PAPER_KEY}>🎲 Đề thi thử ngẫu nhiên ({MOCK_TOTAL} câu)</option>
-            <optgroup label="Theo bài (Từ vựng N3 – Minchan)">
-              {LESSON_PAPER_OPTIONS.map((o) => (
+          <select id={selectId} className="select" value={paper.key} onChange={(e) => startPaper(e.target.value)}>
+            <option value={MOCK_PAPER_KEY}>🎲 Đề thi thử ngẫu nhiên ({bank.mockTotal} câu)</option>
+            <optgroup label={bank.lessonGroup}>
+              {bank.lessonPaperOptions.map((o) => (
                 <option key={o.key} value={o.key}>
                   {o.label}
                 </option>
               ))}
             </optgroup>
             <optgroup label="Theo dạng bài">
-              {PART_PAPER_OPTIONS.map((o) => (
+              {bank.partPaperOptions.map((o) => (
                 <option key={o.key} value={o.key}>
                   {o.label}
                 </option>
@@ -99,7 +91,7 @@ export default function ExamPractice() {
         </div>
         <p className="toolbar-note">
           <strong>{paper.title}</strong> · {paper.total} câu · {paper.sections.length} phần
-          {isMock && " · cấu trúc theo đề JLPT N3 thật"}
+          {isMock && ` · số câu mỗi phần theo đề JLPT ${bank.level} thật`}
         </p>
       </section>
 
@@ -136,11 +128,13 @@ export default function ExamPractice() {
       {paper.sections.map((section, idx) => (
         <ExamSectionCard
           key={`${attempt}-${section.part.id}`}
+          headingId={`mondai-${bank.id}-${section.part.id}`}
           section={section}
           mondai={idx + 1}
           answers={answers}
           submitted={submitted}
           onlyWrong={onlyWrong}
+          lessonName={bank.lessonName}
           onAnswer={answer}
         />
       ))}
@@ -158,7 +152,7 @@ export default function ExamPractice() {
       )}
 
       <p className="hint">
-        Nguồn đề: {EXAM_SOURCE} · Âm Hán Việt: {HAN_VIET_SOURCE}
+        Nguồn đề: {bank.source} · Âm Hán Việt: {HAN_VIET_SOURCE}
       </p>
     </>
   );

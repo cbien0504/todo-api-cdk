@@ -1,4 +1,14 @@
-export type ExamPartId = "kanji-reading" | "orthography" | "context" | "paraphrase";
+export type ExamPartId = "kanji-reading" | "orthography" | "context" | "paraphrase" | "usage";
+
+/** Explanation of the answer, shown once the paper is submitted (jtest.net quizzes). */
+export interface ExamExplanation {
+  /** The word with its reading and meaning: "弱点（じゃくてん）: điểm yếu". */
+  word: string;
+  /** The completed sentence in Vietnamese. */
+  translation: string;
+  /** Other words of the sentence with their reading and meaning. */
+  vocab?: string[];
+}
 
 export interface ExamQuestion {
   id: string;
@@ -6,7 +16,10 @@ export interface ExamQuestion {
   number: number;
   part: ExamPartId;
   before: string;
-  /** Underlined word of the sentence; empty for fill-in-the-blank (（　　）) questions. */
+  /**
+   * Underlined word of the sentence; empty for fill-in-the-blank (（　　）) questions.
+   * A usage question is the word alone (no `before`/`after`), its options are sentences.
+   */
   target: string;
   after: string;
   note?: string;
@@ -15,6 +28,7 @@ export interface ExamQuestion {
   answer: number;
   /** Answer was not confirmed in the source video (marked `*` in the document). */
   inferred: boolean;
+  explanation?: ExamExplanation;
 }
 
 export interface ExamPart {
@@ -23,7 +37,7 @@ export interface ExamPart {
   label: string;
   instruction: string;
   hint: string;
-  /** Number of questions of this part in a real JLPT N3 文字・語彙 paper. */
+  /** Number of questions of this part in the mock paper: the count of the real JLPT paper of the level. */
   mockCount: number;
 }
 

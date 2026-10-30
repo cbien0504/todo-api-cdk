@@ -11,7 +11,7 @@ A **React** study app for JLPT vocabulary, hosted on **S3 + CloudFront (OAC)** w
 The app is organized by JLPT level (N5 · N4 · N3 · N2), each level with its own sections:
 
 - **📖 Từ vựng** (every level) – the N5, N4 and N2 lists of jtest.net and Mimikara Oboeru N3, practiced as a multiple-choice quiz or as spaced-repetition flashcards. Every answer also teaches its companion words (自動詞/他動詞 pair, synonyms, antonyms) and Hán Việt.
-- **📝 Luyện đề** (N3) – JLPT N3 文字・語彙 exam papers generated from `JLPT_N3_tu_vung_Minchan.docx`.
+- **📝 Luyện đề** (N3, N2) – JLPT N3 文字・語彙 exam papers generated from `JLPT_N3_tu_vung_Minchan.docx`, and the 26 N2 vocabulary quizzes of jtest.net with the explanation of every answer.
 
 Learners **register** (a username not taken yet and a password) or **log in** (the password is checked). Each account has its own progress in every level: words to review (chưa nhớ), remembered words (đã nhớ) and flashcards. The progress is cached in the browser, so studying works offline, and saved in DynamoDB, so it follows the learner to any device. Display settings stay per device in `localStorage`. See [frontend/README.md](frontend/README.md) for features, structure and how the data is built.
 
@@ -62,7 +62,7 @@ The DynamoDB table (stack output `ProgressTableName`) has one `profile` item per
 │   ├── reset_password.py          # new password for a learner who forgot theirs
 │   └── tests/
 ├── frontend/                      # React + TypeScript + Vite app (see frontend/README.md)
-├── scripts/                       # data builders: exam papers, jtest.net crawler, companions, Hán Việt
+├── scripts/                       # data builders (exam papers, jtest.net crawler, companions, Hán Việt), quiz_n2.py terminal quiz
 │   └── data/                      # raw jtest.net crawls used by scripts/build_vocab_data.py
 ├── JLPT_N3_tu_vung_Minchan.docx   # source of the N3 exam papers
 └── .github/workflows/deploy.yml   # lint, test, build and deploy on push to main

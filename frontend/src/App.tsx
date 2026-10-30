@@ -38,7 +38,7 @@ function AppHeader({ theme, onToggleTheme, children }: AppHeaderProps) {
             <span className="nowrap" lang="ja">
               文字・語彙
             </span>{" "}
-            N3
+            N3 · N2
           </p>
         </div>
       </div>

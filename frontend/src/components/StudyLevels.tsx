@@ -1,9 +1,11 @@
 import { useMemo } from "react";
+import { N2_EXAM, N3_EXAM } from "../data/examBanks";
 import { N2_DECK, N3_DECK, N4_DECK, N5_DECK, type VocabDeck } from "../data/vocabDecks";
 import { useDeckProgress } from "../hooks/useProgress";
 import { enumCodec, usePersistentState } from "../hooks/usePersistentState";
 import { useVocabSettings } from "../hooks/useVocabSettings";
 import type { DeckId } from "../types/progress";
+import type { ExamBank } from "../utils/examEngine";
 import { trackEvent } from "../utils/gtm";
 import ExamPractice from "./exam/ExamPractice";
 import VocabPractice from "./vocab/VocabPractice";
@@ -18,16 +20,19 @@ type SectionId = (typeof SECTIONS)[number]["id"];
 interface Level {
   id: DeckId;
   deck: VocabDeck;
-  sections: SectionId[];
+  /** Exam papers of the level, which then has the exam section. */
+  exam?: ExamBank;
 }
 
-// Every JLPT level has its own vocabulary deck; only N3 has exam papers so far.
+// Every JLPT level has its own vocabulary deck; N3 and N2 have exam papers so far.
 const LEVELS: Level[] = [
-  { id: "n5", deck: N5_DECK, sections: ["vocab"] },
-  { id: "n4", deck: N4_DECK, sections: ["vocab"] },
-  { id: "n3", deck: N3_DECK, sections: ["vocab", "exam"] },
-  { id: "n2", deck: N2_DECK, sections: ["vocab"] },
+  { id: "n5", deck: N5_DECK },
+  { id: "n4", deck: N4_DECK },
+  { id: "n3", deck: N3_DECK, exam: N3_EXAM },
+  { id: "n2", deck: N2_DECK, exam: N2_EXAM },
 ];
+
+const sectionsOf = (level: Level): SectionId[] => (level.exam ? ["vocab", "exam"] : ["vocab"]);
 
 const levelCodec = enumCodec<DeckId>(LEVELS.map((l) => l.id));
 const sectionCodec = enumCodec<SectionId>(SECTIONS.map((s) => s.id));
@@ -53,7 +58,7 @@ function LevelProgress({ deck }: { deck: VocabDeck }) {
   );
 }
 
-/** The JLPT levels N5 → N2 and the sections of each: vocabulary for every level, exam papers for N3. */
+/** The JLPT levels N5 → N2 and the sections of each: vocabulary for every level, exam papers for N3 and N2. */
 export default function StudyLevels() {
   const [levelId, setLevelId] = usePersistentState<DeckId>("mimikara_level", "n3", levelCodec);
   const [sectionId, setSectionId] = usePersistentState<SectionId>("mimikara_section", "vocab", sectionCodec);
@@ -90,9 +95,9 @@ export default function StudyLevels() {
 
       {/* Every level and section stays mounted so switching keeps the current sessions. */}
       {LEVELS.map((level) => {
-        const sections = SECTIONS.filter((s) => level.sections.includes(s.id));
+        const sections = SECTIONS.filter((s) => sectionsOf(level).includes(s.id));
         // A level without the chosen section (no exam papers) shows its first one.
-        const shown = level.sections.includes(sectionId) ? sectionId : level.sections[0];
+        const shown = sections.some((s) => s.id === sectionId) ? sectionId : sections[0].id;
         return (
           <section
             key={level.id}
@@ -128,10 +133,10 @@ export default function StudyLevels() {
                 className="panel"
                 hidden={shown !== s.id}
               >
-                {s.id === "vocab" ? (
+                {s.id === "vocab" || !level.exam ? (
                   <VocabPractice deck={level.deck} active={levelId === level.id && shown === s.id} settings={vocabSettings} />
                 ) : (
-                  <ExamPractice />
+                  <ExamPractice bank={level.exam} />
                 )}
               </section>
             ))}

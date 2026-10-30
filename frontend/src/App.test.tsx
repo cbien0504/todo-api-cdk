@@ -508,6 +508,21 @@ describe("JLPT levels and their sections", () => {
     expect(shownPanels()).toEqual(["level-n3", "panel-n3-exam"]);
   });
 
+  it("opens the N2 exam papers built from the jtest.net quizzes", () => {
+    render(<App />);
+    fireEvent.click(levelTab("N2"));
+    fireEvent.click(screen.getByRole("tab", { name: /Luyện đề/i }));
+
+    expect(shownPanels()).toEqual(["level-n2", "panel-n2-exam"]);
+    expect(screen.getByText("用法", { selector: "h2 span" })).toBeInTheDocument();
+    expect(screen.getByRole("combobox", { name: "Chọn đề" })).toHaveValue("mock");
+
+    // The N3 papers are another session.
+    fireEvent.click(levelTab("N3"));
+    expect(shownPanels()).toEqual(["level-n3", "panel-n3-exam"]);
+    expect(screen.getByText("漢字読み", { selector: "h2 span" })).toBeInTheDocument();
+  });
+
   it("opens the level saved in localStorage", () => {
     localStorage.setItem("mimikara_level", "n4");
     render(<App />);

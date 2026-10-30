@@ -2,16 +2,28 @@ import type { ExamAnswers, ExamSection } from "../../types/exam";
 import ExamQuestionItem from "./ExamQuestionItem";
 
 interface ExamSectionCardProps {
+  /** Unique in the page: the papers of every level stay mounted. */
+  headingId: string;
   section: ExamSection;
   mondai: number;
   answers: ExamAnswers;
   submitted: boolean;
   onlyWrong: boolean;
+  lessonName: (lesson: number) => string;
   onAnswer: (questionId: string, index: number) => void;
 }
 
 /** One 問題 of the paper: shared instruction followed by all of its questions. */
-export default function ExamSectionCard({ section, mondai, answers, submitted, onlyWrong, onAnswer }: ExamSectionCardProps) {
+export default function ExamSectionCard({
+  headingId,
+  section,
+  mondai,
+  answers,
+  submitted,
+  onlyWrong,
+  lessonName,
+  onAnswer,
+}: ExamSectionCardProps) {
   const { part, offset, questions } = section;
   const correct = questions.filter((q) => answers[q.id] === q.answer).length;
   const visible = questions
@@ -19,9 +31,9 @@ export default function ExamSectionCard({ section, mondai, answers, submitted, o
     .filter(({ question }) => !(submitted && onlyWrong) || answers[question.id] !== question.answer);
 
   return (
-    <section className="card exam-section" aria-labelledby={`mondai-${part.id}`}>
+    <section className="card exam-section" aria-labelledby={headingId}>
       <header className="exam-section-head">
-        <h2 className="exam-section-title" id={`mondai-${part.id}`}>
+        <h2 className="exam-section-title" id={headingId}>
           <span className="mondai" lang="ja">
             問題{mondai}
           </span>
@@ -46,6 +58,7 @@ export default function ExamSectionCard({ section, mondai, answers, submitted, o
               key={question.id}
               question={question}
               displayNumber={displayNumber}
+              lessonName={lessonName(question.lesson)}
               selected={answers[question.id]}
               submitted={submitted}
               onAnswer={(index) => onAnswer(question.id, index)}

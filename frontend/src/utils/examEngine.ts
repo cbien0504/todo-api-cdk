@@ -1,4 +1,4 @@
-import examData from "../data/jlpt_n3_minchan_exam.json";
+import type { DeckId } from "../types/progress";
 import type {
   ExamAnswers,
   ExamPaper,
@@ -10,18 +10,14 @@ import type {
 } from "../types/exam";
 import { shuffleArray } from "./quizEngine";
 
-export const EXAM_SOURCE = `${examData.title} · ${examData.source}`;
-export const EXAM_QUESTIONS = examData.questions as ExamQuestion[];
-
-/** Parts of the JLPT N3 文字・語彙 paper, in the order they appear in the real exam. */
-export const EXAM_PARTS: ExamPart[] = [
+/** Parts of a JLPT 文字・語彙 paper, in the order they appear in the real exam. */
+export const EXAM_PARTS: Omit<ExamPart, "mockCount">[] = [
   {
     id: "kanji-reading",
     name: "漢字読み",
     label: "Đọc Kanji",
     instruction: "＿＿＿のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
     hint: "Chọn cách đọc đúng nhất của từ được gạch chân.",
-    mockCount: 8,
   },
   {
     id: "orthography",
@@ -29,7 +25,6 @@ export const EXAM_PARTS: ExamPart[] = [
     label: "Viết Kanji",
     instruction: "＿＿＿のことばを漢字で書くとき、最もよいものを、1・2・3・4から一つえらびなさい。",
     hint: "Chọn cách viết Kanji đúng nhất cho từ được gạch chân.",
-    mockCount: 6,
   },
   {
     id: "context",
@@ -37,7 +32,6 @@ export const EXAM_PARTS: ExamPart[] = [
     label: "Điền từ theo ngữ cảnh",
     instruction: "（　　）に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
     hint: "Chọn từ thích hợp nhất để điền vào chỗ trống.",
-    mockCount: 11,
   },
   {
     id: "paraphrase",
@@ -45,64 +39,72 @@ export const EXAM_PARTS: ExamPart[] = [
     label: "Từ gần nghĩa",
     instruction: "＿＿＿に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
     hint: "Chọn từ có nghĩa gần nhất với phần gạch chân.",
-    mockCount: 5,
+  },
+  {
+    id: "usage",
+    name: "用法",
+    label: "Cách dùng từ",
+    instruction: "つぎのことばの使い方として最もよいものを、1・2・3・4から一つえらびなさい。",
+    hint: "Chọn câu dùng từ đã cho đúng nhất.",
   },
 ];
 
 export const MOCK_PAPER_KEY = "mock";
-export const MOCK_TOTAL = EXAM_PARTS.reduce((sum, part) => sum + part.mockCount, 0);
 
 const lessonKey = (lesson: number) => `lesson-${lesson}`;
 const partKey = (part: ExamPartId) => `part-${part}`;
-
-const questionsOfPart = (part: ExamPartId) => EXAM_QUESTIONS.filter((q) => q.part === part);
-const questionsOfLesson = (lesson: number) => EXAM_QUESTIONS.filter((q) => q.lesson === lesson);
-
-export const EXAM_LESSONS: number[] = Array.from(new Set(EXAM_QUESTIONS.map((q) => q.lesson))).sort(
-  (a, b) => a - b
-);
 
 export interface ExamPaperOption {
   key: string;
   label: string;
 }
 
-export const LESSON_PAPER_OPTIONS: ExamPaperOption[] = EXAM_LESSONS.map((lesson) => ({
-  key: lessonKey(lesson),
-  label: `Bài ${lesson} (${questionsOfLesson(lesson).length} câu)`,
-}));
+/** The exam questions of a JLPT level, with the papers built from them. */
+export interface ExamBank {
+  id: DeckId;
+  level: string;
+  source: string;
+  questions: ExamQuestion[];
+  /** Parts of the level's paper in the real exam order, with their question count in the mock paper. */
+  parts: ExamPart[];
+  mockTotal: number;
+  lessons: number[];
+  /** "Bài 1", "Quiz 1"… */
+  lessonName: (lesson: number) => string;
+  /** Title of the lesson papers in the paper list. */
+  lessonGroup: string;
+  lessonPaperOptions: ExamPaperOption[];
+  partPaperOptions: ExamPaperOption[];
+  /**
+   * Exam paper with shuffled options. Lesson and part papers keep the source order of
+   * questions; any other key produces a random mock paper with the question counts of
+   * the real JLPT exam.
+   */
+  buildPaper: (key: string) => ExamPaper;
+}
 
-export const PART_PAPER_OPTIONS: ExamPaperOption[] = EXAM_PARTS.map((part) => ({
-  key: partKey(part.id),
-  label: `${part.name} – ${part.label} (${questionsOfPart(part.id).length} câu)`,
-}));
+interface ExamBankConfig {
+  id: DeckId;
+  level: string;
+  data: { title: string; source: string; questions: unknown[] };
+  /** Question count of every part in the real paper of the level; the bank has these parts only. */
+  mockCounts: Partial<Record<ExamPartId, number>>;
+  /** Word naming a lesson of the source: "Bài", "Quiz". */
+  lessonUnit: string;
+  lessonGroup: string;
+}
 
 /** Group questions into exam sections following the real paper order of parts. */
-export const groupIntoSections = (questions: ExamQuestion[]): ExamSection[] => {
+export const groupIntoSections = (parts: ExamPart[], questions: ExamQuestion[]): ExamSection[] => {
   const sections: ExamSection[] = [];
   let offset = 0;
-  for (const part of EXAM_PARTS) {
+  for (const part of parts) {
     const partQuestions = questions.filter((q) => q.part === part.id);
     if (partQuestions.length === 0) continue;
     sections.push({ part, offset, questions: partQuestions });
     offset += partQuestions.length;
   }
   return sections;
-};
-
-const resolvePaper = (key: string): { title: string; questions: ExamQuestion[] } => {
-  const lesson = EXAM_LESSONS.find((l) => lessonKey(l) === key);
-  if (lesson !== undefined) {
-    return { title: `Bài ${lesson}`, questions: questionsOfLesson(lesson) };
-  }
-  const part = EXAM_PARTS.find((p) => partKey(p.id) === key);
-  if (part) {
-    return { title: `${part.name} – ${part.label}`, questions: questionsOfPart(part.id) };
-  }
-  return {
-    title: "Đề thi thử 文字・語彙",
-    questions: EXAM_PARTS.flatMap((p) => shuffleArray(questionsOfPart(p.id)).slice(0, p.mockCount)),
-  };
 };
 
 /** Copy of a question with its options in random order; `answer` follows the correct option. */
@@ -117,15 +119,55 @@ export const reshuffleOptions = (paper: ExamPaper): ExamPaper => ({
   sections: paper.sections.map((section) => ({ ...section, questions: section.questions.map(shuffleOptions) })),
 });
 
-/**
- * Build an exam paper with shuffled options. Lesson and part papers keep the source order
- * of questions; any other key produces a random mock paper with the question counts of
- * the real JLPT N3 exam.
- */
-export const buildExamPaper = (key: string): ExamPaper => {
-  const { title, questions } = resolvePaper(key);
-  const sections = groupIntoSections(questions.map(shuffleOptions));
-  return { key, title, total: questions.length, sections };
+export const createExamBank = ({ data, mockCounts, lessonUnit, ...config }: ExamBankConfig): ExamBank => {
+  const parts: ExamPart[] = EXAM_PARTS.flatMap((part) => {
+    const mockCount = mockCounts[part.id];
+    return mockCount === undefined ? [] : [{ ...part, mockCount }];
+  });
+  const questions = data.questions as ExamQuestion[];
+  const lessons = Array.from(new Set(questions.map((q) => q.lesson))).sort((a, b) => a - b);
+  const lessonName = (lesson: number) => `${lessonUnit} ${lesson}`;
+
+  const questionsOfPart = (part: ExamPartId) => questions.filter((q) => q.part === part);
+  const questionsOfLesson = (lesson: number) => questions.filter((q) => q.lesson === lesson);
+
+  const resolvePaper = (key: string): { title: string; questions: ExamQuestion[] } => {
+    const lesson = lessons.find((l) => lessonKey(l) === key);
+    if (lesson !== undefined) {
+      return { title: lessonName(lesson), questions: questionsOfLesson(lesson) };
+    }
+    const part = parts.find((p) => partKey(p.id) === key);
+    if (part) {
+      return { title: `${part.name} – ${part.label}`, questions: questionsOfPart(part.id) };
+    }
+    return {
+      title: "Đề thi thử 文字・語彙",
+      questions: parts.flatMap((p) => shuffleArray(questionsOfPart(p.id)).slice(0, p.mockCount)),
+    };
+  };
+
+  return {
+    ...config,
+    source: `${data.title} · ${data.source}`,
+    questions,
+    parts,
+    mockTotal: parts.reduce((sum, part) => sum + part.mockCount, 0),
+    lessons,
+    lessonName,
+    lessonPaperOptions: lessons.map((lesson) => ({
+      key: lessonKey(lesson),
+      label: `${lessonName(lesson)} (${questionsOfLesson(lesson).length} câu)`,
+    })),
+    partPaperOptions: parts.map((part) => ({
+      key: partKey(part.id),
+      label: `${part.name} – ${part.label} (${questionsOfPart(part.id).length} câu)`,
+    })),
+    buildPaper: (key) => {
+      const { title, questions: paperQuestions } = resolvePaper(key);
+      const sections = groupIntoSections(parts, paperQuestions.map(shuffleOptions));
+      return { key, title, total: paperQuestions.length, sections };
+    },
+  };
 };
 
 export const scoreExam = (paper: ExamPaper, answers: ExamAnswers): ExamScore => {

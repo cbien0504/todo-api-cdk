@@ -12,7 +12,7 @@ export default defineConfig({
     },
   },
   build: {
-    // The vocab-data chunk is the word lists of N5–N2 themselves (~1.2 MB, ~250 kB gzipped).
+    // The vocab-data chunk is the word lists of N5–N2 and the exam papers (~1.27 MB, ~280 kB gzipped).
     chunkSizeWarningLimit: 1300,
     rolldownOptions: {
       output: {

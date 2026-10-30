@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
 import { getHanViet } from "./hanViet";
-import { EXAM_QUESTIONS } from "./examEngine";
+import { N2_EXAM, N3_EXAM } from "../data/examBanks";
 
 describe("getHanViet", () => {
   it("reads every kanji of a word", () => {
@@ -32,7 +32,11 @@ describe("getHanViet", () => {
   });
 
   it("has a reading for every kanji of the exam words", () => {
-    const words = EXAM_QUESTIONS.flatMap((q) => [q.target, ...q.options]);
+    // Usage options are sentences, shown without Hán Việt.
+    const words = [...N3_EXAM.questions, ...N2_EXAM.questions].flatMap((q) => [
+      q.target,
+      ...(q.part === "usage" ? [] : q.options),
+    ]);
     expect(words.filter((word) => getHanViet(word).includes("?"))).toEqual([]);
   });
 });
